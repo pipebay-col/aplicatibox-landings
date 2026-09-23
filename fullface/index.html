@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FullFace Medellín · Clínica de Armonización Facial</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms and container-queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind CSS Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#006172",
+            "outline-variant": "#bcc9c6",
+            "on-primary": "#ffffff",
+            "primary": "#00685f",
+            "on-background": "#131b2e",
+            "surface-bright": "#faf8ff",
+            "on-primary-fixed-variant": "#005049",
+            "inverse-surface": "#283044",
+            "error": "#ba1a1a",
+            "primary-fixed": "#89f5e7",
+            "on-tertiary": "#ffffff",
+            "surface": "#faf8ff",
+            "secondary-container": "#57dffe",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#008376",
+            "on-tertiary-fixed-variant": "#005048",
+            "on-secondary-fixed": "#001f26",
+            "secondary": "#00687a",
+            "surface-tint": "#006a61",
+            "on-tertiary-container": "#f4fffb",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#3d4947",
+            "secondary-fixed-dim": "#4cd7f6",
+            "on-primary-container": "#f4fffc",
+            "background": "#faf8ff",
+            "inverse-primary": "#6bd8cb",
+            "surface-dim": "#d2d9f4",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#71f8e4",
+            "surface-container-highest": "#dae2fd",
+            "on-tertiary-fixed": "#00201c",
+            "tertiary": "#00685d",
+            "inverse-on-surface": "#eef0ff",
+            "surface-variant": "#dae2fd",
+            "surface-container-high": "#e2e7ff",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#004e5c",
+            "surface-container-low": "#f2f3ff",
+            "primary-fixed-dim": "#6bd8cb",
+            "outline": "#6d7a77",
+            "tertiary-fixed-dim": "#4fdbc8",
+            "on-primary-fixed": "#00201d",
+            "secondary-fixed": "#acedff",
+            "surface-container": "#eaedff",
+            "primary-container": "#008378",
+            "on-surface": "#131b2e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "margin-tablet": "2rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle radial gradient layer for Clinical Luxury */
+    .bg-radiant-glow {
+      background-image: radial-gradient(circle at 50% 0%, rgba(87, 223, 254, 0.12) 0%, rgba(250, 248, 255, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased min-h-screen selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component JSON anchor) -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm docked full-width top-0 fixed z-40 w-full">
+<div class="flex justify-between items-center w-full px-space-md py-space-sm max-w-screen-md mx-auto">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface tracking-tight">FullFace Medellín</span>
+</div>
+<a class="hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-colors duration-200 active:scale-95 transition-transform duration-150 text-label-lg font-label-lg bg-primary text-on-primary rounded-full px-4 py-1.5 shadow-sm inline-flex items-center space-x-1" href="#booking-form">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="pt-20 pb-24 max-w-screen-md mx-auto px-margin-mobile md:px-margin-tablet bg-radiant-glow">
+<!-- A: ATENCIÓN (Hero Section) -->
+<section class="pt-4 pb-space-lg text-center flex flex-col items-center">
+<!-- Micro-credencial Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/50 border border-outline-variant/40 mb-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">✦ +10.000 pacientes atendidos · Medellín, Colombia</span>
+</div>
+<!-- Main Headline -->
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface font-bold tracking-tight mb-3">
+        Tu rostro más armónico, <span class="text-primary underline decoration-secondary-container decoration-4 underline-offset-4">sin cirugía</span>
+</h1>
+<!-- Subtitle -->
+<p class="text-body-sm md:text-body-md font-body-sm md:font-body-md text-on-surface-variant max-w-xl mx-auto mb-6">
+        Tratamiento médico personalizado de armonización facial con Botox preventivo, rinomodelación sin bisturí y definición con ácido hialurónico de alta gama. Resalta tus facciones naturales sin perder tu esencia ni tiempos de incapacidad.
+      </p>
+<!-- Visual Patient Hero Asset -->
+<div class="relative w-full max-w-md mx-auto mb-6 rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-lowest">
+<img alt="Paciente sonriente en clínica FullFace Medellín exhibiendo resultados naturales de armonización facial" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1VvyBMxlDTD7F8mXwMHdWnsdOSNibAzCsyYWoGJDFbFgQiSZSI833NEcE4oERhehFo0fdqanv56Ys8ManBHks1dneCmt0QbaucMxTwg6VDAAdDthz5DcfZo2e9TcEkkupCWLBwAXmr5ohTewsf6SEQ8Zs-tEJRGp3bY79roEZo9TZsKMpPTu3fpLUtzJUuLtloWALuqto5ibO2RPNFo4v1-Ng9NjW5u5tW6w5xWdFGrlUDvZOtFthh861k"/>
+<!-- Floating Credibility Chip -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-2xl border border-white/60 shadow-md flex items-center justify-between text-left">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm font-bold text-on-surface">Resultado FullFace</p>
+<p class="text-[11px] leading-tight text-on-surface-variant">100% Natural sin bisturí</p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary-fixed text-on-primary-fixed-variant">
+            Certificado
+          </span>
+</div>
+</div>
+<!-- Single Primary High-Conversion CTA Button -->
+<div class="w-full max-w-md mx-auto">
+<a class="w-full py-4 px-6 rounded-full bg-primary text-on-primary text-label-lg font-label-lg font-bold flex items-center justify-center space-x-2 shadow-md hover:bg-primary-container active:scale-95 transition-all duration-150" href="#booking-form">
+<span>Agendar valoración</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<!-- Micro-credenciales de descompresión / reducción de fricción -->
+<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 mt-3 text-on-surface-variant text-[11px] font-medium">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Valoración sin costo
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+            Respuesta en menos de 24 horas
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+            Tratamiento médico seguro
+          </span>
+</div>
+</div>
+</section>
+<!-- I: INTERÉS (Problema / Dolor + Proceso Claro) -->
+<section class="py-space-xl border-t border-outline-variant/30" id="tratamientos">
+<div class="text-center max-w-md mx-auto mb-8">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary font-bold">Diagnóstico Clínico</span>
+<h2 class="text-headline-sm font-headline-sm font-bold text-on-surface mt-1 mb-3">
+          ¿Te miras al espejo y sientes que tu rostro no está en equilibrio?
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          La asimetría en el perfil, la pérdida sutil de volumen o la mirada cansada suelen restar seguridad. La verdadera armonización no cambia quién eres: equilibra proporciones con precisión médica milimétrica.
+        </p>
+</div>
+<!-- 3-Step Bento Process -->
+<div class="space-y-4">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-fixed/40 text-primary flex items-center justify-center font-bold text-headline-sm font-headline-sm">
+            01
+          </div>
+<div>
+<div class="flex items-center space-x-2">
+<h3 class="text-label-lg font-label-lg font-bold text-on-surface">Valoración facial personalizada</h3>
+<span class="material-symbols-outlined text-primary text-sm">photo_camera</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Diagnóstico fotográfico y análisis anatómico de vectores de soporte para definir exactamente lo que tu rostro necesita.
+            </p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-fixed/40 text-primary flex items-center justify-center font-bold text-headline-sm font-headline-sm">
+            02
+          </div>
+<div>
+<div class="flex items-center space-x-2">
+<h3 class="text-label-lg font-label-lg font-bold text-on-surface">Plan de armonización médica</h3>
+<span class="material-symbols-outlined text-primary text-sm">vaccines</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Aplicación experta de Botox, rinomodelación y ácido hialurónico con productos biocompatibles aprobados por INVIMA y FDA.
+            </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start space-x-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary-fixed/40 text-primary flex items-center justify-center font-bold text-headline-sm font-headline-sm">
+            03
+          </div>
+<div>
+<div class="flex items-center space-x-2">
+<h3 class="text-label-lg font-label-lg font-bold text-on-surface">Resultado natural visible</h3>
+<span class="material-symbols-outlined text-primary text-sm">flare</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Simetría armónica, perfil estilizado y mirada luminosa desde la primera sesión, sin cicatrices ni días de reposo.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- D: DESEO (Prueba Social + Métricas + Beneficios) -->
+<section class="py-space-xl border-t border-outline-variant/30" id="testimonios">
+<!-- Metrics Grid -->
+<div class="grid grid-cols-3 gap-2 text-center mb-8">
+<div class="bg-surface-container-lowest py-3.5 px-2 rounded-xl border border-outline-variant/20 shadow-sm">
+<p class="text-headline-sm font-headline-sm font-bold text-primary">95k+</p>
+<p class="text-[11px] leading-tight text-on-surface-variant mt-0.5 font-medium">Seguidores IG<br/><span class="text-outline">@fullfacemedellin</span></p>
+</div>
+<div class="bg-surface-container-lowest py-3.5 px-2 rounded-xl border border-outline-variant/20 shadow-sm">
+<p class="text-headline-sm font-headline-sm font-bold text-primary">+10.000</p>
+<p class="text-[11px] leading-tight text-on-surface-variant mt-0.5 font-medium">Pacientes<br/>satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest py-3.5 px-2 rounded-xl border border-outline-variant/20 shadow-sm">
+<p class="text-headline-sm font-headline-sm font-bold text-primary">100%</p>
+<p class="text-[11px] leading-tight text-on-surface-variant mt-0.5 font-medium">Médicos certificados<br/><span class="text-outline">INVIMA / SCCP</span></p>
+</div>
+</div>
+<!-- Testimonio Destacado con Autoridad Médica -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-md relative mb-8">
+<div class="flex items-center space-x-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-label-sm font-bold text-on-surface ml-1">5.0 / 5.0</span>
+</div>
+<blockquote class="italic text-body-sm font-body-sm text-on-surface mb-4">
+          "Tenía pánico de quedar artificial o irreconocible con la rinomodelación y el ácido hialurónico. El equipo médico de FullFace entendió a la perfección la sutileza que buscaba. Mi perfil quedó perfecto y equilibrado, todos me dicen que me veo descansada y radiante, pero nadie sospecha que me hice un procedimiento."
+        </blockquote>
+<div class="flex items-center space-x-3 pt-3 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">
+            VM
+          </div>
+<div>
+<div class="flex items-center space-x-1.5">
+<span class="text-label-md font-label-md font-bold text-on-surface">Dra. Valentina Mejía</span>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="text-[12px] text-on-surface-variant">Odontóloga &amp; Paciente FullFace Medellín</p>
+</div>
+</div>
+</div>
+<!-- Beneficios de Resultado Final -->
+<div class="bg-surface-container-low/60 p-5 rounded-2xl border border-outline-variant/20">
+<h3 class="text-label-lg font-label-lg font-bold text-on-surface mb-3 flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Beneficios garantizados de tu sesión</span>
+</h3>
+<div class="space-y-2.5">
+<div class="flex items-start space-x-2">
+<span class="text-primary font-bold">✦</span>
+<p class="text-body-sm font-body-sm text-on-surface"><strong class="font-semibold text-on-surface">Rostro equilibrado y simétrico:</strong> Proporciones armónicas que realzan tus rasgos distintivos.</p>
+</div>
+<div class="flex items-start space-x-2">
+<span class="text-primary font-bold">✦</span>
+<p class="text-body-sm font-body-sm text-on-surface"><strong class="font-semibold text-on-surface">Mirada fresca y descansada:</strong> Suavizado de líneas de expresión con Botox sin congelar tus gestos.</p>
+</div>
+<div class="flex items-start space-x-2">
+<span class="text-primary font-bold">✦</span>
+<p class="text-body-sm font-body-sm text-on-surface"><strong class="font-semibold text-on-surface">Perfil definido sin cirugía:</strong> Rinomodelación y marcación mandibular rápida, segura y ambulatoria.</p>
+</div>
+<div class="flex items-start space-x-2">
+<span class="text-primary font-bold">✦</span>
+<p class="text-body-sm font-body-sm text-on-surface"><strong class="font-semibold text-on-surface">Cero tiempo de incapacidad:</strong> Retoma tu rutina el mismo día con total normalidad.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- A: ACCIÓN (Formulario de Conversión Minimalista AIDA) -->
+<section class="py-space-xl border-t border-outline-variant/30 scroll-mt-20" id="booking-form">
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-secondary-container/50 shadow-xl relative overflow-hidden">
+<!-- Ambient decorative header -->
+<div class="absolute -top-16 -right-16 w-36 h-36 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Badge de Urgencia/Escasez -->
+<div class="inline-flex items-center space-x-1 px-3 py-1 rounded-full bg-error-container/60 border border-error-container text-on-error-container text-label-sm font-label-sm font-semibold mb-3">
+<span class="material-symbols-outlined text-xs">timer</span>
+<span>Cupos semanales limitados para valoración personalizada</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm font-bold text-on-surface mb-1">
+          Empieza hoy tu transformación armónica
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+          Agenda tu cita en nuestra sede El Poblado · Medellín
+        </p>
+<!-- Formulario de 3 Campos -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una médica asesora se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface font-semibold mb-1" for="full_name">Nombre y Apellido</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-lg">person</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-sm font-body-sm bg-surface-container-lowest text-on-surface transition duration-150" id="full_name" placeholder="ej. Mariana Restrepo" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface font-semibold mb-1" for="whatsapp">Número de WhatsApp</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-lg">chat</span>
+<input class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-sm font-body-sm bg-surface-container-lowest text-on-surface transition duration-150" id="whatsapp" placeholder="ej. +57 300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Área de Interés (Chips Radiales Interactivos) -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface font-semibold mb-2">Área de interés principal</label>
+<div class="grid grid-cols-2 gap-2 text-label-sm font-label-sm">
+<label class="cursor-pointer border border-outline-variant/60 rounded-xl p-2.5 flex items-center space-x-2 bg-surface hover:border-primary transition duration-150 has-[:checked]:border-primary has-[:checked]:bg-secondary-fixed/20 has-[:checked]:text-primary font-medium">
+<input checked="" class="text-primary focus:ring-primary" name="treatment_area" type="radio" value="full_face"/>
+<span>Rostro completo</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/60 rounded-xl p-2.5 flex items-center space-x-2 bg-surface hover:border-primary transition duration-150 has-[:checked]:border-primary has-[:checked]:bg-secondary-fixed/20 has-[:checked]:text-primary font-medium">
+<input class="text-primary focus:ring-primary" name="treatment_area" type="radio" value="rhino"/>
+<span>Rinomodelación (Nariz)</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/60 rounded-xl p-2.5 flex items-center space-x-2 bg-surface hover:border-primary transition duration-150 has-[:checked]:border-primary has-[:checked]:bg-secondary-fixed/20 has-[:checked]:text-primary font-medium">
+<input class="text-primary focus:ring-primary" name="treatment_area" type="radio" value="lips"/>
+<span>Labios &amp; Pómulos</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/60 rounded-xl p-2.5 flex items-center space-x-2 bg-surface hover:border-primary transition duration-150 has-[:checked]:border-primary has-[:checked]:bg-secondary-fixed/20 has-[:checked]:text-primary font-medium">
+<input class="text-primary focus:ring-primary" name="treatment_area" type="radio" value="botox"/>
+<span>Botox tercio superior</span>
+</label>
+</div>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full mt-2 py-4 px-6 rounded-full bg-primary text-on-primary text-label-lg font-label-lg font-bold flex items-center justify-center space-x-2 shadow-lg hover:bg-primary-container active:scale-95 transition-all duration-150" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Garantía de Confidencialidad -->
+<p class="text-center text-[11px] text-on-surface-variant mt-3 flex items-center justify-center space-x-1">
+<span class="material-symbols-outlined text-xs text-primary">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto profesional médico.</span>
+</p>
+<!-- Alternativa WhatsApp Directo -->
+<div class="mt-5 pt-4 border-t border-outline-variant/30 text-center">
+<p class="text-body-sm font-body-sm text-on-surface mb-2 font-medium">¿Prefieres respuesta inmediata?</p>
+<a class="inline-flex items-center space-x-2 text-label-md font-label-md font-bold text-primary hover:text-primary-container p-2 rounded-lg bg-surface-container-high/40 transition" href="https://wa.me/573001234567" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">forum</span>
+<span>Chatea directo con nuestra médica asesora por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FAQS (Preguntas Frecuentes Rápidas) -->
+<section class="py-space-xl border-t border-outline-variant/30">
+<h2 class="text-headline-sm font-headline-sm font-bold text-on-surface text-center mb-6">
+        Preguntas Frecuentes
+      </h2>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm cursor-pointer [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿El procedimiento duele?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/10">
+            No. Utilizamos anestésicos tópicos médicos de alta potencia y microcánulas atraumáticas que garantizan una experiencia confortable, prácticamente indolora y muy relajante.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm cursor-pointer [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Cuánto dura el efecto?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/10">
+            El Botox preventivo tiene una duración aproximada de 4 a 6 meses. La rinomodelación y el ácido hialurónico de alta reticulación brindan resultados duraderos entre 12 y 18 meses, reabsorbiéndose de manera armónica.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm cursor-pointer [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Puedo volver al trabajo el mismo día?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/10">
+            Totalmente sí. Son procedimientos no quirúrgicos ambulatorios de "almuerzo ejecutivo". No requieren incapacidad ni reposo; puedes retomar tus actividades de oficina el mismo día siguiendo cuidados básicos de exposición solar.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component JSON anchor) -->
+<footer class="bg-surface-container-low dark:bg-surface-container-low border-t border-outline-variant/40 dark:border-outline/20">
+<div class="flex flex-col items-center justify-center text-center px-space-md py-space-xl mb-16 w-full max-w-screen-md mx-auto">
+<div class="flex items-center space-x-2 mb-3">
+<span class="material-symbols-outlined text-primary text-xl">medical_services</span>
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary-fixed">FullFace Medellín</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm mb-4">
+        © 2024 FullFace Medellín - Medicina Estética Avanzada. Registro Seccional de Salud de Antioquia. Todos los derechos reservados.
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-md font-label-md">
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:text-primary transition-colors duration-200" href="#booking-form">Registro Médico INVIMA</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:text-primary transition-colors duration-200" href="#booking-form">Sede El Poblado, Medellín</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:text-primary transition-colors duration-200" href="#booking-form">Política de Privacidad</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:text-primary transition-colors duration-200" href="#booking-form">Términos y Consentimiento Médico</a>
+</div>
+</div>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component JSON anchor - mobile navigation) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-space-xs pb-space-sm max-w-screen-md mx-auto bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-lg border-t border-outline-variant/30 dark:border-outline/20 shadow-lg md:hidden">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-2 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#tratamientos">
+<span class="material-symbols-outlined text-xl">auto_awesome</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Antes/Después -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-2 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#tratamientos">
+<span class="material-symbols-outlined text-xl">compare</span>
+<span class="text-label-sm font-label-sm mt-0.5">Antes/Después</span>
+</a>
+<!-- Item 3: Testimonios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-2 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#testimonios">
+<span class="material-symbols-outlined text-xl">reviews</span>
+<span class="text-label-sm font-label-sm mt-0.5">Testimonios</span>
+</a>
+<!-- Item 4: Agendar (Active primary conversion focus) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-3 py-1 active:scale-95 transition-transform duration-150" href="#booking-form">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+</body></html>
