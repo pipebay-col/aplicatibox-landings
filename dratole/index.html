@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DRA TOLE Benessere | Medicina Estética &amp; Armonía Natural</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms and container-queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#8e6e54",
+            "secondary-container": "#ffca98",
+            "on-secondary-fixed": "#2c1600",
+            "secondary-fixed-dim": "#f0bd8b",
+            "on-primary-container": "#fffbff",
+            "surface-dim": "#e3d8d3",
+            "surface-container-low": "#fdf1ec",
+            "surface-bright": "#fff8f6",
+            "surface-variant": "#ece0db",
+            "secondary-fixed": "#ffdcbd",
+            "tertiary-fixed-dim": "#e5bfa1",
+            "surface-container-highest": "#ece0db",
+            "surface-container-high": "#f2e6e1",
+            "inverse-surface": "#362f2c",
+            "on-background": "#201a18",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#7a532a",
+            "primary-fixed": "#ffdcc1",
+            "surface-tint": "#80552e",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#f4bb8c",
+            "on-secondary-fixed-variant": "#623f18",
+            "on-surface-variant": "#50443b",
+            "on-tertiary-container": "#fffbff",
+            "inverse-on-surface": "#fbeee9",
+            "tertiary-fixed": "#ffdcc1",
+            "primary-fixed-dim": "#f4bb8c",
+            "tertiary": "#73563e",
+            "outline-variant": "#d5c3b7",
+            "outline": "#83746a",
+            "background": "#fff8f6",
+            "on-primary-fixed-variant": "#643e19",
+            "surface": "#fff8f6",
+            "on-tertiary-fixed": "#2b1704",
+            "secondary": "#7d562d",
+            "primary": "#7d532c",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#2e1500",
+            "surface-container": "#f8ebe6",
+            "on-primary": "#ffffff",
+            "on-surface": "#201a18",
+            "on-tertiary-fixed-variant": "#5c412a",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-container": "#996b42",
+            "on-error-container": "#93000a"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1.25rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "300" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TOP APP BAR (Shared Component: TopAppBar) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/20 dark:border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-5 py-3.5 max-w-7xl mx-auto">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-[24px]">spa</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md tracking-tight text-primary dark:text-inverse-primary font-medium leading-none">
+            DRA TOLE Benessere
+          </span>
+<span class="font-label-sm text-label-sm tracking-widest text-outline uppercase mt-0.5">
+            Medicina Estética &amp; Longevidad
+          </span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-90 transition-opacity duration-200 active:scale-[0.98]" href="#formulario">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="pt-20 pb-28 md:pb-16 flex flex-col gap-12 md:gap-20">
+<!-- 1. ATENCIÓN (Hero Section) -->
+<section class="px-margin-mobile md:px-margin max-w-5xl mx-auto w-full pt-4">
+<div class="flex flex-col items-center text-center">
+<!-- Chip de Autoridad Médica Benessere -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-surface-container border border-outline-variant/40 mb-5 shadow-sm">
+<span class="text-primary text-[14px]">✦</span>
+<span class="font-label-md text-label-md text-primary tracking-wide">Medicina estética · Benessere</span>
+</div>
+<!-- Titular Principal de Alto Impacto -->
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface max-w-2xl">
+          Belleza que se siente <span class="italic font-normal text-primary">bienestar</span>
+</h1>
+<!-- Subtítulo Empático -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-4 leading-relaxed">
+          Medicina estética avanzada con enfoque en armonía natural, rejuvenecimiento sutil y cuidado médico personalizado que revitaliza tu esencia sin perder tu identidad.
+        </p>
+<!-- Fotografía Editorial Médica Premium con Badge Flotante -->
+<div class="relative w-full max-w-lg mt-8 rounded-lg overflow-hidden shadow-2xl border border-outline-variant/30">
+<img alt="DRA TOLE Benessere Medicina Estética" class="w-full aspect-[4/3] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1VvyBMxlDTD7F8mXwMHdWnsdOSNibAzCsyYWoGJDFbFgQiSZSI833NEcE4oERhehFo0fdqanv56Ys8ManBHks1dneCmt0QbaucMxTwg6VDAAdDthz5DcfZo2e9TcEkkupCWLBwAXmr5ohTewsf6SEQ8Zs-tEJRGp3bY79roEZo9TZsKMpPTu3fpLUtzJUuLtloWALuqto5ibO2RPNFo4v1-Ng9NjW5u5tW6w5xWdFGrlUDvZOtFthh861k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Badge Flotante sobre la Imagen -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-bright/95 backdrop-blur-md rounded-DEFAULT p-3.5 border border-outline-variant/40 flex items-center gap-3 shadow-lg">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]" data-weight="fill">verified</span>
+</div>
+<div class="text-left">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Protocolo Benessere</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Resultado Dra. Tole: Armonía y luminosidad 100% natural</p>
+</div>
+</div>
+</div>
+<!-- CTA Primario Único de Máximo Contraste -->
+<div class="w-full max-w-md mt-8 flex flex-col items-center">
+<a class="w-full inline-flex items-center justify-center gap-2 py-4 px-8 rounded-full bg-primary text-on-primary font-headline-md text-headline-md shadow-xl hover:bg-primary-container transition-all duration-200 active:scale-[0.98]" href="#formulario">
+<span>Agendar valoración</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<!-- Micro-credenciales de Reducción de Riesgo -->
+<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 mt-4 text-on-surface-variant font-label-md text-label-md">
+<span class="inline-flex items-center gap-1 text-primary"><span class="font-bold">✓</span> Valoración sin costo</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 text-primary"><span class="font-bold">✓</span> Respuesta en menos de 24h</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 text-primary"><span class="font-bold">✓</span> Plan 100% médico</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. INTERÉS (Problema + Proceso en 3 pasos) -->
+<section class="px-margin-mobile md:px-margin max-w-5xl mx-auto w-full">
+<div class="bg-surface-container-low rounded-lg p-6 md:p-12 border border-outline-variant/30">
+<div class="max-w-xl mx-auto text-center mb-10">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Diagnóstico y Armonía Facial</span>
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-2">
+            ¿El estrés y el tiempo marcan tu piel?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Es frustrante mirarse al espejo y notar una expresión fatigada a pesar de haber dormido. En DRA TOLE Benessere devolvemos la frescura, tersura y luminosidad a tu rostro mediante protocolos médicos indoloros que preservan tus rasgos genuinos.
+          </p>
+</div>
+<!-- Secuencia en 3 Pasos Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-md text-headline-md text-on-secondary-fixed mb-4">
+                01
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+                Valoración integral de piel y rostro
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Diagnóstico clínico personalizado, análisis tridimensional de proporciones faciales y escucha atenta de tus objetivos reales de bienestar.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+              Diagnóstico preciso
+            </div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-md text-headline-md text-on-secondary-fixed mb-4">
+                02
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+                Plan de tratamiento personalizado
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Selección médica precisa de bioestimuladores de colágeno, ácido hialurónico biocompatible y activos de vanguardia acordes a tu fisiología.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+              Personalización médica
+            </div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-6 border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-md text-headline-md text-on-secondary-fixed mb-4">
+                03
+              </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+                Resultado natural y acompañamiento
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Rejuvenecimiento progresivo con efecto descansado y seguimiento médico continuo en cada etapa para garantizar armonía absoluta.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+              Efecto descansado
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. DESEO (Prueba Social, Métricas y Beneficios) -->
+<section class="px-margin-mobile md:px-margin max-w-5xl mx-auto w-full space-y-10">
+<!-- Fila de Métricas de Confianza y Autoridad -->
+<div class="grid grid-cols-3 gap-3 md:gap-6 bg-surface-container-lowest rounded-lg p-5 md:p-8 border border-outline-variant/30 shadow-sm text-center">
+<div class="flex flex-col items-center">
+<span class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary font-bold">+10</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">Años de Experiencia</span>
+</div>
+<div class="flex flex-col items-center border-x border-outline-variant/30 px-2">
+<span class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary font-bold">+3.500</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">Pacientes Felices</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary font-bold">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">Filosofía Benessere</span>
+</div>
+</div>
+<!-- Tarjeta de Testimonio Real Verificado -->
+<div class="bg-surface-container-lowest rounded-lg p-6 md:p-8 border border-outline-variant/30 shadow-md">
+<div class="flex items-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-[20px]" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[20px]" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[20px]" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[20px]" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[20px]" data-weight="fill">star</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-2 font-medium">5.0 / 5.0</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-on-surface italic leading-relaxed">
+          “Llegué buscando un cambio sutil que me quitara la expresión de cansancio acumulado. En DRA TOLE entendieron de inmediato mi necesidad: mi piel recuperó firmeza y luz sin verse operada ni artificial. Me siento y me veo renovada.”
+        </blockquote>
+<div class="flex items-center justify-between mt-5 pt-4 border-t border-outline-variant/20">
+<div>
+<p class="font-headline-md text-headline-md text-on-surface text-[18px]">Dra. Natalia Cárdenas</p>
+<p class="font-body-sm text-body-sm text-outline">Paciente de Armonización Facial Benessere</p>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm border border-outline-variant/30">
+<span class="font-bold">✓</span> Paciente Verificada
+          </span>
+</div>
+</div>
+<!-- Beneficios Enfocados en el Resultado (Bento Grid) -->
+<div>
+<div class="text-center mb-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Beneficios enfocados en tu resultado</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Ciencia y sutileza para tu piel</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Beneficio 1 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 border border-outline-variant/30 flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">flare</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-[17px] text-on-surface">Piel luminosa y tersa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+                Activación celular profunda que estimula la producción natural de colágeno restaurando la vitalidad de adentro hacia afuera.
+              </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 border border-outline-variant/30 flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">face_retouching_natural</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-[17px] text-on-surface">Rostro descansado y fresco</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+                Suavizado armónico de líneas de fatiga y sombras perioculares preservando siempre tu movilidad y expresividad única.
+              </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 border border-outline-variant/30 flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">spa</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-[17px] text-on-surface">Bienestar integral Benessere</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+                Protocolos no invasivos de vanguardia sin dolor incapacitante ni tiempos de reposo prolongados para retomar tu día de inmediato.
+              </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-5 border border-outline-variant/30 flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-[17px] text-on-surface">Seguridad y respaldo médico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+                Procedimientos realizados exclusivamente bajo estándares clínicos rigurosos, registro INVIMA y productos certificados mundialmente.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN (Formulario Minimalista + WhatsApp) -->
+<section class="px-margin-mobile md:px-margin max-w-xl mx-auto w-full" id="formulario">
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/40 shadow-xl overflow-hidden">
+<!-- Banner de Urgencia Sutil -->
+<div class="bg-primary px-4 py-2.5 text-center text-on-primary">
+<p class="font-label-md text-label-md font-medium tracking-wide">
+            ✦ Cupos limitados esta semana para valoración personalizada
+          </p>
+</div>
+<div class="p-6 md:p-8">
+<div class="text-center mb-6">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-semibold">
+              Comienza hoy tu transformación Benessere
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Agenda tu cita de valoración presencial en consultorio.
+            </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Nuestro equipo médico se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Nombre completo</label>
+<input class="w-full h-[50px] px-4 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all font-body-md text-body-md" placeholder="ej. Valentina Morales" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-medium">Número de WhatsApp</label>
+<input class="w-full h-[50px] px-4 rounded-DEFAULT bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all font-body-md text-body-md" placeholder="ej. +57 300 123 4567" required="" type="tel"/>
+</div>
+<!-- Campo 3: Área de Interés (Chips de selección) -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2 font-medium">Área de interés principal</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="area" type="radio" value="facial"/>
+<div class="py-2.5 px-3 rounded-full text-center border border-outline-variant/40 text-on-surface-variant font-label-md text-label-md peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">
+                    Tratamiento Facial
+                  </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="area" type="radio" value="corporal"/>
+<div class="py-2.5 px-3 rounded-full text-center border border-outline-variant/40 text-on-surface-variant font-label-md text-label-md peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">
+                    Tratamiento Corporal
+                  </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="area" type="radio" value="bienestar"/>
+<div class="py-2.5 px-3 rounded-full text-center border border-outline-variant/40 text-on-surface-variant font-label-md text-label-md peer-checked:bg-primary peer-checked:text-on-primary peer-checked:border-primary transition-all">
+                    Bienestar Integral
+                  </div>
+</label>
+</div>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full py-4 mt-2 rounded-full bg-primary text-on-primary font-headline-md text-headline-md tracking-wide shadow-lg hover:bg-primary-container transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+<!-- Privacidad y Confidencialidad -->
+<p class="font-body-sm text-body-sm text-outline text-center mt-3">
+              🔒 Tus datos están 100% seguros y protegidos bajo confidencialidad médica.
+            </p>
+</form>
+<!-- Alternativa Directa WhatsApp -->
+<div class="mt-6 pt-5 border-t border-outline-variant/30 text-center">
+<a class="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-full bg-surface-container text-primary font-label-lg text-label-lg border border-outline-variant/40 hover:bg-surface-variant transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+              ¿Prefieres respuesta inmediata? Chatea directo por WhatsApp
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Acordeones) -->
+<section class="px-margin-mobile md:px-margin max-w-xl mx-auto w-full">
+<div class="text-center mb-6">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Preguntas Frecuentes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Claridad y transparencia médica</p>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-md text-headline-md text-[16px] text-on-surface">
+            ¿Los procedimientos requieren tiempo de reposo?
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            No. Nuestros protocolos Benessere están diseñados con técnicas micro-invasivas que te permiten reincorporarte a tus actividades laborales y sociales de manera inmediata, con recomendaciones mínimas para proteger tu piel.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-md text-headline-md text-[16px] text-on-surface">
+            ¿En cuánto tiempo comenzaré a notar los resultados?
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Notarás un efecto refrescante y luminoso inmediato tras la sesión. La regeneración celular y bioestimulación profunda de colágeno alcanza su máxima expresión entre los 15 y 30 días posteriores al tratamiento.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-md text-headline-md text-[16px] text-on-surface">
+            ¿La valoración inicial tiene algún costo?
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Nuestra sesión de diagnóstico y plan de tratamiento personalizado está incluida como cortesía al reservar esta semana a través de este canal digital prioritario.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component: Footer) -->
+<footer class="w-full bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/20">
+<div class="w-full px-6 py-12 mb-20 md:mb-0 max-w-7xl mx-auto flex flex-col items-center text-center gap-6">
+<!-- Brand Logo / Headline -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary">spa</span>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-medium">DRA TOLE Benessere</span>
+</div>
+<!-- Links Obligatorios -->
+<nav class="flex flex-wrap justify-center gap-4 text-on-surface-variant dark:text-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#formulario">Habilitación Médica</a>
+<span>•</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#formulario">Aviso de Privacidad</a>
+<span>•</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#formulario">Términos y Consentimiento</a>
+<span>•</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#formulario">Preguntas Frecuentes</a>
+</nav>
+<!-- Texto Legal de Confidencialidad -->
+<p class="font-body-sm text-body-sm text-outline max-w-2xl leading-relaxed">
+        © 2024 DRA TOLE Benessere. Todos los derechos reservados. Registro Médico y Habilitación en Salud Vigente. Se garantiza absoluta confidencialidad médica y protección de datos clínicos.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component: BottomNavBar - Mobile Only Destination Filter) -->
+<nav class="md:hidden fixed bottom-4 inset-x-0 w-[calc(100%-2rem)] max-w-sm mx-auto z-50 flex justify-around items-center px-3 py-2 rounded-full bg-surface-bright/90 dark:bg-inverse-surface/90 backdrop-blur-lg shadow-xl border border-outline-variant/30 dark:border-outline-variant/20">
+<!-- Destino 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.96]" href="#formulario">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+<span class="font-label-md text-label-md mt-0.5">Tratamientos</span>
+</a>
+<!-- Destino 2: Consulta (ACTIVE TAB: Formulario / Conversión de Consulta) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1.5 shadow-sm active:scale-[0.96] transition-transform duration-150" href="#formulario">
+<span class="material-symbols-outlined text-[22px]" data-weight="fill">calendar_month</span>
+<span class="font-label-md text-label-md mt-0.5 font-semibold">Consulta</span>
+</a>
+<!-- Destino 3: Contacto -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.96]" href="https://wa.me/">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="font-label-md text-label-md mt-0.5">Contacto</span>
+</a>
+</nav>
+</body></html>
