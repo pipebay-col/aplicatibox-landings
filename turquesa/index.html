@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Turquesa Cejas y Pestañas | Nathaly Medina PMU Master en Ibagué</title>
+<!-- Google Fonts: EB Garamond & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed": "#261900",
+            "surface-container": "#efeeeb",
+            "secondary-fixed-dim": "#bec6e0",
+            "surface": "#faf9f6",
+            "inverse-surface": "#2f312f",
+            "secondary-fixed": "#dae2fd",
+            "primary": "#00685f",
+            "surface-container-low": "#f4f3f1",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f2f1ee",
+            "surface-container-high": "#e9e8e5",
+            "secondary-container": "#dae2fd",
+            "on-tertiary-fixed-variant": "#5d4201",
+            "on-surface": "#1a1c1a",
+            "surface-variant": "#e3e2e0",
+            "surface-bright": "#faf9f6",
+            "on-primary": "#ffffff",
+            "tertiary": "#755717",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "outline-variant": "#bcc9c6",
+            "tertiary-fixed-dim": "#e9c176",
+            "on-primary-fixed-variant": "#005049",
+            "on-secondary-container": "#5c647a",
+            "secondary": "#565e74",
+            "tertiary-container": "#90702e",
+            "primary-fixed-dim": "#6bd8cb",
+            "primary-container": "#008378",
+            "on-secondary-fixed-variant": "#3f465c",
+            "tertiary-fixed": "#ffdea5",
+            "surface-tint": "#006a61",
+            "surface-container-highest": "#e3e2e0",
+            "on-primary-container": "#f4fffc",
+            "background": "#faf9f6",
+            "outline": "#6d7a77",
+            "on-background": "#1a1c1a",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#fffbff",
+            "surface-dim": "#dbdad7",
+            "on-primary-fixed": "#00201d",
+            "primary-fixed": "#89f5e7",
+            "on-surface-variant": "#3d4947",
+            "on-secondary-fixed": "#131b2e",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-primary": "#6bd8cb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-2xl": "4rem",
+            "gutter-md": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-md": "2rem",
+            "margin": "1.25rem",
+            "space-xl": "2.5rem",
+            "gutter": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "margin-lg": "3.5rem",
+            "gutter-lg": "2rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["EB Garamond"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["EB Garamond"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["EB Garamond"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"]
+          },
+          "fontSize": {
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["1.5rem", { "lineHeight": "1.875rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero": ["3.5rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-caps": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.14em", "fontWeight": "700" }],
+            "display-hero-mobile": ["2.5rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.125rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.625rem", "letterSpacing": "-0.015em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pillowed-card {
+      background-color: #ffffff;
+      border: 1px solid #eae6df;
+      box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(13, 148, 122, 0.03);
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1rem);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary/20 selection:text-primary">
+<!-- ==================== TOP APP BAR (Shared Component) ==================== -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-margin w-full max-w-7xl mx-auto h-16 bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Ibagué, Tolima</span>
+</div>
+<div class="text-center">
+<span class="font-headline-md text-headline-md text-primary tracking-tight font-medium">Turquesa Cejas y Pestañas</span>
+</div>
+<div>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-1.5 rounded-full shadow-sm hover:bg-primary-container active:scale-[0.98] transition-all" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20quiero%20agendar%20mi%20cita%20de%20micropigmentacion" rel="noopener noreferrer" target="_blank">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+<main class="pt-16 pb-28 w-full max-w-xl mx-auto overflow-hidden">
+<!-- ==================== 1. HERO SECTION (ATENCIÓN) ==================== -->
+<section class="px-margin pt-space-lg pb-space-xl flex flex-col items-center text-center">
+<!-- Top Authority Badge -->
+<div class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 shadow-sm mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-base" data-icon="workspace_premium" data-weight="fill" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">Campeona Latinoamericana de Micropigmentación · Ibagué</span>
+</div>
+<!-- Hero Title -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-space-sm font-normal leading-tight">
+        Despierta con cejas perfectas cada día, <span class="italic text-primary">sin maquillarte un solo minuto</span>
+</h1>
+<!-- Persuasive Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-space-lg">
+        Micropigmentación de autor y visagismo personalizado con técnica exclusiva NAM Shadow Brows por Nathaly Medina en Ibagué. Naturalidad impecable con duración de hasta 2 años.
+      </p>
+<!-- Editorial Hero Visual using https://lh3.googleusercontent.com/aida/AEtjO1XGPagj6hOJEKmonmaLvxHzL3xdkPeRfDqEH-G5JB3ykTTUHKPFyNvC1gpAmz6sxj92KTnqAIdW3tpLo4xZJul1yIdEnFmgpKJgb5Rd2xBEymjXBdp74yOWokxhwB8EiiyDSbk3VlLGq80r5N7jfE5XYXDc5gLmVeqC79_Tn6HC96iOqccjo8xs0TlMxHWi-9PokXsXQsao-VwkJxBB_Yt-awWBeZ6vQjs1flhPimTeZAloPy8ehiV0cd8 -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden pillowed-card mb-space-lg group">
+<img alt="Nathaly Medina Micropigmentación Turquesa Cejas y Pestañas Ibagué" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XGPagj6hOJEKmonmaLvxHzL3xdkPeRfDqEH-G5JB3ykTTUHKPFyNvC1gpAmz6sxj92KTnqAIdW3tpLo4xZJul1yIdEnFmgpKJgb5Rd2xBEymjXBdp74yOWokxhwB8EiiyDSbk3VlLGq80r5N7jfE5XYXDc5gLmVeqC79_Tn6HC96iOqccjo8xs0TlMxHWi-9PokXsXQsao-VwkJxBB_Yt-awWBeZ6vQjs1flhPimTeZAloPy8ehiV0cd8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Floating Artist Accreditation Badge -->
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-lg bg-surface/95 backdrop-blur-md border border-surface-container-high flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 text-left">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
+              NM
+            </div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-none mb-0.5">Nathaly Medina</p>
+<p class="font-label-md text-label-md text-primary leading-none">Master PMU Ibagué · Certificada</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Primary Mobile CTA -->
+<div class="w-full flex flex-col gap-2">
+<a class="w-full py-3.5 px-space-lg rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20quiero%20agendar%20mi%20cita%20de%20micropigmentacion" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+          Agendar mi cita por WhatsApp
+        </a>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center justify-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Respuesta inmediata en horario de atención · Asesoría personalizada
+        </p>
+</div>
+<!-- Quick Trust Micro-Badges Grid -->
+<div class="grid grid-cols-2 gap-2 w-full mt-space-lg">
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/20 text-left">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-md text-label-md text-on-surface">Técnica NAM Shadow Brows</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/20 text-left">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="groups">groups</span>
+<span class="font-label-md text-label-md text-on-surface">38K seguidoras en Instagram</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/20 text-left">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="military_tech">military_tech</span>
+<span class="font-label-md text-label-md text-on-surface">WULOP 2023 Mejor Puntaje</span>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low border border-outline-variant/20 text-left">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="palette">palette</span>
+<span class="font-label-md text-label-md text-on-surface">ProTeam Hanafy Colours</span>
+</div>
+</div>
+</section>
+<!-- ==================== 2. INTERÉS (PROBLEMA & SOLUCIÓN ÁGIL) ==================== -->
+<section class="px-margin py-space-lg">
+<!-- Pain Point Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/30 mb-space-xl relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 text-surface-container opacity-60 pointer-events-none">
+<span class="material-symbols-outlined text-8xl" data-icon="chat_error">chat_error</span>
+</div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 text-tertiary mb-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>Experiencia Sin Fricción</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2 font-normal">
+            ¿Cansada de coordinar tu cita por DM de Instagram?
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Es la campeona latinoamericana con 38K seguidoras, pero sin agenda fluida cada cita se pelea por DM esperando horas y sin claridad en precios. En <span class="font-semibold text-primary">Turquesa</span> simplificamos todo para que tu única preocupación sea disfrutar tu cambio.
+          </p>
+</div>
+</div>
+<!-- 3-Step Simple Process -->
+<div class="mb-space-xl">
+<div class="text-center mb-space-md">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">PROCESO RÁPIDO &amp; CÓMODO</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-normal">Tu cita perfecta en 3 simples pasos</h3>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Step 1 -->
+<div class="p-4 rounded-xl pillowed-card flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-headline-md text-lg flex items-center justify-center shrink-0">
+              01
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Escribes por WhatsApp</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Contacto directo en un solo toque sin esperar días en DM de Instagram.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-4 rounded-xl pillowed-card flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary font-headline-md text-lg flex items-center justify-center shrink-0">
+              02
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Valoración y visagismo personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Análisis anatómico minucioso de tu rostro, tono cutáneo y simetría natural.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-4 rounded-xl pillowed-card flex items-start gap-4 border-l-4 border-l-primary">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-md text-lg flex items-center justify-center shrink-0">
+              03
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Cita confirmada con NAM Shadow Brows</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Procedimiento indoloro con pigmentos biocompatibles Hanafy y durabilidad de hasta 2 años.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 3. DESEO (SERVICIOS, SOCIAL PROOF & BADGES) ==================== -->
+<section class="px-margin py-space-lg bg-surface-container-lowest/60 border-y border-outline-variant/30">
+<!-- Section Headline -->
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">STUDIO BOUTIQUE</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-normal">Servicios Signature de Alta Gama</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Especialidades diseñadas para realzar tu belleza orgánica</p>
+</div>
+<!-- Service Cards Grid -->
+<div class="flex flex-col gap-4 mb-space-xl">
+<!-- Service 1: NAM Shadow Brows (Hero Service) -->
+<div class="p-5 rounded-xl pillowed-card relative overflow-hidden border-2 border-primary/40">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps tracking-wider">
+              TÉCNICA INSIGNIA
+            </span>
+<span class="font-label-md text-label-md text-tertiary">Hasta 24 meses</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Micropigmentación NAM Shadow Brows</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Efecto empolvado y degradé sedoso creado por Nathaly Medina. Definición sofisticada sin saturación, adaptada al visagismo exacto de tus facciones.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+<span class="font-headline-sm text-headline-sm text-primary">Atención de Autor</span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold hover:underline" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20deseo%20informacion%20de%20NAM%20Shadow%20Brows" target="_blank">
+              Consultar detalles <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Service 2: Microblading -->
+<div class="p-5 rounded-xl pillowed-card">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">HIPERREALISMO</span>
+<span class="font-label-md text-label-md text-secondary">12 a 18 meses</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Microblading Pelo a Pelo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Trazos milimétricos que replican fielmente la dirección y grosor de tu vello natural para rellenar vacíos y aportar densidad estética.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-on-surface-variant">Durabilidad media</span>
+<a class="font-label-md text-label-md text-primary font-semibold" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20deseo%20informacion%20de%20Microblading" target="_blank">Consultar</a>
+</div>
+</div>
+<!-- Service 3: Extensiones y Lifting -->
+<div class="p-5 rounded-xl pillowed-card">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">MIRADA VOGUE</span>
+<span class="font-label-md text-label-md text-secondary">Efecto lift</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Extensiones de Pestañas &amp; Lifting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Fibras ultra ligeras que no dañan tu pestaña biológica. Apertura visual limpia, curvatura personalizada y descanso ocular diario.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-on-surface-variant">Mantenimiento c/3 semanas</span>
+<a class="font-label-md text-label-md text-primary font-semibold" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20deseo%20informacion%20de%20Pestañas" target="_blank">Consultar</a>
+</div>
+</div>
+<!-- Service 4: Faciales & Corporales -->
+<div class="p-5 rounded-xl pillowed-card">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">SKINCARE CLÍNICO</span>
+<span class="font-label-md text-label-md text-secondary">Boutique</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Servicios Faciales &amp; Corporales</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Limpiezas profundas hidrodermoabrasivas, aparatología no invasiva y nutrición dermo-activa para una piel luminosa antes de tu PMU.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-on-surface-variant">Sesiones de 60-90 min</span>
+<a class="font-label-md text-label-md text-primary font-semibold" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20deseo%20informacion%20de%20Faciales" target="_blank">Consultar</a>
+</div>
+</div>
+<!-- Service 5: Master Classes & Formación PMU -->
+<div class="p-5 rounded-xl pillowed-card bg-surface-container-low border border-tertiary-fixed-dim/40">
+<div class="flex justify-between items-start mb-2">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps tracking-wider">
+              ACADEMIA PROFESIONAL
+            </span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Cupos Limitados</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Master Classes &amp; Formación PMU</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+            Aprende la técnica galardonada internacionalmente directamente de Nathaly Medina. Certificación oficial para artistas que buscan subir de nivel.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-tertiary">Modalidad Presencial</span>
+<a class="font-label-md text-label-md text-tertiary font-semibold" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20quiero%20informacion%20de%20las%20Master%20Classes" target="_blank">Ver Programa</a>
+</div>
+</div>
+</div>
+<!-- Trust Metrics Bento -->
+<div class="grid grid-cols-2 gap-3 mb-space-xl">
+<div class="p-4 rounded-xl bg-surface-container-low text-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary block font-medium">38K+</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Comunidad en Instagram</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low text-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary block font-medium">WULOP '23</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Mejor Puntaje Latam</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low text-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary block font-medium">Hanafy</span>
+<span class="font-label-md text-label-md text-on-surface-variant">ProTeam Oficial</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low text-center">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary block font-medium">+4.000</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Procedimientos Ibagué</span>
+</div>
+</div>
+<!-- Editorial Testimonial Card -->
+<div class="p-5 rounded-xl pillowed-card border-l-4 border-l-tertiary">
+<div class="flex items-center gap-1 text-tertiary mb-2">
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold ml-1">5.0 Verificado</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface mb-3 font-normal">
+          "Después del NAM Shadow Brows mis cejas se ven perfectas todos los días, sin maquillarme ni un minuto. Nathaly es una artista impecable."
+        </blockquote>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Laura G.</span>
+<span class="font-label-md text-label-md">Ibagué, Colombia</span>
+</div>
+</div>
+<!-- Certifications / Authority Strip -->
+<div class="mt-space-lg flex flex-wrap items-center justify-center gap-4 text-on-surface-variant">
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="military_tech">military_tech</span>
+          ILEV Congress Champion
+        </div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="gavel">gavel</span>
+          Juez Internacional PMU
+        </div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="sanitizer">sanitizer</span>
+          Pigmentos Biocompatibles
+        </div>
+</div>
+</section>
+<!-- ==================== 4. ACCIÓN (CONVERSIÓN DIRECTA & FAQ) ==================== -->
+<section class="px-margin py-space-xl">
+<!-- Section Title -->
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary tracking-widest">RESERVA INMEDIATA</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-normal">Agenda tu Experiencia Turquesa</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Completa los datos y te contactaremos por WhatsApp al instante</p>
+</div>
+<!-- Agile Mobile Booking Form -->
+<form class="p-space-lg rounded-xl pillowed-card flex flex-col gap-4 mb-space-lg" id="bookingForm" onsubmit="event.preventDefault(); submitBooking();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="fullName">Nombre completo</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="fullName" name="fullName" placeholder="Ej: Carolina Morales" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="whatsappNumber">Número de WhatsApp</label>
+<input class="w-full h-12 px-3.5 rounded-lg bg-surface border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="whatsappNumber" name="whatsappNumber" placeholder="Ej: 316 044 4382" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="serviceInterest">Servicio de interés</label>
+<select class="w-full h-12 px-3.5 rounded-lg bg-surface border border-outline-variant/40 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="serviceInterest" name="serviceInterest">
+<option value="NAM Shadow Brows">Micropigmentación NAM Shadow Brows (Técnica Insignia)</option>
+<option value="Microblading">Microblading Pelo a Pelo</option>
+<option value="Pestañas y Lifting">Extensiones de Pestañas &amp; Lifting</option>
+<option value="Servicios Faciales">Servicios Faciales &amp; Corporales</option>
+<option value="Master Class PMU">Master Class &amp; Formación Profesional</option>
+</select>
+</div>
+<button class="w-full h-13 py-3 px-space-md rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all mt-2" type="submit">
+<span>Agendar mi cita</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant font-label-md text-label-md text-center mt-1">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="lock">lock</span>
+<span>Privacidad médica y reserva confidencial garantizada</span>
+</div>
+</form>
+<!-- Direct Instant Alternative Button -->
+<div class="text-center mb-space-2xl">
+<a class="inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full border border-tertiary text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition-all" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20deseo%20atencion%20inmediata%20para%20agendar" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary text-base" data-icon="forum">forum</span>
+          ¿Prefieres respuesta inmediata? Chatea al WhatsApp +57 316 044 4382
+        </a>
+</div>
+<!-- FAQ Interactive Section -->
+<div class="mb-space-xl">
+<div class="text-center mb-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface font-normal">Preguntas Frecuentes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Claridad y tranquilidad antes de tu sesión</p>
+</div>
+<div class="flex flex-col gap-2.5" id="faqAccordion">
+<!-- FAQ 1 -->
+<div class="rounded-xl pillowed-card overflow-hidden">
+<button class="w-full p-4 text-left font-headline-sm text-headline-sm text-on-surface flex justify-between items-center gap-2" onclick="toggleFaq(this)" type="button">
+<span>¿Duele el procedimiento de NAM Shadow Brows?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/10 pt-2">
+              No. Aplicamos un protocolo de confort tópico anestésico de grado médico certificado antes y durante la micropigmentación. La mayoría de nuestras clientas experimentan una ligera vibración indolora e incluso se relajan durante la sesión.
+            </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-xl pillowed-card overflow-hidden">
+<button class="w-full p-4 text-left font-headline-sm text-headline-sm text-on-surface flex justify-between items-center gap-2" onclick="toggleFaq(this)" type="button">
+<span>¿Cuánto dura el resultado final?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/10 pt-2">
+              El efecto empolvado NAM Shadow Brows tiene una duración de 18 a 24 meses, dependiendo del tipo de piel (seca, mixta o grasa) y del cuidado posterior. Los pigmentos de origen mineral Hanafy se degradan de forma noble sin virar a tonos indeseados.
+            </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-xl pillowed-card overflow-hidden">
+<button class="w-full p-4 text-left font-headline-sm text-headline-sm text-on-surface flex justify-between items-center gap-2" onclick="toggleFaq(this)" type="button">
+<span>¿Qué cuidados posteriores requiere?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/10 pt-2">
+              Durante los primeros 7 a 10 días se evita la exposición solar directa, saunas, piscinas y maquillaje sobre la zona intervenida. Al finalizar tu sesión te entregamos un kit exclusivo de cicatrización con instrucciones paso a paso.
+            </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ==================== FOOTER (Shared Component) ==================== -->
+<footer class="w-full px-margin py-space-xl flex flex-col items-center justify-center text-center gap-space-md mb-16 bg-surface-container-high border-t border-outline-variant/40">
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">Turquesa</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Studio Boutique de Micropigmentación &amp; Alta Estética</p>
+</div>
+<!-- Mandatory Footer Links from JSON -->
+<div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-on-surface-variant font-label-caps text-label-caps">
+<a class="hover:text-primary transition-colors duration-150" href="https://maps.google.com" target="_blank">Ibagué, Colombia</a>
+<span>·</span>
+<span class="text-tertiary">Wulop Champion 2023</span>
+<span>·</span>
+<span>ProTeam Hanafy</span>
+<span>·</span>
+<span class="text-primary font-semibold">NAM Shadow Brows</span>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-150" href="https://instagram.com/turquesa_cejasypestanas" rel="noopener noreferrer" target="_blank">@turquesa_cejasypestanas</a>
+</div>
+<!-- Mandatory Copyright Text from JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+      © 2024 Turquesa Cejas y Pestañas. Nathaly Medina PMU. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- ==================== BOTTOM NAV BAR (Shared Component) ==================== -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter py-2 pb-safe max-w-md mx-auto bg-surface/95 backdrop-blur-md shadow-lg">
+<!-- Item 1: Inicio (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-colors hover:text-primary active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+<span class="font-label-md text-label-md mt-0.5">Inicio</span>
+</a>
+<!-- Item 2: Servicios (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-colors hover:text-primary active:scale-95 transition-transform duration-150" href="#bookingForm">
+<span class="material-symbols-outlined text-xl" data-icon="style">style</span>
+<span class="font-label-md text-label-md mt-0.5">Servicios</span>
+</a>
+<!-- Item 3: Resultados (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant transition-colors hover:text-primary active:scale-95 transition-transform duration-150" href="#bookingForm">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-md text-label-md mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active: Conversion Page Target) -->
+<a class="flex flex-col items-center justify-center text-primary font-semibold scale-105 transition-all active:scale-95 transition-transform duration-150" href="https://wa.me/573160444382?text=Hola%20Turquesa,%20quiero%20agendar%20mi%20cita%20de%20micropigmentacion" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-md text-label-md mt-0.5">Agendar</span>
+</a>
+</nav>
+<!-- Vanilla JS Interactions -->
+<script>
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('[data-icon="expand_more"]');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close other opened FAQs in this accordion
+      document.querySelectorAll('#faqAccordion > div > div').forEach(div => div.classList.add('hidden'));
+      document.querySelectorAll('#faqAccordion button span[data-icon="expand_more"]').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    function submitBooking() {
+      const name = encodeURIComponent(document.getElementById('fullName').value.trim());
+      const service = encodeURIComponent(document.getElementById('serviceInterest').value);
+      const text = `Hola Turquesa, mi nombre es ${name}. Deseo agendar una cita para ${service} en su studio de Ibagué.`;
+      const url = `https://wa.me/573160444382?text=${text}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body></html>

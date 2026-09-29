@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dr. Paul Aguirre · Cirugía Plástica Bogotá</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#020f2b',
+            'midnight-dark': '#010817',
+            'night-surface': '#0c1529',
+            'night-card': '#111d38',
+            'night-border': 'rgba(255, 255, 255, 0.08)',
+            emerald: {
+              DEFAULT: '#008361',
+              bright: '#00a87d',
+              dark: '#005f46',
+              glow: 'rgba(0, 131, 97, 0.25)'
+            },
+            champagne: {
+              DEFAULT: '#d4af37',
+              light: '#f3e5ab',
+              dim: '#a8892d'
+            }
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .font-fraunces { font-family: 'Fraunces', serif; }
+    .glass-dark {
+      background: rgba(12, 21, 41, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .glass-card {
+      background: linear-gradient(180deg, rgba(17, 29, 56, 0.9) 0%, rgba(10, 19, 38, 0.95) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ffffff 30%, #e2d2a4 70%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .emerald-glow {
+      box-shadow: 0 0 25px rgba(0, 131, 97, 0.35);
+    }
+    .smooth-shadow {
+      box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-[#020f2b] text-slate-200 font-sans antialiased min-h-screen selection:bg-emerald/30 selection:text-white pb-28">
+
+  <!-- TOP APP BAR / BRAND HEADER -->
+  <header class="sticky top-0 z-50 glass-dark border-b border-night-border px-5 py-3.5 flex items-center justify-between">
+    <div>
+      <div class="flex items-center gap-1.5">
+        <span class="font-fraunces text-lg tracking-tight font-semibold text-white">Dr. Paul Aguirre</span>
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald"></span>
+      </div>
+      <p class="text-[10px] tracking-wider text-slate-400 uppercase font-medium">Cirugía Plástica · SCCP Bogotá</p>
+    </div>
+    
+    <div class="flex items-center gap-2">
+      <span class="px-2 py-0.5 rounded text-[10px] font-semibold tracking-wide bg-emerald/15 text-emerald-bright border border-emerald/30">
+        EN / ES
+      </span>
+      <a href="https://wa.me/573104659976?text=Hola%20Dr.%20Aguirre,%20quiero%20una%20consulta" 
+         target="_blank" 
+         class="flex items-center gap-1 text-xs font-semibold text-white bg-emerald hover:bg-emerald-bright transition-colors px-3 py-1.5 rounded-full shadow-sm active:scale-95">
+        <span class="material-symbols-outlined text-[14px]">chat</span>
+        <span>Consulta</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-md mx-auto px-4 pt-4 space-y-6">
+
+    <!-- 1. ATENCIÓN (HERO) -->
+    <section class="relative pt-2">
+      <!-- Badge de Autoridad -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-night-card border border-emerald/40 text-emerald-bright text-xs font-medium mb-4">
+        <span class="material-symbols-outlined text-[15px] text-emerald-bright">verified</span>
+        <span>Cirujano Certificado SCCP · Bogotá</span>
+      </div>
+
+      <!-- Titular de Beneficio en Fraunces -->
+      <h1 class="font-fraunces text-[32px] leading-[1.15] font-light text-white tracking-tight mb-3">
+        El arte de la cirugía plástica que <span class="italic font-normal gold-gradient-text">no se ve operada</span>.
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="text-sm leading-relaxed text-slate-300 font-light mb-5">
+        Especialista en <strong class="text-white font-medium">Deep Plane Facelift</strong>, rejuvenecimiento facial y contorno corporal de precisión milimétrica en Bogotá para pacientes exigentes de Colombia y el mundo.
+      </p>
+
+      <!-- FOTO PRINCIPAL HERO -->
+      <div class="relative rounded-2xl overflow-hidden border border-night-border mb-5 smooth-shadow group">
+        <img 
+          src="https://lh3.googleusercontent.com/aida/AEtjO1WPEl_fsI0Rnfev0eHepHbHClzHAR-YBedrJ_fkHZAWmmP0K-XSfrUu3W4hD92BE6e6eWUxuI8ww-X_C6NGwNms4QUm-Hwe4V3mLBSGwO7Q96tGFDRXezJvYwzKO_ZZNO1qnANDsvEs8_ile2qH-rb5Wm4aXE8YL9b4zhI8Z0nTlQJnPHUxpJ0A9nsCZNb64b173ITklWnNB7Qu_vO7XRducamE8w_7WnxsmHl3YfNsR_WSlrtemwE7iOs" 
+          alt="Resultado de rejuvenecimiento facial Deep Plane con el Dr. Paul Aguirre" 
+          class="w-full h-[380px] object-cover object-top"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent opacity-85"></div>
+        
+        <!-- Badge flotante sobre la foto -->
+        <div class="absolute bottom-3 left-3 right-3 glass-dark border border-white/10 rounded-xl p-3 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-emerald/20 flex items-center justify-center border border-emerald/40">
+              <span class="material-symbols-outlined text-emerald-bright text-[18px]">spa</span>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-white tracking-tight">Deep Plane Facelift</p>
+              <p class="text-[10px] text-slate-300">Preservación natural de vectores faciales</p>
+            </div>
+          </div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-champagne">Atelier</span>
+        </div>
+      </div>
+
+      <!-- ÚNICO CTA PRINCIPAL AIDA -->
+      <div class="space-y-3">
+        <a href="https://wa.me/573104659976?text=Hola%20Dr.%20Aguirre,%20quiero%20una%20consulta"
+           target="_blank"
+           class="w-full flex items-center justify-center gap-2 bg-emerald hover:bg-emerald-bright text-white font-semibold text-base py-4 px-6 rounded-xl emerald-glow active:scale-[0.98] transition-all duration-200">
+          <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+          <span>Agendar consulta virtual o presencial</span>
+        </a>
+
+        <!-- Micro-credenciales y badges de confort -->
+        <div class="flex items-center justify-between text-[11px] text-slate-400 px-1 pt-1 font-normal">
+          <span class="flex items-center gap-1">
+            <span class="material-symbols-outlined text-emerald text-[14px]">check_circle</span>
+            Atención en español & English
+          </span>
+          <span class="flex items-center gap-1">
+            <span class="material-symbols-outlined text-emerald text-[14px]">flight</span>
+            International patients welcome
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="grid grid-cols-3 gap-2 pt-4">
+        <div class="glass-card p-3 rounded-xl text-center border border-night-border">
+          <p class="font-fraunces text-lg text-white font-medium">SCCP</p>
+          <p class="text-[10px] text-slate-400 uppercase tracking-wider">Miembro de Número</p>
+        </div>
+        <div class="glass-card p-3 rounded-xl text-center border border-night-border">
+          <p class="font-fraunces text-lg text-emerald-bright font-medium">+15 Años</p>
+          <p class="text-[10px] text-slate-400 uppercase tracking-wider">Experiencia Quirúrgica</p>
+        </div>
+        <div class="glass-card p-3 rounded-xl text-center border border-night-border">
+          <p class="font-fraunces text-lg text-champagne font-medium">100%</p>
+          <p class="text-[10px] text-slate-400 uppercase tracking-wider">Rigor Anatómico</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. INTERÉS (EL DOLOR REAL & RUTA TRANSPARENTE EN 3 PASOS) -->
+    <section class="glass-card rounded-2xl p-5 border border-night-border space-y-4">
+      <!-- Tag / Eyebrow -->
+      <div class="inline-flex items-center gap-1.5 text-champagne text-[11px] font-semibold uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[14px]">travel_explore</span>
+        <span>Claridad Quirúrgica Internacional</span>
+      </div>
+
+      <!-- Nombramiento del dolor real según especificación exacta -->
+      <h2 class="font-fraunces text-xl text-white font-normal leading-snug">
+        ¿Planeando tu cirugía desde el exterior sin saber por dónde empezar?
+      </h2>
+      
+      <div class="p-3.5 rounded-xl bg-midnight-dark/80 border-l-2 border-champagne text-xs leading-relaxed text-slate-300">
+        <p class="italic text-slate-200">
+          "El paciente internacional compara cirujanos desde afuera: quiere ver casos antes/después, precios orientativos y un flujo de consulta virtual claro <strong class="text-white">ANTES de volar a Bogotá</strong>. Hoy esa ruta suele quedar atrapada en el chat y el interesado se queda sin claridad médica."
+        </p>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed font-light">
+        En el atelier del Dr. Paul Aguirre diseñamos un protocolo predictivo, seguro y confidencial que elimina la incertidumbre desde el día uno:
+      </p>
+
+      <!-- Proceso en 3 pasos -->
+      <div class="space-y-3 pt-1">
+        <!-- Paso 01 -->
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-night-surface/60 border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-emerald/20 text-emerald-bright font-fraunces font-bold flex items-center justify-center text-sm shrink-0 border border-emerald/30">
+            01
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white">Consulta virtual directa con el doctor</h3>
+            <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+              Valoración fotográfica y videollamada bilingüe donde evaluamos tus vectores anatómicos y expectativas reales.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-night-surface/60 border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-emerald/20 text-emerald-bright font-fraunces font-bold flex items-center justify-center text-sm shrink-0 border border-emerald/30">
+            02
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white">Plan quirúrgico con presupuesto orientativo</h3>
+            <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+              Recibes un dossier clínico personalizado con tiempos de recuperación, días de estancia requeridos en Bogotá y costos sin sorpresas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="flex items-start gap-3 p-3 rounded-xl bg-night-surface/60 border border-white/5">
+          <div class="w-8 h-8 rounded-lg bg-emerald/20 text-emerald-bright font-fraunces font-bold flex items-center justify-center text-sm shrink-0 border border-emerald/30">
+            03
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-white">Cirugía en Bogotá con acompañamiento bilingüe</h3>
+            <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+              Intervención en clínicas de cuarto nivel acreditadas, asistencia concierge, enfermería privada y seguimiento postoperatorio continuo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESEO (BENEFICIOS, ESPECIALIDADES Y TESTIMONIO) -->
+    <section class="space-y-4">
+      <div class="text-center px-2">
+        <span class="text-emerald-bright text-[11px] font-semibold uppercase tracking-widest">Excelencia Anatómica</span>
+        <h2 class="font-fraunces text-2xl text-white font-light mt-1">Especialidades Signature de Autor</h2>
+        <p class="text-xs text-slate-400 mt-1">Resultados naturales que armonizan tu identidad sin cambiar tus rasgos.</p>
+      </div>
+
+      <!-- Especialidad 1: Deep Plane Facelift -->
+      <div class="glass-card rounded-2xl overflow-hidden border border-night-border p-4 space-y-3">
+        <div class="flex items-center justify-between border-b border-white/5 pb-2.5">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-emerald-bright text-[20px]">biotech</span>
+            <h3 class="font-fraunces text-base text-white font-medium">Deep Plane Facelift</h3>
+          </div>
+          <span class="text-[10px] font-bold text-champagne bg-champagne/10 px-2 py-0.5 rounded border border-champagne/30">PÉNDULO JUVENIL</span>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed font-light">
+          Reposicionamiento anatómico de los ligamentos y capas musculares profundas (SMAS). <strong class="text-white">Cero tensión en la piel</strong>, cicatrices imperceptibles y una frescura que perdura por más de una década sin efecto estirado.
+        </p>
+        <div class="flex items-center gap-4 text-[11px] text-slate-400 pt-1">
+          <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald"></span>Lifting cervicofacial</span>
+          <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald"></span>Preservación nerviosa</span>
+        </div>
+      </div>
+
+      <!-- Especialidades adicionales en grid 2 cols -->
+      <div class="grid grid-cols-2 gap-3">
+        <div class="glass-card p-3.5 rounded-xl border border-night-border space-y-1.5">
+          <div class="w-7 h-7 rounded-lg bg-emerald/20 flex items-center justify-center text-emerald-bright mb-2">
+            <span class="material-symbols-outlined text-[16px]">local_hospital</span>
+          </div>
+          <h4 class="text-xs font-semibold text-white">Cirugía de Senos</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed font-light">Mamoplastia de aumento, reducción y mastopexia con proporciones armónicas.</p>
+        </div>
+
+        <div class="glass-card p-3.5 rounded-xl border border-night-border space-y-1.5">
+          <div class="w-7 h-7 rounded-lg bg-emerald/20 flex items-center justify-center text-emerald-bright mb-2">
+            <span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+          </div>
+          <h4 class="text-xs font-semibold text-white">Contorno Corporal</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed font-light">Lipoescultura de alta definición, abdominoplastia y mommy makeover seguro.</p>
+        </div>
+
+        <div class="glass-card p-3.5 rounded-xl border border-night-border space-y-1.5">
+          <div class="w-7 h-7 rounded-lg bg-emerald/20 flex items-center justify-center text-emerald-bright mb-2">
+            <span class="material-symbols-outlined text-[16px]">favorite</span>
+          </div>
+          <h4 class="text-xs font-semibold text-white">Cirugía Íntima</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed font-light">Labioplastia y procedimientos reconstructivos con máxima confidencialidad médica.</p>
+        </div>
+
+        <div class="glass-card p-3.5 rounded-xl border border-night-border space-y-1.5">
+          <div class="w-7 h-7 rounded-lg bg-emerald/20 flex items-center justify-center text-emerald-bright mb-2">
+            <span class="material-symbols-outlined text-[16px]">face</span>
+          </div>
+          <h4 class="text-xs font-semibold text-white">Rejuvenecimiento Facial</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed font-light">Blefaroplastia estructural, lipolifting y suspensión de tercio medio.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Confianza y Acreditación -->
+      <div class="glass-card p-4 rounded-2xl border border-emerald/30 bg-gradient-to-r from-night-card to-night-surface flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-emerald/20 border border-emerald/40 flex items-center justify-center text-emerald-bright shrink-0">
+          <span class="material-symbols-outlined text-[24px]">verified_user</span>
+        </div>
+        <div>
+          <h4 class="text-xs font-semibold text-white">Certificado SCCP & Quirófanos Nivel IV</h4>
+          <p class="text-[11px] text-slate-400 leading-tight mt-0.5">
+            Intervenciones realizadas exclusivamente en instituciones hospitalarias certificadas de Bogotá con equipo anestésico y de enfermería de élite.
+          </p>
+        </div>
+      </div>
+
+      <!-- TESTIMONIO VERIFICADO (Andrea M. - Miami) -->
+      <div class="glass-card p-4 rounded-2xl border border-night-border relative overflow-hidden">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex text-champagne text-xs">
+            ★★★★★
+          </div>
+          <span class="text-[10px] text-emerald-bright font-semibold tracking-wider uppercase bg-emerald/10 px-2 py-0.5 rounded border border-emerald/20">
+            Paciente Internacional
+          </span>
+        </div>
+
+        <blockquote class="font-fraunces italic text-sm text-slate-200 leading-relaxed mb-3">
+          “Coordiné todo mi facelift por videollamada desde Estados Unidos. Llegué a Bogotá con el plan quirúrgico completamente listo, me recibieron con una calidez impecable y el resultado superó cualquier expectativa: me veo fresca y nadie nota que fui operada.”
+        </blockquote>
+
+        <div class="flex items-center gap-3 pt-2 border-t border-white/5">
+          <div class="w-8 h-8 rounded-full bg-emerald/30 text-white font-fraunces font-bold flex items-center justify-center text-xs border border-emerald/40">
+            AM
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-white">Andrea M. — Miami, FL</p>
+            <p class="text-[10px] text-slate-400">Deep Plane Facelift & Rejuvenecimiento Cervicofacial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ACCIÓN (FORMULARIO DE 3 CAMPOS + WHATSAPP DIRECTO) -->
+    <section id="agenda" class="glass-card rounded-2xl p-5 border border-emerald/40 smooth-shadow relative">
+      <div class="text-center mb-4">
+        <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald/20 text-emerald-bright text-[10px] font-semibold uppercase tracking-wider mb-2 border border-emerald/30">
+          Cupos Limitados este mes
+        </span>
+        <h2 class="font-fraunces text-2xl text-white font-normal">Solicita tu Valoración</h2>
+        <p class="text-xs text-slate-300 mt-1 font-light">
+          Completa tus datos para coordinar tu consulta virtual o presencial con el Dr. Paul Aguirre.
+        </p>
+      </div>
+
+      <form class="space-y-3.5" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573104659976?text=Hola%20Dr.%20Aguirre,%20quiero%20una%20consulta';">
+        <!-- Campo 1: Nombre -->
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Nombre completo *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">person</span>
+            <input 
+              type="text" 
+              required
+              placeholder="Ej. Carolina Gómez o Michael Smith"
+              class="w-full bg-midnight-dark/90 border border-white/10 rounded-xl py-2.5 pl-10 pr-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald transition-colors"
+            />
+          </div>
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Número de WhatsApp o Móvil *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">call</span>
+            <input 
+              type="tel" 
+              required
+              placeholder="+1 (USA) o +57 (COL) 300 000 0000"
+              class="w-full bg-midnight-dark/90 border border-white/10 rounded-xl py-2.5 pl-10 pr-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald transition-colors"
+            />
+          </div>
+        </div>
+
+        <!-- Campo 3: Procedimiento de interés -->
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Procedimiento de interés *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">medical_services</span>
+            <select 
+              required
+              class="w-full bg-midnight-dark/90 border border-white/10 rounded-xl py-2.5 pl-10 pr-8 text-xs text-white focus:outline-none focus:border-emerald appearance-none transition-colors">
+              <option value="" disabled selected>Selecciona tu procedimiento...</option>
+              <option value="facelift">Deep Plane Facelift</option>
+              <option value="senos">Cirugía de Senos (Aumento / Reducción / Mastopexia)</option>
+              <option value="corporal">Contorno Corporal / Lipoescultura</option>
+              <option value="intima">Cirugía Íntima</option>
+              <option value="otro">Rejuvenecimiento Facial / Otro procedimiento</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-3 text-slate-400 pointer-events-none text-[18px]">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Botón Solicitar mi consulta -->
+        <button 
+          type="submit"
+          class="w-full flex items-center justify-center gap-2 bg-emerald hover:bg-emerald-bright text-white font-semibold text-sm py-3.5 px-4 rounded-xl emerald-glow active:scale-[0.98] transition-all duration-200 mt-2">
+          <span>Solicitar mi consulta</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </button>
+
+        <!-- Aviso de Privacidad -->
+        <p class="text-[10px] text-center text-slate-400 pt-1 flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-[13px] text-emerald">lock</span>
+          Confidencialidad médica y secreto profesional garantizados.
+        </p>
+
+        <!-- Separador -->
+        <div class="relative flex items-center justify-center my-3">
+          <div class="border-t border-white/10 w-full"></div>
+          <span class="bg-night-card px-2 text-[10px] uppercase tracking-wider text-slate-400 font-medium">O si prefieres</span>
+        </div>
+
+        <!-- Alternativa WhatsApp Directo -->
+        <a href="https://wa.me/573104659976?text=Hola%20Dr.%20Aguirre,%20quiero%20una%20consulta"
+           target="_blank"
+           class="w-full flex items-center justify-center gap-2 bg-night-surface hover:bg-white/5 border border-emerald/50 text-emerald-bright font-medium text-xs py-3 px-4 rounded-xl transition-colors">
+          <span class="material-symbols-outlined text-[16px] text-emerald-bright">chat</span>
+          <span>Chatear directo por WhatsApp: +57 310 465 9976</span>
+        </a>
+      </form>
+    </section>
+
+    <!-- FAQ RÁPIDO PARA RESOLVER OBJECIONES -->
+    <section class="space-y-3">
+      <h3 class="font-fraunces text-base text-white text-center">Preguntas Frecuentes</h3>
+      
+      <div class="glass-card p-3 rounded-xl border border-night-border space-y-1">
+        <p class="text-xs font-semibold text-white">¿Cómo funciona la consulta virtual desde fuera de Colombia?</p>
+        <p class="text-[11px] text-slate-300 font-light leading-relaxed">
+          Se agenda mediante WhatsApp. Envías fotografías clínicas de referencia bajo guía confidencial y realizamos una videollamada personalizada con el Dr. Aguirre para definir viabilidad, técnica y presupuesto formal.
+        </p>
+      </div>
+
+      <div class="glass-card p-3 rounded-xl border border-night-border space-y-1">
+        <p class="text-xs font-semibold text-white">¿Cuántos días debo permanecer en Bogotá?</p>
+        <p class="text-[11px] text-slate-300 font-light leading-relaxed">
+          Para procedimientos de rejuvenecimiento facial o contorno corporal recomendamos entre 10 y 14 días para los controles de retiro de puntos y drenaje linfático asistido.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="pt-6 pb-4 border-t border-night-border text-center space-y-3">
+      <div class="flex items-center justify-center gap-1.5">
+        <span class="font-fraunces text-base tracking-tight text-white font-medium">Dr. Paul Aguirre</span>
+      </div>
+      <p class="text-[11px] text-slate-400">
+        Cirugía Plástica Estética y Reconstructiva · Registro Médico Vigente<br>
+        Bogotá, D.C. — Colombia · <a href="https://drpaulaguirre.com" class="text-emerald-bright underline">drpaulaguirre.com</a>
+      </p>
+      <p class="text-[10px] text-slate-500 font-light">
+        Miembro de Número de la Sociedad Colombiana de Cirugía Plástica, Estética y Reconstructiva (SCCP).
+      </p>
+      <div class="flex items-center justify-center gap-4 text-[10px] text-slate-400 pt-1">
+        <span class="hover:text-white cursor-pointer">Aviso de Privacidad</span>
+        <span>•</span>
+        <span class="hover:text-white cursor-pointer">Consentimiento Informado</span>
+        <span>•</span>
+        <span class="hover:text-white cursor-pointer">Pacientes Internacionales</span>
+      </div>
+      <p class="text-[9px] text-slate-600">© 2025 Dr. Paul Aguirre. Todos los derechos reservados.</p>
+    </footer>
+
+  </main>
+
+  <!-- STICKY BOTTOM BAR (CONVERSIÓN DIRECTA MÓVIL) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 glass-dark border-t border-night-border p-3 flex items-center justify-between max-w-md mx-auto">
+    <div class="leading-tight">
+      <span class="text-[10px] text-champagne uppercase font-bold tracking-wider flex items-center gap-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald animate-pulse"></span>
+        Agenda VIP Abierta
+      </span>
+      <p class="text-xs font-semibold text-white">Dr. Paul Aguirre</p>
+    </div>
+    <a href="https://wa.me/573104659976?text=Hola%20Dr.%20Aguirre,%20quiero%20una%20consulta"
+       target="_blank"
+       class="flex items-center gap-1.5 bg-emerald hover:bg-emerald-bright text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-lg emerald-glow active:scale-95 transition-all">
+      <span class="material-symbols-outlined text-[16px]">chat</span>
+      <span>Agendar por WhatsApp</span>
+    </a>
+  </div>
+
+</body>
+</html>

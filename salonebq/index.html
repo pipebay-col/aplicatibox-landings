@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>SALONE Barranquilla · Alisados, Reconstrucción Capilar y Uñas</title>
+  
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            salone: {
+              cream: '#f7e7ce',
+              canvas: '#faf4eb',
+              card: '#ffffff',
+              cardtint: '#fcf8f2',
+              gold: '#e8c547',
+              golddark: '#b89620',
+              goldborder: 'rgba(232, 197, 71, 0.45)',
+              dark: '#1a1a1a',
+              muted: '#66615b',
+              softborder: 'rgba(26, 26, 26, 0.08)'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .gold-gradient-btn {
+      background: linear-gradient(135deg, #e8c547 0%, #caa428 100%);
+      color: #1a1a1a;
+      box-shadow: 0 8px 24px -4px rgba(232, 197, 71, 0.45);
+      transition: all 0.25s ease-in-out;
+    }
+    .gold-gradient-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px -2px rgba(232, 197, 71, 0.3);
+    }
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 24px -4px rgba(37, 211, 102, 0.35);
+      transition: all 0.25s ease-in-out;
+    }
+    .whatsapp-btn:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body class="bg-[#faf4eb] text-salone-dark font-sans antialiased selection:bg-salone-gold selection:text-salone-dark pb-24">
+
+  <!-- Mobile Frame Container (Strictly calibrated for mobile viewport ~390px - 420px max) -->
+  <div class="max-w-[420px] mx-auto min-h-screen bg-[#faf4eb] shadow-2xl relative flex flex-col border-x border-salone-softborder">
+    
+    <!-- 0. TOP BRAND BAR (Header editorial con logo SVG real y estado de atención) -->
+    <header class="sticky top-0 z-50 bg-[#faf4eb]/95 backdrop-blur-md border-b border-salone-softborder px-4 py-3">
+      <div class="flex items-center justify-between">
+        <!-- Logo de marca -->
+        <a href="#" class="flex items-center gap-2">
+          <div class="flex flex-col">
+            <span class="font-serif text-2xl font-bold tracking-[0.18em] text-salone-dark leading-none">SALONE</span>
+            <span class="text-[9px] font-bold tracking-[0.25em] text-salone-golddark uppercase mt-0.5">Barranquilla</span>
+          </div>
+        </a>
+
+        <!-- Badge Social Proof IG & WhatsApp Quick Action -->
+        <div class="flex items-center gap-2">
+          <a href="https://instagram.com/salone_bq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-semibold bg-salone-card px-2.5 py-1 rounded-full border border-salone-goldborder shadow-xs text-salone-dark">
+            <span class="w-1.5 h-1.5 rounded-full bg-salone-gold animate-pulse"></span>
+            <span>50K IG</span>
+          </a>
+          <a href="https://wa.me/576053854654?text=Hola%20SALONE%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#1a1a1a] text-salone-gold flex items-center justify-center shadow hover:opacity-90 active:scale-95 transition-transform" aria-label="Escribir por WhatsApp">
+            <span class="material-symbols-outlined text-[17px]">chat</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      
+      <!-- 1. ETAPA ATENCIÓN (HERO SECTION) -->
+      <section class="px-4 pt-5 pb-6 flex flex-col space-y-4 relative overflow-hidden bg-gradient-to-b from-[#faf4eb] via-[#f7e7ce]/40 to-[#faf4eb]">
+        <!-- Aura de brillo dorado sutil -->
+        <div class="absolute -top-16 -right-16 w-52 h-52 bg-salone-gold/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Badge de Autoridad -->
+        <div class="inline-flex items-center gap-1.5 self-start bg-salone-card border border-salone-goldborder px-3 py-1 rounded-full text-salone-dark text-[11px] font-semibold shadow-xs">
+          <span class="text-salone-golddark text-[12px] font-bold">✨</span>
+          <span>El salón de tendencias de Barranquilla · 50K en Instagram</span>
+        </div>
+
+        <!-- Titular Principal Serif Display (Estrictamente Cormorant / Playfair) -->
+        <div class="space-y-2">
+          <h1 class="font-serif text-[34px] leading-[1.12] font-bold text-salone-dark tracking-tight">
+            El pelo liso, brillante y <span class="italic font-normal text-salone-golddark underline decoration-salone-gold/60 decoration-2 underline-offset-4">reconstruido</span> que siempre soñaste
+          </h1>
+          <p class="text-[14px] text-salone-muted leading-relaxed font-normal">
+            Somos los mejores en alisados y reconstrucción capilar en Barranquilla. Terapia intensiva sin maltrato y uñas esculpidas impecables.
+          </p>
+        </div>
+
+        <!-- Imagen Editorial Hero de Alta Calidad -->
+        <div class="relative rounded-2xl overflow-hidden shadow-lg border border-salone-goldborder bg-salone-card group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGxY-anCsIZE4wZNJ2eZzXMzHGdg3ZWa6ZNoCto4-T5eX-hIBzqIDXPm3dKLFUuqa73iVwbHw6ivg33G9hXCzs9MZMUYO4YdSB9NyBeFe9ptjkb4SV0vHAElMQ37YZjqkmcNtDPU7r3ZMcoxo49utTncsm5C_Fu75LdlLQ8ty4VvfdUFT3NX28LchGxE-qz1Pt8pWnXPbUUueX3MqlXGE30u9-mcuVp1dHgEQ9uUOxDIq1VEkVt307UOyTDSbbADGctIsh9A1W2Q" alt="Resultado de alisado y reconstrucción capilar en Salone Barranquilla" class="w-full h-[320px] object-cover object-top transition duration-700 group-hover:scale-105"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-salone-dark/85 via-salone-dark/20 to-transparent"></div>
+          
+          <!-- Badge superpuesto en la foto -->
+          <div class="absolute bottom-3 left-3 right-3 bg-salone-card/95 backdrop-blur-md p-3 rounded-xl border border-salone-goldborder flex items-center justify-between shadow-md">
+            <div>
+              <p class="text-[10px] uppercase tracking-wider text-salone-golddark font-bold">Protocolo Exclusivo</p>
+              <h2 class="font-serif text-[15px] font-bold text-salone-dark leading-tight">Reconstrucción + Alisado Espejo</h2>
+            </div>
+            <div class="flex items-center gap-1 bg-[#faf4eb] px-2 py-1 rounded-lg border border-salone-softborder">
+              <span class="material-symbols-outlined text-salone-golddark text-[16px]">verified</span>
+              <span class="text-[11px] font-bold text-salone-dark">100% Cero Frizz</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UN SOLO CTA PRIMARIO (WhatsApp Directo con texto precargado) -->
+        <div class="pt-1 flex flex-col space-y-2.5">
+          <a href="https://wa.me/576053854654?text=Hola%20SALONE%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener noreferrer" class="gold-gradient-btn w-full py-4 px-5 rounded-2xl font-bold text-[16px] flex items-center justify-center gap-2.5 shadow-md">
+            <span class="material-symbols-outlined text-[20px]">calendar_today</span>
+            <span>Reservar mi turno</span>
+            <span class="material-symbols-outlined text-[20px] ml-auto">arrow_forward</span>
+          </a>
+
+          <!-- Micro-credenciales bajo el CTA -->
+          <div class="flex items-center justify-center gap-4 text-[11px] text-salone-muted font-medium pt-0.5">
+            <div class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-salone-golddark text-[14px]">check_circle</span>
+              <span>Confirmación inmediata</span>
+            </div>
+            <div class="w-1 h-1 rounded-full bg-salone-muted/40"></div>
+            <div class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-salone-golddark text-[14px]">star</span>
+              <span>Campeonas en alisado</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 2. ETAPA INTERÉS (NOMBRANDO EL DOLOR REAL + PROCESO 3 PASOS) -->
+      <section class="px-4 py-7 bg-salone-card border-y border-salone-softborder space-y-6">
+        
+        <!-- Tarjeta de Empatía con el Dolor Real -->
+        <div class="bg-[#faf4eb] rounded-2xl p-5 border border-salone-goldborder/70 relative">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-6 h-6 rounded-full bg-salone-gold/30 text-salone-dark flex items-center justify-center text-[12px] font-bold">!</span>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-salone-golddark">¿Te ha pasado esto al agendar?</span>
+          </div>
+          <h2 class="font-serif text-[21px] font-bold text-salone-dark leading-snug mb-2">
+            50.000 seguidoras y un TikTok viral, pero los turnos se peleaban por DM
+          </h2>
+          <p class="text-[13px] text-salone-muted leading-relaxed">
+            Sabemos lo molesto que es querer consentirte y no encontrar precios claros, perder días esperando una respuesta en Instagram o llegar a un salón y que te hagan esperar horas. En <strong class="text-salone-dark font-semibold">SALONE</strong> cambiamos la experiencia por completo:
+          </p>
+        </div>
+
+        <!-- Proceso en 3 Pasos Claros -->
+        <div class="space-y-3">
+          <div class="text-center space-y-1">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-salone-golddark">Tu turno garantizado</span>
+            <h3 class="font-serif text-[22px] font-bold text-salone-dark">Tu cita perfecta en 3 pasos</h3>
+          </div>
+
+          <div class="space-y-3 pt-1">
+            <!-- Paso 1 -->
+            <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-salone-cardtint border border-salone-softborder shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-salone-dark text-salone-gold font-serif text-[18px] font-bold flex items-center justify-center flex-shrink-0">
+                01
+              </div>
+              <div class="space-y-0.5">
+                <h4 class="text-[14px] font-bold text-salone-dark">Escribes por WhatsApp</h4>
+                <p class="text-[12px] text-salone-muted leading-relaxed">
+                  Con un solo toque accedes a nuestro canal prioritario con el servicio que deseas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-salone-cardtint border border-salone-softborder shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-salone-gold text-salone-dark font-serif text-[18px] font-bold flex items-center justify-center flex-shrink-0">
+                02
+              </div>
+              <div class="space-y-0.5">
+                <h4 class="text-[14px] font-bold text-salone-dark">Confirmas servicio, precio y hora al instante</h4>
+                <p class="text-[12px] text-salone-muted leading-relaxed">
+                  Diagnóstico rápido, cotización transparente sin sorpresas y tu horario reservado en agenda.
+                </p>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-salone-cardtint border border-salone-softborder shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-salone-dark text-salone-gold font-serif text-[18px] font-bold flex items-center justify-center flex-shrink-0">
+                03
+              </div>
+              <div class="space-y-0.5">
+                <h4 class="text-[14px] font-bold text-salone-dark">Llegas y te atendemos sin esperas</h4>
+                <p class="text-[12px] text-salone-muted leading-relaxed">
+                  Tu estilista especialista estará esperándote en nuestro salón premium para consentirte como te mereces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 3. ETAPA DESEO (BENEFICIOS DE RESULTADO + SERVICIOS INSIGNIA + PRUEBA SOCIAL) -->
+      <section class="px-4 py-7 space-y-6">
+        
+        <div class="space-y-1 text-center">
+          <span class="text-[11px] font-bold uppercase tracking-widest text-salone-golddark">Servicios Insignia</span>
+          <h2 class="font-serif text-[26px] font-bold text-salone-dark leading-tight">
+            Excelencia que se nota en cada fibra de tu cabello
+          </h2>
+          <p class="text-[13px] text-salone-muted">
+            Fórmulas de autor y productos certificados para resultados que superan tus expectativas.
+          </p>
+        </div>
+
+        <!-- Grilla de Servicios de la Marca -->
+        <div class="space-y-3.5">
+          
+          <!-- Servicio 1: Alisados y Color -->
+          <div class="bg-salone-card p-4 rounded-2xl border border-salone-softborder shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-salone-golddark bg-salone-gold/15 px-2.5 py-0.5 rounded-full">
+                <span class="material-symbols-outlined text-[13px]">award_star</span> Top 1 Barranquilla
+              </span>
+              <span class="text-[11px] text-salone-muted font-semibold">Duración 4 a 6 meses</span>
+            </div>
+            <h3 class="font-serif text-[18px] font-bold text-salone-dark">Alisados Orgánicos & Color sin Daño</h3>
+            <p class="text-[13px] text-salone-muted leading-relaxed">
+              Liso brillante efecto seda sin formol ni resequedad. Rubio iluminado, balayage y tintes con blindaje capilar que protegen la fibra desde la primera aplicación.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Efecto espejo</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Lavado inmediato</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Apto decolorados</span>
+            </div>
+          </div>
+
+          <!-- Servicio 2: Terapias Capilares & Reconstrucción -->
+          <div class="bg-salone-card p-4 rounded-2xl border border-salone-goldborder/80 shadow-sm space-y-2 relative overflow-hidden">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-salone-dark bg-salone-gold px-2.5 py-0.5 rounded-full">
+                ★ Tratamiento Rescate
+              </span>
+              <span class="text-[11px] text-salone-golddark font-bold">Resultados desde sesión 1</span>
+            </div>
+            <h3 class="font-serif text-[18px] font-bold text-salone-dark">Terapias Capilares & Reconstrucción Profunda</h3>
+            <p class="text-[13px] text-salone-muted leading-relaxed">
+              Rescate total para cabellos chiclosos, quebradizos o quemados por químicos previos. Sellado de cutícula, aporte de aminoácidos y nutrición intensiva.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Bio-repolarización</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Cronograma capilar</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Fuerza y grosor</span>
+            </div>
+          </div>
+
+          <!-- Servicio 3: Acrílico Esculpido (Uñas) -->
+          <div class="bg-salone-card p-4 rounded-2xl border border-salone-softborder shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-salone-muted bg-salone-softborder px-2.5 py-0.5 rounded-full">
+                Nail Bar de Lujo
+              </span>
+              <span class="text-[11px] text-salone-muted font-semibold">Acabado ultra-fino</span>
+            </div>
+            <h3 class="font-serif text-[18px] font-bold text-salone-dark">Acrílico Esculpido & Diseño de Uñas</h3>
+            <p class="text-[13px] text-salone-muted leading-relaxed">
+              Estructuras perfectas en punta almendra, cofin o square con esmaltado semipermanente de alta duración. Diseños en tendencia que resisten tu rutina diaria.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Cero desprendimiento</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Diseños TikTok</span>
+              <span class="text-[10px] font-semibold bg-[#faf4eb] text-salone-dark px-2 py-0.5 rounded border border-salone-softborder">Cutícula perfecta</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Métrica de Prueba Social Real (50K Instagram, 1.5K Posts) -->
+        <div class="bg-salone-card rounded-2xl p-4 border border-salone-softborder shadow-xs">
+          <div class="grid grid-cols-3 gap-2 text-center divide-x divide-salone-softborder">
+            <div class="px-1">
+              <p class="font-serif text-[24px] font-bold text-salone-dark leading-tight">50.000</p>
+              <p class="text-[10px] uppercase tracking-wider text-salone-muted mt-0.5 font-semibold">En Instagram</p>
+            </div>
+            <div class="px-1">
+              <p class="font-serif text-[24px] font-bold text-salone-dark leading-tight">+1.500</p>
+              <p class="text-[10px] uppercase tracking-wider text-salone-muted mt-0.5 font-semibold">Transformaciones</p>
+            </div>
+            <div class="px-1">
+              <p class="font-serif text-[24px] font-bold text-salone-golddark leading-tight">100%</p>
+              <p class="text-[10px] uppercase tracking-wider text-salone-muted mt-0.5 font-semibold">Barranquilla</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio Real Verificado -->
+        <div class="bg-gradient-to-br from-salone-card via-salone-card to-[#f7e7ce]/40 p-5 rounded-2xl border border-salone-goldborder relative shadow-sm">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-1 text-salone-gold">
+              <span class="material-symbols-outlined text-[17px]">star</span>
+              <span class="material-symbols-outlined text-[17px]">star</span>
+              <span class="material-symbols-outlined text-[17px]">star</span>
+              <span class="material-symbols-outlined text-[17px]">star</span>
+              <span class="material-symbols-outlined text-[17px]">star</span>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-salone-golddark bg-salone-gold/15 px-2 py-0.5 rounded-full">Caso Real</span>
+          </div>
+
+          <blockquote class="text-[14px] text-salone-dark italic leading-relaxed mb-3">
+            “Me reconstruyeron el pelo después de un alisado mal hecho en otro lugar. Quedó suave, con brillo y como nuevo. No confío mi cabello en nadie más.”
+          </blockquote>
+
+          <div class="flex items-center justify-between pt-2 border-t border-salone-softborder">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-full bg-salone-dark text-salone-gold font-serif font-bold text-xs flex items-center justify-center">
+                VP
+              </div>
+              <div>
+                <p class="text-[12px] font-bold text-salone-dark leading-tight">Valentina P.</p>
+                <p class="text-[10px] text-salone-muted">Barranquilla, Colombia</p>
+              </div>
+            </div>
+            <span class="text-[11px] font-semibold text-salone-golddark flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">verified</span> Clienta Frecuente
+            </span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 4. ETAPA ACCIÓN (FORMULARIO 3 CAMPOS + ALTERNATIVA WHATSAPP DIRECTO) -->
+      <section id="reservar" class="px-4 py-8 bg-gradient-to-b from-[#faf4eb] to-[#f7e7ce]/60 border-t border-salone-softborder space-y-5">
+        
+        <div class="text-center space-y-1.5">
+          <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-salone-golddark bg-salone-card px-3 py-1 rounded-full border border-salone-goldborder">
+            <span class="w-2 h-2 rounded-full bg-salone-gold animate-ping"></span>
+            Agenda Abierta Esta Semana
+          </span>
+          <h2 class="font-serif text-[28px] font-bold text-salone-dark leading-tight">
+            Reserva tu turno en SALONE
+          </h2>
+          <p class="text-[13px] text-salone-muted max-w-xs mx-auto">
+            Completa tus datos para apartar tu cita prioritaria o chatea directamente con nuestras especialistas.
+          </p>
+        </div>
+
+        <!-- Formulario AIDA de 3 Campos -->
+        <div class="bg-salone-card p-5 rounded-2xl border border-salone-goldborder shadow-xl space-y-4">
+          <form onsubmit="event.preventDefault(); window.location.href='https://wa.me/576053854654?text=Hola%20SALONE%2C%20quiero%20reservar%20mi%20turno%20para%20' + encodeURIComponent(document.getElementById('service_select').value) + '.%20Mi%20nombre%20es%20' + encodeURIComponent(document.getElementById('client_name').value);" class="space-y-3.5">
+            
+            <!-- Campo 1: Nombre -->
+            <div class="space-y-1 text-left">
+              <label for="client_name" class="block text-[12px] font-bold text-salone-dark uppercase tracking-wider">
+                1. Nombre completo *
+              </label>
+              <div class="relative">
+                <input type="text" id="client_name" required placeholder="Ej: María Camila Martínez" class="w-full text-[13px] px-3.5 py-3 rounded-xl bg-[#faf4eb] border border-salone-softborder focus:border-salone-gold focus:ring-1 focus:ring-salone-gold text-salone-dark placeholder:text-salone-muted/60 transition-colors"/>
+                <span class="material-symbols-outlined text-[18px] text-salone-muted/60 absolute right-3.5 top-3">person</span>
+              </div>
+            </div>
+
+            <!-- Campo 2: WhatsApp -->
+            <div class="space-y-1 text-left">
+              <label for="client_phone" class="block text-[12px] font-bold text-salone-dark uppercase tracking-wider">
+                2. Número de WhatsApp *
+              </label>
+              <div class="relative">
+                <input type="tel" id="client_phone" required placeholder="Ej: 300 123 4567" class="w-full text-[13px] px-3.5 py-3 rounded-xl bg-[#faf4eb] border border-salone-softborder focus:border-salone-gold focus:ring-1 focus:ring-salone-gold text-salone-dark placeholder:text-salone-muted/60 transition-colors"/>
+                <span class="material-symbols-outlined text-[18px] text-salone-muted/60 absolute right-3.5 top-3">call</span>
+              </div>
+            </div>
+
+            <!-- Campo 3: Servicio de Interés -->
+            <div class="space-y-1 text-left">
+              <label for="service_select" class="block text-[12px] font-bold text-salone-dark uppercase tracking-wider">
+                3. Servicio de interés *
+              </label>
+              <div class="relative">
+                <select id="service_select" required class="w-full text-[13px] px-3.5 py-3 rounded-xl bg-[#faf4eb] border border-salone-softborder focus:border-salone-gold focus:ring-1 focus:ring-salone-gold text-salone-dark appearance-none transition-colors">
+                  <option value="Alisado y Color">Alisado orgánico & Color sin daño</option>
+                  <option value="Terapia Capilar">Terapia Capilar & Reconstrucción</option>
+                  <option value="Uñas Acrílico Esculpido">Uñas en Acrílico Esculpido</option>
+                  <option value="Otro">Otro servicio / Valoración personalizada</option>
+                </select>
+                <span class="material-symbols-outlined text-[18px] text-salone-muted/60 absolute right-3.5 top-3 pointer-events-none">expand_more</span>
+              </div>
+            </div>
+
+            <!-- Botón del Formulario -->
+            <button type="submit" class="gold-gradient-btn w-full py-4 px-4 rounded-xl font-bold text-[15px] flex items-center justify-center gap-2 shadow-md hover:brightness-105 transition-all mt-2">
+              <span class="material-symbols-outlined text-[19px]">event_available</span>
+              <span>Reservar mi turno</span>
+            </button>
+          </form>
+
+          <!-- Aviso de Privacidad -->
+          <div class="flex items-center justify-center gap-1.5 text-[10px] text-salone-muted pt-1">
+            <span class="material-symbols-outlined text-[13px] text-salone-golddark">lock</span>
+            <span>Tus datos son 100% confidenciales y protegidos.</span>
+          </div>
+
+          <!-- Divisor elegante -->
+          <div class="relative flex py-1 items-center">
+            <div class="flex-grow border-t border-salone-softborder"></div>
+            <span class="flex-shrink mx-3 text-[11px] font-bold text-salone-muted/70 uppercase">O si prefieres</span>
+            <div class="flex-grow border-t border-salone-softborder"></div>
+          </div>
+
+          <!-- Alternativa WhatsApp Directo 6053854654 -->
+          <a href="https://wa.me/576053854654?text=Hola%20SALONE%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener noreferrer" class="whatsapp-btn w-full py-3.5 px-4 rounded-xl font-bold text-[14px] flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            <span>Chatear directo al WhatsApp</span>
+          </a>
+
+          <p class="text-[11px] text-center text-salone-muted">
+            Línea oficial Barranquilla: <a href="tel:576053854654" class="font-bold text-salone-dark hover:underline">+57 (605) 385 4654</a>
+          </p>
+        </div>
+
+      </section>
+
+      <!-- 5. PREGUNTAS FRECUENTES (Claridad antes de agendar) -->
+      <section class="px-4 py-7 bg-salone-card border-t border-salone-softborder space-y-4">
+        <div class="text-center space-y-1">
+          <span class="text-[11px] font-bold uppercase tracking-widest text-salone-golddark">Dudas Frecuentes</span>
+          <h2 class="font-serif text-[22px] font-bold text-salone-dark">Todo lo que necesitas saber</h2>
+        </div>
+
+        <div class="space-y-2.5">
+          <!-- FAQ 1 -->
+          <details class="group bg-[#faf4eb] rounded-xl p-3.5 border border-salone-softborder">
+            <summary class="flex justify-between items-center cursor-pointer list-none font-semibold text-[13px] text-salone-dark">
+              <span>¿Cuánto dura el alisado orgánico?</span>
+              <span class="material-symbols-outlined text-salone-golddark group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-[12px] text-salone-muted mt-2 pt-2 border-t border-salone-softborder leading-relaxed">
+              Dependiendo del crecimiento de tu raíz y tus cuidados en casa, dura entre 4 y 6 meses. No requiere tiempo de espera para lavar: sales del salón con el resultado listo y comprobado.
+            </p>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group bg-[#faf4eb] rounded-xl p-3.5 border border-salone-softborder">
+            <summary class="flex justify-between items-center cursor-pointer list-none font-semibold text-[13px] text-salone-dark">
+              <span>¿Puedo hacerme color y alisado el mismo mes?</span>
+              <span class="material-symbols-outlined text-salone-golddark group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-[12px] text-salone-muted mt-2 pt-2 border-t border-salone-softborder leading-relaxed">
+              Sí. Realizamos una prueba de mechón y personalizamos la terapia reconstructiva previa para blindar la cutícula antes del proceso químico, evitando quiebre y pérdida de hidratación.
+            </p>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group bg-[#faf4eb] rounded-xl p-3.5 border border-salone-softborder">
+            <summary class="flex justify-between items-center cursor-pointer list-none font-semibold text-[13px] text-salone-dark">
+              <span>¿Cómo llego a SALONE en Barranquilla?</span>
+              <span class="material-symbols-outlined text-salone-golddark group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="text-[12px] text-salone-muted mt-2 pt-2 border-t border-salone-softborder leading-relaxed">
+              Estamos ubicados en zona norte de Barranquilla con fácil acceso y parqueadero. Al confirmar tu turno por WhatsApp te enviamos la ubicación exacta en Google Maps y Waze.
+            </p>
+          </details>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER (Barranquilla, Colombia, Redes reales IG @salone_bq & TikTok @salonetik) -->
+    <footer class="bg-salone-dark text-white px-5 pt-8 pb-24 border-t border-salone-goldborder/40 text-center space-y-4">
+      <div class="space-y-1">
+        <span class="font-serif text-2xl font-bold tracking-[0.2em] text-salone-gold block">SALONE</span>
+        <p class="text-[11px] text-white/70 uppercase tracking-widest font-semibold">Peluquería & Salón de Belleza Premium</p>
+      </div>
+
+      <p class="text-[12px] text-white/70 max-w-xs mx-auto leading-relaxed">
+        Somos los mejores en alisados y reconstrucción capilar en Barranquilla, Colombia.
+      </p>
+
+      <!-- Enlaces a Redes Sociales Reales -->
+      <div class="flex items-center justify-center gap-3 pt-1">
+        <a href="https://instagram.com/salone_bq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-salone-gold bg-white/10 px-3 py-1.5 rounded-full hover:bg-white/15 transition-colors">
+          <span>Instagram: @salone_bq</span>
+        </a>
+        <a href="https://tiktok.com/@salonetik" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-[11px] font-semibold text-salone-gold bg-white/10 px-3 py-1.5 rounded-full hover:bg-white/15 transition-colors">
+          <span>TikTok: @salonetik</span>
+        </a>
+      </div>
+
+      <div class="pt-3 border-t border-white/10 space-y-1">
+        <p class="text-[11px] text-white/60">
+          Barranquilla, Atlántico · Colombia · Teléfono: +57 (605) 385 4654
+        </p>
+        <p class="text-[10px] text-white/40">
+          © 2025 SALONE Barranquilla. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- STICKY BOTTOM BAR MÓVIL (Con un solo CTA primario destacado a WhatsApp) -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-[#faf4eb]/95 backdrop-blur-md border-t border-salone-goldborder/60 max-w-[420px] mx-auto px-4 py-2.5 shadow-[0_-4px_20px_rgba(26,26,26,0.08)]">
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex flex-col">
+          <span class="text-[10px] font-bold text-salone-golddark uppercase tracking-wider">Atención Hoy</span>
+          <span class="text-[13px] font-bold text-salone-dark leading-tight">Turnos disponibles</span>
+        </div>
+        <a href="https://wa.me/576053854654?text=Hola%20SALONE%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener noreferrer" class="gold-gradient-btn flex-1 py-3 px-4 rounded-xl font-bold text-[13px] flex items-center justify-center gap-2 shadow-sm text-center">
+          <span class="material-symbols-outlined text-[17px]">chat</span>
+          <span>Reservar mi turno</span>
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+</body>
+</html>

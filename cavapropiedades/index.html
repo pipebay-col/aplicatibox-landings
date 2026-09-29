@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CAVA · Propiedades de Autor</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#0d130f',
+              surface: '#131c16',
+              card: '#16221b',
+              accent: '#2e7d52',
+              accentHover: '#256944',
+              emeraldLight: '#4ade80',
+              gold: '#c5a880',
+              muted: '#8e9e93',
+              border: '#1f2e24',
+              borderLight: '#283c2f',
+              whatsapp: '#25d366',
+              whatsappHover: '#20ba59'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0d130f;
+      color: #f2f5f3;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .font-mono-data {
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .glass-card {
+      background: linear-gradient(180deg, rgba(22, 34, 27, 0.85) 0%, rgba(16, 26, 20, 0.95) 100%);
+      border: 1px solid #1f2e24;
+      backdrop-filter: blur(8px);
+    }
+    .hero-glow {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(46, 125, 82, 0.22) 0%, rgba(13, 19, 15, 0) 70%);
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 antialiased selection:bg-brand-accent selection:text-white">
+
+  <!-- Glow effect -->
+  <div class="hero-glow"></div>
+
+  <!-- STICKY TOP APP BAR -->
+  <header class="sticky top-0 z-50 bg-[#0d130f]/90 backdrop-blur-md border-b border-brand-border px-5 py-3.5 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <span class="font-editorial text-2xl font-bold tracking-widest text-[#f5f7f5] uppercase">CAVA</span>
+      <span class="text-[10px] font-mono-data text-brand-gold tracking-widest uppercase px-1.5 py-0.5 rounded border border-brand-gold/30 bg-brand-gold/10">DE AUTOR</span>
+    </div>
+    <a href="https://wa.me/573195799899?text=Hola%20CAVA,%20quiero%20agendar%20un%20recorrido" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono-data font-semibold bg-brand-whatsapp/15 text-brand-whatsapp border border-brand-whatsapp/30 hover:bg-brand-whatsapp/25 transition-colors">
+      <span class="material-symbols-outlined text-[15px]">chat</span>
+      <span>WhatsApp</span>
+    </a>
+  </header>
+
+  <main class="relative z-10 max-w-md mx-auto px-4 pt-6 space-y-12">
+
+    <!-- ============================================== -->
+    <!-- 1. ATENCIÓN (HERO)                            -->
+    <!-- ============================================== -->
+    <section class="space-y-6 pt-2">
+      <!-- Location / Authority Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-brand-muted text-xs font-mono-data">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-emeraldLight animate-pulse"></span>
+        <span>Inmobiliaria de autor · Medellín, Envigado, Cali</span>
+      </div>
+
+      <!-- Main Beneficiary Headline -->
+      <div class="space-y-3">
+        <h1 class="font-editorial text-4xl sm:text-[42px] leading-[1.08] font-medium tracking-tight text-white">
+          Donde la montaña <br>
+          <span class="italic font-normal text-brand-gold">se vuelve hogar.</span>
+        </h1>
+        <p class="font-editorial text-xl italic text-brand-gold/90 font-light">
+          Una selección, no un catálogo.
+        </p>
+        <p class="text-sm text-brand-muted font-normal leading-relaxed pt-1">
+          Curaduría arquitectónica y confidencialidad para compradores e inversionistas en los enclaves más valorizados de Antioquia y el Valle.
+        </p>
+      </div>
+
+      <!-- Hero Visual Asset -->
+      <div class="relative rounded-2xl overflow-hidden border border-brand-border group shadow-2xl">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1UJJS8hUgghzgmdytGZ4-Cs_9DM3TdsQsw2Yf90VvQwjvAXSrP3rEvgnxN1N_fBW7DYFMNZ0TZSvv_MuWu85Zy0Uo7qRmn76QNKl-getKudj4lylLqBVwXG6WQCV_xCbDJcP0p-HcspwHu_Wk8GrWV6AJjo72x_tsJUw6a_8DZ9ipBTP8hm-x_zvnby-y-1k3G7KdZrHVI3k4rp7S1fgG9VB2bdr4BRTlTVFv0Dw3MP8oOQugExHfJLhJE" 
+             alt="Villa contemporánea en El Poblado Medellín curada por CAVA Propiedades" 
+             class="w-full h-64 object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/30 to-transparent"></div>
+        <div class="absolute bottom-3.5 left-3.5 right-3.5 flex justify-between items-end">
+          <div>
+            <span class="text-[11px] font-mono-data uppercase tracking-wider text-brand-gold bg-brand-bg/85 px-2 py-0.5 rounded border border-brand-gold/30">Pieza N° 01 · El Poblado</span>
+            <p class="font-editorial text-lg text-white font-medium mt-1">Villa Voladizo & Bosque Andino</p>
+          </div>
+          <span class="text-xs font-mono-data text-brand-emeraldLight bg-brand-surface/90 px-2 py-1 rounded border border-brand-border">Privada</span>
+        </div>
+      </div>
+
+      <!-- Primary Single CTA -->
+      <div class="pt-1 space-y-3">
+        <a href="https://wa.me/573195799899?text=Hola%20CAVA,%20quiero%20agendar%20un%20recorrido" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl font-medium text-base text-[#0d130f] bg-brand-whatsapp hover:bg-brand-whatsappHover active:scale-[0.98] transition-all shadow-[0_4px_20px_rgba(37,211,102,0.35)]">
+          <span class="material-symbols-outlined text-2xl">calendar_month</span>
+          <span class="font-semibold tracking-wide">Agendar recorrido</span>
+        </a>
+
+        <!-- Micro-credenciales -->
+        <div class="flex items-center justify-center gap-4 text-xs font-mono-data text-brand-muted">
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px] text-brand-emeraldLight">bolt</span>
+            Respuesta el mismo día
+          </span>
+          <span class="text-brand-border">|</span>
+          <span class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px] text-brand-gold">verified</span>
+            Curadas una a una
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 2. INTERÉS (EL DOLOR REAL & EL PROCESO)        -->
+    <!-- ============================================== -->
+    <section class="space-y-6">
+      <!-- Pain Point Callout Card -->
+      <div class="glass-card rounded-2xl p-5 border-l-4 border-l-brand-gold space-y-2.5">
+        <div class="flex items-center gap-2 text-brand-gold">
+          <span class="material-symbols-outlined text-lg">info</span>
+          <span class="text-xs font-mono-data uppercase tracking-wider font-semibold">El problema de los portales masivos</span>
+        </div>
+        <p class="text-xs sm:text-[13px] text-gray-300 leading-relaxed">
+          Prometen responder el mismo día, pero el formulario básico no clasifica al inversionista (local o extranjero, presupuesto, zona): el asesor pierde horas calificando a ciegas y el comprador pierde propiedades irrepetibles.
+        </p>
+      </div>
+
+      <!-- Process Heading -->
+      <div class="space-y-1.5">
+        <p class="text-xs font-mono-data text-brand-gold uppercase tracking-wider">Metodología CAVA</p>
+        <h2 class="font-editorial text-3xl font-medium text-white leading-tight">
+          Tu propiedad ideal en 3 pasos precisos
+        </h2>
+      </div>
+
+      <!-- 3 Steps -->
+      <div class="space-y-3.5">
+        <!-- Step 1 -->
+        <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+          <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center font-mono-data text-sm font-semibold text-brand-gold">
+            01
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-medium text-white text-sm">Cuéntanos qué buscas</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Completa nuestro formulario de solo 3 campos para entender si tu perfil es inversionista local, extranjero o vivienda residencial.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+          <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center font-mono-data text-sm font-semibold text-brand-gold">
+            02
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-medium text-white text-sm">Recibes selección curada en 24h</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Un dossier privado con propiedades fuera del radar comercial, planos, números de rentabilidad y fotografías fidedignas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+          <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-surface border border-brand-border flex items-center justify-center font-mono-data text-sm font-semibold text-brand-gold">
+            03
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-medium text-white text-sm">Recorrido y decisión con acompañamiento</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Recorrido presencial privado o transmisión 4K en directo para compradores internacionales, con asesoría jurídica y cambiaria integral.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicios Clave Tag Cloud -->
+      <div class="pt-2">
+        <p class="text-[11px] font-mono-data text-brand-muted uppercase tracking-wider mb-2.5">Especialidades del Atelier Inmobiliario</p>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="p-3 rounded-lg bg-brand-surface border border-brand-border text-gray-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-brand-emeraldLight">hotel_class</span>
+            <span>Compra curada</span>
+          </div>
+          <div class="p-3 rounded-lg bg-brand-surface border border-brand-border text-gray-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-brand-emeraldLight">photo_camera</span>
+            <span>Venta editorial</span>
+          </div>
+          <div class="p-3 rounded-lg bg-brand-surface border border-brand-border text-gray-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-brand-emeraldLight">public</span>
+            <span>Inversión extranjera</span>
+          </div>
+          <div class="p-3 rounded-lg bg-brand-surface border border-brand-border text-gray-300 flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-brand-emeraldLight">map</span>
+            <span>Mapa de portafolio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. DESEO (BENEFICIOS, TESTIMONIO & PORTAFOLIO)-->
+    <!-- ============================================== -->
+    <section class="space-y-6">
+      <div class="space-y-1.5">
+        <p class="text-xs font-mono-data text-brand-gold uppercase tracking-wider">El valor de lo selecto</p>
+        <h2 class="font-editorial text-3xl font-medium text-white leading-tight">
+          Beneficios enfocados en tu tranquilidad y capital
+        </h2>
+      </div>
+
+      <!-- Feature List -->
+      <div class="space-y-3">
+        <div class="glass-card rounded-xl p-4 flex gap-3.5 items-start">
+          <span class="material-symbols-outlined text-brand-emeraldLight text-xl flex-shrink-0 mt-0.5">verified</span>
+          <div>
+            <h4 class="text-sm font-medium text-white">Seleccionadas a mano fuera de portales</h4>
+            <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+              Acceso a propiedades que no se publican en portales masivos para proteger la plusvalía y la privacidad del propietario.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-4 flex gap-3.5 items-start">
+          <span class="material-symbols-outlined text-brand-emeraldLight text-xl flex-shrink-0 mt-0.5">camera_enhance</span>
+          <div>
+            <h4 class="text-sm font-medium text-white">Fotografía profesional que no miente</h4>
+            <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+              Capturamos la luz andina real, las proporciones estructurales y el entorno natural sin lentes deformantes ni sorpresas.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-xl p-4 flex gap-3.5 items-start">
+          <span class="material-symbols-outlined text-brand-emeraldLight text-xl flex-shrink-0 mt-0.5">translate</span>
+          <div>
+            <h4 class="text-sm font-medium text-white">Acompañamiento bilingüe integral</h4>
+            <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+              Especialistas en canalización de divisas vía Banco de la República, estudio de títulos y trámites notariales para extranjeros.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curated Property Gallery Snapshot -->
+      <div class="space-y-3 pt-1">
+        <div class="relative rounded-xl overflow-hidden border border-brand-border">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1XGlmzPBll5_5fEnClvtDyFWv9uxfRVvjo5aHzbCHdHecHtGxXe-RvgySnXZUUVEWup5eoyEY9OBlC_hhHxxOIozzu_90_1MmAhpvKAGoFDtc9cU4d32by3oYP2Lj3ze5rHo-31nf2vu5oea1tb-yU2iGCYJqviBLnkbt1skLCrLxY2gtDnLnPeez4OhDbTT0VK_-EvzYXaIjzcTqHNGfROrJZnumA1CfracL4XX6QuYU0088ZsfogS0Q" 
+               alt="Penthouse en Envigado La Sebastiana" 
+               class="w-full h-44 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+            <div>
+              <span class="text-[10px] font-mono-data text-brand-gold">Envigado · La Sebastiana</span>
+              <p class="font-editorial text-base text-white font-medium">Penthouse Biófilo & Terraza Deck</p>
+            </div>
+            <span class="text-[11px] font-mono-data text-white/90 bg-brand-surface/80 px-2 py-0.5 rounded">420 m²</span>
+          </div>
+        </div>
+
+        <div class="relative rounded-xl overflow-hidden border border-brand-border">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1WZd3xx7YkNF2JiTTfbjFm5aHSOmLZLcRFh7eqV-0z4EXxHL6TArnXUJhzorflB6faSqT5Zg8r0boG0Xs89tqyI0AvB7d2o-3mz8IFYV3XF39N_1jH_UrMm0VSXglYv9czZdj5PNYnUm2pYlYZ1J1YqZGzkLqHbiRIBYqVelwIxFkwmUU-o5P1PXM_E8Ll4ArieZwy3us3uHPEi0Qpl2nwN-Bl1SHSsZJHoCpmhkbV4fpK9r0CeYJAqJg" 
+               alt="Refugio Silvestre en Las Palmas Medellín" 
+               class="w-full h-44 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+            <div>
+              <span class="text-[10px] font-mono-data text-brand-gold">Medellín · Las Palmas</span>
+              <p class="font-editorial text-base text-white font-medium">Refugio Silvestre en Bosque de Niebla</p>
+            </div>
+            <span class="text-[11px] font-mono-data text-white/90 bg-brand-surface/80 px-2 py-0.5 rounded">850 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Testimonial -->
+      <div class="glass-card rounded-2xl p-5 border border-brand-gold/30 bg-gradient-to-b from-brand-card to-brand-bg relative space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex text-brand-gold text-xs">
+            ★★★★★
+          </div>
+          <span class="text-[10px] font-mono-data text-brand-emeraldLight bg-brand-emeraldLight/10 px-2 py-0.5 rounded border border-brand-emeraldLight/20">Inversionista Verificado</span>
+        </div>
+        <p class="font-editorial text-base italic text-gray-200 leading-relaxed">
+          “Compré mi apartamento en Envigado con CAVA sin viajar. La selección curada me ahorró semanas de búsqueda inútil.”
+        </p>
+        <div class="flex items-center gap-3 pt-1 border-t border-brand-border/60">
+          <div class="w-8 h-8 rounded-full bg-brand-accent/30 border border-brand-accent flex items-center justify-center font-mono-data text-xs text-brand-emeraldLight font-semibold">
+            DR
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-white">Daniel R.</p>
+            <p class="text-[11px] text-brand-muted font-mono-data">Inversionista · Bogotá / Envigado</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Proof Metrics -->
+      <div class="grid grid-cols-2 gap-3 text-center">
+        <div class="glass-card p-3 rounded-xl">
+          <div class="font-editorial text-2xl font-semibold text-white">100%</div>
+          <div class="text-[11px] font-mono-data text-brand-muted">Propiedades Verificadas</div>
+        </div>
+        <div class="glass-card p-3 rounded-xl">
+          <div class="font-editorial text-2xl font-semibold text-brand-gold">Top 1%</div>
+          <div class="text-[11px] font-mono-data text-brand-muted">Arquitectura de Autor</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. ACCIÓN (FORMULARIO 3 CAMPOS & ALTERNATIVA)  -->
+    <!-- ============================================== -->
+    <section class="glass-card rounded-2xl p-6 border border-brand-borderLight relative space-y-6 shadow-2xl">
+      <div class="space-y-2 text-center">
+        <span class="inline-block text-[11px] font-mono-data uppercase tracking-wider text-brand-gold bg-brand-gold/10 px-2.5 py-1 rounded border border-brand-gold/25">
+          Atención Prioritaria
+        </span>
+        <h2 class="font-editorial text-3xl font-medium text-white">
+          Recibe tu selección curada
+        </h2>
+        <p class="text-xs text-brand-muted">
+          Clasificamos tu búsqueda en 2 minutos para enviarte únicamente propiedades que coincidan con tu tesis de vida o inversión.
+        </p>
+      </div>
+
+      <!-- 3-Field Form -->
+      <form onsubmit="event.preventDefault(); window.open('https://wa.me/573195799899?text=' + encodeURIComponent('Hola CAVA, mi nombre es ' + document.getElementById('name').value + ' (' + document.getElementById('profile').value + '). Deseo mi selección curada por WhatsApp al ' + document.getElementById('phone').value), '_blank');" class="space-y-4">
+        
+        <!-- Campo 1: Nombre -->
+        <div class="space-y-1.5">
+          <label for="name" class="block text-xs font-mono-data text-gray-300">
+            01. Tu Nombre Completo
+          </label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-brand-muted text-lg">person</span>
+            <input type="text" 
+                   id="name" 
+                   required
+                   placeholder="Ej. Carlos Mendoza" 
+                   class="w-full bg-[#0d130f] border border-brand-border rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-emeraldLight transition-colors">
+          </div>
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div class="space-y-1.5">
+          <label for="phone" class="block text-xs font-mono-data text-gray-300">
+            02. WhatsApp con código de país
+          </label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-brand-muted text-lg">call</span>
+            <input type="tel" 
+                   id="phone" 
+                   required
+                   placeholder="+57 300 000 0000" 
+                   class="w-full bg-[#0d130f] border border-brand-border rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-brand-muted/50 focus:outline-none focus:border-brand-emeraldLight transition-colors">
+          </div>
+        </div>
+
+        <!-- Campo 3: Perfil -->
+        <div class="space-y-1.5">
+          <label for="profile" class="block text-xs font-mono-data text-gray-300">
+            03. Tu Perfil de Búsqueda
+          </label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-brand-muted text-lg">domain</span>
+            <select id="profile" 
+                    required
+                    class="w-full bg-[#0d130f] border border-brand-border rounded-xl pl-10 pr-8 py-3 text-sm text-white focus:outline-none focus:border-brand-emeraldLight transition-colors appearance-none">
+              <option value="Inversionista local">Inversionista local (Colombia)</option>
+              <option value="Inversionista extranjero">Inversionista extranjero (USA / Int.)</option>
+              <option value="Busco vivienda">Busco vivienda residencial para habitar</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3.5 top-3.5 text-brand-muted pointer-events-none text-lg">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" 
+                class="w-full py-4 px-6 rounded-xl font-semibold text-sm tracking-wide text-white bg-brand-accent hover:bg-brand-accentHover active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(46,125,82,0.3)]">
+          <span>Quiero mi selección curada</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </button>
+
+        <!-- Privacy disclaimer -->
+        <p class="text-[11px] text-center text-brand-muted font-mono-data flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-xs text-brand-gold">lock</span>
+          Confidencialidad médica y patrimonial garantizada bajo NDA.
+        </p>
+      </form>
+
+      <!-- Alternativa WhatsApp Directo -->
+      <div class="pt-3 border-t border-brand-border/60 text-center space-y-2">
+        <p class="text-xs text-brand-muted font-mono-data">¿Prefieres contacto directo e inmediato?</p>
+        <a href="https://wa.me/573195799899?text=Hola%20CAVA,%20quiero%20agendar%20un%20recorrido" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 text-xs font-mono-data text-brand-whatsapp hover:underline">
+          <span class="material-symbols-outlined text-[15px]">chat</span>
+          <span>WhatsApp Concierge: +57 319 579 9899</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================== -->
+  <footer class="mt-16 pt-8 pb-12 border-t border-brand-border bg-[#0a0f0c] text-center text-xs text-brand-muted px-4 space-y-4">
+    <div class="flex items-center justify-center space-x-2">
+      <span class="font-editorial text-xl font-bold tracking-widest text-white uppercase">CAVA</span>
+      <span class="text-brand-border">·</span>
+      <span class="font-mono-data text-[11px] text-brand-gold uppercase">Propiedades de Autor</span>
+    </div>
+
+    <p class="font-mono-data text-[11px] text-brand-muted">
+      Medellín · Envigado · Cali, Colombia
+    </p>
+
+    <div class="flex justify-center flex-wrap gap-x-4 gap-y-1 text-[11px] font-mono-data text-brand-muted/80">
+      <a href="https://cavapropiedades.com" target="_blank" class="hover:text-white transition-colors">cavapropiedades.com</a>
+      <span>•</span>
+      <a href="https://wa.me/573195799899" target="_blank" class="hover:text-white transition-colors">PBX +57 319 579 9899</a>
+      <span>•</span>
+      <span>Aviso de Privacidad</span>
+    </div>
+
+    <p class="text-[10px] font-mono-data text-brand-muted/50 pt-2">
+      © 2025 CAVA Propiedades de Autor. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- BOTTOM FLOATING ACTION BAR FOR MOBILE -->
+  <aside class="fixed bottom-0 inset-x-0 z-50 bg-[#0d130f]/95 backdrop-blur-lg border-t border-brand-border px-4 py-3 flex items-center justify-between max-w-md mx-auto">
+    <div class="flex flex-col">
+      <span class="text-[10px] font-mono-data text-brand-gold uppercase">Atelier Inmobiliario</span>
+      <span class="text-xs font-medium text-white">Recorridos privados</span>
+    </div>
+    <a href="https://wa.me/573195799899?text=Hola%20CAVA,%20quiero%20agendar%20un%20recorrido" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-[#0d130f] bg-brand-whatsapp hover:bg-brand-whatsappHover active:scale-95 transition-all shadow-md">
+      <span class="material-symbols-outlined text-[16px]">chat</span>
+      <span>Agendar recorrido</span>
+    </a>
+  </aside>
+
+</body>
+</html>
