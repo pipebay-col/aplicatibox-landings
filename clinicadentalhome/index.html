@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Clínica Dental Home · Diseño de Sonrisa en Medellín</title>
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#00548f',
+              dark: '#003a63',
+              light: '#2ea3f2',
+              soft: '#eaf4fc',
+              gray: '#607d8b',
+              border: '#e2e8f0',
+              bg: '#f8fafc',
+              whatsapp: '#25d366',
+              whatsappDark: '#128c7e'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased pb-24 selection:bg-[#2ea3f2]/20 selection:text-[#00548f]">
+
+  <!-- Top Brand Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg bg-[#00548f] text-white flex items-center justify-center font-bold shadow-sm">
+        <span class="material-symbols-outlined text-lg">dentistry</span>
+      </div>
+      <div>
+        <div class="text-[15px] font-bold tracking-tight text-[#00548f] leading-none">Dental Home</div>
+        <div class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mt-0.5">Medellín · 2 Sedes</div>
+      </div>
+    </div>
+    <a href="https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#eaf4fc] text-[#00548f] text-xs font-bold border border-[#2ea3f2]/30 active:scale-95 transition-transform">
+      <span class="w-2 h-2 rounded-full bg-[#25d366] animate-pulse"></span>
+      <span>Agendar</span>
+    </a>
+  </header>
+
+  <!-- Main Container Mobile First -->
+  <main class="max-w-md mx-auto px-4 pt-5 space-y-6">
+
+    <!-- 1. ATENCIÓN (HERO SECTION) -->
+    <section class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/80 relative overflow-hidden">
+      <!-- Badge superior -->
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#eaf4fc] text-[#00548f] text-[11px] font-bold tracking-wide uppercase border border-[#2ea3f2]/30 mb-3.5">
+        <span class="material-symbols-outlined text-sm text-[#2ea3f2]">verified</span>
+        <span>DISEÑO DE SONRISA · 2 SEDES EN MEDELLÍN</span>
+      </div>
+
+      <!-- Titular H1 -->
+      <h1 class="text-2xl sm:text-3xl font-serif font-bold text-[#00548f] leading-tight mb-2.5">
+        Tu diseño de sonrisa en Medellín, <span class="italic font-normal text-[#2ea3f2]">sin enredos</span>
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="text-sm text-slate-600 leading-relaxed mb-4 font-normal">
+        Carillas dentales y lentes de contacto dental con atención personalizada en Unicentro y El Poblado.
+      </p>
+
+      <!-- Imagen Hero Premium -->
+      <div class="relative rounded-2xl overflow-hidden shadow-md mb-4 aspect-[4/3] bg-slate-100 border border-slate-200">
+        <img 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkqKI20O13oLuxJs9dK7Bcxm9MB0vSZ3I0ULykJWA51SFNrvS6De43GENsmxGBJ-xWLrQkykflzfEvmIW-ghqiYO_CX_9G8jbyRG4ltlXTDChSlcbdARRkIL5pq3g0U0dvwCjwG7uDYDHSDvdcGcML-8dlndf8Zbi3yGe7EMsDF2JymfQrenbFZHNvCxPN2nuTUF9IUxHF2JabaxVsx16g_Ws7_lS7FJr1s96Q19UQ4xYtkGQ2QMnR5-PZOGcQDof30mMWVNH-5o" 
+          alt="Diseño de sonrisa de alta estética dental en Clínica Dental Home Medellín" 
+          class="w-full h-full object-cover object-center"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#003a63]/80 via-transparent to-transparent"></div>
+        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+          <div class="flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20">
+            <span class="material-symbols-outlined text-sm text-[#2ea3f2]">sparkles</span>
+            <span class="font-medium text-[11px]">Lentes cerámicos E-max</span>
+          </div>
+          <span class="text-[11px] font-semibold text-white/90 bg-[#00548f]/70 px-2 py-0.5 rounded-md backdrop-blur-sm">El Poblado & Unicentro</span>
+        </div>
+      </div>
+
+      <!-- CTA Primario WhatsApp -->
+      <a 
+        href="https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full py-3.5 px-4 rounded-xl bg-[#25d366] hover:bg-[#128c7e] text-white font-bold text-center flex items-center justify-center gap-2 shadow-lg shadow-[#25d366]/25 active:scale-[0.98] transition-all duration-150"
+      >
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.084 6.246-1.638c1.7 1.01 3.684 1.626 5.854 1.626 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span class="text-[15px]">Agendar mi valoración</span>
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+
+      <!-- Micro-credenciales -->
+      <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center">
+        <div class="p-1.5 rounded-lg bg-slate-50 border border-slate-100">
+          <div class="text-[11px] font-bold text-[#00548f] leading-tight">Carillas y Lentes</div>
+          <div class="text-[9.5px] text-slate-500 mt-0.5">Contacto dental</div>
+        </div>
+        <div class="p-1.5 rounded-lg bg-slate-50 border border-slate-100">
+          <div class="text-[11px] font-bold text-[#00548f] leading-tight">Blanqueamiento</div>
+          <div class="text-[9.5px] text-slate-500 mt-0.5">Zoom Philips</div>
+        </div>
+        <div class="p-1.5 rounded-lg bg-slate-50 border border-slate-100">
+          <div class="text-[11px] font-bold text-[#00548f] leading-tight">2 Sedes</div>
+          <div class="text-[9.5px] text-slate-500 mt-0.5">Unicentro & Poblado</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. INTERÉS (DIAGNÓSTICO + PROCESO) -->
+    <section class="space-y-4">
+      <!-- Card del dolor real -->
+      <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4.5 relative overflow-hidden">
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-lg">help_center</span>
+          </div>
+          <div>
+            <h3 class="text-[15px] font-serif font-bold text-amber-950 leading-snug mb-1.5">
+              ¿Quieres carillas pero su web es una vitrina de videos y tips sin una sola forma de agendar?
+            </h3>
+            <p class="text-xs text-amber-900/80 leading-relaxed font-normal">
+              Su web tiene muchísimo contenido educativo pero está pensada como vitrina institucional: el paciente que quiere carillas no ve antes/después, ni precio, ni agenda en línea. <strong>Aquí agenda directo.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proceso 3 Pasos -->
+      <div class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/80">
+        <div class="text-center mb-5">
+          <span class="text-[11px] uppercase tracking-wider text-[#2ea3f2] font-extrabold">Flujo Ágil y Predecible</span>
+          <h2 class="text-xl font-serif font-bold text-[#00548f] mt-0.5">Tu camino hacia tu nueva sonrisa en 3 pasos</h2>
+        </div>
+
+        <div class="space-y-3 relative before:absolute before:left-4 before:top-4 before:bottom-4 before:w-0.5 before:bg-slate-100">
+          <!-- Paso 01 -->
+          <div class="flex items-start gap-3.5 relative">
+            <div class="w-8 h-8 rounded-full bg-[#00548f] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm ring-4 ring-white">
+              01
+            </div>
+            <div class="pt-0.5">
+              <h3 class="text-sm font-bold text-slate-800">Escríbenos por WhatsApp</h3>
+              <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                Cuéntanos tu objetivo o envíanos fotos de tu sonrisa sin formularios eternos ni esperas telefónicas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 02 -->
+          <div class="flex items-start gap-3.5 relative">
+            <div class="w-8 h-8 rounded-full bg-[#2ea3f2] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm ring-4 ring-white">
+              02
+            </div>
+            <div class="pt-0.5">
+              <h3 class="text-sm font-bold text-slate-800">Valoración y diseño previo de tu sonrisa</h3>
+              <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                Evaluamos tu armonía facial y ves la simulación de forma, color y tamaño antes de tocar un solo diente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 03 -->
+          <div class="flex items-start gap-3.5 relative">
+            <div class="w-8 h-8 rounded-full bg-[#003a63] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm ring-4 ring-white">
+              03
+            </div>
+            <div class="pt-0.5">
+              <h3 class="text-sm font-bold text-slate-800">Tu tratamiento con acompañamiento en la sede que elijas</h3>
+              <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                Ejecución milimétrica con carillas o lentes en Unicentro o El Poblado con citas puntuales y garantía.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESEO (PRUEBA SOCIAL + BENEFICIOS) -->
+    <section class="space-y-4">
+      <!-- Tarjetas de Beneficios Clínicos -->
+      <div class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/80">
+        <div class="text-center mb-4">
+          <span class="text-[11px] uppercase tracking-wider text-[#2ea3f2] font-extrabold">Tratamientos Insignia</span>
+          <h2 class="text-xl font-serif font-bold text-[#00548f] mt-0.5">Odontología de alta precisión en Medellín</h2>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/60 flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-[#eaf4fc] text-[#00548f] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-lg">diamond</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Carillas y lentes de contacto dental</div>
+              <p class="text-[11.5px] text-slate-500 mt-0.5 leading-snug">
+                Porcelana pura ultrafina sin desgastes invasivos. Tonos naturales que no manchan ni pierden brillo.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/60 flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-[#eaf4fc] text-[#00548f] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-lg">bolt</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Blanqueamiento Zoom Advanced Power</div>
+              <p class="text-[11.5px] text-slate-500 mt-0.5 leading-snug">
+                Tecnología Philips Zoom de activación por luz fría para aclarar hasta 8 tonos con mínima sensibilidad.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/60 flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-[#eaf4fc] text-[#00548f] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-lg">align_horizontal_center</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Alineadores dentales sin brackets</div>
+              <p class="text-[11.5px] text-slate-500 mt-0.5 leading-snug">
+                Ortodoncia invisible transparente, removible y cómoda para alinear antes de tus carillas definitivas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Métricas / Contadores -->
+        <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center">
+          <div class="p-2 rounded-xl bg-[#00548f]/5">
+            <div class="text-lg font-serif font-bold text-[#00548f]">2 Sedes</div>
+            <div class="text-[10px] text-slate-600 font-medium">En Medellín</div>
+          </div>
+          <div class="p-2 rounded-xl bg-[#00548f]/5">
+            <div class="text-lg font-serif font-bold text-[#00548f]">100%</div>
+            <div class="text-[10px] text-slate-600 font-medium">Diseño de sonrisa</div>
+          </div>
+          <div class="p-2 rounded-xl bg-[#00548f]/5">
+            <div class="text-lg font-serif font-bold text-[#00548f]">Personal</div>
+            <div class="text-[10px] text-slate-600 font-medium">Atención guiada</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen Resultado Sonrisa Premium + Testimonio -->
+      <div class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/80">
+        <div class="relative rounded-2xl overflow-hidden aspect-[4/3] mb-4 bg-slate-100 border border-slate-200">
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3pAUelTPTfH0uBnqK8Nvz9eyfQRgb6dmUuOT5LehwWAwlTSDN6pa3umsPwzl9nf1r_7YSVTkOG_X3Oy_QT31sNZiOeFOocXjWM1HtBG5qInOfXx4-VFaVX9YxrG5yxNm9pX-Hjw0Ok6Qn3dznBBrugGgcGvdVW4CwyhJklQ5yofRa0BbcfGOuf--n9oSih8670NRGUa8NpG3C2R5r8E_mfhsUd7K9FrK8C6faVkB5Jvq0lBkjG931WWC5sFllKjh5EP-xWOlttU" 
+            alt="Paciente con diseño de sonrisa y carillas en Dental Home Medellín" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute bottom-2.5 left-2.5 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-white text-[11px] font-medium flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm text-[#25d366]">check_circle</span>
+            <span>Caso real · Sede El Poblado</span>
+          </div>
+        </div>
+
+        <!-- Testimonio con 5 estrellas -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+          <div class="flex items-center gap-1 text-amber-400 mb-2">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="text-xs font-bold text-slate-700 ml-1.5">5.0 · Verificado</span>
+          </div>
+          <blockquote class="text-xs text-slate-700 italic leading-relaxed">
+            «Hice mi diseño de sonrisa en la sede de El Poblado y todo fue rapidísimo: valoración, diseño previo y resultado en el tiempo prometido.»
+          </blockquote>
+          <div class="mt-2.5 flex items-center justify-between text-[11px] text-slate-500 font-medium">
+            <span class="font-bold text-slate-800">Paula M.</span>
+            <span>Paciente de Medellín</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ACCIÓN (FORMULARIO + WHATSAPP) -->
+    <section class="bg-white rounded-3xl p-5 shadow-sm border border-slate-200/80 relative">
+      <div class="text-center mb-4">
+        <span class="text-[11px] uppercase tracking-wider text-[#00548f] font-extrabold bg-[#eaf4fc] px-2.5 py-0.5 rounded-full border border-[#2ea3f2]/30">Agenda Abierta</span>
+        <h2 class="text-xl font-serif font-bold text-[#00548f] mt-2">Agenda tu valoración en Dental Home</h2>
+        <p class="text-xs text-slate-500 mt-1">Completa tus datos o escríbenos directamente por WhatsApp.</p>
+      </div>
+
+      <form class="space-y-3" onsubmit="event.preventDefault(); window.open('https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home', '_blank');">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellido *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">person</span>
+            <input 
+              type="text" 
+              placeholder="Ej. Paula Restrepo" 
+              required
+              class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#00548f]/20 focus:border-[#00548f] transition-all"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">Número de WhatsApp *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">call</span>
+            <input 
+              type="tel" 
+              placeholder="Ej. 310 123 4567" 
+              required
+              class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#00548f]/20 focus:border-[#00548f] transition-all"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">Sede de preferencia *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">location_on</span>
+            <select 
+              required
+              class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#00548f]/20 focus:border-[#00548f] transition-all appearance-none cursor-pointer"
+            >
+              <option value="Unicentro">Sede Unicentro (Laureles / Conquistadores)</option>
+              <option value="El Poblado">Sede El Poblado (Milla de Oro)</option>
+              <option value="Cualquiera">Cualquiera de las dos sedes</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-base pointer-events-none">expand_more</span>
+          </div>
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full py-3.5 px-4 rounded-xl bg-[#00548f] hover:bg-[#003a63] text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-[#00548f]/20 active:scale-[0.98] transition-all mt-2"
+        >
+          Agendar valoración
+        </button>
+      </form>
+
+      <!-- Microcopy -->
+      <div class="mt-2.5 text-center">
+        <p class="text-[11px] text-slate-500 font-medium flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-xs text-[#25d366]">schedule</span>
+          <span>Respuesta en menos de 24 horas · Presencial en Medellín</span>
+        </p>
+      </div>
+
+      <!-- Separador O chatea -->
+      <div class="my-4 flex items-center gap-2">
+        <div class="h-px bg-slate-200 flex-1"></div>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">O chatea directamente</span>
+        <div class="h-px bg-slate-200 flex-1"></div>
+      </div>
+
+      <!-- Botón alternativo WhatsApp Directo -->
+      <a 
+        href="https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full py-2.5 px-3 rounded-xl bg-[#eaf4fc] hover:bg-[#d8ecfa] text-[#00548f] font-bold text-xs flex items-center justify-center gap-2 border border-[#2ea3f2]/30 active:scale-[0.98] transition-all"
+      >
+        <span class="material-symbols-outlined text-base text-[#25d366]">chat</span>
+        <span>Escribir al WhatsApp: +57 310 419 4654</span>
+      </a>
+
+      <!-- Aviso Privacidad -->
+      <div class="mt-3 flex items-center justify-center gap-1.5 text-[10px] text-slate-400 text-center">
+        <span class="material-symbols-outlined text-xs">lock</span>
+        <span>Tus datos están protegidos bajo secreto profesional médico.</span>
+      </div>
+    </section>
+
+    <!-- Sedes de Medellín Detalle -->
+    <section class="bg-white rounded-2xl p-4 border border-slate-200/80 text-xs">
+      <div class="font-serif font-bold text-[#00548f] text-sm mb-2.5 flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-base text-[#2ea3f2]">apartment</span>
+        <span>Nuestras 2 Sedes en Medellín</span>
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-[11px]">
+        <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="font-bold text-slate-800">Sede Unicentro</div>
+          <div class="text-slate-500 mt-0.5">C.C. Unicentro Medellín</div>
+          <div class="text-[#00548f] font-medium mt-1">Lunes a Sábado</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+          <div class="font-bold text-slate-800">Sede El Poblado</div>
+          <div class="text-slate-500 mt-0.5">Sector Milla de Oro</div>
+          <div class="text-[#00548f] font-medium mt-1">Lunes a Sábado</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Sobrio -->
+    <footer class="pt-2 pb-6 text-center text-slate-400 space-y-2">
+      <div class="flex items-center justify-center gap-2 text-xs font-bold text-[#00548f]">
+        <span class="material-symbols-outlined text-base">dentistry</span>
+        <span>Clínica Dental Home · clinicadentalhome.com</span>
+      </div>
+      <p class="text-[11px] text-slate-500 max-w-xs mx-auto">
+        Especialistas en diseño de sonrisa, carillas cerámicas y lentes de contacto dental en Medellín, Colombia.
+      </p>
+      <div class="text-[10px] text-slate-400">
+        © 2025 Clínica Dental Home. Todos los derechos reservados.
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Barra Inferior Móvil Sticky con CTA -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 safe-bottom">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div class="leading-tight">
+        <div class="text-[10px] uppercase font-bold text-[#2ea3f2] tracking-wider">Medellín</div>
+        <div class="text-xs font-serif font-bold text-[#00548f]">Dental Home</div>
+      </div>
+      <a 
+        href="https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="flex-1 py-2.5 px-4 rounded-xl bg-[#25d366] hover:bg-[#128c7e] text-white font-bold text-xs text-center flex items-center justify-center gap-1.5 shadow-md shadow-[#25d366]/20 active:scale-95 transition-transform"
+      >
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.084 6.246-1.638c1.7 1.01 3.684 1.626 5.854 1.626 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span>Agendar por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

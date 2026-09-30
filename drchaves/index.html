@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dr. Nelson Chaves · Cirujano Plástico SCCP Bogotá</title>
+  
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F3D6E',
+              navyDark: '#0A294A',
+              gold: '#C9A227',
+              goldLight: '#F7F1DF',
+              cream: '#FAF7F2',
+              creamDark: '#F3EFE6',
+              smoke: '#6B7280',
+              border: '#E5E7EB',
+              whatsapp: '#25D366',
+              whatsappDark: '#128C7E',
+            }
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF7F2;
+      color: #1F2937;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .font-fraunces {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    /* Smooth transitions */
+    .btn-press:active {
+      transform: scale(0.97);
+    }
+    .hero-glow {
+      box-shadow: 0 20px 40px -15px rgba(15, 61, 110, 0.12);
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 bg-[#FAF7F2]">
+
+  <!-- Top App Bar / Brand Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#E5E7EB] px-4 py-3">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-[#0F3D6E] flex items-center justify-center text-[#C9A227] font-semibold text-xs border border-[#C9A227]/30 shadow-sm font-fraunces">
+          NC
+        </div>
+        <div>
+          <span class="block text-sm font-bold text-[#0F3D6E] tracking-tight leading-none font-fraunces">Dr. Nelson Chaves</span>
+          <span class="text-[10px] text-[#6B7280] font-medium tracking-wide">Cirujano Plástico · SCCP Bogotá</span>
+        </div>
+      </div>
+      <a href="https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n"
+         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#25D366]/10 text-[#128C7E] text-xs font-bold border border-[#25D366]/30 hover:bg-[#25D366]/20 transition-colors btn-press">
+        <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+        <span>Consulta VIP</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER (Mobile Width Constrained) -->
+  <main class="max-w-md mx-auto px-4 pt-4 pb-8 space-y-8">
+
+    <!-- ==============================================
+         1. ETAPA: ATENCIÓN (Hero Section)
+         ============================================== -->
+    <section class="space-y-4">
+      
+      <!-- Badge Superior -->
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0F3D6E]/10 border border-[#0F3D6E]/20 text-[#0F3D6E]">
+        <span class="material-symbols-outlined text-[#C9A227] text-base">verified</span>
+        <span class="text-[11px] font-bold tracking-wider uppercase">Cirujano Plástico · Miembro de Número SCCP</span>
+      </div>
+
+      <!-- Titular H1 (Fraunces) -->
+      <h1 class="text-3xl sm:text-[34px] font-normal leading-[1.18] text-[#0F3D6E] font-fraunces tracking-tight">
+        Resultados naturales con un cirujano de <span class="italic text-[#C9A227]">trayectoria respaldada</span>
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="text-sm text-[#4B5563] leading-relaxed font-normal">
+        Egresado de la <strong class="text-[#0F3D6E] font-semibold">Universidad Nacional</strong> y especialista de la <strong class="text-[#0F3D6E] font-semibold">Javeriana</strong>; valoración médica personalizada en Bogotá para pacientes exigentes.
+      </p>
+
+      <!-- Hero Image Card -->
+      <div class="relative rounded-2xl overflow-hidden border border-[#E5E7EB] bg-white hero-glow shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkqKI20O13oLuxJs9dK7Bcxm9MB0vSZ3I0ULykJWA51SFNrvS6De43GENsmxGBJ-xWLrQkykflzfEvmIW-ghqiYO_CX_9G8jbyRG4ltlXTDChSlcbdARRkIL5pq3g0U0dvwCjwG7uDYDHSDvdcGcML-8dlndf8Zbi3yGe7EMsDF2JymfQrenbFZHNvCxPN2nuTUF9IUxHF2JabaxVsx16g_Ws7_lS7FJr1s96Q19UQ4xYtkGQ2QMnR5-PZOGcQDof30mMWVNH-5o" 
+             alt="Dr. Nelson Chaves en su consultorio médico de Bogotá" 
+             class="w-full h-64 object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A294A]/90 via-[#0A294A]/20 to-transparent"></div>
+        
+        <div class="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-md rounded-xl border border-white/40 shadow-sm flex items-center justify-between">
+          <div>
+            <div class="text-xs font-bold text-[#0F3D6E] font-fraunces flex items-center gap-1">
+              <span>Dr. Nelson Chaves</span>
+              <span class="material-symbols-outlined text-[#C9A227] text-sm">verified</span>
+            </div>
+            <p class="text-[11px] text-[#6B7280]">Especialista Javeriana · Miembro SCCP #130</p>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-[#F7F1DF] text-[#C9A227] border border-[#C9A227]/30">
+            Bogotá D.C.
+          </span>
+        </div>
+      </div>
+
+      <!-- UN SOLO CTA Primario (WhatsApp Oficial Verde) -->
+      <div class="pt-1">
+        <a href="https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-base shadow-lg shadow-[#25D366]/30 flex items-center justify-center gap-3 transition-all duration-200 btn-press">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/>
+          </svg>
+          <span>Agendar valoración</span>
+        </a>
+        <p class="text-center text-[11px] text-[#6B7280] mt-2 flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-xs text-[#25D366]">schedule</span>
+          Atención confidencial directa · Respuesta en el mismo día
+        </p>
+      </div>
+
+      <!-- Micro-credenciales (3 píldoras) -->
+      <div class="grid grid-cols-3 gap-2 pt-2">
+        <div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="material-symbols-outlined text-[#0F3D6E] text-lg block mb-0.5">verified_user</span>
+          <span class="text-[11px] font-bold text-[#0F3D6E] block leading-tight">Miembro SCCP</span>
+          <span class="text-[9px] text-[#6B7280]">De Número</span>
+        </div>
+        <div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="material-symbols-outlined text-[#C9A227] text-lg block mb-0.5">school</span>
+          <span class="text-[11px] font-bold text-[#0F3D6E] block leading-tight">U. Nal + Javeriana</span>
+          <span class="text-[9px] text-[#6B7280]">Formación Top</span>
+        </div>
+        <div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="material-symbols-outlined text-[#0F3D6E] text-lg block mb-0.5">handshake</span>
+          <span class="text-[11px] font-bold text-[#0F3D6E] block leading-tight">Atención Directa</span>
+          <span class="text-[9px] text-[#6B7280]">Sin intermediarios</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. ETAPA: INTERÉS (Diagnóstico + Proceso)
+         ============================================== -->
+    <section class="space-y-4">
+      
+      <!-- Card Sobria con el Dolor Real -->
+      <div class="bg-white p-5 rounded-2xl border-l-4 border-l-[#C9A227] border border-[#E5E7EB] shadow-sm space-y-2.5">
+        <div class="flex items-center gap-2 text-[#C9A227]">
+          <span class="material-symbols-outlined text-lg">info</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider">Criterio Quirúrgico & Certeza</span>
+        </div>
+        <h2 class="text-lg font-normal leading-snug text-[#0F3D6E] font-fraunces">
+          ¿Estás comparando cirujanos y solo encuentras teléfonos sueltos, sin casos ni tiempos claros?
+        </h2>
+        <p class="text-xs text-[#4B5563] leading-relaxed">
+          Su web presenta las credenciales pero no muestra antes/después ni el paso a paso de la valoración: el paciente que decide una cirugía se queda sin una ruta clara. En la consulta del Dr. Nelson Chaves el proceso es directo, transparente y con estricto rigor anatómico.
+        </p>
+      </div>
+
+      <!-- Proceso en 3 Pasos Claros -->
+      <div class="space-y-3 pt-2">
+        <div class="text-center space-y-1">
+          <span class="text-[10px] font-bold tracking-widest text-[#C9A227] uppercase">Metodología Transparente</span>
+          <h2 class="text-xl font-normal text-[#0F3D6E] font-fraunces">
+            Tu camino hacia una decisión segura
+          </h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Paso 01 -->
+          <div class="bg-white p-4 rounded-xl border border-[#E5E7EB] flex gap-3.5 items-start shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#0F3D6E] text-[#C9A227] flex items-center justify-center font-fraunces font-bold text-base flex-shrink-0 shadow-sm">
+              01
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-bold text-[#0F3D6E] font-fraunces">Escríbenos con tu inquietud</h3>
+              <p class="text-xs text-[#6B7280] leading-relaxed">
+                Cuéntanos tu objetivo quirúrgico o reconstructivo vía WhatsApp o formulario. Recibes respuesta rápida y orientación inicial sin rodeos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 02 -->
+          <div class="bg-white p-4 rounded-xl border border-[#E5E7EB] flex gap-3.5 items-start shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#0F3D6E] text-[#C9A227] flex items-center justify-center font-fraunces font-bold text-base flex-shrink-0 shadow-sm">
+              02
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-bold text-[#0F3D6E] font-fraunces">Valoración personalizada con el doctor</h3>
+              <p class="text-xs text-[#6B7280] leading-relaxed">
+                Consulta presencial en Bogotá o videoconsulta detallada. Diagnóstico anatómico honesto, escucha médica atenta y definición de expectativas reales.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 03 -->
+          <div class="bg-white p-4 rounded-xl border border-[#E5E7EB] flex gap-3.5 items-start shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#0F3D6E] text-[#C9A227] flex items-center justify-center font-fraunces font-bold text-base flex-shrink-0 shadow-sm">
+              03
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-sm font-bold text-[#0F3D6E] font-fraunces">Plan quirúrgico y fecha</h3>
+              <p class="text-xs text-[#6B7280] leading-relaxed">
+                Presupuesto cerrado sin sorpresas, quirófanos de alta acreditación en Bogotá y seguimiento postquirúrgico continuo por el propio doctor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. ETAPA: DESEO (Prueba Social + Beneficios)
+         ============================================== -->
+    <section class="space-y-5">
+      
+      <div class="text-center space-y-1">
+        <span class="text-[10px] font-bold tracking-widest text-[#C9A227] uppercase">Excelencia Quirúrgica</span>
+        <h2 class="text-2xl font-normal text-[#0F3D6E] font-fraunces">
+          Resultados sobrios, armónicos y seguros
+        </h2>
+      </div>
+
+      <!-- Imagen de Resultado Elegante / Armonía -->
+      <div class="relative rounded-2xl overflow-hidden border border-[#E5E7EB] bg-white shadow-md">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3pAUelTPTfH0uBnqK8Nvz9eyfQRgb6dmUuOT5LehwWAwlTSDN6pa3umsPwzl9nf1r_7YSVTkOG_X3Oy_QT31sNZiOeFOocXjWM1HtBG5qInOfXx4-VFaVX9YxrG5yxNm9pX-Hjw0Ok6Qn3dznBBrugGgcGvdVW4CwyhJklQ5yofRa0BbcfGOuf--n9oSih8670NRGUa8NpG3C2R5r8E_mfhsUd7K9FrK8C6faVkB5Jvq0lBkjG931WWC5sFllKjh5EP-xWOlttU" 
+             alt="Resultado clínico armónico y natural por el Dr. Nelson Chaves" 
+             class="w-full h-56 object-cover object-center" />
+        <div class="p-3 bg-white border-t border-[#E5E7EB] flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-[#C9A227]"></span>
+            <span class="text-xs font-semibold text-[#0F3D6E]">Armonización Quirúrgica Facial y Corporal</span>
+          </div>
+          <span class="text-[10px] font-bold text-[#6B7280]">Cuidado integral</span>
+        </div>
+      </div>
+
+      <!-- Beneficios Clave (3 Pilares) -->
+      <div class="space-y-2.5">
+        <div class="bg-white p-3.5 rounded-xl border border-[#E5E7EB] flex items-start gap-3 shadow-sm">
+          <div class="p-2 rounded-lg bg-[#0F3D6E]/10 text-[#0F3D6E] flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">workspace_premium</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-[#0F3D6E] font-fraunces">Trayectoria académica verificable (SCCP)</h3>
+            <p class="text-[11px] text-[#6B7280] leading-relaxed">
+              Cirujano de planta y Miembro de Número de la Sociedad Colombiana de Cirugía Plástica con registro médico comprobable.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-3.5 rounded-xl border border-[#E5E7EB] flex items-start gap-3 shadow-sm">
+          <div class="p-2 rounded-lg bg-[#C9A227]/10 text-[#C9A227] flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">stethoscope</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-[#0F3D6E] font-fraunces">Atención directa del especialista</h3>
+            <p class="text-[11px] text-[#6B7280] leading-relaxed">
+              Tu valoración, procedimiento y revisiones postoperatorias las atiende personalmente el Dr. Chaves, sin delegar en terceros.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-3.5 rounded-xl border border-[#E5E7EB] flex items-start gap-3 shadow-sm">
+          <div class="p-2 rounded-lg bg-[#0F3D6E]/10 text-[#0F3D6E] flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">favorite</span>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-[#0F3D6E] font-fraunces">Acompañamiento pre y postquirúrgico</h3>
+            <p class="text-[11px] text-[#6B7280] leading-relaxed">
+              Protocolos de seguridad clínica estricta, quirófanos nivel IV en Bogotá y canal de contacto prioritario 24/7.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métricas Relevantes -->
+      <div class="grid grid-cols-3 gap-2">
+        <div class="bg-white p-3 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="text-xl font-bold text-[#0F3D6E] font-fraunces block leading-tight">+25</span>
+          <span class="text-[10px] text-[#6B7280] leading-tight block">Años de práctica quirúrgica</span>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="text-base font-bold text-[#C9A227] font-fraunces block leading-tight">SCCP</span>
+          <span class="text-[10px] text-[#6B7280] leading-tight block">Miembro de Número</span>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-[#E5E7EB] text-center shadow-sm">
+          <span class="text-xl font-bold text-[#0F3D6E] font-fraunces block leading-tight">2 Top</span>
+          <span class="text-[10px] text-[#6B7280] leading-tight block">U. Nacional y Javeriana</span>
+        </div>
+      </div>
+
+      <!-- Testimonio Destacado Paciente Real -->
+      <div class="bg-[#F7F1DF]/70 p-4 rounded-2xl border border-[#C9A227]/30 space-y-2">
+        <div class="flex items-center justify-between">
+          <div class="flex text-[#C9A227] text-sm">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <span class="text-[10px] font-bold text-[#0F3D6E] bg-white px-2 py-0.5 rounded-full border border-[#E5E7EB]">
+            5.0 Calificación
+          </span>
+        </div>
+        <p class="text-xs text-[#1F2937] italic leading-relaxed">
+          «El doctor me explicó todo con calma y el resultado fue exactamente el que planeamos. Su calidad humana y precisión quirúrgica dan una tranquilidad inmensa.»
+        </p>
+        <div class="pt-1 flex items-center justify-between border-t border-[#C9A227]/20 text-[11px]">
+          <span class="font-bold text-[#0F3D6E]">Marcela R.</span>
+          <span class="text-[#6B7280]">Paciente verificada · Bogotá</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. ETAPA: ACCIÓN (Formulario + WhatsApp Directo)
+         ============================================== -->
+    <section id="agenda" class="bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-md space-y-4">
+      
+      <div class="text-center space-y-1">
+        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-[#C9A227] bg-[#F7F1DF] px-2.5 py-0.5 rounded-full border border-[#C9A227]/30">
+          <span class="material-symbols-outlined text-xs">calendar_month</span> Agenda Abierta en Bogotá
+        </span>
+        <h2 class="text-2xl font-normal text-[#0F3D6E] font-fraunces">
+          Agenda tu valoración con el Dr. Chaves
+        </h2>
+        <p class="text-xs text-[#6B7280]">
+          Completa tus datos para coordinar tu cita presencial o videoconsulta personalizada.
+        </p>
+      </div>
+
+      <!-- Formulario 3 Campos -->
+      <form class="space-y-3.5" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20acabo%20de%20diligenciar%20mi%20solicitud%20para%20agendar%20valoraci%C3%B3n.';">
+        
+        <!-- Campo 1: Nombre -->
+        <div class="space-y-1">
+          <label for="nombre" class="block text-xs font-semibold text-[#0F3D6E]">
+            Nombre y Apellido
+          </label>
+          <div class="relative">
+            <input type="text" id="nombre" name="nombre" required 
+                   placeholder="Ej. Carolina Gómez" 
+                   class="w-full px-3.5 py-2.5 bg-[#FAF7F2] rounded-xl border border-[#E5E7EB] text-xs text-[#1F2937] placeholder-[#9CA3AF] focus:outline-none focus:border-[#0F3D6E] focus:ring-1 focus:ring-[#0F3D6E] transition-all" />
+            <span class="material-symbols-outlined absolute right-3 top-2.5 text-[#9CA3AF] text-sm pointer-events-none">person</span>
+          </div>
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div class="space-y-1">
+          <label for="whatsapp" class="block text-xs font-semibold text-[#0F3D6E]">
+            Número de WhatsApp
+          </label>
+          <div class="relative">
+            <input type="tel" id="whatsapp" name="whatsapp" required 
+                   placeholder="Ej. +57 314 000 0000" 
+                   class="w-full px-3.5 py-2.5 bg-[#FAF7F2] rounded-xl border border-[#E5E7EB] text-xs text-[#1F2937] placeholder-[#9CA3AF] focus:outline-none focus:border-[#0F3D6E] focus:ring-1 focus:ring-[#0F3D6E] transition-all" />
+            <span class="material-symbols-outlined absolute right-3 top-2.5 text-[#9CA3AF] text-sm pointer-events-none">phone</span>
+          </div>
+        </div>
+
+        <!-- Campo 3: Procedimiento de interés (Dropdown) -->
+        <div class="space-y-1">
+          <label for="procedimiento" class="block text-xs font-semibold text-[#0F3D6E]">
+            Procedimiento de interés
+          </label>
+          <div class="relative">
+            <select id="procedimiento" name="procedimiento" required 
+                    class="w-full px-3.5 py-2.5 bg-[#FAF7F2] rounded-xl border border-[#E5E7EB] text-xs text-[#1F2937] focus:outline-none focus:border-[#0F3D6E] focus:ring-1 focus:ring-[#0F3D6E] appearance-none transition-all">
+              <option value="Cirugía facial">Cirugía facial (Lifting, Blefaroplastia, Rinoplastia)</option>
+              <option value="Cirugía corporal">Cirugía corporal (Lipoescultura, Abdominoplastia, Mamas)</option>
+              <option value="Reconstructiva">Cirugía Reconstructiva y Secuelas</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-2.5 text-[#9CA3AF] text-sm pointer-events-none">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Botón de Envío Formulario -->
+        <button type="submit" 
+                class="w-full py-3.5 px-4 rounded-xl bg-[#0F3D6E] hover:bg-[#0A294A] text-white font-bold text-sm shadow-md shadow-[#0F3D6E]/20 flex items-center justify-center gap-2 transition-all duration-150 btn-press">
+          <span>Agendar valoración</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+
+        <!-- Microcopy Obligatorio -->
+        <p class="text-center text-[11px] text-[#6B7280]">
+          Sin compromiso · Respuesta en menos de 24 horas
+        </p>
+
+        <!-- Aviso de Privacidad Médica -->
+        <div class="pt-2 text-center border-t border-[#E5E7EB] space-y-2">
+          <p class="text-[10px] text-[#9CA3AF] flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-xs">lock</span>
+            Tus datos médicos se encuentran estrictamente protegidos bajo secreto profesional.
+          </p>
+
+          <!-- Alternativa WhatsApp Directo -->
+          <div class="pt-1">
+            <span class="text-[11px] text-[#6B7280] block mb-1">¿Prefieres atención inmediata?</span>
+            <a href="https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20quiero%20hacer%20una%20consulta%20directa%20por%20WhatsApp" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-1.5 text-xs font-bold text-[#128C7E] hover:text-[#25D366] transition-colors">
+              <span class="material-symbols-outlined text-sm text-[#25D366]">chat</span>
+              Chatear directo al WhatsApp (+57 314 2765513)
+            </a>
+          </div>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- FAQ Rápido de Certeza Médica -->
+    <section class="space-y-2.5 pt-2">
+      <h3 class="text-sm font-bold text-[#0F3D6E] font-fraunces uppercase tracking-wider text-center">
+        Preguntas Frecuentes
+      </h3>
+      <div class="space-y-2">
+        <details class="bg-white p-3 rounded-xl border border-[#E5E7EB] text-xs group cursor-pointer shadow-sm">
+          <summary class="font-bold text-[#0F3D6E] list-none flex justify-between items-center">
+            <span>¿En qué clínicas opera el Dr. Nelson Chaves?</span>
+            <span class="material-symbols-outlined text-sm group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-[#6B7280] mt-2 leading-relaxed pt-1 border-t border-[#E5E7EB]">
+            Exclusivamente en instituciones hospitalarias y clínicas acreditadas de cuarto nivel en el norte de Bogotá con salas de cirugía certificadas por el Ministerio de Salud.
+          </p>
+        </details>
+        <details class="bg-white p-3 rounded-xl border border-[#E5E7EB] text-xs group cursor-pointer shadow-sm">
+          <summary class="font-bold text-[#0F3D6E] list-none flex justify-between items-center">
+            <span>¿Cómo se coordina para pacientes de fuera de Bogotá?</span>
+            <span class="material-symbols-outlined text-sm group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="text-[#6B7280] mt-2 leading-relaxed pt-1 border-t border-[#E5E7EB]">
+            Ofrecemos primera valoración virtual por videollamada para estudiar tu caso, proyectar exámenes clínicos y coordinar días exactos de estadía en Bogotá.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer Sobrio con Contacto Bogotá y Enlaces Legales -->
+    <footer class="pt-6 border-t border-[#E5E7EB] text-center space-y-3">
+      <div class="space-y-1">
+        <div class="text-sm font-bold text-[#0F3D6E] font-fraunces">Dr. Nelson Chaves</div>
+        <p class="text-xs text-[#6B7280]">
+          Cirugía Plástica, Estética y Reconstructiva<br>
+          Bogotá D.C., Colombia · <a href="http://drchaves.com.co" target="_blank" class="text-[#0F3D6E] underline">drchaves.com.co</a>
+        </p>
+        <p class="text-[10px] text-[#9CA3AF]">
+          Miembro de Número de la Sociedad Colombiana de Cirugía Plástica (SCCP)
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 text-[11px] text-[#6B7280] pt-1">
+        <a href="#" class="hover:text-[#0F3D6E]">Aviso Legal y Privacidad</a>
+        <span>·</span>
+        <a href="#" class="hover:text-[#0F3D6E]">Consentimiento Médico</a>
+        <span>·</span>
+        <a href="#" class="hover:text-[#0F3D6E]">Miembro SCCP</a>
+      </div>
+
+      <p class="text-[10px] text-[#9CA3AF] pt-2">
+        © 2025 Dr. Nelson Chaves. Todos los derechos reservados. Práctica médica vigilada por la Secretaría de Salud de Bogotá.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ==============================================
+       STICKY BOTTOM NAVBAR (Móvil con CTA WhatsApp)
+       ============================================== -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-[#E5E7EB] p-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div class="pl-2">
+        <span class="block text-[10px] font-bold text-[#C9A227] uppercase tracking-wide">Valoración Bogotá</span>
+        <span class="block text-xs font-bold text-[#0F3D6E] font-fraunces leading-none">Dr. Nelson Chaves</span>
+      </div>
+      <a href="https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="py-2.5 px-5 rounded-xl bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs shadow-md shadow-[#25D366]/30 flex items-center gap-2 transition-transform btn-press flex-shrink-0">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/>
+        </svg>
+        <span>Agendar valoración</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

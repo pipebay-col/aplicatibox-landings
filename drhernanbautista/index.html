@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Hernán Bautista · Rinoplastia Ultrasónica</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crema: '#f5f1e8',
+            'crema-light': '#fbf9f4',
+            'crema-card': '#f0eae0',
+            dorado: '#d4af7f',
+            'dorado-dark': '#b58e59',
+            'dorado-soft': 'rgba(212, 175, 127, 0.15)',
+            negro: '#0a0a0a',
+            'negro-soft': '#1a1918',
+            'gris-calido': '#8a8578',
+            'gris-suave': '#e2ded5',
+            'wa-green': '#25d366',
+            'wa-dark': '#128c7e'
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #f5f1e8;
+      color: #0a0a0a;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3, h4, .font-brand {
+      font-family: 'Cinzel', serif;
+      letter-spacing: -0.01em;
+    }
+    .gold-gradient-border {
+      border: 1px solid rgba(212, 175, 127, 0.4);
+    }
+    .gold-shine {
+      background: linear-gradient(135deg, #d4af7f 0%, #ecd3b0 50%, #b58e59 100%);
+    }
+    .custom-shadow {
+      box-shadow: 0 12px 36px -8px rgba(10, 10, 10, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-crema text-negro min-h-screen pb-24 selection:bg-dorado selection:text-negro">
+
+  <!-- TOP BAR / HEADER -->
+  <header class="sticky top-0 z-40 bg-crema/90 backdrop-blur-md border-b border-gris-suave/80 px-4 py-3.5 transition-all">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-negro flex items-center justify-center text-dorado font-cinzel font-bold text-sm shadow-sm border border-dorado/30">
+          HB
+        </div>
+        <div>
+          <span class="font-cinzel font-bold text-sm tracking-wide text-negro block leading-tight">Dr. Hernán Bautista</span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-gris-calido block">Cirugía Plástica Facial</span>
+        </div>
+      </div>
+      <a href="https://wa.me/573213693323?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Bautista" 
+         class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-negro text-dorado text-xs font-medium tracking-wide border border-dorado/30 active:scale-95 transition-transform shadow-sm">
+        <i class="ph ph-whatsapp-logo text-wa-green text-sm"></i>
+        <span>Agendar</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER (MOBILE FIRST) -->
+  <main class="max-w-md mx-auto px-4 pt-5 pb-8 space-y-7">
+
+    <!-- ============================================== -->
+    <!-- 1. ATENCIÓN (HERO SECTION) -->
+    <!-- ============================================== -->
+    <section class="space-y-4 pt-1">
+      
+      <!-- BADGE SUPERIOR -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-dorado-soft border border-dorado/40 text-[10.5px] font-semibold tracking-wider text-negro uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-dorado animate-pulse"></span>
+        <span>Rinoplastia Ultrasónica · 4 Sedes · Sin Taponamiento Nasal</span>
+      </div>
+
+      <!-- TITULAR H1 -->
+      <h1 class="text-3xl font-extrabold text-negro leading-[1.18] tracking-tight">
+        Rinoplastia ultrasónica que respeta <span class="italic font-normal text-dorado-dark underline decoration-dorado/40 underline-offset-4">tu identidad</span>
+      </h1>
+
+      <!-- SUBTÍTULO -->
+      <p class="text-sm text-gris-calido leading-relaxed font-normal">
+        <strong class="text-negro font-semibold">+4000 cirugías exitosas</strong> y pacientes de <strong class="text-negro font-semibold">10 países</strong>. Resultados naturales con tecnología piezoeléctrica ultrasónica, <span class="text-negro font-medium">sin taponamiento nasal</span> ni dolor traumático.
+      </p>
+
+      <!-- HERO IMAGE CARD EDITORIAL -->
+      <div class="relative rounded-2xl overflow-hidden shadow-xl border border-gris-suave/80 bg-crema-card group">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkqKI20O13oLuxJs9dK7Bcxm9MB0vSZ3I0ULykJWA51SFNrvS6De43GENsmxGBJ-xWLrQkykflzfEvmIW-ghqiYO_CX_9G8jbyRG4ltlXTDChSlcbdARRkIL5pq3g0U0dvwCjwG7uDYDHSDvdcGcML-8dlndf8Zbi3yGe7EMsDF2JymfQrenbFZHNvCxPN2nuTUF9IUxHF2JabaxVsx16g_Ws7_lS7FJr1s96Q19UQ4xYtkGQ2QMnR5-PZOGcQDof30mMWVNH-5o" 
+             alt="Resultado Rinoplastia Ultrasónica Dr. Hernán Bautista" 
+             class="w-full h-72 object-cover object-center transform transition duration-500 hover:scale-102">
+        <div class="absolute inset-0 bg-gradient-to-t from-negro/70 via-transparent to-transparent"></div>
+        
+        <!-- TAG OVERLAY -->
+        <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-crema text-xs bg-negro/80 backdrop-blur-md px-3.5 py-2 rounded-xl border border-dorado/30">
+          <div class="flex items-center gap-2">
+            <i class="ph ph-shield-check text-dorado text-base"></i>
+            <span class="font-medium text-[11px] tracking-wide">Técnica Piezoeléctrica · Cero Tapones</span>
+          </div>
+          <span class="text-[10px] text-dorado font-cinzel font-semibold tracking-wider">Perfil Natural</span>
+        </div>
+      </div>
+
+      <!-- CTA PRIMARIO EXCLUSIVO -->
+      <div class="pt-1">
+        <a href="https://wa.me/573213693323?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Bautista" 
+           class="w-full py-4 px-6 rounded-xl bg-wa-green hover:bg-wa-dark active:scale-[0.98] transition-all duration-200 text-white font-bold text-center flex items-center justify-center gap-2.5 shadow-lg shadow-wa-green/25 border-b-2 border-green-700">
+          <i class="ph ph-whatsapp-logo text-xl"></i>
+          <span class="text-base tracking-wide font-cinzel font-bold">Agenda tu valoración</span>
+          <i class="ph ph-arrow-right font-bold text-sm"></i>
+        </a>
+        <div class="flex items-center justify-center gap-1.5 text-center mt-2.5 text-[11px] text-gris-calido">
+          <i class="ph ph-check-circle text-wa-dark font-semibold"></i>
+          <span>Atención confidencial directa · Respuesta hoy</span>
+        </div>
+      </div>
+
+      <!-- MICRO-CREDENCIALES -->
+      <div class="grid grid-cols-3 gap-2 pt-2 border-t border-gris-suave/80">
+        <div class="bg-crema-card/80 p-2.5 rounded-xl text-center border border-gris-suave">
+          <div class="font-cinzel font-bold text-base text-negro">+4000</div>
+          <div class="text-[10px] font-medium text-gris-calido leading-tight mt-0.5">Cirugías Exitosas</div>
+        </div>
+        <div class="bg-crema-card/80 p-2.5 rounded-xl text-center border border-gris-suave">
+          <div class="font-cinzel font-bold text-base text-negro">10 Países</div>
+          <div class="text-[10px] font-medium text-gris-calido leading-tight mt-0.5">Atendidos</div>
+        </div>
+        <div class="bg-crema-card/80 p-2.5 rounded-xl text-center border border-gris-suave">
+          <div class="font-cinzel font-bold text-base text-negro">+12 Años</div>
+          <div class="text-[10px] font-medium text-gris-calido leading-tight mt-0.5">De Experiencia</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 2. INTERÉS (DIAGNÓSTICO DEL DOLOR + PROCESO) -->
+    <!-- ============================================== -->
+    <section class="space-y-4 pt-3">
+      
+      <!-- CARD CON EL DOLOR REAL -->
+      <div class="bg-crema-card rounded-2xl p-5 border-l-4 border-dorado shadow-sm border-t border-r border-b border-gris-suave">
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-dorado/20 flex items-center justify-center text-dorado-dark shrink-0 mt-0.5">
+            <i class="ph ph-warning-circle text-lg"></i>
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="font-cinzel font-bold text-sm text-negro leading-snug">
+              ¿Llegaste por Instagram y la web no te guía a agendar según tu ciudad?
+            </h2>
+            <p class="text-xs text-gris-calido leading-relaxed font-normal">
+              Tiene 189 mil seguidores y 4 sedes, pero su web está fragmentada por procedimiento y ciudad: el paciente que compara rinoplastia ultrasónica no encuentra el flujo completo valoración-cirugía-recuperación en un solo lugar. <strong class="text-negro font-semibold">Aquí sí.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TITULAR SECCIÓN PROCESO -->
+      <div class="pt-2">
+        <span class="text-[10px] tracking-widest uppercase font-semibold text-dorado-dark font-cinzel block">Ruta Clara y Sin Fricción</span>
+        <h2 class="text-xl font-bold text-negro font-cinzel leading-tight mt-0.5">Tu camino hacia tu rinoplastia en 3 pasos</h2>
+      </div>
+
+      <!-- PROCESO 3 PASOS -->
+      <div class="space-y-3">
+        
+        <!-- PASO 01 -->
+        <div class="bg-crema-light p-4 rounded-xl border border-gris-suave flex items-start gap-3.5 shadow-sm">
+          <div class="w-8 h-8 rounded-full bg-negro text-dorado font-cinzel font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+            01
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-cinzel font-bold text-sm text-negro">Escríbenos con tu ciudad y caso</h3>
+            <p class="text-xs text-gris-calido leading-relaxed">
+              Indícanos si prefieres atenderte en Bucaramanga, Bogotá, Barranquilla o Medellín. Cuéntanos qué deseas corregir o envíanos tus fotos de referencia.
+            </p>
+          </div>
+        </div>
+
+        <!-- PASO 02 -->
+        <div class="bg-crema-light p-4 rounded-xl border border-gris-suave flex items-start gap-3.5 shadow-sm">
+          <div class="w-8 h-8 rounded-full bg-dorado text-negro font-cinzel font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+            02
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-cinzel font-bold text-sm text-negro">Valoración personalizada (presencial o virtual)</h3>
+            <p class="text-xs text-gris-calido leading-relaxed">
+              Evaluación anatómica de tu estructura nasal y simulación fotográfica digital milimétrica para definir la armonía exacta de tus facciones.
+            </p>
+          </div>
+        </div>
+
+        <!-- PASO 03 -->
+        <div class="bg-crema-light p-4 rounded-xl border border-gris-suave flex items-start gap-3.5 shadow-sm">
+          <div class="w-8 h-8 rounded-full bg-negro text-dorado font-cinzel font-bold text-xs flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+            03
+          </div>
+          <div class="space-y-1">
+            <h3 class="font-cinzel font-bold text-sm text-negro">Tu rinoplastia ultrasónica sin taponamiento y controles incluidos</h3>
+            <p class="text-xs text-gris-calido leading-relaxed">
+              Intervención con bisturí piezoeléctrico que no fractura huesos bruscamente. Respiración natural desde las primeras 24 horas y seguimiento continuo.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. DESEO (PRUEBA SOCIAL + BENEFICIOS) -->
+    <!-- ============================================== -->
+    <section class="space-y-5 pt-3">
+
+      <!-- BENEFICIOS CLAVE -->
+      <div class="space-y-3">
+        <div>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-dorado-dark font-cinzel block">Ventajas Exclusivas</span>
+          <h2 class="text-xl font-bold text-negro font-cinzel leading-tight mt-0.5">Seguridad médica y estética refinada</h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2.5">
+          
+          <div class="p-3.5 rounded-xl bg-crema-light border border-gris-suave flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-dorado/20 text-dorado-dark flex items-center justify-center shrink-0">
+              <i class="ph ph-wind text-base"></i>
+            </div>
+            <div class="text-xs text-negro font-medium leading-snug">
+              <strong class="font-cinzel font-bold block text-sm">Tecnología ultrasónica sin taponamiento nasal</strong>
+              Cero trauma mucoso, respiración espontánea y recuperación sin dolores de gasas.
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-crema-light border border-gris-suave flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-dorado/20 text-dorado-dark flex items-center justify-center shrink-0">
+              <i class="ph ph-sparkle text-base"></i>
+            </div>
+            <div class="text-xs text-negro font-medium leading-snug">
+              <strong class="font-cinzel font-bold block text-sm">Resultados naturales que respetan tu identidad</strong>
+              Sin narices de molde ni aspecto operado; armonía con tus rasgos faciales nativos.
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-crema-light border border-gris-suave flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full bg-dorado/20 text-dorado-dark flex items-center justify-center shrink-0">
+              <i class="ph ph-map-pin text-base"></i>
+            </div>
+            <div class="text-xs text-negro font-medium leading-snug">
+              <strong class="font-cinzel font-bold block text-sm">4 sedes: Bucaramanga, Bogotá, Barranquilla, Medellín</strong>
+              Quirófanos de alta acreditación y logística para pacientes nacionales y del exterior.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MÉTRICAS DESTACADAS -->
+      <div class="bg-negro text-crema p-5 rounded-2xl border border-dorado/30 space-y-4 shadow-md">
+        <div class="text-center">
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-dorado font-cinzel">Trayectoria Comprobada</span>
+          <h3 class="text-lg font-bold text-crema font-cinzel mt-0.5">Dr. Hernán Bautista</h3>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2 text-center divide-x divide-gris-calido/30">
+          <div class="px-1">
+            <div class="text-2xl font-extrabold text-dorado font-cinzel">+4000</div>
+            <div class="text-[10.5px] text-crema/80 font-medium mt-0.5">Cirugías</div>
+          </div>
+          <div class="px-1">
+            <div class="text-2xl font-extrabold text-dorado font-cinzel">10</div>
+            <div class="text-[10.5px] text-crema/80 font-medium mt-0.5">Países</div>
+          </div>
+          <div class="px-1">
+            <div class="text-2xl font-extrabold text-dorado font-cinzel">+12</div>
+            <div class="text-[10.5px] text-crema/80 font-medium mt-0.5">Años</div>
+          </div>
+        </div>
+
+        <div class="text-center pt-1 border-t border-crema/10 flex items-center justify-center gap-2 text-xs text-crema/70">
+          <i class="ph ph-instagram-logo text-dorado"></i>
+          <span>189K seguidores en Instagram</span>
+          <span class="text-dorado">•</span>
+          <span>@drhernanbautista</span>
+        </div>
+      </div>
+
+      <!-- TESTIMONIO VERIFICADO -->
+      <div class="bg-crema-light p-4 rounded-xl border border-gris-suave space-y-2.5 shadow-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 text-dorado text-xs">
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <span class="text-negro font-semibold text-xs ml-1">5.0</span>
+          </div>
+          <span class="text-[10px] bg-crema-card px-2 py-0.5 rounded text-gris-calido font-semibold uppercase tracking-wider">Verificado</span>
+        </div>
+        <p class="text-xs text-negro italic leading-relaxed">
+          «Me operé en Bogotá y la recuperación sin tapones fue mucho más llevadera de lo que imaginé. El resultado es exactamente lo que pedí: natural.»
+        </p>
+        <div class="text-[11px] font-semibold text-negro font-cinzel pt-1 border-t border-gris-suave/60 flex items-center justify-between">
+          <span>— Valentina T., paciente</span>
+          <span class="text-gris-calido font-sans font-normal text-[10px]">Atención Sede Bogotá</span>
+        </div>
+      </div>
+
+      <!-- IMAGEN DE RESULTADO ELEGANTE -->
+      <div class="rounded-2xl overflow-hidden border border-gris-suave shadow-sm bg-crema-card">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3pAUelTPTfH0uBnqK8Nvz9eyfQRgb6dmUuOT5LehwWAwlTSDN6pa3umsPwzl9nf1r_7YSVTkOG_X3Oy_QT31sNZiOeFOocXjWM1HtBG5qInOfXx4-VFaVX9YxrG5yxNm9pX-Hjw0Ok6Qn3dznBBrugGgcGvdVW4CwyhJklQ5yofRa0BbcfGOuf--n9oSih8670NRGUa8NpG3C2R5r8E_mfhsUd7K9FrK8C6faVkB5Jvq0lBkjG931WWC5sFllKjh5EP-xWOlttU" 
+             alt="Resultado Rinoplastia Ultrasónica Natural" 
+             class="w-full h-56 object-cover object-center">
+        <div class="p-3 bg-crema-light border-t border-gris-suave flex items-center justify-between">
+          <div class="text-xs font-cinzel font-semibold text-negro">
+            Armonía y Perfil Femenino Natural
+          </div>
+          <div class="text-[10px] text-dorado-dark font-medium flex items-center gap-1">
+            <i class="ph ph-check-circle"></i>
+            <span>Sin estigmas quirúrgicos</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. ACCIÓN (FORMULARIO + WHATSAPP) -->
+    <!-- ============================================== -->
+    <section class="space-y-4 pt-3" id="formulario">
+      
+      <div class="bg-crema-light p-5 rounded-2xl border border-dorado/40 shadow-md space-y-4">
+        
+        <div class="text-center space-y-1">
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-dorado-dark font-cinzel block">Cupos Mensuales Limitados por Sede</span>
+          <h2 class="text-xl font-bold text-negro font-cinzel leading-tight">
+            Agenda tu valoración con el Dr. Bautista
+          </h2>
+          <p class="text-xs text-gris-calido">
+            Completa tus datos para coordinar en tu ciudad preferida o escríbenos directamente.
+          </p>
+        </div>
+
+        <!-- FORMULARIO 3 CAMPOS -->
+        <form class="space-y-3" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573213693323?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Bautista';">
+          
+          <!-- CAMPO 1: NOMBRE -->
+          <div>
+            <label class="block text-xs font-semibold text-negro mb-1 font-cinzel">Nombre y Apellido *</label>
+            <div class="relative">
+              <input type="text" 
+                     required 
+                     placeholder="Ej. Carolina Gómez" 
+                     class="w-full px-3.5 py-2.5 rounded-lg bg-crema border border-gris-suave text-xs text-negro placeholder:text-gris-calido/70 focus:outline-none focus:ring-1 focus:ring-dorado focus:border-dorado transition">
+              <i class="ph ph-user absolute right-3 top-3 text-gris-calido text-sm"></i>
+            </div>
+          </div>
+
+          <!-- CAMPO 2: WHATSAPP -->
+          <div>
+            <label class="block text-xs font-semibold text-negro mb-1 font-cinzel">Número de WhatsApp *</label>
+            <div class="relative">
+              <input type="tel" 
+                     required 
+                     placeholder="Ej. +57 300 123 4567" 
+                     class="w-full px-3.5 py-2.5 rounded-lg bg-crema border border-gris-suave text-xs text-negro placeholder:text-gris-calido/70 focus:outline-none focus:ring-1 focus:ring-dorado focus:border-dorado transition">
+              <i class="ph ph-phone absolute right-3 top-3 text-gris-calido text-sm"></i>
+            </div>
+          </div>
+
+          <!-- CAMPO 3: SEDE DROPDOWN -->
+          <div>
+            <label class="block text-xs font-semibold text-negro mb-1 font-cinzel">Sede más cercana *</label>
+            <div class="relative">
+              <select required class="w-full px-3.5 py-2.5 rounded-lg bg-crema border border-gris-suave text-xs text-negro focus:outline-none focus:ring-1 focus:ring-dorado focus:border-dorado appearance-none transition pr-8">
+                <option value="Bucaramanga">Bucaramanga (Sede Principal)</option>
+                <option value="Bogotá">Bogotá D.C.</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Medellín">Medellín</option>
+              </select>
+              <i class="ph ph-caret-down absolute right-3 top-3 text-gris-calido text-sm pointer-events-none"></i>
+            </div>
+          </div>
+
+          <!-- BOTÓN FORMULARIO -->
+          <div class="pt-1.5 space-y-2">
+            <button type="submit" 
+                    class="w-full py-3.5 px-4 rounded-xl bg-negro text-dorado font-cinzel font-bold text-sm tracking-wide active:scale-[0.98] transition-all shadow-md flex items-center justify-center gap-2 border border-dorado/40">
+              <i class="ph ph-calendar-check text-base"></i>
+              <span>Agendar valoración</span>
+            </button>
+            <p class="text-[10.5px] text-center text-gris-calido">
+              Sin compromiso · Respuesta en menos de 24 horas
+            </p>
+          </div>
+
+        </form>
+
+        <!-- ALTERNATIVA WHATSAPP DIRECTO -->
+        <div class="pt-3 border-t border-gris-suave text-center space-y-2">
+          <span class="text-[11px] text-gris-calido block">O si prefieres atención inmediata:</span>
+          <a href="https://wa.me/573213693323?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Bautista" 
+             class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-wa-green/10 text-wa-dark hover:bg-wa-green/20 border border-wa-green/30 text-xs font-semibold w-full transition">
+            <i class="ph ph-whatsapp-logo text-base text-wa-green"></i>
+            <span>Chatear directo al WhatsApp: +57 321 369 3323</span>
+          </a>
+          <div class="flex items-center justify-center gap-1.5 text-[10px] text-gris-calido pt-1">
+            <i class="ph ph-lock-key"></i>
+            <span>Tus datos están protegidos bajo secreto profesional médico.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- FOOTER SOBRIO CON LAS 4 SEDES -->
+  <!-- ============================================== -->
+  <footer class="bg-negro text-crema/80 border-t border-dorado/30 pt-8 pb-10 px-4 mt-6">
+    <div class="max-w-md mx-auto space-y-6 text-center">
+      
+      <!-- LOGO / BRANDING -->
+      <div class="space-y-1">
+        <h4 class="font-cinzel font-bold text-base text-crema tracking-wider">Dr. Hernán Bautista</h4>
+        <p class="text-[11px] text-dorado font-medium">Cirujano Plástico Facial · Especialista en Rinoplastia Ultrasónica</p>
+      </div>
+
+      <!-- 4 SEDES -->
+      <div class="space-y-2">
+        <span class="text-[10px] tracking-widest uppercase font-semibold text-crema/50 font-cinzel block">Sedes Quirúrgicas en Colombia</span>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="bg-negro-soft p-2.5 rounded-lg border border-crema/10 text-left">
+            <strong class="text-dorado font-cinzel block text-xs">Bucaramanga</strong>
+            <span class="text-[10.5px] text-crema/60 block leading-tight">Sede Principal</span>
+          </div>
+          <div class="bg-negro-soft p-2.5 rounded-lg border border-crema/10 text-left">
+            <strong class="text-dorado font-cinzel block text-xs">Bogotá D.C.</strong>
+            <span class="text-[10.5px] text-crema/60 block leading-tight">Zona Médica Norte</span>
+          </div>
+          <div class="bg-negro-soft p-2.5 rounded-lg border border-crema/10 text-left">
+            <strong class="text-dorado font-cinzel block text-xs">Barranquilla</strong>
+            <span class="text-[10.5px] text-crema/60 block leading-tight">Sede Norte</span>
+          </div>
+          <div class="bg-negro-soft p-2.5 rounded-lg border border-crema/10 text-left">
+            <strong class="text-dorado font-cinzel block text-xs">Medellín</strong>
+            <span class="text-[10.5px] text-crema/60 block leading-tight">El Poblado</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LINKS & COPYRIGHT -->
+      <div class="pt-4 border-t border-crema/10 space-y-2 text-[10.5px] text-crema/60">
+        <div class="flex items-center justify-center gap-3">
+          <a href="https://drhernanbautista.com" class="hover:text-dorado transition">drhernanbautista.com</a>
+          <span>•</span>
+          <span>Aviso Legal</span>
+          <span>•</span>
+          <span>Privacidad Médica</span>
+        </div>
+        <p class="text-[10px] text-crema/40">
+          © 2025 Dr. Hernán Bautista. Registro Médico y Habilitación Seccional de Salud. Todos los derechos reservados.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- BARRA INFERIOR MÓVIL STICKY CON CTA -->
+  <!-- ============================================== -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-crema/95 backdrop-blur-md border-t border-gris-suave p-3 max-w-md mx-auto shadow-2xl">
+    <div class="flex items-center gap-2.5">
+      <a href="tel:+573213693323" 
+         class="w-11 h-11 rounded-xl bg-crema-card border border-gris-suave flex items-center justify-center text-negro text-lg shrink-0 active:scale-95 transition">
+        <i class="ph ph-phone-call"></i>
+      </a>
+      <a href="https://wa.me/573213693323?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Bautista" 
+         class="flex-1 py-3 px-4 rounded-xl bg-wa-green hover:bg-wa-dark active:scale-[0.98] transition-all text-white font-cinzel font-bold text-xs tracking-wider flex items-center justify-center gap-2 shadow-md shadow-wa-green/20">
+        <i class="ph ph-whatsapp-logo text-base"></i>
+        <span>Agendar por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

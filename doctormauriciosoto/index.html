@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Mauricio Soto · Carillas de Porcelana Bucaramanga</title>
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              purple: '#7e0c6e',
+              purpledark: '#620855',
+              purplelight: '#faeef8',
+              blue: '#116dff',
+              bluelight: '#eef5ff',
+              slate: '#64748b',
+              dark: '#1e293b',
+              border: '#e5e7eb',
+              bgsoft: '#faf7fa',
+              whatsapp: '#25d366',
+              whatsappdark: '#128c7e'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-serif-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .font-sans-body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    /* Estilo sutil para scrollbars y smooth tap */
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans-body bg-[#ffffff] text-slate-800 antialiased selection:bg-brand-purplelight selection:text-brand-purple pb-28">
+
+  <!-- TOP APP BAR / HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border px-4 py-3 flex items-center justify-between shadow-sm">
+    <div class="flex items-center space-x-2">
+      <div class="w-9 h-9 rounded-full bg-brand-purplelight flex items-center justify-center text-brand-purple font-serif font-bold text-lg border border-brand-purple/20">
+        MS
+      </div>
+      <div>
+        <div class="font-serif-headline text-base font-bold text-brand-purple leading-tight">Dr. Mauricio Soto</div>
+        <div class="text-[10px] tracking-wider text-slate-500 font-medium uppercase">Odontólogo U. Nacional · Bucaramanga</div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-1.5">
+      <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-brand-bluelight text-brand-blue border border-brand-blue/20">
+        EN / ES
+      </span>
+      <a href="https://wa.me/573187080343?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Mauricio%20Soto"
+         class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-purple text-white hover:bg-brand-purpledark transition-colors shadow-sm">
+        Agendar
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER (Mobile width optimized) -->
+  <main class="max-w-md mx-auto px-4 pt-5 pb-8 space-y-7">
+
+    <!-- ========================================== -->
+    <!-- 1. ETAPA DE ATENCIÓN (Hero Section)        -->
+    <!-- ========================================== -->
+    <section class="space-y-4">
+      <!-- Badge superior -->
+      <div class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-brand-purplelight text-brand-purple text-xs font-semibold border border-brand-purple/20">
+        <span class="material-symbols-outlined text-sm">verified</span>
+        <span>ESPECIALISTA U. NACIONAL · 28 AÑOS · ENGLISH SPOKEN</span>
+      </div>
+
+      <!-- H1 Titular con Playfair Display -->
+      <h1 class="font-serif-headline text-[32px] leading-[1.18] font-bold text-slate-900 tracking-tight">
+        Carillas de porcelana de <span class="italic text-brand-purple">clase mundial</span> en Bucaramanga
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="text-sm leading-relaxed text-slate-600 font-normal">
+        Diseño de sonrisa en porcelana y resina con 28 años de experiencia, para pacientes de Colombia y del exterior.
+      </p>
+
+      <!-- Imagen Hero con badge de garantía clínica -->
+      <div class="relative rounded-2xl overflow-hidden shadow-lg border border-brand-border bg-slate-100">
+        <img 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu5nu60fKmAj9tf5rt1bvp78Pbb8Fv4u544QlSkCH4ncSsh8Ui3_7hxvBr08pla6ehuPNV95hKdPB7AXrPcYGQb2WB5AZR7gE-qPlZQdaf1HcznGBRLRdrDjffWGz8Fg9DTWn_MUl90xJT2PJQ0lBd11Jq-7l15UF_3TpvPW8koJvWNzv2acHQmpbSs5yTHUoZUzfrlhdqEzJa_WUlcRKLBA1PLrskggfffOO3cG84bAWz_kKBiuNaRa2kfujoMtkAfsEAihyz0jE" 
+          alt="Sonrisa natural con carillas de porcelana Dr. Mauricio Soto" 
+          class="w-full h-64 object-cover object-center"
+          loading="eager"
+        />
+        <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-slate-200/80 shadow-md flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs font-bold text-slate-800">Resultado 100% Porcelana Natural</span>
+          </div>
+          <span class="text-[11px] font-semibold text-brand-purple bg-brand-purplelight px-2 py-0.5 rounded-md">
+            Bio-estética 3D
+          </span>
+        </div>
+      </div>
+
+      <!-- CTA PRIMARIO ÚNICO: Botón WhatsApp Verde Oficial -->
+      <div class="pt-1">
+        <a 
+          href="https://wa.me/573187080343?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Mauricio%20Soto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full flex items-center justify-center space-x-2.5 py-3.5 px-5 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappdark text-white font-bold text-base shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98]"
+        >
+          <!-- WhatsApp Icon SVG -->
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 2.028.928 3.149.928 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.768-5.77zm9.969 5.765c0 5.509-4.49 9.998-10 9.998-1.748 0-3.385-.453-4.814-1.246l-5.186 1.361 1.387-5.064c-.87-1.487-1.387-3.218-1.387-5.049 0-5.518 4.491-10.007 10-10.007 5.51 0 10 4.489 10 10.007z"/>
+          </svg>
+          <span>Agendar mi valoración</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+        <div class="flex items-center justify-center space-x-1.5 mt-2 text-[11px] text-slate-500 font-medium">
+          <span class="material-symbols-outlined text-xs text-brand-whatsapp">schedule</span>
+          <span>Respuesta directa por WhatsApp · Sin costo ni compromiso</span>
+        </div>
+      </div>
+
+      <!-- Micro-credenciales (3 badges en grid) -->
+      <div class="grid grid-cols-3 gap-2 pt-1">
+        <div class="bg-brand-bgsoft border border-brand-border p-2.5 rounded-xl text-center">
+          <span class="material-symbols-outlined text-brand-purple text-xl">school</span>
+          <div class="text-[11px] font-bold text-slate-800 leading-tight mt-1">Especialista</div>
+          <div class="text-[10px] text-slate-500">U. Nacional</div>
+        </div>
+        <div class="bg-brand-bgsoft border border-brand-border p-2.5 rounded-xl text-center">
+          <span class="material-symbols-outlined text-brand-purple text-xl">workspace_premium</span>
+          <div class="text-[11px] font-bold text-slate-800 leading-tight mt-1">28 Años</div>
+          <div class="text-[10px] text-slate-500">De experiencia</div>
+        </div>
+        <div class="bg-brand-bgsoft border border-brand-border p-2.5 rounded-xl text-center">
+          <span class="material-symbols-outlined text-brand-purple text-xl">newspaper</span>
+          <div class="text-[11px] font-bold text-slate-800 leading-tight mt-1">Prensa</div>
+          <div class="text-[10px] text-slate-500">Vanguardia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. ETAPA DE INTERÉS (Dolor + Proceso)       -->
+    <!-- ========================================== -->
+    <section class="space-y-4 pt-2">
+      <!-- Card del dolor real -->
+      <div class="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-4 shadow-sm relative overflow-hidden">
+        <div class="flex items-start space-x-3">
+          <div class="w-8 h-8 rounded-full bg-amber-100 flex-shrink-0 flex items-center justify-center text-amber-700">
+            <span class="material-symbols-outlined text-lg">travel_explore</span>
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="font-serif-headline text-base font-bold text-amber-950 leading-snug">
+              ¿Buscas veneers desde el exterior y solo encuentras un blog con decenas de enlaces sueltos?
+            </h2>
+            <p class="text-xs leading-relaxed text-amber-900/90 font-normal">
+              Su web vende <strong class="font-semibold text-amber-950">Porcelain Veneers Colombia</strong> pero está hecha como blog: el paciente internacional no encuentra UNA página con precio orientativo, antes/después y pasos del viaje. Aquí está todo en un solo lugar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Título de sección de proceso -->
+      <div class="text-center pt-2 space-y-1">
+        <span class="text-[11px] font-bold text-brand-purple uppercase tracking-wider">Metodología Clara y Predecible</span>
+        <h2 class="font-serif-headline text-2xl font-bold text-slate-900">
+          Tu camino hacia una nueva sonrisa en 3 pasos
+        </h2>
+      </div>
+
+      <!-- Proceso 3 pasos -->
+      <div class="space-y-3">
+        <!-- Paso 01 -->
+        <div class="bg-white border border-brand-border rounded-xl p-3.5 flex items-start space-x-3.5 shadow-sm hover:border-brand-purple/40 transition-colors">
+          <div class="w-9 h-9 rounded-xl bg-brand-purple text-white flex-shrink-0 flex items-center justify-center font-bold text-sm font-serif">
+            01
+          </div>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">
+              Escríbenos (ES o EN) con tu caso
+            </h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Envías tus fotos frontales o radiografías por WhatsApp. Recibes respuesta médica personalizada sin trámites engorrosos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="bg-white border border-brand-border rounded-xl p-3.5 flex items-start space-x-3.5 shadow-sm hover:border-brand-purple/40 transition-colors">
+          <div class="w-9 h-9 rounded-xl bg-brand-blue text-white flex-shrink-0 flex items-center justify-center font-bold text-sm font-serif">
+            02
+          </div>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">
+              Valoración con diseño previo de tu sonrisa
+            </h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Evaluamos proporción facial y simetría. Visualizas la forma, color y longitud proyectada de tus carillas antes de iniciar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="bg-white border border-brand-border rounded-xl p-3.5 flex items-start space-x-3.5 shadow-sm hover:border-brand-purple/40 transition-colors">
+          <div class="w-9 h-9 rounded-xl bg-slate-900 text-white flex-shrink-0 flex items-center justify-center font-bold text-sm font-serif">
+            03
+          </div>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">
+              Plan de tratamiento y fechas de tu viaje
+            </h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Cronograma cerrado para tu estancia en Bucaramanga. Elaboración con laboratorio de alta precisión y colocación sin sorpresas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. ETAPA DE DESEO (Beneficios + Prueba)     -->
+    <!-- ========================================== -->
+    <section class="space-y-4 pt-2">
+      <!-- Título de Beneficios -->
+      <div class="text-center space-y-1">
+        <span class="text-[11px] font-bold text-brand-purple uppercase tracking-wider">Excelencia Odontológica</span>
+        <h2 class="font-serif-headline text-2xl font-bold text-slate-900">
+          Resultados naturales con rigor clínico
+        </h2>
+      </div>
+
+      <!-- Tarjetas de Beneficios (3 puntos clave) -->
+      <div class="space-y-2.5">
+        <div class="p-3.5 rounded-xl bg-brand-bgsoft border border-brand-purple/15 flex items-start space-x-3">
+          <span class="material-symbols-outlined text-brand-purple text-xl mt-0.5">diamond</span>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">Carillas de porcelana y resina de autor</h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Elegimos el material idóneo según tu oclusión y expectativas: máxima durabilidad translúcida o microdiseño conservador.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-brand-bgsoft border border-brand-purple/15 flex items-start space-x-3">
+          <span class="material-symbols-outlined text-brand-purple text-xl mt-0.5">visibility</span>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">Diseño previo antes de tocar tu sonrisa</h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Cero incertidumbre. El paciente aprueba el contorno y estética dental previa, preservando al máximo el esmalte natural.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-brand-bgsoft border border-brand-purple/15 flex items-start space-x-3">
+          <span class="material-symbols-outlined text-brand-purple text-xl mt-0.5">flight</span>
+          <div>
+            <h3 class="font-serif-headline text-sm font-bold text-slate-900">Atención para pacientes internacionales</h3>
+            <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">
+              Asesoría bilingüe fluida (English & Spanish), coordinación de agenda intensiva y soporte en hospedaje y traslado en Bucaramanga.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métricas destacadas (3 columnas) -->
+      <div class="grid grid-cols-3 gap-2 py-2">
+        <div class="bg-brand-purple text-white p-3 rounded-xl text-center shadow-sm">
+          <div class="font-serif-headline text-xl font-bold">28 Años</div>
+          <div class="text-[10px] text-purple-200 uppercase tracking-wider mt-0.5">Trayectoria</div>
+        </div>
+        <div class="bg-slate-900 text-white p-3 rounded-xl text-center shadow-sm">
+          <div class="font-serif-headline text-xl font-bold">U. Nacional</div>
+          <div class="text-[10px] text-slate-300 uppercase tracking-wider mt-0.5">Especialista</div>
+        </div>
+        <div class="bg-brand-blue text-white p-3 rounded-xl text-center shadow-sm">
+          <div class="font-serif-headline text-xl font-bold">English</div>
+          <div class="text-[10px] text-blue-100 uppercase tracking-wider mt-0.5">Bilingual Care</div>
+        </div>
+      </div>
+
+      <!-- Testimonio Internacional Destacado -->
+      <div class="bg-white border border-brand-border rounded-2xl p-4 shadow-sm space-y-3">
+        <div class="flex items-center space-x-1 text-amber-400">
+          <span class="material-symbols-outlined text-sm">star</span>
+          <span class="material-symbols-outlined text-sm">star</span>
+          <span class="material-symbols-outlined text-sm">star</span>
+          <span class="material-symbols-outlined text-sm">star</span>
+          <span class="material-symbols-outlined text-sm">star</span>
+          <span class="text-xs font-bold text-slate-700 ml-1.5">5.0 Verificado</span>
+        </div>
+        <blockquote class="font-serif-headline italic text-sm text-slate-800 leading-relaxed">
+          «Vine desde Miami por mis veneers y volví con la sonrisa que diseñamos juntos. Todo quedó claro desde la primera videollamada.»
+        </blockquote>
+        <div class="flex items-center justify-between pt-1 border-t border-slate-100 text-xs text-slate-500">
+          <span class="font-semibold text-slate-800">Daniel R.</span>
+          <span class="inline-flex items-center text-[11px] text-brand-purple">
+            <span class="material-symbols-outlined text-xs mr-0.5">verified_user</span>
+            Paciente Internacional · Miami, FL
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. ETAPA DE ACCIÓN (Formulario + WhatsApp)  -->
+    <!-- ========================================== -->
+    <section id="agenda" class="bg-brand-bgsoft border border-brand-border rounded-2xl p-4 shadow-sm space-y-4 pt-5">
+      <div class="text-center space-y-1">
+        <span class="inline-block px-2.5 py-0.5 bg-brand-purplelight text-brand-purple text-[10px] font-bold rounded-full uppercase tracking-wider">
+          Agenda Abierta en Bucaramanga
+        </span>
+        <h2 class="font-serif-headline text-2xl font-bold text-slate-900">
+          Agenda tu valoración con el Dr. Mauricio Soto
+        </h2>
+        <p class="text-xs text-slate-500">
+          Completa tus datos o si prefieres, escríbenos directamente por WhatsApp.
+        </p>
+      </div>
+
+      <!-- Formulario 3 Campos -->
+      <form onsubmit="event.preventDefault(); window.location.href='https://wa.me/573187080343?text=Hola%20Dr.%20Mauricio%20Soto%2C%20acabo%20de%20diligenciar%20mi%20solicitud%20para%20valoraci%C3%B3n';" class="space-y-3">
+        <!-- Campo 1: Nombre -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Nombre completo *</label>
+          <input 
+            type="text" 
+            required 
+            placeholder="Ej. Carlos Mendoza" 
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple/30 focus:border-brand-purple bg-white text-slate-800 placeholder-slate-400"
+          />
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Número de WhatsApp (con indicativo) *</label>
+          <input 
+            type="tel" 
+            required 
+            placeholder="Ej. +1 305 000 0000 o +57 300 000 0000" 
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple/30 focus:border-brand-purple bg-white text-slate-800 placeholder-slate-400"
+          />
+        </div>
+
+        <!-- Campo 3: Dropdown Tratamiento -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Tratamiento de interés *</label>
+          <select class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple/30 focus:border-brand-purple bg-white text-slate-800">
+            <option value="carillas">Carillas de porcelana</option>
+            <option value="diseno">Diseño de sonrisa</option>
+            <option value="ortodoncia">Ortodoncia invisible</option>
+          </select>
+        </div>
+
+        <!-- Botón del Formulario -->
+        <button 
+          type="submit" 
+          class="w-full py-3 px-4 rounded-xl bg-brand-purple hover:bg-brand-purpledark text-white font-bold text-sm shadow-md transition-all duration-150 flex items-center justify-center space-x-1.5 active:scale-[0.98]"
+        >
+          <span>Agendar valoración</span>
+          <span class="material-symbols-outlined text-base">send</span>
+        </button>
+
+        <!-- Microcopy de confianza -->
+        <div class="text-center text-[11px] text-slate-500 font-medium">
+          Respuesta en menos de 24 horas · Español o inglés
+        </div>
+      </form>
+
+      <!-- Divisor o alternativa -->
+      <div class="relative flex py-1 items-center">
+        <div class="flex-grow border-t border-slate-200"></div>
+        <span class="flex-shrink mx-3 text-[10px] text-slate-400 uppercase font-semibold">o chatea directamente</span>
+        <div class="flex-grow border-t border-slate-200"></div>
+      </div>
+
+      <!-- Botón alternativo WhatsApp Directo -->
+      <a 
+        href="https://wa.me/573187080343?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Mauricio%20Soto" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full flex items-center justify-center space-x-2 py-2.5 px-4 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 text-xs font-bold transition-colors"
+      >
+        <svg class="w-4 h-4 fill-emerald-600" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 2.028.928 3.149.928 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.768-5.77zm9.969 5.765c0 5.509-4.49 9.998-10 9.998-1.748 0-3.385-.453-4.814-1.246l-5.186 1.361 1.387-5.064c-.87-1.487-1.387-3.218-1.387-5.049 0-5.518 4.491-10.007 10-10.007 5.51 0 10 4.489 10 10.007z"/>
+        </svg>
+        <span>Escribir al WhatsApp: +57 318 708 0343</span>
+      </a>
+
+      <!-- Aviso de privacidad -->
+      <div class="text-[10px] text-center text-slate-400 flex items-center justify-center space-x-1">
+        <span class="material-symbols-outlined text-xs">lock</span>
+        <span>Tus datos están protegidos bajo secreto profesional médico.</span>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (Acordeón interactivo nativo) -->
+    <section class="space-y-2.5 pt-2">
+      <div class="text-center mb-3">
+        <h3 class="font-serif-headline text-lg font-bold text-slate-900">Preguntas Frecuentes</h3>
+        <p class="text-xs text-slate-500">Claridad y tranquilidad para tu tratamiento</p>
+      </div>
+
+      <details class="group bg-white border border-brand-border rounded-xl p-3 text-xs shadow-sm">
+        <summary class="font-semibold text-slate-800 cursor-pointer flex justify-between items-center list-none">
+          <span>¿Cuántos días de viaje necesito en Bucaramanga?</span>
+          <span class="material-symbols-outlined text-sm text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="mt-2 text-slate-600 leading-relaxed border-t border-slate-100 pt-2">
+          Para carillas de porcelana coordinamos un protocolo ágil de 5 a 7 días hábiles entre la toma de registros de precisión, prueba estética previa y cementación final.
+        </p>
+      </details>
+
+      <details class="group bg-white border border-brand-border rounded-xl p-3 text-xs shadow-sm">
+        <summary class="font-semibold text-slate-800 cursor-pointer flex justify-between items-center list-none">
+          <span>¿El resultado se ve artificial o demasiado blanco?</span>
+          <span class="material-symbols-outlined text-sm text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="mt-2 text-slate-600 leading-relaxed border-t border-slate-100 pt-2">
+          No. La filosofía del Dr. Mauricio Soto prioriza la bio-mimesis: carillas con translucidez natural, textura de esmalte y mamelones que imitan los dientes biológicos.
+        </p>
+      </details>
+
+      <details class="group bg-white border border-brand-border rounded-xl p-3 text-xs shadow-sm">
+        <summary class="font-semibold text-slate-800 cursor-pointer flex justify-between items-center list-none">
+          <span>¿Cómo se realiza la valoración si resido en el exterior?</span>
+          <span class="material-symbols-outlined text-sm text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="mt-2 text-slate-600 leading-relaxed border-t border-slate-100 pt-2">
+          Iniciamos con una videoconsulta y análisis fotográfico. Te entregamos un presupuesto cerrado orientativo y cronograma antes de que adquieras tus tiquetes aéreos.
+        </p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER SOBRIO CON CONTACTO BUCARAMANGA     -->
+  <!-- ========================================== -->
+  <footer class="bg-slate-900 text-slate-300 py-8 px-4 text-center text-xs space-y-4 border-t border-slate-800">
+    <div class="max-w-md mx-auto space-y-2">
+      <div class="font-serif-headline text-lg font-bold text-white tracking-wide">
+        Dr. Mauricio Soto
+      </div>
+      <p class="text-slate-400 text-xs">
+        Odontología Estética de Alta Gama & Turismo Dental<br>
+        Bucaramanga, Santander, Colombia · Web: doctormauriciosoto.com
+      </p>
+      <div class="flex items-center justify-center space-x-3 text-[11px] text-purple-300 pt-1">
+        <span>Especialista U. Nacional</span>
+        <span>•</span>
+        <span>28 Años de Trayectoria</span>
+        <span>•</span>
+        <span>PBX: +57 318 708 0343</span>
+      </div>
+      <p class="text-[10px] text-slate-500 pt-3 border-t border-slate-800">
+        © 2025 Dr. Mauricio Soto. Todos los derechos reservados. Registro Seccional de Prestadores de Salud.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- BARRA INFERIOR MÓVIL STICKY CON CTA        -->
+  <!-- ========================================== -->
+  <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-border px-4 py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+    <div class="max-w-md mx-auto flex items-center justify-between space-x-3">
+      <div class="flex-1">
+        <div class="text-[10px] uppercase font-bold text-brand-purple tracking-wider">Valoración Online / Presencial</div>
+        <div class="text-xs font-bold text-slate-900 leading-tight">Bucaramanga · Pacientes Intl.</div>
+      </div>
+      <a 
+        href="https://wa.me/573187080343?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20con%20el%20Dr.%20Mauricio%20Soto"
+        class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappdark text-white font-bold text-xs shadow transition-all active:scale-95"
+      >
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.58 2.028.928 3.149.928 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.768-5.77zm9.969 5.765c0 5.509-4.49 9.998-10 9.998-1.748 0-3.385-.453-4.814-1.246l-5.186 1.361 1.387-5.064c-.87-1.487-1.387-3.218-1.387-5.049 0-5.518 4.491-10.007 10-10.007 5.51 0 10 4.489 10 10.007z"/>
+        </svg>
+        <span>Agendar por WhatsApp</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+</html>

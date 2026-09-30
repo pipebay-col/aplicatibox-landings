@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Alfonso Riascos · Cirujano Plástico Cali | Imbanaco</title>
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Material Symbols Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#071041',
+              'navy-light': '#132066',
+              lime: '#93C800',
+              'lime-hover': '#82b200',
+              bg: '#faf9f6',
+              border: '#e2e8f0',
+              slate: '#64748b',
+              whatsapp: '#25d366',
+              'whatsapp-dark': '#128c7e'
+            }
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf9f6;
+      color: #071041;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .font-fraunces {
+      font-family: 'Fraunces', serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.outline-icon {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-[#faf9f6] text-brand-navy min-h-screen pb-24 antialiased selection:bg-brand-lime/30 selection:text-brand-navy">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border px-4 py-3 shadow-sm">
+    <div class="max-w-md mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-9 h-9 rounded-full bg-brand-navy text-white flex items-center justify-center font-fraunces font-bold text-base shadow-sm">
+          AR
+        </div>
+        <div class="leading-tight">
+          <div class="font-fraunces font-bold text-brand-navy text-[15px] tracking-tight">Dr. Alfonso Riascos</div>
+          <div class="text-[10px] uppercase font-semibold text-brand-slate tracking-wider">Imbanaco · Cali</div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-brand-navy bg-slate-100 px-2 py-1 rounded-full border border-slate-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-lime animate-pulse"></span>
+          EN / ES
+        </span>
+        <a href="https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos" target="_blank" rel="noopener noreferrer" class="bg-brand-navy hover:bg-brand-navy-light text-white text-[12px] font-semibold px-3 py-1.5 rounded-lg transition-colors shadow-xs flex items-center gap-1">
+          <span>Cita VIP</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER (Mobile focused, max-w-md) -->
+  <main class="max-w-md mx-auto px-4 pt-4 pb-8 space-y-6">
+
+    <!-- 1. ATENCIÓN (HERO SECTION) -->
+    <section class="bg-white rounded-2xl p-5 border border-brand-border shadow-sm space-y-4">
+      <!-- Badge superior -->
+      <div class="inline-flex items-center gap-1.5 bg-[#f0f4ff] border border-[#d2defa] px-3 py-1 rounded-full">
+        <span class="material-symbols-outlined text-brand-navy text-[15px]">verified</span>
+        <span class="text-[10px] font-bold text-brand-navy tracking-wider uppercase">
+          Cirujano Plástico · SCCP · ISAPS · Imbanaco
+        </span>
+      </div>
+
+      <!-- H1 Titular -->
+      <h1 class="text-3xl font-normal leading-[1.18] text-brand-navy tracking-tight">
+        Rejuvenece tu rostro con un <span class="italic font-light text-brand-navy-light underline decoration-brand-lime decoration-4 underline-offset-4">cirujano internacional</span> en Cali
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="text-[14px] text-brand-slate leading-relaxed">
+        Rejuvenecimiento facial y de cuello, cirugía de párpados y rinoplastia con el respaldo y seguridad del <strong class="text-brand-navy font-semibold">Centro Médico Imbanaco</strong>.
+      </p>
+
+      <!-- Imagen Hero Dr. Alfonso Riascos -->
+      <div class="relative rounded-xl overflow-hidden shadow-md border border-slate-100 group">
+        <img 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaP9J8eXr3uYHNbCIhnxX2Pt-ywSUQUUjFH_u1xkqH_AmGOgdYwVUR3zbmxITA1PpU0L7-zdQMahcct4VArIk5estqBuQh5S1RzjGBPiqLoLT5Uy1aszoY7L4GZWSMRCvR3T2WP-M73lhn_asyg_5niWFFXxGMpJ-5TcL6-NbNooBQ_G9rUDSJfAANspp8M4pwtlKJ0_VVJKnDkdKNDMG3nst9EkGEJ8HJFKq5WguD9_0YqPTUWtU4UbWb8qyQbjJqLClnBEptNqY" 
+          alt="Dr. Alfonso Riascos - Cirujano Plástico en Centro Médico Imbanaco Cali" 
+          class="w-full h-64 object-cover object-top transition duration-300 group-hover:scale-[1.02]"
+        />
+        <div class="absolute bottom-2.5 left-2.5 right-2.5 bg-brand-navy/85 backdrop-blur-md rounded-lg p-2.5 text-white flex items-center justify-between border border-white/10 shadow-sm">
+          <div>
+            <p class="text-[12px] font-fraunces font-semibold tracking-wide flex items-center gap-1">
+              Dr. Alfonso Riascos
+              <span class="material-symbols-outlined text-brand-lime text-[14px]">verified</span>
+            </p>
+            <p class="text-[10px] text-slate-200">Especialista SCCP &amp; ISAPS</p>
+          </div>
+          <div class="text-right">
+            <span class="text-[9px] uppercase tracking-wider font-bold bg-white/20 px-2 py-0.5 rounded text-white inline-block">
+              Sede Imbanaco
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UN SOLO CTA PRIMARIO WHATSAPP VERDE OFICIAL -->
+      <div class="pt-1">
+        <a 
+          href="https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full bg-brand-whatsapp hover:bg-brand-whatsapp-dark text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2.5 text-[15px] active:scale-[0.98]"
+        >
+          <!-- WhatsApp Icon SVG -->
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Programar mi cita</span>
+        </a>
+        <p class="text-center text-[11px] text-brand-slate mt-2 flex items-center justify-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-whatsapp inline-block"></span>
+          Respuesta directa por WhatsApp · Sin costo ni compromiso
+        </p>
+      </div>
+
+      <!-- Micro-credenciales (3 pills) -->
+      <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100">
+        <div class="bg-brand-bg rounded-xl p-2.5 text-center border border-slate-200/70">
+          <span class="material-symbols-outlined text-brand-navy text-[18px]">verified_user</span>
+          <div class="text-[11px] font-bold text-brand-navy mt-0.5">SCCP · ISAPS</div>
+          <div class="text-[9px] text-brand-slate">Certificación Élite</div>
+        </div>
+        <div class="bg-brand-bg rounded-xl p-2.5 text-center border border-slate-200/70">
+          <span class="material-symbols-outlined text-brand-navy text-[18px]">local_hospital</span>
+          <div class="text-[11px] font-bold text-brand-navy mt-0.5">C.M. Imbanaco</div>
+          <div class="text-[9px] text-brand-slate">Acreditación JCI</div>
+        </div>
+        <div class="bg-brand-bg rounded-xl p-2.5 text-center border border-slate-200/70">
+          <span class="material-symbols-outlined text-brand-navy text-[18px]">translate</span>
+          <div class="text-[11px] font-bold text-brand-navy mt-0.5">ES / EN</div>
+          <div class="text-[9px] text-brand-slate">Atención Bilingüe</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. INTERÉS (DIAGNÓSTICO DEL DOLOR + PROCESO CLARO) -->
+    <section class="space-y-4">
+      
+      <!-- Card con el dolor real del usuario -->
+      <div class="bg-[#fff9f5] border-l-4 border-amber-500 rounded-2xl p-4.5 border border-amber-200/60 shadow-xs space-y-2.5">
+        <div class="flex items-start gap-2.5">
+          <span class="material-symbols-outlined text-amber-600 text-xl shrink-0 mt-0.5">help</span>
+          <div>
+            <h3 class="text-[15px] font-fraunces font-bold text-brand-navy leading-snug">
+              ¿Buscas rejuvenecimiento facial pero la web del doctor es un catálogo gigante sin casos ni precios claros?
+            </h3>
+          </div>
+        </div>
+        <p class="text-[13px] text-slate-700 leading-relaxed pl-7">
+          Su web lista 20+ procedimientos pero el paciente que llega por rejuvenecimiento no ve antes/después junto al procedimiento ni un flujo de valoración: la decisión se posterga. Aquí va directo al punto.
+        </p>
+        <div class="pl-7 pt-1 flex items-center gap-1.5 text-[11px] font-bold text-brand-navy">
+          <span class="material-symbols-outlined text-brand-lime text-[16px]">check_circle</span>
+          <span>Flujo ágil, transparente y con respuesta médica prioritaria</span>
+        </div>
+      </div>
+
+      <!-- Proceso en 3 Pasos -->
+      <div class="bg-white rounded-2xl p-5 border border-brand-border shadow-sm space-y-4">
+        <div class="text-center space-y-1">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-brand-slate">Ruta Transparente y Sin Fricción</span>
+          <h2 class="text-2xl font-normal text-brand-navy">Tu camino hacia tu valoración en 3 pasos</h2>
+        </div>
+
+        <div class="space-y-3 pt-2">
+          <!-- Paso 01 -->
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-bg border border-slate-200/80">
+            <div class="w-8 h-8 rounded-full bg-brand-navy text-brand-lime font-fraunces font-bold text-sm flex items-center justify-center shrink-0 shadow-xs">
+              01
+            </div>
+            <div class="space-y-0.5">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy">
+                Escríbenos tu inquietud (ES o EN)
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Cuéntanos tu objetivo estético por WhatsApp o formulario. Te atendemos fluidamente en español o inglés con absoluta reserva médica.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 02 -->
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-bg border border-slate-200/80">
+            <div class="w-8 h-8 rounded-full bg-brand-navy text-brand-lime font-fraunces font-bold text-sm flex items-center justify-center shrink-0 shadow-xs">
+              02
+            </div>
+            <div class="space-y-0.5">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy">
+                Valoración personalizada en Imbanaco
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Consulta presencial en la sede de Imbanaco en Cali (o videoconsulta previa para pacientes fuera del Valle del Cauca y del exterior).
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 03 -->
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-bg border border-slate-200/80">
+            <div class="w-8 h-8 rounded-full bg-brand-navy text-brand-lime font-fraunces font-bold text-sm flex items-center justify-center shrink-0 shadow-xs">
+              03
+            </div>
+            <div class="space-y-0.5">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy">
+                Plan quirúrgico con acompañamiento
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Presupuesto cerrado sin sorpresas, programación en quirófanos acreditados JCI de Imbanaco y seguimiento postoperatorio riguroso y cercano.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESEO (PRUEBA SOCIAL + BENEFICIOS + RESULTADOS) -->
+    <section class="space-y-4">
+      
+      <!-- Beneficios Clínicos Destacados -->
+      <div class="bg-white rounded-2xl p-5 border border-brand-border shadow-sm space-y-4">
+        <div class="text-center space-y-1">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-brand-slate">Especialidades de Autor</span>
+          <h2 class="text-2xl font-normal text-brand-navy">Cirugía de alta precisión en Cali</h2>
+        </div>
+
+        <div class="space-y-2.5">
+          <!-- Card Beneficio 1 -->
+          <div class="p-3.5 rounded-xl border border-slate-200 bg-[#f8fafc] flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">face</span>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy leading-snug">
+                Rejuvenecimiento facial y de cuello
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Lifting cervicofacial de vectores naturales: reposicionamiento de planos profundos sin estigma quirúrgico ni aspecto estirado.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card Beneficio 2 -->
+          <div class="p-3.5 rounded-xl border border-slate-200 bg-[#f8fafc] flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">visibility</span>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy leading-snug">
+                Cirugía de párpados y rinoplastia
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Blefaroplastia para una mirada descansada y rinoplastia estética-funcional personalizada a la armonía de tus facciones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card Beneficio 3 -->
+          <div class="p-3.5 rounded-xl border border-slate-200 bg-[#f8fafc] flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[20px]">accessibility_new</span>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-[14px] font-fraunces font-bold text-brand-navy leading-snug">
+                Mommy Makeover y cirugía para hombres
+              </h4>
+              <p class="text-[12px] text-brand-slate leading-relaxed">
+                Contorno corporal post-parto, lipoescultura anatómica de alta definición y protocolos específicos diseñados para la fisonomía masculina.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Métricas de Confianza (SCCP e ISAPS · Centro Médico Imbanaco · Inglés disponible) -->
+        <div class="grid grid-cols-3 gap-2 pt-3 border-t border-slate-100 text-center">
+          <div class="bg-brand-navy text-white rounded-xl p-3 shadow-xs">
+            <div class="font-fraunces text-base font-bold text-brand-lime leading-tight">SCCP / ISAPS</div>
+            <div class="text-[10px] text-slate-300 mt-1 uppercase tracking-wider font-semibold">Miembro Titular</div>
+          </div>
+          <div class="bg-brand-navy text-white rounded-xl p-3 shadow-xs">
+            <div class="font-fraunces text-base font-bold text-white leading-tight">Imbanaco</div>
+            <div class="text-[10px] text-slate-300 mt-1 uppercase tracking-wider font-semibold">Clínica #1 Cali</div>
+          </div>
+          <div class="bg-brand-navy text-white rounded-xl p-3 shadow-xs">
+            <div class="font-fraunces text-base font-bold text-brand-lime leading-tight">100% Bilingüe</div>
+            <div class="text-[10px] text-slate-300 mt-1 uppercase tracking-wider font-semibold">Inglés disponible</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen de Resultado Elegante + Testimonio -->
+      <div class="bg-white rounded-2xl p-5 border border-brand-border shadow-sm space-y-4">
+        <div class="space-y-1 text-center">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-brand-slate">Evidencia y Armonía</span>
+          <h3 class="text-xl font-fraunces font-bold text-brand-navy">Resultados naturales en Imbanaco</h3>
+        </div>
+
+        <!-- Imagen de Resultado Elegante -->
+        <div class="relative rounded-xl overflow-hidden shadow-sm border border-slate-200">
+          <img 
+            src="https://lh3.googleusercontent.com/aida/AEtjO1VcUYLFXu9wcfyYTIQHBwtNyinvQZNAQh4OaoXRxxwm286hwLEh5rQ5-09IG1-dyz_h0GBAQqjeNBsCTkRReHL_1-rx4BIswJDtbDgJDKRxLs2vl-W2AkZDwhRvGrJYENOfB2sbXzGsk-6E-leRHiiG69MhhzzQbsNCYdjAj6QHD60F-VTacVBHX3VisQaXbBC579Tbz5ebMKx428QUYNZkUt6UvnvKCqKbZ2_RCeK10Il8d0EpY_ZrU-U" 
+            alt="Resultado armónico y natural de rejuvenecimiento facial en Cali con el Dr. Alfonso Riascos" 
+            class="w-full h-56 object-cover object-center"
+          />
+          <div class="absolute bottom-2.5 left-2.5 bg-brand-navy/90 backdrop-blur-sm text-white text-[10px] font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5 border border-white/20">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
+            Rejuvenecimiento &amp; Armonía Facial
+          </div>
+        </div>
+
+        <!-- Testimonio del Usuario -->
+        <div class="bg-amber-50/60 border border-amber-200/80 rounded-xl p-4 space-y-2">
+          <div class="flex items-center space-x-1 text-amber-500">
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="text-[11px] font-bold text-brand-navy ml-1">5.0 / 5.0</span>
+          </div>
+          <p class="text-[13px] italic text-slate-700 leading-relaxed font-fraunces">
+            «El Dr. Riascos me explicó el rejuvenecimiento paso a paso y la atención en Imbanaco fue de otro nivel. Cero incertidumbre y los resultados se ven completamente naturales.»
+          </p>
+          <div class="flex items-center justify-between pt-1 border-t border-amber-200/60 text-[11px]">
+            <span class="font-bold text-brand-navy">Claudia M.</span>
+            <span class="text-brand-slate flex items-center gap-1">
+              <span class="material-symbols-outlined text-brand-lime text-[14px]">check_circle</span>
+              Paciente de Cali · Caso Verificado
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ACCIÓN (FORMULARIO DE CONTACTO + ALTERNATIVA WHATSAPP) -->
+    <section class="bg-white rounded-2xl p-5 border border-brand-border shadow-md space-y-4">
+      <div class="text-center space-y-1">
+        <span class="text-[10px] font-bold tracking-widest uppercase bg-brand-lime/20 text-brand-navy px-3 py-1 rounded-full inline-block">
+          Atención Prioritaria en Imbanaco
+        </span>
+        <h2 class="text-2xl font-normal text-brand-navy">Programa tu cita con el Dr. Riascos</h2>
+        <p class="text-[12px] text-brand-slate">
+          Completa tus datos para coordinar tu cita presencial en Cali o videoconsulta previa.
+        </p>
+      </div>
+
+      <!-- Formulario 3 Campos -->
+      <form onsubmit="event.preventDefault(); window.open('https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos', '_blank');" class="space-y-3.5 pt-1">
+        
+        <!-- Campo 1: Nombre -->
+        <div class="space-y-1">
+          <label class="block text-[12px] font-bold text-brand-navy">Nombre completo *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">person</span>
+            <input 
+              type="text" 
+              required 
+              placeholder="Ej. Carolina Montoya" 
+              class="w-full bg-[#f8fafc] border border-brand-border rounded-xl pl-9 pr-3.5 py-2.5 text-[13px] text-brand-navy placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:bg-white transition-all"
+            />
+          </div>
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div class="space-y-1">
+          <label class="block text-[12px] font-bold text-brand-navy">Número de WhatsApp *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">chat</span>
+            <input 
+              type="tel" 
+              required 
+              placeholder="Ej. +57 315 000 0000" 
+              class="w-full bg-[#f8fafc] border border-brand-border rounded-xl pl-9 pr-3.5 py-2.5 text-[13px] text-brand-navy placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:bg-white transition-all"
+            />
+          </div>
+        </div>
+
+        <!-- Campo 3: Procedimiento de interés (Dropdown solicitado) -->
+        <div class="space-y-1">
+          <label class="block text-[12px] font-bold text-brand-navy">Procedimiento de interés *</label>
+          <div class="relative">
+            <span class="material-symbols-outlined absolute left-3 top-3 text-slate-400 text-[18px]">medical_services</span>
+            <select 
+              required
+              class="w-full bg-[#f8fafc] border border-brand-border rounded-xl pl-9 pr-8 py-2.5 text-[13px] text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-navy focus:bg-white transition-all appearance-none cursor-pointer"
+            >
+              <option value="" disabled selected>Selecciona tu procedimiento...</option>
+              <option value="rejuvenecimiento">Rejuvenecimiento facial</option>
+              <option value="corporal">Cirugía corporal</option>
+              <option value="hombres">Cirugía para hombres</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-3 top-3 text-slate-400 pointer-events-none text-[18px]">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Botón Programar Cita -->
+        <button 
+          type="submit" 
+          class="w-full bg-brand-navy hover:bg-brand-navy-light text-white font-bold py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg transition-all text-[15px] flex items-center justify-center gap-2 active:scale-[0.98] mt-2"
+        >
+          <span class="material-symbols-outlined text-brand-lime text-[20px]">calendar_month</span>
+          <span>Programar cita</span>
+        </button>
+
+        <!-- Microcopy -->
+        <p class="text-center text-[11px] text-brand-slate">
+          Sin compromiso · Te respondemos en menos de 24 horas
+        </p>
+
+        <!-- Aviso Privacidad -->
+        <div class="flex items-center justify-center gap-1.5 text-[10px] text-slate-400 pt-1">
+          <span class="material-symbols-outlined text-[13px]">lock</span>
+          <span>Tus datos se manejan bajo estricto secreto médico profesional</span>
+        </div>
+
+        <!-- O bien WhatsApp directo -->
+        <div class="pt-2 border-t border-slate-100 text-center">
+          <p class="text-[11px] text-brand-slate mb-2">¿Prefieres escribir directamente?</p>
+          <a 
+            href="https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-[12px] font-bold text-brand-navy hover:text-brand-whatsapp transition-colors bg-slate-50 border border-slate-200 px-3.5 py-2 rounded-lg"
+          >
+            <!-- WhatsApp Icon SVG -->
+            <svg class="w-4 h-4 fill-[#25d366]" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Chatear al WhatsApp: +57 315 870 9295</span>
+          </a>
+        </div>
+      </form>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+    <section class="bg-white rounded-2xl p-5 border border-brand-border shadow-sm space-y-3">
+      <h3 class="text-xl font-fraunces font-bold text-brand-navy text-center mb-1">
+        Claridad para tu decisión
+      </h3>
+      
+      <details class="group border border-slate-200 rounded-xl overflow-hidden transition-all duration-200" open>
+        <summary class="flex justify-between items-center p-3.5 text-[13px] font-bold text-brand-navy cursor-pointer bg-slate-50/50 hover:bg-slate-100 list-none">
+          <span>¿Por qué operarse en el Centro Médico Imbanaco?</span>
+          <span class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+        </summary>
+        <div class="p-3.5 text-[12px] text-brand-slate leading-relaxed border-t border-slate-100 bg-white">
+          Imbanaco es uno de los centros médicos con mayor acreditación internacional (Joint Commission International) de Latinoamérica. Cuenta con quirófanos de máxima complejidad, unidad de cuidados intensivos y protocolos de bioseguridad del más alto nivel para garantizar tu tranquilidad.
+        </div>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+        <summary class="flex justify-between items-center p-3.5 text-[13px] font-bold text-brand-navy cursor-pointer bg-slate-50/50 hover:bg-slate-100 list-none">
+          <span>¿Cómo se coordina para pacientes de fuera de Cali o del exterior?</span>
+          <span class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+        </summary>
+        <div class="p-3.5 text-[12px] text-brand-slate leading-relaxed border-t border-slate-100 bg-white">
+          Iniciamos con una videoconsulta médica directa con el Dr. Alfonso Riascos (en español o inglés). Definimos tiempos exactos de estadía en Cali (usualmente 10 a 14 días para controles postoperatorios) y te asesoramos con la logística y hospedaje cercano a Imbanaco.
+        </div>
+      </details>
+
+      <details class="group border border-slate-200 rounded-xl overflow-hidden transition-all duration-200">
+        <summary class="flex justify-between items-center p-3.5 text-[13px] font-bold text-brand-navy cursor-pointer bg-slate-50/50 hover:bg-slate-100 list-none">
+          <span>¿El rejuvenecimiento facial deja cicatrices visibles?</span>
+          <span class="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+        </summary>
+        <div class="p-3.5 text-[12px] text-brand-slate leading-relaxed border-t border-slate-100 bg-white">
+          El Dr. Riascos emplea incisiones anatómicas milimétricas camufladas estratégicamente en el contorno natural de la oreja y la línea del cuero cabelludo, logrando una evolución prácticamente imperceptible con aspecto fresco y natural.
+        </div>
+      </details>
+    </section>
+
+    <!-- FOOTER SOBRIO CON CONTACTO CALI -->
+    <footer class="pt-6 pb-2 text-center space-y-3 border-t border-brand-border">
+      <div class="flex items-center justify-center space-x-2">
+        <div class="w-7 h-7 rounded-full bg-brand-navy text-white flex items-center justify-center font-fraunces font-bold text-xs">
+          AR
+        </div>
+        <span class="font-fraunces font-bold text-brand-navy text-base">Dr. Alfonso Riascos</span>
+      </div>
+      <p class="text-[12px] text-brand-slate leading-tight">
+        Cirujano Plástico, Estético y Reconstructivo<br>
+        Centro Médico Imbanaco · Carrera 38A # 5A-100, Cali, Colombia
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[11px] font-medium text-brand-navy underline underline-offset-2">
+        <a href="https://alfonsoriascos.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-lime transition-colors">alfonsoriascos.com</a>
+        <a href="https://wa.me/573158709295" target="_blank" rel="noopener noreferrer" class="hover:text-brand-lime transition-colors">+57 315 870 9295</a>
+        <a href="#" class="hover:text-brand-lime transition-colors">Aviso de Privacidad</a>
+      </div>
+      <p class="text-[10px] text-slate-400 pt-2">
+        © 2025 Dr. Alfonso Riascos. Miembro de Número Sociedad Colombiana de Cirugía Plástica (SCCP) y de la International Society of Aesthetic Plastic Surgery (ISAPS). Práctica médica habilitada por la Secretaría de Salud de Cali.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- BARRA INFERIOR MÓVIL STICKY CON CTA -->
+  <aside class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-border px-4 py-2.5 shadow-lg">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div class="leading-tight">
+        <div class="text-[10px] uppercase font-bold text-brand-slate tracking-wider">Centro Médico Imbanaco</div>
+        <div class="text-[12px] font-fraunces font-bold text-brand-navy">Dr. Alfonso Riascos</div>
+      </div>
+      <a 
+        href="https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="bg-brand-whatsapp hover:bg-brand-whatsapp-dark text-white font-bold text-[13px] px-4 py-2.5 rounded-xl shadow-sm transition-transform active:scale-95 flex items-center gap-1.5 shrink-0"
+      >
+        <!-- WhatsApp Icon SVG -->
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Programar cita</span>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>
