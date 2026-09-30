@@ -1,162 +1,549 @@
 <!DOCTYPE html>
-<html lang="es-CO">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SOMA Odontología — Diseño de Sonrisa en Cali | Agenda tu valoración</title>
-<meta name="description" content="Transforma tu sonrisa con el equipo especializado de SOMA Dental Clinic en Cali. Diseño de sonrisa en resina, cerámica y estratificado. Más de 10 años de experiencia. Agenda tu valoración por WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SOMA Dental Clinic | Diseño de Sonrisa y Estética Dental en Cali</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#6d7a77",
+            "inverse-on-surface": "#e9f3f1",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#141d1c",
+            "background": "#f2fbf9",
+            "on-tertiary-fixed": "#241a00",
+            "on-error": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#f2fbf9",
+            "secondary-fixed": "#b5ede8",
+            "surface-container": "#e6f0ee",
+            "secondary": "#306764",
+            "primary-container": "#008378",
+            "on-tertiary-fixed-variant": "#574500",
+            "surface-container-low": "#ecf6f4",
+            "primary-fixed": "#89f5e7",
+            "on-secondary-container": "#356b68",
+            "on-primary-fixed": "#00201d",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffe088",
+            "surface-container-highest": "#dbe5e2",
+            "inverse-primary": "#6bd8cb",
+            "secondary-fixed-dim": "#99d1cc",
+            "on-surface-variant": "#3d4947",
+            "tertiary-container": "#cca72f",
+            "outline-variant": "#bcc9c6",
+            "surface-dim": "#d2dcda",
+            "on-secondary-fixed-variant": "#134f4c",
+            "primary": "#00685f",
+            "primary-fixed-dim": "#6bd8cb",
+            "on-primary-container": "#f4fffc",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#00201e",
+            "on-background": "#141d1c",
+            "tertiary": "#735c00",
+            "surface-tint": "#006a61",
+            "surface-variant": "#dbe5e2",
+            "surface-bright": "#f2fbf9",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#293231",
+            "tertiary-fixed-dim": "#e9c349",
+            "on-tertiary-container": "#4e3d00",
+            "on-primary-fixed-variant": "#005049",
+            "on-error-container": "#93000a",
+            "surface-container-high": "#e0eae8",
+            "secondary-container": "#b2eae5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin": "1.25rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-xl": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "42px", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "26px", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "headline-xl": ["48px", { "lineHeight": "54px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
 <style>
-  :root{
-    --blanco:#FFFFFF;
-    --crema:#FAF7F2;
-    --teal:#0E7490;
-    --teal-claro:#0891B2;
-    --tinta:#0F3D4A;
-    --coral:#EA7E5F;
-    --gris:#5A6B70;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Source Sans 3',sans-serif;color:var(--tinta);background:var(--blanco);line-height:1.6;}
-  h1,h2{font-family:'Playfair Display',serif !important;}
-  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
-  /* HERO */
-  .hero{background:linear-gradient(180deg,var(--crema) 0%,var(--blanco) 100%);padding:56px 0 64px;}
-  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;}
-  .kicker{display:inline-block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--teal);background:rgba(14,116,144,.08);padding:8px 16px;border-radius:100px;margin-bottom:20px;}
-  .hero h1{font-size:clamp(38px,5.2vw,58px);line-height:1.12;font-weight:700;color:var(--tinta);}
-  .hero h1 em{color:var(--teal);font-style:italic;}
-  .hero p.sub{font-size:19px;color:var(--gris);margin:22px 0 8px;max-width:520px;}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;}
-  .btn:hover{transform:translateY(-2px);}
-  .btn-wa{background:#25D366;color:#fff;box-shadow:0 12px 28px rgba(37,211,102,.35);}
-  .btn-ghost{border:2px solid var(--teal);color:var(--teal);background:transparent;}
-  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--gris);}
-  .trust b{color:var(--tinta);font-size:15.5px;}
-  .hero-img{border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(15,61,74,.18);}
-  /* SERVICIOS */
-  section{padding:76px 0;}
-  .sec-label{text-align:center;color:var(--teal);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:13px;}
-  section h2{font-size:clamp(30px,3.6vw,42px);text-align:center;color:var(--tinta);margin:12px auto 14px;max-width:640px;}
-  .sec-sub{text-align:center;color:var(--gris);max-width:560px;margin:0 auto 48px;font-size:17px;}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .card{background:var(--crema);border-radius:20px;padding:30px 26px;border:1px solid rgba(14,116,144,.08);}
-  .card .num{font-family:'Playfair Display',serif;font-size:15px;color:var(--coral);font-weight:700;letter-spacing:1px;margin-bottom:12px;display:block;}
-  .card h3{font-family:'Playfair Display',serif;font-size:21px;color:var(--tinta);margin-bottom:10px;font-weight:600;}
-  .card p{font-size:15.5px;color:var(--gris);}
-  /* POR QUE */
-  .why{background:var(--tinta);color:#fff;}
-  .why h2{color:#fff;}
-  .why .sec-sub{color:rgba(255,255,255,.75);}
-  .why .grid-3 .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);}
-  .why .card h3{color:#fff;}
-  .why .card p{color:rgba(255,255,255,.72);}
-  .why .card .num{color:var(--coral);}
-  /* PROCESO */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:paso;}
-  .step{position:relative;background:#fff;border:1px solid rgba(14,116,144,.14);border-radius:20px;padding:32px 26px;}
-  .step::before{counter-increment:paso;content:counter(paso);position:absolute;top:-22px;left:26px;width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:700;box-shadow:0 8px 18px rgba(14,116,144,.35);}
-  .step h3{font-family:'Playfair Display',serif;font-size:20px;margin:10px 0 8px;color:var(--tinta);font-weight:600;}
-  .step p{font-size:15.5px;color:var(--gris);}
-  /* CTA FINAL */
-  .final{background:linear-gradient(135deg,var(--crema),#F3EDE4);text-align:center;padding:86px 0;}
-  .final h2{font-size:clamp(30px,3.8vw,44px);color:var(--tinta);max-width:700px;margin:10px auto 16px;}
-  .final p{color:var(--gris);font-size:18px;max-width:520px;margin:0 auto 32px;}
-  footer{padding:34px 0;text-align:center;font-size:13.5px;color:var(--gris);background:var(--blanco);border-top:1px solid rgba(15,61,74,.08);}
-  @media(max-width:880px){
-    .hero-grid{grid-template-columns:1fr;gap:34px;}
-    .hero-img{order:-1;max-width:520px;margin:0 auto;width:100%;}
-    .grid-3,.steps{grid-template-columns:1fr;}
-    .step{margin-top:12px;}
-  }
-</style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .tap-bounce:active {
+      transform: scale(0.97);
+    }
+  </style>
 </head>
-<body>
-
-<header class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="kicker">Odontología estética integral · Cali</span>
-      <h1>La sonrisa que siempre soñaste, <em>diseñada por especialistas</em></h1>
-      <p class="sub">En SOMA Dental Clinic transformamos tu sonrisa con tratamientos integrales y estéticos: diseño en resina, cerámica y estratificado, con resultados naturales y documentados.</p>
-      <div class="cta-row">
-        <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20de%20dise%C3%B1o%20de%20sonrisa%20en%20SOMA" target="_blank" rel="noopener">💬 Agenda tu valoración</a>
-        <a class="btn btn-ghost" href="#servicios">Ver tratamientos</a>
-      </div>
-      <div class="trust">
-        <span>✅ <b>+10 años</b> de experiencia</span>
-        <span>📍 Sur de Cali, Cra. 42a #5a-39</span>
-        <span>📸 Casos de éxito reales</span>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="hero-marca.png" alt="Dra. Sonia Maribel — SOMA Odontología Integral, Cali" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px">
-    </div>
-  </div>
+<body class="bg-surface text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component JSON Blueprint) -->
+<header class="bg-surface/90 backdrop-blur-md text-primary docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-5 py-3.5 max-w-lg mx-auto">
+<div class="flex items-center space-x-2.5">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-primary text-xl">dentistry</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-primary tracking-tight font-bold leading-tight">SOMA Dental Clinic</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SOMA Odontología Integral · Cali</span>
+</div>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-3.5 py-1.5 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150" href="#booking-form">
+        Agendar
+      </a>
+</div>
 </header>
-
-<section id="servicios">
-  <div class="container">
-    <span class="sec-label">Tratamientos</span>
-    <h2>Diseño de sonrisa y odontología especializada</h2>
-    <p class="sec-sub">Cada sonrisa es única. Nuestro equipo odontológico especializado define el tratamiento ideal para tu rostro, tu presupuesto y tus tiempos.</p>
-    <div class="grid-3">
-      <div class="card"><span class="num">01</span><h3>Diseño de Sonrisa en Resina</h3><p>Corrección estética en una sola sesión. Ideal para transformar forma, color y espacios con resultados inmediatos y naturales.</p></div>
-      <div class="card"><span class="num">02</span><h3>Diseño de Sonrisa en Cerámica</h3><p>Máxima durabilidad y estética premium. Carillas de porcelana que imitan a la perfección el esmalte dental natural.</p></div>
-      <div class="card"><span class="num">03</span><h3>Diseño Estratificado</h3><p>Técnica de capas que reproduce la profundidad y translucidez del diente natural para un acabado indistinguible.</p></div>
-      <div class="card"><span class="num">04</span><h3>Mini Diseño de Sonrisa</h3><p>Un ajuste fino y sutil: pequeñas correcciones con gran impacto en tu apariencia, sin desgastes extensos.</p></div>
-      <div class="card"><span class="num">05</span><h3>Odontología General y Especializada</h3><p>Diagnóstico, limpieza, rehabilitación y acompañamiento completo de tu salud oral con equipo multidisciplinario.</p></div>
-      <div class="card"><span class="num">06</span><h3>Plan de Tratamiento Integral</h3><p>Combinamos estética y función: un plan claro, por fases, para que sepas siempre cuál es el siguiente paso.</p></div>
-    </div>
-  </div>
+<!-- MAIN WRAPPER (Mobile Focused Flow) -->
+<main class="w-full max-w-md mx-auto px-margin pt-4 pb-28 space-y- space-xl">
+<!-- [A] ATENCIÓN: HERO SECTION -->
+<section class="space-y-4 pt-1">
+<!-- Credential Micro-badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">✨ Más de 10 años de experiencia · Equipo odontológico especializado · Cali</span>
+</div>
+<!-- Main Catch Headline -->
+<div class="space-y-2">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface leading-tight tracking-tight">
+          Tu sonrisa soñada en Cali, <span class="italic font-normal text-primary">natural</span> y diseñada para durar.
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En SOMA Dental Clinic unimos tecnología digital 3D y odontología estética integral para devolverte la seguridad de sonreír sin desgastes agresivos ni resultados artificiales.
+        </p>
+</div>
+<!-- Hero Visual Asset -->
+<div class="relative rounded-3xl overflow-hidden shadow-lg border border-outline-variant/20 bg-surface-container-lowest">
+<img src="hero-marca.jpg" alt="SOMA Dental Clinic (SOMA Odontología Int" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Ambient Glass Card -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-2xl border border-white/60 shadow-md flex items-center justify-between">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Resultado SOMA</p>
+<p class="font-label-sm text-label-sm text-primary">Sonrisa armónica 100% natural</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-secondary font-bold">Cali, Col</span>
+</div>
+</div>
+<!-- Single Primary Call-to-Action -->
+<div class="space-y-2 pt-1">
+<a class="tap-bounce flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold shadow-md shadow-primary/20 transition-all text-center" href="#booking-form">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+<span>Agendar ahora</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">bolt</span>
+<span>⚡ Respuesta en menos de 24 horas · Sin costo de valoración inicial</span>
+</p>
+</div>
+<!-- 3 Key Differentiators / Mini Trust Chips -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Simulación 3D previa</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Materiales biocompatibles</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl">pin_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Atención en Cali</span>
+</div>
+</div>
 </section>
-
-<section class="why">
-  <div class="container">
-    <span class="sec-label" style="color:var(--coral);">¿Por qué elegirnos?</span>
-    <h2>Especialistas en transformar sonrisas en Cali</h2>
-    <p class="sec-sub">No hacemos odontología genérica: somos un equipo dedicado a la estética y rehabilitación de la sonrisa, con casos reales que lo demuestran.</p>
-    <div class="grid-3">
-      <div class="card"><span class="num">✦</span><h3>Más de 10 años de experiencia</h3><p>Trayectoria comprobada en odontología estética e integral, con miles de sonrisas transformadas en el suroccidente colombiano.</p></div>
-      <div class="card"><span class="num">✦</span><h3>Casos de éxito documentados</h3><p>Fotos reales de antes y después de cada técnica: resina, cerámica y estratificado. Verás resultados, no promesas.</p></div>
-      <div class="card"><span class="num">✦</span><h3>Equipo odontológico especializado</h3><p>Tratamientos integrales planificados entre especialistas, para que tu proceso sea claro, seguro y con estándares altos.</p></div>
-    </div>
-  </div>
+<!-- [I] INTERÉS: PROBLEMA & PROCESO TRANSPARENTE -->
+<section class="space-y-5 pt-2">
+<!-- Empathy Card: Pain point articulation -->
+<div class="bg-surface-container-low rounded-3xl p-5 border border-outline-variant/40 space-y-3">
+<div class="w-10 h-10 rounded-2xl bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-2xl">sentiment_neutral</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface leading-snug">
+          ¿Sientes que tu sonrisa actual no refleja tu verdadera seguridad?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Tapar la boca al reír, temer que las carillas parezcan "dientes de tiza" o dudar de clínicas con presupuestos sorpresa... En SOMA Dental Clinic entendemos tus temores y diseñamos cada sonrisa respetando la fisonomía única de tu rostro.
+        </p>
+</div>
+<!-- Transparent 3-Step Process -->
+<div class="space-y-3">
+<div class="px-1">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Protocolo de Vanguardia</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">Tu camino en 3 pasos</h3>
+</div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-md text-title-md font-bold">
+            01
+          </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Valoración y escaneo 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Diagnóstico integral con tecnología intraoral sin pastas molestas; evaluamos simetría facial y salud de tus encías.
+            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-md text-title-md font-bold">
+            02
+          </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Plan personalizado y simulación previa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Apruebas la forma, longitud y tonalidad de tus dientes antes de iniciar; presupuesto cerrado sin sorpresas.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-md text-title-md font-bold">
+            03
+          </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Resultado natural y controles incluidos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Colocación milimétrica con materiales de alta resistencia, logrando una sonrisa luminosa, funcional y duradera.
+            </p>
+</div>
+</div>
+<!-- Contextual Support Action -->
+<a class="tap-bounce flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl border border-primary text-primary font-label-lg text-label-lg font-semibold hover:bg-surface-container-low transition-colors text-center" href="https://wa.me/573155239810?text=Hola%20SOMA%20Dental,%20quisiera%20consultar%20mi%20caso" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Consultar mi caso por WhatsApp</span>
+</a>
+</div>
 </section>
-
-<section id="proceso">
-  <div class="container">
-    <span class="sec-label">Cómo empezar</span>
-    <h2>Tu nueva sonrisa en 3 pasos</h2>
-    <p class="sec-sub">Un proceso sencillo y transparente, desde la primera consulta hasta el resultado final.</p>
-    <div class="steps">
-      <div class="step"><h3>Valoración y diagnóstico</h3><p>Agenda por WhatsApp tu cita de valoración. Revisamos tu salud oral y escuchamos qué sonrisa quieres lograr.</p></div>
-      <div class="step"><h3>Plan personalizado</h3><p>Te presentamos tu diseño con la técnica ideal —resina, cerámica o estratificado—, con tiempos y valores claros desde el inicio.</p></div>
-      <div class="step"><h3>Transformación y control</h3><p>Realizamos tu tratamiento y programamos controles para que tu nueva sonrisa luzca impecable por mucho tiempo.</p></div>
-    </div>
-  </div>
+<!-- [D] DESEO: PRUEBA SOCIAL & BENEFICIOS DE RESULTADO -->
+<section class="space-y-5">
+<!-- Authority Metrics -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+10 Años</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Transformando sonrisas en Cali</p>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+4.500</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Pacientes satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">99.4%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Satisfacción en estética dental</p>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col justify-center">
+<p class="font-title-md text-title-md text-primary font-bold">Habilitación</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Secretaría de Salud Valle</p>
+</div>
+</div>
+<!-- 4 Core Benefits of the Result -->
+<div class="space-y-3">
+<div class="px-1">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Lo que experimentarás</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">Tu nueva versión al sonreír</h3>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- B1 -->
+<div class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/70 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">face_retouching_natural</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Armonía y naturalidad absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Dientes con translucidez realista que complementan el tono de tu piel y tu forma de labios.</p>
+</div>
+</div>
+<!-- B2 -->
+<div class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/70 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">shield</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Cero desgaste invasivo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Preservamos al máximo tu esmalte biológico mediante técnicas de micro-preparación guiada.</p>
+</div>
+</div>
+<!-- B3 -->
+<div class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/70 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">diamond</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Durabilidad y brillo garantizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Porcelana de alta resistencia que no se mancha con café, té ni vino tinto.</p>
+</div>
+</div>
+<!-- B4 -->
+<div class="p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/70 text-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">local_parking</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Ubicación premium en Cali</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sedes accesibles con parqueadero privado y atención médica de máxima puntualidad.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial with 5 Stars -->
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container-low p-5 rounded-3xl border border-outline-variant/40 shadow-sm space-y-3">
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+          "Llegué con miedo a que mis dientes se vieran artificiales. En SOMA me mostraron la simulación antes de tocar un diente. El resultado superó todo lo que imaginé; ahora sonrío con total libertad en cada foto."
+        </p>
+<div class="pt-1 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Dra. Marcela Restrepo</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente de Diseño de Sonrisa en Cali</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
 </section>
-
-<section class="final">
-  <div class="container">
-    <span class="sec-label" style="color:var(--coral);">Empieza hoy</span>
-    <h2>Transforma tu sonrisa, empieza hoy</h2>
-    <p>Cuéntanos qué quieres mejorar y agenda tu valoración. Respondemos rápido por WhatsApp.</p>
-    <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20SOMA%20Odontolog%C3%ADa" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
-  </div>
+<!-- [A] ACCIÓN: FORMULARIO MINIMALISTA & WHATSAPP DIRECTO -->
+<section class="space-y-4 pt-1" id="booking-form">
+<!-- Exclusivity Urgency Callout -->
+<div class="flex items-center gap-2 p-3 bg-secondary-container/40 rounded-2xl border border-secondary-container">
+<span class="material-symbols-outlined text-secondary text-lg">event_available</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">🟡 Cupos de valoración digital limitados esta semana en Cali</span>
+</div>
+<!-- Form Container Card -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/40 shadow-md space-y-4">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">
+            Empieza hoy a diseñar la sonrisa que mereces
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Completa tus datos y nuestro equipo clínico coordinará tu cita prioritaria.
+          </p>
+</div>
+<form class="space-y-3.5" onsubmit="handleFormSubmit(event)">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="name">Nombre completo</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">person</span>
+<input class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-outline-variant/60 bg-surface focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface placeholder:text-outline" id="name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="whatsapp">Número de WhatsApp</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">phone_iphone</span>
+<input class="w-full pl-10 pr-3.5 py-3 rounded-xl border border-outline-variant/60 bg-surface focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface placeholder:text-outline" id="whatsapp" placeholder="Ej. 315 523 9810" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment Selection -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="service">¿Qué tratamiento te interesa?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">dentistry</span>
+<select class="w-full pl-10 pr-8 py-3 rounded-xl border border-outline-variant/60 bg-surface focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface" id="service">
+<option value="carillas">Diseño de sonrisa con carillas cerámicas</option>
+<option value="blanqueamiento">Aclaramiento / Blanqueamiento dental</option>
+<option value="rehabilitacion">Rehabilitación oral integral</option>
+<option value="general">Valoración general estética</option>
+</select>
+</div>
+</div>
+<!-- Primary Submit Button -->
+<button class="tap-bounce w-full py-4 px-6 rounded-2xl bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold shadow-md shadow-primary/25 transition-all text-center flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<div class="hidden p-3 rounded-xl bg-secondary-container/60 text-on-secondary-container font-label-md text-label-md text-center" id="form-feedback">
+          ¡Gracias! En breve el equipo de SOMA se comunicará contigo vía WhatsApp.
+        </div>
+<div class="relative py-1">
+<div class="absolute inset-0 flex items-center"><span class="w-full border-t border-outline-variant/40"></span></div>
+<div class="relative flex justify-center"><span class="bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline">o si prefieres</span></div>
+</div>
+<!-- Direct WhatsApp Direct Route -->
+<a class="tap-bounce flex items-center justify-center gap-2.5 w-full py-3.5 px-4 rounded-2xl bg-surface-container-low text-primary border border-primary/30 hover:bg-surface-container font-label-lg text-label-lg font-bold transition-all text-center" href="https://wa.me/573155239810?text=Hola%20SOMA%20Dental%20Cali,%20deseo%20agendar%20mi%20valoración%20de%20diseño%20de%20sonrisa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Chatear directo por WhatsApp: +57 315 523 9810</span>
+</a>
+<!-- Legal Medical Privacy Notice -->
+<div class="flex items-start gap-2 pt-1 text-outline">
+<span class="material-symbols-outlined text-base mt-0.5 flex-shrink-0">lock</span>
+<p class="font-label-sm text-label-sm leading-tight">
+            🔒 Tus datos clínicos están 100% protegidos bajo secreto profesional y Ley de Protección de Datos de Salud Colombia.
+          </p>
+</div>
+</div>
 </section>
-
-<footer>
-  <div class="container">
-    SOMA Odontología Integral · Cra. 42a #5a-39, Cali, Valle del Cauca · @soma_odontologiaintegral<br>
-    Demo de landing creada por AplicatiBox para fines de presentación.
-  </div>
+<!-- PREGUNTAS FRECUENTES (FAQ Accordion) -->
+<section class="space-y-3.5 pt-2">
+<div class="px-1">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Dudas Frecuentes</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">Resolvemos tus inquietudes</h3>
+</div>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-bold pr-1">
+<span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+<span class="material-symbols-outlined text-outline transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            No en SOMA. Aplicamos odontología mínimamente invasiva. Mediante escaneo 3D y lentes cerámicos ultrafinos, preservamos la estructura de tu esmalte dental original, evitando desgastes agresivos.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-bold pr-1">
+<span>¿Cuánto tiempo dura el tratamiento completo?</span>
+<span class="material-symbols-outlined text-outline transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Gracias al flujo 100% digital en Cali, la mayoría de nuestros diseños cerámicos se completan en tan solo 2 a 3 citas clínicas tras la simulación y aprobación digital previa.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-bold pr-1">
+<span>¿Las carillas se manchan con el tiempo o pierden brillo?</span>
+<span class="material-symbols-outlined text-outline transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Nuestras cerámicas de alta gama no son porosas, lo que significa que mantienen su brillo intacto y son totalmente resistentes a pigmentos de café, té o vino tinto.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-bold pr-1">
+<span>¿Ofrecen facilidades de pago o financiación?</span>
+<span class="material-symbols-outlined text-outline transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Sí, contamos con opciones de pago fraccionado por fases de tratamiento, convenios de financiación médica directa y recibimos todas las tarjetas de crédito sin recargo.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component JSON Blueprint) -->
+<footer class="bg-surface-container text-primary full-width pb-28 pt-10 border-t border-outline-variant/30">
+<div class="w-full px-6 flex flex-col items-center text-center space-y-4 max-w-lg mx-auto">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-2xl">dentistry</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">SOMA Dental Clinic</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+        © 2024 SOMA Dental Clinic Cali. Habilitación MinSalud Seccional Valle del Cauca Res. 0482. Odontología Integral &amp; Alta Estética.
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-1">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Políticas de Privacidad Médica</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Consentimiento Informado</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sede Granada</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sede Ciudad Jardín</a>
+</div>
+<p class="font-label-sm text-label-sm text-outline">
+        Cali, Valle del Cauca · Colombia
+      </p>
+</div>
 </footer>
-
+<!-- BOTTOM NAV BAR (Shared Component JSON Execution) -->
+<nav class="fixed bottom-3 left-4 right-4 z-50 flex justify-around items-center px-3 py-2 max-w-md mx-auto rounded-full bg-surface-container-lowest/95 backdrop-blur-lg shadow-xl border border-outline-variant/40">
+<!-- Item 1: Diseño (Active: Landing focused on Diseño de Sonrisa) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-3 py-1.5 transition-all duration-300" href="#hero">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm">Diseño</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-200" href="#proceso" onclick="document.querySelectorAll('h3')[0].scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-lg">architecture</span>
+<span class="font-label-sm text-label-sm">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-200" href="#casos" onclick="document.querySelectorAll('h3')[1].scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-lg">photo_library</span>
+<span class="font-label-sm text-label-sm">Casos</span>
+</a>
+<!-- Item 4: Consulta (Direct WhatsApp) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-200" href="https://wa.me/573155239810?text=Hola%20SOMA%20Dental,%20quisiera%20agendar%20mi%20consulta" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span class="font-label-sm text-label-sm">Consulta</span>
+</a>
+</nav>
+<!-- Interactive script for inline feedback -->
+<script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.classList.remove('hidden');
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('whatsapp').value;
+      const service = document.getElementById('service').value;
+      
+      setTimeout(() => {
+        const text = encodeURIComponent(`Hola SOMA Dental Clinic, mi nombre es ${name}, mi teléfono es ${phone} y estoy interesado/a en ${service}. Deseo agendar mi valoración.`);
+        window.open(`https://wa.me/573155239810?text=${text}`, '_blank');
+      }, 700);
+    }
+  </script>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/soma-odontologia" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>

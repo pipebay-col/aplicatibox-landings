@@ -1,157 +1,526 @@
 <!DOCTYPE html>
-<html lang="es-CO">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alejandro Hill Fitness — Baja de peso con entrenamiento personalizado | Bogotá</title>
-<meta name="description" content="Baja de peso con plan de entrenamiento personalizado: clases a domicilio en Bogotá y virtuales. Entrenador certificado CSCS/CPT, +40K seguidores. Agenda tu primera clase.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --negro:#0A0A0F;
-    --grafito:#16161D;
-    --violeta:#7C3DFF;
-    --violeta-suave:#A78BFA;
-    --lima:#A3E635;
-    --texto:#F4F4F6;
-    --gris:#A3A3AD;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Space Grotesk',sans-serif;color:var(--texto);background:var(--negro);line-height:1.6;}
-  h1,h2{font-family:'Fraunces',serif !important;}
-  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
-  /* HERO */
-  .hero{padding:56px 0 64px;background:radial-gradient(1200px 600px at 80% -10%,rgba(124,61,255,.22),transparent 60%),radial-gradient(900px 500px at -10% 110%,rgba(163,230,53,.10),transparent 55%),var(--negro);}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;}
-  .kicker{display:inline-block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--lima);border:1px solid rgba(163,230,53,.4);padding:8px 16px;border-radius:100px;margin-bottom:20px;background:rgba(163,230,53,.06);}
-  .hero h1{font-size:clamp(38px,5vw,58px);line-height:1.08;font-weight:700;color:#fff;}
-  .hero h1 em{color:var(--violeta-suave);font-style:italic;}
-  .hero p.sub{font-size:19px;color:var(--gris);margin:22px 0 4px;max-width:520px;}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;}
-  .btn:hover{transform:translateY(-2px);}
-  .btn-wa{background:#25D366;color:#0A0A0F;box-shadow:0 12px 28px rgba(37,211,102,.3);}
-  .btn-ghost{border:2px solid var(--violeta);color:var(--violeta-suave);background:transparent;}
-  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--gris);}
-  .trust b{color:#fff;font-size:15.5px;}
-  .hero-img{border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(124,61,255,.28);border:1px solid rgba(167,139,250,.25);}
-  /* SERVICIOS */
-  section{padding:76px 0;}
-  .sec-label{text-align:center;color:var(--lima);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:13px;}
-  section h2{font-size:clamp(30px,3.6vw,42px);text-align:center;color:#fff;margin:12px auto 14px;max-width:660px;}
-  .sec-sub{text-align:center;color:var(--gris);max-width:580px;margin:0 auto 48px;font-size:17px;}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .card{background:var(--grafito);border-radius:20px;padding:30px 26px;border:1px solid rgba(167,139,250,.14);}
-  .card h3{font-family:'Fraunces',serif;font-size:21px;color:#fff;margin-bottom:10px;font-weight:600;}
-  .card p{font-size:15.5px;color:var(--gris);}
-  .card .tag{display:inline-block;color:var(--lima);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;}
-  /* POR QUE */
-  .why{background:var(--grafito);border-top:1px solid rgba(167,139,250,.12);border-bottom:1px solid rgba(167,139,250,.12);}
-  .why .card{background:rgba(255,255,255,.03);}
-  /* PROCESO */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:paso;}
-  .step{position:relative;background:var(--grafito);border:1px solid rgba(163,230,53,.18);border-radius:20px;padding:32px 26px;}
-  .step::before{counter-increment:paso;content:counter(paso);position:absolute;top:-22px;left:26px;width:44px;height:44px;border-radius:50%;background:var(--violeta);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:20px;font-weight:700;box-shadow:0 8px 18px rgba(124,61,255,.45);}
-  .step h3{font-family:'Fraunces',serif;font-size:20px;margin:10px 0 8px;color:#fff;font-weight:600;}
-  .step p{font-size:15.5px;color:var(--gris);}
-  /* CTA FINAL */
-  .final{background:radial-gradient(900px 400px at 50% 120%,rgba(124,61,255,.25),transparent 60%),var(--negro);text-align:center;padding:86px 0;}
-  .final h2{font-size:clamp(30px,3.8vw,44px);color:#fff;max-width:700px;margin:10px auto 16px;}
-  .final p{color:var(--gris);font-size:18px;max-width:520px;margin:0 auto 32px;}
-  footer{padding:34px 0;text-align:center;font-size:13.5px;color:var(--gris);border-top:1px solid rgba(255,255,255,.08);}
-  @media(max-width:880px){
-    .hero-grid{grid-template-columns:1fr;gap:34px;}
-    .hero-img{order:-1;max-width:520px;margin:0 auto;width:100%;}
-    .grid-3,.steps{grid-template-columns:1fr;}
-    .step{margin-top:12px;}
-  }
-</style>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alejandro Hill · Fitness Coach &amp; Entrenador Personal Bogotá | Infinite Fit</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed": "#63fcc0",
+            "surface-container": "#efeeea",
+            "surface-bright": "#fbf9f5",
+            "outline-variant": "#bfc9c4",
+            "outline": "#6f7975",
+            "inverse-primary": "#8fd4c1",
+            "on-surface-variant": "#3f4945",
+            "primary-fixed-dim": "#8fd4c1",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#111c2d",
+            "on-secondary-fixed-variant": "#005138",
+            "inverse-on-surface": "#f2f0ed",
+            "surface": "#fbf9f5",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1b1c1a",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#8dd2bf",
+            "surface-container-high": "#eae8e4",
+            "error": "#ba1a1a",
+            "inverse-surface": "#30312e",
+            "surface-container-lowest": "#ffffff",
+            "primary-container": "#0d5c4d",
+            "on-tertiary-fixed-variant": "#3c475a",
+            "surface-dim": "#dbdad6",
+            "primary": "#004337",
+            "tertiary-fixed": "#d8e3fb",
+            "on-secondary-container": "#00714f",
+            "secondary": "#006c4b",
+            "on-tertiary-container": "#bac5dd",
+            "surface-container-low": "#f5f3ef",
+            "secondary-fixed-dim": "#3fdfa5",
+            "secondary-container": "#60f9bd",
+            "tertiary": "#303b4e",
+            "on-secondary-fixed": "#002114",
+            "tertiary-fixed-dim": "#bcc7de",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e4e2de",
+            "on-primary-fixed": "#00201a",
+            "background": "#fbf9f5",
+            "surface-tint": "#21695a",
+            "tertiary-container": "#475266",
+            "on-primary-fixed-variant": "#005143",
+            "primary-fixed": "#aaf0dc",
+            "on-background": "#1b1c1a",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "surface-variant": "#e4e2de"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "title-lg": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "display": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "headline-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "display-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+            "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}]
+          }
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-
-<header class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="kicker">Entrenamiento personal · Bogotá y virtual</span>
-      <h1>Baja de peso con un plan <em>diseñado para ti</em></h1>
-      <p class="sub">Entrenamiento personalizado a domicilio en Bogotá u online, con un coach certificado CSCS. Sin rutinas repetitivas: cada sesión trabaja tu metabolismo y tu técnica.</p>
-      <div class="cta-row">
-        <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20primera%20clase%20con%20Alejandro%20Hill" target="_blank" rel="noopener">💬 Agenda tu primera clase</a>
-        <a class="btn btn-ghost" href="#programas">Ver programas</a>
-      </div>
-      <div class="trust">
-        <span>🎓 <b>CPT + CSCS</b> certificado</span>
-        <span>🔥 <b>+40K</b> seguidores</span>
-        <span>📍 A domicilio Bogotá · 🌎 Virtual</span>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="hero-marca.jpg" alt="Entrenamiento personalizado — Alejandro Hill Fitness" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px">
-    </div>
-  </div>
+<body class="bg-surface text-on-surface antialiased min-h-screen font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component Source of Truth Execution) -->
+<header class="bg-surface dark:bg-surface docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex justify-between items-center w-full px-space-md py-space-sm max-w-screen-md mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="fitness_center">fitness_center</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary dark:text-inverse-primary">ALEJANDRO HILL</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-label-md font-label-md font-bold active:scale-95 transition-transform duration-150 shadow-sm" href="https://wa.me/573102516620?text=Hola%20Alejandro,%20quiero%20informaci%C3%B3n%20sobre%20la%20valoraci%C3%B3n%20personalizada" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
 </header>
-
-<section id="programas">
-  <div class="container">
-    <span class="sec-label">Programas</span>
-    <h2>Entrena donde estés, con método real</h2>
-    <p class="sec-sub">Programas de bajada de peso con seguimiento directo de tu coach: presencial en Bogotá o 100% virtual desde cualquier ciudad.</p>
-    <div class="grid-3">
-      <div class="card"><span class="tag">Presencial</span><h3>Clases a domicilio en Bogotá</h3><p>Entrenamiento 1-a-1 en tu casa o parque: plan diseñado según tu condición física, tu agenda y tu objetivo.</p></div>
-      <div class="card"><span class="tag">Online</span><h3>Clases virtuales</h3><p>La misma metodología en vivo desde cualquier lugar de Colombia o el mundo. Solo necesitas conexión y disciplina.</p></div>
-      <div class="card"><span class="tag">Método</span><h3>Plan de bajada de peso</h3><p>Combinamos fuerza, acondicionamiento y educación metabólica para perder grasa sin rebotar ni lesionarte.</p></div>
-      <div class="card"><span class="tag">Fuerza</span><h3>Acondicionamiento y técnica</h3><p>Cada sesión es distinta: corregimos técnica, prevenimos lesiones y trabajamos movilidad y fuerza funcional.</p></div>
-      <div class="card"><span class="tag">Hábitos</span><h3>Educación metabólica</h3><p>Aprende cómo funciona tu cuerpo: qué comer, cómo recuperar y por qué tu plan funciona — para no depender de milagros.</p></div>
-      <div class="card"><span class="tag">Soporte</span><h3>Acompañamiento continuo</h3><p>Seguimiento de progreso, ajustes de rutina y respuesta directa de tu coach entre sesiones.</p></div>
-    </div>
-  </div>
+<main class="w-full max-w-screen-md mx-auto pb-28">
+<!-- 1. ATENCIÓN (A) / HERO SECTION -->
+<section class="px-margin-mobile pt-6 pb-space-lg flex flex-col gap-5" id="metodo">
+<!-- Credential Micro-Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/40 w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+          Certificado CPT &amp; CSCS (NSCA) · Instagram @alejofitnesstrainer ~40K seguidores
+        </span>
+</div>
+<!-- Main Headline (Editorial Serif) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight">
+        Transforma tu cuerpo con un método científico, sin dietas extremas ni lesiones.
+      </h1>
+<!-- Specific Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Entrenamiento personalizado 1 a 1 presencial en Bogotá y online en Colombia. Diseñado por Alejandro Hill, CEO de INFINITE FIT y preparador físico de alto rendimiento.
+      </p>
+<!-- Coach Hero Portrait Card -->
+<div class="relative w-full rounded-2xl overflow-hidden border border-outline-variant/30 shadow-md bg-surface-container-lowest">
+<img src="hero-marca.jpg" alt="Alejandro Hill — Fitness Coach; CEO de I" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Verified Float Badge -->
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3.5 rounded-xl backdrop-blur-md bg-surface/90 border border-outline-variant/40 shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-bold">Coach Alejandro Hill</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">NSCA Certified · Bogotá D.C.</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+            Activo
+          </span>
+</div>
+</div>
+<!-- High-Impact CTA Block -->
+<div class="flex flex-col gap-2.5 pt-2">
+<a class="w-full py-4 px-6 rounded-xl bg-primary-container text-on-primary text-center font-label-lg text-label-lg font-bold tracking-wide shadow-md hover:bg-primary active:scale-95 transition-all flex items-center justify-center gap-2" href="#agendar">
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-outline flex items-center justify-center gap-1.5">
+<span class="text-secondary font-bold">⚡</span>
+<span>Respuesta en menos de 24 horas · Plan 100% a tu medida</span>
+</p>
+</div>
+<!-- 3 Key Features Row -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="person_play">person_play</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Entrenamiento 1 a 1</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="nutrition">nutrition</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Plan Nutricional</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="monitoring">monitoring</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Soporte Semanal</span>
+</div>
+</div>
 </section>
-
-<section class="why">
-  <div class="container">
-    <span class="sec-label">¿Por qué entrenar conmigo?</span>
-    <h2>Un coach con credenciales, no promesas vacías</h2>
-    <p class="sec-sub">Ingeniero de formación, entrenador de vocación: ciencia aplicada a tu transformación.</p>
-    <div class="grid-3">
-      <div class="card"><h3>Certificado CPT y CSCS</h3><p>Títulos internacionales de entrenamiento personal y fuerza y acondicionamiento. Tu plan se basa en evidencia, no en tendencias.</p></div>
-      <div class="card"><h3>Sesiones nunca repetitivas</h3><p>“Con Alejandro nunca se tienen sesiones repetitivas y uno siempre aprende algo más acerca del metabolismo” — cliente real, 1 año entrenando.</p></div>
-      <div class="card"><h3>Ecosistema fitness completo</h3><p>CEO de INFINITE FIT (entrenamiento personalizado) y AA Fitness Store: entrenamiento, equipamiento y comunidad en un solo lugar.</p></div>
-    </div>
-  </div>
+<!-- 2. INTERÉS (I) / EMPATÍA & MÉTODO EN 3 PASOS -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-6 bg-surface-container-low/60 border-y border-outline-variant/30">
+<!-- Empathy Problem Card -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
+<div class="inline-flex items-center gap-2 text-primary font-bold text-label-md font-label-md uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base" data-icon="sync_problem">sync_problem</span>
+<span>El Desafío Real</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">
+          ¿Cansado de pagar gimnasios sin ver cambios o rebotar con dietas de moda?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3 leading-relaxed">
+          Las rutinas genéricas de fotocopia, la falta de progresión calculada y las dietas restrictivas solo generan frustración, pérdida de masa magra o molestias lumbares y articulares.
+        </p>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">
+          En <span class="text-primary font-bold">INFINITE FIT</span> eliminamos las conjeturas. Usamos periodización científica y biomecánica adaptada a tu estructura anatómica para que entrenes con propósito e intensidad segura.
+        </p>
+</div>
+<!-- 3 Steps Section Header -->
+<div class="pt-2">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Metodología Comprobada</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Tu transformación en 3 pasos</h3>
+</div>
+<!-- Numbered Step Cards -->
+<div class="flex flex-col gap-4">
+<!-- Step 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="font-display-mobile text-display-mobile text-secondary-fixed-dim/60 font-semibold leading-none">01</span>
+<span class="p-2 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary">Valoración Funcional &amp; Composición Corporal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Diagnóstico exhaustivo de movilidad articular, simetrías posturales, historial médico, porcentaje de grasa y masa muscular para fijar metas reales sin falsas promesas.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="font-display-mobile text-display-mobile text-secondary-fixed-dim/60 font-semibold leading-none">02</span>
+<span class="p-2 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary">Plan Personalizado de Entrenamiento &amp; Nutrición</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Tu protocolo de fuerza y acondicionamiento ajustado a tu ritmo laboral en Bogotá, con nutrición flexible enfocada en densidad nutricional sin pasar hambre.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="font-display-mobile text-display-mobile text-secondary-fixed-dim/60 font-semibold leading-none">03</span>
+<span class="p-2 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined" data-icon="model_training">model_training</span>
+</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-primary">Resultados Medibles y Acompañamiento Continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Revisiones quincenales, corrección biomecánica de la técnica y contacto directo por WhatsApp para ajustar cargas, resolver dudas y asegurar tu adherencia a largo plazo.
+          </p>
+</div>
+</div>
+<!-- Quick Intermediary WhatsApp Link -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-1.5 text-primary font-title-md text-title-md font-semibold underline underline-offset-4 active:scale-95 transition-transform" href="https://wa.me/573102516620?text=Hola%20Alejandro,%20tengo%20dudas%20sobre%20mi%20caso%20f%C3%ADsico" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre tu caso? Escríbenos por WhatsApp</span>
+<span class="material-symbols-outlined text-base" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
 </section>
-
-<section id="proceso">
-  <div class="container">
-    <span class="sec-label">Cómo empezar</span>
-    <h2>Tu transformación en 3 pasos</h2>
-    <p class="sec-sub">Del “algún día empiezo” a la primera sesión agendada en menos de una semana.</p>
-    <div class="steps">
-      <div class="step"><h3>Escríbeme por WhatsApp</h3><p>Cuéntame tu objetivo: bajar de peso, ganar condición o retomar el hábito. Definimos día y hora de tu diagnóstico.</p></div>
-      <div class="step"><h3>Diagnóstico y plan</h3><p>Evalúo tu condición física, movilidad y agenda. Diseño tu plan personalizado con metas medibles por semana.</p></div>
-      <div class="step"><h3>Entrena y progresa</h3><p>Sesiones presenciales u online con seguimiento continuo: ajustamos carga, alimentación y progreso en cada etapa.</p></div>
-    </div>
-  </div>
+<!-- 3. DESEO (D) / PRUEBA SOCIAL, MÉTRICAS & RESULTADOS TANGIBLES -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-6" id="casos">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Autoridad &amp; Resultados</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Impacto medible en cifras reales</h3>
+</div>
+<!-- Metric Grid 2x2 -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">+8 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Transformando vidas en Bogotá</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">+450</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Alumnos y asesorados con éxito</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">40K</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Comunidad Instagram @alejofitnesstrainer</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex flex-col">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Método basado en ciencia (NSCA)</span>
+</div>
+</div>
+<!-- Tangible Result Cards List -->
+<div class="flex flex-col gap-3 pt-2">
+<h4 class="font-title-lg text-title-lg text-primary">Lo que vas a lograr con este método:</h4>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Pérdida de grasa conservando masa magra</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin efecto rebote mediante déficit energético inteligente y entrenamiento de fuerza prioritario.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Mayor energía diaria y adiós al dolor postural</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fortalecimiento del core y estabilizadores lumbares para rendir al 100% en tu jornada ejecutiva.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Hábitos sostenibles sin sacrificar vida social</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aprende a comer en restaurantes de negocios y eventos familiares sin desviar tus metas.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Asesoría presencial exclusiva en Bogotá</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sesiones privadas en sedes boutique aliadas o en el gimnasio de tu propio conjunto residencial.</p>
+</div>
+</div>
+</div>
+<!-- Real Client Testimonials -->
+<div class="flex flex-col gap-4 pt-4" id="planes">
+<h4 class="font-title-lg text-title-lg text-primary">Testimonios verificados</h4>
+<!-- Testimonial 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-1 text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Como directiva en Chapinero Alto mis horarios eran caóticos. Alejandro estructuró mis sesiones de 45 minutos y bajé 12 kilos de grasa en 4 meses mientras recuperé fuerza y foco mental."
+          </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">Camila Restrepo</span>
+<span class="font-label-sm text-label-sm text-outline">Directora Comercial · Bogotá</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-1 text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Tenía 5 años con dolores de espalda por estar sentado 10 horas programando. Con el plan correctivo de Alejandro gané 6kg de músculo y el dolor desapareció en las primeras semanas."
+          </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">Felipe Morales</span>
+<span class="font-label-sm text-label-sm text-outline">Ingeniero de Software · Santa Bárbara</span>
+</div>
+</div>
+</div>
 </section>
-
-<section class="final">
-  <div class="container">
-    <span class="sec-label">Empieza hoy</span>
-    <h2>El mejor momento para empezar fue ayer. El segundo mejor es ahora.</h2>
-    <p>Agenda tu primera clase de diagnóstico. Cupos limitados por semana.</p>
-    <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20empezar%20mi%20plan%20de%20bajada%20de%20peso" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
-  </div>
+<!-- 4. ACCIÓN (A) / FORMULARIO CONVERSIÓN & CUPOS LIMITADOS -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-high/60 border-t border-outline-variant/30" id="agendar">
+<div class="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/50 shadow-lg flex flex-col gap-5">
+<!-- Scarcity / Micro-Urgency Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-error-container text-on-error-container w-fit">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold">Cupos mensuales limitados para valoración presencial</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold">
+            Empieza hoy tu cambio físico definitivo
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+            Diligencia tus datos para coordinar tu cita de valoración con Alejandro Hill.
+          </p>
+</div>
+<!-- Conversion Form (3 Fields) -->
+<form class="flex flex-col gap-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573102516620?text=Hola%20Alejandro,%20acabo%20de%20completar%20mi%20solicitud%20para%20la%20valoraci%C3%B3n%20f%C3%ADsica%20personalizada.';">
+<!-- Field 1: Full Name -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1.5" for="fullName">
+              Nombre completo
+            </label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-secondary-container/50 font-body-md transition-all placeholder:text-outline-variant" id="fullName" placeholder="Ej: David Salamanca" required="" type="text"/>
+</div>
+<!-- Field 2: WhatsApp Number -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1.5" for="whatsapp">
+              WhatsApp (con indicativo +57)
+            </label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-secondary-container/50 font-body-md transition-all placeholder:text-outline-variant" id="whatsapp" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+<!-- Field 3: Goal Selector -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1.5" for="goal">
+              ¿Qué te interesa lograr?
+            </label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface border border-outline-variant/50 text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-secondary-container/50 font-body-md transition-all" id="goal">
+<option value="perdida">Pérdida de peso y tonificación</option>
+<option value="masa">Aumento de masa muscular magra</option>
+<option value="salud">Entrenamiento de fuerza y postura</option>
+<option value="online">Asesoría Online personalizada</option>
+</select>
+</div>
+<!-- Primary Submit Button -->
+<button class="w-full py-4 px-6 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold tracking-wide shadow-md hover:bg-primary active:scale-95 transition-all flex items-center justify-center gap-2 mt-1 cursor-pointer" type="submit">
+<span>Quiero mi valoración</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Secondary Direct WhatsApp Button -->
+<a class="w-full py-3.5 px-4 rounded-xl bg-secondary-container/40 border border-secondary text-primary font-title-md text-title-md font-semibold text-center flex items-center justify-center gap-2 active:scale-95 transition-all" href="https://wa.me/573102516620?text=Hola%20Alejandro,%20quiero%20agendar%20mi%20valoraci%C3%B3n%20directamente%20por%20WhatsApp" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp: +57 310 251 6620</span>
+</a>
+<!-- Legal Data Protection Disclaimer -->
+<p class="font-body-sm text-body-sm text-outline text-center leading-normal">
+          Tus datos se encuentran protegidos conforme a la Ley Estatutaria 1581 de 2012 de Protección de Datos Personales en Colombia. Cero spam garantizado.
+        </p>
+</div>
 </section>
-
-<footer>
-  <div class="container">
-    Alejandro Hill Fitness Coach · @alejofitnesstrainer · Bogotá D.C., Colombia<br>
-    Demo de landing creada por AplicatiBox para fines de presentación.
-  </div>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ) -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-4">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Claridad Total</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="flex flex-col gap-3">
+<!-- FAQ 1 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm cursor-pointer">
+<summary class="font-title-md text-title-md text-primary font-semibold flex justify-between items-center list-none">
+<span>¿Dónde se realizan las sesiones en Bogotá?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Las sesiones presenciales 1 a 1 se realizan en estudios boutique aliados en el norte de Bogotá (Chicó, Virrey, Santa Bárbara, Rosales) o directamente en el gimnasio privado de tu edificio o conjunto residencial.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm cursor-pointer">
+<summary class="font-title-md text-title-md text-primary font-semibold flex justify-between items-center list-none">
+<span>¿Qué pasa si nunca he entrenado antes?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            El método está diseñado para personas de cualquier nivel. Comenzamos con una fase de adaptación neuromuscular y aprendizaje técnico para construir fuerza progresiva sin riesgo de lesiones.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm cursor-pointer">
+<summary class="font-title-md text-title-md text-primary font-semibold flex justify-between items-center list-none">
+<span>¿Incluye plan de alimentación?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Sí. Todo programa integral incluye pautas nutricionales individualizadas, cálculo calórico y de macronutrientes, y guía práctica para comer bien sin depender de dietas prohibitivas.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm cursor-pointer">
+<summary class="font-title-md text-title-md text-primary font-semibold flex justify-between items-center list-none">
+<span>¿Cuánto tiempo toma ver los primeros resultados?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            La mayoría de asesorados experimenta aumentos notorios de energía y postura en las primeras 2 semanas, y cambios medibles en composición corporal y tono muscular a partir de la semana 4 a 6.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Source of Truth Execution) -->
+<footer class="bg-surface-container-high dark:bg-surface-container-high docked full-width border-t border-outline-variant/40 dark:border-outline/30 flat no shadows">
+<div class="flex flex-col items-center text-center w-full px-space-md py-space-lg pb-24 gap-space-sm max-w-screen-md mx-auto">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="fitness_center">fitness_center</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-bold tracking-tight">ALEJANDRO HILL · INFINITE FIT</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant max-w-md">
+        © 2025 AA FITNESS STORE SAS · NIT 901805090 · Bogotá D.C. &amp; Soacha, Cundinamarca. Todos los derechos reservados. INFINITE FIT.
+      </p>
+<!-- Legal Links with Universal Hover -->
+<div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors" href="#agendar">Términos y Condiciones</a>
+<span class="text-outline-variant">·</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors" href="#agendar">Política de Privacidad</a>
+<span class="text-outline-variant">·</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors" href="#agendar">Registro Mercantil</a>
+<span class="text-outline-variant">·</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors" href="https://wa.me/573102516620" rel="noopener noreferrer" target="_blank">Contacto Oficial</a>
+</div>
+</div>
 </footer>
-
+<!-- BOTTOM NAV BAR (Shared Component Source of Truth Execution) -->
+<!-- Contextual Active: Agendar is the primary conversion destination of this landing page -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-space-xs bg-surface/95 dark:bg-surface/95 backdrop-blur-md border-t border-outline-variant/30 dark:border-outline/20 shadow-lg">
+<!-- Item 0: Método -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors active:scale-95 transition-transform duration-150" href="#metodo">
+<span class="material-symbols-outlined" data-icon="model_training">model_training</span>
+<span class="text-label-sm font-label-sm mt-0.5">Método</span>
+</a>
+<!-- Item 1: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors active:scale-95 transition-transform duration-150" href="#casos">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Item 2: Planes -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors active:scale-95 transition-transform duration-150" href="#planes">
+<span class="material-symbols-outlined" data-icon="sports_score">sports_score</span>
+<span class="text-label-sm font-label-sm mt-0.5">Planes</span>
+</a>
+<!-- Item 3: Agendar (ACTIVE MATCH) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-primary-container text-on-secondary-container dark:text-on-primary-container rounded-full px-space-sm py-space-xs transition-all active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="text-label-sm font-label-sm font-bold mt-0.5">Agendar</span>
+</a>
+</nav>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/alejandro-hill-fitness" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>
