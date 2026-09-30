@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alejandro Hill Fitness — Baja de peso con entrenamiento personalizado | Bogotá</title>
+<meta name="description" content="Baja de peso con plan de entrenamiento personalizado: clases a domicilio en Bogotá y virtuales. Entrenador certificado CSCS/CPT, +40K seguidores. Agenda tu primera clase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --negro:#0A0A0F;
+    --grafito:#16161D;
+    --violeta:#7C3DFF;
+    --violeta-suave:#A78BFA;
+    --lima:#A3E635;
+    --texto:#F4F4F6;
+    --gris:#A3A3AD;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Space Grotesk',sans-serif;color:var(--texto);background:var(--negro);line-height:1.6;}
+  h1,h2{font-family:'Fraunces',serif !important;}
+  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
+  /* HERO */
+  .hero{padding:56px 0 64px;background:radial-gradient(1200px 600px at 80% -10%,rgba(124,61,255,.22),transparent 60%),radial-gradient(900px 500px at -10% 110%,rgba(163,230,53,.10),transparent 55%),var(--negro);}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;}
+  .kicker{display:inline-block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--lima);border:1px solid rgba(163,230,53,.4);padding:8px 16px;border-radius:100px;margin-bottom:20px;background:rgba(163,230,53,.06);}
+  .hero h1{font-size:clamp(38px,5vw,58px);line-height:1.08;font-weight:700;color:#fff;}
+  .hero h1 em{color:var(--violeta-suave);font-style:italic;}
+  .hero p.sub{font-size:19px;color:var(--gris);margin:22px 0 4px;max-width:520px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-wa{background:#25D366;color:#0A0A0F;box-shadow:0 12px 28px rgba(37,211,102,.3);}
+  .btn-ghost{border:2px solid var(--violeta);color:var(--violeta-suave);background:transparent;}
+  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--gris);}
+  .trust b{color:#fff;font-size:15.5px;}
+  .hero-img{border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(124,61,255,.28);border:1px solid rgba(167,139,250,.25);}
+  /* SERVICIOS */
+  section{padding:76px 0;}
+  .sec-label{text-align:center;color:var(--lima);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:13px;}
+  section h2{font-size:clamp(30px,3.6vw,42px);text-align:center;color:#fff;margin:12px auto 14px;max-width:660px;}
+  .sec-sub{text-align:center;color:var(--gris);max-width:580px;margin:0 auto 48px;font-size:17px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .card{background:var(--grafito);border-radius:20px;padding:30px 26px;border:1px solid rgba(167,139,250,.14);}
+  .card h3{font-family:'Fraunces',serif;font-size:21px;color:#fff;margin-bottom:10px;font-weight:600;}
+  .card p{font-size:15.5px;color:var(--gris);}
+  .card .tag{display:inline-block;color:var(--lima);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;}
+  /* POR QUE */
+  .why{background:var(--grafito);border-top:1px solid rgba(167,139,250,.12);border-bottom:1px solid rgba(167,139,250,.12);}
+  .why .card{background:rgba(255,255,255,.03);}
+  /* PROCESO */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:paso;}
+  .step{position:relative;background:var(--grafito);border:1px solid rgba(163,230,53,.18);border-radius:20px;padding:32px 26px;}
+  .step::before{counter-increment:paso;content:counter(paso);position:absolute;top:-22px;left:26px;width:44px;height:44px;border-radius:50%;background:var(--violeta);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:20px;font-weight:700;box-shadow:0 8px 18px rgba(124,61,255,.45);}
+  .step h3{font-family:'Fraunces',serif;font-size:20px;margin:10px 0 8px;color:#fff;font-weight:600;}
+  .step p{font-size:15.5px;color:var(--gris);}
+  /* CTA FINAL */
+  .final{background:radial-gradient(900px 400px at 50% 120%,rgba(124,61,255,.25),transparent 60%),var(--negro);text-align:center;padding:86px 0;}
+  .final h2{font-size:clamp(30px,3.8vw,44px);color:#fff;max-width:700px;margin:10px auto 16px;}
+  .final p{color:var(--gris);font-size:18px;max-width:520px;margin:0 auto 32px;}
+  footer{padding:34px 0;text-align:center;font-size:13.5px;color:var(--gris);border-top:1px solid rgba(255,255,255,.08);}
+  @media(max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:34px;}
+    .hero-img{order:-1;max-width:520px;margin:0 auto;width:100%;}
+    .grid-3,.steps{grid-template-columns:1fr;}
+    .step{margin-top:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="kicker">Entrenamiento personal · Bogotá y virtual</span>
+      <h1>Baja de peso con un plan <em>diseñado para ti</em></h1>
+      <p class="sub">Entrenamiento personalizado a domicilio en Bogotá u online, con un coach certificado CSCS. Sin rutinas repetitivas: cada sesión trabaja tu metabolismo y tu técnica.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20primera%20clase%20con%20Alejandro%20Hill" target="_blank" rel="noopener">💬 Agenda tu primera clase</a>
+        <a class="btn btn-ghost" href="#programas">Ver programas</a>
+      </div>
+      <div class="trust">
+        <span>🎓 <b>CPT + CSCS</b> certificado</span>
+        <span>🔥 <b>+40K</b> seguidores</span>
+        <span>📍 A domicilio Bogotá · 🌎 Virtual</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="hero-marca.jpg" alt="Entrenamiento personalizado — Alejandro Hill Fitness" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px">
+    </div>
+  </div>
+</header>
+
+<section id="programas">
+  <div class="container">
+    <span class="sec-label">Programas</span>
+    <h2>Entrena donde estés, con método real</h2>
+    <p class="sec-sub">Programas de bajada de peso con seguimiento directo de tu coach: presencial en Bogotá o 100% virtual desde cualquier ciudad.</p>
+    <div class="grid-3">
+      <div class="card"><span class="tag">Presencial</span><h3>Clases a domicilio en Bogotá</h3><p>Entrenamiento 1-a-1 en tu casa o parque: plan diseñado según tu condición física, tu agenda y tu objetivo.</p></div>
+      <div class="card"><span class="tag">Online</span><h3>Clases virtuales</h3><p>La misma metodología en vivo desde cualquier lugar de Colombia o el mundo. Solo necesitas conexión y disciplina.</p></div>
+      <div class="card"><span class="tag">Método</span><h3>Plan de bajada de peso</h3><p>Combinamos fuerza, acondicionamiento y educación metabólica para perder grasa sin rebotar ni lesionarte.</p></div>
+      <div class="card"><span class="tag">Fuerza</span><h3>Acondicionamiento y técnica</h3><p>Cada sesión es distinta: corregimos técnica, prevenimos lesiones y trabajamos movilidad y fuerza funcional.</p></div>
+      <div class="card"><span class="tag">Hábitos</span><h3>Educación metabólica</h3><p>Aprende cómo funciona tu cuerpo: qué comer, cómo recuperar y por qué tu plan funciona — para no depender de milagros.</p></div>
+      <div class="card"><span class="tag">Soporte</span><h3>Acompañamiento continuo</h3><p>Seguimiento de progreso, ajustes de rutina y respuesta directa de tu coach entre sesiones.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <span class="sec-label">¿Por qué entrenar conmigo?</span>
+    <h2>Un coach con credenciales, no promesas vacías</h2>
+    <p class="sec-sub">Ingeniero de formación, entrenador de vocación: ciencia aplicada a tu transformación.</p>
+    <div class="grid-3">
+      <div class="card"><h3>Certificado CPT y CSCS</h3><p>Títulos internacionales de entrenamiento personal y fuerza y acondicionamiento. Tu plan se basa en evidencia, no en tendencias.</p></div>
+      <div class="card"><h3>Sesiones nunca repetitivas</h3><p>“Con Alejandro nunca se tienen sesiones repetitivas y uno siempre aprende algo más acerca del metabolismo” — cliente real, 1 año entrenando.</p></div>
+      <div class="card"><h3>Ecosistema fitness completo</h3><p>CEO de INFINITE FIT (entrenamiento personalizado) y AA Fitness Store: entrenamiento, equipamiento y comunidad en un solo lugar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="container">
+    <span class="sec-label">Cómo empezar</span>
+    <h2>Tu transformación en 3 pasos</h2>
+    <p class="sec-sub">Del “algún día empiezo” a la primera sesión agendada en menos de una semana.</p>
+    <div class="steps">
+      <div class="step"><h3>Escríbeme por WhatsApp</h3><p>Cuéntame tu objetivo: bajar de peso, ganar condición o retomar el hábito. Definimos día y hora de tu diagnóstico.</p></div>
+      <div class="step"><h3>Diagnóstico y plan</h3><p>Evalúo tu condición física, movilidad y agenda. Diseño tu plan personalizado con metas medibles por semana.</p></div>
+      <div class="step"><h3>Entrena y progresa</h3><p>Sesiones presenciales u online con seguimiento continuo: ajustamos carga, alimentación y progreso en cada etapa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="container">
+    <span class="sec-label">Empieza hoy</span>
+    <h2>El mejor momento para empezar fue ayer. El segundo mejor es ahora.</h2>
+    <p>Agenda tu primera clase de diagnóstico. Cupos limitados por semana.</p>
+    <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20empezar%20mi%20plan%20de%20bajada%20de%20peso" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Alejandro Hill Fitness Coach · @alejofitnesstrainer · Bogotá D.C., Colombia<br>
+    Demo de landing creada por AplicatiBox para fines de presentación.
+  </div>
+</footer>
+
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/alejandro-hill-fitness" width="1" height="1" style="display:none" alt="">
+</body>
+</html>

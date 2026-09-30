@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FullFace — Armonización Facial en Medellín | Resultados naturales sin cirugía</title>
+<meta name="description" content="Armonización facial orofacial en Medellín con +10.000 pacientes. Labios, rinomodelación, pómulos, Botox e hilos con equipo especializado. Agenda tu valoración por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Karla:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rosa:#FD8189;
+    --crema:#F4F2EA;
+    --dorado:#D3AD90;
+    --tinta:#333333;
+    --tinta-suave:#5C5751;
+    --blanco:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Karla',sans-serif;color:var(--tinta);background:var(--blanco);line-height:1.65;}
+  h1,h2{font-family:'Cinzel',serif !important;font-weight:600;}
+  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
+  /* HERO */
+  .hero{background:linear-gradient(180deg,var(--crema) 0%,var(--blanco) 100%);padding:56px 0 64px;}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;}
+  .kicker{display:inline-block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--rosa);border:1px solid var(--dorado);padding:8px 16px;border-radius:100px;margin-bottom:20px;background:#fff;}
+  .hero h1{font-size:clamp(34px,4.8vw,54px);line-height:1.15;color:var(--tinta);}
+  .hero h1 span{color:var(--rosa);}
+  .hero p.sub{font-size:18.5px;color:var(--tinta-suave);margin:22px 0 4px;max-width:520px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-wa{background:#25D366;color:#fff;box-shadow:0 12px 28px rgba(37,211,102,.35);}
+  .btn-ghost{border:2px solid var(--tinta);color:var(--tinta);background:transparent;}
+  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--tinta-suave);}
+  .trust b{color:var(--tinta);font-size:15.5px;}
+  .hero-img{border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(51,51,51,.16);background:#fff;}
+  /* SERVICIOS */
+  section{padding:76px 0;}
+  .sec-label{text-align:center;color:var(--rosa);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:13px;}
+  section h2{font-size:clamp(28px,3.6vw,40px);text-align:center;color:var(--tinta);margin:12px auto 14px;max-width:680px;}
+  .sec-sub{text-align:center;color:var(--tinta-suave);max-width:600px;margin:0 auto 48px;font-size:17px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .card{background:var(--crema);border-radius:20px;padding:30px 26px;border:1px solid rgba(211,173,144,.35);}
+  .card h3{font-family:'Cinzel',serif;font-size:19px;color:var(--tinta);margin-bottom:10px;font-weight:600;letter-spacing:.3px;}
+  .card p{font-size:15.5px;color:var(--tinta-suave);}
+  /* POR QUE */
+  .why{background:var(--tinta);color:#fff;}
+  .why h2{color:#fff;}
+  .why .sec-sub{color:rgba(255,255,255,.7);}
+  .why .grid-3 .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);}
+  .why .card h3{color:#fff;}
+  .why .card p{color:rgba(255,255,255,.72);}
+  .chip{display:inline-block;background:var(--dorado);color:var(--tinta);font-size:12px;font-weight:700;letter-spacing:1.5px;padding:4px 12px;border-radius:100px;margin-bottom:14px;text-transform:uppercase;}
+  /* PROCESO */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:paso;}
+  .step{position:relative;background:#fff;border:1px solid rgba(211,173,144,.5);border-radius:20px;padding:32px 26px;}
+  .step::before{counter-increment:paso;content:counter(paso);position:absolute;top:-22px;left:26px;width:44px;height:44px;border-radius:50%;background:var(--rosa);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:19px;font-weight:700;box-shadow:0 8px 18px rgba(253,129,137,.4);}
+  .step h3{font-family:'Cinzel',serif;font-size:19px;margin:10px 0 8px;color:var(--tinta);font-weight:600;}
+  .step p{font-size:15.5px;color:var(--tinta-suave);}
+  /* CTA FINAL */
+  .final{background:linear-gradient(135deg,var(--crema),#EFE7DA);text-align:center;padding:86px 0;}
+  .final h2{font-size:clamp(28px,3.8vw,42px);color:var(--tinta);max-width:720px;margin:10px auto 16px;}
+  .final p{color:var(--tinta-suave);font-size:18px;max-width:540px;margin:0 auto 32px;}
+  footer{padding:34px 0;text-align:center;font-size:13.5px;color:var(--tinta-suave);background:var(--blanco);border-top:1px solid rgba(51,51,51,.1);}
+  @media(max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:34px;}
+    .hero-img{order:-1;max-width:520px;margin:0 auto;width:100%;}
+    .grid-3,.steps{grid-template-columns:1fr;}
+    .step{margin-top:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="kicker">Alta estética · Armonización orofacial · Medellín</span>
+      <h1>Armoniza tu rostro <span>sin cirugía</span>, con resultados naturales</h1>
+      <p class="sub">Recupera la vitalidad y juventud de tu rostro con el equipo pionero de armonización facial en Medellín. Más de 10.000 pacientes nos confirman.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20de%20armonizaci%C3%B3n%20facial%20en%20FullFace" target="_blank" rel="noopener">💬 Agenda tu valoración</a>
+        <a class="btn btn-ghost" href="#tratamientos">Ver tratamientos</a>
+      </div>
+      <div class="trust">
+        <span>💉 <b>+10.000 pacientes</b></span>
+        <span>🏥 Fundada en 2017</span>
+        <span>👩‍⚕️ Equipo interdisciplinario</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="hero-marca.webp" alt="Armonización orofacial en Medellín — FullFace" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px">
+    </div>
+  </div>
+</header>
+
+<section id="tratamientos">
+  <div class="container">
+    <span class="sec-label">Nuestros tratamientos</span>
+    <h2>Armonía y rejuvenecimiento facial integral</h2>
+    <p class="sec-sub">Tratamos tu rostro como un conjunto: equilibrio, proporción y naturalidad, con materiales aprobados y técnica especializada.</p>
+    <div class="grid-3">
+      <div class="card"><h3>Aumento y Perfilamiento Labial</h3><p>Labios con volumen y definición proporcionales a tu rostro, con técnica de escultura labial avanzada.</p></div>
+      <div class="card"><h3>Rinomodelación</h3><p>Corrige el perfil nasal con ácido hialurónico, sin cirugía y con manejo profesional de complicaciones.</p></div>
+      <div class="card"><h3>Mentón y Ángulo Mandibular</h3><p>Define la línea mandibular y proyección del mentón para un perfil armónico y elegante.</p></div>
+      <div class="card"><h3>Aumento de Pómulos y Tercio Medio</h3><p>Restaura el soporte del tercio medio: pómulos y ojeras con proyección natural y luminosidad.</p></div>
+      <div class="card"><h3>Toxina Botulínica (Botox)</h3><p>Prevención y corrección de arrugas de expresión con precisión, conservando tu mímica natural.</p></div>
+      <div class="card"><h3>Hilos PDO y Bioestimuladores</h3><p>Tensión y colágeno: hilos tensores, Sculptra y bioestimuladores para un rejuvenecimiento progresivo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <span class="sec-label" style="color:var(--dorado);">¿Por qué elegirnos?</span>
+    <h2>Resultados armónicos, cero complicaciones</h2>
+    <p class="sec-sub">Somos una familia de especialistas dedicados a la belleza y el bienestar integral. Tu seguridad es nuestro estándar.</p>
+    <div class="grid-3">
+      <div class="card"><span class="chip">Desde 2017</span><h3>Pioneros en armonización orofacial</h3><p>Fundada por la Dra. María Alejandra, odontóloga especializada en armonización facial en Nueva York, con formación de nivel internacional.</p></div>
+      <div class="card"><span class="chip">Equipo experto</span><h3>5 especialistas, un solo objetivo</h3><p>Rinomodelación, escultura labial, hilos tensores, Sculptra y bioestimulación, a cargo de médicos con técnica propia y probada.</p></div>
+      <div class="card"><span class="chip">+10.000 pacientes</span><h3>Confianza comprobada</h3><p>Clínica reconocida y respetada en la medicina estética colombiana, con resultados sobresalientes y consistentes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="container">
+    <span class="sec-label">Cómo empezar</span>
+    <h2>Tu valoración en 3 pasos</h2>
+    <p class="sec-sub">Un proceso claro y seguro, desde el primer mensaje hasta tu resultado.</p>
+    <div class="steps">
+      <div class="step"><h3>Agenda tu valoración</h3><p>Escríbenos por WhatsApp y agenda tu cita en la Torre Médica del Tesoro, Medellín.</p></div>
+      <div class="step"><h3>Plan facial personalizado</h3><p>Un especialista analiza las proporciones de tu rostro y diseña un plan armónico según tu anatomía y deseos.</p></div>
+      <div class="step"><h3>Tratamiento y control</h3><p>Procedemos con materiales aprobados y hacemos control posterior para garantizar el mejor resultado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="container">
+    <span class="sec-label" style="color:var(--rosa);">Tu rostro armonioso</span>
+    <h2>Agenda hoy tu valoración con especialistas</h2>
+    <p>Cuéntanos qué quieres mejorar de tu rostro. Te respondemos por WhatsApp con disponibilidad real.</p>
+    <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20FullFace" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    FullFace · Alta Estética y Armonización Orofacial · Torre Médica del Tesoro, Medellín · @fullface.co<br>
+    Demo de landing creada por AplicatiBox para fines de presentación.
+  </div>
+</footer>
+
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/fullface-armonizacion-facial" width="1" height="1" style="display:none" alt="">
+</body>
+</html>
