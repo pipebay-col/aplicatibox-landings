@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Dr. Nelson Chaves · Cirujano Plástico SCCP Bogotá</title>
   
   <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
@@ -363,7 +363,7 @@
       </div>
 
       <!-- Formulario 3 Campos -->
-      <form class="space-y-3.5" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20acabo%20de%20diligenciar%20mi%20solicitud%20para%20agendar%20valoraci%C3%B3n.';">
+      <form class="space-y-3.5" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573142765513?text=Hola%20Dr.%20Chaves%2C%20acabo%20de%20diligenciar%20mi%20solicitud%20para%20agendar%20valoraci%C3%B3n.';" data-wa="https://wa.me/573142765513">
         
         <!-- Campo 1: Nombre -->
         <div class="space-y-1">
@@ -518,5 +518,22 @@
     </div>
   </div>
 
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573142765513');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body>
 </html>

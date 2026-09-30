@@ -379,7 +379,7 @@
       </div>
 
       <!-- Formulario 3 Campos -->
-      <form onsubmit="event.preventDefault(); window.open('https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos', '_blank');" class="space-y-3.5 pt-1">
+      <form onsubmit="event.preventDefault(); window.open('https://wa.me/573158709295?text=Hola%2C%20quiero%20programar%20mi%20cita%20con%20el%20Dr.%20Riascos', '_blank');" class="space-y-3.5 pt-1" data-wa="https://wa.me/573158709295">
         
         <!-- Campo 1: Nombre -->
         <div class="space-y-1">
@@ -549,5 +549,22 @@
     </div>
   </aside>
 
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573158709295');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body>
 </html>

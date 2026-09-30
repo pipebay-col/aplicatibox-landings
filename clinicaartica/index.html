@@ -2,7 +2,7 @@
 
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>Clínica Ártica | Especialistas en Implantes Dentales Medellín</title>
 <!-- Google Fonts obligatorios: Playfair Display + Plus Jakarta Sans / Manrope fallback -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -411,7 +411,7 @@
             </p>
 </div>
 <!-- Formulario Directo -->
-<form class="space-y-3.5" onsubmit="handleFormSubmit(event)">
+<form class="space-y-3.5" onsubmit="handleFormSubmit(event)" data-wa="https://wa.me/573216423818">
 <!-- Campo 1: Nombre y Apellido -->
 <div>
 <label class="block font-label-md text-xs font-bold text-primary mb-1" for="name">
@@ -593,4 +593,21 @@
       window.open(waUrl, '_blank');
     }
   </script>
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573216423818');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body></html>

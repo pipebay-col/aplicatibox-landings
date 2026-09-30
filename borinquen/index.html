@@ -2,16 +2,16 @@
 
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
-<title>Constructora Borinquen S.A.S. | Apartamentos en Laureles y El Poblado, Medellín</title>
-<!-- Google Fonts: Julius Sans One, News Cycle, Metrophobic, Work Sans -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Constructora Borinquen S.A.S. | Apartamentos en Laureles y El Poblado</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&amp;family=News+Cycle:wght@400;700&amp;family=Metrophobic&amp;family=Work Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols Outlined -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS CDN -->
+<!-- Tailwind CSS with Forms and Container Queries -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
     tailwind.config = {
@@ -19,550 +19,451 @@
       theme: {
         extend: {
           "colors": {
-            "on-tertiary": "#ffffff",
-            "primary": "#154363",
-            "on-surface-variant": "#42474d",
-            "on-tertiary-fixed": "#002109",
-            "on-surface": "#1b1c1c",
-            "on-error-container": "#93000a",
-            "tertiary-container": "#00662b",
-            "on-tertiary-fixed-variant": "#005322",
-            "on-error": "#ffffff",
-            "surface-container-highest": "#e4e2e1",
-            "background": "#fcf9f8",
-            "on-primary-container": "#a9d2f9",
-            "inverse-on-surface": "#f3f0f0",
-            "inverse-primary": "#a2cbf1",
-            "secondary-container": "#69affe",
-            "primary-fixed-dim": "#a2cbf1",
-            "secondary-fixed-dim": "#a0c9ff",
-            "on-tertiary-container": "#48ea7a",
-            "tertiary": "#004b1e",
-            "on-background": "#1b1c1c",
-            "inverse-surface": "#303030",
+            "secondary-fixed-dim": "#3de273",
             "surface-container-lowest": "#ffffff",
-            "surface-dim": "#dcd9d9",
-            "secondary": "#0061a6",
-            "surface-container-high": "#eae7e7",
-            "primary-container": "#315b7c",
-            "error": "#ba1a1a",
-            "on-secondary-fixed": "#001c37",
-            "on-secondary-fixed-variant": "#00497f",
-            "on-secondary": "#ffffff",
             "error-container": "#ffdad6",
-            "on-primary": "#ffffff",
-            "tertiary-fixed": "#66ff8e",
-            "surface-variant": "#e4e2e1",
-            "surface": "#fcf9f8",
-            "on-secondary-container": "#004173",
-            "on-primary-fixed-variant": "#1e4a6a",
-            "tertiary-fixed-dim": "#3de273",
-            "outline": "#72787e",
-            "surface-container": "#f0eded",
-            "primary-fixed": "#cce5ff",
-            "surface-container-low": "#f6f3f2",
-            "surface-bright": "#fcf9f8",
             "on-primary-fixed": "#001d31",
+            "surface-container-highest": "#dce2f7",
+            "surface-bright": "#f9f9ff",
+            "on-tertiary-container": "#ddccb1",
+            "inverse-surface": "#293040",
+            "on-primary-fixed-variant": "#1e4a6a",
+            "tertiary-fixed": "#f2e0c5",
+            "on-secondary-fixed-variant": "#005322",
+            "on-primary-container": "#a9d2f9",
+            "outline": "#72787e",
+            "tertiary-container": "#625641",
+            "secondary-fixed": "#66ff8e",
+            "surface": "#f9f9ff",
+            "primary-fixed-dim": "#a2cbf1",
+            "on-surface-variant": "#42474d",
+            "on-tertiary-fixed-variant": "#504531",
+            "surface-container": "#e9edff",
+            "surface-dim": "#d3daef",
+            "on-error": "#ffffff",
+            "secondary-container": "#5dfd8a",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#dce2f7",
+            "primary-fixed": "#cce5ff",
+            "secondary": "#006d2f",
+            "inverse-on-surface": "#edf0ff",
+            "surface-container-high": "#e1e8fd",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#002109",
+            "primary-container": "#315b7c",
+            "on-tertiary-fixed": "#231a09",
+            "primary": "#154363",
+            "tertiary-fixed-dim": "#d5c4aa",
+            "surface-tint": "#396283",
+            "surface-container-low": "#f1f3ff",
+            "on-secondary-container": "#007232",
+            "on-primary": "#ffffff",
             "outline-variant": "#c2c7ce",
-            "secondary-fixed": "#d2e4ff",
-            "surface-tint": "#396283"
+            "error": "#ba1a1a",
+            "on-surface": "#141b2b",
+            "on-background": "#141b2b",
+            "inverse-primary": "#a2cbf1",
+            "background": "#f9f9ff",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#4a3f2b"
           },
           "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
           },
           "spacing": {
+            "space-md": "1rem",
             "space-lg": "1.5rem",
-            "margin-lg": "4rem",
-            "gutter-sm": "1rem",
-            "space-sm": "0.5rem",
-            "margin-sm": "1rem",
+            "gutter-mobile": "1rem",
             "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
             "gutter": "1.5rem",
             "space-xl": "2.5rem",
-            "margin": "2rem",
-            "gutter-lg": "2rem",
-            "space-md": "1rem"
+            "margin": "3rem"
           },
           "fontFamily": {
-            "headline-xl": ["Metrophobic"],
-            "label-sm": ["Metrophobic"],
-            "display-lg-mobile": ["Metrophobic"],
-            "body-md": ["Work Sans"],
-            "headline-xl-mobile": ["Metrophobic"],
-            "body-xl": ["Work Sans"],
-            "headline-md": ["Metrophobic"],
-            "body-sm": ["Work Sans"],
-            "label-md": ["Metrophobic"],
-            "headline-sm": ["Metrophobic"],
-            "body-lg": ["Work Sans"],
-            "label-lg": ["Metrophobic"],
-            "headline-lg": ["Metrophobic"],
-            "display-lg": ["Metrophobic"],
-            "architectural": ["Julius Sans One", "sans-serif"],
-            "heading": ["News Cycle", "sans-serif"]
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "display-md": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-md-mobile": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"]
           },
           "fontSize": {
-            "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "0.05em", "fontWeight": "400"}],
-            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500"}],
-            "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "0.04em", "fontWeight": "400"}],
-            "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-            "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0.03em", "fontWeight": "400"}],
-            "body-xl": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.02em", "fontWeight": "400"}],
-            "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
-            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}],
-            "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500"}],
-            "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "500"}],
-            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "0.04em", "fontWeight": "400"}],
-            "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "0.06em", "fontWeight": "400"}]
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-md": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-md-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
           }
         }
       }
     }
   </script>
 <style>
-    .font-julius { font-family: 'Julius Sans One', sans-serif; }
-    .font-news { font-family: 'News Cycle', sans-serif; }
     .material-symbols-outlined {
-      font-family: 'Material Symbols Outlined';
-      font-weight: normal;
-      font-style: normal;
-      font-size: 20px;
-      line-height: 1;
-      letter-spacing: normal;
-      text-transform: none;
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       display: inline-block;
-      white-space: nowrap;
-      word-wrap: normal;
-      direction: ltr;
-      -webkit-font-smoothing: antialiased;
+      vertical-align: middle;
+      line-height: 1;
     }
-    .elevation-card {
-      box-shadow: 0 2px 8px -2px rgba(49, 91, 124, 0.06), 0 1px 2px 0 rgba(45, 45, 45, 0.04);
-    }
-    .elevation-lift {
-      box-shadow: 0 12px 24px -4px rgba(49, 91, 124, 0.08), 0 4px 8px -2px rgba(45, 45, 45, 0.03);
-    }
-    .elevation-wa {
-      box-shadow: 0 8px 20px -2px rgba(37, 211, 102, 0.32);
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
     }
   </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style>h1,h2{font-family:'Playfair Display',Georgia,serif !important;}</style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased pb-20 selection:bg-primary-container selection:text-white">
-<!-- TopAppBar Component (from Shared Components JSON) -->
-<header class="bg-surface-container-lowest dark:bg-surface-container-lowest border-b border-surface-container-highest dark:border-outline-variant sticky top-0 z-40 transition-colors">
-<div class="flex justify-between items-center w-full px-margin-sm max-w-7xl mx-auto h-16">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary text-2xl">apartment</span>
-<span class="font-headline-sm text-headline-sm font-normal tracking-wider text-primary dark:text-primary-fixed uppercase font-julius">Constructora Borinquen</span>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed pb-24">
+<!-- TOP APP BAR (Shared Component: TopAppBar execution) -->
+<header class="docked full-width top-0 z-40 sticky bg-surface-container-lowest text-primary shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="apartment">apartment</span>
+<div class="flex flex-col">
+<span class="text-title-lg font-title-lg text-primary tracking-tight font-semibold leading-tight">Constructora Borinquen</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Medellín · Desde 1998
+          </span>
 </div>
-<a class="text-xs tracking-wider uppercase bg-primary-container text-white px-3.5 py-1.5 rounded-lg font-medium hover:bg-primary transition-colors flex items-center gap-1 active:scale-[0.98]" href="#contacto">
-<span>Contactar</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors active:scale-95 duration-150 border border-outline-variant/30 text-label-md font-label-md" href="https://wa.me/573142104632?text=Hola,%20solicito%20asesor%C3%ADa%20inmobiliaria" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="chat">chat</span>
+<span class="hidden sm:inline">WhatsApp</span>
 </a>
 </div>
 </header>
-<main class="w-full overflow-hidden">
-<!-- 1. ATENCIÓN (Hero Section con Embudo AIDA) -->
-<section class="relative bg-surface-container-lowest pt-6 pb-12 border-b border-surface-container-highest">
-<div class="max-w-md mx-auto px-margin-sm flex flex-col gap-5">
-<!-- Badge de Solidez Institucional -->
-<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 bg-surface-container-low border border-outline-variant/60 rounded">
-<span class="material-symbols-outlined text-primary text-sm">location_city</span>
-<span class="font-julius text-[11px] tracking-widest text-primary font-bold uppercase">CONSTRUCTORA MEDELLINENSE · DESDE 1998</span>
+<main class="max-w-xl mx-auto px-margin-mobile flex flex-col gap-space-xl pt-6">
+<!-- 1. HERO SECTION (Atención) -->
+<section class="flex flex-col gap-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 w-fit">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="domain">domain</span>
+<span class="text-label-sm font-label-sm text-primary tracking-wider uppercase font-semibold">Constructora medellinense · Laureles &amp; El Poblado</span>
 </div>
-<!-- Titular H1 de Beneficio Claro -->
-<h1 class="font-julius text-2xl sm:text-3xl text-primary font-normal leading-tight tracking-wide">
-          Tu nuevo apartamento en Medellín con solidez y respaldo desde 1998
+<div class="space-y-3">
+<h1 class="text-display-md-mobile font-display-md-mobile text-primary tracking-tight font-bold">
+          Tu nuevo apartamento en Laureles, entregado con acabados de primera
         </h1>
-<!-- Subtítulo Específico y Persuasivo -->
-<p class="font-news text-base text-on-surface-variant leading-relaxed">
-          Más de 25 años diseñando y construyendo hogares con alta valorización patrimonial en los sectores residenciales más codiciados de Laureles y El Poblado. Entrega y escrituración con absoluta garantía jurídica.
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          Constructora medellinense desde 1998: cumplimiento, seriedad y calidad con tradición constructiva en los sectores más tradicionales de Medellín.
         </p>
-<!-- Fotografía Arquitectónica Destacada (Qubic Laureles) -->
-<div class="relative w-full rounded-lg overflow-hidden border border-outline-variant/40 elevation-card bg-surface-container">
-<img alt="Qubic Apartamentos Laureles Medellín - Fachada bioclimática de lujo por Constructora Borinquen" class="w-full h-80 object-cover object-center transform hover:scale-[1.02] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1Xt5BAMKBxplApD8oTYeKZCQZPkFKUTGOG-9hNIPQieOQJuIgLOrWITJpS4ncdBzq0OwcvfSfChoyb6hsYSzT0YtPrZwLjZnnwGkkC5iyUjR9WK5jaZMlfN9wBTRlcSGyEc5TyT-XzsrsZ1DnC4KgGXJU019GmvfP-dgix0PjThkK36En863o9UAku-iw6-LHUEL1kKXM_OtyEnVXaR8d91lqWkPVM4QjFrdsdX4Favckm1qbltWW2_mmA"/>
-<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent p-4 text-white">
-<span class="inline-block text-[10px] uppercase font-julius tracking-widest bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded text-white mb-1">
-              Sector Laureles · Nogal
-            </span>
-<p class="font-julius text-base font-normal tracking-wide">Qubic Apartamentos</p>
-<p class="font-body-sm text-white/90 text-xs mt-0.5">Diseño bioclimático, balcones verdes y acabados europeos</p>
 </div>
-</div>
-<!-- UN SOLO CTA Primario Móvil: WhatsApp Verde Prominente -->
-<div class="flex flex-col gap-2 pt-1">
-<a class="w-full py-3.5 px-4 bg-[#25d366] hover:bg-[#20ba59] active:scale-[0.98] text-white rounded-lg font-news font-bold text-base flex items-center justify-center gap-2.5 transition-all elevation-wa text-center" href="https://wa.me/576044126598?text=Hola%20Borinquen%2C%20quiero%20agendar%20visita%20a%20un%20proyecto" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-<span>Agendar visita a proyecto</span>
+<!-- Main WhatsApp CTA Button -->
+<div class="flex flex-col gap-2.5">
+<a class="w-full flex items-center justify-center gap-3 py-3.5 px-5 rounded-lg bg-[#25D366] text-white font-semibold text-title-md font-title-md shadow-md hover:bg-[#20ba59] active:scale-95 transition-all duration-150 text-center" href="https://wa.me/573142104632?text=Hola,%20quiero%20agendar%20una%20visita%20a%20la%20sala%20de%20ventas%20de%20Constructora%20Borinquen" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="support_agent">support_agent</span>
+<span>Agendar visita a sala de ventas</span>
 </a>
-<p class="text-center font-body-sm text-[11px] text-on-surface-variant flex items-center justify-center gap-1">
-<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
-            Atención prioritaria y directa sin intermediarios
-          </p>
+<div class="flex items-center justify-center gap-2 text-label-sm font-label-sm text-on-surface-variant text-center flex-wrap pt-0.5">
+<span>✓ Atención directa con sala de ventas</span>
+<span>·</span>
+<span>✓ Sin intermediarios</span>
+<span>·</span>
+<span>✓ Respuesta hoy</span>
 </div>
-<!-- Micro-Credenciales Destacadas -->
-<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-container-high text-center">
-<div class="p-2 bg-surface-container-low rounded border border-outline-variant/40">
-<span class="material-symbols-outlined text-primary text-base mb-0.5">history</span>
-<p class="font-julius text-xs text-primary font-bold block leading-tight">25+ Años</p>
-<span class="font-body-sm text-[10px] text-on-surface-variant block mt-0.5">De trayectoria</span>
 </div>
-<div class="p-2 bg-surface-container-low rounded border border-outline-variant/40">
-<span class="material-symbols-outlined text-primary text-base mb-0.5">domain</span>
-<p class="font-julius text-xs text-primary font-bold block leading-tight">Laureles</p>
-<span class="font-body-sm text-[10px] text-on-surface-variant block mt-0.5">Y El Poblado</span>
+<!-- Hero Featured Preview Card -->
+<div class="rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container-lowest shadow-sm">
+<div class="relative w-full aspect-[4/3] bg-surface-container">
+<img alt="Qubic Apartamentos Laureles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvFSdf1t9mWYxZCoSDpqL_EM3Ra0mbdZxOGqg3W4RNMri9bv3FfQEaF8aipdqIoebwppotjQBqoEi99Jw-5fCw57jfTMtszBlAWaMugxOWr2cRuPQKNu9_oJpiTZJ_Plw4FrOX5lHcpcQjn6ZgzHvgp2O2y0B573xQSFIaI8whqvtFlU7RFZ2rdQx69qcStsg_PHri3yS5wNmigskTJPRG6pZ2oQXiW6QsjcQh3SUoOxL6edouCeg5eKmZXN5GuIexHlGaXY0S90A"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1 rounded-full border border-outline-variant/30 flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary font-bold">En Construcción y Venta · Laureles tradicional</span>
 </div>
-<div class="p-2 bg-surface-container-low rounded border border-outline-variant/40">
-<span class="material-symbols-outlined text-primary text-base mb-0.5">payments</span>
-<p class="font-julius text-xs text-primary font-bold block leading-tight">Directa</p>
-<span class="font-body-sm text-[10px] text-on-surface-variant block mt-0.5">Financiación propia</span>
 </div>
+<div class="p-4 flex items-center justify-between">
+<div>
+<div class="text-title-md font-title-md text-primary font-bold">Qubic Laureles</div>
+<div class="text-label-md font-label-md text-on-surface-variant">Entrega programada · Sector Circular Laureles</div>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
 </div>
 </div>
 </section>
-<!-- 2. INTERÉS (Diagnóstico del dolor inmobiliario actual y Proceso en 3 pasos) -->
-<section class="py-12 bg-surface-container-low border-b border-surface-container-highest">
-<div class="max-w-md mx-auto px-margin-sm flex flex-col gap-8">
-<!-- Card Arquitectónica: Diagnóstico del Dolor Real -->
-<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/70 elevation-card relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error text-2xl mt-0.5">error_outline</span>
-<div>
-<h2 class="font-julius text-base text-primary font-semibold leading-snug">
-                ¿Cansado de buscar proyectos sin claridad en precios ni tiempos de entrega?
-              </h2>
-<p class="font-body-md text-xs text-on-surface-variant mt-2.5 leading-relaxed">
-                Tiene nueve proyectos listados en la web pero sin motor de filtros ni captura de leads: cada interesado es un WhatsApp suelto que nadie vuelve a contactar. En Constructora Borinquen te asignamos un asesor directo desde el primer clic.
-              </p>
+<!-- 2. CREDIBILITY & AUTHORITY BAR (Interés) -->
+<section class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/40 flex flex-col gap-4">
+<div class="grid grid-cols-3 gap-2 divide-x divide-outline-variant/30 text-center">
+<div class="px-1">
+<div class="text-headline-sm font-headline-sm text-primary font-bold">27 Años</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant leading-tight mt-1">Trayectoria ininterrumpida (1998 - 2025)</div>
+</div>
+<div class="px-1">
+<div class="text-headline-sm font-headline-sm text-primary font-bold">9 Proyectos</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant leading-tight mt-1">Entregados a satisfacción</div>
+</div>
+<div class="px-1">
+<div class="text-headline-sm font-headline-sm text-primary font-bold">100%</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant leading-tight mt-1">Escriturados y respaldo fiduciario</div>
 </div>
 </div>
-</div>
-<!-- Proceso en 3 Simples Pasos -->
-<div>
-<div class="mb-5">
-<span class="font-julius text-[11px] tracking-widest text-primary font-bold uppercase block">METODOLOGÍA TRANSPARENTE</span>
-<h2 class="font-julius text-xl text-primary font-normal mt-1">Tu camino hacia tu nuevo apartamento en 3 simples pasos</h2>
-</div>
-<div class="space-y-4">
-<!-- Paso 01 -->
-<div class="flex gap-4 p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/50 elevation-card items-start">
-<span class="flex-shrink-0 w-9 h-9 rounded bg-primary text-white font-julius text-sm font-bold flex items-center justify-center border border-primary-container">
-                01
-              </span>
-<div>
-<h3 class="font-julius text-sm text-primary font-bold">Nos escribes con lo que buscas</h3>
-<p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">
-                  Indícanos la zona deseada (Laureles o El Poblado), el número de alcobas requeridas y tu rango estimado de inversión.
-                </p>
-</div>
-</div>
-<!-- Paso 02 -->
-<div class="flex gap-4 p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/50 elevation-card items-start">
-<span class="flex-shrink-0 w-9 h-9 rounded bg-primary text-white font-julius text-sm font-bold flex items-center justify-center border border-primary-container">
-                02
-              </span>
-<div>
-<h3 class="font-julius text-sm text-primary font-bold">Te mostramos proyectos que cuadren con tu presupuesto y zona</h3>
-<p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">
-                  Recibes planos arquitectónicos detallados en PDF, ficha técnica de acabados y cuadro de amortización para pago flexible.
-                </p>
-</div>
-</div>
-<!-- Paso 03 -->
-<div class="flex gap-4 p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/50 elevation-card items-start">
-<span class="flex-shrink-0 w-9 h-9 rounded bg-primary text-white font-julius text-sm font-bold flex items-center justify-center border border-primary-container">
-                03
-              </span>
-<div>
-<h3 class="font-julius text-sm text-primary font-bold">Visita y separa tu apartamento</h3>
-<p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">
-                  Agenda un recorrido presencial en nuestra sala de ventas o una sesión virtual guiada con un ingeniero consultor dedicado.
-                </p>
-</div>
-</div>
-</div>
-</div>
+<div class="pt-3 border-t border-outline-variant/30 flex items-center justify-center gap-2 text-center text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-base" data-icon="location_on">location_on</span>
+<span>Centro de Ventas: Carrera 77 #35-23, Laureles, Medellín</span>
 </div>
 </section>
-<!-- 3. DESEO (Catálogo Selecto, Beneficios y Prueba Social) -->
-<section class="py-12 bg-surface-container-lowest border-b border-surface-container-highest">
-<div class="max-w-md mx-auto px-margin-sm flex flex-col gap-10">
-<!-- Encabezado Sección Proyectos -->
+<!-- 3. PROYECTOS EN VENTA DESTACADOS (Deseo) -->
+<section class="flex flex-col gap-4">
 <div>
-<span class="font-julius text-[11px] tracking-widest text-primary font-bold uppercase block">PORTAFOLIO EXCLUSIVO</span>
-<h2 class="font-julius text-2xl text-primary font-normal mt-1">Proyectos insignia en Medellín</h2>
-<p class="font-body-md text-xs text-on-surface-variant mt-1">Desarrollos diseñados bajo los más rigurosos estándares sismorresistentes y de confort bioclimático.</p>
+<div class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider mb-1">Portafolio residencial</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">Proyectos exclusivos en venta</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Diseñados para vivir con distinción y asegurar alta plusvalía en Medellín</p>
 </div>
-<!-- Proyecto 1: Qubic Laureles -->
-<div class="bg-surface-container-lowest border border-outline-variant/60 rounded-lg overflow-hidden elevation-card">
-<div class="relative h-64 w-full bg-surface-container">
-<img alt="Proyecto Qubic Laureles en Medellín fachada de lujo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Xt5BAMKBxplApD8oTYeKZCQZPkFKUTGOG-9hNIPQieOQJuIgLOrWITJpS4ncdBzq0OwcvfSfChoyb6hsYSzT0YtPrZwLjZnnwGkkC5iyUjR9WK5jaZMlfN9wBTRlcSGyEc5TyT-XzsrsZ1DnC4KgGXJU019GmvfP-dgix0PjThkK36En863o9UAku-iw6-LHUEL1kKXM_OtyEnVXaR8d91lqWkPVM4QjFrdsdX4Favckm1qbltWW2_mmA"/>
-<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-julius uppercase tracking-widest px-2.5 py-1 rounded">
-              En Preventa · Laureles
-            </div>
-</div>
-<div class="p-5">
-<div class="flex justify-between items-baseline">
-<h3 class="font-julius text-lg text-primary font-bold">Qubic Apartamentos</h3>
-<span class="font-news text-xs font-bold text-primary-container">Laureles · Medellín</span>
-</div>
-<p class="font-body-md text-xs text-on-surface-variant mt-2 leading-relaxed">
-              Torre de vanguardia arquitectónica con integración de vegetación nativa en terrazas, iluminación natural de 360 grados y acabados de lujo importados. Ubicado en calle residencial tranquila a pasos del segundo parque de Laureles.
-            </p>
-<!-- Metadata Grid -->
-<div class="grid grid-cols-3 gap-2 my-4 pt-3 border-t border-surface-container-highest text-center">
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Área</span>
-<span class="font-news font-bold text-xs text-primary">85 a 142 m²</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Alcobas</span>
-<span class="font-news font-bold text-xs text-primary">2 y 3 Alcobas</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Baños</span>
-<span class="font-news font-bold text-xs text-primary">2.5 a 3.5</span>
-</div>
-</div>
-<a class="w-full py-2.5 border border-primary text-primary hover:bg-surface-container-low rounded text-xs font-julius font-bold tracking-wider uppercase text-center block transition-colors" href="https://wa.me/576044126598?text=Hola%20Borinquen%2C%20solicito%20el%20brochure%20y%20precios%20de%20Qubic%20Laureles" target="_blank">
-              Consultar disponibilidad en Qubic
-            </a>
-</div>
-</div>
-<!-- Proyecto 2: Senderos de Santa Teresa -->
-<div class="bg-surface-container-lowest border border-outline-variant/60 rounded-lg overflow-hidden elevation-card">
-<div class="relative h-64 w-full bg-surface-container">
-<img alt="Proyecto Senderos de Santa Teresa El Poblado Medellín vista panorámica" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UpJwfI1nOHwhyzm6cAP5Z7FGNw0zMhWvEr5yb0y3_8LgT9MH6PVC_NXJwrSuWmNmrENEF11dkEptPDIEVwx0PFl82ItWHSn52DndI8IhoV4RkVjxx38cCPqFO-m46hMsxMb2qcbSXjSaldewJ87WaNXr-r0BaoHf4Wnayp8YSLeYt3wYXuS_ksilt3GhQwHCcNGQZtaPzpj0BgEXcPHSMwTEPdVHNnD7BJcJglCG27dx2QpKH9N87GfYo"/>
-<div class="absolute top-3 left-3 bg-[#1b9949] text-white text-[10px] font-julius uppercase tracking-widest px-2.5 py-1 rounded">
-              Éxito en Ventas · El Poblado
-            </div>
-</div>
-<div class="p-5">
-<div class="flex justify-between items-baseline">
-<h3 class="font-julius text-lg text-primary font-bold">Senderos de Santa Teresa</h3>
-<span class="font-news text-xs font-bold text-primary-container">El Poblado · Medellín</span>
-</div>
-<p class="font-body-md text-xs text-on-surface-variant mt-2 leading-relaxed">
-              Complejo residencial exclusivo inmerso en la reserva natural alta de El Poblado. Vistas insuperables sobre todo el Valle de Aburrá, senderos peatonales ecológicos privados, piscina climatizada sinfín y club house integrado.
-            </p>
-<!-- Metadata Grid -->
-<div class="grid grid-cols-3 gap-2 my-4 pt-3 border-t border-surface-container-highest text-center">
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Área</span>
-<span class="font-news font-bold text-xs text-primary">110 a 220 m²</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Alcobas</span>
-<span class="font-news font-bold text-xs text-primary">3 y 4 Alcobas</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded">
-<span class="block text-[10px] text-on-surface-variant uppercase font-julius">Balcón</span>
-<span class="font-news font-bold text-xs text-primary">Panorámico</span>
-</div>
-</div>
-<a class="w-full py-2.5 border border-primary text-primary hover:bg-surface-container-low rounded text-xs font-julius font-bold tracking-wider uppercase text-center block transition-colors" href="https://wa.me/576044126598?text=Hola%20Borinquen%2C%20solicito%20informaci%C3%B3n%20de%20Senderos%20de%20Santa%20Teresa%20El%20Poblado" target="_blank">
-              Consultar Senderos de Santa Teresa
-            </a>
-</div>
-</div>
-<!-- Beneficios Enfocados en Resultado Tangible -->
-<div class="bg-surface-container-low p-5 rounded-lg border border-outline-variant/60">
-<h3 class="font-julius text-base text-primary font-bold mb-4">¿Por qué invertir con Constructora Borinquen?</h3>
-<ul class="space-y-3.5">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary text-lg mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-xs text-on-surface leading-normal">
-<strong>Apartamento nuevo de estreno</strong> en las zonas de más alta valorización de Medellín (Laureles y El Poblado).
+<div class="flex flex-col gap-5">
+<!-- Card 1: Qubic -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img alt="Qubic Apartamentos Laureles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvFSdf1t9mWYxZCoSDpqL_EM3Ra0mbdZxOGqg3W4RNMri9bv3FfQEaF8aipdqIoebwppotjQBqoEi99Jw-5fCw57jfTMtszBlAWaMugxOWr2cRuPQKNu9_oJpiTZJ_Plw4FrOX5lHcpcQjn6ZgzHvgp2O2y0B573xQSFIaI8whqvtFlU7RFZ2rdQx69qcStsg_PHri3yS5wNmigskTJPRG6pZ2oQXiW6QsjcQh3SUoOxL6edouCeg5eKmZXN5GuIexHlGaXY0S90A"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 text-primary text-label-sm font-label-sm font-bold shadow-sm">
+                Laureles · Sector Circular
               </span>
+<span class="px-2.5 py-1 rounded bg-secondary text-white text-label-sm font-label-sm font-bold shadow-sm">
+                Últimas unidades
+              </span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">Qubic Apartamentos Laureles</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Arquitectura vanguardista y acabados de lujo sobre vía residencial arbolada.</p>
+</div>
+<!-- Highlights Metrics Rack -->
+<div class="grid grid-cols-3 gap-2 py-2.5 px-3 bg-surface-container-low rounded-lg text-center border border-outline-variant/20">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Áreas</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">75 - 140 m²</span>
+</div>
+<div class="border-x border-outline-variant/30">
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Alcobas</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">2 y 3 Alc.</span>
+</div>
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Parqueadero</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">Priv. + Útil</span>
+</div>
+</div>
+<ul class="space-y-1.5 text-body-sm font-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Terrazas verdes con vista panorámica a la ciudad</span>
 </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary text-lg mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-xs text-on-surface leading-normal">
-<strong>Financiación directa con la constructora:</strong> planes de pago personalizados durante la etapa de obra sin enredos bancarios.
-              </span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary text-lg mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-xs text-on-surface leading-normal">
-<strong>Acompañamiento integral</strong> técnico y jurídico desde la separación hasta la entrega de llaves y escrituras notariales.
-              </span>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Acabados premium italianos y carpintería a medida</span>
 </li>
 </ul>
+<a class="mt-1 w-full py-2.5 px-4 rounded-lg bg-primary-container text-white text-center font-semibold text-title-md font-title-md flex items-center justify-center gap-2 hover:bg-primary transition-all active:scale-95 duration-150" href="https://wa.me/573142104632?text=Hola,%20deseo%20solicitar%20el%20dossier%20y%20precios%20de%20Qubic%20Laureles" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Solicitar dossier y precios por WhatsApp</span>
+</a>
 </div>
-<!-- Métricas de Solidez y Respaldo -->
-<div class="grid grid-cols-3 gap-2 bg-primary text-white p-4 rounded-lg text-center shadow-sm">
+</article>
+<!-- Card 2: Senderos de Santa Teresa -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img alt="Senderos de Santa Teresa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHyGHfiAgrOv3uKVVmnHXyVCRYkbYX2aQi_nRB6y676IiEKPl6aCT5bL4Y-prsN-cX2bYKi1kp1BGT3rVnmXc4pXvA5D6seWWOW8W8l0zuWzWn254_kgkc5LiyewZ5AblVaqkFR5_8esf4wmuk1mL41elHazrvAoh4S6PA-PivletoEf3v__V43XpBgJzqzwEbHrsyVQ0Xs10r2VQPHKpb_9RScN0rSjhxDU34qF1obG4-zxfXMloYuddYB2qDecNGEKK7V9oGw-s"/>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/95 text-primary text-label-sm font-label-sm font-bold shadow-sm">
+                Sector Exclusivo · Naturaleza y Vista
+              </span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
 <div>
-<span class="font-julius text-xl font-bold block text-primary-fixed">+25</span>
-<span class="font-news text-[11px] uppercase tracking-wider block text-white/80 mt-0.5">Años en el mercado</span>
+<h3 class="text-headline-sm font-headline-sm text-primary font-bold">Senderos de Santa Teresa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Armonía natural, ventilación cruzada y confort térmico en una ubicación privilegiada.</p>
 </div>
-<div class="border-x border-white/20 px-1">
-<span class="font-julius text-xl font-bold block text-primary-fixed">9+</span>
-<span class="font-news text-[11px] uppercase tracking-wider block text-white/80 mt-0.5">Proyectos entregados</span>
+<!-- Highlights Metrics Rack -->
+<div class="grid grid-cols-3 gap-2 py-2.5 px-3 bg-surface-container-low rounded-lg text-center border border-outline-variant/20">
+<div>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Concepto</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">Bioclimático</span>
+</div>
+<div class="border-x border-outline-variant/30">
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Balcones</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">Panorámicos</span>
 </div>
 <div>
-<span class="font-julius text-xl font-bold block text-primary-fixed">100%</span>
-<span class="font-news text-[11px] uppercase tracking-wider block text-white/80 mt-0.5">Escriturados</span>
+<span class="block text-label-sm font-label-sm text-on-surface-variant uppercase">Zonas</span>
+<span class="block text-body-sm font-body-sm text-primary font-bold">Piscina + Lounge</span>
 </div>
 </div>
-<!-- Testimonio Verificado -->
-<div class="p-5 bg-surface-container-lowest border-l-4 border-primary rounded-r-lg border border-outline-variant/60 elevation-card">
-<div class="flex items-center gap-1 text-[#e5a00d] mb-2">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-news text-xs font-bold text-on-surface-variant ml-1.5">5.0 / 5.0</span>
+<ul class="space-y-1.5 text-body-sm font-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Piscina panorámica climatizada y salón lounge</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+<span>Integración directa con jardines paisajísticos</span>
+</li>
+</ul>
+<a class="mt-1 w-full py-2.5 px-4 rounded-lg bg-primary-container text-white text-center font-semibold text-title-md font-title-md flex items-center justify-center gap-2 hover:bg-primary transition-all active:scale-95 duration-150" href="https://wa.me/573142104632?text=Hola,%20deseo%20consultar%20disponibilidad%20de%20Senderos%20de%20Santa%20Teresa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Consultar disponibilidad por WhatsApp</span>
+</a>
 </div>
-<p class="font-body-md text-xs italic text-on-surface leading-relaxed">
-            "Compré mi apartamento en Laureles sobre planos con financiación directa de Borinquen. Todo claro desde el inicio, cronograma cumplido y acabados impecables."
-          </p>
-<div class="mt-3 pt-3 border-t border-surface-container-high flex justify-between items-center">
+</article>
+</div>
+</section>
+<!-- 4. PILARES DE RESPALDO BORINQUEN (Convicción) -->
+<section class="flex flex-col gap-4">
 <div>
-<p class="font-julius text-xs text-primary font-bold">Carlos M.</p>
-<p class="font-body-sm text-[11px] text-on-surface-variant">Comprador e Inversionista en Laureles, Medellín</p>
+<div class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider mb-1">Nuestra promesa</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">Pilares de respaldo Borinquen</h2>
 </div>
-<span class="material-symbols-outlined text-tertiary text-xl" title="Comprador verificado">verified</span>
+<div class="grid grid-cols-1 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-primary font-bold">Cumplimiento riguroso en entregas</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Operamos con esquemas de fiducia completa de primer nivel, protegiendo cada aporte con cronogramas de obra auditados.
+            </p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="construction">construction</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-primary font-bold">Acabados de primera calidad</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Entregamos apartamentos 100% terminados con materiales de alta especificación, sin costos imprevistos de remodelación.
+            </p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="explore">explore</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md text-primary font-bold">Ubicaciones consolidadas</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+              Sectores residenciales de alta valorización en Laureles y El Poblado, próximos a parques, ciclorrutas y gastronomía.
+            </p>
 </div>
 </div>
 </div>
 </section>
-<!-- 4. ACCIÓN (Formulario de Conversión Directa y Alternativa WhatsApp) -->
-<section class="py-12 bg-surface-container-low" id="contacto">
-<div class="max-w-md mx-auto px-margin-sm">
-<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/80 elevation-card">
-<div class="text-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl mb-1">calendar_today</span>
-<h2 class="font-julius text-xl text-primary font-normal leading-snug">
-              Agenda tu visita personalizada a sala de ventas
-            </h2>
-<p class="font-body-md text-xs text-on-surface-variant mt-1.5">
-              Conoce maquetas físicas, acabados reales y recibe asesoría financiera individual.
-            </p>
+<!-- 5. CIERRE DE ALTA CONVERSIÓN (Acción) -->
+<section class="rounded-xl bg-primary text-white p-6 shadow-md flex flex-col gap-4 text-center">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white text-label-sm font-label-sm w-fit mx-auto border border-white/20">
+<span class="material-symbols-outlined text-sm" data-icon="storefront">storefront</span>
+<span>Sala de Ventas Laureles</span>
 </div>
-<!-- Formulario Limpio de 3 Campos -->
-<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); handleFormSubmit();">
-<div>
-<label class="block font-julius text-[11px] font-bold tracking-wider text-primary uppercase mb-1" for="name">
-                Nombre y apellido completo
-              </label>
-<input class="w-full bg-white border border-outline-variant rounded p-3 text-xs text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="name" name="name" placeholder="Ej. Juan Felipe Restrepo" required="" type="text"/>
+<div class="space-y-2">
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile font-bold text-white">
+          Creando sueños desde 1998
+        </h2>
+<p class="text-body-md font-body-md text-white/90 max-w-sm mx-auto">
+          Conoce los planos, esquemas de pago y fechas de entrega con nuestro equipo comercial directo en Laureles.
+        </p>
 </div>
-<div>
-<label class="block font-julius text-[11px] font-bold tracking-wider text-primary uppercase mb-1" for="whatsapp">
-                Número de WhatsApp / Celular
-              </label>
-<input class="w-full bg-white border border-outline-variant rounded p-3 text-xs text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="whatsapp" name="whatsapp" placeholder="Ej. 300 123 4567" required="" type="tel"/>
-</div>
-<div>
-<label class="block font-julius text-[11px] font-bold tracking-wider text-primary uppercase mb-1" for="sector">
-                Zona de interés
-              </label>
-<select class="w-full bg-white border border-outline-variant rounded p-3 text-xs text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="sector" name="sector" required="">
-<option value="Laureles">Laureles (Qubic y entorno residencial)</option>
-<option value="El Poblado">El Poblado (Senderos de Santa Teresa)</option>
-<option value="Ambos sectores">Ambos sectores (Evaluando opciones)</option>
-</select>
-</div>
-<button class="w-full py-3.5 px-4 bg-primary hover:bg-[#0e3149] active:scale-[0.98] text-white rounded font-julius text-sm tracking-wider uppercase font-bold transition-all shadow text-center" type="submit">
-              Agendar visita
-            </button>
-<div class="text-center space-y-2 pt-1">
-<p class="font-body-sm text-[11px] text-tertiary-container font-medium flex items-center justify-center gap-1">
-<span class="material-symbols-outlined text-[14px]">bolt</span>
-                Sin compromiso · Respuesta en menos de 2 horas
-              </p>
-<p class="font-body-sm text-[10px] text-outline leading-tight">
-                Tus datos son 100% confidenciales bajo política de protección de datos de Constructora Borinquen S.A.S.
-              </p>
-</div>
-</form>
-<!-- Separador -->
-<div class="relative my-6 text-center">
-<hr class="border-surface-container-highest"/>
-<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface-container-lowest px-3 text-[11px] text-on-surface-variant font-julius">O BIEN</span>
-</div>
-<!-- Alternativa Directa WhatsApp / Teléfono PBX -->
-<div class="p-3.5 bg-surface-container-low rounded border border-outline-variant/60 text-center">
-<p class="font-julius text-xs text-primary font-bold mb-2">¿Prefieres atención inmediata?</p>
-<p class="font-body-sm text-[11px] text-on-surface-variant mb-3">Escríbenos o llámanos directo a nuestro PBX / WhatsApp oficial:</p>
-<a class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#25d366] text-white rounded text-xs font-news font-bold hover:bg-[#20ba59] transition-all w-full" href="https://wa.me/576044126598?text=Hola%20Constructora%20Borinquen%2C%20deseo%20atenci%C3%B3n%20inmediata%20con%20un%20asesor" target="_blank">
-<span class="material-symbols-outlined text-lg">chat</span>
-<span>PBX / WhatsApp (+57 604 412 6598)</span>
+<div class="pt-2 flex flex-col gap-2">
+<a class="w-full flex items-center justify-center gap-2.5 py-3.5 px-6 rounded-lg bg-[#25D366] text-white font-bold text-title-md font-title-md shadow-lg hover:bg-[#20ba59] active:scale-95 transition-all" href="https://wa.me/573142104632?text=Hola,%20deseo%20hablar%20con%20un%20asesor%20comercial%20de%20Constructora%20Borinquen" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<span>Hablar con un asesor ahora</span>
 </a>
+<span class="text-label-sm font-label-sm text-white/80 mt-1">
+          Horario sala de ventas: Lun a Sáb 9:00 am - 5:30 pm · Cra 77 #35-23
+        </span>
 </div>
-</div>
+</section>
+<!-- 6. PREGUNTAS FRECUENTES (FAQ) -->
+<section class="flex flex-col gap-3">
+<h2 class="text-headline-sm font-headline-sm text-primary font-bold">Preguntas frecuentes</h2>
+<div class="space-y-2">
+<details class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md font-title-md text-primary gap-2">
+<span>¿Qué fiduciaria respalda los proyectos?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+            Nuestros proyectos cuentan con el respaldo de fiduciarias bancarias de primer nivel en Colombia, garantizando que los recursos son administrados de forma blindada hasta el cumplimiento de las condiciones de punto de equilibrio y escrituración.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md font-title-md text-primary gap-2">
+<span>¿Cuáles son los plazos de cuota inicial disponibles?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+            Ofrecemos planes de cuota inicial flexibles financiados a lo largo del plazo de construcción (hasta 18 o 24 meses según la tipología), facilitando esquemas de pago mensuales adaptados a tu flujo de ingresos.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest rounded-lg border border-outline-variant/30 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md font-title-md text-primary gap-2">
+<span>¿Los apartamentos se entregan totalmente terminados?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+            Sí. En Constructora Borinquen entregamos cada unidad con acabados de primera calidad: cocina integral equipada, baños con divisiones en vidrio templado, pisos en porcelanato de gran formato, carpintería completa y closets listos para habitar.
+          </p>
+</details>
 </div>
 </section>
 </main>
-<!-- Footer Component (from Shared Components JSON) -->
-<footer class="bg-surface-container-low dark:bg-surface-container-low border-t border-surface-container-highest dark:border-outline-variant w-full">
-<div class="w-full py-space-xl px-margin-sm flex flex-col gap-space-md max-w-7xl mx-auto">
+<!-- FOOTER (Shared Component: Footer execution) -->
+<footer class="w-full bg-surface-container mt-12 border-t border-outline-variant">
+<div class="flex flex-col gap-space-lg w-full px-margin-mobile py-space-xl max-w-7xl mx-auto">
 <div class="flex flex-col gap-2">
-<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed font-julius">Constructora Borinquen</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Ingeniería, diseño y arquitectura sólida en Medellín desde 1998.</p>
-</div>
-<div class="flex flex-wrap gap-x-4 gap-y-2 text-xs font-label-sm text-label-sm">
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#proyectos">Proyectos Laureles</a>
-<span class="text-outline-variant">·</span>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#proyectos">Proyectos El Poblado</a>
-<span class="text-outline-variant">·</span>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#contacto">Términos y Privacidad</a>
-<span class="text-outline-variant">·</span>
-<a class="text-primary font-medium hover:underline" href="tel:+576044126598">PBX: (604) 412 6598</a>
-</div>
-<div class="pt-4 border-t border-surface-container-highest">
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-          © 2024 Constructora Borinquen S.A.S. NIT 811.024.958-3. Medellín, Colombia. Todos los derechos reservados.
+<span class="text-headline-md font-headline-md text-primary">Constructora Borinquen S.A.S.</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          NIT 811.024.958-3 · Constructores y promotores inmobiliarios con más de dos décadas de solidez en Medellín.
         </p>
 </div>
+<div class="flex flex-wrap gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#proyectos">Proyectos en Laureles</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#proyectos">Proyectos en El Poblado</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Especificaciones Técnicas</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Términos y Condiciones</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/30 leading-relaxed">
+        © 2024 Constructora Borinquen S.A.S. NIT 811.024.958-3. Todos los derechos reservados. Carrera 77 #35-23, Laureles, Medellín, Colombia. PBX: +57 314 210 4632.
+      </div>
 </div>
 </footer>
-<!-- BottomNavBar Component (from Shared Components JSON - Sticky Mobile Navigation) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs pb-safe h-16 bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-container-highest dark:border-outline-variant shadow-[0_-2px_10px_rgba(0,0,0,0.04)]">
-<!-- Tab 1: Proyectos -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1.5 px-3 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95" href="#proyectos">
-<span class="material-symbols-outlined text-xl">location_city</span>
-<span class="font-label-sm text-label-sm font-news mt-0.5">Proyectos</span>
+<!-- BOTTOM FLOATING ACTION BAR FOR MOBILE (Direct WhatsApp Conversion Dock) -->
+<div class="fixed bottom-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md px-margin-mobile py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)] border-t border-outline-variant/30 flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant leading-none">Sala de Ventas Laureles</span>
+<span class="text-body-sm font-body-sm text-primary font-bold mt-0.5">Asesoría directa</span>
+</div>
+<a class="flex-1 max-w-[240px] flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-[#25D366] text-white font-semibold text-title-md font-title-md shadow-md active:scale-95 transition-all" href="https://wa.me/573142104632?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20apartamentos%20de%20Constructora%20Borinquen" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-white text-xl" data-icon="support_agent">support_agent</span>
+<span>WhatsApp Directo</span>
 </a>
-<!-- Tab 2: Beneficios -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1.5 px-3 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95" href="#beneficios">
-<span class="material-symbols-outlined text-xl">verified</span>
-<span class="font-label-sm text-label-sm font-news mt-0.5">Beneficios</span>
-</a>
-<!-- Tab 3: Opiniones -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1.5 px-3 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95" href="#opiniones">
-<span class="material-symbols-outlined text-xl">rate_review</span>
-<span class="font-label-sm text-label-sm font-news mt-0.5">Opiniones</span>
-</a>
-<!-- Tab 4: Agendar (Active Tab) -->
-<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed py-1.5 px-3 hover:text-primary transition-colors active:scale-95 font-medium" href="#contacto">
-<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-<span class="font-label-sm text-label-sm font-news mt-0.5 font-bold">Agendar</span>
-</a>
-</nav>
-<!-- Interactive Script for Form handling to WhatsApp -->
-<script>
-    function handleFormSubmit() {
-      const name = document.getElementById('name').value.trim();
-      const whatsapp = document.getElementById('whatsapp').value.trim();
-      const sector = document.getElementById('sector').value;
-
-      if (!name || !whatsapp) {
-        alert('Por favor ingrese su nombre y teléfono.');
-        return;
-      }
-
-      const message = `Hola Constructora Borinquen, mi nombre es ${name}. Quiero agendar una visita a la sala de ventas para proyectos en ${sector}. Mi WhatsApp es ${whatsapp}.`;
-      const encodedMsg = encodeURIComponent(message);
-      
-      // Open WhatsApp with prefilled message
-      window.open(`https://wa.me/576044126598?text=${encodedMsg}`, '_blank');
-    }
-  </script>
+</div>
 </body></html>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Clínica Dental Home · Diseño de Sonrisa en Medellín</title>
   <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -318,7 +318,7 @@
         <p class="text-xs text-slate-500 mt-1">Completa tus datos o escríbenos directamente por WhatsApp.</p>
       </div>
 
-      <form class="space-y-3" onsubmit="event.preventDefault(); window.open('https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home', '_blank');">
+      <form class="space-y-3" onsubmit="event.preventDefault(); window.open('https://wa.me/573104194654?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20Dental%20Home', '_blank');" data-wa="https://wa.me/573104194654">
         <div>
           <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre y Apellido *</label>
           <div class="relative">
@@ -459,5 +459,22 @@
     </div>
   </div>
 
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573104194654');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body>
 </html>

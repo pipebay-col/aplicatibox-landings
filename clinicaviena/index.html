@@ -465,6 +465,30 @@
 </section>
 </main>
 <!-- FOOTER (Shared Component Anchor) -->
+
+<!-- ===== FORMULARIO AIDA (Accion) — fix auditoria 30-sep ===== -->
+<section class="py-space-xl px-space-md bg-surface-container-lowest" id="agenda">
+  <div class="max-w-md mx-auto text-center">
+    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-sm">Agenda tu valoración</h2>
+    <p class="text-body-md text-on-surface-variant mb-space-md">Déjanos tus datos y te confirmamos tu cita por WhatsApp. Respuesta en menos de 24 horas.</p>
+    <form data-wa="https://wa.me/573224776418" class="flex flex-col gap-space-sm text-left">
+      <label class="text-label-sm text-on-surface-variant" for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" class="w-full h-12 px-space-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-body-md"/>
+      <label class="text-label-sm text-on-surface-variant" for="wsp">WhatsApp</label>
+      <input id="wsp" name="wsp" type="tel" required placeholder="+57 3XX XXX XXXX" class="w-full h-12 px-space-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-body-md"/>
+      <label class="text-label-sm text-on-surface-variant" for="interes">Tratamiento de interés</label>
+      <select id="interes" name="interes" class="w-full h-12 px-space-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-body-md">
+        <option>Diseño de sonrisa</option>
+        <option>Carillas / Veneers</option>
+        <option>Implantes</option>
+        <option>Otro</option>
+      </select>
+      <button type="submit" class="mt-space-xs w-full h-12 rounded-lg bg-[#25d366] text-white font-label-lg text-label-lg">Agendar por WhatsApp</button>
+      <p class="text-body-sm text-on-surface-variant text-center">Sin compromiso · Respuesta en menos de 24 horas</p>
+    </form>
+  </div>
+</section>
+
 <footer class="w-full px-margin-mobile pt-space-xl pb-32 flex flex-col gap-space-md text-center bg-primary text-on-primary border-t border-primary-container">
 <div class="flex items-center justify-center gap-space-xs">
 <span class="material-symbols-outlined text-secondary-fixed text-[24px]">dentistry</span>
@@ -501,4 +525,21 @@
 <span class="font-label-sm text-label-sm font-semibold mt-0.5">Agendar Cita</span>
 </a>
 </nav>
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573224776418');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body></html>

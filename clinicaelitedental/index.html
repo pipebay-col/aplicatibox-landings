@@ -297,7 +297,7 @@
 
       <!-- Form Card -->
       <div class="bg-white rounded-2xl border border-brand-border p-5 shadow-md mb-5">
-        <form class="space-y-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573172937821?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20%C3%89lite%20Dental';">
+        <form class="space-y-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573172937821?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20%C3%89lite%20Dental';" data-wa="https://wa.me/573172937821">
           
           <!-- Campo 1: Nombre -->
           <div>
@@ -411,5 +411,22 @@
 
   </main>
 
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573172937821');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body>
 </html>

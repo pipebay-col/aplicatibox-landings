@@ -404,7 +404,7 @@
 </div>
 <!-- Conversion Form Card -->
 <div class="bg-surface-container-lowest p-space-md sm:p-space-lg rounded-2xl border border-outline-variant/40 custom-card-shadow space-y-5">
-<form class="space-y-4" onsubmit="handleFormSubmit(event)">
+<form class="space-y-4" onsubmit="handleFormSubmit(event)" data-wa="https://wa.me/573015351637">
 <!-- Campo 1: Nombre Completo -->
 <div class="space-y-1.5 text-left">
 <label class="block font-label-md text-label-md text-on-surface-variant font-semibold" for="nombre">
@@ -594,4 +594,21 @@
       window.open(`https://wa.me/573015351637?text=${textMsg}`, '_blank');
     }
   </script>
+<script>
+// Captura el form y abre WhatsApp con los datos del paciente (fix auditoria 30-sep)
+(function() {
+  var f = document.querySelector('form');
+  if (!f) return;
+  f.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var inputs = f.querySelectorAll('input, select, textarea');
+    var vals = [];
+    inputs.forEach(function(el) { if (el.value) vals.push(el.value); });
+    var base = (f.getAttribute('data-wa') || 'https://wa.me/573015351637');
+    var txt = 'Hola, quiero agendar mi valoración. ' + vals.join(' · ');
+    window.location.href = base + '?text=' + encodeURIComponent(txt);
+    return false;
+  });
+})();
+</script>
 </body></html>
