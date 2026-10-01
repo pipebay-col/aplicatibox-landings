@@ -1,88 +1,558 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Benessere — Clínica Estética en Bogotá</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<title>Dra. Ivonne Tole | Clínica Benessere Bogotá &amp; Neiva</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#f3fbfa",
+            "on-secondary-fixed": "#2b1700",
+            "on-tertiary-fixed-variant": "#1e5031",
+            "on-surface": "#151d1d",
+            "primary-container": "#0d748a",
+            "surface-container-lowest": "#ffffff",
+            "on-error-container": "#93000a",
+            "primary": "#005a6c",
+            "surface-container": "#e7f0ef",
+            "on-tertiary-container": "#c2f9ce",
+            "outline-variant": "#bec8cc",
+            "tertiary": "#2a5c3c",
+            "surface-tint": "#00677c",
+            "on-tertiary-fixed": "#00210e",
+            "tertiary-fixed": "#b9efc5",
+            "secondary": "#785835",
+            "secondary-fixed": "#ffddba",
+            "inverse-on-surface": "#eaf2f2",
+            "on-background": "#151d1d",
+            "primary-fixed": "#b0ecff",
+            "surface-dim": "#d3dcdb",
+            "surface-container-low": "#edf5f5",
+            "on-secondary-fixed-variant": "#5d4120",
+            "primary-fixed-dim": "#81d2ea",
+            "secondary-fixed-dim": "#e8bf94",
+            "inverse-surface": "#2a3232",
+            "on-tertiary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#437553",
+            "error-container": "#ffdad6",
+            "surface-bright": "#f3fbfa",
+            "surface-container-highest": "#dce4e4",
+            "surface-variant": "#dce4e4",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#3f484c",
+            "outline": "#6f797c",
+            "on-primary-fixed": "#001f27",
+            "on-primary-container": "#cbf2ff",
+            "inverse-primary": "#81d2ea",
+            "on-primary-fixed-variant": "#004e5e",
+            "error": "#ba1a1a",
+            "on-secondary-container": "#785936",
+            "tertiary-fixed-dim": "#9dd3aa",
+            "secondary-container": "#fdd2a6",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#e1eae9",
+            "surface": "#f3fbfa"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin-tablet": "2rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "display-lg-mobile": ["Playfair Display", "serif"],
+            "display-lg": ["Playfair Display", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Inter',system-ui,sans-serif; background:#f5fafb; color:#1a2430; line-height:1.6; }
-  .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
-  header { padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
-  .logo { font-family:'Fraunces'; font-weight:900; font-size:24px; color:#1f4f5c; }
-  .cta-top { background:#1f4f5c; color:#fff; padding:10px 22px; border-radius:24px; text-decoration:none; font-weight:700; font-size:14px; }
-  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:34px; align-items:center; padding:34px 0 50px; }
-  h1 { font-family:'Fraunces'; font-weight:900; font-size:44px; line-height:1.12; color:#1f4f5c; letter-spacing:-.01em; }
-  .sub { font-size:17px; color:#4a5568; margin:16px 0 26px; }
-  .cta { display:inline-block; background:#1f4f5c; color:#fff; padding:15px 34px; border-radius:14px; font-size:16px; font-weight:800; text-decoration:none; box-shadow:0 10px 26px #1f4f5c44; }
-  .cta:hover { background:#2d7d8f; }
-  .heroimg { width:100%; max-height:480px; object-fit:cover; border-radius:20px; box-shadow:0 18px 50px rgba(0,0,0,.14); }
-  section { padding:44px 0; }
-  h2 { font-family:'Fraunces'; font-weight:900; font-size:30px; color:#1f4f5c; text-align:center; margin-bottom:28px; }
-  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
-  .card { background:#fff; border-radius:16px; padding:22px; box-shadow:0 6px 22px rgba(0,0,0,.06); }
-  .card .ico { font-size:30px; margin-bottom:8px; }
-  .card h3 { font-size:17px; color:#1f4f5c; margin-bottom:6px; }
-  .card p { font-size:13.5px; color:#556; }
-  .razones { background:#fff; border-radius:18px; padding:30px 34px; box-shadow:0 6px 22px rgba(0,0,0,.05); }
-  .razones li { margin:9px 0 9px 20px; font-size:15.5px; }
-  .pasos { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  .paso { background:#fff; border-radius:16px; padding:22px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.05); }
-  .paso b { display:inline-grid; place-items:center; width:38px; height:38px; border-radius:50%; background:#1f4f5c; color:#fff; font-size:16px; margin-bottom:10px; }
-  .paso span { font-size:14.5px; color:#445; }
-  .final { text-align:center; padding:56px 0; background:linear-gradient(135deg,#1f4f5c,#2d7d8f); color:#fff; border-radius:24px; margin:34px 0; }
-  .final h2 { color:#fff; }
-  .final p { margin:10px 0 22px; font-size:16px; }
-  .final a { background:#fff; color:#1f4f5c; padding:16px 40px; border-radius:14px; font-weight:900; text-decoration:none; font-size:17px; }
-  footer { text-align:center; color:#8895a5; font-size:12.5px; padding:26px 0; }
-  @media(max-width:760px) { .hero{grid-template-columns:1fr;} h1{font-size:32px;} .pasos{grid-template-columns:1fr;} }
-</style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Smooth custom accents */
+    .sanctuary-shadow {
+      box-shadow: 0 4px 20px -2px rgba(13, 116, 138, 0.06);
+    }
+    .lifted-card {
+      box-shadow: 0 12px 32px -4px rgba(13, 116, 138, 0.08);
+    }
+  </style>
 </head>
-<body>
-<div class="wrap">
-  <header>
-    <div class="logo">Benessere</div>
-    <a class="cta-top" href="https://wa.me/573112342264">Agenda tu cita</a>
-  </header>
-  <div class="hero">
-    <div>
-      <h1>Clínica Estética en Bogotá — Dra. Ivonne Tole</h1>
-      <p class="sub">Medicina estética láser, facial y corporal. Título homologado en España, equipos aprobados por la FDA, embajadora HarmonyCa (Allergan).</p>
-      <a class="cta" href="https://wa.me/573112342264">✨ Agendar valoración</a>
-    </div>
-    <img class="heroimg" src="hero-marca.jpg" alt="Benessere — Clínica Estética en Bogotá">
-  </div>
-  <section>
-    <h2>Tratamientos</h2>
-    <div class="cards"><div class="card"><div class="ico">⚡</div><h3>Láser Estético</h3><p>Tecnología FDA para depilación y tratamientos láser faciales.</p></div>
-<div class="card"><div class="ico">✨</div><h3>Medicina Facial</h3><p>Armonización, bioestimuladores y rejuvenecimiento con estándares internacionales.</p></div>
-<div class="card"><div class="ico">🌿</div><h3>Corporal</h3><p>Protocolos corporales personalizados con seguimiento médico.</p></div>
-<div class="card"><div class="ico">🏅</div><h3>HarmonyCa</h3><p>Embajadora oficial Allergan — los mejores insumos del mercado.</p></div></div>
-  </section>
-  <section>
-    <div class="razones">
-      <h2 style="text-align:left">Por qué elegirnos</h2>
-      <ul><li>120.000+ seguidores en Instagram</li>
-<li>Dra. Ivonne Tole — título homologado por el Estado español</li>
-<li>Más de 10 años de experiencia en Bogotá y Neiva</li>
-<li>Equipos aprobados por la FDA</li></ul>
-    </div>
-  </section>
-  <section>
-    <h2>Cómo funciona</h2>
-    <div class="pasos"><div class="paso"><b>1</b><span>Valoración con la Dra. Tole (Bogotá o Neiva)</span></div>
-<div class="paso"><b>2</b><span>Plan personalizado según tu piel y objetivo</span></div>
-<div class="paso"><b>3</b><span>Tratamiento con tecnología de última generación</span></div></div>
-  </section>
-  
-  <div class="final">
-    <h2>Tu transformación empieza hoy</h2>
-    <p>Agenda tu valoración — responde en minutos.</p>
-    <a href="https://wa.me/573112342264">📲 Escribir por WhatsApp</a>
-  </div>
-  <footer>Demo creada por AplicatiBox · Benessere — Clínica Estética en Bogotá</footer>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary selection:text-on-primary">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-gutter-mobile md:px-gutter max-w-7xl mx-auto h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-sm border-b border-outline-variant/20 transition-all duration-200">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">Dra. Ivonne Tole | Benessere</span>
 </div>
+<!-- Action anchor: Desktop nav & direct Agendar CTA -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-90 active:scale-[0.98] transition-all duration-150" href="#contacto">
+        Agendar
+      </a>
+<a aria-label="Contacto directo por WhatsApp" class="p-2 text-primary hover:bg-surface-container-low rounded-lg transition-colors" href="https://wa.me/573112342264" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+</div>
+</header>
+<!-- SPACER FOR FIXED TOPBAR -->
+<div class="h-16"></div>
+<!-- MAIN CANVAS -->
+<main class="w-full max-w-4xl mx-auto px-margin-mobile sm:px-gutter overflow-x-hidden">
+<!-- ========================================================================= -->
+<!-- 1. A — ATENCIÓN (HERO SECTION)                                            -->
+<!-- ========================================================================= -->
+<section class="pt-6 pb-12 flex flex-col gap-6">
+<!-- Top Authority Badge -->
+<div class="inline-flex items-center self-start gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Título homologado por el Estado español · Embajadora HArmonyCa (Allergan)</span>
+</div>
+<!-- Main Catch Headline -->
+<div class="space-y-3">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight font-normal leading-tight">
+          Medicina estética en Bogotá con estándares internacionales
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          La Dra. Ivonne Tole y su equipo, tecnología FDA para resultados naturales
+        </p>
+</div>
+<!-- Hero Doctor Card (Portrait & Floating Tags) -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest sanctuary-shadow border border-outline-variant/30">
+<div class="aspect-[4/3] sm:aspect-[16/10] w-full relative overflow-hidden bg-surface-container">
+<img src="hero-marca.jpg" alt="Clínica Benessere — Bogotá" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Gradient Soft Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent"></div>
+<!-- Floating Editorial Badges -->
+<div class="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2 items-center justify-between">
+<div class="backdrop-blur-md bg-surface-container-lowest/90 px-3 py-1.5 rounded-lg border border-outline-variant/30 shadow-sm">
+<span class="font-label-md text-label-md text-primary font-semibold block">Dra. Ivonne Tole · Directora Médica Benessere</span>
+</div>
+<div class="backdrop-blur-md bg-primary-container/90 text-on-primary px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-label-sm">Atención Médica 1:1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Action CTA Block -->
+<div class="flex flex-col gap-2.5 pt-2">
+<a class="w-full flex items-center justify-center gap-2 py-4 px-6 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:bg-primary transition-all duration-200 active:scale-[0.98] text-center" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+          Agendar valoración
+        </a>
+<p class="font-body-sm text-body-sm text-center text-on-surface-variant">
+          ✓ Respuesta en menos de 24 horas · ✓ Plan 100% médico personalizado · Sin compromiso
+        </p>
+</div>
+<!-- Micro-credenciales (3 Pastillas Limpias) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="history_edu">history_edu</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">+10 años de experiencia</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="location_city">location_city</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Sedes Bogotá Chicó y Neiva</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Tecnología y equipos FDA</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 2. I — INTERÉS (COMPROMISO CON LA EXCELENCIA Y EL RIGOR)                  -->
+<!-- ========================================================================= -->
+<section class="py-12 border-t border-outline-variant/30 flex flex-col gap-8">
+<div class="space-y-3">
+<span class="font-label-sm text-label-sm text-primary tracking-widest block uppercase">Protocolo Benessere</span>
+<h2 class="font-headline-sm text-headline-sm md:font-headline-md md:text-headline-md text-primary">
+          Sabes lo que buscas: una clínica con estándares
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Comprendemos el temor fundado a los resultados artificiales, a procedimientos estandarizados sin diagnóstico anatómico o a intervenciones apresuradas. En Benessere la medicina estética se ejerce bajo el rigor científico de la anatomía facial, preservando siempre la armonía, la elegancia natural y tu identidad única.
+        </p>
+</div>
+<!-- Proceso Clínico Transparente en 3 Pasos -->
+<div class="space-y-4">
+<!-- Paso 01 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-primary font-semibold">Paso 01</span>
+<span class="material-symbols-outlined text-primary" data-icon="face">face</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold pt-1">Valoración con la Dra. Tole</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Diagnóstico facial tridimensional, análisis de facciones, calidad de piel y vectores sin presiones comerciales. Cada paciente recibe un plan diseñado a su medida.
+          </p>
+</div>
+<!-- Paso 02 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-primary font-semibold">Paso 02</span>
+<span class="material-symbols-outlined text-primary" data-icon="biotechnology">chips</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold pt-1">Plan personalizado con tecnología FDA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Selección de protocolos de aparatología médica (Morpheus8) o bioestimulación según tu anatomía y presupuesto transparente. Cero improvisaciones.
+          </p>
+</div>
+<!-- Paso 03 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-primary font-semibold">Paso 03</span>
+<span class="material-symbols-outlined text-primary" data-icon="vital_signs">vital_signs</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold pt-1">Tratamiento y seguimiento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Aplicación milimétrica con microcánulas, confort total, resultados sutiles y acompañamiento médico continuo antes, durante y después del procedimiento.
+          </p>
+</div>
+</div>
+<!-- Dudas / Enlace Secundario Concierge -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-primary-container transition-colors py-2 border-b border-primary/40" href="https://wa.me/573112342264" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="forum">forum</span>
+          ¿Dudas sobre tu tratamiento? Escríbenos por WhatsApp
+        </a>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. D — DESEO (MÉTRICAS, TRATAMIENTOS ESTRELLA & RESULTADOS REALES)        -->
+<!-- ========================================================================= -->
+<section class="py-12 border-t border-outline-variant/30 flex flex-col gap-10">
+<!-- Grid de Métricas y Autoridad -->
+<div>
+<div class="text-center mb-6">
+<h2 class="font-headline-sm text-headline-sm text-primary">Excelencia Médica en Cifras</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Confianza respaldada por formación internacional y evidencia clínica.</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center sanctuary-shadow">
+<span class="font-headline-md text-headline-md font-semibold text-primary block">120K+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">Seguidores en Instagram</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center sanctuary-shadow">
+<span class="font-headline-md text-headline-md font-semibold text-primary block">+10 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">De trayectoria clínica</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center sanctuary-shadow">
+<span class="font-headline-md text-headline-md font-semibold text-primary block">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">Equipos con registro FDA e INVIMA</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center sanctuary-shadow">
+<span class="font-headline-md text-headline-md font-semibold text-primary block">Embajadora</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">HArmonyCa de Allergan Aesthetics</span>
+</div>
+</div>
+</div>
+<!-- Tratamientos Estrella Benessere -->
+<div class="space-y-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary tracking-widest block uppercase">Portafolio Especializado</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Tratamientos Estrella</h3>
+</div>
+<!-- Tarjeta 1: Morpheus8 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow hover:border-primary/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold">Tecnología FDA</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="waves">waves</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Morpheus8 &amp; Radiofrecuencia Fraccionada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Remodelación subdérmica profunda de colágeno y elastina sin cirugía. Tensa tejidos, suaviza textura irregular y redefine el contorno mandibular con recuperación rápida.
+          </p>
+</div>
+<!-- Tarjeta 2: Rejuvenecimiento Facial -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow hover:border-primary/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold">Precisión Médica</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Rejuvenecimiento Facial &amp; Toxina Preventiva</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Suavizado de líneas de expresión con dosis microcalibradas para mantener tu naturalidad y frescura facial intacta, evitando rigidez o expresiones artificiales.
+          </p>
+</div>
+<!-- Tarjeta 3: Bioestimuladores de Colágeno -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow hover:border-primary/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold">Allergan Certified</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="shutter_speed">shutter_speed</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Bioestimuladores de Colágeno (HArmonyCa &amp; Radiesse)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Restauración de soporte y firmeza con efecto lifting progresivo y luminoso. Regenera la matriz de colágeno propia para un rejuvenecimiento visible y duradero.
+          </p>
+</div>
+</div>
+<!-- Testimonios & Resultado Armónico Real -->
+<div class="space-y-5">
+<div>
+<span class="font-label-sm text-label-sm text-primary tracking-widest block uppercase">Casos Reales</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Naturalidad que Transforma</h3>
+</div>
+<!-- Showcase de Resultado Real Benessere -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest sanctuary-shadow border border-outline-variant/30">
+<div class="aspect-[4/3] w-full relative overflow-hidden bg-surface-container">
+<img alt="Resultado armónico y natural de rejuvenecimiento facial en Benessere Bogotá" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VvyBMxlDTD7F8mXwMHdWnsdOSNibAzCsyYWoGJDFbFgQiSZSI833NEcE4oERhehFo0fdqanv56Ys8ManBHks1dneCmt0QbaucMxTwg6VDAAdDthz5DcfZo2e9TcEkkupCWLBwAXmr5ohTewsf6SEQ8Zs-tEJRGp3bY79roEZo9TZsKMpPTu3fpLUtzJUuLtloWALuqto5ibO2RPNFo4v1-Ng9NjW5u5tW6w5xWdFGrlUDvZOtFthh861k"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-outline-variant/30">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Resultado Benessere · Naturalidad y Luminosidad</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Buscaba un tratamiento que devolviera frescura a mi rostro sin que nadie pudiera adivinar qué me había hecho. La Dra. Ivonne Tole logró exactamente eso: mi piel firme, radiante y con mis rasgos intactos."
+            </p>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dra. Camila Restrepo</span>
+<span class="font-label-sm text-label-sm text-outline">Sede Chicó Reservado, Bogotá</span>
+</div>
+</div>
+</div>
+<!-- Mini Testimonios Verificados -->
+<div class="grid grid-cols-1 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow">
+<div class="flex text-amber-500 mb-2">
+<span class="material-symbols-outlined text-sm font-fill" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm font-fill" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm font-fill" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm font-fill" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm font-fill" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              "El protocolo con Morpheus8 y bioestimulador superó mis expectativas. Cero dolor, un trato humano excepcional y el acompañamiento post-tratamiento es inmejorable."
+            </p>
+<div class="mt-2 font-label-md text-label-md text-primary font-semibold">
+              Natalia Forero · Abogada Corporativa
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. A — ACCIÓN (FORMULARIO DE ALTA CONVERSIÓN Y CONTACTO INMEDIATO)        -->
+<!-- ========================================================================= -->
+<section class="py-12 border-t border-outline-variant/30 scroll-mt-20" id="contacto">
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container-lowest sanctuary-shadow border border-outline-variant/40 relative">
+<!-- Scarcity Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container/50 border border-error/20 mb-3">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Cupos limitados de valoración esta semana en Bogotá</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">
+          Empieza hoy tu transformación con rigor médico
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Completa los datos a continuación. Una asesora médica te responderá de forma discreta para confirmar fecha y sede.
+        </p>
+<!-- Formulario sin Fricción -->
+<form class="space-y-4" id="booking-form" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu solicitud. El equipo médico de Dra. Ivonne Tole te contactará en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-on-surface-variant mb-1.5" for="full_name">Nombre completo</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary/10 text-on-surface placeholder:text-outline-variant text-body-md transition-all" id="full_name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-on-surface-variant mb-1.5" for="phone">WhatsApp o Celular</label>
+<div class="flex">
+<span class="inline-flex items-center px-3.5 rounded-l-lg border border-r-0 border-outline-variant/60 bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+                +57
+              </span>
+<input class="w-full px-4 py-3 rounded-r-lg bg-surface-container-lowest border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary/10 text-on-surface placeholder:text-outline-variant text-body-md transition-all" id="phone" placeholder="311 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tratamiento de Interés -->
+<div>
+<label class="block font-label-md text-label-md uppercase text-on-surface-variant mb-1.5" for="treatment">Tratamiento de interés</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary/10 text-on-surface text-body-md transition-all" id="treatment">
+<option value="morpheus">Morpheus8 Facial/Corporal</option>
+<option value="bioestimuladores">Bioestimuladores / HArmonyCa</option>
+<option value="botox">Rejuvenecimiento Facial &amp; Botox</option>
+<option selected="" value="integral">Valoración Médica Integral</option>
+</select>
+</div>
+<!-- Submit CTA Button -->
+<button class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:bg-primary transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2 mt-4 cursor-pointer" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+<!-- Secreto Médico & Habeas Data -->
+<div class="flex items-start gap-2 pt-2">
+<span class="material-symbols-outlined text-outline text-base mt-0.5" data-icon="lock">lock</span>
+<p class="font-body-sm text-body-sm text-outline leading-tight">
+              Tus datos están protegidos bajo secreto médico profesional y Ley 1581 de Habeas Data. No enviamos spam.
+            </p>
+</div>
+</form>
+<!-- Separador Visual -->
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/40"></div>
+</div>
+<div class="relative flex justify-center">
+<span class="bg-surface-container-lowest px-3 font-label-sm text-label-sm uppercase tracking-wider text-outline">
+              O prefieres contacto inmediato
+            </span>
+</div>
+</div>
+<!-- Botón Directo WhatsApp Oficial -->
+<a class="w-full py-3.5 px-5 rounded-lg bg-[#25D366] text-white font-title-md text-title-md flex items-center justify-center gap-2.5 shadow-sm hover:opacity-95 active:scale-[0.98] transition-all" href="https://wa.me/573112342264" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp: +57 311 234 2264</span>
+</a>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. PREGUNTAS FRECUENTES (FAQ ACORDEÓN)                                    -->
+<!-- ========================================================================= -->
+<section class="py-12 border-t border-outline-variant/30 flex flex-col gap-6">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-primary tracking-widest block uppercase">Resolución de Dudas</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Los tratamientos requieren incapacidad laboral?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            La gran mayoría de nuestros protocolos (como toxina botulínica o bioestimuladores con microcánula) no exigen tiempo de recuperación, permitiéndote retornar de inmediato a tu vida social y laboral. Para sesiones intensivas de Morpheus8, puede existir un eritema leve durante 24 a 48 horas manejable con dermocosméticos indicados.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cuánto tiempo duran los resultados de los bioestimuladores y Morpheus8?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Los bioestimuladores como HArmonyCa o Radiesse inducen neocolagénesis natural cuyos efectos progresivos de firmeza y luminosidad se aprecian a partir de la 4ta semana y perduran entre 12 y 18 meses, dependiendo de los hábitos y el metabolismo de cada paciente.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Dónde están ubicadas las clínicas en Bogotá y Neiva?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            En Bogotá nos encontramos en el exclusivo sector de Chicó Reservado (Calle 93 # 11A-28), con parqueadero privado y discreción absoluta. En Neiva atendemos en el centro médico principal (Cra. 8 # 12-45).
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 sanctuary-shadow transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Qué incluye la consulta inicial con la Dra. Ivonne Tole?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Incluye un diagnóstico clínico completo de simetría facial, calidad cutánea, grado de laxitud tisular, historia médica y la formulación de una hoja de ruta personalizada. Sin presiones y con total transparencia.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full max-w-7xl mx-auto px-gutter-mobile md:px-gutter py-space-xl mb-16 md:mb-0 flex flex-col gap-space-md border-t border-outline-variant/30 bg-surface-container-low">
+<div class="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4">
+<div>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary block">Clínica Benessere</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dra. Ivonne Tole · Medicina Estética Avanzada</span>
+</div>
+<div class="flex flex-wrap gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors underline" href="#contacto">Sede Chicó Reservado Bogotá: Calle 93 # 11A-28</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline" href="#contacto">Sede Neiva: Cra. 8 # 12-45</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline" href="#contacto">Habeas Data &amp; Tratamiento de Datos Médicos Ley 1581</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline" href="#contacto">Consentimiento Informado Digital</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors underline" href="#contacto">Registro Sanitario de Habilitación</a>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        © 2024 Clínica Benessere - Dra. Ivonne Tole. Vigilado Supersalud Colombia. Registro Seccional de Salud Bogotá &amp; Neiva. Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Anchor) ================= -->
+<!-- Executed with JSON classes: fixed bottom-0, shadow, border-t, styled navigation pills -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(13,116,138,0.08)] border-t border-outline-variant/30 safe-bottom">
+<!-- Destination 1: Chat Médico -->
+<a class="flex-1 flex items-center justify-center gap-2 bg-surface-container-low text-primary border border-primary/20 rounded-lg py-3 mx-1 font-label-md text-label-md active:scale-[0.97] transition-all duration-150" href="https://wa.me/573112342264" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chat Médico</span>
+</a>
+<!-- Destination 2: Reservar Cita (Active semantic match for Booking / Action intent) -->
+<a class="flex-1 flex items-center justify-center gap-2 bg-primary text-on-primary rounded-lg py-3 mx-1 font-label-md text-label-md active:scale-[0.97] transition-all duration-150 shadow-sm" href="#contacto">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+<span>Reservar Cita</span>
+</a>
+</nav>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/benessere-medicina-estetica" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>
