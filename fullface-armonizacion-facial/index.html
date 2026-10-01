@@ -1,160 +1,537 @@
 <!DOCTYPE html>
-<html lang="es-CO">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FullFace — Armonización Facial en Medellín | Resultados naturales sin cirugía</title>
-<meta name="description" content="Armonización facial orofacial en Medellín con +10.000 pacientes. Labios, rinomodelación, pómulos, Botox e hilos con equipo especializado. Agenda tu valoración por WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Karla:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>FULLFACE — Alta Estética &amp; Armonización Orofacial | El Poblado, Medellín</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline-variant": "#bdc9c5",
+            "surface-container-highest": "#e4e2df",
+            "error": "#ba1a1a",
+            "on-surface": "#1b1c1a",
+            "primary-fixed": "#98f3de",
+            "surface-container-high": "#eae8e5",
+            "surface-container-low": "#f5f3f0",
+            "tertiary-container": "#836a47",
+            "on-error": "#ffffff",
+            "outline": "#6e7a76",
+            "on-secondary-container": "#526761",
+            "tertiary-fixed-dim": "#e0c298",
+            "background": "#fbf9f6",
+            "on-tertiary-container": "#fff0de",
+            "inverse-primary": "#7bd7c3",
+            "on-primary-fixed": "#00201a",
+            "primary-fixed-dim": "#7bd7c3",
+            "tertiary-fixed": "#fedeb2",
+            "tertiary": "#685231",
+            "surface-variant": "#e4e2df",
+            "secondary-fixed": "#d1e7e0",
+            "on-primary-container": "#bdffee",
+            "surface-container": "#efeeeb",
+            "surface-bright": "#fbf9f6",
+            "surface-dim": "#dbdad7",
+            "inverse-on-surface": "#f2f0ed",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed": "#0b1f1b",
+            "on-primary-fixed-variant": "#005145",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#281800",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#30312f",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#374b46",
+            "secondary-container": "#cee5dd",
+            "on-background": "#1b1c1a",
+            "on-surface-variant": "#3e4946",
+            "secondary-fixed-dim": "#b5cbc4",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary": "#006153",
+            "secondary": "#4e635d",
+            "on-tertiary-fixed-variant": "#584323",
+            "primary-container": "#0e7c6b",
+            "surface-tint": "#006b5c",
+            "surface": "#fbf9f6"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "4rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1.25rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "2rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "display-hero": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Manrope"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "display-hero-mobile": ["Playfair Display"],
+            "title-md": ["Manrope"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
 <style>
-  :root{
-    --rosa:#FD8189;
-    --crema:#F4F2EA;
-    --dorado:#D3AD90;
-    --tinta:#333333;
-    --tinta-suave:#5C5751;
-    --blanco:#FFFFFF;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Karla',sans-serif;color:var(--tinta);background:var(--blanco);line-height:1.65;}
-  h1,h2{font-family:'Cinzel',serif !important;font-weight:600;}
-  .container{max-width:1120px;margin:0 auto;padding:0 24px;}
-  /* HERO */
-  .hero{background:linear-gradient(180deg,var(--crema) 0%,var(--blanco) 100%);padding:56px 0 64px;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;}
-  .kicker{display:inline-block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--rosa);border:1px solid var(--dorado);padding:8px 16px;border-radius:100px;margin-bottom:20px;background:#fff;}
-  .hero h1{font-size:clamp(34px,4.8vw,54px);line-height:1.15;color:var(--tinta);}
-  .hero h1 span{color:var(--rosa);}
-  .hero p.sub{font-size:18.5px;color:var(--tinta-suave);margin:22px 0 4px;max-width:520px;}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease;}
-  .btn:hover{transform:translateY(-2px);}
-  .btn-wa{background:#25D366;color:#fff;box-shadow:0 12px 28px rgba(37,211,102,.35);}
-  .btn-ghost{border:2px solid var(--tinta);color:var(--tinta);background:transparent;}
-  .trust{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap;font-size:14.5px;color:var(--tinta-suave);}
-  .trust b{color:var(--tinta);font-size:15.5px;}
-  .hero-img{border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(51,51,51,.16);background:#fff;}
-  /* SERVICIOS */
-  section{padding:76px 0;}
-  .sec-label{text-align:center;color:var(--rosa);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;font-size:13px;}
-  section h2{font-size:clamp(28px,3.6vw,40px);text-align:center;color:var(--tinta);margin:12px auto 14px;max-width:680px;}
-  .sec-sub{text-align:center;color:var(--tinta-suave);max-width:600px;margin:0 auto 48px;font-size:17px;}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  .card{background:var(--crema);border-radius:20px;padding:30px 26px;border:1px solid rgba(211,173,144,.35);}
-  .card h3{font-family:'Cinzel',serif;font-size:19px;color:var(--tinta);margin-bottom:10px;font-weight:600;letter-spacing:.3px;}
-  .card p{font-size:15.5px;color:var(--tinta-suave);}
-  /* POR QUE */
-  .why{background:var(--tinta);color:#fff;}
-  .why h2{color:#fff;}
-  .why .sec-sub{color:rgba(255,255,255,.7);}
-  .why .grid-3 .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);}
-  .why .card h3{color:#fff;}
-  .why .card p{color:rgba(255,255,255,.72);}
-  .chip{display:inline-block;background:var(--dorado);color:var(--tinta);font-size:12px;font-weight:700;letter-spacing:1.5px;padding:4px 12px;border-radius:100px;margin-bottom:14px;text-transform:uppercase;}
-  /* PROCESO */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:paso;}
-  .step{position:relative;background:#fff;border:1px solid rgba(211,173,144,.5);border-radius:20px;padding:32px 26px;}
-  .step::before{counter-increment:paso;content:counter(paso);position:absolute;top:-22px;left:26px;width:44px;height:44px;border-radius:50%;background:var(--rosa);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:19px;font-weight:700;box-shadow:0 8px 18px rgba(253,129,137,.4);}
-  .step h3{font-family:'Cinzel',serif;font-size:19px;margin:10px 0 8px;color:var(--tinta);font-weight:600;}
-  .step p{font-size:15.5px;color:var(--tinta-suave);}
-  /* CTA FINAL */
-  .final{background:linear-gradient(135deg,var(--crema),#EFE7DA);text-align:center;padding:86px 0;}
-  .final h2{font-size:clamp(28px,3.8vw,42px);color:var(--tinta);max-width:720px;margin:10px auto 16px;}
-  .final p{color:var(--tinta-suave);font-size:18px;max-width:540px;margin:0 auto 32px;}
-  footer{padding:34px 0;text-align:center;font-size:13.5px;color:var(--tinta-suave);background:var(--blanco);border-top:1px solid rgba(51,51,51,.1);}
-  @media(max-width:880px){
-    .hero-grid{grid-template-columns:1fr;gap:34px;}
-    .hero-img{order:-1;max-width:520px;margin:0 auto;width:100%;}
-    .grid-3,.steps{grid-template-columns:1fr;}
-    .step{margin-top:12px;}
-  }
-</style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    .safe-area-pb {
+      padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+    }
+  </style>
 </head>
-<body>
-
-<header class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="kicker">Alta estética · Armonización orofacial · Medellín</span>
-      <h1>Armoniza tu rostro <span>sin cirugía</span>, con resultados naturales</h1>
-      <p class="sub">Recupera la vitalidad y juventud de tu rostro con el equipo pionero de armonización facial en Medellín. Más de 10.000 pacientes nos confirman.</p>
-      <div class="cta-row">
-        <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20de%20armonizaci%C3%B3n%20facial%20en%20FullFace" target="_blank" rel="noopener">💬 Agenda tu valoración</a>
-        <a class="btn btn-ghost" href="#tratamientos">Ver tratamientos</a>
-      </div>
-      <div class="trust">
-        <span>💉 <b>+10.000 pacientes</b></span>
-        <span>🏥 Fundada en 2017</span>
-        <span>👩‍⚕️ Equipo interdisciplinario</span>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="hero-marca.webp" alt="Armonización orofacial en Medellín — FullFace" style="width:100%;max-height:520px;object-fit:cover;border-radius:18px">
-    </div>
-  </div>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component) -->
+<header class="bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-sm">
+<div class="flex justify-between items-center w-full px-gutter-mobile max-w-7xl mx-auto h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm tracking-widest uppercase text-primary dark:text-inverse-primary">FULLFACE</span>
+</div>
+<a class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary transition-colors duration-200 active:scale-95 flex items-center gap-1.5" href="#booking-section">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+</a>
+</div>
 </header>
-
-<section id="tratamientos">
-  <div class="container">
-    <span class="sec-label">Nuestros tratamientos</span>
-    <h2>Armonía y rejuvenecimiento facial integral</h2>
-    <p class="sec-sub">Tratamos tu rostro como un conjunto: equilibrio, proporción y naturalidad, con materiales aprobados y técnica especializada.</p>
-    <div class="grid-3">
-      <div class="card"><h3>Aumento y Perfilamiento Labial</h3><p>Labios con volumen y definición proporcionales a tu rostro, con técnica de escultura labial avanzada.</p></div>
-      <div class="card"><h3>Rinomodelación</h3><p>Corrige el perfil nasal con ácido hialurónico, sin cirugía y con manejo profesional de complicaciones.</p></div>
-      <div class="card"><h3>Mentón y Ángulo Mandibular</h3><p>Define la línea mandibular y proyección del mentón para un perfil armónico y elegante.</p></div>
-      <div class="card"><h3>Aumento de Pómulos y Tercio Medio</h3><p>Restaura el soporte del tercio medio: pómulos y ojeras con proyección natural y luminosidad.</p></div>
-      <div class="card"><h3>Toxina Botulínica (Botox)</h3><p>Prevención y corrección de arrugas de expresión con precisión, conservando tu mímica natural.</p></div>
-      <div class="card"><h3>Hilos PDO y Bioestimuladores</h3><p>Tensión y colágeno: hilos tensores, Sculptra y bioestimuladores para un rejuvenecimiento progresivo.</p></div>
+<main class="max-w-md mx-auto px-4 pt-6 pb-24 space-y-12">
+<!-- 1. ATENCIÓN (Hero Section) -->
+<section class="space-y-6">
+<!-- Doctor / Heritage Chip -->
+<div class="inline-flex items-center gap-2 bg-secondary-container/50 border border-outline-variant/40 rounded-full px-3.5 py-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<p class="font-label-sm text-label-sm text-on-secondary-container">
+          Fundada en 2017 por la Dra. María Alejandra · Odontóloga especialista en armonización orofacial
+        </p>
+</div>
+<!-- Hero Headline & Subtitle -->
+<div class="space-y-4">
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface">
+          Tu rostro en su versión más <span class="italic font-display-hero-mobile text-primary">armónica y radiante</span>, sin cirugía
+        </h1>
+<p class="font-body-md text-body-md text-secondary">
+          Medicina estética avanzada y armonización orofacial personalizada en Medellín. Resalta tus facciones con naturalidad, tecnología de vanguardia y cero tiempo de incapacidad laboral.
+        </p>
+</div>
+<!-- Hero Image Card -->
+<div class="relative rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-lowest">
+<img src="hero-marca.jpg" alt="FULLFACE — Alta Estética y Armonización " style="width:100%;max-height:520px;object-fit:cover">
+<!-- Floating Result Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-outline-variant/40 flex items-center gap-2.5 shadow-md">
+<span class="material-symbols-outlined text-primary-container" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Resultado FULLFACE</p>
+<p class="font-body-sm text-body-sm text-secondary">Armonía natural 100% sin bisturí</p>
+</div>
+</div>
+</div>
+<!-- Main CTA & Micro-copy -->
+<div class="space-y-3 pt-2">
+<a class="w-full block text-center bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md py-4 px-6 rounded-2xl shadow-[0_8px_24px_-4px_rgba(14,124,107,0.3)] transition-all duration-200 active:scale-98" href="#booking-section">
+          Agendar ahora mi valoración
+        </a>
+<p class="text-center font-label-sm text-label-sm text-secondary flex items-center justify-center gap-1.5">
+<span class="text-primary-container font-bold">✓</span> Respuesta en menos de 24 horas · Plan 100% a tu medida
+        </p>
+</div>
+<!-- Micro-badges de confianza -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border border-outline-variant/20 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface">Simulación 3D</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border border-outline-variant/20 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface">INVIMA / FDA</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border border-outline-variant/20 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="apartment">apartment</span>
+<span class="font-label-sm text-label-sm text-on-surface">Sede VIP Poblado</span>
+</div>
+</div>
+</section>
+<!-- 2. INTERÉS (Problema & Proceso de 3 Pasos) -->
+<section class="space-y-6">
+<!-- Tarjeta de Empatía Médica -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/40 shadow-sm relative overflow-hidden">
+<div class="w-1.5 h-12 bg-primary-container absolute left-0 top-6 rounded-r"></div>
+<div class="space-y-3">
+<div class="inline-flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Compromiso Clínico</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            ¿Sientes que tus facciones han perdido frescura o temes un resultado artificial?
+          </h2>
+<p class="font-body-md text-body-md text-secondary">
+            El mayor temor al realizarse un procedimiento facial es lucir sobre-rellenada, inflamada o con expresiones rígidas. En <strong class="text-on-surface">FULLFACE</strong> nuestra filosofía es opuesta: preservamos tu identidad utilizando proporciones áureas y sutileza milimétrica. Nadie notará un procedimiento; todos notarán tu luminosidad y descanso.
+          </p>
+</div>
+</div>
+<!-- Proceso en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-md text-label-md text-primary uppercase">Metodología FULLFACE</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Un proceso transparente y guiado</h3>
+</div>
+<div class="space-y-3">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center font-bold text-lg flex-shrink-0">
+              01
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Valoración y Escaneo Facial 3D</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                Análisis anatómico y mapeo fotográfico de vectores de soporte para identificar el equilibrio ideal de tu rostro sin alterar tu expresión.
+              </p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center font-bold text-lg flex-shrink-0">
+              02
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Plan Personalizado a tu Medida</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                Proyección estética consensuada antes de cualquier aplicación, selección de insumos premium certificados y cotización transparente.
+              </p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center font-bold text-lg flex-shrink-0">
+              03
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Resultado Natural Inmediato</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                Aplicación ambulatoria indolora con microcánulas, ácido hialurónico reticulado o bioestimuladores. Reincorporación el mismo día.
+              </p>
+</div>
+</div>
+</div>
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:underline" href="https://wa.me/573103437185" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes preguntas antes de agendar? Escríbenos por WhatsApp</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. DESEO (Prueba Social, Métricas y Beneficios) -->
+<section class="space-y-8">
+<!-- Grid de Métricas de Autoridad -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-headline-sm">+8</p>
+<p class="font-label-sm text-label-sm text-secondary">Años perfeccionando armonización</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-headline-sm">+5.000</p>
+<p class="font-label-sm text-label-sm text-secondary">Pacientes satisfechos en Medellín</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-headline-sm">100%</p>
+<p class="font-label-sm text-label-sm text-secondary">Insumos INVIMA y FDA</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-headline-sm">4.9 ★</p>
+<p class="font-label-sm text-label-sm text-secondary">Calificación en naturalidad</p>
+</div>
+</div>
+<!-- Beneficios Tangibles -->
+<div class="space-y-4">
+<div class="space-y-1">
+<span class="font-label-md text-label-md text-primary uppercase">Diferenciales Exclusivos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lo que experimentarás en FULLFACE</h3>
+</div>
+<div class="space-y-3">
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="check_circle">check_circle</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Armonía y sutileza absoluta</p>
+<p class="font-body-sm text-body-sm text-secondary">Proporciones áureas respetadas que realzan tus rasgos sin delatar intervención médica.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="vital_signs">vital_signs</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Estimulación progresiva de colágeno</p>
+<p class="font-body-sm text-body-sm text-secondary">Protocolos de bioestimulación profunda que mejoran la elasticidad cutánea a lo largo del tiempo.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="face">face</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Rinomodelación y perfilado sin quirófano</p>
+<p class="font-body-sm text-body-sm text-secondary">Rectificación de dorso y definición mandibular en 30 minutos sin anestesia general ni vendajes molestos.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="security">security</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Atención médica VIP en El Poblado</p>
+<p class="font-body-sm text-body-sm text-secondary">Instalaciones boutique privadas con estrictos protocolos de bioseguridad habilitados por Seccional de Salud.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Casos Reales Gallery -->
+<div class="space-y-4">
+<div class="space-y-1">
+<span class="font-label-md text-label-md text-primary uppercase">Casos Clínicos Reales</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sutileza que transforma con elegancia</h3>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Caso 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-sm flex flex-col">
+<img alt="Caso Perfilado y Armonía de Labios" class="w-full h-44 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1WtMWn_bQHvoNrOdAWY9s0zmFvB9SNjL7iLOjX1ZClfYyucU310Wx3KDPHRygeuF1at37jxryfKaRKyDbZfFxAAW777TEiyUhGbHng5cAdRh5rFhMkJtnW7aKBU1mXg3EGRo1w9xXmW17tDq7cUYjIrBB0yAjjsmKIJfhETAvADGr3UOEc4x5dq2BvfLgjVTcfMi0Sbmx7BRrquIO6PZ27SEi0gI8epeRW2K-SxQqfg23HFj6ZpXdZl1A"/>
+<div class="p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold">Perfilado &amp; Labios</span>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Volumen natural y arco de cupido simétrico.</p>
+</div>
+</div>
+<!-- Caso 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-sm flex flex-col">
+<img alt="Caso Marcación Mandibular y Tercio Inferior" class="w-full h-44 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1WcYAsrHl3nArY04muRf0HRdY5boq9XJzEIMe9nz_P0YL9KtMGJXsbXJfoOf7bJIxbTxKT2ZJJDfZ4rZ9xAUS8y2MVaYYAzhnwev8lilJyvzr68wygc7m0rqMcIy1FxpeK_VlJCeXcllZ3njRJJSY8-p0v4I1b8aFDunYtLXcoCacgKtNu2DNYEeJPv8voQdwRiMhxnzHVytcWo1jqKvEa261dXFpMsVQH5rA5fhDoRP20XaIppPAO8E9Q"/>
+<div class="p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold">Tercio Inferior</span>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Definición de contorno y soporte mentoniano.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonio Verificado -->
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/40 space-y-3">
+<div class="flex text-amber-600 gap-0.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+          "Tenía terror de quedar con labios exagerados o pómulos inflados. La Dra. María Alejandra me explicó con el escaneo 3D cada mililitro exacto que requería. El resultado superó mis expectativas: me veo descansada y completamente yo."
+        </p>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary text-sm">
+            JV
+          </div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Dra. Juliana V.</p>
+<p class="font-label-sm text-label-sm text-secondary">Paciente Verificada · El Poblado, Medellín</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN (Formulario de Cierre & WhatsApp Directo) -->
+<section class="scroll-mt-20" id="booking-section">
+<div class="bg-surface-container-lowest rounded-3xl p-6 border border-outline-variant/40 shadow-lg space-y-6">
+<!-- Scarcity Banner -->
+<div class="inline-flex items-center gap-2 bg-error-container/60 text-error px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold">Cupos limitados por semana en El Poblado</span>
+</div>
+<div class="space-y-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+            Empieza hoy tu transformación armónica
+          </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Completa tus datos para coordinar tu cita de valoración diagnóstica personalizada con nuestro equipo médico.
+          </p>
+</div>
+<!-- Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica te contactará en menos de 24 horas para confirmar tu horario.');">
+<!-- Campo 1: Nombre -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="full_name">Nombre completo</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" id="full_name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="whatsapp">WhatsApp o Celular</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all" id="whatsapp" placeholder="Ej. +57 300 000 0000" required="" type="tel"/>
+</div>
+<!-- Campo 3: Procedimiento Selector -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="treatment">¿Qué tratamiento te interesa?</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none" id="treatment">
+<option value="armonizacion">Armonización Completa (FullFace Protocol)</option>
+<option value="rinomodelacion">Rinomodelación sin bisturí</option>
+<option value="labios">Perfilado &amp; Hidratación de Labios</option>
+<option value="botox">Neuromoduladores / Botox Preventivo</option>
+<option value="bioestimulacion">Bioestimuladores de Colágeno (Radiesse/Sculptra)</option>
+</select>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md py-4 rounded-xl shadow-md transition-all duration-200 active:scale-98 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración</span>
+<span>✨</span>
+</button>
+</form>
+<!-- Divider OR -->
+<div class="flex items-center gap-3">
+<div class="h-px bg-outline-variant/40 flex-1"></div>
+<span class="font-label-sm text-label-sm text-secondary uppercase">o agenda directa</span>
+<div class="h-px bg-outline-variant/40 flex-1"></div>
+</div>
+<!-- WhatsApp Direct Button -->
+<a class="w-full flex items-center justify-center gap-2 border-2 border-primary-container text-primary-container hover:bg-primary-container/5 font-title-md text-title-md py-3.5 rounded-xl transition-all duration-200 active:scale-98" href="https://wa.me/573103437185?text=Hola%20FULLFACE,%20deseo%20agendar%20mi%20valoración%20en%20El%20Poblado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp: +57 310 343 7185</span>
+</a>
+<!-- Privacy & Medical Guarantee Copy -->
+<div class="pt-2 text-center">
+<p class="font-label-sm text-label-sm text-secondary">
+            🔒 Tratamiento de datos protegido bajo la Ley 1581 de 2012 y secreto profesional médico. Tu información es estrictamente confidencial.
+          </p>
+</div>
+</div>
+</section>
+<!-- 5. CLARIDAD / FAQ (Preguntas Frecuentes) -->
+<section class="space-y-4">
+<div class="space-y-1 text-center">
+<span class="font-label-md text-label-md text-primary uppercase">Preguntas Frecuentes</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Claridad absoluta antes de tu cita</h3>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿El procedimiento duele?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-secondary border-t border-outline-variant/20 pt-3">
+            No. Utilizamos anestesia tópica de grado hospitalario de alta potencia e insumos que contienen lidocaína incorporada, además de técnicas con microcánulas de punta roma que minimizan cualquier molestia o molestia posterior.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cuánto tiempo dura el resultado?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-secondary border-t border-outline-variant/20 pt-3">
+            Dependiendo del producto y el metabolismo del paciente, los ácidos hialurónicos de alta gama duran entre 12 y 18 meses. Los bioestimuladores de colágeno generan un efecto regenerativo visible hasta por 24 meses.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Qué marcas e insumos utilizan?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-secondary border-t border-outline-variant/20 pt-3">
+            Trabajamos exclusivamente con casas farmacéuticas de primera línea mundial autorizadas por INVIMA y FDA: Juvéderm (Allergan), Restylane (Galderma), Teoxane y Radiesse (Merz). Cada jeringa se abre en tu presencia con trazabilidad de lote.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Requiere incapacidad laboral?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-secondary border-t border-outline-variant/20 pt-3">
+            Cero días de incapacidad. Puedes regresar a tus actividades cotidianas inmediatamente después de la sesión, siguiendo cuidados básicos sencillos como no realizar ejercicio intenso durante las primeras 24 horas y usar protección solar.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component) -->
+<footer class="bg-surface-container-low dark:bg-surface-dim border-t border-outline-variant/40 dark:border-outline/30 full-width w-full px-gutter-mobile pt-10 pb-28 text-center flex flex-col items-center gap-6">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary tracking-widest uppercase">
+      FULLFACE
     </div>
-  </div>
-</section>
-
-<section class="why">
-  <div class="container">
-    <span class="sec-label" style="color:var(--dorado);">¿Por qué elegirnos?</span>
-    <h2>Resultados armónicos, cero complicaciones</h2>
-    <p class="sec-sub">Somos una familia de especialistas dedicados a la belleza y el bienestar integral. Tu seguridad es nuestro estándar.</p>
-    <div class="grid-3">
-      <div class="card"><span class="chip">Desde 2017</span><h3>Pioneros en armonización orofacial</h3><p>Fundada por la Dra. María Alejandra, odontóloga especializada en armonización facial en Nueva York, con formación de nivel internacional.</p></div>
-      <div class="card"><span class="chip">Equipo experto</span><h3>5 especialistas, un solo objetivo</h3><p>Rinomodelación, escultura labial, hilos tensores, Sculptra y bioestimulación, a cargo de médicos con técnica propia y probada.</p></div>
-      <div class="card"><span class="chip">+10.000 pacientes</span><h3>Confianza comprobada</h3><p>Clínica reconocida y respetada en la medicina estética colombiana, con resultados sobresalientes y consistentes.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="proceso">
-  <div class="container">
-    <span class="sec-label">Cómo empezar</span>
-    <h2>Tu valoración en 3 pasos</h2>
-    <p class="sec-sub">Un proceso claro y seguro, desde el primer mensaje hasta tu resultado.</p>
-    <div class="steps">
-      <div class="step"><h3>Agenda tu valoración</h3><p>Escríbenos por WhatsApp y agenda tu cita en la Torre Médica del Tesoro, Medellín.</p></div>
-      <div class="step"><h3>Plan facial personalizado</h3><p>Un especialista analiza las proporciones de tu rostro y diseña un plan armónico según tu anatomía y deseos.</p></div>
-      <div class="step"><h3>Tratamiento y control</h3><p>Procedemos con materiales aprobados y hacemos control posterior para garantizar el mejor resultado.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="final">
-  <div class="container">
-    <span class="sec-label" style="color:var(--rosa);">Tu rostro armonioso</span>
-    <h2>Agenda hoy tu valoración con especialistas</h2>
-    <p>Cuéntanos qué quieres mejorar de tu rostro. Te respondemos por WhatsApp con disponibilidad real.</p>
-    <a class="btn btn-wa" href="https://wa.me/573244895605?text=Hola%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n%20en%20FullFace" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    FullFace · Alta Estética y Armonización Orofacial · Torre Médica del Tesoro, Medellín · @fullface.co<br>
-    Demo de landing creada por AplicatiBox para fines de presentación.
-  </div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 max-w-md">
+<a class="font-label-sm text-label-sm text-secondary dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#">Habilitación Seccional Antioquia</a>
+<a class="font-label-sm text-label-sm text-secondary dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#">Consentimiento Informado</a>
+<a class="font-label-sm text-label-sm text-secondary dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#">Aviso de Privacidad Médica</a>
+<a class="font-label-sm text-label-sm text-secondary dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#">Protocolo de Bioseguridad IPS</a>
+<a class="font-label-sm text-label-sm text-secondary dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#">Dirección Médica</a>
+</div>
+<p class="font-body-sm text-body-sm text-secondary dark:text-outline-variant max-w-sm">
+      © 2024 FULLFACE Orofacial Harmonization Boutique. Registro Seccional de Salud y Protección Social de Antioquia Código Habilitación IPS #0500109823. Sede El Poblado: Cra 43A #5A-113, Medellín, Colombia.
+    </p>
 </footer>
-
+<!-- BOTTOM NAV BAR (Shared Component Mobile Optimized) -->
+<nav class="bg-surface-container-lowest/90 dark:bg-surface-container/90 backdrop-blur-md docked full-width bottom-0 shadow-[0_-4px_24px_rgba(44,64,59,0.06)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 safe-area-pb md:hidden">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-inverse-primary" href="#booking-section">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-label-sm">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-inverse-primary" href="#booking-section">
+<span class="material-symbols-outlined" data-icon="clinical_notes">clinical_notes</span>
+<span class="font-label-sm text-label-sm">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-inverse-primary" href="#booking-section">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-sm text-label-sm">Casos</span>
+</a>
+<!-- Item 4: Agendar (Active for high-conversion landing page intent) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-primary-container text-on-secondary-container dark:text-on-primary-container rounded-full px-3 py-1.5 transition-all duration-200 active:scale-95" href="#booking-section">
+<span class="material-symbols-outlined text-primary-container dark:text-on-primary-container" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-sm text-label-sm font-semibold">Agendar</span>
+</a>
+</nav>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/fullface-armonizacion-facial" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>

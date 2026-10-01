@@ -1,88 +1,610 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bèl Medicina Estética — Dra. María Paula Bello</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bèl Medicina Estética · Dra. María Paula Bello · Bogotá</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#566564",
+            "on-primary-fixed-variant": "#00504b",
+            "on-primary-container": "#9cede5",
+            "on-surface-variant": "#3e4947",
+            "on-tertiary-fixed-variant": "#3b4948",
+            "surface": "#ecfdf8",
+            "surface-dim": "#ccded9",
+            "primary-container": "#0d6e68",
+            "surface-container": "#e0f2ec",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#bacac8",
+            "background": "#ecfdf8",
+            "tertiary": "#3f4d4c",
+            "surface-tint": "#026a64",
+            "inverse-on-surface": "#e3f5ef",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "secondary-fixed": "#71f8e4",
+            "surface-container-high": "#dbece7",
+            "surface-container-highest": "#d5e6e1",
+            "surface-container-low": "#e6f7f2",
+            "on-primary-fixed": "#00201e",
+            "on-secondary-container": "#006f64",
+            "primary": "#00544f",
+            "inverse-surface": "#243330",
+            "tertiary-fixed": "#d6e6e4",
+            "on-background": "#0f1e1b",
+            "primary-fixed": "#a0f1e9",
+            "on-secondary-fixed-variant": "#005048",
+            "on-error-container": "#93000a",
+            "surface-variant": "#d5e6e1",
+            "on-tertiary-container": "#d2e2e0",
+            "secondary-container": "#6df5e1",
+            "primary-fixed-dim": "#84d5cd",
+            "secondary": "#006b5f",
+            "inverse-primary": "#84d5cd",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#101e1d",
+            "error-container": "#ffdad6",
+            "surface-bright": "#ecfdf8",
+            "on-surface": "#0f1e1b",
+            "outline": "#6e7977",
+            "on-secondary-fixed": "#00201c",
+            "outline-variant": "#bec9c7",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#4fdbc8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-desktop": "2rem",
+            "margin-desktop": "3.5rem",
+            "space-xl": "3rem",
+            "space-lg": "2rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.25rem",
+            "space-xs": "0.375rem",
+            "margin": "1.25rem",
+            "space-md": "1.25rem",
+            "margin-tablet": "2rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.015em", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Inter',system-ui,sans-serif; background:#fbf6f9; color:#1a2430; line-height:1.6; }
-  .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
-  header { padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
-  .logo { font-family:'Playfair+Display'; font-weight:900; font-size:24px; color:#8a2d5c; }
-  .cta-top { background:#8a2d5c; color:#fff; padding:10px 22px; border-radius:24px; text-decoration:none; font-weight:700; font-size:14px; }
-  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:34px; align-items:center; padding:34px 0 50px; }
-  h1 { font-family:'Playfair+Display'; font-weight:900; font-size:44px; line-height:1.12; color:#8a2d5c; letter-spacing:-.01em; }
-  .sub { font-size:17px; color:#4a5568; margin:16px 0 26px; }
-  .cta { display:inline-block; background:#8a2d5c; color:#fff; padding:15px 34px; border-radius:14px; font-size:16px; font-weight:800; text-decoration:none; box-shadow:0 10px 26px #8a2d5c44; }
-  .cta:hover { background:#b34a80; }
-  .heroimg { width:100%; max-height:480px; object-fit:cover; border-radius:20px; box-shadow:0 18px 50px rgba(0,0,0,.14); }
-  section { padding:44px 0; }
-  h2 { font-family:'Playfair+Display'; font-weight:900; font-size:30px; color:#8a2d5c; text-align:center; margin-bottom:28px; }
-  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
-  .card { background:#fff; border-radius:16px; padding:22px; box-shadow:0 6px 22px rgba(0,0,0,.06); }
-  .card .ico { font-size:30px; margin-bottom:8px; }
-  .card h3 { font-size:17px; color:#8a2d5c; margin-bottom:6px; }
-  .card p { font-size:13.5px; color:#556; }
-  .razones { background:#fff; border-radius:18px; padding:30px 34px; box-shadow:0 6px 22px rgba(0,0,0,.05); }
-  .razones li { margin:9px 0 9px 20px; font-size:15.5px; }
-  .pasos { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  .paso { background:#fff; border-radius:16px; padding:22px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.05); }
-  .paso b { display:inline-grid; place-items:center; width:38px; height:38px; border-radius:50%; background:#8a2d5c; color:#fff; font-size:16px; margin-bottom:10px; }
-  .paso span { font-size:14.5px; color:#445; }
-  .final { text-align:center; padding:56px 0; background:linear-gradient(135deg,#8a2d5c,#b34a80); color:#fff; border-radius:24px; margin:34px 0; }
-  .final h2 { color:#fff; }
-  .final p { margin:10px 0 22px; font-size:16px; }
-  .final a { background:#fff; color:#8a2d5c; padding:16px 40px; border-radius:14px; font-weight:900; text-decoration:none; font-size:17px; }
-  footer { text-align:center; color:#8895a5; font-size:12.5px; padding:26px 0; }
-  @media(max-width:760px) { .hero{grid-template-columns:1fr;} h1{font-size:32px;} .pasos{grid-template-columns:1fr;} }
-</style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-1 {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Ambient Sanctuary Depth */
+    .sanctuary-card {
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px -2px rgba(13, 110, 104, 0.05), 0 2px 6px -1px rgba(25, 40, 37, 0.03);
+    }
+    .sanctuary-lift {
+      box-shadow: 0 16px 36px -4px rgba(13, 110, 104, 0.08), 0 6px 12px -2px rgba(25, 40, 37, 0.03);
+    }
+  </style>
 </head>
-<body>
-<div class="wrap">
-  <header>
-    <div class="logo">Bèl Medicina Estética</div>
-    <a class="cta-top" href="https://wa.me/573118058080">Agenda tu cita</a>
-  </header>
-  <div class="hero">
-    <div>
-      <h1>Bèl Medicina Estética — +30.000 pacientes en Bogotá</h1>
-      <p class="sub">Dra. María Paula Bello, Magíster en Medicina Estética. Faciales, corporales, capilares y dermatología con +12 especialistas y 4.9★ en Google.</p>
-      <a class="cta" href="https://wa.me/573118058080">✨ Agendar valoración</a>
-    </div>
-    <img class="heroimg" src="hero-marca.jpg" alt="Bèl Medicina Estética — Dra. María Paula Bello">
-  </div>
-  <section>
-    <h2>Tratamientos</h2>
-    <div class="cards"><div class="card"><div class="ico">💫</div><h3>Faciales Premium</h3><p>Rejuvenecimiento y cuidado facial con última tecnología.</p></div>
-<div class="card"><div class="ico">🩺</div><h3>Dermatología</h3><p>+12 médicos especialistas, diagnóstico profesional.</p></div>
-<div class="card"><div class="ico">🌸</div><h3>Corporales</h3><p>Tratamientos corporales personalizados con evidencia.</p></div>
-<div class="card"><div class="ico">🌿</div><h3>Capilares</h3><p>Soluciones capilares con abordaje médico integral.</p></div></div>
-  </section>
-  <section>
-    <div class="razones">
-      <h2 style="text-align:left">Por qué elegirnos</h2>
-      <ul><li>270K seguidores IG — Dra. María Paula Bello</li>
-<li>+30.000 pacientes atendidos</li>
-<li>4.9★ con 4.484 reseñas en Google</li>
-<li>Sedes Bogotá (Usaquén) y Ecuador</li></ul>
-    </div>
-  </section>
-  <section>
-    <h2>Cómo funciona</h2>
-    <div class="pasos"><div class="paso"><b>1</b><span>Escribe por WhatsApp — responden especialistas</span></div>
-<div class="paso"><b>2</b><span>Valoración con la Dra. Bello o su equipo</span></div>
-<div class="paso"><b>3</b><span>Plan de tratamiento con seguimiento médico</span></div></div>
-  </section>
-  
-  <div class="final">
-    <h2>Tu transformación empieza hoy</h2>
-    <p>Agenda tu valoración — responde en minutos.</p>
-    <a href="https://wa.me/573118058080">📲 Escribir por WhatsApp</a>
-  </div>
-  <footer>Demo creada por AplicatiBox · Bèl Medicina Estética — Dra. María Paula Bello</footer>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="docked full-width top-0 fixed w-full z-40 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin md:px-margin-tablet max-w-7xl mx-auto h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium tracking-tight">Bèl Medicina Estética</span>
 </div>
+<a class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:opacity-95 active:scale-95 transition-all" href="#contacto">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- MAIN WRAPPER (Mobile-first AIDA Funnel) -->
+<main class="pt-16 pb-24 max-w-md mx-auto min-h-screen">
+<!-- 1. A — ATENCIÓN (Hero Section) -->
+<section class="px-margin pt-6 pb-8 flex flex-col gap-5" id="inicio">
+<!-- Micro-badge de credencial médica -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full border border-outline-variant/30 self-start">
+<span class="material-symbols-outlined text-primary text-base fill-1" data-icon="verified">verified</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm tracking-wide">
+          Médica Cirujana Escuela Juan N. Corpas · Mgs. Univ. de Valencia
+        </span>
+</div>
+<!-- Titular H1 -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight font-medium">
+        Tu belleza en su versión <span class="italic text-primary">más natural</span>, guiada por ciencia médica y sin perder tu esencia
+      </h1>
+<!-- Subtítulo -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Protocolos no invasivos de armonización facial, rejuvenecimiento cutáneo, bioestimulación y cuidado corporal en Bogotá, diseñados a la medida de tu fisionomía por la Dra. María Paula Bello.
+      </p>
+<!-- Tarjeta Institucional de la Doctora con Imagen Proporcionada -->
+<div class="relative rounded-3xl overflow-hidden sanctuary-lift border border-outline-variant/30 bg-surface-container-lowest">
+<img src="hero-marca.jpg" alt="Bèl Medicina Estética — Dra. María Paula" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Overlay Badges -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-4">
+<div class="flex items-center justify-between gap-2">
+<div>
+<p class="text-on-tertiary font-title-md text-title-md font-semibold drop-shadow-sm">Dra. María Paula Bello</p>
+<p class="text-secondary-fixed text-label-sm font-label-sm tracking-wide">Directora Médica · Registro Sanitario Vigente</p>
+</div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xs fill-1" data-icon="health_and_safety">health_and_safety</span>
+<span class="text-primary font-label-sm text-[10px]">Atención Médica 1:1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Principal Hero -->
+<div class="flex flex-col gap-2 pt-2">
+<a class="w-full bg-primary-container text-on-primary font-label-lg text-label-lg py-4 px-6 rounded-2xl flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:scale-95 text-center" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+          Agendar ahora mi valoración
+        </a>
+<!-- Micro-credenciales bajo el botón -->
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant flex items-center justify-center gap-1.5 flex-wrap pt-1">
+<span>✓ Respuesta &lt; 24h</span>
+<span>·</span>
+<span>✓ Diagnóstico 100% médico</span>
+<span>·</span>
+<span>✓ Cero resultados artificiales</span>
+</p>
+</div>
+<!-- 3 Micro-insignias de Confianza -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-[10px] text-on-surface mt-1 leading-3">Registro Sanitario Vigente</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-[10px] text-on-surface mt-1 leading-3">Sede Bogotá Chicó Reservado</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-[10px] text-on-surface mt-1 leading-3">Insumos Certificados INVIMA</span>
+</div>
+</div>
+</section>
+<!-- 2. I — INTERÉS (Problema del Paciente + Solución en 3 Pasos) -->
+<section class="px-margin py-8 bg-surface-container-lowest border-y border-outline-variant/20 flex flex-col gap-6" id="protocolo">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">
+          DIAGNÓSTICO &amp; EMPATÍA MÉDICA
+        </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium leading-snug">
+          ¿Temes tratamientos exagerados que cambien tus facciones o no den los resultados esperados?
+        </h2>
+</div>
+<!-- Doctor's Note Callout -->
+<div class="bg-surface-container-low rounded-2xl p-4 border-l-4 border-primary-container relative">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+          "En consulta diaria veo la frustración de pacientes que temen rostros rígidos o inyecciones apresuradas. En Bèl, cada rostro es una obra de arte fisionómica que cuidamos con dosis microscópicas y ciencia preventiva."
+        </p>
+<span class="font-label-sm text-label-sm text-primary block mt-2 font-bold">— Dra. María Paula Bello</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        La medicina estética no debe transformar quién eres, sino restaurar la frescura de tu piel y la juventud de tus vectores faciales con discreción absoluta.
+      </p>
+<!-- Tu camino en 3 pasos -->
+<div class="flex flex-col gap-4 mt-2">
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+          Tu camino hacia una piel renovada en 3 pasos
+        </h3>
+<!-- Paso 1 -->
+<div class="sanctuary-card p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/50 text-primary font-bold flex items-center justify-center shrink-0">
+            01
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Valoración médica integral y mapeo facial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Diagnóstico clínico de tu tipo de piel, grado de elastosis y vectores de soporte sin compromisos innecesarios.
+            </p>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="sanctuary-card p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/50 text-primary font-bold flex items-center justify-center shrink-0">
+            02
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Plan médico personalizado y presupuesto claro</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Selección precisa de bioestimuladores, ácido hialurónico biocompatible o aparatología médica según tu anatomía y presupuesto cerrado.
+            </p>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="sanctuary-card p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/50 text-primary font-bold flex items-center justify-center shrink-0">
+            03
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Aplicación sutil y acompañamiento continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Procedimientos ambulatorios indoloros, recuperación inmediata y seguimiento médico directo para resultados frescos y duraderos.
+            </p>
+</div>
+</div>
+</div>
+<!-- Enlace WhatsApp suave -->
+<a class="inline-flex items-center justify-center gap-2 text-primary font-label-md text-label-md py-2 px-4 rounded-full border border-primary/30 hover:bg-surface-container transition-all" href="https://wa.me/573118058080?text=Hola%20Dra.%20Mar%C3%ADa%20Paula,%20tengo%20dudas%20sobre%20qu%C3%A9%20tratamiento%20requiere%20mi%20piel">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+        ¿Dudas sobre tu tratamiento? Escríbenos por WhatsApp
+      </a>
+</section>
+<!-- 3. D — DESEO (Métricas, Pilares de Tratamientos y Testimonios) -->
+<section class="px-margin py-8 flex flex-col gap-8" id="tratamientos">
+<!-- Métricas de Confianza (Grid 2x2) -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center sanctuary-card">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+10</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Años de Trayectoria</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center sanctuary-card">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+4.800</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Pacientes Atendidos</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center sanctuary-card">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Aval INVIMA y FDA</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center sanctuary-card">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">4.9 ★</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Satisfacción Clínica</p>
+</div>
+</div>
+<!-- Especialidades Signature -->
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">
+          PROCEDIMIENTOS MÉDICOS
+        </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium mb-4">
+          Especialidades Signature de Bèl Medicina Estética
+        </h2>
+<div class="flex flex-col gap-4">
+<!-- Card 1: Facial -->
+<div class="sanctuary-card rounded-2xl p-5 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface-container text-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full font-semibold">
+                Facial Clínico
+              </span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="face">face</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Armonización Facial &amp; Bioestimulación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Radiesse, Sculptra, Ácido Hialurónico microdosificado y toxina botulínica preventiva. Recupera firmeza sin volúmenes excesivos.
+            </p>
+</div>
+<!-- Card 2: Corporal -->
+<div class="sanctuary-card rounded-2xl p-5 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface-container text-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full font-semibold">
+                Cuidado Corporal
+              </span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Moldeamiento Corporal &amp; Celulitis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Tecnología no invasiva, bio-regeneración de tejidos, drenajes de grado médico y definición de silueta.
+            </p>
+</div>
+<!-- Card 3: Capilar -->
+<div class="sanctuary-card rounded-2xl p-5 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface-container text-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full font-semibold">
+                Tricología Médica
+              </span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="content_cut">content_cut</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Terapia Capilar Regenerativa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Mesoterapia capilar avanzada, bioestimuladores de folículo y factores autólogos para frenar caída y densificar.
+            </p>
+</div>
+<!-- Card 4: Bienestar -->
+<div class="sanctuary-card rounded-2xl p-5 border border-outline-variant/20">
+<div class="flex items-center justify-between mb-2">
+<span class="bg-surface-container text-primary font-label-sm text-[11px] px-2.5 py-1 rounded-full font-semibold">
+                Longevidad &amp; Bienestar
+              </span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Medicina Funcional &amp; Sueroterapia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Cócteles endovenosos de micronutrientes, detox celular y reactivación del colágeno desde el interior.
+            </p>
+</div>
+</div>
+</div>
+<!-- Testimonios Verificados -->
+<div class="flex flex-col gap-4" id="resultados">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">
+            EXPERIENCIAS REALES
+          </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">
+            Lo que dicen nuestras pacientes
+          </h2>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 sanctuary-card">
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "Tenía pánico de ponerme botox y parecer congelada. La Dra. María Paula fue honesta y suave; el resultado se ve descansado, nadie nota que me hice algo, solo me dicen que me veo radiante."
+            </p>
+<p class="font-label-sm text-label-sm text-primary font-bold mt-2">Carolina M. · 38 años · Chicó</p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 sanctuary-card">
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "El plan de bioestimuladores con Radiesse me devolvió la firmeza en la mandíbula sin inflar mi cara. Su consultorio en Chicó es un remanso de paz y la atención médica es impecable."
+            </p>
+<p class="font-label-sm text-label-sm text-primary font-bold mt-2">Valentina R. · 44 años · Usaquén</p>
+</div>
+<!-- Testimonio 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 sanctuary-card">
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-1" data-icon="star">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "Como colega del sector salud, valoro profundamente su rigor aséptico y que no intente vender procedimientos que no necesitas. Es la única a quien le confío mi rostro en Bogotá."
+            </p>
+<p class="font-label-sm text-label-sm text-primary font-bold mt-2">Dra. Andrea S. · Bogotá</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. A — ACCIÓN (Formulario de Conversión + WhatsApp Prioritario) -->
+<section class="px-margin py-8" id="contacto">
+<div class="bg-surface-container-lowest rounded-3xl p-6 border-2 border-primary/20 sanctuary-lift flex flex-col gap-5">
+<!-- Badge de Urgencia Serena -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container text-primary px-3 py-1.5 rounded-full self-start">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span class="font-label-sm text-[11px] font-semibold">Cupos limitados de valoración esta semana</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-tight">
+            Empieza hoy tu transformación con criterio médico
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Completa tus datos en 30 segundos y nuestra coordinadora clínica te contactará hoy mismo.
+          </p>
+</div>
+<!-- Formulario -->
+<form class="flex flex-col gap-4" id="leadForm" onsubmit="handleFormSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="nombre">Nombre y Apellido</label>
+<input class="w-full bg-surface-container-lowest rounded-xl border border-outline-variant/60 px-4 py-3 text-on-surface font-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="nombre" placeholder="Ej. Laura Gómez" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="telefono">WhatsApp o Celular</label>
+<div class="flex items-center rounded-xl border border-outline-variant/60 bg-surface-container-lowest overflow-hidden focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
+<span class="bg-surface-container-low px-3 py-3 text-on-surface-variant font-label-sm border-r border-outline-variant/40">+57</span>
+<input class="w-full px-3 py-3 text-on-surface font-body-sm outline-none border-none bg-transparent" id="telefono" placeholder="311 000 0000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="tratamiento">¿Qué área te interesa?</label>
+<select class="w-full bg-surface-container-lowest rounded-xl border border-outline-variant/60 px-4 py-3 text-on-surface font-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="tratamiento">
+<option value="Armonización Facial &amp; Botox">Armonización Facial &amp; Toxina Preventiva</option>
+<option value="Bioestimuladores de Colágeno">Bioestimuladores (Radiesse / Sculptra)</option>
+<option value="Rejuvenecimiento de Mirada">Rejuvenecimiento de Ojeras y Mirada</option>
+<option value="Cuidado Corporal &amp; Celulitis">Cuidado Corporal &amp; Moldeamiento</option>
+<option value="Terapia Capilar Regenerativa">Terapia Capilar Anticaída</option>
+<option value="Valoración Médica General">No estoy segura, deseo valoración diagnóstica</option>
+</select>
+</div>
+<!-- Botón de Conversión -->
+<button class="w-full bg-primary-container text-on-primary font-label-lg text-label-lg py-4 rounded-xl shadow-md hover:bg-primary transition-all active:scale-95 flex items-center justify-center gap-2 mt-1" type="submit">
+            Quiero mi valoración ✨
+          </button>
+<!-- Confidencialidad -->
+<p class="font-label-sm text-[11px] text-center text-on-surface-variant/80 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="lock">lock</span>
+            Tus datos están protegidos bajo secreto médico profesional y Ley 1581 de 2012.
+          </p>
+</form>
+<!-- Divisor O Inmediato -->
+<div class="relative flex items-center justify-center my-1">
+<div class="border-t border-outline-variant/40 w-full"></div>
+<span class="bg-surface-container-lowest px-3 font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider shrink-0">
+            o prefieres contacto inmediato
+          </span>
+<div class="border-t border-outline-variant/40 w-full"></div>
+</div>
+<!-- Botón de WhatsApp Directo Prioritario -->
+<a class="w-full bg-[#075e54] text-white font-label-md text-label-md py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition-all active:scale-95" href="https://wa.me/573118058080?text=Hola%20Dra.%20Mar%C3%ADa%20Paula%20Bello,%20deseo%20agendar%20mi%20cita%20de%20valoraci%C3%B3n%20en%20B%C3%A8l%20Medicina%20Est%C3%A9tica" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+          Chatear directo al WhatsApp: +57 311 805 8080
+        </a>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Acordeones interactivos) -->
+<section class="px-margin py-8 bg-surface-container-low/50 border-t border-outline-variant/20 flex flex-col gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">
+          RESOLVEMOS TUS DUDAS
+        </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">
+          Preguntas Frecuentes
+        </h2>
+</div>
+<div class="flex flex-col gap-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface font-semibold cursor-pointer list-none">
+<span>¿Los procedimientos duelen o requieren incapacidad?</span>
+<span class="material-symbols-outlined transition duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            La gran mayoría son indoloros y ambulatorios. Utilizamos anestesia tópica de grado hospitalario y microcánulas de punta roma para evitar hematomas. Puedes reintegrarte a tus labores inmediatamente.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface font-semibold cursor-pointer list-none">
+<span>¿Cuánto duran los resultados de bioestimuladores y ácido hialurónico?</span>
+<span class="material-symbols-outlined transition duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            El ácido hialurónico tiene una duración promedio de 9 a 14 meses. Los bioestimuladores de colágeno (como Radiesse o Sculptra) generan un andamiaje celular propio cuyos efectos continúan mejorando hasta por 18 a 24 meses.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface font-semibold cursor-pointer list-none">
+<span>¿Dónde está ubicada la clínica y hay parqueadero?</span>
+<span class="material-symbols-outlined transition duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            Nuestra sede privada se encuentra ubicada en el exclusivo sector de Chicó Reservado (Calle 93B), Bogotá. El edificio cuenta con servicio de valet parking y parqueadero vigilado para tu total tranquilidad.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface font-semibold cursor-pointer list-none">
+<span>¿Qué incluye la consulta inicial con la Dra. María Paula?</span>
+<span class="material-symbols-outlined transition duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+            Incluye anamnesis médica completa, examen dermatológico y palpatorio, mapeo fisionómico de vectores, plan de abordaje escalonado y presupuesto personalizado transparente sin compromisos forzados.
+          </p>
+</details>
+</div>
+</section>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="docked full-width bg-surface-container-low text-primary border-t border-outline-variant/30 flex flex-col items-center justify-center w-full px-margin md:px-margin-tablet py-space-xl text-center mb-16">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium tracking-tight">Bèl Medicina Estética</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-4">
+        © 2024 Bèl Medicina Estética · Dra. María Paula Bello · Registro Médico Sanitario Bogotá, Colombia
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-sm text-label-sm" href="#contacto">Resolución Secretaría de Salud</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-sm text-label-sm" href="#contacto">Protocolos Clínicos Seguros</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-sm text-label-sm" href="#contacto">Políticas de Privacidad Médica</a>
+<span class="text-outline-variant">·</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150 font-label-sm text-label-sm" href="#contacto">Sede Chicó Reservado, Bogotá</a>
+</div>
+<p class="text-[10px] text-outline font-label-sm">
+        Vigilado Superintendencia Nacional de Salud · Institución Prestadora de Servicios de Salud (IPS)
+      </p>
+</footer>
+</main>
+<!-- BOTTOM NAV BAR (Shared Component Anchor - Active item: Cita) -->
+<nav class="docked full-width bottom-0 fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-2 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/30 shadow-lg">
+<!-- Destino 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-150 active:scale-95" href="#tratamientos">
+<span class="material-symbols-outlined text-xl" data-icon="dermatology">dermatology</span>
+<span class="font-label-sm text-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Destino 2: Protocolo -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-150 active:scale-95" href="#protocolo">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm mt-0.5">Protocolo</span>
+</a>
+<!-- Destino 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary transition-colors duration-150 active:scale-95" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-sm text-label-sm mt-0.5">Resultados</span>
+</a>
+<!-- Destino 4: Cita (ACTIVE per Conversion Page Intent) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/50 text-on-secondary-container rounded-full px-3 py-1.5 font-semibold hover:text-primary transition-colors duration-150 active:scale-95" href="#contacto">
+<span class="material-symbols-outlined text-xl fill-1" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm mt-0.5">Cita</span>
+</a>
+</nav>
+<!-- Script para Interacción Ágil del Formulario -->
+<script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const telefono = document.getElementById('telefono').value;
+      const tratamiento = document.getElementById('tratamiento').value;
+      
+      const mensaje = `Hola Dra. María Paula Bello, mi nombre es ${nombre}. Deseo agendar una valoración médica para: ${tratamiento}. Mi celular es +57 ${telefono}.`;
+      const url = `https://wa.me/573118058080?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/bel-medicina-estetica" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>

@@ -1,88 +1,705 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nueva Piel Spa — Centro Estético Medellín</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nueva Piel Spa Medellín | Medicina Estética &amp; Láser</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-container": "#6ff4e9",
+            "background": "#ecfdf8",
+            "on-primary-fixed": "#00201e",
+            "primary": "#005f5b",
+            "primary-fixed": "#99f2eb",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#006f68",
+            "on-surface-variant": "#3e4948",
+            "surface-container-highest": "#d5e6e1",
+            "on-error": "#ffffff",
+            "inverse-surface": "#243330",
+            "surface-container-low": "#e6f7f2",
+            "on-secondary-fixed-variant": "#00504b",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface-variant": "#d5e6e1",
+            "outline-variant": "#bdc9c7",
+            "tertiary-fixed-dim": "#bfc9c4",
+            "surface-tint": "#006a65",
+            "primary-fixed-dim": "#7dd5cf",
+            "secondary": "#006a64",
+            "on-tertiary-fixed": "#141d1b",
+            "tertiary-container": "#656f6b",
+            "error": "#ba1a1a",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#4d5753",
+            "inverse-primary": "#7dd5cf",
+            "secondary-fixed": "#72f7ec",
+            "inverse-on-surface": "#e3f4f0",
+            "surface-container-high": "#dbece7",
+            "surface-bright": "#ecfdf8",
+            "on-tertiary-container": "#e8f2ed",
+            "on-tertiary-fixed-variant": "#3f4945",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#adfff8",
+            "on-primary-fixed-variant": "#00504c",
+            "tertiary-fixed": "#dbe5e0",
+            "surface": "#ecfdf8",
+            "on-surface": "#0f1e1c",
+            "surface-dim": "#cdded9",
+            "surface-container": "#e0f2ed",
+            "on-background": "#0f1e1c",
+            "outline": "#6e7978",
+            "on-secondary-fixed": "#00201e",
+            "secondary-fixed-dim": "#51dbd0",
+            "on-tertiary": "#ffffff",
+            "primary-container": "#0d7a75"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "2rem",
+            "margin": "3rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.375rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.75rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "display-hero": [
+              "Playfair Display"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "display-hero-mobile": [
+              "Playfair Display"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "label-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "label-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-sm": [
+              "Playfair Display"
+            ],
+            "title-md": [
+              "Plus Jakarta Sans"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "headline-lg-mobile": [
+              "30px",
+              {
+                "lineHeight": "38px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "500"
+              }
+            ],
+            "display-hero": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero-mobile": [
+              "38px",
+              {
+                "lineHeight": "46px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-sm": [
+              "11px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "30px",
+                "fontWeight": "500"
+              }
+            ],
+            "title-md": [
+              "18px",
+              {
+                "lineHeight": "26px",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Inter',system-ui,sans-serif; background:#f4f9f8; color:#1a2430; line-height:1.6; }
-  .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
-  header { padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
-  .logo { font-family:'Playfair+Display'; font-weight:900; font-size:24px; color:#2f7d6d; }
-  .cta-top { background:#2f7d6d; color:#fff; padding:10px 22px; border-radius:24px; text-decoration:none; font-weight:700; font-size:14px; }
-  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:34px; align-items:center; padding:34px 0 50px; }
-  h1 { font-family:'Playfair+Display'; font-weight:900; font-size:44px; line-height:1.12; color:#2f7d6d; letter-spacing:-.01em; }
-  .sub { font-size:17px; color:#4a5568; margin:16px 0 26px; }
-  .cta { display:inline-block; background:#2f7d6d; color:#fff; padding:15px 34px; border-radius:14px; font-size:16px; font-weight:800; text-decoration:none; box-shadow:0 10px 26px #2f7d6d44; }
-  .cta:hover { background:#3d9b87; }
-  .heroimg { width:100%; max-height:480px; object-fit:cover; border-radius:20px; box-shadow:0 18px 50px rgba(0,0,0,.14); }
-  section { padding:44px 0; }
-  h2 { font-family:'Playfair+Display'; font-weight:900; font-size:30px; color:#2f7d6d; text-align:center; margin-bottom:28px; }
-  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
-  .card { background:#fff; border-radius:16px; padding:22px; box-shadow:0 6px 22px rgba(0,0,0,.06); }
-  .card .ico { font-size:30px; margin-bottom:8px; }
-  .card h3 { font-size:17px; color:#2f7d6d; margin-bottom:6px; }
-  .card p { font-size:13.5px; color:#556; }
-  .razones { background:#fff; border-radius:18px; padding:30px 34px; box-shadow:0 6px 22px rgba(0,0,0,.05); }
-  .razones li { margin:9px 0 9px 20px; font-size:15.5px; }
-  .pasos { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  .paso { background:#fff; border-radius:16px; padding:22px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.05); }
-  .paso b { display:inline-grid; place-items:center; width:38px; height:38px; border-radius:50%; background:#2f7d6d; color:#fff; font-size:16px; margin-bottom:10px; }
-  .paso span { font-size:14.5px; color:#445; }
-  .final { text-align:center; padding:56px 0; background:linear-gradient(135deg,#2f7d6d,#3d9b87); color:#fff; border-radius:24px; margin:34px 0; }
-  .final h2 { color:#fff; }
-  .final p { margin:10px 0 22px; font-size:16px; }
-  .final a { background:#fff; color:#2f7d6d; padding:16px 40px; border-radius:14px; font-weight:900; text-decoration:none; font-size:17px; }
-  footer { text-align:center; color:#8895a5; font-size:12.5px; padding:26px 0; }
-  @media(max-width:760px) { .hero{grid-template-columns:1fr;} h1{font-size:32px;} .pasos{grid-template-columns:1fr;} }
-</style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1rem);
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
 </head>
-<body>
-<div class="wrap">
-  <header>
-    <div class="logo">Nueva Piel Spa</div>
-    <a class="cta-top" href="https://wa.me/573173232262">Agenda tu cita</a>
-  </header>
-  <div class="hero">
-    <div>
-      <h1>Centro Estético en Medellín: arquitectos de tu belleza y bienestar</h1>
-      <p class="sub">Depilación láser, facial y spa en Medellín. Piel suave, libre de vello y sin irritaciones — con valoración profesional el mismo día.</p>
-      <a class="cta" href="https://wa.me/573173232262">✨ Agendar valoración</a>
-    </div>
-    <img class="heroimg" src="hero-marca.jpg" alt="Nueva Piel Spa — Centro Estético Medellín">
-  </div>
-  <section>
-    <h2>Tratamientos</h2>
-    <div class="cards"><div class="card"><div class="ico">🔦</div><h3>Depilación Láser</h3><p>Despídete del vello, no de tu tiempo — tecnología láser segura para todo tipo de piel.</p></div>
-<div class="card"><div class="ico">✨</div><h3>Limpieza Facial Profunda</h3><p>Tu piel en su mejor versión con protocolos profesionales de facial.</p></div>
-<div class="card"><div class="ico">💎</div><h3>Rejuvenecimiento</h3><p>Tratamientos no invasivos para piel firme y luminosa.</p></div>
-<div class="card"><div class="ico">🧖‍♀️</div><h3>Spa & Bienestar</h3><p>Rituales de relajación y cuidado corporal en Medellín.</p></div></div>
-  </section>
-  <section>
-    <div class="razones">
-      <h2 style="text-align:left">Por qué elegirnos</h2>
-      <ul><li>17.000+ seguidores en Instagram nos respaldan</li>
-<li>Horario flexible: Lun–Vie 8am–7pm, Sáb 8am–4pm</li>
-<li>Protocolos seguros para piel sensible — sin irritaciones</li>
-<li>Valoración incluida en tu primera cita</li></ul>
-    </div>
-  </section>
-  <section>
-    <h2>Cómo funciona</h2>
-    <div class="pasos"><div class="paso"><b>1</b><span>Escríbenos por WhatsApp y cuéntanos qué buscas</span></div>
-<div class="paso"><b>2</b><span>Agenda tu valoración en el horario que te acomode</span></div>
-<div class="paso"><b>3</b><span>Disfruta tu tratamiento con especialistas</span></div></div>
-  </section>
-  <section><div class="razones" style="text-align:center"><p style="font-size:14.5px;color:#556">Somos un Centro Estético y Spa en Medellín — arquitectos de la belleza, salud y bienestar.</p></div></section>
-  <div class="final">
-    <h2>Tu transformación empieza hoy</h2>
-    <p>Agenda tu valoración — responde en minutos.</p>
-    <a href="https://wa.me/573173232262">📲 Escribir por WhatsApp</a>
-  </div>
-  <footer>Demo creada por AplicatiBox · Nueva Piel Spa — Centro Estético Medellín</footer>
+<body class="bg-surface text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- ========================================================================= -->
+<!-- TOP APP BAR (Shared Component Execution) -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex items-center justify-between w-full px-space-md py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Nueva Piel Spa</span>
 </div>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#tratamientos">Tratamientos</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#proceso">Proceso</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#resultados">Resultados</a>
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:text-primary transition-colors duration-200" href="#agendar">Agendar</a>
+</nav>
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-primary text-on-primary px-4 py-2 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150" href="#agendar">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- CANVAS PRINCIPAL (Mobile First Optimized Container ~390px - 440px) -->
+<!-- ========================================================================= -->
+<main class="w-full max-w-md mx-auto pt-20 pb-28 px-4 flex flex-col gap-y-12">
+<!-- ======================================================================= -->
+<!-- 1. ETAPA A — ATENCIÓN (Hero Section) -->
+<!-- ======================================================================= -->
+<section class="pt-4 flex flex-col items-center text-center">
+<!-- Badge superior de credencial médica -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low border border-outline-variant/50 px-3.5 py-1.5 rounded-full shadow-sm mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Tecnología Láser Médica &amp; Cuidado Facial · El Poblado</span>
+</div>
+<!-- Titular de impacto (3 segundos) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 tracking-tight">
+        Tu piel radiante y rejuvenecida, <span class="text-primary italic font-medium">sin bisturí ni dolor</span>
+</h1>
+<!-- Subtítulo de alta especificidad -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-6">
+        Tratamientos estéticos avanzados, depilación láser definitiva y masajes relajantes en Medellín. Resultados visibles desde la primera sesión con aparatología certificada INVIMA.
+      </p>
+<!-- Imagen Hero Editorial con Insignia Superpuesta -->
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl mb-6 bg-surface-container-high border border-outline-variant/40">
+<img src="hero-marca.jpg" alt="Centro Estético y Spa Nueva Piel — Nueva" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Overlay Frosted Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-outline-variant/30 flex items-center gap-2.5 shadow-sm text-left">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary font-bold leading-tight">Resultado Natural Nueva Piel</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Piel Tersa y Luminosa · Sin tiempo de incapacidad</p>
+</div>
+</div>
+</div>
+<!-- CTA Principal Hero de Alto Contraste -->
+<div class="w-full flex flex-col items-center gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary py-3.5 px-6 rounded-full font-label-lg text-label-lg shadow-lg hover:shadow-xl hover:bg-primary active:scale-95 transition-all duration-200" href="#agendar">
+<span>Agendar ahora</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="text-secondary font-bold">✓</span> Respuesta en menos de 24 horas · Valoración personalizada
+        </p>
+</div>
+<!-- Trilogía de Sellos de Confianza Médica -->
+<div class="w-full grid grid-cols-3 gap-2 mt-6 pt-5 border-t border-outline-variant/30">
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-xs">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface text-[10px] text-center leading-tight">Aparatología INVIMA</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-xs">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="pin_drop">pin_drop</span>
+<span class="font-label-sm text-label-sm text-on-surface text-[10px] text-center leading-tight">Atención en Medellín</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-xs">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface text-[10px] text-center leading-tight">Protocolos Seguros</span>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 2. ETAPA I — INTERÉS (Problema / Frustración + Solución en 3 Pasos) -->
+<!-- ======================================================================= -->
+<section class="flex flex-col gap-6" id="tratamientos">
+<!-- Tarjeta del Dolor / Agitación -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/40 shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-surface-container-low rounded-full pointer-events-none opacity-60"></div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-error" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+<span class="font-label-sm text-label-sm text-error uppercase">El problema común</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+          ¿Cansada de tratamientos genéricos que prometen milagros y no dan resultados o dañan tu piel?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+          La piel apagada, la irritación crónica por la cera o las cuchillas y los signos prematuros de fatiga cutánea no se resuelven con cremas comerciales ni con centros improvisados.
+        </p>
+<div class="bg-surface-container-low p-3.5 rounded-2xl border-l-4 border-primary">
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed">
+<strong class="text-primary">En Nueva Piel:</strong> fusionamos diagnóstico computarizado con cosmiatría médica y tecnología láser de diodo de grado clínico. No improvisamos, cuidamos tu manto hidrolipídico.
+          </p>
+</div>
+</div>
+<!-- Proceso claro en 3 Pasos Numerados -->
+<div class="flex flex-col gap-4" id="proceso">
+<div class="text-center mb-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Protocolo Médico Seguro</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Tu camino a una piel renovada en 3 pasos</h2>
+</div>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">01</span>
+<span class="bg-surface-container-low text-primary text-[11px] font-label-sm px-2.5 py-1 rounded-full">
+              Beneficio: Diagnóstico certero
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Valoración y Diagnóstico Cutáneo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Evaluación profunda de tu fototipo dérmico, sensibilidad y necesidades específicas mediante escaneo cutáneo sin compromisos.
+          </p>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">02</span>
+<span class="bg-surface-container-low text-primary text-[11px] font-label-sm px-2.5 py-1 rounded-full">
+              Beneficio: Cero tratamientos innecesarios
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Plan Personalizado de Spa &amp; Láser</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Protocolo combinado de tecnología médica y cabina sensorial relajante, diseñado exclusivamente para tu piel y estilo de vida.
+          </p>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 shadow-sm flex flex-col gap-2 relative">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">03</span>
+<span class="bg-surface-container-low text-primary text-[11px] font-label-sm px-2.5 py-1 rounded-full">
+              Beneficio: Resultados duraderos
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Resultados Visibles y Cuidados de Continuidad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Piel suave, uniforme y rejuvenecida desde la 1ª sesión con un acompañamiento cercano y pautas dermocosméticas post-tratamiento.
+          </p>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 3. ETAPA D — DESEO (Métricas, Beneficios Tangibles y Prueba Social) -->
+<!-- ======================================================================= -->
+<section class="flex flex-col gap-6" id="resultados">
+<!-- Métricas de Confianza en Cuadrícula -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold block mb-0.5">+9 Años</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">De Experiencia Clínica</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold block mb-0.5">+12.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sesiones Realizadas</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold block mb-0.5">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Insumos &amp; Láser INVIMA</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold block mb-0.5 flex items-center justify-center gap-1">
+            4.9 <span class="material-symbols-outlined text-secondary text-2xl" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">En Google Reviews</span>
+</div>
+</div>
+<!-- Beneficios Enfocados en el RESULTADO -->
+<div class="flex flex-col gap-3">
+<div class="text-left mb-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Lo que obtienes</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Transformación con máxima comodidad</h2>
+</div>
+<!-- Card Beneficio 1 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex items-start gap-3.5 shadow-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="electric_bolt">electric_bolt</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Piel libre de vellos y sin irritación</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Láser de diodo médico de alta potencia e indoloro con enfriamiento subcero que protege y calma tu epidermis.</p>
+</div>
+</div>
+<!-- Card Beneficio 2 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex items-start gap-3.5 shadow-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Rejuvenecimiento y luminosidad inmediata</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Limpiezas profundas hidrafaciales y nutrición dérmica con ácido hialurónico y vitaminas antioxidantes.</p>
+</div>
+</div>
+<!-- Card Beneficio 3 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex items-start gap-3.5 shadow-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Alivio del estrés y bienestar integral</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terapias spa y masajes descontracturantes en cabinas boutique con aromaterapia y sonido envolvente.</p>
+</div>
+</div>
+<!-- Card Beneficio 4 -->
+<div class="p-4 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 flex items-start gap-3.5 shadow-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="medical_information">medical_information</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Seguridad y acompañamiento especializado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cosmiatras y especialistas certificados por la Seccional de Salud de Antioquia velando por tu integridad.</p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados de Medellín -->
+<div class="flex flex-col gap-3">
+<h3 class="font-title-md text-title-md text-on-surface text-center">Experiencias reales en El Poblado</h3>
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-xs flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Paciente verificada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            "Llegué acomplejada por manchas y foliculitis por el afeitado en axilas. Desde la 2ª sesión de láser el cambio fue radical. No duele absolutamente nada y el trato del personal en Medellín es insuperable."
+          </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/20">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs text-primary">C</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Camila Rendón · Medellín</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-xs flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Paciente verificado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            "El facial y el spa me devolvieron la vida a la piel tras semanas de estrés laboral. Cero rojeces y una textura sedosa increíble. Se siente la paz de respirar aire puro en sus cabinas."
+          </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/20">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-xs text-primary">V</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Valentina Mejía · Envigado</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================================= -->
+<!-- 4. ETAPA A — ACCIÓN (Formulario de Conversión + WhatsApp Inmediato) -->
+<!-- ======================================================================= -->
+<section class="bg-surface-container-lowest p-6 rounded-3xl border border-secondary/30 shadow-xl relative overflow-hidden" id="agendar">
+<!-- Glow ambient background -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Badge de Urgencia Serena -->
+<div class="inline-flex items-center gap-1.5 bg-error-container text-on-error-container px-3 py-1 rounded-full mb-3">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm">Cupos limitados esta semana en Medellín</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-1">Empieza hoy tu transformación en Nueva Piel</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+        Completa tus datos y una de nuestras especialistas coordinará tu cita prioritaria.
+      </p>
+<!-- Formulario Minimalista de 3 Campos -->
+<form class="flex flex-col gap-4" id="booking-form" onsubmit="event.preventDefault(); alert('¡Gracias por contactar a Nueva Piel Spa! Nos comunicaremos vía WhatsApp en menos de 24 horas para agendar tu valoración.');">
+<!-- Campo 1: Nombre completo -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="full-name">Nombre completo</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest rounded-xl border border-outline-variant focus:border-primary focus:ring-4 focus:ring-primary/10 text-on-surface text-body-md outline-none transition-all" id="full-name" name="full-name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp / Móvil -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="whatsapp">WhatsApp / Teléfono móvil</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg" data-icon="phone_iphone">phone_iphone</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest rounded-xl border border-outline-variant focus:border-primary focus:ring-4 focus:ring-primary/10 text-on-surface text-body-md outline-none transition-all" id="whatsapp" name="whatsapp" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Selección de tratamiento -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="treatment-select">¿Qué tratamiento te interesa?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg" data-icon="spa">spa</span>
+<select class="w-full pl-10 pr-8 py-3 bg-surface-container-lowest rounded-xl border border-outline-variant focus:border-primary focus:ring-4 focus:ring-primary/10 text-on-surface text-body-md outline-none transition-all appearance-none cursor-pointer" id="treatment-select" name="treatment" required="">
+<option disabled="" selected="" value="">Selecciona una opción...</option>
+<option value="depilacion-laser">Depilación Láser Definitiva</option>
+<option value="rejuvenecimiento-facial">Rejuvenecimiento Facial / Hidrafacial</option>
+<option value="spa-relajacion">Spa &amp; Masajes de Relajación</option>
+<option value="paquete-integral">Paquete Integral Facial + Corporal</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-outline pointer-events-none text-lg" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full py-4 mt-2 bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg shadow-md hover:bg-primary active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+<!-- Aviso Legal / Privacidad -->
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] text-center leading-tight mt-1">
+          Tus datos están protegidos bajo la Ley 1581 de 2012 de Colombia. Uso estrictamente confidencial para fines médicos y de agendamiento.
+        </p>
+</form>
+<!-- Divisor -->
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-4 text-xs font-label-sm text-outline">o prefiere</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Botón Directo de WhatsApp -->
+<a class="w-full py-3.5 px-4 rounded-full border border-secondary text-primary hover:bg-surface-container-low transition-colors duration-150 flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-95 shadow-xs" href="https://wa.me/573173232262" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary" data-icon="chat">chat</span>
+<span>Chatear al WhatsApp: +57 317 323 2262</span>
+</a>
+</section>
+<!-- ======================================================================= -->
+<!-- 5. PREGUNTAS FRECUENTES (FAQ Desplegables con HTML Semántico) -->
+<!-- ======================================================================= -->
+<section class="flex flex-col gap-4">
+<div class="text-center mb-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Claridad total</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-xs">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer select-none">
+<span class="text-[15px] font-semibold">¿La depilación láser duele o quema la piel?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            No. Nuestra tecnología láser de diodo cuenta con cabezal frío de zafiro criogénico que mantiene la piel a temperatura confortable durante todo el disparo, evitando quemaduras y minimizando la molestia a un leve cosquilleo.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-xs">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer select-none">
+<span class="text-[15px] font-semibold">¿Cuántas sesiones se necesitan para ver resultados?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Los resultados en brillo y textura facial se aprecian desde la primera sesión. En depilación láser médica, notas una reducción del 60% al 80% del vello a partir de la 3ª sesión; un tratamiento completo promedio comprende entre 6 y 8 sesiones.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-xs">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer select-none">
+<span class="text-[15px] font-semibold">¿Qué incluye la sesión de valoración?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Incluye diagnóstico dermocosmético computarizado, análisis de fototipo, prueba de sensibilidad y el diseño de tu protocolo personalizado sin sobrecostos sorpresa.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 shadow-xs">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer select-none">
+<span class="text-[15px] font-semibold">¿Dónde están ubicados en Medellín y tienen parqueadero?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Estamos ubicados en el sector exclusivo de El Poblado (Milla de Oro). Contamos con parqueadero privado cubierto y servicio de valet para tu total comodidad y discreción.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- FOOTER (Shared Component Execution) -->
+<!-- ========================================================================= -->
+<footer class="bg-surface-container-low border-t border-outline-variant/40 w-full">
+<div class="flex flex-col gap-space-md w-full px-space-md py-space-xl pb-28 text-center max-w-7xl mx-auto">
+<!-- Brand Logo / Headline -->
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Nueva Piel Spa</span>
+</div>
+<!-- Links Legales Obligatorios del JSON -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 max-w-xl mx-auto">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#agendar">
+          Habilitación Médica Seccional
+        </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#agendar">
+          Protocolos de Bioseguridad
+        </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#agendar">
+          Política de Privacidad y Tratamiento de Datos
+        </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#agendar">
+          Consentimiento Informado Digital
+        </a>
+</div>
+<!-- Texto de Registro & Copyright Literal del JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 max-w-lg mx-auto leading-relaxed">
+        © 2024 Nueva Piel Spa Medellín. Todos los derechos reservados. Registro Seccional de Salud y Protección Social de Antioquia Res. 0418-2021. Vigilado SuperSalud.
+      </p>
+</div>
+</footer>
+<!-- ========================================================================= -->
+<!-- BOTTOM NAV BAR (Shared Component Execution - Mobile Docked Shell) -->
+<!-- ========================================================================= -->
+<nav class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-lg border-t border-outline-variant/30 shadow-lg px-space-xs py-space-xs pb-safe flex justify-around items-center">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150 py-1 px-2" href="#tratamientos">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-label-sm text-[10px] mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150 py-1 px-2" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="auto_fix_high">auto_fix_high</span>
+<span class="font-label-sm text-label-sm text-[10px] mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150 py-1 px-2" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="compare">compare</span>
+<span class="font-label-sm text-label-sm text-[10px] mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active Conversion Intent) -->
+<a class="flex flex-col items-center justify-center text-primary font-bold hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150 py-1 px-2" href="#agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm text-[10px] mt-0.5">Agendar</span>
+</a>
+</nav>
+<!-- Script ligero para interactividad de formularios y micro-feedback -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Ajuste suave al navegar por anclas con offset del top bar
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const topOffset = 70;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/nueva-piel-spa" width="1" height="1" style="display:none" alt="">
-</body>
-</html>
+</body></html>

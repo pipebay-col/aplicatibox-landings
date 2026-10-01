@@ -1,58 +1,592 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selvoria — Cosmética Natural Colombiana</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Selvoria Cosmética Natural | Skincare Botánico de Colombia</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#dbdad7",
+            "on-secondary-fixed-variant": "#0e5138",
+            "primary": "#012d1d",
+            "primary-fixed-dim": "#a5d0b9",
+            "secondary": "#2c694e",
+            "inverse-on-surface": "#f2f0ed",
+            "outline": "#717973",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#274e3d",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#005235",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#e4e2df",
+            "on-error-container": "#93000a",
+            "tertiary": "#002d1b",
+            "surface": "#fbf9f6",
+            "primary-fixed": "#c1ecd4",
+            "on-primary": "#ffffff",
+            "outline-variant": "#c1c8c2",
+            "on-primary-fixed": "#002114",
+            "secondary-fixed-dim": "#95d4b3",
+            "on-tertiary-fixed": "#002113",
+            "tertiary-fixed": "#92f7c3",
+            "primary-container": "#1b4332",
+            "background": "#fbf9f6",
+            "surface-tint": "#3f6653",
+            "tertiary-fixed-dim": "#75daa8",
+            "inverse-surface": "#30312f",
+            "surface-container-high": "#eae8e5",
+            "secondary-fixed": "#b1f0ce",
+            "secondary-container": "#aeeecb",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#316e52",
+            "tertiary-container": "#00452c",
+            "on-background": "#1b1c1a",
+            "on-primary-container": "#86af99",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#a5d0b9",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#fbf9f6",
+            "on-surface": "#1b1c1a",
+            "on-surface-variant": "#414844",
+            "surface-variant": "#e4e2df",
+            "surface-container-low": "#f5f3f0",
+            "on-tertiary-container": "#53b889",
+            "on-secondary-fixed": "#002114",
+            "surface-container": "#efeeeb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.75rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "margin": "3rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "38px", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',system-ui,sans-serif;background:#f5faf3;color:#1a2430;line-height:1.6;}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
-header{padding:20px 0;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-family:'Cormorant+Garamond';font-weight:900;font-size:24px;color:#2d5a27;}
-.cta-top{background:#2d5a27;color:#fff;padding:10px 22px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:34px 0 50px;}
-h1{font-family:'Cormorant+Garamond';font-weight:900;font-size:44px;line-height:1.12;color:#2d5a27;letter-spacing:-.01em;}
-.sub{font-size:17px;color:#4a5568;margin:16px 0 26px;}
-.cta{display:inline-block;background:#2d5a27;color:#fff;padding:15px 34px;border-radius:14px;font-size:16px;font-weight:800;text-decoration:none;box-shadow:0 10px 26px #2d5a2744;}
-.cta:hover{background:#5e9b54;}
-.heroimg{width:100%;max-height:480px;object-fit:cover;border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.14);}
-section{padding:44px 0;}
-h2{font-family:'Cormorant+Garamond';font-weight:900;font-size:30px;color:#2d5a27;text-align:center;margin-bottom:28px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
-.card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 6px 22px rgba(0,0,0,.06);}
-.card .ico{font-size:30px;margin-bottom:8px;}
-.card h3{font-size:17px;color:#2d5a27;margin-bottom:6px;}
-.card p{font-size:13.5px;color:#556;}
-.razones{background:#fff;border-radius:18px;padding:30px 34px;box-shadow:0 6px 22px rgba(0,0,0,.05);}
-.razones li{margin:9px 0 9px 20px;font-size:15.5px;}
-.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.paso{background:#fff;border-radius:16px;padding:22px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.05);}
-.paso b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#2d5a27;color:#fff;font-size:16px;margin-bottom:10px;}
-.paso span{font-size:14.5px;color:#445;}
-.final{text-align:center;padding:56px 0;background:linear-gradient(135deg,#2d5a27,#5e9b54);color:#fff;border-radius:24px;margin:34px 0;}
-.final h2{color:#fff;}
-.final p{margin:10px 0 22px;font-size:16px;}
-.final a{background:#fff;color:#2d5a27;padding:16px 40px;border-radius:14px;font-weight:900;text-decoration:none;font-size:17px;}
-footer{text-align:center;color:#8895a5;font-size:12.5px;padding:26px 0;}
-@media(max-width:760px){.hero{grid-template-columns:1fr;}h1{font-size:32px;}.pasos{grid-template-columns:1fr;}}
-</style></head><body>
-<div class="wrap">
-<header><div class="logo">Selvoria</div><a class="cta-top" href="https://wa.me/573169156415">Agenda tu cita</a></header>
-<div class="hero"><div><h1>Cosmética natural de la biodiversidad colombiana</h1><p class="sub">56.000 seguidores y una marca DTC de verdad: serums, bálsamos y rituales faciales con ingredientes de origen colombiano. Envíos a todo el país.</p><a class="cta" href="https://wa.me/573169156415">✨ Agendar valoración</a></div>
-<img class="heroimg" src="hero-marca.jpg" alt="Selvoria — Cosmética Natural Colombiana"></div>
-<section><h2>Tratamientos</h2><div class="cards"><div class="card"><div class="ico">🌿</div><h3>Serum Vitamina C</h3><p>El favorito: luminosidad y uniformidad con vitamina C pura.</p></div>
-<div class="card"><div class="ico">🍯</div><h3>Bálsamos Nutritivos</h3><p>Hidratación profunda con mantecas y aceites colombianos.</p></div>
-<div class="card"><div class="ico">🧴</div><h3>Rituales Faciales</h3><p>Rutinas completas de skincare natural paso a paso.</p></div>
-<div class="card"><div class="ico">📦</div><h3>Envío Nacional</h3><p>Compra online con envío a todo Colombia.</p></div></div></section>
-<section><div class="razones"><h2 style="text-align:left">Por qué elegirnos</h2><ul><li>56K seguidores en Instagram</li>
-<li>Ingredientes de la biodiversidad colombiana</li>
-<li>Marca DTC con productos propios (no revende)</li>
-<li>Sedes en Manizales y Bogotá</li></ul></div></section>
-<section><h2>Cómo funciona</h2><div class="pasos"><div class="paso"><b>1</b><span>Elige tu ritual para tu tipo de piel</span></div>
-<div class="paso"><b>2</b><span>Compra online o visita la sede</span></div>
-<div class="paso"><b>3</b><span>Resultados con uso constante — guía incluida</span></div></div></section>
-<div class="final"><h2>Tu transformación empieza hoy</h2><p>Agenda tu valoración — respondemos en minutos.</p><a href="https://wa.me/573169156415">📲 Escribir por WhatsApp</a></div>
-<footer>Demo creada por AplicatiBox · Selvoria — Cosmética Natural Colombiana</footer>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .safe-area-bottom {
+      padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-primary min-h-screen">
+<!-- ========================================== -->
+<!-- 1. TOP APP BAR (Shared Component)         -->
+<!-- ========================================== -->
+<header class="fixed top-0 left-0 right-0 w-full z-40 flex items-center justify-between px-margin-mobile h-16 bg-surface/95 dark:bg-surface/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="spa">spa</span>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed tracking-tight leading-none">Selvoria Cosmética Natural</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest text-[9px] uppercase">Biodiversidad Colombiana</span>
 </div>
+</div>
+<a class="bg-primary-container text-surface hover:bg-secondary transition-colors duration-200 text-label-md font-label-md px-3.5 py-1.5 rounded-lg active:scale-95 flex items-center gap-1 shadow-sm" href="#formulario-asesoria">
+<span>Asesoría</span>
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+</a>
+</header>
+<main class="pt-16 pb-20 overflow-x-hidden">
+<!-- ========================================== -->
+<!-- 2. A — ATENCIÓN (Hero Section)             -->
+<!-- ========================================== -->
+<section class="px-margin-mobile pt-5 pb-8 flex flex-col gap-4">
+<!-- Credential Authority Badge -->
+<div class="self-start inline-flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="eco">eco</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">
+          🌿 Marca propia con tienda online · 56K seguidores IG (@selvoriacosmetica)
+        </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight font-serif leading-tight">
+        Tu piel radiante y equilibrada con el poder de la biodiversidad colombiana
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Fórmulas botánicas de alta concentración con activos nativos (aceite de cacay del Putumayo, café verde de Manizales y maracuyá silvestre). Resultados visibles en 21 días, sin químicos agresivos ni efecto rebote.
+      </p>
+<!-- Hero Visual Card with Attached Image -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,67,50,0.06)] border border-outline-variant/30 mt-2 bg-surface-container-low group">
+<img src="hero-marca.jpg" alt="Selvoria — Cosmética Natural" style="width:100%;max-height:520px;object-fit:cover">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent flex flex-col justify-end p-4 text-surface">
+<div class="inline-flex items-center gap-1 bg-surface/90 text-primary px-2.5 py-1 rounded-full text-label-sm font-label-sm w-fit mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+            100% Botánico &amp; Certificado INVIMA
+          </div>
+<h3 class="font-headline-sm text-headline-sm font-serif leading-snug">
+            Aceite de Cacay &amp; Café Verde Puro
+          </h3>
+<p class="font-body-sm text-body-sm text-surface/90 text-xs mt-0.5">
+            Origen Manizales, Caldas &amp; Amazonía colombiana prensado en frío.
+          </p>
+</div>
+</div>
+<!-- High-Conversion Primary CTA -->
+<div class="flex flex-col gap-2 mt-2">
+<a class="w-full bg-primary-container text-surface hover:bg-secondary text-label-lg font-label-lg py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 shadow-[0_8px_24px_-4px_rgba(27,67,50,0.3)] active:scale-95 transition-all text-center" href="#formulario-asesoria">
+<span>Agendar mi asesoría botánica gratuita</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-credentials below CTA -->
+<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 pt-1 text-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="text-secondary font-bold">✓</span> Respuesta en menos de 24h
+          </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="text-secondary font-bold">✓</span> Diagnóstico 100% personalizado
+          </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="text-secondary font-bold">✓</span> Despachos a toda Colombia
+          </span>
+</div>
+</div>
+<!-- 3 Trust Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/40 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="forest">forest</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold leading-tight">Biodiversidad Colombiana</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/40 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold leading-tight">Registro INVIMA Vigente</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/40 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary mb-1" data-icon="cruelty_free">cruelty_free</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold leading-tight">Cruelty Free &amp; Vegano</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. I — INTERÉS (Problema & Proceso 3 Pasos)-->
+<!-- ========================================== -->
+<section class="bg-surface-container-low px-margin-mobile py-8 border-y border-outline-variant/30 flex flex-col gap-6">
+<!-- Empathy / Pain Point Block -->
+<div class="flex flex-col gap-2.5">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider font-bold">El Dilema de Tu Piel</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif">
+          ¿Frustrada con productos genéricos que prometen milagros y solo irritan o resecan tu piel?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          La mayoría de cosméticos masivos usan fragancias sintéticas, derivados de petróleo y rellenos inertes que alteran la barrera cutánea. En <strong class="text-primary font-semibold">Selvoria</strong> formulamos con activos vivos prensados en frío que nutren a nivel celular respetando tu microbioma andino y tropical.
+        </p>
+</div>
+<!-- 3-Step Guided Process -->
+<div class="flex flex-col gap-3.5">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-headline-md font-serif text-secondary/40 font-bold">01</span>
+<span class="material-symbols-outlined text-primary" data-icon="vital_signs">vital_signs</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Diagnóstico y test cutáneo guiado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Identificamos si tu piel sufre de deshidratación profunda, manchas solares o pérdida de elasticidad sin rodeos técnicos ni fórmulas genéricas.
+          </p>
+<div class="bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm px-2.5 py-1 rounded-md self-start font-semibold">
+            Beneficio: Cero compras a ciegas
+          </div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-headline-md font-serif text-secondary/40 font-bold">02</span>
+<span class="material-symbols-outlined text-primary" data-icon="science">science</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Rutina botánica a tu medida</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Seleccionamos el protocolo exacto (limpieza suave, sérum regenerador de cacay y bio-activo protector) para el clima de tu ciudad y tu estilo de vida.
+          </p>
+<div class="bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm px-2.5 py-1 rounded-md self-start font-semibold">
+            Beneficio: Fórmulas que sí funcionan juntas
+          </div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-display-lg text-headline-md font-serif text-secondary/40 font-bold">03</span>
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Piel luminosa y seguimiento cercano</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Acompañamiento continuo por WhatsApp para verificar tu adaptación celular y brillo natural observable desde la tercera semana.
+          </p>
+<div class="bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm px-2.5 py-1 rounded-md self-start font-semibold">
+            Beneficio: Resultados duraderos y piel sana
+          </div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. D — DESEO (Métricas, Beneficios & Pruebas)-->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-8 flex flex-col gap-6">
+<!-- Metrics Bento Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif font-bold leading-tight block">+6 Años</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-1 block">Formulando en Manizales y Colombia</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif font-bold leading-tight block">+56K</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-1 block">Comunidad en Instagram (@selvoriacosmetica)</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-serif font-bold leading-tight block">+18.000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-1 block">Pieles transformadas en todo el país</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-serif font-bold leading-tight block">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-1 block">Notificación Sanitaria Obligatoria INVIMA</span>
+</div>
+</div>
+<!-- Tangible Botanical Results -->
+<div class="flex flex-col gap-3">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider font-bold">Beneficios Reales</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif">
+          Resultados botánicos que tu piel siente día a día
+        </h2>
+<div class="space-y-3 mt-1">
+<!-- Benefit 1 -->
+<div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="bg-secondary-container/50 text-primary p-2 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Regeneración celular profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Atenúa líneas de expresión y manchas con retinol vegetal natural: aceite de cacay 3 veces más potente que el argán marroquí.
+              </p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="bg-secondary-container/50 text-primary p-2 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Barrera lipídica protegida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Adiós a la sensación tirante o el brillo excesivo; equilibrio y sebum-regulación comprobada en climas secos y húmedos.
+              </p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="bg-secondary-container/50 text-primary p-2 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="nature_people">nature_people</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Ingredientes puros de origen ético</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Comercio justo directo con comunidades campesinas e indígenas de Caldas, Cundinamarca y el Putumayo amazónico.
+              </p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="flex items-start gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="bg-secondary-container/50 text-primary p-2 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Asesoría dermocosmética sin costo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Acompañamiento cercano por expertas botánicas antes, durante y después de tu compra para resolver inquietudes en tiempo real.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Proof / Testimonials -->
+<div class="flex flex-col gap-3 pt-2">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider font-bold">Testimonios Reales</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Historias de transformación botánica</h3>
+<div class="flex flex-col gap-3">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "El sérum de cacay me quitó las manchas de acné que ningún ácido de farmacia logró sin irritarme. Mi piel se ve glowy y descansada."
+            </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-primary font-semibold">Carolina M.</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Bogotá · Cliente Verificada</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "Tenía la piel reseca por el clima frío de la cordillera. Con la rutina personalizada de Selvoria recuperé la textura suave en dos semanas. 10/10."
+            </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-primary font-semibold">Valentina R.</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Manizales · Cliente Verificada</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "Amo que sea producto colombiano consciente, con empaques en vidrio ámbar y resultados que se notan en fotos sin filtros."
+            </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<span class="font-label-md text-label-md text-primary font-semibold">Andrea P.</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Medellín · Cliente Verificada</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. A — ACCIÓN (Formulario de Conversión)   -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-8 bg-surface-container-low border-t border-outline-variant/30" id="formulario-asesoria">
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/40 shadow-[0_12px_32px_-4px_rgba(27,67,50,0.08)] flex flex-col gap-4">
+<!-- Scarcity Badge -->
+<div class="inline-flex items-center gap-1.5 bg-secondary-container/60 text-primary px-3 py-1 rounded-full text-label-sm font-label-sm self-start font-semibold">
+<span class="material-symbols-outlined text-xs animate-pulse" data-icon="schedule">schedule</span>
+          Cupos de asesoría botánica gratuita esta semana
+        </div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif">
+            Empieza hoy tu rutina botánica personalizada
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Diligencia estos 3 datos y una de nuestras expertas botánicas formulará tu protocolo en menos de 24 horas.
+          </p>
+</div>
+<!-- Lead Form -->
+<form class="flex flex-col gap-3.5" onsubmit="event.preventDefault(); alert('¡Gracias Mariana! Tu solicitud ha sido recibida. Una experta de Selvoria te contactará en breve por WhatsApp.');">
+<!-- Field 1: Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="nombre">
+              1. Nombre completo
+            </label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-secondary focus:ring-1.5 focus:ring-secondary outline-none transition-colors" id="nombre" name="nombre" placeholder="Ej. Mariana Valencia" required="" type="text"/>
+</div>
+<!-- Field 2: Phone -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="whatsapp">
+              2. Número de WhatsApp móvil
+            </label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-secondary focus:ring-1.5 focus:ring-secondary outline-none transition-colors" id="whatsapp" name="whatsapp" placeholder="+57 300 123 4567" required="" type="tel"/>
+</div>
+<!-- Field 3: Goal Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="objetivo">
+              3. ¿Qué buscas mejorar en tu piel?
+            </label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-3.5 py-2.5 font-body-md text-body-md text-on-surface focus:border-secondary focus:ring-1.5 focus:ring-secondary outline-none transition-colors" id="objetivo" name="objetivo">
+<option value="lineas">Líneas de expresión y firmeza</option>
+<option value="manchas">Manchas y luminosidad</option>
+<option value="acne">Acné y textura irregular</option>
+<option value="hidratacion">Hidratación profunda y piel sensible</option>
+</select>
+</div>
+<!-- Submit Action Button -->
+<button class="w-full mt-2 bg-primary-container text-surface hover:bg-secondary text-label-lg font-label-lg py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 shadow-[0_8px_20px_-2px_rgba(27,67,50,0.25)] active:scale-95 transition-all text-center" type="submit">
+<span>Quiero mi valoración botánica ✨</span>
+</button>
+<!-- Privacy and Trust Note -->
+<div class="flex items-center justify-center gap-1.5 text-center mt-1">
+<span class="material-symbols-outlined text-xs text-outline" data-icon="lock">lock</span>
+<span class="text-label-sm font-label-sm text-outline">
+              Tus datos están 100% seguros bajo la Ley 1581 de 2012. Cero spam.
+            </span>
+</div>
+</form>
+<!-- Divider OR -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 text-label-sm font-label-sm text-outline">O si prefieres</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Direct WhatsApp Action Button -->
+<a class="w-full bg-secondary-container/40 border border-secondary text-primary hover:bg-secondary-container/60 text-label-md font-label-md py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 text-center" href="https://wa.me/573169156415?text=Hola%20Selvoria,%20quisiera%20agendar%20mi%20asesor%C3%ADa%20bot%C3%A1nica%20gratuita" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp: +57 316 915 6415</span>
+</a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. FAQ Acordeón de Dudas Frecuentes       -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-8 flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<span class="text-label-md font-label-md text-secondary uppercase tracking-wider font-bold">Respuestas Claras</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-serif">
+          Preguntas frecuentes
+        </h2>
+</div>
+<div class="flex flex-col divide-y divide-outline-variant/30">
+<!-- FAQ 1 -->
+<details class="group py-3.5">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-primary font-serif cursor-pointer list-none text-base">
+<span>¿Los productos tienen registro INVIMA?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Sí, absolutamente todas nuestras referencias cuentan con Notificación Sanitaria Obligatoria (NSOC) expedida y avalada por el INVIMA en Colombia, garantizando máxima seguridad microbiológica y dérmica.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group py-3.5">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-primary font-serif cursor-pointer list-none text-base">
+<span>¿En cuánto tiempo comienzo a ver cambios en mi piel?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            La luminosidad e hidratación profunda son perceptibles desde el tercer día de aplicación. La unificación progresiva del tono cutáneo, atenuación de manchas y firmeza se manifiestan entre los 21 y 28 días de ciclo celular continuo.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group py-3.5">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-primary font-serif cursor-pointer list-none text-base">
+<span>¿Hacen envíos a Manizales, Bogotá y el resto del país?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Sí, despachamos en 24 horas hábiles a Manizales y Bogotá, y entre 48 a 72 horas a Medellín, Cali, Bucaramanga, Barranquilla y todos los municipios de Colombia con transportadoras certificadas y número de guía.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group py-3.5">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-primary font-serif cursor-pointer list-none text-base">
+<span>¿Es apto para pieles sensibles o con rosácea?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Totalmente. Nuestras fórmulas están completamente libres de fragancias artificiales, alcoholes secantes y sulfatos abrasivos. Integramos extractos calmantes de maracuyá silvestre y caléndula andina ideales para piel reactiva.
+          </p>
+</details>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 7. FOOTER (Shared Component)               -->
+<!-- ========================================== -->
+<footer class="w-full px-margin-mobile py-10 flex flex-col items-center gap-6 pb-28 text-center bg-primary dark:bg-primary-container text-surface dark:text-surface-bright border-t border-outline-variant/20 dark:border-outline/20">
+<div class="flex flex-col items-center gap-1.5">
+<span class="material-symbols-outlined text-3xl text-secondary-fixed" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm text-surface dark:text-surface-bright">Selvoria Cosmética Natural</span>
+<p class="text-body-sm font-body-sm text-outline-variant dark:text-outline max-w-xs text-xs">
+          Formulación botánica de alta pureza inspirada en la biodiversidad colombiana.
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-md font-label-md">
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#formulario-asesoria">Políticas de Privacidad</a>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#formulario-asesoria">Términos del Servicio</a>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#formulario-asesoria">Garantía Botánica</a>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="https://wa.me/573169156415" rel="noopener noreferrer" target="_blank">Asesoría WhatsApp</a>
+<a class="text-outline-variant dark:text-outline hover:text-secondary-fixed dark:hover:text-secondary-fixed transition-colors duration-200" href="#formulario-asesoria">Registro INVIMA</a>
+</div>
+<p class="text-body-sm font-body-sm text-outline-variant/80 dark:text-outline text-[11px] leading-relaxed max-w-xs">
+        © 2024 Selvoria Cosmética Natural. Manizales &amp; Bogotá, Colombia. Notificación Sanitaria Obligatoria INVIMA. Todos los derechos reservados.
+      </p>
+</footer>
+</main>
+<!-- ========================================== -->
+<!-- 8. BOTTOM NAVBAR (Shared Component)       -->
+<!-- Contextually mapping: Active on 'Diagnóstico' -->
+<!-- ========================================== -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 safe-area-bottom bg-surface-container-lowest/95 dark:bg-surface-container/95 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(27,67,50,0.06)] border-t border-outline-variant/30 dark:border-outline/20">
+<!-- Item 1: Rutinas -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-150" href="#formulario-asesoria">
+<span class="material-symbols-outlined text-xl" data-icon="eco">eco</span>
+<span class="text-label-sm font-label-sm mt-0.5">Rutinas</span>
+</a>
+<!-- Item 2: Biodiversidad -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-150" href="#formulario-asesoria">
+<span class="material-symbols-outlined text-xl" data-icon="forest">forest</span>
+<span class="text-label-sm font-label-sm mt-0.5">Biodiversidad</span>
+</a>
+<!-- Item 3: Testimonios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-150" href="#formulario-asesoria">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+<span class="text-label-sm font-label-sm mt-0.5">Testimonios</span>
+</a>
+<!-- Item 4: Diagnóstico (ACTIVE - Primary Intent of this Landing Assessment) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/50 dark:bg-secondary-container/30 text-primary dark:text-primary-fixed rounded-xl px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors active:scale-95 duration-150" href="#formulario-asesoria">
+<span class="material-symbols-outlined text-xl font-bold" data-icon="vital_signs">vital_signs</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">Diagnóstico</span>
+</a>
+</nav>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/selvoria-cosmetica-natural" width="1" height="1" style="display:none" alt="">
 </body></html>

@@ -1,58 +1,657 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Héctor García — Cirujano Plástico</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Héctor García · Cirujano Plástico Certificado SCCP · Bucaramanga</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#725b38",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#00504a",
+            "surface-container-highest": "#d8e3fb",
+            "primary-container": "#0e766e",
+            "inverse-on-surface": "#ecf1ff",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-surface": "#263143",
+            "surface": "#f9f9ff",
+            "on-tertiary-container": "#ccf0ff",
+            "secondary-fixed-dim": "#e0c298",
+            "surface-dim": "#cfdaf2",
+            "surface-container-low": "#f0f3ff",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#7fd5cc",
+            "background": "#f9f9ff",
+            "secondary-fixed": "#fedeb2",
+            "tertiary": "#00596e",
+            "on-secondary-fixed-variant": "#584323",
+            "tertiary-container": "#00738e",
+            "on-surface-variant": "#3e4947",
+            "on-tertiary-fixed": "#001f28",
+            "outline": "#6e7977",
+            "on-primary-fixed": "#00201d",
+            "surface-container-high": "#dee8ff",
+            "on-surface": "#111c2d",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#9cf2e8",
+            "surface-bright": "#f9f9ff",
+            "on-background": "#111c2d",
+            "surface-container": "#e7eeff",
+            "on-primary-container": "#a3faef",
+            "on-secondary-container": "#78603e",
+            "secondary-container": "#fedeb2",
+            "on-tertiary-fixed-variant": "#004e61",
+            "tertiary-fixed-dim": "#6cd3f7",
+            "surface-variant": "#d8e3fb",
+            "surface-tint": "#006a63",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#281800",
+            "on-error": "#ffffff",
+            "inverse-primary": "#7fd5cc",
+            "outline-variant": "#bdc9c6",
+            "primary": "#005c55",
+            "tertiary-fixed": "#b7eaff",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "gutter": "2rem",
+            "space-xs": "0.375rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "3.5rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',system-ui,sans-serif;background:#f4f8fb;color:#1a2430;line-height:1.6;}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
-header{padding:20px 0;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-family:'Fraunces';font-weight:900;font-size:24px;color:#1c3f5c;}
-.cta-top{background:#1c3f5c;color:#fff;padding:10px 22px;border-radius:24px;text-decoration:none;font-weight:700;font-size:14px;}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:34px 0 50px;}
-h1{font-family:'Fraunces';font-weight:900;font-size:44px;line-height:1.12;color:#1c3f5c;letter-spacing:-.01em;}
-.sub{font-size:17px;color:#4a5568;margin:16px 0 26px;}
-.cta{display:inline-block;background:#1c3f5c;color:#fff;padding:15px 34px;border-radius:14px;font-size:16px;font-weight:800;text-decoration:none;box-shadow:0 10px 26px #1c3f5c44;}
-.cta:hover{background:#3a6d94;}
-.heroimg{width:100%;max-height:480px;object-fit:cover;border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.14);}
-section{padding:44px 0;}
-h2{font-family:'Fraunces';font-weight:900;font-size:30px;color:#1c3f5c;text-align:center;margin-bottom:28px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
-.card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 6px 22px rgba(0,0,0,.06);}
-.card .ico{font-size:30px;margin-bottom:8px;}
-.card h3{font-size:17px;color:#1c3f5c;margin-bottom:6px;}
-.card p{font-size:13.5px;color:#556;}
-.razones{background:#fff;border-radius:18px;padding:30px 34px;box-shadow:0 6px 22px rgba(0,0,0,.05);}
-.razones li{margin:9px 0 9px 20px;font-size:15.5px;}
-.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.paso{background:#fff;border-radius:16px;padding:22px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.05);}
-.paso b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#1c3f5c;color:#fff;font-size:16px;margin-bottom:10px;}
-.paso span{font-size:14.5px;color:#445;}
-.final{text-align:center;padding:56px 0;background:linear-gradient(135deg,#1c3f5c,#3a6d94);color:#fff;border-radius:24px;margin:34px 0;}
-.final h2{color:#fff;}
-.final p{margin:10px 0 22px;font-size:16px;}
-.final a{background:#fff;color:#1c3f5c;padding:16px 40px;border-radius:14px;font-weight:900;text-decoration:none;font-size:17px;}
-footer{text-align:center;color:#8895a5;font-size:12.5px;padding:26px 0;}
-@media(max-width:760px){.hero{grid-template-columns:1fr;}h1{font-size:32px;}.pasos{grid-template-columns:1fr;}}
-</style></head><body>
-<div class="wrap">
-<header><div class="logo">Dr. Héctor García</div><a class="cta-top" href="https://wa.me/573203214542">Agenda tu cita</a></header>
-<div class="hero"><div><h1>Dr. Héctor García — Cirugía Plástica con resultados naturales</h1><p class="sub">Cirujano plástico en Colombia. Años de trayectoria y pacientes que confirman resultados naturales y seguros — agenda tu valoración directa.</p><a class="cta" href="https://wa.me/573203214542">✨ Agendar valoración</a></div>
-<img class="heroimg" src="hero-marca.jpg" alt="Dr. Héctor García — Cirujano Plástico"></div>
-<section><h2>Tratamientos</h2><div class="cards"><div class="card"><div class="ico">🫧</div><h3>Cirugía Facial</h3><p>Rejuvenecimiento facial, párpados y rinoplastia con técnica refinada.</p></div>
-<div class="card"><div class="ico">💪</div><h3>Cirugía Corporal</h3><p>Lipoescultura, abdominoplastia y contorno corporal.</p></div>
-<div class="card"><div class="ico">🌿</div><h3>Medicina Estética</h3><p>Toxina, rellenos y tratamientos no invasivos.</p></div>
-<div class="card"><div class="ico">🩺</div><h3>Valoración Personalizada</h3><p>Plan quirúrgico hecho a tu anatomía y expectativas.</p></div></div></section>
-<section><div class="razones"><h2 style="text-align:left">Por qué elegirnos</h2><ul><li>Cirujano plástico certificado con amplia trayectoria</li>
-<li>Resultados naturales — la filosofía de la práctica</li>
-<li>Atención directa con el doctor desde la primera cita</li>
-<li>Web oficial con casos y contacto directo</li></ul></div></section>
-<section><h2>Cómo funciona</h2><div class="pasos"><div class="paso"><b>1</b><span>Escribe por WhatsApp yagenda tu valoración</span></div>
-<div class="paso"><b>2</b><span>Consulta con el Dr. García — plan personalizado</span></div>
-<div class="paso"><b>3</b><span>Cirugía y seguimiento completo</span></div></div></section>
-<div class="final"><h2>Tu transformación empieza hoy</h2><p>Agenda tu valoración — respondemos en minutos.</p><a href="https://wa.me/573203214542">📲 Escribir por WhatsApp</a></div>
-<footer>Demo creada por AplicatiBox · Dr. Héctor García — Cirujano Plástico</footer>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle champagne border for high-end feel */
+    .border-champagne-ghost {
+      border: 1px solid rgba(197, 168, 128, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen pb-28">
+<!-- ========================================== -->
+<!-- 1. TOP APP BAR (Shared Component Anchor)  -->
+<!-- ========================================== -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+<!-- Leading: Brand & Identity -->
+<a class="flex items-center space-x-2.5 group" href="#hero">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined material-symbols-fill text-primary" data-icon="medical_services">medical_services</span>
 </div>
+<div class="flex flex-col text-left">
+<span class="text-title-lg font-title-lg text-on-surface dark:text-inverse-on-surface tracking-tight leading-tight">Dr. Héctor García</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-wider font-semibold">CIRUJANO PLÁSTICO SCCP</span>
+</div>
+</a>
+<!-- Trailing: Verified Badge & Micro CTA -->
+<div class="flex items-center space-x-2">
+<div class="hidden xs:flex items-center space-x-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-label-sm font-semibold">Verificado</span>
+</div>
+<a class="bg-primary text-on-primary px-3.5 py-1.5 rounded-lg text-label-md font-label-md hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center space-x-1" href="#contacto">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- 2. A — ATENCIÓN (Hero Section)             -->
+<!-- ========================================== -->
+<section class="relative px-margin-mobile pt-6 pb-space-lg max-w-xl mx-auto flex flex-col items-center text-center" id="hero">
+<!-- Medical Credential Badge -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full border-champagne-ghost mb-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-base" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium text-left">Médico UIS · Especialidad Univ. Militar · Honor Académico</span>
+</div>
+<!-- H1 Headline (3-Second Value Proposition) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 tracking-tight">
+      Tu cirugía estética con <span class="text-primary italic font-headline-lg-mobile">rigor médico</span> y resultados que se sienten naturales
+    </h1>
+<!-- Subtitle with Geographic & Tourism Anchor -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-center max-w-md">
+      Cirugía plástica, estética y reconstructiva en Bucaramanga. Tecnología avanzada, valoración personalizada y protocolos internacionales para pacientes locales y de turismo médico.
+    </p>
+<!-- Hero Image Card with Medical Certification Badge -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-lg border-champagne-ghost bg-surface-container-lowest mb-6">
+<img src="hero-marca.jpg" alt="Dr. Héctor García" style="width:100%;max-height:520px;object-fit:cover">
+<!-- Doctor Verification Overlay Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-2.5 flex items-center justify-between border-champagne-ghost shadow-md">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="text-left">
+<div class="text-label-md font-label-md text-on-surface font-bold">Dr. Héctor García</div>
+<div class="text-label-sm font-label-sm text-secondary font-medium">Especialista Certificado SCCP &amp; ISAPS</div>
+</div>
+</div>
+<div class="flex items-center bg-primary/10 text-primary px-2 py-0.5 rounded-full text-label-sm font-semibold">
+<span>Bucaramanga</span>
+</div>
+</div>
+</div>
+<!-- Main High-Contrast CTA Button -->
+<a class="w-full bg-primary-container text-on-primary py-4 px-6 rounded-xl font-title-md text-title-md shadow-md hover:bg-primary active:scale-95 transition-all flex items-center justify-center space-x-2 group" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-credentials beneath Button -->
+<p class="mt-3 text-label-sm font-label-sm text-on-surface-variant flex items-center justify-center flex-wrap gap-x-2 gap-y-1">
+<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas 
+      <span>·</span> Plan 100% a tu medida 
+      <span>·</span> Atención confidencial
+    </p>
+<!-- Trust Micro-Pills -->
+<div class="grid grid-cols-3 gap-2 w-full mt-6">
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border-champagne-ghost">
+<span class="material-symbols-outlined text-primary text-lg block mb-0.5" data-icon="local_hospital">local_hospital</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold block leading-tight">Quirófanos Nivel IV</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border-champagne-ghost">
+<span class="material-symbols-outlined text-primary text-lg block mb-0.5" data-icon="location_city">location_city</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold block leading-tight">Bucaramanga Hub</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl text-center border-champagne-ghost">
+<span class="material-symbols-outlined text-secondary text-lg block mb-0.5" data-icon="flight_takeoff">flight_takeoff</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold block leading-tight">Turismo Asistido</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. I — INTERÉS (Problema & Diagnóstico)   -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-lowest max-w-xl mx-auto rounded-3xl border-champagne-ghost my-4">
+<!-- Empathetic Diagnostic Section -->
+<div class="text-left mb-6">
+<div class="inline-flex items-center space-x-1.5 text-secondary text-label-sm font-label-sm uppercase tracking-wider mb-2 font-bold">
+<span class="material-symbols-outlined text-sm" data-icon="psychology">psychology</span>
+<span>Escucha Clínica &amp; Empatía</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3">
+        ¿Inseguridad sobre qué procedimiento elegir o temor a resultados poco naturales?
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Comprendemos profundamente que el paso a una cirugía plástica involucra expectativas emocionales y temores legítimos: el miedo al dolor, a verse "artificial" o transformarse en alguien irreconocible, o la falta de claridad en los costos hospitalarios. Nuestro enfoque médico privilegia siempre la anatomía individual, la seguridad en quirófanos certificados y la sutil elegancia de lucir descansada y en tu mejor versión, sin estigmas quirúrgicos.
+      </p>
+</div>
+<!-- 3-Step Precision Methodology -->
+<div class="space-y-3.5 mb-6">
+<!-- Step 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex items-start space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex-shrink-0 flex items-center justify-center font-bold text-title-md">
+          01
+        </div>
+<div class="text-left">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Valoración y diagnóstico personalizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Estudio fotográfico y anatómico detallado para definir la técnica exacta sin falsas promesas ni presiones comerciales.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex items-start space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex-shrink-0 flex items-center justify-center font-bold text-title-md">
+          02
+        </div>
+<div class="text-left">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Plan quirúrgico y cotización transparente</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Presupuesto cerrado con quirófano de alta complejidad, anestesiología certificada y acompañamiento integral garantizado.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex items-start space-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex-shrink-0 flex items-center justify-center font-bold text-title-md">
+          03
+        </div>
+<div class="text-left">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Cirugía de precisión y acompañamiento postoperatorio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Recuperación guiada, drenajes linfáticos protocolizados y monitoreo médico directo en Bucaramanga hasta tu alta definitiva.
+          </p>
+</div>
+</div>
+</div>
+<!-- Subtle Chat Link -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center space-x-1.5 text-primary hover:text-primary-container text-body-sm font-semibold transition-colors" href="https://wa.me/573203214542?text=Hola%20Dr.%20H%C3%A9ctor%20Garc%C3%ADa%2C%20deseo%20resolver%20algunas%20dudas%20previas%20a%20mi%20valoraci%C3%B3n">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Deseas resolver dudas antes de agendar? Chatea con nuestro equipo</span>
+<span class="material-symbols-outlined text-xs" data-icon="north_east">north_east</span>
+</a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. D — DESEO (Prueba Social & Especialidades) -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-space-lg max-w-xl mx-auto">
+<!-- Authority Metrics Grid -->
+<div class="grid grid-cols-2 gap-3 mb-space-lg">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost text-center shadow-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">+15 Años</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Trayectoria Quirúrgica</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost text-center shadow-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">+3.500</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pacientes Satisfechos</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost text-center shadow-sm">
+<div class="font-headline-md text-headline-md text-secondary font-bold">UIS &amp; Militar</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Formación de Excelencia</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost text-center shadow-sm">
+<div class="font-headline-md text-headline-md text-secondary font-bold">100%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Quirófanos MinSalud</div>
+</div>
+</div>
+<!-- Signature Procedures Header -->
+<div class="text-center mb-6">
+<div class="inline-flex items-center space-x-1 text-secondary text-label-sm font-label-sm uppercase tracking-widest font-bold mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span>Especialidades Quirúrgicas</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Procedimientos de Autor</h2>
+</div>
+<!-- Procedures Cards (Bento style list for mobile) -->
+<div class="space-y-3 mb-space-lg">
+<!-- Procedure 1: Rinoplastia -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost flex items-center space-x-3.5 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="face">face</span>
+</div>
+<div class="flex-1 text-left">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Rinoplastia Ultrasónica</h3>
+<span class="text-label-sm font-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Facial</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Armonía facial milimétrica, preservación estructural y recuperación con mínimo edema.
+          </p>
+</div>
+</div>
+<!-- Procedure 2: Lipoescultura HD -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost flex items-center space-x-3.5 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div class="flex-1 text-left">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Contorno Corporal &amp; Lipo HD</h3>
+<span class="text-label-sm font-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Corporal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Definición anatómica suave, retracción de piel con tecnología láser y curvas elegantes.
+          </p>
+</div>
+</div>
+<!-- Procedure 3: Cirugía Mamaria -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost flex items-center space-x-3.5 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</span>
+</div>
+<div class="flex-1 text-left">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Cirugía Mamaria Personalizada</h3>
+<span class="text-label-sm font-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Busto</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Aumento, pexia o reducción con proporciones áureas e implantes con garantía vitalicia.
+          </p>
+</div>
+</div>
+<!-- Procedure 4: Blefaroplastia / Facial -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost flex items-center space-x-3.5 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="visibility">visibility</span>
+</div>
+<div class="flex-1 text-left">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Rejuvenecimiento Facial</h3>
+<span class="text-label-sm font-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Mirada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Blefaroplastia y lifting de cuello para frescura y vitalidad sin apariencia forzada.
+          </p>
+</div>
+</div>
+</div>
+<!-- Visual Proof & Verified Patient Testimonial -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden border-champagne-ghost shadow-md mb-space-lg">
+<div class="relative">
+<img alt="Paciente satisfecha con resultados naturales de rejuvenecimiento facial en Bucaramanga atendida por el cirujano Dr. Héctor García" class="w-full h-72 object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwz25gwhsPu6w_kWLGewPUTCFXsmde4CXRrwSvuELlahZ9Cmp_i5fk_yQ9Q5gTKeJoVuSGAm4OoGt6YPP8msP2DY2JXcm-402MsJaeWsNO13DHmuAYgkAEsE9VGXTk0wtIOY9E56yx2D9gYHS19Nm4PouOoeHMO6JeqkIXCCU7URacb2EAu-9w2_X_W0cz-2DKbVajvSTUI2bjLfMhtbJ9AirxJw3vtBBXcXTaR8ooAbT4L3-iq8MB6eW1w-YyuUN53LA7mPnatwU"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm text-primary font-bold flex items-center space-x-1 border-champagne-ghost">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>Resultado armónico verificado</span>
+</div>
+</div>
+<div class="p-5 text-left">
+<!-- 5 Star Rating -->
+<div class="flex items-center space-x-1 text-secondary mb-2.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold ml-1">5.0 / Experiencia Quirúrgica</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-3">
+          "Buscaba operarme en Bucaramanga pero me daba pavor quedar con aspecto operado. El Dr. Héctor me explicó cada detalle en la valoración con una honestidad impecable. El resultado superó todo lo que soñé: me veo radiante y nadie nota una cirugía."
+        </blockquote>
+<div class="flex items-center justify-between border-t border-outline-variant/30 pt-3">
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Marcela P.</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bucaramanga / Miami · Rinoplastia y Definición</div>
+</div>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="format_quote">format_quote</span>
+</div>
+</div>
+</div>
+<!-- VIP Medical Tourism Card (Bucaramanga Destination) -->
+<div class="bg-gradient-to-br from-surface-container-high to-surface-container-low p-5 rounded-3xl border-champagne-ghost text-left shadow-sm">
+<div class="flex items-center space-x-2 text-secondary mb-2">
+<span class="material-symbols-outlined" data-icon="flight_takeoff">flight_takeoff</span>
+<span class="font-label-md text-label-md uppercase font-bold tracking-wider">Plan Turismo Médico VIP</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">
+        Atención exclusiva para pacientes internacionales y nacionales
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+        Recibimos pacientes desde Bogotá, Costa Caribe, Estados Unidos, Panamá y Europa. Ofrecemos acompañamiento integral con transporte aeropuerto-clínica, enfermería bilingüe postoperatoria y convenios en suites de recuperación en Cabecera del Llano y Floridablanca.
+      </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border-champagne-ghost flex items-center space-x-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+<span>Teleconsulta virtual HD</span>
+</span>
+<span class="bg-surface-container-lowest text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border-champagne-ghost flex items-center space-x-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+<span>Hoteles 5★ y suites privadas</span>
+</span>
+<span class="bg-surface-container-lowest text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border-champagne-ghost flex items-center space-x-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+<span>Traslados en Bucaramanga</span>
+</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. A — ACCIÓN (Formulario & WhatsApp)      -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-lowest max-w-xl mx-auto rounded-3xl border-champagne-ghost my-4 shadow-lg" id="contacto">
+<div class="text-center mb-6">
+<span class="inline-block bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm px-3 py-1 rounded-full font-bold mb-2">
+        Cupos limitados por semana en Bucaramanga
+      </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">
+        Inicia hoy tu transformación con seguridad y respaldo médico
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mx-auto">
+        Completa el formulario en 30 segundos y nuestro equipo de admisiones te contactará hoy mismo.
+      </p>
+</div>
+<!-- Minimal High-Conversion Form (3 fields) -->
+<form class="space-y-4 text-left" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! El equipo médico del Dr. Héctor García se comunicará contigo a la brevedad.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold" for="nombre">Nombre y Apellido *</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl px-4 py-3 text-body-md text-on-surface placeholder:text-outline/70 transition-all outline-none" id="nombre" placeholder="Ej. Carolina Morales" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-outline text-lg" data-icon="person">person</span>
+</div>
+</div>
+<!-- Field 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold" for="telefono">WhatsApp o Teléfono Celular *</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl px-4 py-3 text-body-md text-on-surface placeholder:text-outline/70 transition-all outline-none" id="telefono" placeholder="Ej. +57 320 000 0000" required="" type="tel"/>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-outline text-lg" data-icon="smartphone">smartphone</span>
+</div>
+</div>
+<!-- Field 3: Procedure of Interest -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-semibold" for="procedimiento">¿Qué procedimiento te interesa evaluar? *</label>
+<div class="relative">
+<select class="w-full bg-surface border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl px-4 py-3 text-body-md text-on-surface transition-all outline-none appearance-none" id="procedimiento" required="">
+<option disabled="" selected="" value="">Selecciona tu procedimiento...</option>
+<option value="rinoplastia">Rinoplastia Estética o Ultrasónica</option>
+<option value="contorno">Lipoescultura / Contorno Corporal HD</option>
+<option value="mamaria">Cirugía Mamaria (Aumento / Pexia / Reducción)</option>
+<option value="facial">Rejuvenecimiento Facial / Blefaroplastia</option>
+<option value="general">Valoración Quirúrgica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-outline text-lg pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Main Submission Button -->
+<button class="w-full bg-primary-container text-on-primary py-4 px-6 rounded-xl font-title-md text-title-md font-bold shadow-md hover:bg-primary active:scale-95 transition-all text-center flex items-center justify-center space-x-2 mt-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+<span class="material-symbols-outlined text-lg" data-icon="send">send</span>
+</button>
+</form>
+<!-- Divider: Immediate WhatsApp Alternative -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/40"></div>
+</div>
+<div class="relative flex justify-center text-label-sm font-label-sm">
+<span class="bg-surface-container-lowest px-3 text-outline font-semibold tracking-wider">O ATENCIÓN INMEDIATA</span>
+</div>
+</div>
+<!-- Direct Functional WhatsApp Button -->
+<a class="w-full bg-[#25D366] text-white py-3.5 px-4 rounded-xl font-title-md text-title-md shadow-sm hover:brightness-105 active:scale-95 transition-all flex items-center justify-center space-x-2 text-center" href="https://wa.me/573203214542?text=Hola%20Dr.%20H%C3%A9ctor%20Garc%C3%ADa%2C%20deseo%20solicitar%20informaci%C3%B3n%20para%20una%20valoraci%C3%B3n" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp: +57 320 321 4542</span>
+</a>
+<!-- Medical Privacy & Legal Microcopy -->
+<div class="mt-4 flex items-start space-x-2 text-left">
+<span class="material-symbols-outlined text-secondary text-sm flex-shrink-0 mt-0.5" data-icon="lock">lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight">
+        Tus datos médicos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia. Sin compromisos.
+      </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. PREGUNTAS FRECUENTES (FAQ Acordeón)    -->
+<!-- ========================================== -->
+<section class="px-margin-mobile py-space-lg max-w-xl mx-auto text-left">
+<div class="text-center mb-6">
+<div class="inline-flex items-center space-x-1 text-secondary text-label-sm font-label-sm uppercase tracking-widest font-bold mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="help_outline">help_outline</span>
+<span>Resolución de Dudas</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost transition-all cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none font-semibold">
+<span>¿Cómo se coordina para pacientes de otras ciudades o el exterior?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Iniciamos con una teleconsulta diagnóstica donde revisamos fotos y antecedentes médicos. Luego, nuestra coordinadora de Turismo Médico te envía un itinerario con tiempos de estadía recomendados (usualmente 10 a 14 días en Bucaramanga), cotización global y reserva de hotel o transporte.
+        </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost transition-all cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none font-semibold">
+<span>¿Qué incluye la valoración médica inicial?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Incluye examen físico y antropométrico completo con el Dr. Héctor García, análisis fotográfico, definición de la técnica quirúrgica ideal, simulación anatómica de objetivos y la entrega de un presupuesto formal detallado y sin costos ocultos.
+        </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost transition-all cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none font-semibold">
+<span>¿En qué clínicas y quirófanos opera el Dr. Héctor García?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          El Dr. García opera exclusivamente en instituciones hospitalarias y clínicas de Nivel III y IV habilitadas por la Secretaría de Salud de Santander en Bucaramanga y Floridablanca, dotadas con UCI, anestesiología presencial y máxima tecnología de soporte vital.
+        </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border-champagne-ghost transition-all cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none font-semibold">
+<span>¿Cuánto tiempo de incapacidad se requiere en promedio?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Depende del procedimiento: para rinoplastia o párpados, la reincorporación a labores de oficina suele ser entre el 5º y 7º día. Para procedimientos corporales (lipoescultura o mamaria), se recomiendan de 8 a 12 días de reposo relativo antes de retomar actividades cotidianas normales.
+        </div>
+</details>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 7. FOOTER (Shared Component Anchor)       -->
+<!-- ========================================== -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest/20 border-t border-outline-variant/20 dark:border-outline/10 full-width bottom pb-24 flat no shadows mt-10">
+<div class="flex flex-col items-center text-center w-full px-margin-mobile py-space-lg space-y-space-md max-w-7xl mx-auto">
+<!-- Brand & Accreditation Logos in Footer -->
+<div class="flex flex-col items-center">
+<div class="text-title-lg font-title-lg text-primary dark:text-inverse-primary tracking-tight">
+          Dr. Héctor García
+        </div>
+<p class="text-label-md font-label-md text-secondary font-semibold mt-0.5">
+          Cirugía Plástica, Estética y Reconstructiva
+        </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-md mt-1">
+          Miembro de Número de la Sociedad Colombiana de Cirugía Plástica (SCCP) &amp; ISAPS
+        </p>
+</div>
+<!-- Links Grid from JSON Blueprint -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-md font-label-md text-on-surface-variant dark:text-surface-variant pt-2 border-t border-outline-variant/20 w-full max-w-xl">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Sedes Clínicas Bucaramanga</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Habilitación Médica Santander</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Protocolos de Seguridad Quirúrgica</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Política de Privacidad y Tratamiento de Datos Médicos</a>
+</div>
+<!-- Exact Copyright String from JSON -->
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-2xl leading-relaxed pt-2">
+        © 2024 Dr. Héctor García - Cirugía Plástica, Estética y Reconstructiva. Registro Seccional de Salud Santander Res. No. 0482. Bucaramanga, Colombia.
+      </p>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- 8. BOTTOM NAVBAR (Shared Component Mobile) -->
+<!-- ========================================== -->
+<!-- Responsive Pivot: Active on mobile, docked at bottom with 4 exact JSON destinations -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg border-t border-outline-variant/30 dark:border-outline/20 shadow-lg dark:shadow-none md:hidden">
+<!-- Item 1: Procedimientos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="#procedimientos-insignia">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Procedimientos</span>
+</a>
+<!-- Item 2: Turismo VIP (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="#turismo">
+<span class="material-symbols-outlined text-xl" data-icon="flight_takeoff">flight_takeoff</span>
+<span class="text-label-sm font-label-sm mt-0.5">Turismo VIP</span>
+</a>
+<!-- Item 3: Resultados (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active - Landing conversion intent matches "Agendar") -->
+<a class="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary-container/30 text-primary dark:text-on-primary-container rounded-xl px-3 py-1.5 transition-all duration-200 active:scale-95" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+<!-- Interactive Scroll Behavior Script -->
+<script>
+    // Smooth navigation anchor highlights
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dr-hector-garcia" width="1" height="1" style="display:none" alt="">
 </body></html>
