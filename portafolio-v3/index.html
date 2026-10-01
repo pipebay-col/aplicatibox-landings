@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felipe Camacho — AplicatiBox | Diseño web y agentes IA · Cali</title>
+<meta name="description" content="Webs que venden y agentes IA que trabajan por ti. Landings de alta conversión y automatización de pipeline para clínicas de estética y salud. Cali, Colombia.">
+<meta property="og:title" content="Felipe Camacho — AplicatiBox">
+<meta property="og:description" content="Webs que venden, agentes IA que trabajan por ti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --smoke-white:#F7F7F7; --smoke-black:#181914; --deep-black:#11120D;
+  --green:#51E076; --silver:#A3A3A3; --line:rgba(24,25,20,.14);
+  --mono:'Space Mono',monospace; --sans:'Inter',system-ui,sans-serif;
+  --pad:clamp(20px,4vw,64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{background:var(--smoke-white);color:var(--smoke-black);font-family:var(--sans);
+  font-size:16px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--green);color:var(--deep-black)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;background:none;border:0;cursor:pointer}
+
+/* ===== cursor ===== */
+@media(hover:hover){
+  body{cursor:none}
+  .cur{position:fixed;left:0;top:0;width:10px;height:10px;border-radius:50%;
+    background:var(--smoke-black);pointer-events:none;z-index:9999;
+    transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s;mix-blend-mode:normal}
+  .cur.big{width:56px;height:56px;background:transparent;border:1px solid var(--green)}
+}
+@media(hover:none){.cur{display:none}}
+
+/* ===== preloader ===== */
+#pre{position:fixed;inset:0;background:var(--deep-black);z-index:9998;display:grid;place-items:center;
+  font-family:var(--mono);color:#F7F7F7;font-size:clamp(40px,8vw,90px);font-weight:700}
+#pre{transition:opacity .7s ease .1s, visibility .7s}#pre.done{opacity:0;visibility:hidden;pointer-events:none}
+
+/* ===== nav ===== */
+nav{position:fixed;inset:0 0 auto 0;display:flex;justify-content:space-between;align-items:center;
+  padding:18px var(--pad);z-index:100;font-family:var(--mono);font-size:13px;mix-blend-mode:difference;color:#F7F7F7}
+nav .brand{font-weight:700;letter-spacing:.04em}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a:hover{color:var(--green)}
+.lang{display:flex;gap:6px}.lang span{opacity:.45;cursor:pointer}.lang span.on{opacity:1;color:var(--green)}
+
+/* ===== hero ===== */
+#hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0 var(--pad) 48px;overflow:hidden}
+#three{position:absolute;inset:0;z-index:0;opacity:.9}
+.hero-in{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
+  border:1px solid var(--smoke-black);border-radius:99px;padding:7px 14px;margin-bottom:26px;width:fit-content}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block}
+h1{font-family:var(--mono);font-weight:400;font-size:clamp(38px,7.4vw,108px);line-height:1.02;
+  letter-spacing:-.02em;max-width:16ch}
+h1 .it{font-style:italic}
+h1 .ac{color:var(--green)}
+h1 .ch{display:inline-block;white-space:pre}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:40px;flex-wrap:wrap}
+.hero-sub p{max-width:42ch;color:#4a4d45;font-size:15px}
+.cta-pill{display:inline-flex;align-items:center;gap:10px;background:var(--smoke-black);color:#F7F7F7;
+  font-family:var(--mono);font-size:14px;padding:16px 30px;border-radius:99px;transition:background .25s,color .25s}
+.cta-pill:hover{background:var(--green);color:var(--deep-black)}
+.scroll-cue{position:absolute;right:var(--pad);bottom:48px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.3em;text-transform:uppercase;color:#4a4d45;writing-mode:vertical-rl;z-index:1}
+.scroll-cue::after{content:'';display:block;width:1px;height:60px;background:var(--smoke-black);
+  margin:10px auto 0;animation:cue 1.6s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+/* ===== secciones ===== */
+section{padding:clamp(80px,12vh,150px) var(--pad)}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:#4a4d45;display:flex;align-items:center;gap:12px;margin-bottom:34px}
+.tag::before{content:'';width:40px;height:1px;background:var(--smoke-black)}
+.tag b{color:var(--green);font-weight:400}
+
+.about-big{font-family:var(--mono);font-size:clamp(22px,3.6vw,44px);line-height:1.28;max-width:26ch;font-weight:400}
+.about-big .ac{color:var(--green)}
+.about-big .dim{color:#9a9d94}
+
+/* servicios */
+.svc{border-top:1px solid var(--line)}
+.svc-row{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:34px 0;border-bottom:1px solid var(--line);
+  position:relative;transition:padding .35s}
+.svc-row:hover{padding-left:14px}
+.svc-num{font-family:var(--mono);font-size:13px;color:#9a9d94;padding-top:6px}
+.svc-row h3{font-family:var(--mono);font-weight:700;font-size:clamp(20px,3vw,34px);letter-spacing:-.01em}
+.svc-row p{max-width:52ch;color:#4a4d45;margin-top:10px;font-size:15px;max-height:0;opacity:0;overflow:hidden;
+  transition:max-height .45s ease,opacity .45s}
+.svc-row:hover p,.svc-row.open p{max-height:120px;opacity:1}
+.svc-cta{margin-top:14px;font-family:var(--mono);font-size:12px;color:var(--smoke-black);
+  display:inline-flex;gap:8px;align-items:center}
+.svc-cta::after{content:'\2192\FE0E';color:var(--green)}
+
+/* casos */
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border-left:1px solid var(--line)}
+.case{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 26px;
+  min-height:300px;display:flex;flex-direction:column;justify-content:space-between;background:transparent;
+  transition:background .4s;position:relative}
+.case:hover{background:var(--smoke-black)}
+.case .n{font-family:var(--mono);font-size:12px;color:#9a9d94;transition:color .3s}
+.case h3{font-family:var(--mono);font-size:clamp(20px,2.4vw,26px);font-weight:700;margin:24px 0 8px;transition:color .3s}
+.case .yr{font-family:var(--mono);font-size:12px;color:#9a9d94;transition:color .3s}
+.case p{font-size:13.5px;color:#4a4d45;margin-top:14px;max-height:0;opacity:0;overflow:hidden;transition:all .45s}
+.case:hover .n{color:var(--green)}
+.case:hover h3,.case:hover .yr{color:#F7F7F7}
+.case:hover p{max-height:100px;opacity:1;color:var(--silver)}
+
+/* demo strip */
+.demo{background:var(--deep-black);color:#F7F7F7}
+.demo .tag{color:var(--silver)}.demo .tag::before{background:var(--silver)}
+.demo-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.demo h2{font-family:var(--mono);font-size:clamp(28px,4.4vw,54px);font-weight:400;line-height:1.1;letter-spacing:-.01em}
+.demo h2 .ac{color:var(--green)}
+.demo p{color:var(--silver);margin-top:18px;max-width:46ch;font-size:15px}
+.demo .frame{border:1px solid rgba(247,247,247,.16);border-radius:14px;overflow:hidden;position:relative;aspect-ratio:9/11}
+.demo .frame img{width:100%;height:100%;object-fit:cover;display:block}
+.demo .live{position:absolute;top:14px;left:14px;font-family:var(--mono);font-size:11px;background:var(--green);
+  color:var(--deep-black);padding:5px 12px;border-radius:99px;font-weight:700}
+
+/* CTA final */
+.final{background:var(--smoke-black);color:#F7F7F7;text-align:center;padding-top:clamp(90px,14vh,160px);padding-bottom:clamp(90px,14vh,160px)}
+.final h2{font-family:var(--mono);font-weight:400;font-size:clamp(34px,6.6vw,92px);line-height:1.04;letter-spacing:-.02em}
+.final h2 .ac{font-style:italic;color:var(--green)}
+.final .cta-pill{margin-top:44px;background:var(--green);color:var(--deep-black)}
+.final .cta-pill:hover{background:#F7F7F7}
+
+/* footer */
+footer{background:var(--smoke-black);color:#F7F7F7;padding:0 0 34px;overflow:hidden}
+.marquee{border-block:1px solid rgba(247,247,247,.14);padding:22px 0;overflow:hidden;white-space:nowrap;margin-bottom:56px}
+.marquee-in{display:inline-block;animation:mq 26s linear infinite;font-family:var(--mono);
+  font-size:clamp(22px,3.4vw,44px);font-weight:700}
+.marquee-in span{padding:0 18px}.marquee-in .ac{color:var(--green)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px;padding:0 var(--pad);font-family:var(--mono);font-size:13px}
+.foot-grid h4{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver);margin-bottom:16px;font-weight:400}
+.foot-grid a{display:block;padding:5px 0;opacity:.85;transition:color .25s}
+.foot-grid a:hover{color:var(--green)}
+.foot-big{font-size:clamp(17px,2.2vw,24px);font-weight:700;line-height:1.35}
+.legal{display:flex;justify-content:space-between;gap:14px;padding:34px var(--pad) 0;font-family:var(--mono);
+  font-size:11px;color:var(--silver);flex-wrap:wrap}
+
+/* reveal states */
+.rv{opacity:0;transform:translateY(34px)}
+.rv.in{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reduced .rv{opacity:1;transform:none;transition:none}
+
+@media(max-width:860px){
+  nav ul{display:none}
+  .demo-wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  h1{font-size:clamp(34px,11vw,64px)}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01s!important;transition-duration:.01s!important}
+}
+</style>
+</head>
+<body>
+
+<div id="pre"><span id="pre-n">00</span></div>
+<div class="cur" id="cur"></div>
+
+<nav>
+  <span class="brand">APLICATIBOX®</span>
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#casos">Casos</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <span class="lang"><span class="on">ES</span><span>EN</span></span>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="hero">
+  <canvas id="three"></canvas>
+  <div class="hero-in">
+    <span class="badge"><i></i>Portafolio — Felipe Camacho · Cali, CO</span>
+    <h1 id="h1">Webs que venden,
+agentes IA que
+<span class="ac">trabajan por ti.</span></h1>
+    <div class="hero-sub">
+      <p>Convierto clínicas y centros de estética en máquinas de captación: landing que cierra citas y asistente de voz que agenda sola.</p>
+      <a class="cta-pill" href="https://wa.me/573244895605" target="_blank" rel="noopener">Agendar llamada <span>&#8599;</span></a>
+    </div>
+  </div>
+  <span class="scroll-cue">Scroll to explore</span>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <p class="tag">01 — Sobre mí</p>
+  <p class="about-big rv">Diseñador web y constructor de <span class="ac">agentes IA</span> en Cali. No entrego páginas bonitas: entrego <span class="dim">sistemas que captan, responden y agendan</span> mientras el negocio duerme.</p>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
+  <p class="tag">02 — Servicios</p>
+  <div class="svc">
+    <div class="svc-row rv">
+      <span class="svc-num">[001]</span>
+      <div>
+        <h3>Landings de alta conversión</h3>
+        <p>Una sola página con embudo AIDA: credencial real de tu marca, imagen de tu servicio, formulario que cierra la cita. Diseño premium Stitch, móvil-first, medición de clics incluida.</p>
+        <span class="svc-cta">Ver ejemplo</span>
+      </div>
+    </div>
+    <div class="svc-row rv">
+      <span class="svc-num">[002]</span>
+      <div>
+        <h3>Agentes IA</h3>
+        <p>Asistente de voz con holograma que atiende, recomienda y agenda. Responde por WhatsApp 24/7 con el tono experto de tu clínica. Confirmaciones de cita automáticas.</p>
+        <span class="svc-cta">Ver demo VALI</span>
+      </div>
+    </div>
+    <div class="svc-row rv">
+      <span class="svc-num">[003]</span>
+      <div>
+        <h3>Pipeline automatizado</h3>
+        <p>Prospección diaria por WhatsApp con landings personalizadas por prospecto, clasificación automática de respuestas y dashboard con el estado real de cada lead.</p>
+        <span class="svc-cta">Ver Command Center</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASOS ================= -->
+<section id="casos">
+  <p class="tag">03 — Casos <b>seleccionados</b></p>
+  <div class="case-grid">
+    <div class="case rv">
+      <div>
+        <span class="n">01</span>
+        <h3>Clínica dental — Cali</h3>
+        <span class="yr">[2026] · Landing + outreach</span>
+      </div>
+      <p>Landing con hero real de la marca enviada por WhatsApp. 70% de los contactados respondieron en la primera hora. Pipeline con seguimiento automático.</p>
+    </div>
+    <div class="case rv">
+      <div>
+        <span class="n">02</span>
+        <h3>VALI — Asistente de voz</h3>
+        <span class="yr">[2026] · Agente IA</span>
+      </div>
+      <p>Holograma conversacional para centro estético: recomienda tratamientos, arma el carrito y agenda la cita con confirmación real por WhatsApp.</p>
+    </div>
+    <div class="case rv">
+      <div>
+        <span class="n">03</span>
+        <h3>Cirujano plástico — Bucaramanga</h3>
+        <span class="yr">[2026] · Landing premium</span>
+      </div>
+      <p>Credenciales reales (SCCP, ASPS, 203K seguidores) convertidas en embudo AIDA con un solo objetivo: cerrar la valoración.</p>
+    </div>
+    <div class="case rv">
+      <div>
+        <span class="n">04</span>
+        <h3>Command Center</h3>
+        <span class="yr">[2026] · Dashboard pipeline</span>
+      </div>
+      <p>Centro de control del embudo completo: quién respondió, quién está caliente, próximo paso por lead, clics por landing — todo en vivo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO ================= -->
+<section class="demo" id="demo">
+  <p class="tag">04 — En vivo</p>
+  <div class="demo-wrap">
+    <div>
+      <h2 class="rv">Mira un agente<br>atendiendo <span class="ac">ahora mismo.</span></h2>
+      <p class="rv">VALI conversa, recomienda y agenda — sin intervención humana. Así se vería atendiendo a tus pacientes mientras tú operas.</p>
+      <a class="cta-pill rv" href="https://wa.me/573244895605" target="_blank" rel="noopener">Quiero un agente así &#8599;</a>
+    </div>
+    <div class="frame rv">
+      <span class="live">● LIVE</span>
+      <img src="vali-frame.jpg" alt="VALI — asistente de voz con holograma atendiendo una cita">
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final" id="contacto">
+  <p class="tag" style="color:var(--silver)">05 — Contacto</p>
+  <h2>Tu próximo cliente<br>ya te está <span class="ac">buscando.</span></h2>
+  <a class="cta-pill" href="https://wa.me/573244895605" target="_blank" rel="noopener">Hablemos por WhatsApp &#8599;</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-in">
+      <span>Trabajemos juntos <span class="ac">&#10035;</span></span><span>Trabajemos juntos <span class="ac">&#10035;</span></span><span>Trabajemos juntos <span class="ac">&#10035;</span></span><span>Trabajemos juntos <span class="ac">&#10035;</span></span><span>Trabajemos juntos <span class="ac">&#10035;</span></span><span>Trabajemos juntos <span class="ac">&#10035;</span></span>
+    </div>
+  </div>
+  <div class="foot-grid">
+    <div>
+      <h4>Contacto</h4>
+      <p class="foot-big">hola@aplicatibox.com<br>+57 324 489 5605</p>
+    </div>
+    <div>
+      <h4>Índice</h4>
+      <a href="#about">01 Sobre mí</a>
+      <a href="#servicios">02 Servicios</a>
+      <a href="#casos">03 Casos</a>
+      <a href="#demo">04 Demo</a>
+    </div>
+    <div>
+      <h4>Donde</h4>
+      <a href="#" onclick="return false">Cali, Colombia</a>
+      <a href="#" onclick="return false">Remoto — LATAM</a>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2026 AplicatiBox — Felipe Camacho</span>
+    <span>Privacidad · Cookies</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+// ============ PRELOADER ============
+(function(){
+  var n = document.getElementById('pre-n'), i = 0;
+  function fin(){ document.getElementById('pre').classList.add('done');
+    document.body.classList.add('loaded'); }
+  if(location.search.indexOf('shot')>-1){ i=100; n.textContent='100'; fin(); }
+  var t = setInterval(function(){
+    i++; n.textContent = (i<10?'0':'')+i;
+    if(i>=100){ clearInterval(t); fin(); }
+  }, 12);
+  setTimeout(fin, 2500); // seguridad: nunca atascado
+})();
+
+// ============ CURSOR ============
+(function(){
+  var cur = document.getElementById('cur');
+  if(!cur) return;
+  var x=innerWidth/2, y=innerHeight/2, tx=x, ty=y;
+  addEventListener('mousemove', function(e){ tx=e.clientX; ty=e.clientY; });
+  (function loop(){ x+=(tx-x)*.18; y+=(ty-y)*.18;
+    cur.style.transform='translate('+(x-5)+'px,'+(y-5)+'px)'; requestAnimationFrame(loop); })();
+  document.querySelectorAll('a, .case, .svc-row').forEach(function(el){
+    el.addEventListener('mouseenter', function(){ cur.classList.add('big'); });
+    el.addEventListener('mouseleave', function(){ cur.classList.remove('big'); });
+  });
+})();
+
+// ============ LENIS ============
+var lenis = null;
+var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced && window.Lenis){
+  lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+  (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(0);
+  document.documentElement.classList.add('lenis');
+}
+
+// ============ THREE — partículas hero ============
+(function(){
+  var canvas = document.getElementById('three');
+  if(!canvas || !window.THREE || reduced) return;
+  var renderer = new THREE.WebGLRenderer({canvas:canvas, alpha:true, antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  var scene = new THREE.Scene();
+  var cam = new THREE.PerspectiveCamera(60, 1, .1, 100);
+  cam.position.z = 7;
+  // puntos
+  var N = innerWidth < 700 ? 900 : 1800;
+  var pos = new Float32Array(N*3);
+  for(var i=0;i<N;i++){
+    pos[i*3]   = (Math.random()-.5)*16;
+    pos[i*3+1] = (Math.random()-.5)*9;
+    pos[i*3+2] = (Math.random()-.5)*10;
+  }
+  var geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  var mat = new THREE.PointsMaterial({color:0x51E076, size:.05, transparent:true, opacity:.85});
+  var pts = new THREE.Points(geo, mat);
+  scene.add(pts);
+  // malla wireframe suave
+  var wire = new THREE.Mesh(
+    new THREE.TorusGeometry(3.2,.6,10,42),
+    new THREE.MeshBasicMaterial({color:0x181914, wireframe:true, transparent:true, opacity:.08}));
+  wire.position.set(2.2, 1.2, -2);
+  scene.add(wire);
+  var mx=0, my=0;
+  addEventListener('mousemove', function(e){ mx=(e.clientX/innerWidth-.5); my=(e.clientY/innerHeight-.5); });
+  function resize(){
+    var w = canvas.clientWidth || innerWidth, h = canvas.clientHeight || innerHeight;
+    renderer.setSize(w,h,false); cam.aspect = w/h; cam.updateProjectionMatrix();
+  }
+  addEventListener('resize', resize); resize();
+  var t0 = Date.now();
+  (function loop(){
+    var t = (Date.now()-t0)/1000;
+    pts.rotation.y = t*.02 + mx*.35;
+    pts.rotation.x = my*.2;
+    wire.rotation.y = t*.08; wire.rotation.x = t*.05;
+    cam.position.x += (mx*1.1 - cam.position.x)*.03;
+    cam.position.y += (-my*.7 - cam.position.y)*.03;
+    cam.lookAt(scene.position);
+    renderer.render(scene, cam);
+    requestAnimationFrame(loop);
+  })();
+})();
+
+// ============ GSAP — reveals ============
+(function(){
+  if(!window.gsap) return;
+  if(window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+  // H1 por caracteres
+  var h1 = document.getElementById('h1');
+  if(h1 && !reduced){
+    var html = '';
+    h1.innerHTML.split(/(<[^>]+>)/).forEach(function(part){
+      if(part.charAt(0)==='<'){ html += part; return; }
+      part.split('').forEach(function(ch){
+        if(ch==='\n'){ html += '<br>'; return; }
+        html += '<span class="ch">'+ (ch===' '?'&nbsp;':ch) +'</span>';
+      });
+    });
+    h1.innerHTML = html;
+    gsap.from('#h1 .ch', {yPercent:110, opacity:0, stagger:.018, duration:.9,
+      ease:'power4.out', delay:(location.search.indexOf('shot')>-1?0:1.5)});
+  }
+  // reveals genéricos
+  var rvs = document.querySelectorAll('.rv');
+  if(window.ScrollTrigger){
+    rvs.forEach(function(el){
+      gsap.fromTo(el, {y:34, opacity:0}, {y:0, opacity:1, duration:.9, ease:'power3.out',
+        scrollTrigger:{trigger:el, start:'top 88%'}});
+    });
+    // secciones: tag entra antes
+    document.querySelectorAll('.tag').forEach(function(el){
+      gsap.from(el, {x:-30, opacity:0, duration:.7, ease:'power2.out',
+        scrollTrigger:{trigger:el, start:'top 92%'}});
+    });
+  }
+})();
+
+// ============ anclas con Lenis ============
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    var id = a.getAttribute('href');
+    var el = document.querySelector(id);
+    if(!el) return;
+    e.preventDefault();
+    if(lenis) lenis.scrollTo(el, {offset:-20}); else el.scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
