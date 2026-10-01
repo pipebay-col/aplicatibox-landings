@@ -160,6 +160,20 @@ footer{background:var(--smoke-black);color:#F7F7F7;padding:0 0 34px;overflow:hid
   *{animation-duration:.01s!important;transition-duration:.01s!important}
 }
 </style>
+<script>
+(function(){
+  var n = document.getElementById('pre-n'), i = 0, done = false;
+  function fin(){ if(done) return; done = true;
+    var p = document.getElementById('pre'); if(p) p.classList.add('done');
+    document.body.classList.add('loaded'); }
+  var t = setInterval(function(){
+    i++; if(n) n.textContent = (i<10?'0':'')+i;
+    if(i>=100){ clearInterval(t); fin(); }
+  }, 12);
+  setTimeout(fin, 2500);
+  window.addEventListener('load', function(){ setTimeout(fin, 400); });
+})();
+</script>
 </head>
 <body>
 
@@ -323,23 +337,12 @@ agentes IA que
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-<script>
-// ============ PRELOADER ============
-(function(){
-  var n = document.getElementById('pre-n'), i = 0;
-  function fin(){ document.getElementById('pre').classList.add('done');
-    document.body.classList.add('loaded'); }
-  if(location.search.indexOf('shot')>-1){ i=100; n.textContent='100'; fin(); }
-  var t = setInterval(function(){
-    i++; n.textContent = (i<10?'0':'')+i;
-    if(i>=100){ clearInterval(t); fin(); }
-  }, 12);
-  setTimeout(fin, 2500); // seguridad: nunca atascado
-})();
+<script defer src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script defer>
+
 
 // ============ CURSOR ============
 (function(){
