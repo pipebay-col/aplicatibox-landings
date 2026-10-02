@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRHM — Tienda Ropa Hombre Medellín | Moda Masculina de Autor</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-variant": "#e5e2dd",
+            "on-secondary": "#ffffff",
+            "text-muted": "#6E6A63",
+            "primary-fixed-dim": "#c8c6c5",
+            "inverse-primary": "#c8c6c5",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e5e2dd",
+            "surface-container": "#f0ede9",
+            "border-subtle": "#E5DFD5",
+            "secondary-fixed": "#ffdeab",
+            "inverse-surface": "#31302d",
+            "on-surface": "#1c1c19",
+            "outline-variant": "#c4c7c7",
+            "surface-bright": "#fcf9f4",
+            "on-primary-container": "#858383",
+            "on-tertiary-fixed": "#1c1b1a",
+            "tertiary-container": "#1c1b1a",
+            "surface-container-low": "#f6f3ee",
+            "on-secondary-fixed-variant": "#5f4100",
+            "tertiary": "#000000",
+            "outline": "#747878",
+            "accent-ochre": "#C99232",
+            "error": "#ba1a1a",
+            "background": "#fcf9f4",
+            "error-container": "#ffdad6",
+            "surface-dim": "#dcdad5",
+            "on-tertiary-fixed-variant": "#484645",
+            "secondary": "#7e5700",
+            "inverse-on-surface": "#f3f0eb",
+            "surface-tint": "#5f5e5e",
+            "on-background": "#1c1c19",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#271900",
+            "on-primary-fixed-variant": "#474646",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#444748",
+            "surface": "#fcf9f4",
+            "surface-container-high": "#ebe8e3",
+            "primary-container": "#1c1b1b",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#868381",
+            "on-secondary-container": "#734f00",
+            "tertiary-fixed": "#e6e1df",
+            "on-primary-fixed": "#1c1b1b",
+            "primary": "#000000",
+            "secondary-fixed-dim": "#f6bd56",
+            "primary-fixed": "#e5e2e1",
+            "tertiary-fixed-dim": "#cac6c4",
+            "secondary-container": "#fdc25b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-tablet": "2.5rem",
+            "margin": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "4.5rem",
+            "space-2xl": "4rem",
+            "space-md": "1rem",
+            "space-3xl": "6rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Bodoni Moda"],
+            "display-md": ["Bodoni Moda"],
+            "headline-sm": ["Bodoni Moda"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg": ["Bodoni Moda"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Bodoni Moda"],
+            "headline-lg": ["Bodoni Moda"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-md-mobile": ["Bodoni Moda"]
+          },
+          "fontSize": {
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "display-lg-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-md": ["3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "500" }],
+            "display-lg": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "500" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-md-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    body {
+      background-color: #FAF7F2;
+      color: #141414;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased selection:bg-accent-ochre selection:text-surface">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin h-16 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-sm border-b border-border-subtle dark:border-outline-variant">
+<button aria-label="Abrir Menú" class="text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150 active:opacity-80">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm tracking-widest uppercase font-medium text-primary dark:text-inverse-primary">TRHM</span>
+<span class="font-label-sm text-label-sm text-text-muted dark:text-surface-variant tracking-widest">SHOWROOM MEDELLÍN • ENVÍOS COLOMBIA</span>
+</div>
+<a aria-label="Bolsa de Compras / Catálogo" class="text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150 active:opacity-80" href="https://wa.me/Moda" 573015285821">
+<span class="material-symbols-outlined">shopping_bag</span>
+</a>
+</header>
+<main class="pt-16 pb-24">
+<!-- 1. ETAPA: ATENCIÓN (Hero Móvil Fullscreen de Moda) -->
+<section class="px-margin pt-space-md pb-space-xl flex flex-col justify-start">
+<!-- Badge de autoridad social -->
+<div class="inline-flex items-center gap-space-xs self-start py-1 px-2.5 bg-surface-container border border-border-subtle rounded mb-space-md">
+<span class="material-symbols-outlined text-accent-ochre text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">★ 335K seguidores nos respaldan</span>
+</div>
+<!-- H1 Titular Editorial en Bodoni -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tight mb-space-sm">
+        Vestir bien no debería <span class="italic font-normal text-accent-ochre">costar semanas.</span>
+</h1>
+<!-- Subtítulo persuasivo -->
+<p class="font-body-md text-body-md text-text-muted mb-space-lg leading-relaxed">
+        Curaduría exclusiva de las mejores marcas masculinas en Medellín. OUTFITS listos para cualquier ocasión sin filas ni búsquedas interminables.
+      </p>
+<!-- Imagen Hero Editorial Móvil 3:4 con tono cálido marfil -->
+<div class="relative w-full aspect-[3/4] bg-surface-container rounded overflow-hidden mb-space-lg border border-border-subtle">
+<img alt="Colección Urbana TRHM Medellín" class="w-full h-full object-cover object-top" data-alt="Editorial lookbook photograph of a handsome, stylish Hispanic man in El Poblado Medellín wearing a sharp minimalist sand-colored oversized jacket and relaxed tailoring. The lighting is warm golden hour sunlight reflecting off crisp architectural concrete and tropical foliage. High fashion magazine aesthetic with a muted color palette of warm ivory, deep charcoal, and soft ochre." src="hero.svg"/>
+<!-- Overlay subtle gradient badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md p-space-sm border border-border-subtle rounded flex justify-between items-center">
+<div>
+<p class="font-label-sm text-label-sm text-text-muted uppercase">Curaduría Paisa</p>
+<p class="font-label-md text-label-md text-primary font-bold">Otoño / Invierno Drop II</p>
+</div>
+<span class="font-label-sm text-label-sm bg-primary text-surface px-2 py-1 rounded">NUEVO INGRESO</span>
+</div>
+</div>
+<!-- CTA Principal de Alta Conversión WhatsApp -->
+<div class="flex flex-col gap-space-xs">
+<a class="w-full bg-primary text-surface py-4 px-space-md rounded flex items-center justify-center gap-space-sm font-label-lg text-label-lg uppercase tracking-wider hover:bg-neutral-800 active:scale-[0.98] transition-all duration-150 shadow-sm" href="https://wa.me/Moda" 573015285821">
+<span>Ver drops por WhatsApp</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Micro-copy de confianza -->
+<div class="flex items-center justify-center gap-1.5 pt-1 text-center">
+<span class="material-symbols-outlined text-accent-ochre text-[14px]">bolt</span>
+<p class="font-label-sm text-label-sm text-text-muted">
+            Respuesta en minutos • Catálogo exclusivo actualizado hoy
+          </p>
+</div>
+</div>
+</section>
+<!-- DIVISION RULE -->
+<div class="w-full px-margin">
+<hr class="border-t border-border-subtle"/>
+</div>
+<!-- 2. ETAPA: INTERÉS (Grid Editorial de 4 Categorías Clave) -->
+<section class="px-margin py-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col mb-space-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-accent-ochre inline-block"></span>
+<span class="font-label-sm text-label-sm text-accent-ochre uppercase font-bold tracking-widest">01 / SELECCIÓN CURADA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Prendas esenciales para tu rotación diaria
+        </h2>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">
+          Telas de gramaje pesado, caídas limpias y siluetas contemporáneas diseñadas para clima templado y noche urbana.
+        </p>
+</div>
+<!-- Grid 2x2 Móvil de Alta Moda -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Tarjeta 01: Camisetas -->
+<a class="group flex flex-col bg-surface-container-low border border-border-subtle rounded p-2 transition-colors hover:border-primary" href="https://wa.me/Moda" 573015285821">
+<div class="w-full aspect-[3/4] bg-surface-container rounded overflow-hidden relative mb-2">
+<img alt="Camisetas Heavyweight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial close-up of a minimalist heavyweight boxy fit cream t-shirt worn by a modern Latin male model against a textured sandstone wall. Clean architectural shadows, high-end textile texture visible in soft studio lighting. Muted aesthetic consistent with GQ editorial luxury menswear." src="img-36138.jpg"/>
+<span class="absolute top-2 left-2 bg-surface/90 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded border border-border-subtle">260 GSM</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-muted uppercase">01. Heavyweight &amp; Minimal</p>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-accent-ochre transition-colors">Camisetas</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Drop Semanal</p>
+</a>
+<!-- Tarjeta 02: Polos -->
+<a class="group flex flex-col bg-surface-container-low border border-border-subtle rounded p-2 transition-colors hover:border-primary" href="https://wa.me/Moda" 573015285821">
+<div class="w-full aspect-[3/4] bg-surface-container rounded overflow-hidden relative mb-2">
+<img alt="Polos Waffle Knit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Fashion catalog studio photograph of a man wearing a knit waffle-textured polo shirt in deep olive charcoal tone. Elegant lapel collar without buttons, crisp fabric drape, sophisticated styling against an ivory linen background with subtle warm side lighting." src="img-45226.jpg"/>
+<span class="absolute top-2 left-2 bg-surface/90 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded border border-border-subtle">Knit Waffle</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-muted uppercase">02. Estructura &amp; Cuello</p>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-accent-ochre transition-colors">Polos</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Drop Semanal</p>
+</a>
+<!-- Tarjeta 03: Jeans & Pantalones -->
+<a class="group flex flex-col bg-surface-container-low border border-border-subtle rounded p-2 transition-colors hover:border-primary" href="https://wa.me/Moda" 573015285821">
+<div class="w-full aspect-[3/4] bg-surface-container rounded overflow-hidden relative mb-2">
+<img alt="Jeans y Pantalones Tailored" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial full-length detail of tailored raw denim Japanese jeans and relaxed linen trousers worn with clean leather footwear by a modern man walking down a chic cobblestone path in Medellín. Warm afternoon daylight emphasizing textile drape and tailored hem." src="img-54103.jpg"/>
+<span class="absolute top-2 left-2 bg-surface/90 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded border border-border-subtle">Selvedge &amp; Lino</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-muted uppercase">03. Selvedge &amp; Chinos</p>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-accent-ochre transition-colors">Pantalones</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Drop Semanal</p>
+</a>
+<!-- Tarjeta 04: Accesorios -->
+<a class="group flex flex-col bg-surface-container-low border border-border-subtle rounded p-2 transition-colors hover:border-primary" href="https://wa.me/Moda" 573015285821">
+<div class="w-full aspect-[3/4] bg-surface-container rounded overflow-hidden relative mb-2">
+<img alt="Accesorios y Cuero Genuino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Luxury flatlay editorial photography of premium men accessories including handcrafted leather loafers, an understated dark leather cardholder, and a structural unstructured cap resting on an ivory travertine stone surface. High-contrast soft natural light." src="img-29766.jpg"/>
+<span class="absolute top-2 left-2 bg-surface/90 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded border border-border-subtle">Cuero Genuino</span>
+</div>
+<p class="font-label-sm text-label-sm text-text-muted uppercase">04. Calzado &amp; Marroquinería</p>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-accent-ochre transition-colors">Accesorios</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Drop Semanal</p>
+</a>
+</div>
+<!-- Action link to full WhatsApp lookbook -->
+<div class="mt-space-md text-center">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary border-b border-primary pb-1 hover:text-accent-ochre hover:border-accent-ochre transition-colors" href="https://wa.me/Moda" 573015285821">
+          SOLICITAR DISPONIBILIDAD DE TALLAS POR WHATSAPP →
+        </a>
+</div>
+</section>
+<!-- DIVISION RULE -->
+<div class="w-full px-margin">
+<hr class="border-t border-border-subtle"/>
+</div>
+<!-- 3. ETAPA: DESEO (Sección «Cómo Comprar» en 3 Pasos + Bandas de Credenciales) -->
+<section class="px-margin py-space-2xl bg-surface-container-low">
+<!-- Section Header -->
+<div class="mb-space-lg">
+<span class="font-label-sm text-label-sm text-accent-ochre uppercase font-bold tracking-widest block mb-1">EXPERIENCIA DE COMPRA • 02</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Tu outfit perfecto en 3 simples pasos
+        </h2>
+</div>
+<!-- Lista vertical estilo revista de alta gama -->
+<div class="flex flex-col divide-y divide-border-subtle border-y border-border-subtle mb-space-2xl">
+<!-- Paso 01 -->
+<div class="py-space-md flex gap-space-md items-start">
+<span class="font-headline-md text-headline-md text-accent-ochre font-light">01</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Escribes por WhatsApp</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Eliges lo que te gusta o le pides al asesor recomendaciones según tu estilo y ocasión. Sin bots impersonales ni fricción.
+            </p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="py-space-md flex gap-space-md items-start">
+<span class="font-headline-md text-headline-md text-accent-ochre font-light">02</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Te asesoramos con tallas y stock</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Te enviamos fotos reales, guía de medidas exacta y confirmamos disponibilidad al instante para que aciertes a la primera.
+            </p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="py-space-md flex gap-space-md items-start">
+<span class="font-headline-md text-headline-md text-accent-ochre font-light">03</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Recibe en casa en toda Colombia</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Envíos asegurados y express a Bogotá, Cali, Barranquilla, Bucaramanga y todo el país. Entrega el mismo día en Medellín.
+            </p>
+</div>
+</div>
+</div>
+<!-- Bandas de Credenciales de Alta Confianza -->
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-md bg-surface border border-border-subtle rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-accent-ochre text-[24px]">verified_user</span>
+<div>
+<h5 class="font-label-md text-label-md text-primary uppercase font-bold">Tienda Multimarca 100% Original</h5>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Marcas nacionales e importadas seleccionadas con estándares de calidad superior.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface border border-border-subtle rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-accent-ochre text-[24px]">storefront</span>
+<div>
+<h5 class="font-label-md text-label-md text-primary uppercase font-bold">Tienda Física en Medellín</h5>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Showroom en El Poblado para probarte o recoger tu pedido si estás en la ciudad.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface border border-border-subtle rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-accent-ochre text-[24px]">swap_horiz</span>
+<div>
+<h5 class="font-label-md text-label-md text-primary uppercase font-bold">Garantía Total de Talla</h5>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Si no te queda perfecta, te cambiamos la prenda sin rodeos ni costos ocultos.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface border border-border-subtle rounded flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-accent-ochre text-[24px]">local_shipping</span>
+<div>
+<h5 class="font-label-md text-label-md text-primary uppercase font-bold">Envíos Asegurados a Todo Colombia</h5>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Despachos rápidos con guía rastreable vía Coordinadora, Servientrega e Interrapidísimo.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ETAPA: ACCIÓN (Cierre de Alta Conversión con CTA Directo) -->
+<section class="px-margin py-space-2xl">
+<div class="bg-primary text-surface p-space-lg rounded border border-neutral-800 relative overflow-hidden">
+<!-- Accent corner indicator -->
+<div class="absolute top-0 right-0 w-24 h-24 bg-accent-ochre/15 blur-2xl pointer-events-none"></div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-neutral-900 border border-neutral-700 mb-space-md">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-ochre"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">STOCK LIMITADO POR DROPS</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-surface tracking-tight mb-space-sm">
+          ¿Listo para elevar tu estilo esta semana?
+        </h3>
+<p class="font-body-md text-body-md text-surface-variant mb-space-lg leading-relaxed">
+          Escríbenos directamente y recibe el lookbook interactivo con los ingresos más recientes antes de que se agoten las tallas clave.
+        </p>
+<!-- CTA Directo WhatsApp -->
+<a class="w-full bg-accent-ochre text-tertiary-container py-4 px-space-md rounded flex items-center justify-center gap-space-sm font-label-lg text-label-lg uppercase tracking-wider font-bold hover:bg-yellow-500 active:scale-[0.98] transition-all duration-150" href="https://wa.me/Moda" 573015285821">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Pedir catálogo hoy vía WhatsApp</span>
+</a>
+<!-- Micro-copy de confianza -->
+<div class="mt-space-md pt-space-sm border-t border-neutral-800 text-center">
+<p class="font-label-sm text-label-sm text-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-accent-ochre">check_circle</span>
+<span>Respuesta en menos de 3 min • Asesoría personalizada • Sin spam</span>
+</p>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Exact Implementation) -->
+<footer class="w-full px-margin py-space-xl pb-28 flex flex-col gap-space-md text-center bg-surface-container-high dark:bg-surface-container-lowest border-t border-border-subtle dark:border-outline-variant">
+<div>
+<span class="font-headline-md text-headline-md tracking-wider text-primary dark:text-inverse-primary block mb-1">TRHM</span>
+<p class="font-body-sm text-body-sm text-text-muted dark:text-surface-variant max-w-sm mx-auto">
+        Moda masculina curada en Medellín para quienes comprenden que la presencia es una declaración silenciosa.
+      </p>
+</div>
+<!-- Navigation links from JSON -->
+<div class="flex flex-wrap justify-center gap-x-space-md gap-y-2 pt-2">
+<a class="font-label-sm text-label-sm text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150" href="https://wa.me/Moda" 573015285821">
+        Showroom El Poblado
+      </a>
+<span class="text-text-muted">•</span>
+<a class="font-label-sm text-label-sm text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150" href="https://wa.me/Moda" 573015285821">
+        Env\u00edos Nacionales
+      </a>
+<span class="text-text-muted">•</span>
+<a class="font-label-sm text-label-sm text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150" href="https://wa.me/Moda" 573015285821">
+        T\u00e9rminos y Privacidad
+      </a>
+<span class="text-text-muted">•</span>
+<a class="font-label-sm text-label-sm text-primary dark:text-inverse-primary hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150" href="https://wa.me/Moda" 573015285821">
+        Atenci\u00f3n al Cliente
+      </a>
+</div>
+<!-- Copyright Text from JSON -->
+<p class="font-body-sm text-body-sm text-text-muted dark:text-surface-variant pt-2 border-t border-border-subtle dark:border-outline-variant">
+      © 2024 TRHM Medellín — NIT: 901.482.319-1. Vía Primavera, El Poblado, Medellín, Colombia. Envíos asegurados a todo el territorio nacional.
+    </p>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component Exact Implementation for Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-2 pb-safe bg-surface-container dark:bg-inverse-surface border-t border-border-subtle dark:border-outline-variant">
+<!-- Item 1: Colecciones (Inactive) -->
+<a class="flex flex-col items-center justify-center text-text-muted dark:text-surface-variant py-2 px-3 gap-1 hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95" href="#drops">
+<span class="material-symbols-outlined text-[20px]">style</span>
+<span class="font-label-md text-label-md">Colecciones</span>
+</a>
+<!-- Item 2: WhatsApp Directo (Active - Landing Primary Goal) -->
+<a class="flex flex-col items-center justify-center bg-primary text-surface dark:bg-inverse-primary dark:text-primary-container rounded py-2 px-3 gap-1 hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95 shadow-sm" href="https://wa.me/Moda" 573015285821">
+<div class="relative">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+<!-- Micro online status pulse indicator -->
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-emerald-500 rounded-full"></span>
+</div>
+<span class="font-label-md text-label-md font-bold">WhatsApp Directo</span>
+</a>
+<!-- Item 3: Showroom (Inactive) -->
+<a class="flex flex-col items-center justify-center text-text-muted dark:text-surface-variant py-2 px-3 gap-1 hover:text-accent-ochre dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95" href="https://wa.me/Moda" 573015285821">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+<span class="font-label-md text-label-md">Showroom</span>
+</a>
+</nav>
+<img src="https://handles-shaw-performer-shorts.trycloudflare.com/api/t/tienda-ropa-hombre-medellin" width="1" height="1" style="display:none" alt="">
+</body></html>

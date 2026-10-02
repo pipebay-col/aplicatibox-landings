@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spa Buena Vista | Bienestar Integral &amp; Estética Avanzada</title>
+<!-- Material Symbols Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Editorial Serif and Precision Sans Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#008378",
+            "surface-container": "#efeeeb",
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "outline": "#6d7a77",
+            "secondary-container": "#cbebc8",
+            "surface-variant": "#e3e2e0",
+            "inverse-on-surface": "#f2f1ee",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#001f23",
+            "outline-variant": "#bcc9c6",
+            "surface": "#faf9f6",
+            "surface-dim": "#dbdad7",
+            "on-secondary": "#ffffff",
+            "on-tertiary-container": "#f6feff",
+            "surface-bright": "#faf9f6",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#4a654a",
+            "error-container": "#ffdad6",
+            "tertiary-container": "#00818d",
+            "on-surface-variant": "#3d4947",
+            "surface-tint": "#006a61",
+            "background": "#faf9f6",
+            "on-primary-container": "#f4fffc",
+            "on-background": "#1a1c1a",
+            "on-surface": "#1a1c1a",
+            "inverse-surface": "#2f312f",
+            "surface-container-high": "#e9e8e5",
+            "on-primary-fixed": "#00201d",
+            "secondary-fixed": "#cbebc8",
+            "secondary-fixed-dim": "#b0cfad",
+            "on-tertiary-fixed-variant": "#004f56",
+            "primary": "#00685f",
+            "primary-fixed": "#89f5e7",
+            "on-secondary-fixed": "#07200b",
+            "primary-fixed-dim": "#6bd8cb",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#005049",
+            "tertiary": "#006670",
+            "tertiary-fixed-dim": "#75d5e2",
+            "surface-container-highest": "#e3e2e0",
+            "inverse-primary": "#6bd8cb",
+            "on-secondary-fixed-variant": "#324d34",
+            "on-secondary-container": "#4f6b4f",
+            "tertiary-fixed": "#92f1fe",
+            "surface-container-low": "#f4f3f1",
+            "on-error-container": "#93000a"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "space-sm": "0.75rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    .shadow-luxury {
+      box-shadow: 0 16px 36px -12px rgba(30, 43, 42, 0.07), 0 3px 8px -2px rgba(0, 104, 95, 0.04);
+    }
+    .shadow-glow {
+      box-shadow: 0 20px 40px -10px rgba(0, 104, 95, 0.28);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen flex flex-col font-body-md text-body-md">
+<!-- ================= TOP APP BAR (Shared Component Source of Truth) ================= -->
+<header class="docked full-width top-0 sticky z-40 bg-surface/85 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-gutter-mobile max-w-7xl mx-auto h-16">
+<!-- Brand & Leading Icon -->
+<a class="flex items-center gap-2 group active:scale-95 transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary tracking-tight">Spa Buena Vista</span>
+</a>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150" href="#agendar">
+          Agendar
+        </a>
+<a aria-label="WhatsApp" class="flex sm:hidden items-center justify-center w-10 h-10 rounded-full bg-surface-container-high text-primary hover:bg-surface-variant transition-colors duration-200" href="https://wa.me/573183436309" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= MAIN CONTENT (AIDA FUNNEL) ================= -->
+<main class="flex-1 w-full max-w-lg md:max-w-4xl mx-auto px-margin-mobile py-4 space-y-space-xl">
+<!-- 1. A - ATENCIÓN: HERO SECTION -->
+<section class="pt-2 text-center flex flex-col items-center" id="hero">
+<!-- Real Credential Pill Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-primary/10 shadow-sm mb-4">
+<span class="text-primary font-bold text-xs">✦</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Spa Boutique &amp; Bienestar Integral · Colombia · Protocolos Certificados</span>
+</div>
+<!-- Headline H1 (Attention Grabber in 3 Seconds) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile sm:font-headline-lg sm:text-headline-lg text-on-surface font-semibold tracking-tight leading-tight max-w-xl">
+        Renueva tu cuerpo, <span class="italic font-normal text-primary">reconecta</span> con tu bienestar más profundo
+      </h1>
+<!-- Specific Result Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 max-w-md mx-auto text-balance">
+        Tratamientos corporales, faciales botánicos y rituales de relajación profunda diseñados a la medida de tu fisonomía para desconectar del estrés y revitalizar tu piel.
+      </p>
+<!-- Hero Visual Card with High Aesthetics -->
+<div class="relative w-full mt-6 rounded-3xl overflow-hidden shadow-luxury border border-outline-variant/30 group">
+<img alt="Experiencia Signature Spa Buena Vista" class="w-full aspect-[4/3] object-cover object-center transform group-hover:scale-102 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaOZh-ZV-hD_yqITqvHuhqYw1O45WshYqAJD2UAPHtmcV8Bv1Kieyxc3OFstLm7lox36F94eHvy5kel6OLMdRGB90g0BuUj-bgKkBvvhBqE0dLHqkO9PMCejLxw6pcErKQuiVxWnClR4vbS-QPbMyurD8_dOuVCBNTthdDzlsPF_K-jBBD-zSKd4ONFo05G1aOEOuT0l-9kg4f4UIC4K_JKWxkiddymM2Ail8FScUp57480i3-aHxyab3wGIRXztB5PwktQYcBbUw"/>
+<!-- Ambient Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Overlaid Translucent Signature Badge -->
+<div class="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-auto flex items-center gap-2 bg-surface/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/60 shadow-sm text-left">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Experiencia Signature Buena Vista</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-3">100% Personalizado · Cabinas Térmicas</p>
+</div>
+</div>
+</div>
+<!-- Primary High-Conversion Tactile CTA -->
+<div class="w-full mt-6 flex flex-col items-center">
+<a class="w-full max-w-md py-4 px-8 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-glow hover:bg-primary-container active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 text-center group" href="#agendar">
+<span>Agendar ahora</span>
+<span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-Credentials Under CTA -->
+<div class="flex flex-wrap justify-center items-center gap-y-1 gap-x-3 mt-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+            Respuesta en menos de 24 horas
+          </span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+            Diagnóstico personalizado sin costo adicional
+          </span>
+</div>
+</div>
+<!-- Mini Grid of 3 Trust Seals -->
+<div class="grid grid-cols-3 gap-2 sm:gap-4 w-full mt-8 pt-6 border-t border-outline-variant/30">
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/20 flex flex-col items-center text-center shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-1.5">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Protocolos Seguros</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">Norma Sanitaria</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/20 flex flex-col items-center text-center shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-secondary mb-1.5">
+<span class="material-symbols-outlined text-xl" data-icon="award_star">award_star</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Terapeutas Certificadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">+8 Años Experiencia</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/20 flex flex-col items-center text-center shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-1.5">
+<span class="material-symbols-outlined text-xl" data-icon="meeting_room">meeting_room</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cabinas Privadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] mt-0.5">Aislamiento Acústico</span>
+</div>
+</div>
+</section>
+<!-- 2. I - INTERÉS: PROBLEMA & PROCESO EN 3 PASOS -->
+<section class="space-y-6 pt-4" id="proceso">
+<!-- Empathy / Problem Section -->
+<div class="bg-surface-container-low rounded-3xl p-6 sm:p-8 border border-outline-variant/40 text-left relative overflow-hidden">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base" data-icon="vital_signs">vital_signs</span>
+<span>Escucha a tu cuerpo</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+          ¿El estrés, la rutina o la falta de descanso están pasando factura a tu piel y energía?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+          Las cargas laborales en Colombia, las horas prolongadas frente a pantallas y la tensión constante suelen acumularse en tu espalda, cuello y articulaciones. Con el tiempo, esa sobrecarga se traduce en fatiga muscular crónica, insomnio y una piel opaca desprovista de su brillo natural.
+        </p>
+<!-- Sanctuary Quote Card -->
+<div class="mt-6 bg-surface-container-lowest p-5 rounded-2xl border border-primary/15 flex items-start gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5 shrink-0" data-icon="self_improvement">self_improvement</span>
+<p class="font-headline-sm text-headline-sm italic text-on-surface font-normal text-[17px] leading-snug">
+            “En Spa Buena Vista creamos un refugio donde cada minuto está dedicado exclusivamente a tu renovación física y mental.”
+          </p>
+</div>
+</div>
+<!-- 3-Step Methodology Section -->
+<div class="pt-4">
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Nuestra Metodología</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">El proceso hacia tu estado de plenitud</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tres momentos sincronizados con tu ritmo vital</p>
+</div>
+<div class="space-y-3.5">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-3xl p-5 border border-outline-variant/30 flex items-start gap-4 shadow-sm hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low text-primary flex items-center justify-center font-headline-sm font-semibold shrink-0">
+              01
+            </div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm text-[18px] text-on-surface font-semibold">Valoración y Escucha Personalizada</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong class="text-primary font-medium">Beneficio:</strong> Cero tratamientos genéricos. Analizamos tus puntos clave de dolor, grado de tensión muscular y tipología dérmica antes de iniciar.
+              </p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-3xl p-5 border border-outline-variant/30 flex items-start gap-4 shadow-sm hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/70 text-secondary flex items-center justify-center font-headline-sm font-semibold shrink-0">
+              02
+            </div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm text-[18px] text-on-surface font-semibold">Plan y Ritual a tu Medida</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong class="text-secondary font-medium">Beneficio:</strong> Aplicamos aceites esenciales botánicos puros, termoterapia y maniobras descontracturantes o aparatología suave dermoestética no invasiva.
+              </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-3xl p-5 border border-outline-variant/30 flex items-start gap-4 shadow-sm hover:border-primary/30 transition-colors">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low text-tertiary flex items-center justify-center font-headline-sm font-semibold shrink-0">
+              03
+            </div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm text-[18px] text-on-surface font-semibold">Renovación Visible y Duradera</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong class="text-tertiary font-medium">Beneficio:</strong> Percibes ligereza muscular inmediata, movilidad articular fluida y una piel radiante que mantiene su confort por días.
+              </p>
+</div>
+</div>
+</div>
+<!-- WhatsApp Support Link -->
+<div class="text-center mt-5">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container active:scale-95 transition-all" href="https://wa.me/573183436309?text=Hola%20Spa%20Buena%20Vista,%20deseo%20asesor%C3%ADa%20personalizada%20sobre%20sus%20rituales" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="forum">forum</span>
+<span>¿Tienes dudas sobre qué ritual elegir? Consúltanos vía WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. D - DESEO: MÉTRICAS, BENEFICIOS DE RESULTADO Y TESTIMONIOS -->
+<section class="space-y-8 pt-4" id="resultados">
+<!-- Metrics Bento -->
+<div>
+<div class="text-center mb-5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Respaldo y Excelencia</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Cifras que confirman tu bienestar</h3>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 text-center shadow-sm flex flex-col justify-center">
+<span class="font-headline-lg text-headline-lg font-semibold text-primary leading-none">+8</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 font-semibold">Años de Trayectoria</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Excelencia clínica en Colombia</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 text-center shadow-sm flex flex-col justify-center">
+<span class="font-headline-lg text-headline-lg font-semibold text-primary leading-none">+5.200</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 font-semibold">Clientes Satisfechos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Terapias personalizadas</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 text-center shadow-sm flex flex-col justify-center">
+<div class="flex items-center justify-center gap-1 text-primary">
+<span class="font-headline-lg text-headline-lg font-semibold leading-none">4.9</span>
+<span class="material-symbols-outlined text-2xl material-symbols-fill text-amber-500" data-icon="star">star</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 font-semibold">Calificación en Servicio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Reseñas verificadas</span>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 text-center shadow-sm flex flex-col justify-center">
+<span class="font-headline-lg text-headline-lg font-semibold text-primary leading-none">100%</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-1 font-semibold">Insumos Certificados</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Registro Sanitario Invima</span>
+</div>
+</div>
+</div>
+<!-- 4 Tangible Benefits Focused on Results -->
+<div class="bg-surface-container-low rounded-3xl p-6 sm:p-8 border border-outline-variant/30">
+<div class="text-left mb-5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Efecto Inmediato</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Transformación desde la primera sesión</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="flare">flare</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Alivio de contracturas y tensión muscular</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Liberación focalizada en cervicales, trapecios y lumbares con calor terapéutico.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Piel luminosa, hidratada y revitalizada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Nutrición botánica intensiva con sueros de alta biodisponibilidad cutánea.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="psychology">psychology</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Desconexión mental y reducción del estrés</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Entorno insonorizado que aquieta el sistema nervioso y combate el agotamiento mental.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Experiencia sensorial en cabinas privadas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aromaterapia seleccionada a temperatura ideal con toallas de algodón orgánico.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials Section -->
+<div>
+<div class="text-center mb-5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Voz de Nuestra Comunidad</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Historias de renovación genuina</h3>
+</div>
+<div class="space-y-4">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center justify-between mb-2">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Verificada</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              “Llegué con un nudo insoportable en la espalda tras semanas de cierres contables. El masaje descontracturante combinado con la aromaterapia me devolvió la energía. Salí flotando.”
+            </p>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Camila Echeverri</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Medellín, Colombia · Ritual Anti-Estrés</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified_user">verified_user</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center justify-between mb-2">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill" data-icon="star">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded-full">Verificada</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              “El facial glow superó mis expectativas. Mi piel suele irritarse con facilidad y aquí usaron productos botánicos súper gentiles. Se me ve luminosa sin necesidad de maquillaje.”
+            </p>
+<div class="mt-3 pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Valeria Jaramillo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Bogotá / Buena Vista · Facial Botánico Glow</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified_user">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. A - ACCIÓN: FORMULARIO MINIMALISTA & WHATSAPP DIRECTO -->
+<section class="pt-4" id="agendar">
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 border border-primary/20 shadow-luxury relative overflow-hidden">
+<!-- Subtle Top Glow Gradient -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Limited Capacity Pill Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold mb-3">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span>Cupos limitados por agenda personalizada esta semana</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+          Empieza hoy tu ritual de bienestar
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Diligencia tus datos para recibir asesoría inmediata y reservar tu espacio exclusivo en Spa Buena Vista.
+        </p>
+<!-- Minimalist Form -->
+<form class="mt-6 space-y-4 text-left" id="booking-form" onsubmit="event.preventDefault(); document.getElementById('confirmation-msg').classList.remove('hidden');">
+<!-- Field 1: Nombre completo -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1.5" for="full-name">
+              Nombre completo
+            </label>
+<div class="relative">
+<input class="w-full rounded-2xl border-outline-variant bg-surface-container-low px-4 py-3.5 text-on-surface font-body-md text-body-md focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="full-name" placeholder="Ej. Mariana Restrepo" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-outline text-xl" data-icon="person">person</span>
+</div>
+</div>
+<!-- Field 2: WhatsApp / Celular con Prefijo +57 -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1.5" for="phone-number">
+              WhatsApp o celular
+            </label>
+<div class="flex rounded-2xl border border-outline-variant bg-surface-container-low overflow-hidden focus-within:border-primary focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="inline-flex items-center gap-1 px-3.5 bg-surface-container text-on-surface-variant font-label-md text-label-md border-r border-outline-variant/60">
+                🇨🇴 +57
+              </span>
+<input class="w-full bg-transparent px-4 py-3.5 text-on-surface font-body-md text-body-md border-none focus:ring-0 outline-none" id="phone-number" pattern="[0-9]{10}" placeholder="318 343 6309" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Selector de Experiencia -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1.5" for="experience-type">
+              ¿Qué experiencia te interesa?
+            </label>
+<div class="relative">
+<select class="w-full rounded-2xl border-outline-variant bg-surface-container-low px-4 py-3.5 text-on-surface font-body-md text-body-md focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all appearance-none outline-none pr-10" id="experience-type" required="">
+<option disabled="" selected="" value="">Selecciona tu ritual preferido</option>
+<option value="masaje-relajante">Masaje Relajante &amp; Descontracturante</option>
+<option value="facial-glow">Ritual Facial Glow</option>
+<option value="circuito-hidrotermal">Circuito Hidrotermal &amp; Spa</option>
+<option value="ritual-pareja">Ritual en Pareja</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-3.5 text-outline text-xl pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Main Conversion Button -->
+<button class="w-full py-4 px-6 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-glow hover:bg-primary-container active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 mt-2 cursor-pointer" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Dynamic Confirmation Notice -->
+<div class="hidden mt-4 p-4 rounded-2xl bg-secondary-container/80 text-on-secondary-container font-body-sm text-body-sm text-center" id="confirmation-msg">
+          ¡Gracias! Tu solicitud ha sido radicada. Te escribiremos por WhatsApp en breve con los horarios disponibles.
+        </div>
+<!-- Divider with OR text -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/40"></div></div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline-variant uppercase">o atención inmediata</span>
+</div>
+<!-- Direct WhatsApp Action Button -->
+<a class="w-full py-3.5 px-6 rounded-full border-2 border-primary text-primary hover:bg-primary/5 active:scale-95 transition-all duration-200 font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2.5" href="https://wa.me/573183436309?text=Hola%20Spa%20Buena%20Vista,%20quiero%20agendar%20mi%20cita%20de%20bienestar" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear al WhatsApp (+57 318 343 6309)</span>
+</a>
+<!-- Privacy & Anti-Spam Microcopy -->
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant/80 text-center mt-5">
+          Tus datos están protegidos bajo secreto profesional y Ley 1581 de protección de datos. Cero spam.
+        </p>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ INTERACTIVO) -->
+<section class="pt-4 pb-6">
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Claridad Total</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Preguntas Frecuentes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resolvemos tus inquietudes para una estadía perfecta</p>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- Accordion Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-4.5 text-left font-label-lg text-label-lg text-on-surface font-semibold flex justify-between items-center gap-3 transition-colors hover:text-primary cursor-pointer" onclick="toggleFaq(this)" type="button">
+<span>¿Cuánto dura cada sesión en Spa Buena Vista?</span>
+<span class="material-symbols-outlined text-primary text-xl transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4.5 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-3">
+            Nuestros rituales tienen una duración entre 60 y 120 minutos, según el paquete elegido. Recomendamos llegar 15 minutos antes para disfrutar de una infusión herbal de bienvenida y completar tu ficha de confort.
+          </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-4.5 text-left font-label-lg text-label-lg text-on-surface font-semibold flex justify-between items-center gap-3 transition-colors hover:text-primary cursor-pointer" onclick="toggleFaq(this)" type="button">
+<span>¿Con cuánta anticipación debo reservar mi cita?</span>
+<span class="material-symbols-outlined text-primary text-xl transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4.5 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-3">
+            Para garantizar tu cabina privada y terapeuta preferida, sugerimos reservar con 24 a 48 horas de anticipación. Para fines de semana o rituales en pareja, recomendamos agendar con 3 a 5 días de anticipación.
+          </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-4.5 text-left font-label-lg text-label-lg text-on-surface font-semibold flex justify-between items-center gap-3 transition-colors hover:text-primary cursor-pointer" onclick="toggleFaq(this)" type="button">
+<span>¿Tienen opciones de gift cards o paquetes especiales?</span>
+<span class="material-symbols-outlined text-primary text-xl transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4.5 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-3">
+            Sí. Disponemos de elegantes tarjetas de regalo digitales y físicas personalizadas para aniversarios, cumpleaños o regalos corporativos de bienestar, con validez de 6 meses.
+          </div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm">
+<button class="w-full p-4.5 text-left font-label-lg text-label-lg text-on-surface font-semibold flex justify-between items-center gap-3 transition-colors hover:text-primary cursor-pointer" onclick="toggleFaq(this)" type="button">
+<span>¿Qué protocolos de higiene y bioseguridad manejan?</span>
+<span class="material-symbols-outlined text-primary text-xl transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4.5 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-3">
+            Cumplimos rigurosamente los estándares habilitados por la Secretaría de Salud de Colombia. Cada cabina se esteriliza entre sesiones con luz UV y desinfectantes hospitalarios biodegradables; además, usamos lencería clínica desechable de un solo uso.
+          </div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Source of Truth) ================= -->
+<footer class="w-full block pb-24 bg-surface-container-low dark:bg-surface-container-highest">
+<div class="flex flex-col items-center text-center w-full px-margin-mobile py-space-lg gap-4 max-w-7xl mx-auto">
+<!-- Brand Logo / Headline -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm font-semibold text-primary dark:text-inverse-primary tracking-tight">Spa Buena Vista</span>
+</div>
+<!-- Compliance Statement -->
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xl">
+        © 2024 Spa Buena Vista S.A.S. Vigilado y Habilitado por Secretaría de Salud de Colombia. Todos los derechos reservados.
+      </p>
+<!-- Legal Links with Exact Casing from JSON -->
+<div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#registro">Registro Sanitario Invima</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#privacidad">Políticas de Privacidad</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#terminos">Términos del Servicio</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#consentimiento">Consentimiento Informado</a>
+</div>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Source of Truth) ================= -->
+<!-- Contextual Destination Rule: Rendered on mobile, hidden on desktop -->
+<nav aria-label="Navegación principal" class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 bg-surface/90 backdrop-blur-lg shadow-lg dark:shadow-none safe-bottom">
+<!-- Item 1: Rituales (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="#hero">
+<span class="material-symbols-outlined text-2xl" data-icon="self_improvement">self_improvement</span>
+<span class="text-label-sm font-label-sm mt-0.5">Rituales</span>
+</a>
+<!-- Item 2: Proceso (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-2xl" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Resultados (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="#resultados">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+<span class="text-label-sm font-label-sm mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active Target based on Funnel Conversion Intent) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95 shadow-sm" href="#agendar">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+<!-- Interactive Script for FAQ Accordions -->
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close other accordion items
+      document.querySelectorAll('#faq-accordion .px-4\\.5.pb-4').forEach(item => item.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion button .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/spa-buena-vista" width="1" height="1" style="display:none" alt="">
+</body></html>

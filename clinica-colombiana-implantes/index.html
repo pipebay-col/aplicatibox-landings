@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Clínica Colombiana de Implantes Dentales | Implantología de Precisión</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "secondary": "#46645e",
+            "inverse-surface": "#2f312f",
+            "error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#ecbf7c",
+            "surface-container-low": "#f4f3f1",
+            "secondary-fixed-dim": "#accdc5",
+            "tertiary-container": "#926e33",
+            "on-secondary-fixed": "#00201c",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#74d7c8",
+            "tertiary": "#77561d",
+            "secondary-fixed": "#c8eae1",
+            "on-tertiary-container": "#fffbff",
+            "surface-dim": "#dbdad7",
+            "outline-variant": "#bdc9c6",
+            "surface-container-high": "#e9e8e5",
+            "on-secondary-container": "#4c6a64",
+            "inverse-on-surface": "#f2f1ee",
+            "on-primary-fixed-variant": "#005048",
+            "surface-container": "#efeeeb",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#00201c",
+            "surface": "#faf9f6",
+            "outline": "#6e7a77",
+            "surface-variant": "#e3e2e0",
+            "primary-container": "#008376",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1a1c1a",
+            "on-secondary-fixed-variant": "#2e4c46",
+            "surface-tint": "#006b60",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "on-primary-container": "#f2fffb",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#ffddae",
+            "primary": "#00685d",
+            "surface-container-highest": "#e3e2e0",
+            "background": "#faf9f6",
+            "on-tertiary-fixed-variant": "#5f4108",
+            "secondary-container": "#c8eae1",
+            "on-background": "#1a1c1a",
+            "surface-bright": "#faf9f6",
+            "inverse-primary": "#74d7c8",
+            "primary-fixed": "#91f4e4",
+            "on-tertiary-fixed": "#281800",
+            "on-surface-variant": "#3e4947"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+            "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "title-md": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+            "title-lg": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Ambient glow & smooth styling */
+    .hero-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(0, 131, 118, 0.08) 0%, rgba(250, 249, 246, 0) 70%);
+    }
+    .safe-area-pb {
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TOP APP BAR (Shared Component Exact Specification) -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md text-primary dark:text-inverse-primary docked full-width top-0 shadow-sm dark:shadow-none fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter-mobile h-16 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="dentistry">dentistry</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold tracking-tight">Clínica Colombiana de Implantes</span>
+</div>
+<a class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg shadow-sm hover:opacity-90 active:scale-95 transition-transform duration-150" href="#formulario-agendar">
+      Agendar
+    </a>
+</header>
+<!-- MAIN VIEWPORT CONTAINER (Mobile First 390px centered canvas) -->
+<main class="w-full max-w-[440px] mx-auto pt-20 pb-20 px-4 flex flex-col gap-12 overflow-x-hidden hero-glow">
+<!-- 1. SECCIÓN A: ATENCIÓN (HERO SECTION) -->
+<section class="flex flex-col items-center text-center pt-2">
+<!-- Micro-badge de acreditación oficial -->
+<div class="inline-flex items-center gap-2 bg-primary-container/10 border border-primary/20 rounded-full px-3.5 py-1.5 mb-5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-primary font-label-sm text-label-sm tracking-wide">Habilitación Seccional MinSalud · Odontología e Implantes de Precisión</span>
+</div>
+<!-- H1 Impacto Emocional + Precisión -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mb-4">
+        Tu nueva sonrisa fija, <span class="italic font-normal text-primary">natural y definitiva</span> en Colombia
+      </h1>
+<!-- Subtítulo de Resultado Concreto -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-1">
+        Implantes dentales guiados por computador y diseño de sonrisa en cerámica pura. Recupera la fuerza al masticar y la seguridad de reír sin dolor ni prótesis flojas.
+      </p>
+<!-- Retrato Editorial de Alta Resolución del Resultado -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 mb-6 bg-surface-container-lowest">
+<img class="w-full h-80 object-cover object-center" data-alt="Editorial portrait of an elegant and joyful adult patient showcasing a radiant, natural dental implant smile restoration. The subject sits in an ultra-luxurious, serene modern dental clinic lounge with expansive sunlit glass windows overlooking lush greenery. The lighting is pristine, high-key warm daylight reflecting subtle ivory and emerald teal accents, emphasizing psychological serenity, premium clinical dentistry, and life-changing health confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk84lp-8Lrz6X0I149-42zKywBHwmJZjlYMgmnYZcksY3d_IqtwyrUS_4Dnft1iOt1zi0Y_BsnF7umKNQiW1VyimDIjgvzQtNbV7rtaiXWSNZYQVhAmLGWNn1_Ybr1biGY8PD2QXi8V_7ZD68v2Z47CGtK1bobB3ZAELI5EYaXDXDBBnIkA9GINEtbSzwkpSavrzIBRAhBaRi-t97DEVlLpkxynTnnDN2hjnoq9PT1H0w1Re7Fx2RYoJcC_vLtnj_4iwN7E54hh1E"/>
+<!-- Tarjeta Flotante Verificada -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/40 rounded-xl p-3 shadow-md flex items-center gap-3 text-left">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface leading-tight">Resultado Clínico Garantizado</div>
+<div class="font-label-sm text-label-sm text-secondary">100% Cerámica &amp; Titanio Grado Médico</div>
+</div>
+</div>
+</div>
+<!-- CTA Principal Único con Scroll Suave -->
+<div class="w-full flex flex-col items-center gap-3">
+<a class="w-full min-h-[54px] bg-primary-container hover:bg-primary text-on-primary flex items-center justify-center gap-2 rounded-xl font-title-md text-title-md shadow-md active:scale-95 transition-all duration-200" href="#formulario-agendar">
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-credenciales bajo el botón -->
+<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-label-sm text-label-sm text-on-surface-variant/90">
+<span class="flex items-center gap-1"><span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas</span>
+<span class="flex items-center gap-1"><span class="text-primary font-bold">✓</span> Valoración personalizada</span>
+<span class="flex items-center gap-1"><span class="text-primary font-bold">✓</span> Sin compromiso</span>
+</div>
+</div>
+<!-- 3 Badges de Confianza en Píldoras -->
+<div class="grid grid-cols-3 gap-2 w-full mt-6 pt-4 border-t border-outline-variant/20">
+<div class="bg-surface-container-low rounded-xl p-2.5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface">Tecnología Guiada 3D</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface">Preservación Biológica</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface">Sede El Poblado / Bogotá</span>
+</div>
+</div>
+</section>
+<!-- 2. SECCIÓN I: INTERÉS (EMPATÍA CON EL PROBLEMA + METODOLOGÍA) -->
+<section class="flex flex-col gap-6">
+<!-- Bloque "¿Te identificas?" -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 shadow-sm">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-base" data-icon="psychology">psychology</span>
+<span>¿Te identificas con esto?</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3">
+          El miedo al dolor y a los costos ocultos no debería frenar tu bienestar.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+          ¿Temes que un implante sea doloroso, se vea postizo o los presupuestos ocultos te sorprendan? Muchos pacientes postergan su tratamiento por miedo a cirugías agresivas o prótesis incómodas. En <strong class="text-on-surface font-semibold">Clínica Colombiana de Implantes</strong> diseñamos con cirugía guiada 3D mínimamente invasiva: exacta, sin dolor innecesario y con estética biológica idéntica al diente natural.
+        </p>
+<div class="p-3 bg-secondary-container/40 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="biotechnology">chips</span>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">
+            Planificación micro-quirúrgica previa en computador antes de tocar un solo milímetro de tejido.
+          </p>
+</div>
+</div>
+<!-- Proceso Metodológico Claro en 3 Pasos -->
+<div class="flex flex-col gap-4">
+<div class="text-center">
+<span class="text-primary font-label-sm text-label-sm uppercase tracking-widest">Protocolo de Precisión</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Tu tratamiento en 3 pasos transparentes</h3>
+</div>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 relative shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<span class="font-display-lg-mobile text-3xl font-bold text-primary/30">01</span>
+<span class="bg-secondary-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full">Diagnóstico 3D</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Valoración y Tomografía 3D</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Diagnóstico milimétrico con escáner intraoral 3D sin pastas molestas. Conoces la densidad ósea y ves la simulación de tu sonrisa antes de comenzar.
+          </p>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 relative shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<span class="font-display-lg-mobile text-3xl font-bold text-primary/30">02</span>
+<span class="bg-secondary-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full">Cero Sorpresas</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Plan Quirúrgico Personalizado</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Cronograma claro y presupuesto cerrado sin cargos sorpresa de última hora. Selección de materiales biocompatibles de grado suizo/alemán.
+          </p>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 relative shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<span class="font-display-lg-mobile text-3xl font-bold text-primary/30">03</span>
+<span class="bg-secondary-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full">Rehabilitación</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Sonrisa Fija y Resultado Definitivo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Colocación guiada indolora y corona estética con anatomía y color perfectamente adaptados a tu rostro.
+          </p>
+</div>
+<!-- Micro-enlace de Soporte WhatsApp -->
+<a class="flex items-center justify-center gap-2 p-3 text-secondary font-title-md text-title-md hover:text-primary transition-colors text-center" href="https://wa.me/573166900299?text=Hola,%20quisiera%20consultar%20dudas%20sobre%20mi%20caso%20de%20implantes" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="forum">forum</span>
+<span class="underline underline-offset-4 decoration-tertiary-container/50">¿Tienes dudas sobre tu caso? Consulta a nuestro equipo en WhatsApp</span>
+</a>
+</div>
+</section>
+<!-- 3. SECCIÓN D: DESEO (MÉTRICAS, BENEFICIOS Y PRUEBA SOCIAL) -->
+<section class="flex flex-col gap-8">
+<!-- Rejilla de Métricas de Autoridad -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-1">+15 Años</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">de trayectoria quirúrgica</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-1">+6.200</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">implantes y sonrisas fijas</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-1">99.4%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">de éxito clínico comprobado</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-1">100%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">certificados INVIMA</div>
+</div>
+</div>
+<!-- 4 Beneficios Clave Enfocados en el Estilo de Vida -->
+<div class="flex flex-col gap-3">
+<div class="text-left mb-2">
+<span class="text-primary font-label-sm text-label-sm uppercase tracking-wider">Beneficios Transformadores</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cómo cambiará tu día a día</h3>
+</div>
+<!-- Beneficio 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Masticación con fuerza natural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Vuelve a disfrutar carnes, manzanas y tus platos favoritos sin inseguridad ni molestias.
+            </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Estética idéntica a tus dientes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dientes con translucidez biológica y textura personalizada que nadie notará que son implantes.
+            </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="healing">healing</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Procedimiento guiado sin dolor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Anestesia computarizada y técnicas microscópicas de recuperación rápida y confortable.
+            </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Acompañamiento clínico integral</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Controles postoperatorios programados y garantía escrita sobre tus tratamientos.
+            </p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historias de éxito</h3>
+<div class="flex items-center text-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 shadow-sm flex flex-col gap-3">
+<div class="flex text-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+            "Llevaba 3 años tapándome la boca al reír. El equipo me devolvió la tranquilidad en una sola cita de colocación. Cero dolor y el trato fue de primer nivel."
+          </p>
+<div class="flex items-center gap-3 pt-2 border-t border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-label-md">CM</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Carlos Mendoza</div>
+<div class="font-label-sm text-label-sm text-secondary">Paciente de Implantes en Medellín</div>
+</div>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 shadow-sm flex flex-col gap-3">
+<div class="flex text-tertiary-container gap-0.5">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+            "La precisión 3D me dio total certeza. El resultado quedó tan natural que ni mi familia notó dónde estaba la corona."
+          </p>
+<div class="flex items-center gap-3 pt-2 border-t border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-label-md">CR</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Dra. Claudia Restrepo</div>
+<div class="font-label-sm text-label-sm text-secondary">Medellín</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SECCIÓN A: ACCIÓN (FORMULARIO CONVERSIÓN + WHATSAPP DIRECTO) -->
+<section class="bg-surface-container-lowest border border-outline-variant/40 rounded-3xl p-6 shadow-xl scroll-mt-20" id="formulario-agendar">
+<!-- Banner de Urgencia Real -->
+<div class="bg-secondary-container/50 border border-secondary-fixed rounded-xl p-3 text-center mb-6">
+<span class="material-symbols-outlined text-primary text-sm align-middle mr-1" data-icon="event_available">event_available</span>
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">Cupos de valoración médica prioritaria para esta semana en Colombia</span>
+</div>
+<div class="text-center mb-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Inicia hoy tu transformación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completa tus datos y nuestro director clínico se pondrá en contacto contigo.</p>
+</div>
+<!-- Formulario Minimalista de 3 Campos -->
+<form class="flex flex-col gap-4" id="dental-lead-form" onsubmit="event.preventDefault(); document.getElementById('confirmation-msg').classList.remove('hidden');">
+<!-- Campo 1: Nombre -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-title-md text-title-md text-on-surface">Nombre completo</label>
+<input class="w-full bg-white border border-outline-variant/60 rounded-xl px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline/50 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="Ej. Andrés Valencia" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp / Teléfono -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-title-md text-title-md text-on-surface">WhatsApp o Celular</label>
+<div class="flex gap-2">
+<div class="bg-surface-container border border-outline-variant/60 rounded-xl px-3 flex items-center justify-center font-label-md text-on-surface">
+              🇨🇴 +57
+            </div>
+<input class="w-full bg-white border border-outline-variant/60 rounded-xl px-4 py-3 font-body-md text-body-md text-on-surface placeholder:text-outline/50 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Selección de Tratamiento -->
+<div class="flex flex-col gap-1 text-left">
+<label class="font-title-md text-title-md text-on-surface">¿Qué tratamiento te interesa?</label>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<label class="cursor-pointer border border-outline-variant/50 has-[:checked]:border-primary-container has-[:checked]:bg-secondary-container/30 rounded-xl p-3 flex items-center gap-2 transition-all">
+<input checked="" class="text-primary-container focus:ring-primary-container" name="tratamiento" type="radio" value="unitario"/>
+<span class="font-label-sm text-label-sm text-on-surface">Implante unitario</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/50 has-[:checked]:border-primary-container has-[:checked]:bg-secondary-container/30 rounded-xl p-3 flex items-center gap-2 transition-all">
+<input class="text-primary-container focus:ring-primary-container" name="tratamiento" type="radio" value="varios"/>
+<span class="font-label-sm text-label-sm text-on-surface">Varios / Todo fijo</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/50 has-[:checked]:border-primary-container has-[:checked]:bg-secondary-container/30 rounded-xl p-3 flex items-center gap-2 transition-all">
+<input class="text-primary-container focus:ring-primary-container" name="tratamiento" type="radio" value="ceramica"/>
+<span class="font-label-sm text-label-sm text-on-surface">Diseño Cerámica</span>
+</label>
+<label class="cursor-pointer border border-outline-variant/50 has-[:checked]:border-primary-container has-[:checked]:bg-secondary-container/30 rounded-xl p-3 flex items-center gap-2 transition-all">
+<input class="text-primary-container focus:ring-primary-container" name="tratamiento" type="radio" value="general"/>
+<span class="font-label-sm text-label-sm text-on-surface">Valoración general</span>
+</label>
+</div>
+</div>
+<!-- Botón CTA de Conversión Principal -->
+<button class="w-full min-h-[54px] bg-primary-container hover:bg-primary text-on-primary rounded-xl font-title-md text-title-md shadow-md active:scale-95 transition-all duration-200 mt-2 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+<div class="hidden p-3 bg-secondary-container rounded-xl text-primary font-title-md text-title-md text-center" id="confirmation-msg">
+          ¡Solicitud enviada! Nuestro equipo se comunicará contigo vía WhatsApp en menos de 24 horas.
+        </div>
+</form>
+<!-- Separador Visual -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="border-t border-outline-variant/30 w-full"></div>
+<span class="bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline tracking-wider uppercase">O si prefieres contacto inmediato</span>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full min-h-[52px] bg-[#25D366] hover:bg-[#20ba59] text-white rounded-xl font-title-md text-title-md shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-all duration-150" href="https://wa.me/573166900299?text=Hola,%20deseo%20agendar%20mi%20cita%20de%20valoración%20de%20implantes%20dentales" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<span>Chatear al WhatsApp (+57 316 690 0299)</span>
+</a>
+<!-- Aviso de Privacidad y Ley de Datos -->
+<p class="font-label-sm text-label-sm text-outline text-center mt-5 leading-normal">
+        Tus datos médicos y de contacto están 100% protegidos bajo secreto profesional y Ley 1581 de protección de datos de Colombia. Cero spam.
+      </p>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Acordeón Resolutivo) -->
+<section class="flex flex-col gap-4">
+<div class="text-center mb-2">
+<span class="text-primary font-label-sm text-label-sm uppercase tracking-wider">Claridad Absoluta</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="flex flex-col gap-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿El procedimiento de implante dental duele?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 border-t border-outline-variant/20 mt-3 leading-relaxed">
+            No. Utilizamos anestesia local guiada de alta precisión y sedación consciente opcional. La mayoría de los pacientes reportan menos molestia que en una extracción dental convencional y retoman sus actividades cotidianas en 24 a 48 horas.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Cuánto tiempo toma y cuándo puedo masticar?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 border-t border-outline-variant/20 mt-3 leading-relaxed">
+            En muchos casos realizamos carga inmediata (dientes fijos el mismo día de la cirugía). La osteointegración completa toma entre 8 y 12 semanas, durante las cuales nunca sales sin dientes provisionales de alta estética.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Qué pasa si me han dicho que tengo poco hueso?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 border-t border-outline-variant/20 mt-3 leading-relaxed">
+            Contamos con técnicas avanzadas de regeneración ósea guiada, elevación de seno maxilar e implantes inclinados (All-on-4 / All-on-6) diseñados específicamente para pacientes con pérdida ósea severa. Siempre hay una solución viable.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Tienen opciones de financiación o facilidades?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-3 border-t border-outline-variant/20 mt-3 leading-relaxed">
+            Sí. Ofrecemos planes de pago directos adaptados a las fases de tu tratamiento, alianzas con entidades financieras colombianas y acompañamiento especial para pagos internacionales o seguro médico prepagado.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Exact Specification) -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface text-primary dark:text-inverse-primary full-width border-t border-outline-variant/40 dark:border-outline/30 w-full px-gutter-mobile py-10 pb-28 flex flex-col items-center text-center gap-6">
+<div class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-bold">
+      Clínica Colombiana de Implantes
+    </div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 max-w-xl">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary text-label-sm font-label-sm transition-colors duration-200" href="#">Habilitación IPS MinSalud</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary text-label-sm font-label-sm transition-colors duration-200" href="#">Protocolos de Bioseguridad</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary text-label-sm font-label-sm transition-colors duration-200" href="#">Consentimiento Informado</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary text-label-sm font-label-sm transition-colors duration-200" href="#">Política de Privacidad de Datos de Salud</a>
+<span class="text-outline-variant">•</span>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary text-label-sm font-label-sm transition-colors duration-200" href="#">Términos y Condiciones Médicas</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant/80 max-w-lg">
+      © 2024 Clínica Colombiana de Implantes Dentales IPS. Habilitación MinSalud y Seccional de Salud Código Prestador No. 050010948301. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component Exact Specification - Mobile Anchored) -->
+<nav class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg text-primary dark:text-inverse-primary docked full-width bottom-0 shadow-lg dark:shadow-none fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 safe-area-pb md:hidden">
+<!-- Item 1: Inicio (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1.5 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm">Inicio</span>
+</a>
+<!-- Item 2: Proceso (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1.5 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm">Proceso</span>
+</a>
+<!-- Item 3: Casos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1.5 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#casos">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-label-sm font-label-sm">Casos</span>
+</a>
+<!-- Item 4: Agendar (Active Matching Primary Conversion Intent) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold bg-secondary-container/40 dark:bg-secondary/30 rounded-xl px-3 py-1.5 active:scale-95 transition-transform duration-150" href="#formulario-agendar">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="calendar_add_on" style="font-variation-settings: 'FILL' 1;">calendar_add_on</span>
+<span class="text-label-sm font-label-sm">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/clinica-colombiana-implantes" width="1" height="1" style="display:none" alt="">
+</body></html>

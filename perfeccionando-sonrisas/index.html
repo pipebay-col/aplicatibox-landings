@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perfeccionando Sonrisas | Dr. Mauricio Lerma · Odontología Estética</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#8a714d",
+            "surface-dim": "#d3dcd8",
+            "secondary-fixed": "#cae8e8",
+            "on-tertiary-fixed-variant": "#584323",
+            "tertiary": "#6f5836",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#4b6867",
+            "on-surface": "#151d1b",
+            "on-tertiary-fixed": "#281800",
+            "surface-container-highest": "#dce4e1",
+            "on-secondary-fixed-variant": "#304c4b",
+            "secondary": "#476363",
+            "surface-container-high": "#e1eae6",
+            "secondary-fixed-dim": "#aecccc",
+            "error": "#ba1a1a",
+            "surface-bright": "#f3fbf8",
+            "on-primary-fixed": "#00201d",
+            "tertiary-fixed-dim": "#e0c298",
+            "surface-container": "#e7f0ec",
+            "primary-fixed": "#89f5e7",
+            "primary-fixed-dim": "#6bd8cb",
+            "primary": "#00685f",
+            "surface-tint": "#006a61",
+            "on-primary-fixed-variant": "#005049",
+            "secondary-container": "#c7e6e5",
+            "background": "#f3fbf8",
+            "on-error": "#ffffff",
+            "inverse-surface": "#2a3230",
+            "surface-variant": "#dce4e1",
+            "on-secondary": "#ffffff",
+            "on-background": "#151d1b",
+            "surface": "#f3fbf8",
+            "primary-container": "#008378",
+            "outline": "#6d7a77",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#3d4947",
+            "inverse-on-surface": "#eaf3ef",
+            "surface-container-low": "#edf6f2",
+            "on-primary-container": "#f4fffc",
+            "inverse-primary": "#6bd8cb",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#022020",
+            "outline-variant": "#bcc9c6",
+            "tertiary-fixed": "#fedeb2",
+            "on-tertiary-container": "#fffbff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin": "1.5rem",
+            "gutter-lg": "2.5rem",
+            "space-sm": "0.5rem",
+            "gutter-sm": "1rem",
+            "space-md": "1rem",
+            "margin-sm": "1rem",
+            "margin-lg": "4rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display-md": ["Playfair Display"],
+            "display-md-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+            "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700"}],
+            "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "display-md": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+            "display-md-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "headline-lg-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+            "display-lg-mobile": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .safe-area-pb {
+      padding-bottom: env(safe-area-inset-bottom, 1rem);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-primary min-h-screen flex flex-col">
+<!-- ========================================== -->
+<!-- TopAppBar Component (from Shared JSON)      -->
+<!-- ========================================== -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md text-primary dark:text-primary-fixed docked full-width top-0 sticky z-40 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="dentistry">dentistry</span>
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary-fixed tracking-tight">Perfeccionando Sonrisas</span>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-primary dark:text-primary-fixed font-bold hover:opacity-90 transition-opacity duration-200 text-label-md font-label-md" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:opacity-90 transition-opacity duration-200 text-label-md font-label-md" href="#proceso">Proceso</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:opacity-90 transition-opacity duration-200 text-label-md font-label-md" href="#resultados">Resultados</a>
+<a class="bg-primary text-on-primary px-5 py-2.5 rounded-full font-label-md text-label-md shadow-sm hover:opacity-90 transition-opacity" href="#agendar">Agendar</a>
+</div>
+<div class="md:hidden flex items-center">
+<a class="bg-primary text-on-primary px-4 py-1.5 rounded-full text-label-md font-label-md shadow-sm active:scale-95 transition-transform duration-150" href="#agendar">Agendar</a>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto pb-24 md:pb-12">
+<!-- ========================================== -->
+<!-- 1. ATENCIÓN (Hero Section / AIDA)          -->
+<!-- ========================================== -->
+<section class="px-margin pt-space-lg md:pt-space-xl pb-space-xl" id="inicio">
+<!-- Credentials Pill Badge -->
+<div class="flex items-center justify-center md:justify-start mb-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/40 shadow-sm max-w-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified">verified</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate">
+            Especialista en Odontología Estética y Diseño de Sonrisa · Cali / Colombia · Reg. Sanitario MinSalud
+          </p>
+</div>
+</div>
+<!-- Main Headline Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-lg items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md text-center md:text-left">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface leading-tight tracking-tight">
+            Tu nueva sonrisa, <span class="italic font-display-md font-normal text-primary">natural y diseñada a tu medida</span> en Colombia
+          </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto md:mx-0">
+            Carillas cerámicas de alta gama y diseño de sonrisa biomimético sin desgastes agresivos. Armonía facial, brillo biológico y seguridad para sonreír sin complejos.
+          </p>
+<!-- Conversion Button + Micro-credentials -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center gap-space-md">
+<a class="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 py-3.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-all duration-200" href="#agendar">
+              Agendar ahora mi valoración →
+            </a>
+<div class="flex items-center gap-1.5 text-on-surface-variant text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Sin costo de valoración inicial</span>
+</div>
+</div>
+<!-- Micro-Trust Line -->
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2 pt-2 text-on-surface-variant text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="timer">timer</span>
+              Respuesta en menos de 24 horas
+            </span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="view_in_ar">view_in_ar</span>
+              Simulación digital previa
+            </span>
+</div>
+<!-- 3 Quick Value Badges -->
+<div class="grid grid-cols-3 gap-2 pt-space-sm">
+<div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="view_in_ar">view_in_ar</span>
+<p class="text-label-sm font-label-sm text-on-surface">Simulación 3D guiada</p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="shield">shield</span>
+<p class="text-label-sm font-label-sm text-on-surface">Preservación biológica</p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/30 text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="person">person</span>
+<p class="text-label-sm font-label-sm text-on-surface">Atención personalizada 1 a 1</p>
+</div>
+</div>
+</div>
+<!-- Hero Image Card with Result Badge -->
+<div class="lg:col-span-5 relative mt-4 lg:mt-0">
+<div class="relative overflow-hidden rounded-3xl bg-surface-container-low border border-outline-variant/30 shadow-lg">
+<img alt="Paciente feliz con diseño de sonrisa natural en la clínica del Dr. Mauricio Lerma" class="w-full h-[430px] md:h-[500px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_o79JJVQYyCsmGnHxfbpg_Kv69jYo6N6UwBF6Jvk2dKjb6vleN_-sTYpoztb-l6ZwNIty9v9RCauY_EAEAbXi_vjy2Ma6w7V9TTpOfgqXrAHRhg_SLT8ZwfPD0jL10sqMENF_p8gpu2lbk_8QkGMdwDdJijM3GdhdkusK1tgWzMg6Vhtn7QU6uJxJ8MVOKjmKftT5E6pDqgTze3cu0FturGo8-Hfpbmov3EMfxRBmkCrIuaMmw_ezE0VZwABPQ_AGgv2itNHOgy4"/>
+<!-- Result Floating Badge -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-3.5 rounded-2xl border border-outline-variant/20 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Resultado Perfeccionando Sonrisas</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">100% Cerámica Natural E-max</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. INTERÉS (Diagnóstico + Proceso 3 Pasos)  -->
+<!-- ========================================== -->
+<section class="px-margin py-space-xl bg-surface-container-low rounded-3xl mx-margin-sm md:mx-margin" id="proceso">
+<!-- Empathy / Problem Solver -->
+<div class="max-w-3xl mx-auto text-center mb-space-xl">
+<span class="text-label-md font-label-md text-primary bg-secondary-container px-3.5 py-1 rounded-full uppercase tracking-wider">Odontología de Precisión</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface mt-3">
+          ¿Temes que tu diseño de sonrisa se vea artificial, 'dientes de tiza' o desgaste tus dientes sanos?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4">
+          En <strong>Perfeccionando Sonrisas</strong>, el Dr. Mauricio Lerma prioriza la mínima invasión, la biomimética y la anatomía facial. No buscamos bocas estándar; analizamos tus proporciones labiales y tono de tez para que nadie note un procedimiento, sino una belleza auténtica que rejuvenece tu rostro.
+        </p>
+</div>
+<!-- 3-Step Process Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-headline-lg font-headline-lg text-primary/30">01</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="document_scanner">document_scanner</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Valoración y Escaneo Digital 3D</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Certeza clínica y diagnóstico milimétrico antes de iniciar. Escáner intraoral de última generación sin pastas incómodas ni radiación innecesaria.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+<span>Diagnóstico milimétrico</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-headline-lg font-headline-lg text-primary/30">02</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="brush">brush</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Plan Personalizado y Prueba Estética</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Ves y pruebas tu resultado exacto en boca mediante mock-up físico antes de tocar un solo diente. Tú apruebas cada curvatura y color.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+<span>Aprobación previa garantizada</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-headline-lg font-headline-lg text-primary/30">03</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="sparkles">arrow_back_ios_new</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Resultado Natural y Duradero</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Carillas ultrafinas en cerámica pura resistentes a manchas de café, té o vino tinto. Brillo y translucidez biológica para toda la vida.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+<span>Inalterable con el tiempo</span>
+</div>
+</div>
+</div>
+<!-- Micro Support Link -->
+<div class="text-center mt-space-lg">
+<a class="inline-flex items-center gap-2 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" href="https://wa.me/573205616166" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+          ¿Tienes dudas sobre tu caso? Chatea con nuestro equipo en WhatsApp
+        </a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. DESEO (Métricas + Beneficios + Reviews)  -->
+<!-- ========================================== -->
+<section class="px-margin py-space-xl" id="resultados">
+<!-- Authority Metrics Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-surface-container-lowest rounded-3xl border border-outline-variant/30 shadow-sm mb-space-xl">
+<div class="text-center p-2 border-r border-outline-variant/20 last:border-r-0">
+<p class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">+12 Años</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">De Trayectoria Clínica</p>
+</div>
+<div class="text-center p-2 border-r md:border-r border-outline-variant/20">
+<p class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">+4.200</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Sonrisas Diseñadas</p>
+</div>
+<div class="text-center p-2 border-r border-outline-variant/20 last:border-r-0">
+<p class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">99.4%</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Satisfacción Clínica</p>
+</div>
+<div class="text-center p-2">
+<p class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">MinSalud</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Habilitación Oficial</p>
+</div>
+</div>
+<!-- Real Daily Benefits -->
+<div class="mb-space-xl">
+<div class="max-w-2xl mx-auto text-center mb-space-lg">
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface">
+            Lo que experimentarás en tu día a día
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2">
+            La transformación va más allá de los dientes; es recuperar la libertad de sonreír con total soltura.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="flex items-start gap-4 p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30">
+<div class="p-2.5 rounded-full bg-secondary-container text-primary shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="face">face</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">Armonía y naturalidad absoluta</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Tono y translucidez calibrados según tu piel y facciones, sin dientes sobre-dimensionados ni bloques monocromáticos.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30">
+<div class="p-2.5 rounded-full bg-secondary-container text-primary shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">Cero desgaste invasivo</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Máxima preservación del esmalte dental mediante protocolos biomiméticos de adhesión ultra conservadora.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30">
+<div class="p-2.5 rounded-full bg-secondary-container text-primary shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="coffee">coffee</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">Resistencia y brillo inalterable</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Porcelana E-max libre de resinas sintéticas que no se mancha con café, vino tinto ni pierde su pulido natural.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30">
+<div class="p-2.5 rounded-full bg-secondary-container text-primary shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-1">Seguridad plena al hablar y reír</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Olvídate de taparte la boca al reírte o evitar fotos grupales. Confianza renovada en tu entorno laboral y personal.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="p-6 bg-surface-container-lowest rounded-3xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-container mb-3">
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4">
+              "Tenía pánico de que me dejaran dientes gigantes o falsos. El Dr. Mauricio diseñó una sonrisa tan natural que todos me dicen lo descansada y radiante que me veo sin adivinar qué me hice."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary">MR</div>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Mariana Restrepo</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Carillas Cerámicas E-max · Cali</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-3xl border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-container mb-3">
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4">
+              "Atención impecable y tecnología 3D de punta. Pude ver mi sonrisa antes de que iniciaran. Cero dolor y el resultado superó todas mis expectativas como profesional de la salud."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary">CE</div>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Dr. Camilo Echeverri</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Diseño de Sonrisa Digital · Paciente</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. ACCIÓN (Formulario AIDA + WhatsApp)    -->
+<!-- ========================================== -->
+<section class="px-margin py-space-xl" id="agendar">
+<div class="max-w-xl mx-auto bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-outline-variant/40 shadow-lg relative">
+<!-- Urgency Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-primary text-label-sm font-label-sm mb-4">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Cupos limitados de valoración esta semana en Colombia
+        </div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface">
+          Empieza hoy tu transformación dental
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 mb-6">
+          Completa tus datos para coordinar tu cita prioritaria con el Dr. Mauricio Lerma.
+        </p>
+<!-- Form: 3 minimalist fields -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Nuestro equipo coordinará tu cita prioritaria en menos de 24 horas.');">
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="nombre">Nombre completo</label>
+<input class="w-full px-4 py-3 rounded-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md bg-surface-bright" id="nombre" name="nombre" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="telefono">WhatsApp o Celular</label>
+<div class="flex">
+<span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-outline-variant/60 bg-surface-container text-body-sm text-on-surface-variant">
+                🇨🇴 +57
+              </span>
+<input class="w-full px-4 py-3 rounded-r-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md bg-surface-bright" id="telefono" name="telefono" placeholder="Ej. 310 000 0000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="tratamiento">¿Qué tratamiento te interesa?</label>
+<select class="w-full px-4 py-3 rounded-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md bg-surface-bright" id="tratamiento" name="tratamiento">
+<option value="carillas">Diseño de Sonrisa en Carillas Cerámicas</option>
+<option value="lentes">Lentes Cerámicos Ultrafinos</option>
+<option value="blanqueamiento">Blanqueamiento y Armonización Dental</option>
+<option value="valoracion">Valoración Integral</option>
+</select>
+</div>
+<button class="w-full min-h-[52px] mt-2 py-3.5 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-all duration-200" type="submit">
+            Quiero mi valoración ✨
+          </button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/30"></div></div>
+<span class="relative bg-surface-container-lowest px-3 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">O si prefieres contacto inmediato</span>
+</div>
+<!-- Direct WhatsApp Action Button -->
+<a class="w-full min-h-[52px] inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full bg-secondary-container hover:bg-secondary-container/80 text-on-secondary-container font-label-lg text-label-lg transition-colors border border-outline-variant/30" href="https://wa.me/573205616166" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl text-primary" data-icon="chat">chat</span>
+          💬 Chatear al WhatsApp (+57 320 561 6166)
+        </a>
+<!-- Privacy Micro-copy -->
+<p class="text-body-sm font-body-sm text-on-surface-variant text-center mt-4">
+          🔒 Tus datos están protegidos bajo secreto médico profesional y Ley 1581 de protección de datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. PREGUNTAS FRECUENTES (FAQ Accordion)    -->
+<!-- ========================================== -->
+<section class="px-margin py-space-lg max-w-3xl mx-auto">
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface text-center mb-space-lg">
+        Preguntas Frecuentes
+      </h2>
+<div class="space-y-3">
+<details class="group bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface cursor-pointer list-none">
+<span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+<span class="material-symbols-outlined text-primary transition duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            No en nuestra clínica. Trabajamos bajo la filosofía biomimética conservadora con lentes de contacto cerámicos ultrafinos (0.2 a 0.4 mm). En la mayoría de los casos no se desgasta esmalte o solo se realiza un micropulido superficial indoloro.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface cursor-pointer list-none">
+<span>¿Cuánto tiempo toma el tratamiento completo?</span>
+<span class="material-symbols-outlined text-primary transition duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Gracias al flujo 100% digital y laboratorio propio de alta precisión, los tratamientos se concluyen habitualmente en 3 a 5 días hábiles, ideal para pacientes que viajan desde otras ciudades o el exterior.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface cursor-pointer list-none">
+<span>¿Las carillas cerámicas se manchan con café o vino?</span>
+<span class="material-symbols-outlined text-primary transition duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            A diferencia de la resina compuesta, la cerámica dental de alta fusión (E-max) no posee porosidad. Por tanto, no absorbe pigmentos de café, té, cigarrillo ni vino tinto, conservando su brillo original por más de 15 años.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface cursor-pointer list-none">
+<span>¿Tienen opciones de financiación o facilidades de pago?</span>
+<span class="material-symbols-outlined text-primary transition duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Sí, disponemos de convenios bancarios directos en Colombia, pagos fraccionados durante el curso del tratamiento y recepción de tarjetas de crédito internacionales sin recargos adicionales.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- Footer Component (from Shared JSON)        -->
+<!-- ========================================== -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface full-width">
+<div class="flex flex-col gap-space-md w-full px-margin py-margin-lg max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<p class="text-headline-md-mobile font-headline-md-mobile font-semibold text-primary dark:text-primary-fixed">
+            Perfeccionando Sonrisas
+          </p>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant mt-1">
+            Dr. Mauricio Lerma · Odontología Estética y Restauradora
+          </p>
+</div>
+<div class="flex flex-wrap gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Aviso Legal y Privacidad</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Consentimiento Informado</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Resolución Sanitaria MinSalud</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Protocolo de Bioseguridad</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Atención a Pacientes Internacionales</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/40 dark:border-outline/30 pt-4 mt-2">
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+          © 2024 Perfeccionando Sonrisas - Dr. Mauricio Lerma. Todos los derechos reservados. Habilitación MinSalud Colombia Código #760010892001. Vigilado Supersalud.
+        </p>
+</div>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- BottomNavBar Component (Mobile Only)       -->
+<!-- ========================================== -->
+<nav class="md:hidden bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(28,36,34,0.06)] dark:shadow-none fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-sm py-2 safe-area-pb">
+<!-- Inicio (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed font-semibold p-1 active:scale-95 transition-transform duration-150" href="#inicio">
+<span class="material-symbols-outlined text-2xl" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Inicio</span>
+</a>
+<!-- Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#proceso">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+<span class="text-label-sm font-label-sm">Proceso</span>
+</a>
+<!-- Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#resultados">
+<span class="material-symbols-outlined text-2xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant p-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/perfeccionando-sonrisas" width="1" height="1" style="display:none" alt="">
+</body></html>

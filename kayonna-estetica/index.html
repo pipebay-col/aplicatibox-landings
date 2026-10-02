@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayonna Estética | Medicina Estética & Armonización Facial Colombia</title>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Configuration Verbatim -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container": "#4e3d00",
+            "surface-variant": "#e8e1dd",
+            "on-secondary-fixed": "#00201c",
+            "surface-container-high": "#eee7e3",
+            "on-tertiary-fixed": "#241a00",
+            "surface-dim": "#e0d9d5",
+            "secondary-fixed-dim": "#8ad4c8",
+            "on-primary-fixed": "#00201d",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#005048",
+            "on-primary-container": "#f4fffc",
+            "inverse-on-surface": "#f7efec",
+            "background": "#fff8f5",
+            "tertiary-fixed-dim": "#e9c349",
+            "primary-container": "#008378",
+            "error": "#ba1a1a",
+            "secondary-container": "#a6f1e4",
+            "on-secondary": "#ffffff",
+            "on-surface": "#1e1b19",
+            "inverse-primary": "#6bd8cb",
+            "inverse-surface": "#33302e",
+            "primary-fixed": "#89f5e7",
+            "on-surface-variant": "#3d4947",
+            "surface": "#fff8f5",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#ffe088",
+            "primary": "#00685f",
+            "outline": "#6d7a77",
+            "surface-tint": "#006a61",
+            "surface-bright": "#fff8f5",
+            "tertiary-container": "#cca72f",
+            "surface-container-highest": "#e8e1dd",
+            "outline-variant": "#bcc9c6",
+            "on-secondary-container": "#207066",
+            "primary-fixed-dim": "#6bd8cb",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#005049",
+            "tertiary": "#735c00",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#574500",
+            "secondary": "#176a60",
+            "surface-container": "#f4ece9",
+            "on-background": "#1e1b19",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#faf2ee",
+            "on-error-container": "#93000a",
+            "secondary-fixed": "#a6f1e4"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xxl": "4rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem"
+          },
+          fontFamily: {
+            "headline-md": ["Playfair Display", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "display": ["Playfair Display", "serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface antialiased min-h-screen selection:bg-secondary-container selection:text-on-secondary-container">
+
+  <!-- TOP HEALTH ACCREDITATION RIBBON -->
+  <aside class="bg-primary text-on-primary py-1.5 px-margin text-center text-xs tracking-wider flex items-center justify-center gap-1.5 font-medium">
+    <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+    <span>Habilitación en Salud Seccional · Medicina Estética en Colombia</span>
+  </aside>
+
+  <!-- SHARED COMPONENT: TopAppBar -->
+  <header class="bg-surface/90 backdrop-blur-md sticky top-0 z-40 shadow-sm border-b border-outline-variant/30">
+    <div class="flex justify-between items-center w-full px-margin py-space-sm max-w-[1120px] mx-auto">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-2xl">spa</span>
+        <a href="#" class="font-headline-sm text-lg font-semibold text-primary tracking-tight">Kayonna Estética</a>
+      </div>
+      <a href="#formulario-valoracion" class="inline-flex items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1.5 text-xs font-semibold shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150">
+        Agendar
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT CONTAINER (Fluid Mobile First: 390px-420px max 1120px) -->
+  <main class="w-full max-w-[1120px] mx-auto overflow-hidden">
+
+    <!-- [A] ATENCIÓN: HERO SECTION -->
+    <section class="px-margin pt-space-md pb-space-xl flex flex-col items-center">
+      <!-- Trust Pills Row -->
+      <div class="flex items-center gap-2 overflow-x-auto w-full pb-2 mb-4 justify-start sm:justify-center">
+        <span class="inline-flex items-center gap-1 bg-surface-container text-on-surface-variant text-[11px] font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+          <span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Insumos INVIMA / FDA
+        </span>
+        <span class="inline-flex items-center gap-1 bg-surface-container text-on-surface-variant text-[11px] font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+          <span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+          Diagnóstico Facial 1 a 1
+        </span>
+        <span class="inline-flex items-center gap-1 bg-surface-container text-on-surface-variant text-[11px] font-semibold px-3 py-1 rounded-full whitespace-nowrap">
+          <span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+          Sede Boutique Exclusiva
+        </span>
+      </div>
+
+      <!-- Headline H1 -->
+      <div class="text-center max-w-[620px] mb-3">
+        <h1 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl text-on-surface tracking-tight leading-snug">
+          Tu piel y rostro en su versión <span class="italic text-primary font-serif">más armónica</span>, sin perder tu esencia natural
+        </h1>
+      </div>
+
+      <!-- Subtitle -->
+      <p class="font-body-md text-sm sm:text-base text-on-surface-variant text-center max-w-[560px] mb-6 leading-relaxed">
+        Tratamientos médicos no invasivos de rejuvenecimiento cutáneo, bioestimulación de colágeno y armonización facial en Kayonna Estética. Resultados elegantes, sutiles y sin incapacidad laboral.
+      </p>
+
+      <!-- Hero Featured Media Container -->
+      <div class="relative w-full max-w-[520px] mb-6 rounded-3xl overflow-hidden shadow-[0px_8px_30px_-4px_rgba(35,32,30,0.08)] border border-outline-variant/30 bg-surface-container-lowest">
+        <img 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0yoSLdWmMkFOfFAyI0lrh3DJulggywMvsUJ7pY70IJ_f6VyeJHI6B7Nl4fho3gOW1tlh5WvbbbwyMsqKjGXthpM6O-kS333GF05eE41WfXCdgBWbI4rk35lw5qb0lfvXby_PYL0xQ2FTvvAvmMexEy0W9kMd9Y_oLmQnZVhmrKw94AXb8n1GC82QeGKbYy7VWGBZu67xNFUk4-jjeUpoBhgdJyrvQkRWtL9Ko5zA9KCRiApQ_Fw-4YAK6PvvMGYgKMrgRfF785KE" 
+          alt="Paciente en la sala boutique de Kayonna Estética con piel radiante y armónica"
+          class="w-full h-auto aspect-[4/3] sm:aspect-[16/11] object-cover"
+        />
+        <!-- Floating Credential Badge -->
+        <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-auto bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-outline-variant/40 shadow-sm flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-on-secondary-container text-lg" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <p class="text-xs text-on-surface font-semibold leading-tight">Resultado Clínico Verificado</p>
+            <p class="text-xs text-primary leading-tight font-medium">100% Armonía Natural y Luminosa</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main High-Contrast CTA Button -->
+      <div class="w-full max-w-[420px] flex flex-col items-center">
+        <a 
+          href="#formulario-valoracion" 
+          class="w-full h-[52px] rounded-full bg-primary text-on-primary flex items-center justify-center gap-2 text-sm font-semibold shadow-[0px_14px_34px_-6px_rgba(0,104,95,0.28)] hover:bg-primary-container active:scale-95 transition-all duration-200"
+        >
+          <span>Agendar ahora mi valoración</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+        <div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant text-xs text-center">
+          <span class="text-primary font-semibold">✓</span>
+          <span>Respuesta en menos de 24 horas · Valoración 1 a 1 sin cargos sorpresa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- [I] INTERÉS: EL PROBLEMA & PROCESO EN 3 PASOS -->
+    <section id="seccion-proceso" class="px-margin py-space-xl bg-surface-container-low border-y border-outline-variant/30">
+      <div class="max-w-[720px] mx-auto">
+        <!-- Eyebrow & Problem Heading -->
+        <div class="text-center mb-6">
+          <span class="inline-block text-[11px] font-semibold text-primary tracking-widest uppercase mb-1">
+            ¿TE IDENTIFICAS CON ESTO?
+          </span>
+          <h2 class="font-headline-md text-xl sm:text-2xl text-on-surface mb-3 leading-snug">
+            ¿Temes tratamientos exagerados que <span class="italic text-primary font-serif">cambien tus facciones</span> o no se vean naturales?
+          </h2>
+          <p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
+            Es comprensible temer al aspecto hinchado, sobre-rellenado o al efecto congelado. En Kayonna Estética aplicamos un protocolo de micro-dosis estratégicas y biotecnología celular para que tu rostro luzca descansado, fresco y terso, sin que nadie note una intervención.
+          </p>
+        </div>
+
+        <!-- 3-Step Process Bento / Vertical Chain -->
+        <div class="space-y-3.5 mb-6">
+          <!-- Step 1 -->
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/40 shadow-sm flex items-start gap-3.5">
+            <span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-headline-sm text-base font-semibold flex items-center justify-center shrink-0">
+              01
+            </span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface">Valoración y Mapeo Facial 3D</h3>
+                <span class="text-[11px] font-medium text-primary bg-secondary-container/40 px-2 py-0.5 rounded-full shrink-0">Paso 1</span>
+              </div>
+              <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-2 leading-relaxed">
+                Diagnóstico milimétrico de soporte dérmico y proporciones áureas sin imposiciones ni presiones comerciales.
+              </p>
+              <div class="inline-flex items-center gap-1.5 text-xs text-secondary bg-surface-container px-2.5 py-1 rounded-md">
+                <span class="material-symbols-outlined text-sm">check_circle</span>
+                <span>Beneficio: Certeza clínica y plan exacto desde el día 1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/40 shadow-sm flex items-start gap-3.5">
+            <span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-headline-sm text-base font-semibold flex items-center justify-center shrink-0">
+              02
+            </span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface">Plan Médico Personalizado</h3>
+                <span class="text-[11px] font-medium text-primary bg-secondary-container/40 px-2 py-0.5 rounded-full shrink-0">Paso 2</span>
+              </div>
+              <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-2 leading-relaxed">
+                Selección de bioestimuladores de colágeno o ácido hialurónico de alta gama con presupuesto cerrado y transparente.
+              </p>
+              <div class="inline-flex items-center gap-1.5 text-xs text-secondary bg-surface-container px-2.5 py-1 rounded-md">
+                <span class="material-symbols-outlined text-sm">check_circle</span>
+                <span>Beneficio: Cero costos ocultos ni sorpresas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/40 shadow-sm flex items-start gap-3.5">
+            <span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-headline-sm text-base font-semibold flex items-center justify-center shrink-0">
+              03
+            </span>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface">Aplicación Guiada y Resultado Natural</h3>
+                <span class="text-[11px] font-medium text-primary bg-secondary-container/40 px-2 py-0.5 rounded-full shrink-0">Paso 3</span>
+              </div>
+              <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-2 leading-relaxed">
+                Procedimiento ambulatorio confortable con microcánulas atraumáticas y rápida recuperación.
+              </p>
+              <div class="inline-flex items-center gap-1.5 text-xs text-secondary bg-surface-container px-2.5 py-1 rounded-md">
+                <span class="material-symbols-outlined text-sm">check_circle</span>
+                <span>Beneficio: Reincorporación inmediata a tu rutina social y laboral</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Quick Question Link -->
+        <div class="text-center">
+          <a 
+            href="https://wa.me/573104749770?text=Hola%20Kayonna%20Estetica,%20tengo%20dudas%20sobre%20el%20proceso%20de%20valoracion" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center gap-1.5 text-primary text-xs sm:text-sm font-semibold underline underline-offset-4 hover:text-primary-container transition-colors"
+          >
+            <span class="material-symbols-outlined text-base">chat</span>
+            <span>¿Tienes dudas sobre tu caso? Consulta directamente por WhatsApp →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- [D] DESEO: MÉTRICAS, BENEFICIOS Y TESTIMONIOS -->
+    <section id="seccion-resultados" class="px-margin py-space-xl">
+      <div class="max-w-[720px] mx-auto">
+        <!-- Trust Metrics Grid 2x2 -->
+        <div class="text-center mb-6">
+          <span class="inline-block text-[11px] font-semibold text-primary tracking-widest uppercase mb-1">RESPALDO MÉDICO COMPROBADO</span>
+          <h2 class="font-headline-md text-xl sm:text-2xl text-on-surface">Nuestra experiencia en números</h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 mb-10">
+          <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+            <p class="font-headline-lg text-2xl sm:text-3xl text-primary font-bold mb-0.5">+8 Años</p>
+            <p class="text-xs text-on-surface-variant font-medium">Trayectoria Médica</p>
+          </div>
+          <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+            <p class="font-headline-lg text-2xl sm:text-3xl text-primary font-bold mb-0.5">+4.500</p>
+            <p class="text-xs text-on-surface-variant font-medium">Pacientes Satisfechos</p>
+          </div>
+          <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+            <p class="font-headline-lg text-2xl sm:text-3xl text-primary font-bold mb-0.5">100%</p>
+            <p class="text-xs text-on-surface-variant font-medium">Insumos INVIMA & FDA</p>
+          </div>
+          <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+            <p class="font-headline-lg text-2xl sm:text-3xl text-primary font-bold mb-0.5">4.9★</p>
+            <p class="text-xs text-on-surface-variant font-medium">Google Reviews Verificadas</p>
+          </div>
+        </div>
+
+        <!-- 4 Key Benefits -->
+        <div class="text-center mb-6">
+          <span class="inline-block text-[11px] font-semibold text-primary tracking-widest uppercase mb-1">BENEFICIOS REALES</span>
+          <h2 class="font-headline-md text-xl sm:text-2xl text-on-surface">Criterio clínico para realzar tu belleza</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-10">
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-start">
+            <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-3">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">face_4</span>
+            </div>
+            <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface mb-1">Armonía y sutileza absoluta</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Proporciones equilibradas que realzan tus rasgos distintivos sin rigidez ni aspecto sintético.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-start">
+            <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-3">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+            </div>
+            <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface mb-1">Bioestimulación de colágeno</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Firmeza, hidratación y textura tersa duradera activando la matriz celular de colágeno de tu piel.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-start">
+            <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-3">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">schedule</span>
+            </div>
+            <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface mb-1">Cero tiempo de incapacidad</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Retoma tus compromisos laborales y sociales el mismo día sin marcas agresivas ni hematomas.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm flex flex-col justify-start">
+            <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-3">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            </div>
+            <h3 class="font-title-md text-sm sm:text-base font-semibold text-on-surface mb-1">Acompañamiento médico VIP</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Monitoreo y citas de control post-procedimiento directamente con tu especialista tratante.</p>
+          </div>
+        </div>
+
+        <!-- Real Testimonials -->
+        <div class="text-center mb-6">
+          <span class="inline-block text-[11px] font-semibold text-primary tracking-widest uppercase mb-1">TESTIMONIOS REALES</span>
+          <h2 class="font-headline-md text-xl sm:text-2xl text-on-surface">La voz de nuestras pacientes</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Testimonial 1 -->
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <div class="flex items-center text-tertiary-container text-sm">
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="ml-1 text-xs text-on-surface font-semibold">5.0</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-medium text-primary bg-secondary-container/40 px-2 py-0.5 rounded-full">
+                <span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Paciente Verificada
+              </span>
+            </div>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant italic mb-3 leading-relaxed">
+              "Tenía mucho recelo de hacerme cualquier retoque facial. En Kayonna lograron que mi rostro se vea descansado y luminoso; nadie nota un procedimiento, solo me dicen lo descansada que luzco."
+            </p>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-semibold text-xs text-primary">
+                CR
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-on-surface">Dra. Camila Restrepo</p>
+                <p class="text-[11px] text-on-surface-variant">Colombia · Armonización y Bioestimuladores</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl border border-outline-variant/30 shadow-sm">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <div class="flex items-center text-tertiary-container text-sm">
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="ml-1 text-xs text-on-surface font-semibold">5.0</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-medium text-primary bg-secondary-container/40 px-2 py-0.5 rounded-full">
+                <span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Paciente Verificada
+              </span>
+            </div>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant italic mb-3 leading-relaxed">
+              "Excelente criterio médico y ética impecable. Me explicaron cada detalle en el escaneo facial y el resultado superó mis expectativas. Cero dolor y atención inmejorable."
+            </p>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-semibold text-xs text-primary">
+                VM
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-on-surface">Valentina Morales</p>
+                <p class="text-[11px] text-on-surface-variant">Colombia · Rejuvenecimiento Cutáneo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [A] ACCIÓN: FORMULARIO MINIMALISTA + WHATSAPP DIRECTO -->
+    <section id="formulario-valoracion" class="px-margin py-space-xl bg-surface-container-low border-t border-outline-variant/30">
+      <div class="max-w-[540px] mx-auto bg-surface-container-lowest p-5 sm:p-7 rounded-3xl border border-outline-variant/40 shadow-[0px_10px_35px_-4px_rgba(35,32,30,0.06)]">
+        
+        <!-- Scarcity Badge -->
+        <div class="text-center mb-4">
+          <span class="inline-flex items-center gap-1 bg-secondary-container/60 text-on-secondary-container text-xs font-semibold px-3.5 py-1 rounded-full">
+            <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">alarm</span>
+            Cupos limitados de valoración esta semana en Colombia
+          </span>
+        </div>
+
+        <!-- Form Heading -->
+        <div class="text-center mb-6">
+          <h2 class="font-headline-md text-2xl text-on-surface mb-2">
+            Empieza hoy tu transformación armónica
+          </h2>
+          <p class="text-xs sm:text-sm text-on-surface-variant">
+            Completa tus datos para coordinar tu cita personalizada con nuestro equipo médico.
+          </p>
+        </div>
+
+        <!-- 3-Field Minimalist Form -->
+        <form class="space-y-4" onsubmit="event.preventDefault(); window.open('https://wa.me/573104749770?text=Hola%20Kayonna%20Estetica,%20deseo%20confirmar%20mi%20cita%20de%20valoracion', '_blank');">
+          <!-- Campo 1: Nombre y Apellido -->
+          <div>
+            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="nombre">Nombre y Apellido *</label>
+            <input 
+              type="text" 
+              id="nombre" 
+              name="nombre" 
+              required 
+              placeholder="Ej. Laura Gómez" 
+              class="w-full h-11 px-3.5 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-outline/60"
+            />
+          </div>
+
+          <!-- Campo 2: WhatsApp o Celular -->
+          <div>
+            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="whatsapp">WhatsApp o Celular *</label>
+            <div class="relative flex items-center">
+              <span class="absolute left-3 text-xs font-semibold text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">🇨🇴 +57</span>
+              <input 
+                type="tel" 
+                id="whatsapp" 
+                name="whatsapp" 
+                required 
+                placeholder="310 000 0000" 
+                class="w-full h-11 pl-20 pr-3.5 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-outline/60"
+              />
+            </div>
+          </div>
+
+          <!-- Campo 3: ¿Qué tratamiento te interesa? -->
+          <div>
+            <label class="block text-xs font-semibold text-on-surface mb-1.5" for="tratamiento">¿Qué tratamiento te interesa? *</label>
+            <select 
+              id="tratamiento" 
+              name="tratamiento" 
+              required 
+              class="w-full h-11 px-3.5 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+            >
+              <option value="" disabled selected>Selecciona tu opción...</option>
+              <option value="armonizacion">Armonización Facial Completa</option>
+              <option value="bioestimuladores">Bioestimuladores de Colágeno</option>
+              <option value="rejuvenecimiento">Rejuvenecimiento Cutáneo & Glow</option>
+              <option value="valoracion_general">Valoración Integral con Médico Especialista</option>
+            </select>
+          </div>
+
+          <!-- Botón Principal de Valoración -->
+          <button 
+            type="submit" 
+            class="w-full h-12 rounded-full bg-primary text-on-primary text-sm font-semibold flex items-center justify-center gap-2 shadow-[0px_10px_25px_-5px_rgba(0,104,95,0.3)] hover:bg-primary-container active:scale-95 transition-all duration-150 mt-2"
+          >
+            <span>Quiero mi valoración</span>
+            <span>✨</span>
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="relative my-6 flex items-center justify-center">
+          <div class="border-t border-outline-variant/40 w-full"></div>
+          <span class="bg-surface-container-lowest px-3 text-[10px] font-bold text-outline uppercase tracking-wider absolute">O SI PREFIERES ATENCIÓN INMEDIATA</span>
+        </div>
+
+        <!-- WhatsApp Direct CTA -->
+        <a 
+          href="https://wa.me/573104749770?text=Hola%20Kayonna%20Estetica,%20quiero%20agendar%20mi%20valoracion%20ahora" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-full h-12 rounded-full border-2 border-emerald-600 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold transition-all active:scale-95"
+        >
+          <span class="material-symbols-outlined text-lg text-emerald-700">chat</span>
+          <span>Chatear directo al WhatsApp (+57 310 474 9770)</span>
+        </a>
+
+        <!-- Legal & Privacy Notice -->
+        <div class="mt-4 flex items-start gap-1.5 text-center justify-center text-[11px] text-on-surface-variant">
+          <span class="material-symbols-outlined text-[13px] text-outline shrink-0 mt-0.5">lock</span>
+          <span>Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (Acordeones para Derribar Objeciones) -->
+    <section class="px-margin py-space-xl bg-surface border-t border-outline-variant/30">
+      <div class="max-w-[720px] mx-auto">
+        <div class="text-center mb-6">
+          <span class="inline-block text-[11px] font-semibold text-primary tracking-widest uppercase mb-1">RESOLVIENDO DUDAS</span>
+          <h2 class="font-headline-md text-xl sm:text-2xl text-on-surface">Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="space-y-3">
+          <details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 shadow-sm cursor-pointer">
+            <summary class="flex justify-between items-center font-title-md text-sm sm:text-base font-semibold text-on-surface list-none">
+              <span>¿Los procedimientos duelen o requieren incapacidad?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+            </summary>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+              No. Empleamos anestesia tópica de alta efectividad y microcánulas de punta roma atraumática que minimizan al máximo cualquier molestia o hematoma. Puedes retomar tu rutina laboral el mismo día.
+            </p>
+          </details>
+
+          <details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 shadow-sm cursor-pointer">
+            <summary class="flex justify-between items-center font-title-md text-sm sm:text-base font-semibold text-on-surface list-none">
+              <span>¿Cuánto duran los resultados del ácido hialurónico y bioestimuladores?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+            </summary>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+              Los bioestimuladores de colágeno ofrecen una regeneración celular profunda cuyos efectos de firmeza se prolongan entre 12 y 24 meses. El ácido hialurónico de grado reticulado premium mantiene su volumen y soporte de 9 a 18 meses.
+            </p>
+          </details>
+
+          <details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 shadow-sm cursor-pointer">
+            <summary class="flex justify-between items-center font-title-md text-sm sm:text-base font-semibold text-on-surface list-none">
+              <span>¿Cómo garantizan que el resultado se vea 100% natural?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+            </summary>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+              Trabajamos bajo el principio médico de preservación anatómica: no creamos facciones ajenas, restauramos volúmenes perdidos mediante micro-dosis estratégicas que devuelven la frescura y tonicidad juvenil natural.
+            </p>
+          </details>
+
+          <details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 shadow-sm cursor-pointer">
+            <summary class="flex justify-between items-center font-title-md text-sm sm:text-base font-semibold text-on-surface list-none">
+              <span>¿Qué incluye la cita de valoración médica inicial?</span>
+              <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+            </summary>
+            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-2.5 pt-2.5 border-t border-outline-variant/20 leading-relaxed">
+              Incluye escaneo facial clínico, evaluación de calidad dérmica y vectores de tensión, diagnóstico fotográfico, propuesta terapéutica a medida y cotización formal transparente sin sobrecostos.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="bg-surface-container-high py-space-xl px-margin border-t border-outline-variant/40 text-center pb-28">
+      <div class="max-w-[720px] mx-auto flex flex-col items-center gap-3">
+        <div class="flex items-center gap-1.5 text-primary font-headline-sm text-base font-semibold">
+          <span class="material-symbols-outlined text-xl">spa</span>
+          <span>Kayonna Estética</span>
+        </div>
+        <p class="text-xs text-on-surface-variant max-w-[500px]">
+          Medicina Estética & Armonización Facial de Alta Precisión. Preservamos tu esencia y potenciamos tu bienestar en Colombia.
+        </p>
+        <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-primary font-medium my-1">
+          <a href="#" class="hover:underline">Habilitación Médica Seccional</a>
+          <span>·</span>
+          <a href="#" class="hover:underline">Aviso de Privacidad (Ley 1581)</a>
+          <span>·</span>
+          <a href="#" class="hover:underline">Términos y Consentimientos</a>
+          <span>·</span>
+          <a href="https://wa.me/573104749770" target="_blank" class="hover:underline">Contacto Directo</a>
+        </div>
+        <p class="text-[11px] text-outline">
+          © 2024 Kayonna Estética. Todos los derechos reservados. Vigilado por Supersalud Colombia. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales.
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- SHARED COMPONENT: BottomNavBar (Fixed Mobile Navigation) -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-2 bg-surface/95 backdrop-blur-lg border-t border-outline-variant/30 shadow-[0px_-4px_20px_-2px_rgba(35,32,30,0.06)] pb-safe">
+    <a href="#" class="flex flex-col items-center justify-center text-primary text-[10px] font-semibold">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+      <span>Tratamientos</span>
+    </a>
+    <a href="#seccion-proceso" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary text-[10px] font-medium transition-colors">
+      <span class="material-symbols-outlined text-xl">insights</span>
+      <span>Proceso</span>
+    </a>
+    <a href="#seccion-resultados" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary text-[10px] font-medium transition-colors">
+      <span class="material-symbols-outlined text-xl">verified</span>
+      <span>Resultados</span>
+    </a>
+    <a href="#formulario-valoracion" class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-3.5 py-1 text-[10px] font-semibold shadow-sm active:scale-95 transition-all">
+      <span class="material-symbols-outlined text-base">calendar_month</span>
+      <span>Agendar</span>
+    </a>
+  </nav>
+
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/kayonna-estetica" width="1" height="1" style="display:none" alt="">
+</body>
+</html>

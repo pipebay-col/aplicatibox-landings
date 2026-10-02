@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Top Model Esthetique | Medicina Estética de Precisión en Colombia</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS Engine -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#715b36",
+            "inverse-primary": "#74d7c8",
+            "on-error": "#ffffff",
+            "primary-container": "#008376",
+            "primary-fixed-dim": "#74d7c8",
+            "surface-container-low": "#ebf6f4",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#4fdcc6",
+            "on-primary": "#ffffff",
+            "surface-dim": "#d1dcda",
+            "on-surface-variant": "#3e4947",
+            "on-primary-fixed-variant": "#005048",
+            "on-primary-fixed": "#00201c",
+            "primary-fixed": "#91f4e4",
+            "surface-container-high": "#dfeae8",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#00201b",
+            "tertiary": "#00685b",
+            "on-tertiary-fixed-variant": "#005047",
+            "on-secondary-fixed-variant": "#574420",
+            "secondary-fixed": "#fcdeaf",
+            "primary": "#00685d",
+            "on-primary-container": "#f2fffb",
+            "surface-variant": "#dae5e3",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed": "#271900",
+            "inverse-on-surface": "#e8f3f1",
+            "surface-container": "#e5f0ee",
+            "tertiary-fixed": "#70f8e2",
+            "on-secondary-container": "#755f39",
+            "secondary-container": "#f9dcac",
+            "inverse-surface": "#283231",
+            "outline-variant": "#bdc9c6",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#f1fffa",
+            "surface-tint": "#006b60",
+            "surface-bright": "#f1fcfa",
+            "on-tertiary": "#ffffff",
+            "on-background": "#131d1c",
+            "surface": "#f1fcfa",
+            "surface-container-highest": "#dae5e3",
+            "on-error-container": "#93000a",
+            "background": "#f1fcfa",
+            "outline": "#6e7a77",
+            "tertiary-container": "#008374",
+            "secondary-fixed-dim": "#dfc395",
+            "on-surface": "#131d1c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-2xl": "4rem",
+            "space-lg": "1.5rem",
+            "gutter-md": "1.5rem",
+            "gutter": "1rem",
+            "margin": "1rem",
+            "space-md": "1rem",
+            "margin-lg": "3.5rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "margin-md": "2rem",
+            "space-xs": "0.25rem",
+            "gutter-lg": "2rem"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Playfair Display"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "title-sm": ["15px", { "lineHeight": "22px", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .glass-nav {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .hero-glow {
+      box-shadow: 0 16px 40px -10px rgba(0, 131, 118, 0.16);
+    }
+    .card-halo {
+      box-shadow: 0 12px 32px -4px rgba(0, 131, 118, 0.07), 0 4px 12px -2px rgba(27, 37, 36, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed pb-24 md:pb-0">
+<!-- ========================================================================= -->
+<!-- 1. TOP APP BAR (Shared Components JSON Anchor) -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 dark:bg-inverse-surface/90 glass-nav shadow-sm border-b border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-7xl mx-auto h-16 px-4 md:px-8 flex justify-between items-center">
+<!-- Leading Brand & Medical Verified Icon -->
+<a class="flex items-center gap-2 group transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined text-primary text-2xl font-semibold" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary tracking-tight font-semibold">Top Model Esthetique</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#proceso">Proceso</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#resultados">Resultados</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors duration-200" href="#preguntas">Preguntas Frecuentes</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="bg-primary text-on-primary text-label-lg font-label-lg px-5 py-2 rounded-full hover:bg-primary-container active:scale-95 transition-all duration-150 shadow-sm flex items-center gap-1.5" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- ========================================================================= -->
+<!-- 2. [A - ATENCIÓN] SECTION HERO -->
+<!-- ========================================================================= -->
+<section class="px-4 md:px-8 pt-4 pb-12 max-w-4xl mx-auto flex flex-col items-center text-center">
+<!-- MinSalud Regulatory Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-primary/20 mb-4 animate-fade-in">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary tracking-wide">Habilitación Seccional MinSalud · Medicina Estética en Colombia</span>
+</div>
+<!-- H1 Mobile Display Header (Playfair Display) -->
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4 leading-tight">
+        Tu rostro en su versión más armónica y radiante, <span class="italic font-normal text-primary">sin perder tu esencia natural</span>
+</h1>
+<!-- Specific Clinical Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant max-w-2xl mx-auto mb-6">
+        Tratamientos médicos no invasivos de armonización facial, bioestimulación de colágeno y rejuvenecimiento cutáneo en Top Model Esthetique. Resultados sutiles y elegantes sin incapacidad médica.
+      </p>
+<!-- High-Conversion Image Card -->
+<div class="w-full relative rounded-2xl md:rounded-3xl overflow-hidden hero-glow border border-outline-variant/30 mb-6 bg-surface-container-lowest">
+<div class="relative aspect-[4/3] w-full">
+<img alt="Resultado clínico Top Model Esthetique" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbSskNiPcRFHPBa4_6NpZUXOrtxXth9T0Oe_fUDp9vCAQkkigDDD7v9YEjenWAYBMv0PRgEqk_l7AKm-npCiyf6ZWeRMFtTBztrwjVcPJnwDL_djCcDq48RzCs25gtpClG1_9NG0Svmf49Fok1uXa-8_OdQXJK41ZTczeYTKgoEKK2BpQkQD16OASBg_OZdzyGAgHh_RgVnR4aHPCRlSg-Aahz_qcWHwiXRu9csdvl_T--oeZisLYOtZt2OQtcVTkoOuCjg2CTNfI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<!-- Pill Overlay on Hero -->
+<div class="absolute bottom-4 left-4 right-4 flex justify-center">
+<div class="glass-nav bg-surface/90 border border-white/60 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="text-label-sm font-label-sm text-on-surface text-center">Resultado Clínico Top Model Esthetique · 100% Armonía Natural y Luminosa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- High Contrast CTA -->
+<div class="w-full max-w-md flex flex-col items-center gap-3">
+<a class="w-full py-4 px-6 bg-primary-container text-on-primary-container rounded-full text-label-lg font-label-lg shadow-lg hover:shadow-xl hover:bg-primary active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" href="#agendar">
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<!-- Micro-credenciales -->
+<p class="text-label-sm font-label-sm text-outline flex items-center gap-1.5 justify-center">
+<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas · Valoración 1 a 1 sin costos sorpresa
+        </p>
+</div>
+<!-- 3 Confidence Quick Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full mt-6">
+<div class="flex items-center justify-center gap-2 py-2 px-3 bg-surface-container-low rounded-full border border-primary/10">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-label-sm text-on-surface">Tecnología INVIMA &amp; FDA</span>
+</div>
+<div class="flex items-center justify-center gap-2 py-2 px-3 bg-surface-container-low rounded-full border border-primary/10">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<span class="text-label-sm font-label-sm text-on-surface">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="flex items-center justify-center gap-2 py-2 px-3 bg-surface-container-low rounded-full border border-primary/10">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-label-sm font-label-sm text-on-surface">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. [I - INTERÉS] EMPATÍA, DOLOR Y PROCESO -->
+<!-- ========================================================================= -->
+<section class="px-4 md:px-8 py-12 bg-surface-container-lowest border-y border-outline-variant/30" id="proceso">
+<div class="max-w-4xl mx-auto">
+<!-- Empathy Card -->
+<div class="bg-surface-container-low p-6 md:p-8 rounded-2xl md:rounded-3xl border border-primary/15 card-halo mb-10">
+<span class="inline-block px-3 py-1 bg-surface-container rounded-full text-label-sm font-label-sm text-primary mb-3">
+            ¿TE IDENTIFICAS CON ESTO?
+          </span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-3">
+            ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            En Top Model Esthetique descartamos por completo los rostros sobre-rellenados o expresiones congeladas. Nuestra filosofía médica se rige por la arquitectura anatómica individual y microdosis progresivas: resaltamos tus puntos de luz naturales sin transformar quién eres.
+          </p>
+</div>
+<!-- 3-Step Clear Path -->
+<div class="text-center mb-8">
+<h3 class="text-title-lg font-title-lg text-on-surface mb-2">Tu ruta clara hacia la armonía médica</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Sin presiones, con total claridad diagnóstica desde el primer minuto.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+<!-- Step 1 -->
+<div class="p-6 bg-surface rounded-2xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="text-headline-md font-headline-md text-primary block mb-2">01</span>
+<h4 class="text-title-md font-title-md text-on-surface mb-2">Valoración y Mapeo Facial 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Diagnóstico milimétrico sin presiones comerciales. Analizamos proporciones, mímica y calidad dérmica.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="p-6 bg-surface rounded-2xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="text-headline-md font-headline-md text-primary block mb-2">02</span>
+<h4 class="text-title-md font-title-md text-on-surface mb-2">Plan Médico Personalizado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Selección exacta de bioestimuladores o ácido hialurónico con presupuesto cerrado y certificación de lote.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="p-6 bg-surface rounded-2xl border border-outline-variant/30 hover:border-primary/40 transition-colors">
+<span class="text-headline-md font-headline-md text-primary block mb-2">03</span>
+<h4 class="text-title-md font-title-md text-on-surface mb-2">Aplicación Guiada y Natural</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Procedimiento confortable con microcánulas y reinserción inmediata a tu rutina social y profesional.
+            </p>
+</div>
+</div>
+<!-- WhatsApp Quick Prompt Link -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 text-label-lg font-label-lg text-primary hover:text-primary-container transition-colors underline underline-offset-4" href="https://wa.me/573164412652?text=Hola%20Top%20Model%20Esthetique,%20tengo%20dudas%20sobre%20mi%20caso" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea directamente por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. [D - DESEO] AUTORIDAD, BENEFICIOS Y TESTIMONIOS -->
+<!-- ========================================================================= -->
+<section class="px-4 md:px-8 py-14 max-w-4xl mx-auto" id="resultados">
+<!-- Social Proof / Clinical Metrics Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-12">
+<div class="p-4 bg-surface-container-low rounded-2xl text-center border border-primary/10">
+<p class="text-headline-sm font-headline-sm text-primary">+9 Años</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Trayectoria Médica</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl text-center border border-primary/10">
+<p class="text-headline-sm font-headline-sm text-primary">+5.200</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Pacientes Satisfechos</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl text-center border border-primary/10">
+<p class="text-headline-sm font-headline-sm text-primary">100%</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">INVIMA &amp; FDA</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl text-center border border-primary/10">
+<p class="text-headline-sm font-headline-sm text-secondary">4.9 ★</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Google Reviews</p>
+</div>
+</div>
+<!-- 4 Concrete Clinical Benefits -->
+<div class="mb-14">
+<div class="text-center mb-8">
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">Beneficios pensados para tu ritmo de vida</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Medicina estética que complementa tu belleza, sin interrupciones ni sorpresas.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Benefit 1 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<div>
+<h4 class="text-title-sm font-title-sm text-on-surface mb-1">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Proporciones equilibradas que realzan tus rasgos distintivos sin rigidez ni aspecto sobrecargado.</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h4 class="text-title-sm font-title-sm text-on-surface mb-1">Bioestimulación de colágeno</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Firmeza, hidratación profunda y textura tersa reactivando la matriz celular de tu propio organismo.</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">timer_off</span>
+</div>
+<div>
+<h4 class="text-title-sm font-title-sm text-on-surface mb-1">Cero tiempo de incapacidad</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Retoma tus compromisos laborales el mismo día sin marcas agresivas ni moretones evidentes.</p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<div>
+<h4 class="text-title-sm font-title-sm text-on-surface mb-1">Acompañamiento médico VIP</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Monitoreo continuo y citas de control post-procedimiento directamente con tu especialista tratante.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Patient Testimonials -->
+<div class="space-y-4">
+<div class="text-center mb-6">
+<span class="text-label-sm font-label-sm text-primary tracking-widest block uppercase">Experiencias reales</span>
+<h3 class="text-title-lg font-title-lg text-on-surface">Lo que dicen nuestras pacientes</h3>
+</div>
+<!-- Testimonial 1 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold text-xs">CR</div>
+<div>
+<p class="text-label-lg font-label-lg text-on-surface">Dra. Camila Restrepo</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Bioestimulación y Glow</p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-label-sm font-label-sm text-secondary">Paciente Verificada</span>
+</div>
+</div>
+<div class="text-secondary text-xs mb-2">★★★★★</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Tenía mucho miedo de que mi rostro se viera inflamado o postizo. El equipo de Top Model Esthetique me escuchó con paciencia y el resultado fue exactamente lo que buscaba: piel descansada y natural."
+          </p>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 card-halo">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold text-xs">VM</div>
+<div>
+<p class="text-label-lg font-label-lg text-on-surface">Valentina Morales</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Armonización Sutil de Perfil</p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-label-sm font-label-sm text-secondary">Paciente Verificada</span>
+</div>
+</div>
+<div class="text-secondary text-xs mb-2">★★★★★</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "La atención médica es impecable. Me explicaron cada producto antes de abrirlo, todo certificado por INVIMA. Salí directo a una reunión y nadie notó que me había hecho nada más que verme luminosa."
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. [A - ACCIÓN] FORMULARIO Y CONVERSIÓN INMEDIATA -->
+<!-- ========================================================================= -->
+<section class="px-4 md:px-8 py-12 bg-surface-container-low border-t border-outline-variant/30 scroll-mt-16" id="agendar">
+<div class="max-w-xl mx-auto bg-surface-container-lowest p-6 md:p-8 rounded-3xl shadow-xl border border-primary/20 relative">
+<!-- Scarcity Banner -->
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-3.5 py-1 rounded-full text-label-sm font-label-sm mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">event_seat</span>
+<span>Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-2">Empieza hoy tu transformación armónica</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+          Diligencia tus datos para que una especialista médica coordine tu agenda prioritaria.
+        </p>
+<!-- Minimal 3-Field Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una especialista médica se comunicará contigo en menos de 24 horas.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1">Nombre y Apellido</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface rounded-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-body-md font-body-md text-on-surface" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: WhatsApp with +57 indicator -->
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1">WhatsApp o Celular</label>
+<div class="flex">
+<span class="inline-flex items-center px-3.5 rounded-l-xl border border-r-0 border-outline-variant/60 bg-surface-container text-label-md font-label-md text-on-surface">
+                🇨🇴 +57
+              </span>
+<input class="w-full px-4 py-3 bg-surface rounded-r-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-body-md font-body-md text-on-surface" placeholder="310 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment Preference -->
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1">¿Qué tratamiento te interesa?</label>
+<div class="relative">
+<select class="w-full px-4 py-3 bg-surface rounded-xl border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none text-body-md font-body-md text-on-surface appearance-none">
+<option value="Armonización Facial &amp; Botox">Armonización Facial &amp; Botox</option>
+<option value="Bioestimuladores de Colágeno">Bioestimuladores de Colágeno</option>
+<option value="Rejuvenecimiento Cutáneo &amp; Glow">Rejuvenecimiento Cutáneo &amp; Glow</option>
+<option selected="" value="Valoración Médica Integral">Valoración Médica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Primary Submit CTA -->
+<button class="w-full mt-2 py-4 px-6 bg-primary-container text-on-primary-container rounded-full text-label-lg font-label-lg shadow-md hover:bg-primary active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/40"></div></div>
+<span class="relative bg-surface-container-lowest px-3 text-label-sm font-label-sm text-outline uppercase tracking-wider">
+            O si prefieres atención inmediata
+          </span>
+</div>
+<!-- Direct Functional WhatsApp Button -->
+<a class="w-full py-3.5 px-5 bg-tertiary-container text-on-tertiary-container rounded-full text-label-lg font-label-lg shadow-sm hover:bg-tertiary active:scale-95 transition-all duration-150 flex items-center justify-center gap-2.5 text-center" href="https://wa.me/573164412652?text=Hola%20Top%20Model%20Esthetique,%20deseo%20agendar%20mi%20valoración%20médica" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 441 2652)</span>
+</a>
+<!-- Legal Trust Microcopy -->
+<div class="mt-5 text-center flex items-center justify-center gap-1.5 text-outline text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. PREGUNTAS FRECUENTES (Interactive Accordion) -->
+<!-- ========================================================================= -->
+<section class="px-4 md:px-8 py-12 max-w-3xl mx-auto" id="preguntas">
+<div class="text-center mb-8">
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">Preguntas Frecuentes</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Resolvemos tus dudas con absoluta honestidad clínica.</p>
+</div>
+<div class="space-y-3">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+<span class="text-title-sm font-title-sm text-on-surface">¿Los procedimientos duelen o requieren incapacidad?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            No. Utilizamos anestesia tópica de grado médico y microcánulas de punta roma que minimizan las molestias y previenen hematomas. Puedes reintegrarte de inmediato a tu vida laboral y social el mismo día.
+          </p>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+<span class="text-title-sm font-title-sm text-on-surface">¿Cuánto duran los resultados del ácido hialurónico y bioestimuladores?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            La duración varía según el metabolismo del paciente y la zona tratada. El ácido hialurónico suele durar entre 9 y 15 meses, mientras que los bioestimuladores de colágeno pueden prolongar sus beneficios estructurales por hasta 18 a 24 meses.
+          </p>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+<span class="text-title-sm font-title-sm text-on-surface">¿Cómo garantizan que el resultado se vea 100% natural?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Trabajamos con el concepto de 'embellecimiento invisible': dosificación conservadora, respeto irrestricto de las proporciones anatómicas individuales y técnicas de restitución de planos profundos en lugar de inflar la superficie.
+          </p>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+<span class="text-title-sm font-title-sm text-on-surface">¿Qué incluye la cita de valoración médica inicial?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Incluye mapeo y análisis facial completo 1 a 1 con médica especialista, evaluación del estado dérmico, diseño del plan progresivo y entrega de presupuesto cerrado sin letra chica.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- 7. FOOTER (Shared Components JSON Anchor) -->
+<!-- ========================================================================= -->
+<footer class="w-full py-10 px-4 md:px-8 max-w-7xl mx-auto flex flex-col items-center text-center gap-6 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl font-semibold">verified_user</span>
+<span class="text-title-lg font-headline-md text-primary dark:text-inverse-primary">Top Model Esthetique</span>
+</div>
+<!-- Regulatory Link Cluster from JSON -->
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-sm font-label-sm text-on-surface-variant dark:text-outline-variant">
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Habilitación MinSalud &amp; INVIMA</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Protección de Datos Ley 1581</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Protocolos de Bioseguridad</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Consentimientos Informados</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Sedes Bogotá &amp; Medellín</a>
+</div>
+<!-- Copyright Text exactly from JSON -->
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xl">
+      © 2024 Top Model Esthetique S.A.S. - IPS Habilitada Seccional de Salud Colombia. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- ========================================================================= -->
+<!-- 8. BOTTOM NAVBAR (Shared Components JSON Anchor - Mobile First) -->
+<!-- ========================================================================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 md:hidden bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg shadow-lg border-t border-outline-variant/20 dark:border-outline/10">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-90" href="#proceso">
+<span class="material-symbols-outlined text-xl">spa</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-90" href="#proceso">
+<span class="material-symbols-outlined text-xl">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-90" href="#resultados">
+<span class="material-symbols-outlined text-xl">auto_awesome</span>
+<span class="text-label-sm font-label-sm mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active Destination for High-Conversion Landing Flow) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container dark:bg-primary-fixed-dim dark:text-on-primary-fixed rounded-full px-3 py-1.5 transition-all duration-200 active:scale-90 shadow-sm" href="#agendar">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/top-model-esthetique" width="1" height="1" style="display:none" alt="">
+</body></html>

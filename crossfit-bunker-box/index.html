@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>CrossFit Bunker Box Colombia | Rendimiento Funcional de Élite</title>
+<!-- Google Fonts: Barlow Condensed & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#bbf246",
+            "on-secondary": "#00354a",
+            "on-secondary-container": "#00374d",
+            "on-primary-container": "#4e6c00",
+            "secondary-fixed": "#c4e7ff",
+            "on-tertiary-container": "#a44700",
+            "primary-fixed-dim": "#a2d72b",
+            "on-primary": "#253600",
+            "on-error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#004c69",
+            "surface-dim": "#111317",
+            "surface-bright": "#37393e",
+            "surface-variant": "#333539",
+            "inverse-surface": "#e2e2e8",
+            "surface-tint": "#a2d72b",
+            "on-error": "#690005",
+            "tertiary-container": "#ffd8c6",
+            "secondary-container": "#00a6e0",
+            "outline": "#8d937c",
+            "on-surface-variant": "#c3c9b0",
+            "error-container": "#93000a",
+            "tertiary-fixed": "#ffdbca",
+            "surface-container-high": "#282a2e",
+            "surface": "#111317",
+            "on-tertiary-fixed": "#341100",
+            "secondary": "#7bd0ff",
+            "on-surface": "#e2e2e8",
+            "on-primary-fixed-variant": "#374e00",
+            "on-secondary-fixed": "#001e2c",
+            "on-background": "#e2e2e8",
+            "on-tertiary-fixed-variant": "#783200",
+            "background": "#111317",
+            "surface-container-low": "#1a1c20",
+            "surface-container-lowest": "#0c0e12",
+            "inverse-on-surface": "#2f3035",
+            "primary-fixed": "#bdf448",
+            "surface-container-highest": "#333539",
+            "on-tertiary": "#552100",
+            "tertiary": "#fffbff",
+            "surface-container": "#1e2024",
+            "inverse-primary": "#4a6700",
+            "primary": "#fbffe8",
+            "on-primary-fixed": "#141f00",
+            "error": "#ffb4ab",
+            "tertiary-fixed-dim": "#ffb690",
+            "secondary-fixed-dim": "#7bd0ff",
+            "outline-variant": "#434936"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "margin": "1rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "1.5rem",
+            "margin-tablet": "2rem",
+            "space-xl": "2.5rem",
+            "gutter": "1rem",
+            "margin-desktop": "3rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Barlow Condensed"],
+            "headline-xl": ["Barlow Condensed"],
+            "label-caps": ["Barlow Condensed"],
+            "stat-metric": ["Barlow Condensed"],
+            "display-hero": ["Barlow Condensed"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Barlow Condensed"],
+            "headline-lg-mobile": ["Barlow Condensed"],
+            "headline-xl-mobile": ["Barlow Condensed"],
+            "display-hero-mobile": ["Barlow Condensed"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "40px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-caps": ["14px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "stat-metric": ["56px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "display-hero": ["72px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["34px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "display-hero-mobile": ["44px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .kinetic-glow {
+      box-shadow: 0px 8px 32px rgba(187, 242, 70, 0.22);
+    }
+    .kinetic-glow-sm {
+      box-shadow: 0px 4px 18px rgba(187, 242, 70, 0.16);
+    }
+    .industrial-card {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-surface-container-lowest pb-20">
+<!-- ========================================== -->
+<!-- 1. TOP APP BAR (Shared Component Anchor) -->
+<!-- ========================================== -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 max-w-7xl mx-auto bg-surface/90 dark:bg-surface/90 backdrop-blur-md shadow-sm">
+<!-- Leading brand icon & headline -->
+<a class="flex items-center gap-2 active:scale-95 transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-primary-container dark:text-primary-container text-2xl" data-icon="fitness_center">fitness_center</span>
+<span class="text-headline-md font-headline-md font-bold tracking-tight text-primary dark:text-primary tracking-tighter">BUNKER BOX</span>
+</a>
+<!-- Trailing Action -->
+<a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary-container text-on-surface-variant font-label-caps text-label-caps uppercase active:scale-95 hover:text-primary-container dark:hover:text-primary-container transition-all duration-150" href="#accion">
+<span class="text-surface-container-lowest font-black tracking-wider">Agendar</span>
+<span class="material-symbols-outlined text-surface-container-lowest text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</header>
+<!-- Content Canvas Container (Mobile First Max 440px / Responsive Tablet & Desktop) -->
+<main class="w-full max-w-[440px] md:max-w-2xl lg:max-w-4xl mx-auto pt-16 px-4 flex flex-col gap-10">
+<!-- ========================================== -->
+<!-- 2. A - ATENCIÓN (HERO SECTION) -->
+<!-- ========================================== -->
+<section class="pt-6 flex flex-col gap-4" id="hero">
+<!-- Box Credential Pill -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/10 border border-primary-container/30 w-fit">
+<span class="material-symbols-outlined text-primary-container text-sm" data-icon="bolt">bolt</span>
+<span class="text-primary-container font-label-caps text-label-caps uppercase tracking-wider text-[11px] leading-tight">
+          BOX AFILIADO OFICIAL · ENTRENAMIENTO FUNCIONAL DE ÉLITE EN COLOMBIA
+        </span>
+</div>
+<!-- Hero Headline (Mobile Token) -->
+<h1 class="text-display-hero-mobile font-display-hero-mobile text-primary uppercase leading-none tracking-tight">
+        Transforma tu fuerza, resistencia y mentalidad en <span class="text-primary-container underline decoration-primary-container/40 underline-offset-4">Bunker Box</span>
+</h1>
+<!-- Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant">
+        Entrenamiento funcional y CrossFit de alto impacto adaptado a tu nivel. Quema grasa, construye músculo real y supera tus límites en la comunidad más disciplinada de Colombia.
+      </p>
+<!-- Hero Media Container with Floated Metric Badge -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 bg-surface-container industrial-card group">
+<img alt="Editorial sports and functional fitness photography in a high-end CrossFit box gym named Bunker Box in Colombia. An athletic Latin male and female athlete doing high-intensity functional training with bumper plates, kettlebells, and pull-up rig in background. Dramatic moody dark cinematic athletic lighting, warm rim light, concrete textures, motivational modern training atmosphere, photorealistic 8k, high energy and community vibe, authentic fitness photography." class="w-full h-full object-cover object-center filter brightness-90 contrast-105 group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1p_boY_EiP8uy5vxyA60xKqwL-Z3Ld4eJAJK6FYYXiyfPBxs01d8do-n_9S00GWc4u2YJqWFjcyiiDBz5LqcDZfuTNyPzEStWYqBBByy0EWUUbqGIck0NZMUZh91EdbUko46A-1k9EqPiY1lSC68roFNbW5pXAsKP-TegXath0oIvFwXQyoTKX4ZAo9GnWtppzuiz6lNo1lK_o_UJU-9u9uBItuPv3RMHZALKxFbAbmv5eki4u6rdTM8sbL5QRiYYl_ojRgwO50"/>
+<!-- Cinematic dark gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/20"></div>
+<!-- Floating Metric Badge Tag -->
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-lg bg-surface-container/90 backdrop-blur-md border border-white/15 flex items-center justify-between shadow-xl">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center border border-primary-container/40">
+<span class="material-symbols-outlined text-primary-container text-lg" data-icon="sports_gymnastics">sports_gymnastics</span>
+</div>
+<div>
+<p class="text-primary font-label-caps text-label-caps uppercase text-xs leading-tight">Comunidad RX Activa</p>
+<p class="text-on-surface-variant font-body-sm text-body-sm text-[11px] leading-none">+98% Adherencia y constancia</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-surface-container-lowest font-label-caps text-[11px] font-black uppercase">
+            BOG &amp; MDE
+          </span>
+</div>
+</div>
+<!-- Main Kinetic CTA -->
+<div class="flex flex-col gap-2.5 pt-2">
+<a class="w-full py-4 px-6 rounded-lg bg-primary-container text-surface-container-lowest font-label-caps text-headline-md font-bold uppercase flex items-center justify-center gap-2 kinetic-glow active:scale-95 hover:brightness-105 transition-all duration-150" href="#accion">
+<span>Agendar ahora mi clase de prueba</span>
+<span class="material-symbols-outlined text-surface-container-lowest text-2xl font-bold" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-credentials -->
+<div class="flex items-center justify-center gap-1.5 text-center text-on-surface-variant text-body-sm font-body-sm text-[12px] flex-wrap">
+<span class="text-primary-container font-bold">✓</span> Respuesta en menos de 24 horas 
+          <span class="text-outline-variant">•</span>
+<span class="text-primary-container font-bold">✓</span> Sin compromiso 
+          <span class="text-outline-variant">•</span>
+<span class="text-primary-container font-bold">✓</span> Coaches Level-2
+        </div>
+</div>
+<!-- Trío de Badges de Valor Técnico -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low border border-white/5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary-container text-xl mb-1" data-icon="verified">verified</span>
+<span class="text-primary font-label-caps text-label-caps uppercase text-xs leading-tight">CrossFit Oficial</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low border border-white/5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary-container text-xl mb-1" data-icon="fitness_center">fitness_center</span>
+<span class="text-primary font-label-caps text-label-caps uppercase text-xs leading-tight">Coaching 1 a 1</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low border border-white/5 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary-container text-xl mb-1" data-icon="construction">construction</span>
+<span class="text-primary font-label-caps text-label-caps uppercase text-xs leading-tight">Sede Equipada Rogue</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. I - INTERÉS (PROBLEMA + PROCESO 3 PASOS) -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-6 pt-6" id="proceso">
+<!-- Diagnostic & Empathy Block -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-3 relative overflow-hidden industrial-card">
+<div class="inline-flex items-center gap-1.5 text-error font-label-caps text-label-caps uppercase text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="warning">warning</span>
+<span>El problema del fitness tradicional</span>
+</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary uppercase leading-tight">
+          ¿Cansado de pagar gimnasios tradicionales donde entrenas solo, sin resultados ni motivación?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          Las máquinas monótonas, las rutinas genéricas de internet y la falta de supervisión profesional solo generan estancamiento y frustración. En <strong class="text-primary">Bunker Box</strong> reemplazamos la desidia con programación estructurada de alto rendimiento (<strong class="text-primary-container">WOD</strong> diario), corrección técnica milimétrica al segundo y una tribu que nunca te deja entrenar en solitario.
+        </p>
+<div class="p-3 rounded-lg bg-surface-container border-l-2 border-primary-container flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="military_tech">military_tech</span>
+<p class="text-body-sm font-body-sm text-primary">
+            No adaptas tu cuerpo a una máquina: <span class="font-bold text-primary-container">conviertes tu cuerpo en la máquina.</span>
+</p>
+</div>
+</div>
+<!-- 3 Steps Process Header -->
+<div class="flex flex-col gap-1">
+<span class="text-primary-container font-label-caps text-label-caps uppercase tracking-wider text-xs">
+          Metodología Científica Comprobada
+        </span>
+<h2 class="text-headline-xl-mobile font-headline-xl-mobile text-primary uppercase leading-tight">
+          Tu camino hacia tu mejor versión en 3 pasos
+        </h2>
+</div>
+<!-- Process Cards: Bento numbered flow -->
+<div class="flex flex-col gap-3.5">
+<!-- Paso 01 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-md border border-white/10 relative overflow-hidden industrial-card">
+<span class="absolute top-2 right-3 text-stat-metric font-stat-metric text-white/5 pointer-events-none select-none">
+            01
+          </span>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-caps text-xs font-bold uppercase border border-primary-container/30">
+              Fase 01
+            </span>
+<span class="text-primary font-headline-md text-headline-md uppercase">Valoración Funcional y Nivelación</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Diagnóstico completo de tus rangos de movilidad articular, fuerza básica y capacidad cardiovascular. Diseñamos tu punto de partida seguro para garantizar progreso sin peligro de sobrecarga.
+          </p>
+</div>
+<!-- Paso 02 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-md border border-white/10 relative overflow-hidden industrial-card">
+<span class="absolute top-2 right-3 text-stat-metric font-stat-metric text-white/5 pointer-events-none select-none">
+            02
+          </span>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-caps text-xs font-bold uppercase border border-primary-container/30">
+              Fase 02
+            </span>
+<span class="text-primary font-headline-md text-headline-md uppercase">Plan de Entrenamiento Progresivo</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            WODs estructurados y adaptados a tu condición por entrenadores certificados. Cada sesión combina levantamiento de pesas olímpico, acondicionamiento metabólico y gimnasia de forma controlada.
+          </p>
+</div>
+<!-- Paso 03 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-md border border-primary-container/30 relative overflow-hidden industrial-card kinetic-glow-sm">
+<span class="absolute top-2 right-3 text-stat-metric font-stat-metric text-primary-container/10 pointer-events-none select-none">
+            03
+          </span>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-surface-container-lowest font-label-caps text-xs font-black uppercase">
+              Fase 03
+            </span>
+<span class="text-primary font-headline-md text-headline-md uppercase">Resultados Reales y Rendimiento</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Incremento medible semana a semana: menos porcentaje de grasa, mayor masa magra, potencia atlética transferible al día a día y la energía indestructible de una comunidad que te respalda.
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. D - DESEO (MÉTRICAS + BENEFICIOS + TESTIMONIOS) -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-6 pt-4" id="resultados">
+<!-- Header -->
+<div class="flex flex-col gap-1">
+<span class="text-primary-container font-label-caps text-label-caps uppercase tracking-wider text-xs">
+          Rigor, Disciplina y Autoridad
+        </span>
+<h2 class="text-headline-xl-mobile font-headline-xl-mobile text-primary uppercase leading-tight">
+          La evidencia de nuestro impacto en Colombia
+        </h2>
+</div>
+<!-- Métricas 2x2 Bento Grid -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col industrial-card">
+<span class="text-stat-metric font-stat-metric text-primary-container leading-none">+8</span>
+<span class="text-primary font-headline-md text-headline-md uppercase mt-1">Años en Colombia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm text-[12px]">Forjando atletas de todos los niveles</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col industrial-card">
+<span class="text-stat-metric font-stat-metric text-primary-container leading-none">+3.500</span>
+<span class="text-primary font-headline-md text-headline-md uppercase mt-1">Transformados</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm text-[12px]">Vidas cambiadas con hábitos sostenibles</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col industrial-card">
+<span class="text-stat-metric font-stat-metric text-primary-container leading-none">100%</span>
+<span class="text-primary font-headline-md text-headline-md uppercase mt-1">Coaches Level-2</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm text-[12px]">Acreditación CrossFit &amp; Weightlifting</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col industrial-card">
+<span class="text-stat-metric font-stat-metric text-primary-container leading-none">4.9 ★</span>
+<span class="text-primary font-headline-md text-headline-md uppercase mt-1">Google Reviews</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm text-[12px]">Más de 620 reseñas verificadas</span>
+</div>
+</div>
+<!-- Beneficios Tangibles (Listado con Iconografía Industrial) -->
+<div class="flex flex-col gap-3">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-primary uppercase">
+          Lo que ganas al entrenar en el Bunker
+        </h3>
+<!-- Beneficio 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low border border-white/5 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded bg-primary-container/10 border border-primary-container/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="local_fire_department">local_fire_department</span>
+</div>
+<div>
+<h4 class="text-primary font-title-sm text-title-sm font-bold">Fuerza real y composición atlética</h4>
+<p class="text-on-surface-variant text-body-sm font-body-sm mt-0.5">
+              Desarrolla masa muscular densa y quema hasta 800 kcal por sesión gracias a picos controlados de alta intensidad metabólica.
+            </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low border border-white/5 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded bg-primary-container/10 border border-primary-container/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<div>
+<h4 class="text-primary font-title-sm text-title-sm font-bold">Prevención de lesiones con técnica guiada</h4>
+<p class="text-on-surface-variant text-body-sm font-body-sm mt-0.5">
+              Ojo clínico constante. Cada repetición en levantamiento de peso y gimnasia se supervisa para blindar tus rodillas y zona lumbar.
+            </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low border border-white/5 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded bg-primary-container/10 border border-primary-container/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="text-primary font-title-sm text-title-sm font-bold">Comunidad que no te deja rendirte</h4>
+<p class="text-on-surface-variant text-body-sm font-body-sm mt-0.5">
+              Aquí el ego se queda en la puerta. El último en terminar el WOD siempre recibe la ovación y el aliento más fuerte del box.
+            </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low border border-white/5 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded bg-primary-container/10 border border-primary-container/20 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary-container" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<h4 class="text-primary font-title-sm text-title-sm font-bold">Programación integral y nutrición deportiva</h4>
+<p class="text-on-surface-variant text-body-sm font-body-sm mt-0.5">
+              Recibe orientación sobre ingesta de proteínas, hidratación y descanso para multiplicar tus ganancias y acelerar la recuperación.
+            </p>
+</div>
+</div>
+</div>
+<!-- Testimonios de Atletas Reales -->
+<div class="flex flex-col gap-3 pt-2">
+<span class="text-primary-container font-label-caps text-label-caps uppercase text-xs">
+          Historias de Transformación
+        </span>
+<!-- Testimonio 1 -->
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col gap-2.5 industrial-card">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-bright flex items-center justify-center font-bold text-primary font-headline-md">
+                JM
+              </div>
+<div>
+<p class="text-primary font-title-sm text-sm font-bold leading-tight">Juan Camilo Mejía</p>
+<p class="text-on-surface-variant text-[11px] leading-tight">Bogotá · 14 meses entrenando</p>
+</div>
+</div>
+<div class="flex text-primary-container text-xs">★★★★★</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Llevaba 4 años pagando gimnasio comercial para terminar usando la elíptica 20 minutos sin ganas. En Bunker Box bajé 11 kg de grasa, mi dolor lumbar crónico desapareció y ahora levanto mi propio peso corporal con facilidad."
+          </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="p-4 rounded-xl bg-surface-container border border-white/10 flex flex-col gap-2.5 industrial-card">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-bright flex items-center justify-center font-bold text-primary font-headline-md">
+                AT
+              </div>
+<div>
+<p class="text-primary font-title-sm text-sm font-bold leading-tight">Andrea Trujillo</p>
+<p class="text-on-surface-variant text-[11px] leading-tight">Medellín (El Poblado) · 8 meses</p>
+</div>
+</div>
+<div class="flex text-primary-container text-xs">★★★★★</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Tenía pánico de lesionarme porque nunca había levantado una barra. Los coaches adaptaron cada movimiento desde cero. Hoy tengo más energía que a mis 20 años y la comunidad te hace sentir en casa desde el día uno."
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. A - ACCIÓN (CONVERSIÓN FINAL & AGENDAMIENTO) -->
+<!-- ========================================== -->
+<section class="pt-4 flex flex-col gap-4" id="accion">
+<!-- Conversión Box -->
+<div class="p-5 md:p-6 rounded-2xl bg-surface-container-high border-2 border-primary-container/70 relative overflow-hidden kinetic-glow">
+<!-- Scarcity Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-surface-container-lowest font-label-caps text-label-caps uppercase text-xs font-black mb-3">
+<span class="material-symbols-outlined text-sm font-bold" data-icon="hourglass_top">hourglass_top</span>
+<span>Cupos semanales limitados por horario</span>
+</div>
+<!-- Form Heading -->
+<h2 class="text-headline-xl-mobile font-headline-xl-mobile text-primary uppercase leading-tight">
+          Empieza hoy tu transformación en Bunker Box
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5 mb-5">
+          Déjanos tus datos para coordinar tu clase de prueba personalizada con un coach asignado, sin costo ni compromiso.
+        </p>
+<!-- Minimal 3-field form -->
+<form class="flex flex-col gap-3.5" onsubmit="event.preventDefault(); alert('¡Excelente decisión! Un coach de Bunker Box te escribirá en minutos a WhatsApp.');">
+<!-- Field 1: Name -->
+<div class="flex flex-col gap-1">
+<label class="text-label-caps font-label-caps text-primary uppercase text-xs">
+              Nombre completo
+            </label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border border-white/20 rounded-lg px-3.5 py-3 text-primary text-body-md font-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Ej. Santiago Mejía" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-lg" data-icon="person">person</span>
+</div>
+</div>
+<!-- Field 2: WhatsApp -->
+<div class="flex flex-col gap-1">
+<label class="text-label-caps font-label-caps text-primary uppercase text-xs">
+              WhatsApp / Teléfono móvil
+            </label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border border-white/20 rounded-lg px-3.5 py-3 text-primary text-body-md font-body-md placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Ej. 315 429 1484" required="" type="tel"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-lg" data-icon="call">call</span>
+</div>
+</div>
+<!-- Field 3: Goal Selection -->
+<div class="flex flex-col gap-1">
+<label class="text-label-caps font-label-caps text-primary uppercase text-xs">
+              ¿Qué te interesa lograr?
+            </label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border border-white/20 rounded-lg px-3.5 py-3 text-primary text-body-md font-body-md focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container appearance-none">
+<option value="grasa">Pérdida de grasa y tonificación</option>
+<option value="fuerza">Ganancia de fuerza y masa muscular</option>
+<option value="rx">Rendimiento deportivo y CrossFit RX</option>
+<option selected="" value="principiante">Nivel principiante desde cero</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-on-surface-variant text-lg pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 px-6 rounded-lg bg-primary-container text-surface-container-lowest font-label-caps text-headline-md font-bold uppercase flex items-center justify-center gap-2 mt-2 active:scale-95 hover:brightness-105 transition-all duration-150 cursor-pointer" type="submit">
+<span>Quiero mi valoración gratuita ⚡</span>
+</button>
+</form>
+<!-- Divider Direct WhatsApp Option -->
+<div class="relative flex items-center justify-center my-4">
+<div class="border-t border-white/10 w-full"></div>
+<span class="bg-surface-container-high px-3 text-[11px] font-label-caps uppercase text-on-surface-variant tracking-wider">
+            O si prefieres atención inmediata
+          </span>
+<div class="border-t border-white/10 w-full"></div>
+</div>
+<!-- Direct WhatsApp Link Button -->
+<a class="w-full py-3 px-4 rounded-lg bg-surface-container border border-primary-container/40 text-primary-container hover:bg-primary-container/10 font-label-caps text-label-caps uppercase flex items-center justify-center gap-2 active:scale-95 transition-all duration-150" href="https://wa.me/573154291484?text=Hola%20Bunker%20Box,%20quiero%20agendar%20mi%20clase%20de%20prueba" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary-container text-lg" data-icon="chat">chat</span>
+<span>Chatear al WhatsApp (+57 315 429 1484)</span>
+</a>
+<!-- Privacy disclaimer -->
+<p class="text-center text-[10px] text-on-surface-variant/70 font-body-sm mt-4">
+          Tus datos están protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. PREGUNTAS FRECUENTES (FAQ INTERACTIVO) -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-4 pt-4">
+<div class="flex flex-col gap-1">
+<span class="text-primary-container font-label-caps text-label-caps uppercase tracking-wider text-xs">
+          Claridad y Confianza
+        </span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-primary uppercase leading-tight">
+          Preguntas Frecuentes
+        </h2>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- FAQ 1 -->
+<details class="group p-4 rounded-xl bg-surface-container-low border border-white/10 open:border-primary-container/30 transition-all duration-200">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<span>¿Qué pasa si nunca he hecho CrossFit antes?</span>
+<span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-3 border-t border-white/5 mt-3">
+            El 75% de nuestros miembros inició sin experiencia previa. Contamos con un programa introductorio (On-Ramp) donde se aprenden las mecánicas y cada movimiento se escala a tu nivel actual de fuerza y flexibilidad.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-4 rounded-xl bg-surface-container-low border border-white/10 open:border-primary-container/30 transition-all duration-200">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<span>¿Qué necesito llevar a mi primera clase?</span>
+<span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-3 border-t border-white/5 mt-3">
+            Solo ropa deportiva cómoda, tenis planos o de entrenamiento, una toalla de manos personal y tu termo con agua. En el box te suministramos magnesio y todo el equipamiento profesional.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-4 rounded-xl bg-surface-container-low border border-white/10 open:border-primary-container/30 transition-all duration-200">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<span>¿El entrenamiento es peligroso para las articulaciones?</span>
+<span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-3 border-t border-white/5 mt-3">
+            Al contrario: el sedentarismo es el mayor enemigo de las articulaciones. Nuestros entrenadores con certificación oficial vigilan tu técnica antes de añadir peso o velocidad. La seguridad es nuestra prioridad no negociable.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group p-4 rounded-xl bg-surface-container-low border border-white/10 open:border-primary-container/30 transition-all duration-200">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<span>¿Qué horarios de entrenamiento manejan?</span>
+<span class="material-symbols-outlined text-primary-container group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-3 border-t border-white/5 mt-3">
+            Disponemos de clases desde las 5:00 a.m. hasta las 8:30 p.m. de lunes a viernes, y sábados en bloque matutino y WOD de comunidad (8:00 a.m. a 12:00 m.). Puedes reservar fácilmente desde nuestra app.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- 7. FOOTER (Shared Component Anchor) -->
+<!-- ========================================== -->
+<footer class="w-full px-6 py-12 pb-24 flex flex-col items-center gap-6 max-w-7xl mx-auto bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 mt-12">
+<!-- Brand Headline -->
+<div class="flex flex-col items-center gap-1 text-center">
+<span class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary tracking-tight">
+        BUNKER BOX
+      </span>
+<span class="text-label-caps font-label-caps uppercase text-primary-container tracking-wider text-xs">
+        CrossFit &amp; Rendimiento Funcional
+      </span>
+</div>
+<!-- Institutional Links (Literal as JSON) -->
+<nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-center">
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#proceso">
+        Sedes Bogotá &amp; Medellín
+      </a>
+<span class="text-outline-variant">•</span>
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#proceso">
+        Acreditaciones CrossFit RX
+      </a>
+<span class="text-outline-variant">•</span>
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#proceso">
+        Políticas de Salud y Deporte
+      </a>
+<span class="text-outline-variant">•</span>
+<a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#proceso">
+        Términos y Consentimiento Informado
+      </a>
+<span class="text-outline-variant">•</span>
+<a class="text-body-sm font-body-sm text-primary-container dark:text-primary-container underline hover:text-primary-container transition-colors duration-150 font-bold" href="https://wa.me/573154291484" target="_blank">
+        Contacto Directo WhatsApp
+      </a>
+</nav>
+<!-- Copyright (Literal as JSON) -->
+<p class="text-body-sm font-body-sm text-on-surface-variant text-center max-w-sm">
+      © 2025 BUNKER BOX COLOMBIA. Todos los derechos reservados. Rendimiento Funcional de Élite.
+    </p>
+</footer>
+<!-- ========================================== -->
+<!-- 8. BOTTOM NAVBAR (Shared Component Anchor) -->
+<!-- Mobile strictly: Destination intent = Agendar -->
+<!-- ========================================== -->
+<nav class="fixed bottom-0 w-full z-50 flex items-center justify-around px-2 py-2 bg-surface-container/95 dark:bg-surface-container/95 backdrop-blur-lg shadow-[0_-4px_24px_rgba(0,0,0,0.5)] md:hidden">
+<!-- Item 1: Entrenamiento -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1 active:scale-90 transition-transform duration-150 ease-out hover:text-primary-container" href="#hero">
+<span class="material-symbols-outlined text-xl" data-icon="sports_gymnastics">sports_gymnastics</span>
+<span class="text-label-caps font-label-caps tracking-wider uppercase text-[10px]">Entrenamiento</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1 active:scale-90 transition-transform duration-150 ease-out hover:text-primary-container" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="format_list_numbered">format_list_numbered</span>
+<span class="text-label-caps font-label-caps tracking-wider uppercase text-[10px]">Proceso</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant py-1 active:scale-90 transition-transform duration-150 ease-out hover:text-primary-container" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="trophy">trophy</span>
+<span class="text-label-caps font-label-caps tracking-wider uppercase text-[10px]">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active Contextual Conversion Target) -->
+<a class="flex flex-col items-center justify-center text-primary-container dark:text-primary-container py-1 active:scale-90 transition-transform duration-150 ease-out font-bold" href="#accion">
+<div class="w-8 h-8 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-xl text-surface-container-lowest" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<span class="text-label-caps font-label-caps tracking-wider uppercase text-[10px] text-primary-container font-black mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/crossfit-bunker-box" width="1" height="1" style="display:none" alt="">
+</body></html>
