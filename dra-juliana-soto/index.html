@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Dra. Juliana Soto · Veneers Medellín | Odontología Biomimética</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#e2e2e2",
+            "on-surface": "#1a1c1c",
+            "inverse-on-surface": "#f1f1f0",
+            "on-tertiary-container": "#fffbff",
+            "surface-container-low": "#f3f4f3",
+            "primary": "#00685f",
+            "on-secondary-fixed": "#00201c",
+            "outline-variant": "#bcc9c6",
+            "on-secondary-container": "#376e66",
+            "on-primary-fixed-variant": "#005049",
+            "primary-container": "#008378",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#6bd8cb",
+            "surface-variant": "#e2e2e2",
+            "on-surface-variant": "#3d4947",
+            "on-primary-container": "#f4fffc",
+            "secondary-fixed": "#b5eee4",
+            "surface-tint": "#006a61",
+            "on-error": "#ffffff",
+            "surface": "#f9f9f8",
+            "primary-fixed": "#89f5e7",
+            "inverse-surface": "#2f3130",
+            "secondary": "#306760",
+            "on-tertiary-fixed": "#2f1500",
+            "secondary-container": "#b5eee4",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-high": "#e8e8e7",
+            "on-secondary": "#ffffff",
+            "on-background": "#1a1c1c",
+            "tertiary-container": "#b15f00",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#ffdcc3",
+            "outline": "#6d7a77",
+            "on-primary-fixed": "#00201d",
+            "surface-container": "#eeeeed",
+            "surface-bright": "#f9f9f8",
+            "error-container": "#ffdad6",
+            "surface-dim": "#dadad9",
+            "inverse-primary": "#6bd8cb",
+            "tertiary": "#8d4b00",
+            "on-secondary-fixed-variant": "#144f48",
+            "tertiary-fixed-dim": "#ffb77d",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#99d1c8",
+            "background": "#f9f9f8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "gutter": "1rem",
+            "gutter-mobile": "0.75rem",
+            "margin": "2rem"
+          },
+          "fontFamily": {
+            "display-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "title-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "label-md": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "headline-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen pb-24 md:pb-0">
+<!-- TOP APP BAR (Shared Component Exact Spec) -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-space-md py-space-sm max-w-7xl mx-auto bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center space-x-space-xs">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="spa">spa</span>
+<span class="text-title-md font-title-md font-semibold text-primary dark:text-inverse-primary tracking-tight">Dra. Juliana Soto · Veneers</span>
+</div>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center space-x-space-lg text-body-md font-body-md">
+<a class="text-primary dark:text-inverse-primary font-semibold" href="#atencion">Inicio</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#proceso">Carillas E-max</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#deseo">Resultados</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#agenda">Valoración</a>
+</nav>
+<!-- Top Action CTA -->
+<a class="text-label-md font-label-md text-on-primary bg-primary hover:bg-primary-container px-space-md py-space-xs rounded-full transition-all duration-200 shadow-sm active:scale-95" href="#agenda">
+      Agendar
+    </a>
+</header>
+<!-- MAIN CANVAS -->
+<main class="w-full max-w-md mx-auto md:max-w-4xl px-margin-mobile md:px-margin space-y-space-xl pt-space-md">
+<!-- 1. ETAPA A - ATENCIÓN (AIDA) -->
+<section class="space-y-space-md" id="atencion">
+<!-- Accreditation Official Badge -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low border border-outline-variant/30 px-3 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-wider">
+          Especialista en Carillas Cerámicas E-max · Registro Seccional Antioquia · El Poblado, Medellín
+        </span>
+</div>
+<!-- Main H1 Headline with Editorial Playfair Display -->
+<h1 class="text-display-mobile md:text-display-lg font-display-mobile md:font-display-lg text-on-surface leading-tight tracking-tight">
+        Tu sonrisa soñada en Medellín, <span class="italic text-primary font-medium">natural</span> y diseñada para durar toda la vida.
+      </h1>
+<!-- Specific Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Carillas cerámicas ultrafinas E-max y lentes de contacto dental sin desgastes agresivos ni dolor. Armonía facial a tu medida guiada por tecnología digital 3D en El Poblado.
+      </p>
+<!-- Hero Visual Framing Card -->
+<div class="relative rounded-2xl overflow-hidden shadow-sm border border-outline-variant/20 bg-surface-container-lowest">
+<img class="w-full h-80 object-cover object-center" data-alt="A sophisticated editorial portrait of Dra. Juliana Soto in a high-end cosmetic dental clinic in El Poblado Medellín. She is a warm, elegant professional with a flawless natural smile, surrounded by floor-to-ceiling glass windows showing lush green mountains of Antioquia. The clinic interior features warm cream marble, minimalist natural oak accents, and soft architectural morning sunlight. Pristine light-mode luxury aesthetic with deep teal medical scrubs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtRcierDFSka74E6398JnTuQB5om5RE6AUFZf4x7o29oGuKLMakx-nEQTv0XfAXzMllVMyiAZFqgvAxoPKSY6dVO5jLgD-xtpvmCZp5kjNULeeCsjQ5qxQ1TYwnM1bjC5LdyjnWrvBCX_yr2RfiWc6f4OiyBFORq4BjMWZGWW571lc_kRz9Qr0bgDJQRSipepTX6GcgLWppAnhB2rpEcugXzdXNnnFiMVxoy2fkYHPFtZujlpZy8xgrIEDDXTfKvx2XeuyAHnqhF4"/>
+<!-- Floating Glassmorphic Pill -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md rounded-xl p-3 border border-surface-container-lowest/80 shadow-md flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-label-sm font-label-sm text-primary font-bold truncate">100% Cerámica E-max Natural</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant truncate">Cero Desgaste Agresivo · El Poblado</p>
+</div>
+</div>
+</div>
+<!-- Primary Conversion CTA -->
+<div class="space-y-space-xs pt-1">
+<a class="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-3.5 px-6 rounded-full shadow-lg shadow-primary/20 transition-all duration-200 active:scale-98" href="#agenda">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center text-body-sm font-body-sm text-on-surface-variant">
+          Respuesta en menos de 24 horas · Simulación digital previa sin compromiso
+        </p>
+</div>
+<!-- 3 Quick Value Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="flex flex-col items-center text-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="view_in_ar">view_in_ar</span>
+<span class="text-label-sm font-label-sm text-on-surface">Tecnología 3D Guiada</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="shield">shield</span>
+<span class="text-label-sm font-label-sm text-on-surface">Cero Desgaste Invasivo</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1" data-icon="person_check">person_check</span>
+<span class="text-label-sm font-label-sm text-on-surface">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- 2. ETAPA I - INTERÉS (AIDA) -->
+<section class="space-y-space-lg pt-4" id="proceso">
+<!-- Empathy & Problem Statement -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 space-y-space-xs shadow-sm">
+<div class="inline-flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-base" data-icon="psychology_alt">psychology_alt</span>
+<span>FILOSOFÍA BIOMIMÉTICA CONSERVADORA</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface">
+          ¿Temes que tu diseño de sonrisa se vea artificial, con "dientes de tiza" o desgaste tus dientes sanos?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          Comprendemos tu temor. El modelo tradicional desgastaba innecesariamente tejido biológico sano. Nuestra odontología biomimética <strong class="text-on-surface font-semibold">preserva hasta el 98% del esmalte original</strong> utilizando micro-láminas cerámicas translúcidas ultrafinas, personalizadas a la curvatura de tus labios y rasgos faciales únicos.
+        </p>
+</div>
+<!-- Process in 3 Numbered Steps -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="text-title-md font-title-md text-on-surface">Tu camino hacia la sonrisa perfecta</h3>
+<span class="text-label-sm font-label-sm text-primary font-bold">3 PASOS CLÍNICOS</span>
+</div>
+<div class="space-y-3">
+<!-- Step 01 -->
+<div class="flex gap-4 p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 shadow-sm items-start">
+<span class="text-title-md font-title-md text-primary font-bold bg-secondary-container px-3 py-1.5 rounded-xl">01</span>
+<div class="space-y-1">
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Valoración y Escaneo Digital 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Ves tu nueva sonrisa proyectada en pantalla 3D de alta definición antes de tocar un solo diente. Sin pastas incómodas ni moldes antiguos.
+              </p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="flex gap-4 p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 shadow-sm items-start">
+<span class="text-title-md font-title-md text-primary font-bold bg-secondary-container px-3 py-1.5 rounded-xl">02</span>
+<div class="space-y-1">
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Plan Personalizado y Prueba Mock-up en Boca</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Pruebas la estética real directamente en tu propia boca antes de cementar definitivamente, con presupuesto cerrado garantizado.
+              </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="flex gap-4 p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 shadow-sm items-start">
+<span class="text-title-md font-title-md text-primary font-bold bg-secondary-container px-3 py-1.5 rounded-xl">03</span>
+<div class="space-y-1">
+<h4 class="text-label-md font-label-md text-on-surface font-bold">Sonrisa Definitiva y Duradera con Carillas E-max</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Brillo vítreo inalterable por más de 15 años. Cerámica feldespática e-max de alta densidad completamente inmune a manchas de café, vino tinto o té.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Micro-CTA -->
+<div class="text-center py-2">
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:underline underline-offset-4" href="https://wa.me/573122326250?text=Hola%20Dra.%20Juliana,%20tengo%20dudas%20sobre%20mi%20caso%20de%20carillas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+</a>
+</div>
+</section>
+<!-- 3. ETAPA D - DESEO (AIDA) -->
+<section class="space-y-space-lg pt-4" id="deseo">
+<!-- Authority & Trust Metrics Bento -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-semibold">+12 Años</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">De Trayectoria Clínica</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-semibold">+4.500</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Sonrisas Diseñadas</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-semibold">99.4%</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Satisfacción Verificada</p>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-semibold">100%</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Habilitación MinSalud REPS</p>
+</div>
+</div>
+<!-- 4 Tangible Daily Life Benefits -->
+<div class="space-y-space-sm">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Resultados que transforman tu día a día</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 flex gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="photo_camera">photo_camera</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-semibold">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Translucidez y bordes calibrados que lucen 100% naturales en fotografías de alta definición y eventos sociales con luz natural.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 flex gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="health_and_safety">health_and_safety</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-semibold">Preservación dental biológica</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Cero desgaste agresivo ni mutilación de piezas sanas, salvaguardando la sensibilidad y vitalidad del diente a largo plazo.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 flex gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="coffee">coffee</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-semibold">Cerámica vítrea inmune a manchas</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Disfruta sin miedo el mejor café colombiano, vino tinto o té. La porcelana vítrea no retiene pigmentos ni pierde su brillo.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-2xl border border-outline-variant/20 flex gap-3.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface font-semibold">Seguridad plena al hablar y sonreír</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Dile adiós al hábito involuntario de taparte la boca con la mano al reír en reuniones, citas o conferencias de trabajo.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Patient Clinical Case Showcase -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md border border-outline-variant/20 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-bold">CASO CLÍNICO REAL</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic">
+          "Tenía terror de que mis dientes parecieran chiclets o postizos. La Dra. Juliana me mostró todo digitalmente antes de tocarme la boca. Fue sin dolor, mantuvieron mis dientes sanos y mis amigos creen que nací con estos dientes. La mejor decisión que tomé en Medellín."
+        </p>
+<div class="flex items-center gap-3 pt-2 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-semibold text-primary">
+            MC
+          </div>
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">María Camila Restrepo</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Carillas E-max Shade BL3 · El Poblado, Medellín</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ETAPA A - ACCIÓN (AIDA FORMULARIO) -->
+<section class="space-y-space-md pt-4" id="agenda">
+<div class="bg-surface-container-lowest rounded-3xl p-space-md md:p-space-lg border border-primary/20 shadow-lg space-y-space-md">
+<!-- Scarcity / Exclusivity Badge -->
+<div class="inline-flex items-center gap-2 bg-secondary-container/60 text-primary px-3 py-1.5 rounded-full text-label-sm font-label-sm font-bold">
+<span class="material-symbols-outlined text-base" data-icon="event_available">event_available</span>
+<span>Cupos limitados de valoración clínica esta semana en El Poblado</span>
+</div>
+<div class="space-y-1">
+<h2 class="text-headline-md font-headline-md text-on-surface">Empieza hoy tu transformación dental con total confianza</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Completa tus datos para coordinar tu cita presencial o virtual con simulación 3D.</p>
+</div>
+<!-- 3-Field Clean Form -->
+<form class="space-y-3.5" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Nuestro equipo clínico te contactará en menos de 24 horas.');">
+<!-- Name Field -->
+<div class="space-y-1">
+<label class="block text-label-md font-label-md text-on-surface font-medium" for="patient-name">Nombre completo</label>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-xl px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="patient-name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Phone / WhatsApp Field -->
+<div class="space-y-1">
+<label class="block text-label-md font-label-md text-on-surface font-medium" for="patient-phone">WhatsApp o Celular</label>
+<div class="relative flex">
+<span class="inline-flex items-center px-3.5 rounded-l-xl border border-r-0 border-outline-variant/40 bg-surface-container text-body-md font-body-md text-on-surface font-semibold">
+                🇨🇴 +57
+              </span>
+<input class="w-full bg-surface border border-outline-variant/40 rounded-r-xl px-4 py-3 text-body-md font-body-md text-on-surface placeholder:text-outline focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="patient-phone" placeholder="312 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Treatment Interest Field -->
+<div class="space-y-1">
+<label class="block text-label-md font-label-md text-on-surface font-medium" for="treatment-select">¿Qué tratamiento te interesa?</label>
+<select class="w-full bg-surface border border-outline-variant/40 rounded-xl px-4 py-3 text-body-md font-body-md text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="treatment-select">
+<option value="emax">Carillas Cerámicas E-max (Máxima Estética)</option>
+<option value="lentes">Lentes de Contacto Dental (Sin Desgaste)</option>
+<option value="diseno">Diseño de Sonrisa Completo</option>
+<option value="valoracion">Valoración General y Diagnóstico 3D</option>
+</select>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-4 rounded-full shadow-lg shadow-primary/25 transition-all duration-200 active:scale-98 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</button>
+</form>
+<!-- Divider with Text -->
+<div class="relative flex py-2 items-center">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-3 text-label-sm font-label-sm text-outline uppercase tracking-wider">O si prefieres atención inmediata:</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<!-- Direct WhatsApp Button -->
+<a class="flex items-center justify-center gap-2.5 w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-label-md text-label-md py-3.5 px-4 rounded-full shadow-md transition-all duration-200 active:scale-98" href="https://wa.me/573122326250?text=Hola%20Dra.%20Juliana%20Soto,%20deseo%20agendar%20una%20valoración%20clínica%20en%20El%20Poblado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 312 232 6250)</span>
+</a>
+<!-- Privacy & Legal Notice -->
+<p class="text-center text-body-sm font-body-sm text-on-surface-variant flex items-center justify-center gap-1.5 pt-1">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="lock">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos Personales de Colombia. Cero spam.</span>
+</p>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ) -->
+<section class="space-y-space-md pt-4">
+<div class="text-center space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Preguntas frecuentes</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Resolvemos tus inquietudes antes de tu primera visita</p>
+</div>
+<div class="space-y-2">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-space-md shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface">
+<span>¿Es necesario desgastar mis dientes para poner carillas?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            No en nuestra práctica. Con la técnica de lentes de contacto dental y carillas ultrafinas E-max de 0.3 mm realizamos micro-preparaciones ultra-conservadoras o cementación directa sin desgaste alguno en casos indicados, manteniendo tu esmalte original intacto.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-space-md shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface">
+<span>¿Cuánto tiempo duran las carillas de porcelana E-max?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Estudios clínicos mundiales demuestran que las cerámicas vítreas de disilicato de litio E-max conservan su estructura, brillo y adhesión por más de 15 a 20 años con controles periódicos de higiene y profilaxis semestral.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-space-md shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface">
+<span>¿Se manchan con café, té o vino tinto?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            No. A diferencia de las resinas compuestas, la porcelana de grado médico está horneada a altas temperaturas, logrando una superficie cristalina no porosa absolutamente impermeable a los pigmentos de alimentos y bebidas.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-space-md shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface">
+<span>¿Cuentan con facilidades de pago o planes para pacientes del exterior?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+            Sí. Disponemos de planes de financiamiento por etapas de tratamiento, recibimos tarjetas internacionales de crédito sin recargo y coordinamos agendas intensivas de 4 a 6 días para pacientes que viajan a Medellín desde el exterior.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Exact Spec) -->
+<footer class="flex flex-col items-center w-full px-space-md py-space-xl pb-28 text-center space-y-space-sm max-w-7xl mx-auto bg-surface-container-high dark:bg-inverse-surface mt-space-xl">
+<div class="text-title-md font-title-md text-primary dark:text-inverse-primary font-semibold">
+      Dra. Juliana Soto · Odontología Estética &amp; Biomimética
+    </div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant">
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-all duration-200" href="#">Pol\u00edtica de Tratamiento de Datos (Ley 1581)</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-all duration-200" href="#">Consentimiento Informado Odontol\u00f3gico</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-all duration-200" href="#">Habilitaci\u00f3n REPS MinSalud</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary hover:underline transition-all duration-200" href="#">Sede El Poblado - Consultorio 1402</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant max-w-2xl">
+      © 2024 Dra. Juliana Soto · Odontología Estética &amp; Biomimética. Vigilado Supersalud &amp; Secretaría Seccional de Salud de Antioquia. Código Prestador REPS: 0500100000-01. Medellín, Colombia.
+    </p>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component Mobile Spec - Responsive Pivot) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-space-xs pb-safe bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-xl shadow-lg dark:shadow-none">
+<!-- Inicio (Active Item) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-space-md py-space-xs font-semibold active:scale-95 transition-transform duration-150" href="#atencion">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm">Inicio</span>
+</a>
+<!-- Carillas E-max -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#proceso">
+<span class="material-symbols-outlined" data-icon="dentistry">dentistry</span>
+<span class="text-label-sm font-label-sm">Carillas E-max</span>
+</a>
+<!-- Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#deseo">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- Valoración -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-space-sm py-space-xs hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#agenda">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Valoración</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dra-juliana-soto" width="1" height="1" style="display:none" alt="">
+</body></html>

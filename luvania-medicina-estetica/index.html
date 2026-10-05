@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Luvania Medicina Estética | Armonización Facial &amp; Rejuvenecimiento Natural</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#005048",
+            "surface-container-low": "#e1f8f3",
+            "primary-fixed-dim": "#7ad7c8",
+            "surface": "#e7fef9",
+            "tertiary": "#735c00",
+            "surface-tint": "#006a60",
+            "secondary-fixed": "#71f8e4",
+            "on-tertiary-container": "#4e3d00",
+            "tertiary-container": "#cca72f",
+            "outline": "#6e7977",
+            "on-tertiary-fixed-variant": "#574500",
+            "secondary-container": "#6df5e1",
+            "outline-variant": "#bdc9c6",
+            "secondary-fixed-dim": "#4fdbc8",
+            "tertiary-fixed": "#ffe088",
+            "primary-fixed": "#96f3e4",
+            "background": "#e7fef9",
+            "on-surface-variant": "#3e4947",
+            "on-background": "#0a1f1c",
+            "surface-dim": "#c8dfda",
+            "secondary": "#006b5f",
+            "on-surface": "#0a1f1c",
+            "tertiary-fixed-dim": "#e9c349",
+            "error": "#ba1a1a",
+            "inverse-primary": "#7ad7c8",
+            "on-secondary-fixed": "#00201c",
+            "surface-container-highest": "#d0e7e2",
+            "on-error-container": "#93000a",
+            "surface-bright": "#e7fef9",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#006f64",
+            "surface-container-high": "#d6ede8",
+            "primary-container": "#007a6e",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#dff6f1",
+            "error-container": "#ffdad6",
+            "surface-container": "#dcf3ee",
+            "on-secondary-fixed-variant": "#005048",
+            "surface-variant": "#d0e7e2",
+            "on-primary-fixed": "#00201c",
+            "on-tertiary-fixed": "#241a00",
+            "primary": "#005f55",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#203431",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#a8fff0"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle luxury box shadows */
+    .shadow-luxury {
+      box-shadow: 0 12px 32px -4px rgba(0, 122, 110, 0.08), 0 4px 12px -2px rgba(26, 46, 43, 0.03);
+    }
+    .shadow-button-teal {
+      box-shadow: 0 8px 24px -2px rgba(0, 122, 110, 0.28);
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen">
+<div class="max-w-md mx-auto min-h-screen flex flex-col bg-surface-container-lowest relative overflow-x-hidden border-x border-outline-variant/30">
+<!-- TopAppBar (From Shared Components JSON) -->
+<header class="bg-surface/85 backdrop-blur-md dark:bg-inverse-surface/85 border-b border-outline-variant/40 dark:border-outline/30 shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-5 py-3.5 max-w-md mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-md text-headline-md tracking-tight text-primary dark:text-primary-fixed font-semibold">Luvania</span>
+</div>
+<a class="text-label-md font-label-md bg-primary-container text-on-primary px-4 py-1.5 rounded-full active:scale-95 transition-transform duration-150 hover:bg-primary" href="#formulario-cita">
+          Agendar
+        </a>
+</div>
+</header>
+<!-- MAIN AIDA FUNNEL CANVAS -->
+<main class="flex-1 w-full pb-20">
+<!-- ============================================== -->
+<!-- 1. ETAPA ATENCIÓN (HERO SECTION) -->
+<!-- ============================================== -->
+<section class="px-5 pt-5 pb-8 space-y-5">
+<!-- Credencial Médica Real Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 text-primary">
+<span class="material-symbols-outlined text-[15px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm tracking-wide">Habilitación Seccional MinSalud · Registro Sanitario Colombia</span>
+</div>
+<!-- H1 Titular de Beneficio en 3 Segundos -->
+<div class="space-y-3">
+<h1 class="font-display-hero text-display-hero text-on-surface leading-tight">
+            Tu piel y rostro en su versión más <span class="italic font-display-hero text-primary">armónica</span>, sin perder tu esencia natural.
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Procedimientos médicos no quirúrgicos de armonización facial, rejuvenecimiento cutáneo y bioestimulación de colágeno en Luvania. Resultados sutiles y elegantes sin incapacidad médica.
+          </p>
+</div>
+<!-- Fotografía Editorial Hero & Floating Badges -->
+<div class="relative rounded-3xl overflow-hidden shadow-luxury border border-outline-variant/60 group">
+<img alt="Dra. Especialista en Luvania Medicina Estética Colombia" class="w-full h-80 object-cover object-center transform transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1Wk5wpDIPPkRBIJCJ71atBTHbU5Hev_owRs6npg_bQHci42Y6-cbQVtCJot11fR6hWKH50SOOUSme0TXohBZD6MKPQEXDw-QeJ36yWLJO98KZc6MYYiNUttFjvvmPGK3Rs2-CBT3saYaXaXfwzmn_0hXUDF3_VdIBO23mDXAcD9_8HgkckywNIXDZxdl56hBcXt28yKbrFhH8DV5c-NYBW15mrKTzpeK5LIUopawznS24Q3gS6QnCzx9g"/>
+<!-- Subtle Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/50 via-transparent to-transparent"></div>
+<!-- Floating Credential Chip -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-outline-variant/40 flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse shrink-0"></span>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">
+              100% Armonía Natural y Luminosa · Sede Boutique
+            </p>
+</div>
+</div>
+<!-- CTAs Primarios & Micro-credencial -->
+<div class="space-y-3 pt-1">
+<a class="w-full py-4 px-6 rounded-full bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md text-center flex items-center justify-center gap-2 shadow-button-teal active:scale-95 transition-all" href="#formulario-cita">
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="schedule">schedule</span>
+            Respuesta en menos de 24 horas · Sin cargos ocultos ni sorpresas
+          </p>
+</div>
+<!-- 3 Sellos de Confianza Médica en Píldoras -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low/70 border border-outline-variant/40 rounded-2xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container-low/70 border border-outline-variant/40 rounded-2xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="biometrics">csv</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="bg-surface-container-low/70 border border-outline-variant/40 rounded-2xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="home_pin">home_pin</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 2. ETAPA INTERÉS (DILEMA Y PROCESO CLÍNICO) -->
+<!-- ============================================== -->
+<section class="bg-surface-container-low/50 border-y border-outline-variant/40 px-5 py-9 space-y-6">
+<!-- Objeción Central Atacada -->
+<div class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/50 shadow-sm space-y-3">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-xl" data-icon="help">help</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Criterio Médico Luvania</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+            ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Entendemos tu precaución. En Luvania vetamos rotundamente la sobrecorrección o el temido efecto "rostro inflamado". Aplicamos exclusivamente <strong class="text-on-surface font-semibold">micro-dosis estratégicas</strong> respetando la armonía áurea y anatomía única de tus facciones. Tu rostro debe transmitir descanso, luminosidad y plenitud, jamás procedimiento médico forzado.
+          </p>
+</div>
+<!-- Proceso en 3 Pasos con Beneficios Tangibles -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Protocolo Transparente</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tu experiencia clínica en 3 pasos</h3>
+</div>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/40 flex gap-3.5 items-start">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+              01
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Valoración y Mapeo Facial 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Diagnóstico milimétrico de soporte dérmico, calidad de piel y vectores faciales sin ninguna presión comercial.
+              </p>
+<div class="inline-flex items-center gap-1 text-primary pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-label-sm font-semibold">Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/40 flex gap-3.5 items-start">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+              02
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Plan Médico Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Selección de bioestimuladores de última generación o ácido hialurónico biocompatible con presupuesto cerrado.
+              </p>
+<div class="inline-flex items-center gap-1 text-primary pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-label-sm font-semibold">Beneficio: Cero costos ocultos ni improvisaciones.</span>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/40 flex gap-3.5 items-start">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+              03
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Aplicación Guiada y Resultado Natural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Procedimiento ambulatorio seguro y de mínimo disconfort con microcánulas atraumáticas.
+              </p>
+<div class="inline-flex items-center gap-1 text-primary pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-label-sm font-semibold">Beneficio: Reincorporación inmediata a tu rutina social y laboral.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-enlace de soporte -->
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 text-primary hover:underline font-label-md text-label-md" href="https://wa.me/573058154513?text=Hola%20Luvania,%20tengo%20dudas%20sobre%20mi%20caso%20particular%20para%20valoración" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+</a>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 3. ETAPA DESEO (AUTORIDAD, BENEFICIOS Y PRUEBAS) -->
+<!-- ============================================== -->
+<section class="px-5 py-9 space-y-8">
+<!-- Métricas de Confianza Médica en Colombia -->
+<div class="space-y-3">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Seguridad Clínica</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Aval médico y trayectoria comprobada</h3>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="bg-surface-container p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">+8 Años</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">De Trayectoria Médica Especializada</div>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">+4.800</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Procedimientos Exitosos Realizados</div>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">100%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Insumos con Registro INVIMA &amp; FDA</div>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-lg text-headline-lg text-primary font-bold">4.9 ★</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Calificación en Google Reviews</div>
+</div>
+</div>
+</div>
+<!-- 4 Beneficios de Impacto Cotidiano -->
+<div class="space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-center">
+            Diseñado para integrarse a tu estilo de vida
+          </h3>
+<div class="grid grid-cols-1 gap-3">
+<!-- Beneficio 1 -->
+<div class="p-4 rounded-2xl border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="face_3">face_3</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Proporciones calibradas por especialistas para lucir fresca, descansada y luminosa, jamás con aspecto operado.
+                </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="p-4 rounded-2xl border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="water_drop">water_drop</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Bioestimulación profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Activamos la capacidad regenerativa de tus propios fibroblastos para generar colágeno nuevo de alta tensión.
+                </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="p-4 rounded-2xl border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="schedule">schedule</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Cero tiempo de incapacidad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Retoma tus reuniones, compromisos de oficina o vida social de inmediato gracias al uso de microcánulas suaves.
+                </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="p-4 rounded-2xl border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="support_agent">support_agent</span>
+</div>
+<div class="space-y-0.5">
+<h4 class="font-title-md text-title-md text-on-surface">Acompañamiento médico VIP</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Canal directo de seguimiento y revisión post-tratamiento con tu médica especialista para asegurar tu tranquilidad.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados en Colombia -->
+<div class="space-y-4">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Experiencias Reales</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historias de nuestras pacientes</h3>
+</div>
+<div class="space-y-3.5">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-low/40 p-4.5 rounded-2xl border border-outline-variant/50 space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-surface-container-lowest px-2 py-0.5 rounded-full border border-outline-variant/30">Sede El Poblado</span>
+</div>
+<p class="font-body-sm text-body-sm italic text-on-surface">
+                "Tenía pavor de hacerme algo en las ojeras y pómulos por miedo a quedar con la cara redonda. En Luvania la doctora me escuchó durante 40 minutos en la valoración. El resultado es tan sutil que todos me dicen que me veo descansada y radiante, pero nadie nota que me hice algo."
+              </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/30">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-semibold text-xs">CR</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface font-semibold">Dra. Camila Restrepo</h5>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente Verificada · Medellín</p>
+</div>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-low/40 p-4.5 rounded-2xl border border-outline-variant/50 space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-surface-container-lowest px-2 py-0.5 rounded-full border border-outline-variant/30">Sede Chicó</span>
+</div>
+<p class="font-body-sm text-body-sm italic text-on-surface">
+                "Me realicé bioestimuladores de colágeno para recuperar firmeza. La clínica en Bogotá es impecable, huele delicioso y el trato médico es respetuoso y científico. Cero moretones y a los dos meses mi piel recuperó su tensión juvenil."
+              </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/30">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-semibold text-xs">VM</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface font-semibold">Valentina Morales</h5>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente Verificada · Bogotá</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 4. ETAPA ACCIÓN (CONVERSIÓN Y FORMULARIO) -->
+<!-- ============================================== -->
+<section class="bg-gradient-to-b from-surface-container-low/40 to-surface-container-lowest border-t border-outline-variant/40 px-5 py-9 space-y-6" id="formulario-cita">
+<!-- Banner de Urgencia Sutil -->
+<div class="bg-surface-container-highest/60 border border-primary-container/30 rounded-2xl p-3.5 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="event_available">event_available</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">Cupos limitados esta semana:</strong> Atendemos un número exclusivo de valoraciones por día para garantizar cita extendida de 45 minutos.
+          </p>
+</div>
+<!-- Formulario Minimalista de Conversión -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 border border-outline-variant/50 shadow-luxury space-y-5">
+<div class="text-center space-y-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Reserva tu Valoración</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completa los datos y una de nuestras coordinadoras médicas te confirmará horarios.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Luvania se comunicará contigo vía WhatsApp en breve.');">
+<!-- Campo 1: Nombre -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="nombre">Nombre y Apellidos</label>
+<div class="relative">
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-bright border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md text-body-md outline-none transition" id="nombre" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: Teléfono Colombia -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="telefono">WhatsApp o Celular</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center gap-1 text-on-surface-variant font-label-md text-label-md pointer-events-none">
+<span>🇨🇴 +57</span>
+</div>
+<input class="w-full h-[52px] pl-20 pr-4 rounded-xl bg-surface-bright border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md text-body-md outline-none transition" id="telefono" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tratamiento de Interés -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="tratamiento">¿Qué procedimiento te interesa?</label>
+<select class="w-full h-[52px] px-4 rounded-xl bg-surface-bright border border-outline-variant/60 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md text-body-md outline-none transition" id="tratamiento">
+<option value="armonizacion">Armonización Facial &amp; Botox Preventivo</option>
+<option value="bioestimuladores">Bioestimuladores de Colágeno (Radiesse/Sculptra)</option>
+<option value="hidratacion">Hidratación Profunda con Ácido Hialurónico &amp; Glow</option>
+<option selected="" value="integral">Valoración Médica Integral con Especialista</option>
+</select>
+</div>
+<!-- Botón de Envío Primario -->
+<button class="w-full h-[54px] rounded-full bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center gap-2 shadow-button-teal active:scale-95 transition-all mt-2 cursor-pointer" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Separador 'o' -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 text-on-surface-variant font-label-sm text-label-sm uppercase">o si prefieres</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Botón Directo WhatsApp Colombia -->
+<a class="w-full h-[52px] rounded-full border-2 border-primary text-primary hover:bg-surface-container-low font-title-md text-title-md flex items-center justify-center gap-2 active:scale-95 transition-all" href="https://wa.me/573058154513?text=Hola%20Luvania%20Medicina%20Estética,%20deseo%20agendar%20una%20cita%20de%20valoración" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp</span>
+</a>
+<!-- Aviso de Privacidad y Seguridad Legal Colombia -->
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant/80 pt-1 leading-snug">
+            Tus datos están 100% protegidos bajo secreto profesional médico y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+<!-- Acordeón FAQs (Objeciones Frecuentes) -->
+<div class="space-y-4 pt-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Transparencia</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Preguntas frecuentes</h3>
+</div>
+<div class="divide-y divide-outline-variant/40 bg-surface-container-lowest rounded-2xl border border-outline-variant/40 overflow-hidden">
+<!-- FAQ 1 -->
+<details class="group p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none">
+<span>¿Los procedimientos generan dolor?</span>
+<span class="material-symbols-outlined text-primary transition group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                No. Aplicamos crema anestésica tópica de grado hospitalario 20 minutos antes y utilizamos microcánulas de punta roma atraumática que no rompen vasos ni tejidos. La gran mayoría de pacientes califica la molestia como 2 sobre 10.
+              </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none">
+<span>¿Cuánto duran los resultados?</span>
+<span class="material-symbols-outlined text-primary transition group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                Dependiendo del protocolo elegido: el ácido hialurónico biocompatible oscila entre 12 y 18 meses, mientras que los bioestimuladores de colágeno inducen una red fibrilar que permanece activa y visible entre 18 y 24 meses.
+              </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none">
+<span>¿Cómo garantizan que se vea natural?</span>
+<span class="material-symbols-outlined text-primary transition group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                Trabajamos bajo el protocolo de 'menos es más' y micro-dosis fraccionadas. Primero restauramos la estructura de soporte antes de cualquier relleno superficial. Si un procedimiento compromete tu armonía facial, nuestra postura médica es no realizarlo.
+              </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface list-none">
+<span>¿Qué incluye la cita de valoración?</span>
+<span class="material-symbols-outlined text-primary transition group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+                Una consulta médica presencial de 45 minutos con una especialista en medicina estética, análisis de piel, mapeo facial de puntos de tensión, plan de tratamiento personalizado por escrito y presupuesto cerrado garantizado por 30 días.
+              </p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (From Shared Components JSON) -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-outline-variant/50 dark:border-outline/30 docked full-width mb-16 flex flex-col gap-4 w-full px-5 py-8 max-w-md mx-auto text-center">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed font-semibold">Luvania</span>
+</div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#terminos">Tratamiento de Datos Personales (Ley 1581)</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#consentimiento">Consentimiento Informado Médico</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#directorio">Directorio de Especialistas</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-150" href="#condiciones">Términos y Condiciones</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant leading-relaxed">
+        © 2024 Luvania Medicina Estética S.A.S. Vigilado Supersalud Colombia. Código de Habilitación Seccional MinSalud No. 1100132450. Todos los derechos reservados.
+      </p>
+<div class="pt-2 text-label-sm font-label-sm text-on-surface-variant/70">
+        Sedes: Cl. 7 Sur #42-70, El Poblado (Medellín) · Cra. 11 #93-53, Chicó (Bogotá)
+      </div>
+</footer>
+<!-- BottomNavBar (From Shared Components JSON) - Active tab: "Valoración" -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 max-w-md mx-auto bg-surface/90 backdrop-blur-lg dark:bg-inverse-surface/90 border-t border-outline-variant/40 dark:border-outline/30 shadow-[0_-4px_20px_rgba(0,122,110,0.06)] dark:shadow-none docked full-width bottom-0">
+<!-- Tab 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-primary-fixed" href="#interes">
+<span class="material-symbols-outlined text-[20px]" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Tab 2: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-primary-fixed" href="#deseo">
+<span class="material-symbols-outlined text-[20px]" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Tab 3: Valoración (ACTIVE - Target of this high conversion landing page) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary rounded-full px-3 py-1.5 transition-all duration-200 active:scale-95" href="#formulario-cita">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5 font-bold">Valoración</span>
+</a>
+<!-- Tab 4: Contacto -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-all duration-200 active:scale-95 hover:text-primary dark:hover:text-primary-fixed" href="https://wa.me/573058154513" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm mt-0.5">Contacto</span>
+</a>
+</nav>
+</div>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/luvania-medicina-estetica" width="1" height="1" style="display:none" alt="">
+</body></html>
