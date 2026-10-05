@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Angélica Zuluaga Coach · Coaching Ontológico y Liderazgo Ejecutivo en Colombia</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6",
+            "tertiary-container": "#966d29",
+            "background": "#fff8f6",
+            "secondary-container": "#9bf2eb",
+            "on-secondary-fixed-variant": "#00504c",
+            "surface-dim": "#e2d8d6",
+            "primary-fixed-dim": "#ffb4a5",
+            "secondary-fixed-dim": "#7fd5cf",
+            "surface": "#fff8f6",
+            "inverse-on-surface": "#f9eeec",
+            "primary": "#a53521",
+            "primary-fixed": "#ffdad3",
+            "surface-container": "#f6ecea",
+            "on-primary-container": "#fffbff",
+            "inverse-surface": "#352f2e",
+            "on-surface": "#1f1b1a",
+            "on-tertiary-fixed-variant": "#614000",
+            "tertiary-fixed-dim": "#f1be72",
+            "on-error-container": "#93000a",
+            "inverse-primary": "#ffb4a5",
+            "secondary": "#006a65",
+            "surface-container-highest": "#eae0de",
+            "on-tertiary-fixed": "#291800",
+            "surface-container-high": "#f0e6e4",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#87200e",
+            "on-secondary": "#ffffff",
+            "secondary-fixed": "#9bf2eb",
+            "surface-variant": "#eae0de",
+            "on-primary-fixed": "#3f0400",
+            "tertiary": "#7a5512",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-fixed": "#00201e",
+            "surface-bright": "#fff8f6",
+            "surface-container-low": "#fcf1ef",
+            "on-background": "#1f1b1a",
+            "primary-container": "#c64d36",
+            "outline-variant": "#dfbfb9",
+            "tertiary-fixed": "#ffddb0",
+            "surface-tint": "#a83823",
+            "on-error": "#ffffff",
+            "on-secondary-container": "#00716c",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#58413d",
+            "surface-container-lowest": "#ffffff",
+            "outline": "#8b716c",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-xl": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-md": ["26px", { "lineHeight": "34px", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    /* Subtle editorial blur effects */
+    .glow-wash {
+      background: radial-gradient(circle at 50% 20%, rgba(198, 77, 54, 0.08) 0%, rgba(0, 106, 101, 0.05) 50%, transparent 80%);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen pb-24">
+<!-- TOP APP BAR -->
+<header class="bg-surface/90 dark:bg-surface/95 backdrop-blur-md shadow-sm docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-margin-mobile max-w-[480px] mx-auto h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none font-bold">Angélica Zuluaga Coach</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium tracking-normal">Ontológica &amp; Ejecutiva · ICF PCC</span>
+</div>
+</div>
+<a class="font-label-lg text-label-lg bg-primary hover:bg-primary-container text-on-primary px-3.5 py-1.5 rounded-lg transition-colors duration-200 active:scale-95 shadow-sm" href="#contacto">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- MAIN CANVAS (Max-w 480px strict mobile flow) -->
+<main class="max-w-[480px] mx-auto px-margin-mobile space-y-space-xl pt-space-md">
+<!-- ==============================================
+         1. A - ATENCIÓN (HERO SECTION)
+    =============================================== -->
+<section class="flex flex-col items-center text-center relative glow-wash pt-2" id="enfoque">
+<!-- ICF Credential Pill -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/30 text-secondary mb-space-md border border-secondary/15">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm">✦ Certificada ICF PCC · Coaching Ejecutivo Colombia</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-semibold mb-space-md leading-tight">
+        Desbloquea tu potencial y lidera con claridad, propósito y paz interior
+      </h1>
+<!-- High-Impact Value Proposition -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[420px] mb-space-lg leading-relaxed">
+        Acompañamiento 1 a 1 de alto impacto para directivos, líderes y profesionales en Colombia que buscan transformar su forma de decidir sin agotar su vida personal.
+      </p>
+<!-- Hero Portrait Card with Overlay Badge -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 mb-space-lg bg-surface-container-lowest">
+<img alt="Angélica Zuluaga Coach Ontológica y Ejecutiva en Colombia" class="w-full h-[380px] object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1WEtqtB_izRZh_-RPULjVyUA-9sGhL9Uik__oawWegJsLSyLWZYjSAxTI4d6cnk07iSOfgaPpEFls8OIf9o85bAqQq3qjH5NuqOmzGpy9idC4GFfOv9h0fszmJgN9bckD7Pum7jQqwniqRsS3tGT1-qWXA0KqQVmYdMvXNuu8jzO24y5VFOd4vWMmAjQUusEqduMBAVjinvYkVdA1yE3wQhc6wSu0XsLWXtJG7gUnsJTzwKb-l9pghlFj8"/>
+<!-- Editorial Floating Badge -->
+<div class="absolute bottom-3 inset-x-3 bg-surface/95 backdrop-blur-md rounded-xl p-3 border border-outline-variant/40 shadow-sm flex items-center justify-between text-left">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Angélica Zuluaga</span>
+<span class="font-label-sm text-label-sm text-secondary">Master Coach ICF · Sesiones Presenciales &amp; Virtuales</span>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+<!-- Hero Direct Action (Conversion Anchor) -->
+<div class="w-full space-y-2">
+<a class="flex items-center justify-center gap-2 w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg tracking-wide transition-transform active:scale-[0.98] shadow-md" href="#contacto">
+<span>Agendar ahora</span>
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Respuesta en menos de 24 horas · Diagnóstico confidencial
+        </p>
+</div>
+<!-- Trust Pillars Badges -->
+<div class="grid grid-cols-3 gap-2 w-full mt-space-md pt-2 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Ontológico</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant leading-tight">Desde el ser</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">100% Privado</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant leading-tight">Ética ICF</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-xl mb-1" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1 a 1</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant leading-tight">Personalizado</span>
+</div>
+</div>
+</section>
+<!-- ==============================================
+         2. I - INTERÉS (EL DILEMA Y EL PROCESO)
+    =============================================== -->
+<section class="space-y-space-lg" id="proceso">
+<!-- Empathy Diagnostic Box -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg border border-outline-variant/40 shadow-sm relative overflow-hidden">
+<div class="absolute -top-6 -right-6 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="help_center">help_center</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-bold">Diagnóstico de Situación</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-3 leading-snug">
+          ¿Te sientes atrapado entre la alta exigencia profesional y la sensación de desconexión personal?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En Colombia, decenas de líderes de alto nivel experimentan fatiga decisional, síndrome del impostor o parálisis por exceso de control. No es falta de capacidad técnica: es un modelo de gestión que desgasta tu biología. El coaching ontológico desarticula esos patrones desde la raíz para recuperar tu centro y efectividad directiva.
+        </p>
+</div>
+<!-- 3-Step Transformation Framework -->
+<div class="space-y-space-md">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Metodología Comprobada</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium">Tu camino en 3 pasos precisos</h3>
+</div>
+<div class="space-y-3">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold font-headline-sm text-base flex-shrink-0">
+              01
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface font-semibold">Valoración y Mapeo Ontológico</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Identificamos tus quiebres, patrones conversacionales automáticos y el observador que estás siendo frente a la presión.
+              </p>
+<div class="inline-flex items-center gap-1 text-secondary font-label-sm text-[11px] pt-1 font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="lightbulb">lightbulb</span>
+                Beneficio: Claridad inmediata desde la sesión 1
+              </div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold font-headline-sm text-base flex-shrink-0">
+              02
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface font-semibold">Plan de Liderazgo Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Diseño de conversaciones estratégicas, gestión corporal-emocional y protocolos prácticos adaptados a tu contexto corporativo.
+              </p>
+<div class="inline-flex items-center gap-1 text-secondary font-label-sm text-[11px] pt-1 font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="build">build</span>
+                Beneficio: Herramientas aplicables a tu día a día laboral
+              </div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold font-headline-sm text-base flex-shrink-0">
+              03
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface font-semibold">Resultados y Paz Ejecutiva</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Toma de decisiones con seguridad inquebrantable, articulación de equipos y coherencia plena con tu bienestar personal.
+              </p>
+<div class="inline-flex items-center gap-1 text-secondary font-label-sm text-[11px] pt-1 font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="workspace_premium">workspace_premium</span>
+                Beneficio: Trascendencia y tranquilidad duradera
+              </div>
+</div>
+</div>
+</div>
+<!-- Subtle WhatsApp Bridge -->
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary hover:text-primary transition-colors duration-200" href="https://wa.me/573183042265" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Dudas sobre si es para ti? Escríbenos por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==============================================
+         3. D - DESEO (AUTORIDAD, BENEFICIOS Y PRUEBA)
+    =============================================== -->
+<section class="space-y-space-lg" id="casos">
+<!-- Authority Numbers Grid (Bento mini) -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 text-center shadow-sm">
+<span class="block font-headline-lg text-headline-lg font-bold text-primary leading-tight">+10 Años</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trayectoria Ejecutiva</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 text-center shadow-sm">
+<span class="block font-headline-lg text-headline-lg font-bold text-secondary leading-tight">+850</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Líderes en Colombia y Latam</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 text-center shadow-sm">
+<span class="block font-headline-lg text-headline-lg font-bold text-secondary leading-tight">ICF PCC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estándar Internacional</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 text-center shadow-sm">
+<span class="block font-headline-lg text-headline-lg font-bold text-primary leading-tight">99.2%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Satisfacción Comprobada</span>
+</div>
+</div>
+<!-- Core Transformation Benefits -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg border border-outline-variant/30">
+<div class="text-left mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">El Impacto Tangible</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium">Lo que logras al transformar tu liderazgo</h3>
+</div>
+<ul class="space-y-3.5">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface"><strong>Claridad mental y toma de decisiones ágil</strong> sin el desgaste emocional crónico.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface"><strong>Liderazgo empático y equipos autogestionados</strong> que responden con autonomía y alto rendimiento.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface"><strong>Equilibrio real entre carrera directiva y vida personal</strong>, recuperando tiempo de calidad familiar.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface"><strong>Comunicación asertiva que resuelve conflictos</strong> y conversaciones difíciles sin fricción destructiva.</span>
+</li>
+</ul>
+</div>
+<!-- Testimonials / Executive Social Proof -->
+<div class="space-y-3">
+<div class="flex justify-between items-end mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Casos reales de transformación</h3>
+<span class="font-label-sm text-label-sm text-secondary">Verificados</span>
+</div>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm space-y-2">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "El proceso con Angélica fue un antes y un después. Logré desarmar la microgestión en mi equipo de 45 personas y recuperé las noches con mis hijos sin descuidar los KPI corporativos."
+          </p>
+<div class="pt-2 border-t border-surface-container-high flex items-center justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Carlos E. Restrepo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">VP Operaciones · Sector Financiero, Bogotá</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl opacity-40" data-icon="format_quote">format_quote</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm space-y-2">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Su visión ontológica es profunda pero 100% pragmática. Me ayudó a superar un momento de estancamiento estratégico y a negociar mi ascenso con serenidad y firmeza."
+          </p>
+<div class="pt-2 border-t border-surface-container-high flex items-center justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Mariana Gómez</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Directora de Talento Humano · Multinacional Tech, Medellín</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl opacity-40" data-icon="format_quote">format_quote</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==============================================
+         4. A - ACCIÓN (FORMULARIO Y CONVERSIÓN DIRECTA)
+    =============================================== -->
+<section class="space-y-space-md pt-2" id="contacto">
+<!-- Limited Availability Callout -->
+<div class="bg-primary/10 border border-primary/20 text-primary rounded-xl px-3.5 py-2 flex items-center justify-center gap-2 text-center">
+<span class="material-symbols-outlined text-base" data-icon="event_busy">event_busy</span>
+<span class="font-label-sm text-label-sm font-semibold">✦ Cupos limitados para sesiones de valoración este mes en Colombia</span>
+</div>
+<!-- Intake Form Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg border border-outline-variant/40 shadow-lg">
+<div class="text-center mb- space-y-1">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Empieza hoy tu transformación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Completa tus datos para coordinar tu sesión diagnóstica privada con Angélica.
+          </p>
+</div>
+<form class="space-y-3.5 mt-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Angélica o su equipo te contactarán en menos de 24 horas para coordinar tu sesión.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1" for="nombre">Nombre completo *</label>
+<input class="w-full h-12 rounded-lg bg-surface border border-outline/30 px-3.5 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="nombre" placeholder="Ej. Alejandro Martínez" required="" type="text"/>
+</div>
+<!-- Field 2: Phone / WhatsApp -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1" for="telefono">WhatsApp o Celular (+57) *</label>
+<input class="w-full h-12 rounded-lg bg-surface border border-outline/30 px-3.5 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="telefono" placeholder="Ej. +57 300 123 4567" required="" type="tel"/>
+</div>
+<!-- Field 3: Objective -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1" for="objetivo">¿Qué te interesa transformar? *</label>
+<select class="w-full h-12 rounded-lg bg-surface border border-outline/30 px-3.5 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="objetivo" required="">
+<option disabled="" selected="" value="">Selecciona un foco prioritario</option>
+<option value="liderazgo">Liderazgo Ejecutivo y Equipos</option>
+<option value="claridad">Desarrollo Personal &amp; Claridad de Rumbo</option>
+<option value="estres">Gestión Emocional, Ansiedad y Estrés</option>
+<option value="integral">Acompañamiento Integral y Balance de Vida</option>
+</select>
+</div>
+<!-- Submit CTA -->
+<button class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg tracking-wide transition-all duration-150 active:scale-[0.98] shadow-md flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración</span>
+<span class="material-symbols-outlined text-lg" data-icon="sparkles" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+</button>
+</form>
+<!-- Or Immediate WhatsApp Divider -->
+<div class="relative my-5">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/40"></div>
+</div>
+<div class="relative flex justify-center text-xs">
+<span class="bg-surface-container-lowest px-2 font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">
+              O si prefieres atención inmediata
+            </span>
+</div>
+</div>
+<!-- WhatsApp Fast Action -->
+<a class="w-full h-[50px] border-2 border-secondary bg-secondary-fixed/20 hover:bg-secondary-fixed/40 text-on-secondary-fixed-variant rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all duration-150 active:scale-[0.98]" href="https://wa.me/573183042265?text=Hola%20Ang%C3%A9lica,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20coaching%20ejecutivo." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl text-secondary" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Chatear al WhatsApp (+57 318 304 2265)</span>
+</a>
+<!-- Legal and Security Microtext -->
+<p class="font-body-sm text-[11px] text-outline text-center mt-4 leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- ==============================================
+         5. PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+    =============================================== -->
+<section class="space-y-space-md pt-2">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Claridad Total</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Preguntas frecuentes</h3>
+</div>
+<div class="space-y-2.5">
+<!-- Accordion Item 1 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-3.5 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-medium">
+<span>¿Qué diferencia al coaching ontológico del coaching tradicional?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            El coaching tradicional suele centrarse en metas tácticas y tareas. El coaching ontológico va al núcleo: examina tu lenguaje, corporalidad y emociones para modificar la forma en que observas la realidad. Esto produce cambios sostenibles que no requieren fuerza de voluntad forzada.
+          </p>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-3.5 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-medium">
+<span>¿Las sesiones son presenciales o virtuales en Colombia?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Ambas modalidades están disponibles. Ofrecemos sesiones presenciales en espacios privados ejecutivos en Bogotá y Medellín, y sesiones virtuales vía Zoom seguro para directivos en el resto de Colombia y el exterior.
+          </p>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-3.5 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-medium">
+<span>¿Cuánto dura un proceso habitual de acompañamiento?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Un ciclo estándar comprende entre 6 y 10 sesiones quincenales (aproximadamente 3 a 5 meses). Este tiempo permite consolidar nuevos hábitos relacionales y comprobar la efectividad de las decisiones en situaciones reales de trabajo.
+          </p>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-3.5 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-medium">
+<span>¿Qué ocurre en la sesión inicial de valoración?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Es un espacio confidencial de 30 minutos donde exploramos tu desafío actual, evaluamos la compatibilidad con el método ontológico y definimos la hoja de ruta sugerida. Es sin compromiso y de alto valor diagnóstico.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ==============================================
+       FOOTER (INSTITUCIONAL SHARED COMPONENT)
+  =============================================== -->
+<footer class="bg-surface-container-high dark:bg-surface-container-highest w-full px-margin-mobile pt-space-xl pb-28 max-w-[480px] mx-auto flex flex-col items-center text-center gap-space-md mt-space-xl border-t border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold">Angélica Zuluaga Coach</span>
+</div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 font-label-sm text-label-sm text-on-surface-variant dark:text-surface-dim">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#proceso">Credenciales ICF PCC</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Ley 1581 de Datos Personales</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Política de Privacidad</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#contacto">Términos del Servicio</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-dim">
+      © 2024 Angélica Zuluaga Coach. Todos los derechos reservados. Colombia.
+    </p>
+</footer>
+<!-- ==============================================
+       BOTTOM NAVIGATION BAR (SHARED COMPONENT)
+       Active item logically mapped to current intent: Agendar
+  =============================================== -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 max-w-[480px] mx-auto bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md shadow-lg border-none" style="left: 50%; transform: translateX(-50%);">
+<!-- Item 1: Enfoque -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-95" href="#enfoque">
+<span class="material-symbols-outlined text-xl" data-icon="explore">explore</span>
+<span class="font-label-sm text-label-sm mt-0.5">Enfoque</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 transition-all duration-200 hover:text-primary active:scale-95" href="#casos">
+<span class="material-symbols-outlined text-xl" data-icon="format_quote">format_quote</span>
+<span class="font-label-sm text-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Item 4: Agendar (ACTIVE STATE CONTEXTUAL) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1.5 transition-all duration-200 active:scale-95" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/angelica-zuluaga-coach" width="1" height="1" style="display:none" alt="">
+</body></html>

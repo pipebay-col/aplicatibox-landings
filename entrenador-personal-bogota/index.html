@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="es"><head>
+<html class="dark scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-<title>EPB // Coach Bogotá - Entrenamiento Personalizado 1 a 1</title>
-<!-- Material Symbols Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Typography Webfonts -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EPB // COACH BOGOTÁ - Entrenamiento Personalizado 1 a 1</title>
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Chivo:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -19,686 +19,539 @@
       theme: {
         extend: {
           "colors": {
-            "error-container": "#93000a",
-            "primary-fixed": "#bdf448",
-            "on-primary": "#253600",
-            "outline-variant": "#434936",
-            "on-primary-fixed": "#141f00",
-            "tertiary-fixed": "#a2eeff",
-            "surface-container-high": "#282a2e",
-            "surface-container-lowest": "#0c0e12",
-            "secondary-fixed-dim": "#ffb95f",
-            "tertiary-container": "#99edff",
-            "on-error": "#690005",
-            "on-primary-fixed-variant": "#374e00",
-            "tertiary-fixed-dim": "#2fd9f4",
-            "surface-dim": "#111317",
-            "on-error-container": "#ffdad6",
-            "surface": "#111317",
-            "background": "#111317",
-            "on-secondary-fixed-variant": "#653e00",
-            "primary-container": "#bbf246",
-            "inverse-primary": "#4a6700",
-            "on-tertiary-fixed-variant": "#004e5a",
-            "surface-bright": "#37393e",
-            "on-tertiary-fixed": "#001f25",
-            "on-primary-container": "#4e6c00",
-            "tertiary": "#f9feff",
-            "on-surface": "#e2e2e8",
-            "surface-variant": "#333539",
-            "on-tertiary": "#00363e",
+            "inverse-primary": "#4e6700",
+            "tertiary-fixed": "#e2e2e7",
             "surface-container-low": "#1a1c20",
-            "primary": "#fbffe8",
-            "primary-fixed-dim": "#a2d72b",
-            "error": "#ffb4ab",
-            "outline": "#8d937c",
-            "secondary": "#ffb95f",
-            "on-secondary-container": "#5b3800",
-            "surface-container": "#1e2024",
-            "secondary-container": "#ee9800",
-            "on-background": "#e2e2e8",
-            "on-tertiary-container": "#006d7c",
             "surface-container-highest": "#333539",
+            "on-tertiary-fixed": "#1a1c20",
+            "primary-container": "#bff51b",
+            "on-primary-container": "#536d00",
+            "surface-variant": "#333539",
+            "primary": "#ffffff",
+            "surface-container-high": "#282a2e",
+            "error-container": "#93000a",
+            "surface-container": "#1e2024",
+            "on-error-container": "#ffdad6",
+            "on-error": "#690005",
+            "tertiary-fixed-dim": "#c6c6cb",
+            "tertiary-container": "#e2e2e7",
+            "tertiary": "#ffffff",
+            "on-secondary": "#5d1900",
+            "secondary-fixed-dim": "#ffb59d",
+            "on-primary": "#273500",
+            "primary-fixed": "#bff51b",
+            "surface-tint": "#a6d700",
+            "on-secondary-fixed-variant": "#832600",
+            "primary-fixed-dim": "#a6d700",
+            "outline-variant": "#434934",
+            "error": "#ffb4ab",
+            "on-surface-variant": "#c3c9ad",
             "inverse-surface": "#e2e2e8",
-            "surface-tint": "#a2d72b",
-            "on-secondary": "#472a00",
-            "on-surface-variant": "#c3c9b0",
-            "on-secondary-fixed": "#2a1700",
+            "surface": "#111317",
+            "on-background": "#e2e2e8",
+            "on-primary-fixed": "#151f00",
+            "surface-container-lowest": "#0c0e12",
+            "on-tertiary": "#2e3035",
+            "secondary-container": "#b83900",
+            "surface-dim": "#111317",
+            "on-surface": "#e2e2e8",
+            "background": "#111317",
+            "on-secondary-container": "#ffddd2",
+            "on-tertiary-container": "#636469",
+            "on-primary-fixed-variant": "#3a4d00",
+            "outline": "#8d937a",
+            "surface-bright": "#37393e",
             "inverse-on-surface": "#2f3035",
-            "secondary-fixed": "#ffddb8"
+            "on-tertiary-fixed-variant": "#45474b",
+            "secondary": "#ffb59d",
+            "on-secondary-fixed": "#390c00",
+            "secondary-fixed": "#ffdbd0"
           },
           "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
           },
           "spacing": {
-            "margin-tablet": "2rem",
-            "space-xs": "0.5rem",
-            "gutter": "1rem",
-            "space-xl": "2.5rem",
-            "gutter-desktop": "1.5rem",
-            "margin": "1rem",
-            "space-sm": "0.75rem",
+            "space-xs": "0.25rem",
             "space-2xl": "4rem",
-            "space-2xs": "0.25rem",
-            "margin-desktop": "3rem",
+            "margin": "1rem",
+            "gutter-desktop": "1.5rem",
             "space-md": "1rem",
-            "space-lg": "1.5rem"
+            "margin-desktop": "4rem",
+            "space-xl": "2.5rem",
+            "gutter": "1rem",
+            "margin-tablet": "2rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem"
           },
           "fontFamily": {
-            "headline-xl": ["Barlow Condensed"],
+            "body-lg": ["Chivo"],
+            "label-sm": ["JetBrains Mono"],
             "headline-lg": ["Barlow Condensed"],
-            "display-hero-mobile": ["Barlow Condensed"],
-            "display-hero": ["Barlow Condensed"],
+            "headline-lg-mobile": ["Barlow Condensed"],
+            "label-md": ["JetBrains Mono"],
+            "headline-sm": ["Barlow Condensed"],
+            "metric-display-mobile": ["Barlow Condensed"],
+            "display-xl": ["Barlow Condensed"],
             "headline-md": ["Barlow Condensed"],
-            "label-sm": ["Plus Jakarta Sans"],
-            "body-lg": ["Plus Jakarta Sans"],
-            "label-caps": ["Barlow Condensed"],
-            "headline-xl-mobile": ["Barlow Condensed"],
-            "body-md": ["Plus Jakarta Sans"],
-            "body-sm": ["Plus Jakarta Sans"],
-            "metric-huge": ["Barlow Condensed"]
+            "body-md": ["Chivo"],
+            "metric-display": ["Barlow Condensed"],
+            "display-xl-mobile": ["Barlow Condensed"],
+            "label-lg": ["JetBrains Mono"],
+            "body-sm": ["Chivo"]
           },
           "fontSize": {
-            "headline-xl": ["42px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "headline-lg": ["28px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "700" }],
-            "display-hero-mobile": ["40px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
-            "display-hero": ["56px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-            "headline-md": ["22px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }],
-            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
             "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-            "label-caps": ["13px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }],
-            "headline-xl-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "label-sm": ["9px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "metric-display-mobile": ["40px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "display-xl": ["72px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-md": ["28px", { "lineHeight": "32px", "letterSpacing": "0.02em", "fontWeight": "700" }],
             "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
-            "metric-huge": ["64px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "800" }]
+            "metric-display": ["56px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "display-xl-mobile": ["48px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
           }
-        }
-      }
+        },
+      },
     }
   </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 1;
-    }
-    .kinetic-glow {
-      box-shadow: 0 0 16px -2px rgba(187, 242, 70, 0.25);
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
-<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-surface-container-lowest">
-<!-- ========================================================================= -->
-<!-- TOP APP BAR (Shared Component JSON Blueprint)                             -->
-<!-- ========================================================================= -->
-<header class="bg-surface dark:bg-surface docked full-width top-0 fixed z-50 transition-colors shadow-md">
-<div class="flex justify-between items-center w-full px-margin h-16 max-w-7xl mx-auto">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary-container dark:text-primary-container" data-icon="fitness_center">fitness_center</span>
-<a class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface dark:text-on-surface uppercase" href="#hero">
-          EPB // COACH BOGOTÁ
-        </a>
+<body class="bg-surface-container-lowest text-on-surface antialiased font-body-md selection:bg-primary-container selection:text-surface-container-lowest pb-20">
+<!-- TOP APP BAR (Shared Component) -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin max-w-7xl mx-auto h-14">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="fitness_center">fitness_center</span>
+<span class="text-headline-sm font-headline-sm font-bold tracking-tight text-on-surface">EPB // COACH BOGOTÁ</span>
 </div>
-<!-- Desktop Navigation Cluster -->
-<nav class="hidden md:flex items-center gap-space-lg">
-<a class="text-primary-container dark:text-primary-container font-headline-md" href="#hero">Inicio</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-container transition-colors" href="#metodo">Método</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-container transition-colors" href="#resultados">Resultados</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-container transition-colors" href="#agendar">Agendar</a>
-</nav>
-<div class="flex items-center gap-space-xs">
-<span class="hidden sm:inline-block px-space-xs py-1 border border-outline-variant bg-surface-container text-on-surface-variant font-label-caps text-label-caps">
-          NSCA / CPT
-        </span>
-<a class="bg-primary-container text-surface-container-lowest font-headline-md text-headline-md px-space-sm py-1.5 font-bold hover:border-primary-container active:scale-95 transition-transform duration-150" href="#agendar">
-          AGENDAR
-        </a>
-</div>
+<a class="hover:opacity-90 transition-opacity duration-150 active:scale-95 transition-transform duration-100 bg-primary-container text-surface-container-lowest font-headline-sm text-label-md px-3 py-1.5 font-bold uppercase tracking-wider" href="#action-form">
+        AGENDAR
+      </a>
 </div>
 </header>
-<main class="pt-16 pb-20 md:pb-12 overflow-x-hidden">
-<!-- ========================================================================= -->
-<!-- 1. A - ATENCIÓN (Hero Section)                                            -->
-<!-- ========================================================================= -->
-<section class="relative px-margin pt-space-md pb-space-xl md:py-space-2xl max-w-7xl mx-auto" id="hero">
-<div class="flex flex-col lg:grid lg:grid-cols-12 gap-space-lg items-center">
-<!-- Left Column: Copy & Core Pitch -->
-<div class="w-full lg:col-span-7 flex flex-col gap-space-sm">
-<!-- Real Credential Tag -->
-<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface-container border border-outline-variant rounded-DEFAULT w-fit">
-<span class="material-symbols-outlined text-primary-container text-sm" data-icon="bolt">bolt</span>
-<span class="font-label-caps text-label-caps text-primary-container tracking-wider uppercase">
-              Certificación Internacional NSCA &amp; CPT · Entrenamiento 1 a 1 en Bogotá
+<!-- MAIN CANVAS: Mobile-first container -->
+<main class="max-w-[440px] mx-auto px-4 flex flex-col gap-space-xl pt-4">
+<!-- 1. A - ATENCIÓN (Hero Section) -->
+<section class="flex flex-col gap-space-md" id="atencion">
+<!-- Micro-credencial real badge -->
+<div class="bg-surface-container-low border border-white/10 px-3 py-1.5 flex items-center gap-2">
+<span class="text-primary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          ⚡ CERTIFICACIÓN INTERNACIONAL NSCA &amp; CPT · ENTRENAMIENTO 1 A 1 EN BOGOTÁ
+        </span>
+</div>
+<!-- Headline & Subheadline -->
+<div class="space-y-3">
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile text-primary tracking-tight uppercase font-extrabold leading-none">
+          TRANSFORMA TU CUERPO Y RENDIMIENTO SIN PERDER TIEMPO NI LESIONARTE
+        </h1>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          Entrenamiento personalizado 1 a 1 presencial en Bogotá (Chicó, Usaquén, Chapinero) o a domicilio. Plan biomecánico y nutricional diseñado a tu medida para ganar masa muscular, quemar grasa real y potenciar tu energía diaria.
+        </p>
+</div>
+<!-- Hero Image Card with DataStore Tag -->
+<div class="relative w-full aspect-square bg-surface border border-white/10 overflow-hidden shadow-2xl">
+<img alt="Coach y Entrenador Personal en Bogotá" class="w-full h-full object-cover object-center filter contrast-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VXs8Gtxl9MzxtFemMUbrKvRUevu2Djy7H_tsHw6ExN5mayfNAgabE9RGOuM4bb0KfDnBwQxwJtq2uxzg1bL9VDh8zdHgCq186_etOgb79jTm4aEiNZfgF_3L_Kd2uPOcsc3ns9WaXfEejQP4aO1tWZsKcHPolPn-x73wnLAJ9q8_lbIpqy8ApXs80DByEoV2l_W65y-dGsjO5_itpNfDfPt8CA6_v0J87Cv3ZBPw-V_vFnIIcnMH5wZ54"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+<!-- Superimposed Badges -->
+<div class="absolute bottom-3 left-3 right-3 flex flex-col gap-1.5">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md border border-white/10 px-2.5 py-1 flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-primary-container text-sm" data-icon="verified">verified</span>
+              Coach Certificado NSCA · Bogotá D.C.
             </span>
+<span class="text-label-sm font-label-sm text-primary-container font-semibold">1 A 1 VIP</span>
 </div>
-<!-- Headline H1 -->
-<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero font-extrabold text-primary tracking-tight uppercase mt-space-2xs">
-            TRANSFORMA TU CUERPO Y RENDIMIENTO SIN PERDER TIEMPO NI LESIONARTE
-          </h1>
-<!-- Value Subhead -->
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-            Entrenamiento personalizado 1 a 1 presencial en Bogotá (Chicó, Usaquén, Chapinero) o a domicilio. Plan biomecánico y nutricional diseñado a tu medida para ganar masa muscular, quemar grasa real y aumentar tu energía diaria.
-          </p>
-<!-- High-Contrast Kinetic CTA Button -->
-<div class="pt-space-xs flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
-<a class="kinetic-glow bg-primary-container text-surface-container-lowest font-headline-lg text-headline-lg font-bold px-space-lg py-3 flex items-center justify-center gap-space-xs tracking-wider uppercase active:scale-95 transition-transform duration-150" href="#agendar">
-<span>Agendar ahora mi valoración gratuita</span>
-<span class="material-symbols-outlined text-surface-container-lowest" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- Micro-Trust Prompt -->
-<div class="flex items-center gap-space-xs text-on-surface-variant">
-<span class="material-symbols-outlined text-primary-container text-base" data-icon="timer">timer</span>
-<span class="font-body-sm text-body-sm">Respuesta en menos de 24 horas · Diagnóstico funcional inicial sin compromiso</span>
-</div>
-<!-- 3 Quick Pillars of Trust -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs pt-space-md border-t border-outline-variant mt-space-xs">
-<div class="bg-surface-container p-space-sm border border-outline-variant flex items-start gap-space-xs">
-<span class="material-symbols-outlined text-primary-container text-xl" data-icon="verified_user">verified_user</span>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary leading-tight">Biomecánica 1 a 1</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Técnica perfecta y cero lesiones articulares.</p>
-</div>
-</div>
-<div class="bg-surface-container p-space-sm border border-outline-variant flex items-start gap-space-xs">
-<span class="material-symbols-outlined text-primary-container text-xl" data-icon="restaurant">restaurant</span>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary leading-tight">Nutrición Adaptada</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sin dietas extremas ni efecto rebote posterior.</p>
-</div>
-</div>
-<div class="bg-surface-container p-space-sm border border-outline-variant flex items-start gap-space-xs">
-<span class="material-symbols-outlined text-primary-container text-xl" data-icon="chat">chat</span>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary leading-tight">Acompañamiento VIP</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Monitoreo semanal directo por WhatsApp.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Right Column: Coach Hero Photography Image -->
-<div class="w-full lg:col-span-5 relative mt-space-sm lg:mt-0">
-<div class="relative bg-surface-container-low border border-outline-variant overflow-hidden group">
-<!-- Trainer Photo Placeholder / Asset Embedded -->
-<img alt="Coach de acondicionamiento físico y entrenador personal en Bogotá con indumentaria atlética negra de alto rendimiento, postura firme y sonriente en gimnasio boutique moderno." class="w-full h-[460px] md:h-[540px] object-cover object-top filter brightness-95 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyvAuloMcoQNhqt-D7RzOewFe-8JBe0USiHQCgT7eTyIlKxZvbSwq92yXxbsf2oAoWTZkwwRnoULU_o5JKTVb64s5_iaL2YxybdxlNOrPtBWZkua_y1ktIjSh2xcyynQ3LRZKzpvYdDCoVL4uEQFzOyLOzRDsdJlVx0CjoaOZq7jQQTKGKa3B5h7UfqSOuIz_UvShD9tRzc4hT5KViAgGEPx19SfSe-jlyTvXSqnEMRn60JDgJ4JsKvhc1_xBQHg8IWxqTnWbVCk4"/>
-<!-- Top Verified Badge -->
-<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 border border-outline-variant flex items-center gap-space-2xs">
-<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
-<span class="font-label-caps text-label-caps text-on-surface tracking-wide">Coach Certificado NSCA · Bogotá D.C.</span>
-</div>
-<!-- Bottom Floating Impact Badge -->
-<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm border border-outline-variant flex items-center justify-between">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary-container" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
-<span class="font-headline-md text-headline-md text-primary uppercase">
-                  +500 Vidas Transformadas · Sedes Exclusivas Bogotá
-                </span>
-</div>
-<span class="font-label-caps text-label-caps text-primary-container px-2 py-0.5 border border-primary-container bg-surface">VIP 1:1</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================================================= -->
-<!-- 2. I - INTERÉS (Problema del Cliente + Metodología en 3 Pasos)             -->
-<!-- ========================================================================= -->
-<section class="px-margin py-space-xl bg-surface-container-lowest border-y border-outline-variant" id="metodo">
-<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
-<!-- Empathy Box: The Problem -->
-<div class="bg-surface-container p-space-md md:p-space-lg border border-outline-variant relative overflow-hidden">
-<div class="flex flex-col gap-space-xs max-w-3xl">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest flex items-center gap-1">
-<span class="material-symbols-outlined text-base" data-icon="warning">warning</span>
-              EL ERROR COMÚN DEL FITNESS
-            </span>
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase">
-              ¿Cansado de pagar membresías de gimnasio sin ver cambios o terminar con dolores de espalda?
-            </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              La mayoría de personas en Bogotá abandonan el gimnasio a los dos meses porque siguen rutinas genéricas de internet, sin corrección postural ni un plan progresivo. En nuestro programa 1 a 1, cada repetición y cada serie está calculada exactamente para tu biotipo y tus objetivos, maximizando resultados en la mitad de tiempo.
+<div class="bg-surface-container-lowest/90 backdrop-blur-md border-l-2 border-l-primary-container border-y border-r border-white/10 px-2.5 py-1">
+<p class="text-label-sm font-label-sm text-on-surface-variant">
+<strong class="text-primary">+500 Vidas Transformadas</strong> en Sedes Exclusivas
             </p>
 </div>
 </div>
-<!-- 3-Step Methodology Bento -->
-<div>
-<div class="mb-space-md">
-<span class="font-label-caps text-label-caps text-primary-container tracking-wider uppercase">Metodología Comprobada</span>
-<h3 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase mt-1">
-              CÓMO LOGRAREMOS TUS OBJETIVOS PASO A PASO
-            </h3>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
-<!-- Step 01 -->
-<div class="bg-surface-container p-space-md border border-outline-variant flex flex-col justify-between hover:border-primary-container transition-colors">
-<div>
-<div class="flex justify-between items-start mb-space-sm">
-<span class="font-metric-huge text-metric-huge text-outline leading-none">01</span>
-<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="vital_signs">vital_signs</span>
+<!-- Hero CTA -->
+<div class="flex flex-col gap-2 pt-2">
+<a class="w-full h-[54px] bg-primary-container text-surface-container-lowest font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 active:scale-95 transition-all shadow-[0_0_20px_-4px_rgba(200,255,42,0.4)]" href="#action-form">
+<span>AGENDAR AHORA MI VALORACIÓN GRATUITA</span>
+<span class="material-symbols-outlined font-bold text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant">
+          ⚡ Respuesta en menos de 24 horas · Diagnóstico funcional inicial sin compromiso
+        </p>
 </div>
-<h4 class="font-headline-md text-headline-md text-primary mb-space-2xs uppercase">
-                  Valoración Funcional &amp; Composición Corporal
-                </h4>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                  Evaluación postural, rango articular y porcentaje graso para saber con certeza científica desde dónde partes.
-                </p>
-</div>
-<div class="mt-space-md pt-space-xs border-t border-outline-variant">
-<span class="font-label-caps text-label-caps text-primary-container">Diagnóstico 100% individual</span>
-</div>
-</div>
-<!-- Step 02 -->
-<div class="bg-surface-container p-space-md border border-outline-variant flex flex-col justify-between hover:border-primary-container transition-colors">
-<div>
-<div class="flex justify-between items-start mb-space-sm">
-<span class="font-metric-huge text-metric-huge text-outline leading-none">02</span>
-<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="tune">tune</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-primary mb-space-2xs uppercase">
-                  Plan de Entrenamiento &amp; Hábitos a Medida
-                </h4>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                  Rutinas de fuerza progresiva adaptadas a tus horarios laborales en Bogotá y un plan nutricional flexible que disfrutas cumplir.
-                </p>
-</div>
-<div class="mt-space-md pt-space-xs border-t border-outline-variant">
-<span class="font-label-caps text-label-caps text-primary-container">Sin dietas imposibles</span>
-</div>
-</div>
-<!-- Step 03 -->
-<div class="bg-surface-container p-space-md border border-outline-variant flex flex-col justify-between hover:border-primary-container transition-colors">
-<div>
-<div class="flex justify-between items-start mb-space-sm">
-<span class="font-metric-huge text-metric-huge text-outline leading-none">03</span>
-<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="trending_up">trending_up</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-primary mb-space-2xs uppercase">
-                  Resultados Medibles &amp; Acompañamiento Continuo
-                </h4>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                  Aumentas masa magra, reduces cintura y duplicas tus niveles de energía con chequeos quincenales y corrección milimétrica.
-                </p>
-</div>
-<div class="mt-space-md pt-space-xs border-t border-outline-variant">
-<span class="font-label-caps text-label-caps text-primary-container">Evolución quincenal documentada</span>
-</div>
-</div>
-</div>
-<!-- Micro Support Link -->
-<div class="mt-space-md text-center">
-<a class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant hover:text-primary-container transition-colors" href="https://wa.me/573103227968" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-sm" data-icon="forum">forum</span>
-              ¿Dudas sobre cómo funciona? Chatea directo con el coach por WhatsApp →
-            </a>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================================================= -->
-<!-- 3. D - DESEO (Métricas + Beneficios de Resultado + Testimonios)             -->
-<!-- ========================================================================= -->
-<section class="px-margin py-space-xl max-w-7xl mx-auto flex flex-col gap-space-2xl" id="resultados">
-<!-- Authority Metrics 2x2 on Mobile, 4-col on Desktop -->
-<div>
-<div class="mb-space-sm">
-<span class="font-label-caps text-label-caps text-primary-container uppercase tracking-wider">Tracción Comprobada</span>
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase">
-            MÉTRICAS QUE RESPALDAN NUESTRO TRABAJO
-          </h2>
-</div>
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-sm">
-<div class="bg-surface-container p-space-md border border-outline-variant">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Trayectoria</span>
-<div class="font-metric-huge text-metric-huge text-primary leading-tight font-extrabold">+8 Años</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Transformando cuerpos en Bogotá</p>
-</div>
-<div class="bg-surface-container p-space-md border border-outline-variant">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Impacto</span>
-<div class="font-metric-huge text-metric-huge text-primary-container leading-tight font-extrabold">+480</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Alumnos y profesionales asesorados</p>
-</div>
-<div class="bg-surface-container p-space-md border border-outline-variant">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Satisfacción</span>
-<div class="font-metric-huge text-metric-huge text-primary leading-tight font-extrabold">98.5%</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tasa de satisfacción y adherencia</p>
-</div>
-<div class="bg-surface-container p-space-md border border-outline-variant">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase block mb-1">Rigor</span>
-<div class="font-metric-huge text-metric-huge text-secondary leading-tight font-extrabold">100%</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Entrenamiento con base científica NSCA</p>
-</div>
-</div>
-</div>
-<!-- Core Result Benefits -->
-<div>
-<div class="mb-space-sm">
-<span class="font-label-caps text-label-caps text-primary-container uppercase tracking-wider">Beneficios Directos</span>
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase">
-            RESULTADOS REALES EN TU VIDA DIARIA
-          </h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
-<div class="bg-surface-container p-space-md border border-outline-variant flex items-start gap-space-sm">
-<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary-container" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md text-primary uppercase">Pérdida de grasa localizada protegiendo tu masa muscular</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-                Quema tejido adiposo sin someterte a cardio interminable ni planes restrictivos que destruyen tu metabolismo.
-              </p>
-</div>
-</div>
-<div class="bg-surface-container p-space-md border border-outline-variant flex items-start gap-space-sm">
-<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<!-- 3 Badges de confianza técnica -->
+<div class="grid grid-cols-1 gap-2 pt-1">
+<div class="bg-surface-container-low border border-white/10 p-2.5 flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-container" data-icon="accessibility_new">accessibility_new</span>
-</div>
 <div>
-<h4 class="font-headline-md text-headline-md text-primary uppercase">Eliminación definitiva del dolor lumbar y postural</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-                Fortalecimiento del core y cadena posterior. Postura atlética y libre de dolor para quienes pasan largas horas sentados en oficina.
-              </p>
+<h4 class="text-label-md font-label-md text-primary font-bold uppercase">Biomecánica 1 a 1</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Cero lesiones, técnica milimétrica adaptada a tus articulaciones.</p>
 </div>
 </div>
-<div class="bg-surface-container p-space-md border border-outline-variant flex items-start gap-space-sm">
-<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary-container" data-icon="bolt">bolt</span>
-</div>
+<div class="bg-surface-container-low border border-white/10 p-2.5 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="restaurant">restaurant</span>
 <div>
-<h4 class="font-headline-md text-headline-md text-primary uppercase">Más fuerza, energía y claridad mental</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-                Optimización hormonal y resistencia física para rendir al 100% en tus jornadas profesionales y tiempo en familia.
-              </p>
+<h4 class="text-label-md font-label-md text-primary font-bold uppercase">Nutrición Adaptada</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Sin dietas extremas ni rebotes. Sostenible con tu ritmo de vida.</p>
 </div>
 </div>
-<div class="bg-surface-container p-space-md border border-outline-variant flex items-start gap-space-sm">
-<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
-</div>
+<div class="bg-surface-container-low border border-white/10 p-2.5 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="monitoring">monitoring</span>
 <div>
-<h4 class="font-headline-md text-headline-md text-primary uppercase">Flexibilidad de sedes y horarios en Bogotá</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-                Sesiones en gimnasio boutique aliado, en el gym privado de tu edificio o al aire libre en parques exclusivos (El Virrey, Chicó, Usaquén).
-              </p>
-</div>
-</div>
-</div>
-</div>
-<!-- Verified Testimonials -->
-<div>
-<div class="mb-space-sm">
-<span class="font-label-caps text-label-caps text-primary-container uppercase tracking-wider">Prueba Social</span>
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase">
-            CASOS DE ÉXITO EN BOGOTÁ
-          </h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
-<div class="bg-surface-container p-space-lg border border-outline-variant flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-1 text-primary-container mb-space-xs">
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
-                "Llevaba 3 años estancado en el gimnasio tradicional. Con el coach bajé 9 kilos de grasa y gané músculo en 4 meses sin lesionarme la espalda. La mejor inversión en salud que he hecho."
-              </p>
-</div>
-<div class="pt-space-xs border-t border-outline-variant flex items-center justify-between">
-<div>
-<h5 class="font-headline-md text-headline-md text-primary">Felipe Morales (34 años)</h5>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Emprendedor · Chapinero Alto</span>
-</div>
-<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-highest px-2 py-0.5 border border-outline-variant">
-                Verificado
-              </span>
-</div>
-</div>
-<div class="bg-surface-container p-space-lg border border-outline-variant flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-1 text-primary-container mb-space-xs">
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface italic mb-space-md">
-                "Lo que más valoro es la puntualidad y la exigencia técnica. Mis dolores crónicos de cuello por trabajo de oficina desaparecieron y mi nivel de energía es otro completamente."
-              </p>
-</div>
-<div class="pt-space-xs border-t border-outline-variant flex items-center justify-between">
-<div>
-<h5 class="font-headline-md text-headline-md text-primary">Camila Restrepo</h5>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Directora Comercial · Chicó Reservado</span>
-</div>
-<span class="font-label-caps text-label-caps text-primary-container bg-surface-container-highest px-2 py-0.5 border border-outline-variant">
-                Verificado
-              </span>
-</div>
+<h4 class="text-label-md font-label-md text-primary font-bold uppercase">Acompañamiento VIP</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Monitoreo semanal directo, feedback continuo y ajuste de cargas.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- ========================================================================= -->
-<!-- 4. A - ACCIÓN (Minimalist Conversion Form & WhatsApp Instant CTA)          -->
-<!-- ========================================================================= -->
-<section class="px-margin py-space-2xl bg-surface-container-low border-t border-outline-variant" id="agendar">
-<div class="max-w-3xl mx-auto">
-<!-- Ethical Scarcity Header -->
-<div class="text-center mb-space-lg">
-<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface border border-outline-variant rounded-DEFAULT mb-space-xs">
-<span class="material-symbols-outlined text-secondary text-base" data-icon="schedule">schedule</span>
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">
-              Cupos mensuales limitados para atención 1 a 1 presencial en Bogotá
-            </span>
+<!-- 2. I - INTERÉS (El Problema y la Solución en 3 Pasos) -->
+<section class="flex flex-col gap-space-lg" id="protocolo">
+<!-- Problem Card -->
+<div class="bg-surface border-l-4 border-l-secondary-container border-y border-r border-white/10 p-4 space-y-3">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-xl" data-icon="warning">warning</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">EL ERROR COMÚN</span>
 </div>
-<h2 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-primary uppercase">
-            EMPIEZA HOY TU TRANSFORMACIÓN FÍSICA
-          </h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-space-2xs">
-            Completa tus datos y recibirás una propuesta de plan y diagnóstico inicial hoy mismo.
-          </p>
-</div>
-<!-- Conversion Form Card -->
-<div class="bg-surface-container p-space-md md:p-space-xl border border-outline-variant">
-<form class="flex flex-col gap-space-md" id="contactForm" onsubmit="event.preventDefault(); handleBookingSubmit();">
-<!-- Field 1: Name -->
-<div class="flex flex-col gap-space-2xs">
-<label class="font-label-caps text-label-caps text-on-surface uppercase" for="fullName">
-                Nombre y Apellido *
-              </label>
-<input class="w-full bg-surface-dim border border-outline-variant h-[52px] px-space-md text-on-surface placeholder-outline focus:border-primary-container focus:ring-0 rounded-DEFAULT font-body-md text-body-md outline-none transition-colors" id="fullName" placeholder="Ej. Daniel Gómez" required="" type="text"/>
-</div>
-<!-- Field 2: WhatsApp Phone -->
-<div class="flex flex-col gap-space-2xs">
-<label class="font-label-caps text-label-caps text-on-surface uppercase" for="whatsapp">
-                WhatsApp con indicativo (+57) *
-              </label>
-<div class="flex">
-<span class="inline-flex items-center px-space-md bg-surface-container-highest border border-r-0 border-outline-variant text-on-surface-variant font-label-caps text-label-caps">
-                  +57 (COL)
-                </span>
-<input class="flex-1 bg-surface-dim border border-outline-variant h-[52px] px-space-md text-on-surface placeholder-outline focus:border-primary-container focus:ring-0 rounded-DEFAULT font-body-md text-body-md outline-none transition-colors" id="whatsapp" placeholder="310 123 4567" required="" type="tel"/>
-</div>
-</div>
-<!-- Field 3: Goal Dropdown -->
-<div class="flex flex-col gap-space-2xs">
-<label class="font-label-caps text-label-caps text-on-surface uppercase" for="goalSelect">
-                ¿Qué te interesa lograr? *
-              </label>
-<select class="w-full bg-surface-dim border border-outline-variant h-[52px] px-space-md text-on-surface focus:border-primary-container focus:ring-0 rounded-DEFAULT font-body-md text-body-md outline-none transition-colors cursor-pointer" id="goalSelect" required="">
-<option disabled="" selected="" value="">Selecciona tu objetivo principal</option>
-<option value="masa">Aumento de masa muscular y fuerza</option>
-<option value="grasa">Pérdida de grasa y tonificación</option>
-<option value="salud">Reacondicionamiento físico y salud postural</option>
-<option value="domicilio">Entrenamiento personalizado a domicilio</option>
-</select>
-</div>
-<!-- Conversion Action Button -->
-<button class="kinetic-glow w-full bg-primary-container text-surface-container-lowest font-headline-lg text-headline-lg font-bold py-3.5 px-space-md flex items-center justify-center gap-space-xs tracking-wider uppercase active:scale-98 transition-all duration-150 mt-space-xs" type="submit">
-<span>Quiero mi valoración gratuita</span>
-<span class="material-symbols-outlined text-surface-container-lowest" data-icon="bolt">bolt</span>
-</button>
-<!-- Form Success Message Placeholder -->
-<div class="hidden p-space-sm bg-surface-container-highest border border-primary-container text-primary-container font-label-caps text-label-caps text-center" id="formFeedback">
-              ✓ Solicitud recibida. Te contactaremos vía WhatsApp en menos de 2 horas.
-            </div>
-<!-- Divider -->
-<div class="relative flex items-center justify-center my-space-xs">
-<div class="border-t border-outline-variant w-full"></div>
-<span class="bg-surface-container px-space-sm font-label-caps text-label-caps text-outline uppercase tracking-wider relative">
-                O SI PREFIERES RESPUESTA INMEDIATA
-              </span>
-</div>
-<!-- WhatsApp Instant Trigger -->
-<a class="w-full bg-surface-container-highest border border-outline-variant hover:border-primary-container text-primary font-headline-md text-headline-md font-bold py-3 px-space-md flex items-center justify-center gap-space-xs tracking-wider uppercase transition-colors" href="https://wa.me/573103227968?text=Hola%20Coach,%20quiero%20agendar%20mi%20valoración%20gratuita%20de%20entrenamiento%20personalizado%20en%20Bogotá" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-primary-container" data-icon="chat">chat</span>
-<span>Chatear directo por WhatsApp (+57 310 322 7968)</span>
-</a>
-<!-- Privacy Guarantee -->
-<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-space-2xs">
-<span class="material-symbols-outlined text-xs align-baseline" data-icon="lock">lock</span>
-              Tus datos están 100% protegidos bajo secreto profesional y la Ley 1581 de Protección de Datos Personales de Colombia. Cero spam.
-            </p>
-</form>
-</div>
-</div>
-</section>
-<!-- ========================================================================= -->
-<!-- PREGUNTAS FRECUENTES (Interactive Accordion)                              -->
-<!-- ========================================================================= -->
-<section class="px-margin py-space-xl max-w-4xl mx-auto">
-<div class="mb-space-md text-center">
-<span class="font-label-caps text-label-caps text-primary-container uppercase tracking-wider">Dudas Frecuentes</span>
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase">
-          TODO LO QUE NECESITAS SABER
+<h2 class="text-headline-sm font-headline-sm text-primary uppercase">
+          ¿Cansado de pagar membresías de gimnasio sin ver cambios o terminar con dolores de espalda?
         </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          La mayoría entrena sola con rutinas genéricas de internet, sin corrección postural, estancándose o lesionándose. En <strong class="text-primary font-semibold">Entrenador Personal Bogotá</strong> cada repetición, cadencia y plan se calcula exactamente para tu biotipo, postura diaria y objetivos.
+        </p>
 </div>
-<div class="flex flex-col gap-space-xs">
-<!-- Accordion Item 1 -->
-<details class="group bg-surface-container border border-outline-variant p-space-md cursor-pointer transition-all">
-<summary class="flex justify-between items-center list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<!-- Solution Header -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest">METODOLOGÍA CIENTÍFICA</span>
+<h3 class="text-headline-md font-headline-md text-primary uppercase">EL PROTOCOLO EN 3 PASOS</h3>
+</div>
+<!-- 3 Steps Cards -->
+<div class="flex flex-col gap-3">
+<!-- Paso 01 -->
+<div class="bg-surface border border-white/10 p-4 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-headline-lg font-headline-lg text-primary-container leading-none opacity-90">01</span>
+<span class="material-symbols-outlined text-outline" data-icon="clinical_notes">clinical_notes</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Valoración Funcional &amp; Composición Corporal</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Diagnóstico de postura, rango articular y porcentaje graso para saber con certeza de dónde partes sin riesgos de sobrecarga.
+            </p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface border border-white/10 p-4 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-headline-lg font-headline-lg text-primary-container leading-none opacity-90">02</span>
+<span class="material-symbols-outlined text-outline" data-icon="fitness_center">fitness_center</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Plan de Entrenamiento &amp; Hábitos a Medida</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Rutinas de fuerza progresiva adaptadas a tus horarios laborales en Bogotá y nutrición flexible que disfrutas cumplir.
+            </p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface border border-white/10 p-4 relative overflow-hidden">
+<div class="flex items-start justify-between">
+<span class="font-headline-lg font-headline-lg text-primary-container leading-none opacity-90">03</span>
+<span class="material-symbols-outlined text-outline" data-icon="speed">speed</span>
+</div>
+<div class="mt-2 space-y-1.5">
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Resultados Medibles &amp; Acompañamiento Continuo</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Aumentas masa magra, reduces cintura y duplicas energía con chequeos quincenales y corrección milimétrica.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick chat link -->
+<a class="text-primary-container font-label-md text-label-md flex items-center justify-center gap-1.5 hover:underline py-1" href="https://wa.me/573103227968" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre cómo funciona? Chatea directo con el coach por WhatsApp</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</section>
+<!-- 3. D - DESEO (Métricas, Beneficios y Testimonios) -->
+<section class="flex flex-col gap-space-lg" id="deseo">
+<!-- Authority Metrics Grid -->
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface border border-white/10 p-3 flex flex-col justify-center">
+<span class="text-metric-display-mobile font-metric-display-mobile text-primary-container leading-none">+8</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase mt-1">Años de Trayectoria</span>
+</div>
+<div class="bg-surface border border-white/10 p-3 flex flex-col justify-center">
+<span class="text-metric-display-mobile font-metric-display-mobile text-primary-container leading-none">+480</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase mt-1">Alumnos Asesorados</span>
+</div>
+<div class="bg-surface border border-white/10 p-3 flex flex-col justify-center">
+<span class="text-metric-display-mobile font-metric-display-mobile text-primary-container leading-none">98.5%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase mt-1">Satisfacción &amp; Adherencia</span>
+</div>
+<div class="bg-surface border border-white/10 p-3 flex flex-col justify-center">
+<span class="text-metric-display-mobile font-metric-display-mobile text-primary-container leading-none">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase mt-1">Base Científica NSCA</span>
+</div>
+</div>
+<!-- 4 Beneficios en Resultados del día a día -->
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-primary uppercase">BENEFICIOS REALES EN TU DÍA A DÍA</h3>
+<div class="flex flex-col gap-2.5">
+<div class="bg-surface-container-low border border-white/10 p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Pérdida de grasa localizada</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Protegiendo tu masa muscular mediante déficit energético inteligente sin dietas restrictivas ni efecto rebote.</p>
+</div>
+</div>
+<div class="bg-surface-container-low border border-white/10 p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Eliminación de dolor lumbar y postural</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Fortalecimiento biomecánico de core y cadena posterior especialmente diseñado para quienes pasan horas sentados trabajando.</p>
+</div>
+</div>
+<div class="bg-surface-container-low border border-white/10 p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Más fuerza, energía y claridad mental</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Rendimiento al 100% en tus jornadas profesionales y vitalidad para disfrutar tu tiempo libre y familiar en Bogotá.</p>
+</div>
+</div>
+<div class="bg-surface-container-low border border-white/10 p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-primary uppercase">Flexibilidad de sedes y horarios en Bogotá</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Sesiones en gimnasio boutique aliado o en tu propio conjunto residencial en Chicó, Rosales, Usaquén o Chapinero.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest">CASOS DE ÉXITO EN BOGOTÁ</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">4.9 / 5.0 ★★★★★</span>
+</div>
+<!-- Testimonio 1 -->
+<div class="bg-surface border border-white/10 p-4 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline-variant font-mono">VERIFICADO</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface italic">
+            "Llevaba dos años con molestias en la espalda baja por el teletrabajo y estancado en mi peso. En 4 meses con el coach bajé 7 kg de grasa, cero dolor lumbar y gané fuerza que creí imposible a mis 38 años."
+          </p>
+<div class="pt-1 border-t border-white/5 flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-bold">Felipe Morales</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Emprendedor · Chapinero Alto</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface border border-white/10 p-4 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline-variant font-mono">VERIFICADO</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface italic">
+            "Mi tiempo es oro con reuniones todo el día. El servicio a domicilio en Chicó y la precisión de cada rutina me devolvieron la disciplina. Los resultados son evidentes en mi ropa y en mi nivel de energía."
+          </p>
+<div class="pt-1 border-t border-white/5 flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary font-bold">Camila Restrepo</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Directora Comercial · Chicó Reservado</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. A - ACCIÓN (Formulario Minimalista + WhatsApp Directo) -->
+<section class="bg-surface border-2 border-primary-container p-4 space-y-4 shadow-[0_0_25px_-5px_rgba(200,255,42,0.25)]" id="action-form">
+<!-- Banner de urgencia -->
+<div class="bg-surface-container-low border border-primary-container/40 p-2 text-center">
+<span class="font-label-sm text-label-sm text-primary-container font-bold tracking-wider uppercase flex items-center justify-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
+          ⚡ Cupos mensuales limitados para atención 1 a 1 presencial en Bogotá
+        </span>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="text-headline-md font-headline-md text-primary uppercase">Empieza hoy tu transformación física</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Completa tus datos y recibirás una propuesta de plan y diagnóstico inicial hoy mismo.
+        </p>
+</div>
+<form class="space-y-3" onsubmit="event.preventDefault(); alert('¡Solicitud recibida! Un coach se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo 1 -->
+<div class="space-y-1">
+<label class="block text-label-md font-label-md text-on-surface uppercase">Nombre y Apellido *</label>
+<input class="w-full bg-surface-container-lowest border border-white/15 px-3 py-2.5 text-body-md font-body-md text-primary placeholder-on-tertiary-container focus:outline-none focus:border-primary-container rounded-none" placeholder="ej. Daniel Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2 -->
+<div class="space-y-1">
+<label class="block text-label-md font-label-md text-on-surface uppercase">WhatsApp o Celular (+57) *</label>
+<input class="w-full bg-surface-container-lowest border border-white/15 px-3 py-2.5 text-body-md font-body-md text-primary placeholder-on-tertiary-container focus:outline-none focus:border-primary-container rounded-none font-mono" placeholder="ej. 310 123 4567" required="" type="tel"/>
+</div>
+<!-- Campo 3 -->
+<div class="space-y-1.5">
+<label class="block text-label-md font-label-md text-on-surface uppercase">¿Qué te interesa lograr? *</label>
+<div class="space-y-1.5">
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-white/10 cursor-pointer text-body-sm font-body-sm text-on-surface hover:border-primary-container">
+<input checked="" class="text-primary-container focus:ring-0 bg-surface border-white/20 rounded-none" name="goal" type="radio"/>
+<span>Pérdida de grasa y definición muscular</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-white/10 cursor-pointer text-body-sm font-body-sm text-on-surface hover:border-primary-container">
+<input class="text-primary-container focus:ring-0 bg-surface border-white/20 rounded-none" name="goal" type="radio"/>
+<span>Aumento de masa muscular</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-white/10 cursor-pointer text-body-sm font-body-sm text-on-surface hover:border-primary-container">
+<input class="text-primary-container focus:ring-0 bg-surface border-white/20 rounded-none" name="goal" type="radio"/>
+<span>Recuperación de lesiones y postura</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-lowest border border-white/10 cursor-pointer text-body-sm font-body-sm text-on-surface hover:border-primary-container">
+<input class="text-primary-container focus:ring-0 bg-surface border-white/20 rounded-none" name="goal" type="radio"/>
+<span>Rendimiento deportivo</span>
+</label>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-[54px] bg-primary-container text-surface-container-lowest font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 active:scale-95 transition-all shadow-[0_0_20px_-4px_rgba(200,255,42,0.4)] mt-2" type="submit">
+<span>QUIERO MI VALORACIÓN GRATUITA</span>
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+</button>
+</form>
+<!-- Separador -->
+<div class="flex items-center gap-3 my-2">
+<div class="h-px bg-white/10 flex-1"></div>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-mono tracking-wider">O SI PREFIERES RESPUESTA INMEDIATA</span>
+<div class="h-px bg-white/10 flex-1"></div>
+</div>
+<!-- Secondary CTA: WhatsApp -->
+<a class="w-full h-[50px] border border-primary-container bg-surface-container-lowest text-primary font-headline-sm text-headline-sm uppercase flex items-center justify-center gap-2 hover:bg-primary-container/10 active:scale-95 transition-all" href="https://wa.me/573103227968?text=Hola%20Coach,%20quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20de%20entrenamiento%20personalizado." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary-container" data-icon="chat">chat</span>
+<span class="text-sm">Chatear directo por WhatsApp (+57 310 322 7968)</span>
+</a>
+<!-- Micro-copy de seguridad -->
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant leading-tight">
+        🔒 Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos Personales de Colombia. Cero spam.
+      </p>
+</section>
+<!-- 5. FAQ (Preguntas Frecuentes) -->
+<section class="flex flex-col gap-space-md">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest">RESOLVEMOS TUS DUDAS</span>
+<h3 class="text-headline-md font-headline-md text-primary uppercase">PREGUNTAS FRECUENTES</h3>
+</div>
+<div class="space-y-2">
+<!-- FAQ 1 -->
+<details class="group bg-surface border border-white/10 p-3 open:border-primary-container/40">
+<summary class="flex justify-between items-center cursor-pointer list-none text-headline-sm font-headline-sm text-primary uppercase">
 <span>¿Dónde se realizan los entrenamientos en Bogotá?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary-container" data-icon="expand_more">expand_more</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary-container text-sm" data-icon="expand_more">expand_more</span>
 </summary>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs border-t border-outline-variant">
-            Entrenamos en gimnasios boutique aliados ubicados en zonas estratégicas del norte de Bogotá (Chicó, El Nogal, Usaquén, Rosales). También tenemos modalidad presencial a domicilio en el gimnasio privado de tu edificio o residencia, y sesiones al aire libre en parques emblemáticos como El Virrey.
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant border-t border-white/5 pt-2">
+            Disponemos de gimnasios boutique aliados completamente equipados en Chicó, Chapinero Alto y Usaquén. También ofrecemos el servicio 1 a 1 a domicilio en el gimnasio privado de tu edificio o conjunto residencial.
           </p>
 </details>
-<!-- Accordion Item 2 -->
-<details class="group bg-surface-container border border-outline-variant p-space-md cursor-pointer transition-all">
-<summary class="flex justify-between items-center list-none font-headline-md text-headline-md text-primary uppercase select-none">
-<span>¿Necesito tener experiencia previa o buena condición física?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary-container" data-icon="expand_more">expand_more</span>
+<!-- FAQ 2 -->
+<details class="group bg-surface border border-white/10 p-3 open:border-primary-container/40">
+<summary class="flex justify-between items-center cursor-pointer list-none text-headline-sm font-headline-sm text-primary uppercase">
+<span>¿Necesito experiencia previa o buena condición física?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary-container text-sm" data-icon="expand_more">expand_more</span>
 </summary>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs border-t border-outline-variant">
-            No. Más del 60% de nuestros alumnos inician desde cero o tras periodos largos de inactividad o lesiones previas. La valoración inicial permite calibrar las cargas exactas para que progreses sin dolor ni frustración.
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant border-t border-white/5 pt-2">
+            No. Más del 60% de nuestros alumnos inician desde cero o tras años de inactividad. El protocolo inicia con una valoración biomecánica inicial para ajustar las cargas a tu capacidad actual sin dolor ni fatiga excesiva.
           </p>
 </details>
-<!-- Accordion Item 3 -->
-<details class="group bg-surface-container border border-outline-variant p-space-md cursor-pointer transition-all">
-<summary class="flex justify-between items-center list-none font-headline-md text-headline-md text-primary uppercase select-none">
-<span>¿El servicio incluye guía de alimentación?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary-container" data-icon="expand_more">expand_more</span>
+<!-- FAQ 3 -->
+<details class="group bg-surface border border-white/10 p-3 open:border-primary-container/40">
+<summary class="flex justify-between items-center cursor-pointer list-none text-headline-sm font-headline-sm text-primary uppercase">
+<span>¿El servicio incluye plan de alimentación?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary-container text-sm" data-icon="expand_more">expand_more</span>
 </summary>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs border-t border-outline-variant">
-            Sí. Te entregamos un protocolo nutricional flexible basado en macronutrientes adaptado a tus gustos y a la gastronomía local, sin dietas restrictivas ni batidos milagrosos.
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant border-t border-white/5 pt-2">
+            Sí. Integramos una guía nutricional personalizada basada en tus requerimientos energéticos y hábitos en Bogotá. Sin dietas restrictivas ni suplementos innecesarios: comida real con metas calóricas y proteicas claras.
           </p>
 </details>
-<!-- Accordion Item 4 -->
-<details class="group bg-surface-container border border-outline-variant p-space-md cursor-pointer transition-all">
-<summary class="flex justify-between items-center list-none font-headline-md text-headline-md text-primary uppercase select-none">
+<!-- FAQ 4 -->
+<details class="group bg-surface border border-white/10 p-3 open:border-primary-container/40">
+<summary class="flex justify-between items-center cursor-pointer list-none text-headline-sm font-headline-sm text-primary uppercase">
 <span>¿Cuál es la política de horarios y cancelaciones?</span>
-<span class="material-symbols-outlined group-open:rotate-180 transition-transform text-primary-container" data-icon="expand_more">expand_more</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary-container text-sm" data-icon="expand_more">expand_more</span>
 </summary>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm pt-space-xs border-t border-outline-variant">
-            Sabemos que la agenda ejecutiva de Bogotá es dinámica. Puedes reprogramar tus sesiones sin penalidad notificando con un mínimo de 12 horas de anticipación.
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant border-t border-white/5 pt-2">
+            Entendemos la dinámica ejecutiva. Puedes reprogramar tus sesiones con un aviso previo mínimo de 12 horas para coordinar la nueva franja horaria dentro de la misma semana sin perder tu sesión.
           </p>
 </details>
 </div>
 </section>
 </main>
-<!-- ========================================================================= -->
-<!-- FOOTER (Shared Component JSON Blueprint)                                  -->
-<!-- ========================================================================= -->
-<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width border-t border-outline-variant dark:border-outline-variant">
-<div class="w-full py-space-xl px-margin mb-16 md:mb-0 max-w-7xl mx-auto flex flex-col gap-space-md">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md">
-<div>
-<span class="font-headline-lg text-headline-lg font-bold uppercase text-on-surface dark:text-on-surface">
-            ENTRENADOR PERSONAL BOGOTÁ
-          </span>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mt-1">
-            Acondicionamiento físico de élite, readaptación biomecánica y alto rendimiento personalizado en Bogotá, Colombia.
-          </p>
+<!-- FOOTER (Shared Component) -->
+<footer class="mt-space-xl bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="w-full px-margin py-space-xl flex flex-col gap-space-md text-center max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-extrabold text-on-surface">
+        EPB // COACH BOGOTÁ
+      </div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:opacity-80" href="#sedes">
+          Sedes: Chicó, Chapinero, Usaquén, Rosales
+        </a>
+<span class="text-outline/40">·</span>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:opacity-80" href="#protocolo">
+          Acreditación NSCA-CPT
+        </a>
+<span class="text-outline/40">·</span>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:opacity-80" href="#">
+          Política de Privacidad y Datos Ley 1581
+        </a>
+<span class="text-outline/40">·</span>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:opacity-80" href="#">
+          Términos del Servicio
+        </a>
 </div>
-<div class="flex flex-wrap gap-x-space-md gap-y-space-xs font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant">
-<span class="hover:text-primary-container transition-colors">Sedes: Chicó, Chapinero, Usaquén, Nogal</span>
-<span class="text-outline">·</span>
-<a class="hover:text-primary-container transition-colors" href="#">Aviso de Privacidad</a>
-<span class="text-outline">·</span>
-<span class="hover:text-primary-container transition-colors">Certificación NSCA / CPT</span>
-<span class="text-outline">·</span>
-<a class="text-primary-container font-bold hover:underline" href="https://wa.me/573103227968">Contacto Directo</a>
-</div>
-</div>
-<div class="pt-space-sm border-t border-outline-variant text-on-surface-variant font-body-sm text-body-sm flex flex-col sm:flex-row justify-between gap-space-2xs">
-<p>© 2024 Entrenador Personal Bogotá. Todos los derechos reservados. Tratamiento de datos personales conforme a la Ley 1581 de 2012 de Colombia.</p>
-<span class="font-label-caps text-label-caps text-primary-container">Bogotá, D.C. · Colombia</span>
-</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+        © 2025 EPB COACH BOGOTÁ. Todos los derechos reservados. NSCA / CPT Certified. Tratamiento de Datos Personales conforme a la Ley 1581 de 2012 de Colombia.
+      </p>
 </div>
 </footer>
-<!-- ========================================================================= -->
-<!-- BOTTOM NAVBAR (Shared Component JSON Blueprint - Mobile Focus)            -->
-<!-- ========================================================================= -->
-<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center h-16 px-gutter bg-surface-container/95 backdrop-blur-md border-t border-outline-variant dark:border-outline-variant pb-safe">
-<!-- Item 1: Inicio (Active Context for Hero / Main Landing) -->
-<a class="flex flex-col items-center justify-center text-primary-container dark:text-primary-container font-bold active:scale-95 transition-transform duration-150" href="#hero">
-<span class="material-symbols-outlined text-xl" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
-<span class="text-label-caps font-label-caps text-[11px] leading-tight">Inicio</span>
+<!-- BOTTOM NAV BAR (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-space-xs bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/30">
+<!-- Active Tab: Valoración -->
+<a class="flex flex-col items-center justify-center text-primary-container font-semibold hover:text-primary-container transition-colors duration-150 active:scale-95 transition-transform duration-100" href="#action-form">
+<span class="material-symbols-outlined text-xl" data-icon="bolt">bolt</span>
+<span class="text-label-sm font-label-sm">Valoración</span>
 </a>
-<!-- Item 2: Método -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container active:scale-95 transition-transform duration-150" href="#metodo">
-<span class="material-symbols-outlined text-xl" data-icon="sports_gymnastics">sports_gymnastics</span>
-<span class="text-label-caps font-label-caps text-[11px] leading-tight">Método</span>
+<!-- Inactive Tab: Protocolo -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:scale-95 transition-transform duration-100" href="#protocolo">
+<span class="material-symbols-outlined text-xl" data-icon="exercise">exercise</span>
+<span class="text-label-sm font-label-sm">Protocolo</span>
 </a>
-<!-- Item 3: Resultados -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container active:scale-95 transition-transform duration-150" href="#resultados">
-<span class="material-symbols-outlined text-xl" data-icon="trending_up">trending_up</span>
-<span class="text-label-caps font-label-caps text-[11px] leading-tight">Resultados</span>
+<!-- Inactive Tab: Sedes -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:scale-95 transition-transform duration-100" href="#deseo">
+<span class="material-symbols-outlined text-xl" data-icon="location_on">location_on</span>
+<span class="text-label-sm font-label-sm">Sedes</span>
 </a>
-<!-- Item 4: Agendar -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant hover:text-primary-container active:scale-95 transition-transform duration-150" href="#agendar">
-<span class="material-symbols-outlined text-xl text-primary-container" data-icon="calendar_today">calendar_today</span>
-<span class="text-label-caps font-label-caps text-[11px] leading-tight font-bold text-primary-container">Agendar</span>
+<!-- Inactive Tab: Contacto -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-container transition-colors duration-150 active:scale-95 transition-transform duration-100" href="https://wa.me/573103227968" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm">Contacto</span>
 </a>
 </nav>
-<!-- Lightweight Micro-Interactions Script -->
-<script>
-    function handleBookingSubmit() {
-      const name = document.getElementById('fullName').value;
-      const phone = document.getElementById('whatsapp').value;
-      const goal = document.getElementById('goalSelect').value;
-      const feedback = document.getElementById('formFeedback');
-      
-      feedback.classList.remove('hidden');
-      feedback.textContent = `✓ ¡Excelente ${name}! Hemos registrado tu solicitud. Te enviaremos el diagnóstico a tu WhatsApp (+57 ${phone}) de inmediato.`;
-      
-      setTimeout(() => {
-        const text = encodeURIComponent(`Hola Coach, soy ${name}. Acabo de solicitar la valoración en la web para mi objetivo: ${goal}. Mi número es +57 ${phone}`);
-        window.open(`https://wa.me/573103227968?text=${text}`, '_blank');
-      }, 1200);
-    }
-  </script>
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/entrenador-personal-bogota" width="1" height="1" style="display:none" alt="">
 </body></html>

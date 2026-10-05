@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es-CO"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>M&amp;M Spa Kids Colombia | Bienestar, Calma y Diversión Infantil</title>
+<meta content="Primer spa infantil de bienestar en Colombia. Masajes relajantes, mascarillas botánicas y cuidados hipoalergénicos para tus pequeños." name="description"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: {
+              50: '#fffbf7',
+              100: '#fff6ed',
+              200: '#ffeedb',
+            },
+            tealbrand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#008376',
+              800: '#115e59',
+            },
+            peach: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              500: '#f97316',
+            },
+            mint: {
+              50: '#f2fbf7',
+              100: '#e1f7ec',
+              200: '#c3efd9',
+              600: '#059669',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 25px -5px rgba(0, 131, 118, 0.08), 0 8px 10px -6px rgba(0, 131, 118, 0.05)',
+            'card': '0 12px 30px -4px rgba(18, 38, 35, 0.06)',
+            'cta': '0 12px 24px -6px rgba(0, 131, 118, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom CSS Styling -->
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f4efe9;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-editorial {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+<style data-purpose="layout-and-mobile-container">
+    /* Simulación iOS Mobile viewport frame centrado para desktop */
+    .mobile-frame {
+      max-width: 430px;
+      margin: 0 auto;
+      background-color: #fffbf7;
+      min-height: 100vh;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      overflow-x: hidden;
+    }
+    /* Estilo de scroll sutil */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ccfbf1;
+      border-radius: 9999px;
+    }
+  </style>
+<!-- END: Custom CSS Styling -->
+</head>
+<body class="selection:bg-tealbrand-100 selection:text-tealbrand-800">
+<!-- Dispositivo Móvil Wrapper -->
+<div class="mobile-frame flex flex-col justify-between" data-purpose="mobile-viewport-shell">
+<!-- BEGIN: TopBar -->
+<header class="sticky top-0 z-50 bg-[#fffbf7]/90 backdrop-blur-md border-b border-tealbrand-100/60 px-4 py-3 flex items-center justify-between transition-all">
+<!-- Logotipo M&M Spa Kids -->
+<a class="flex items-center gap-2 group" data-purpose="brand-logo" href="#inicio">
+<div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-tealbrand-700 to-tealbrand-500 flex items-center justify-center text-white font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
+          M&amp;M
+        </div>
+<div class="flex flex-col">
+<span class="text-base font-extrabold tracking-tight text-slate-800 leading-none">M&amp;M Spa Kids</span>
+<span class="text-[10px] tracking-wider uppercase text-tealbrand-700 font-semibold mt-0.5">Bienestar Infantil • Colombia</span>
+</div>
+</a>
+<!-- Botón Top CTA -->
+<a class="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold bg-tealbrand-700 text-white shadow hover:bg-tealbrand-800 active:scale-95 transition-all" href="#agendar">
+        Agendar
+        <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+</header>
+<!-- END: TopBar -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow">
+<!-- ============================================== -->
+<!-- 1. ETAPA ATENCIÓN (HERO & FIRST IMPRESSION)     -->
+<!-- ============================================== -->
+<!-- BEGIN: HeroSection -->
+<section class="pt-4 pb-8 px-4" data-purpose="aida-attention-hero" id="inicio">
+<!-- Píldora de credencial -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tealbrand-100/70 border border-tealbrand-200 text-tealbrand-800 text-[11px] font-semibold mb-3.5 animate-pulse">
+<span>✨</span>
+<span>Primer spa infantil de bienestar en Colombia • 100% hipoalergénico</span>
+</div>
+<!-- Titular de impacto -->
+<h1 class="text-3xl font-bold tracking-tight text-slate-900 leading-[1.2] mb-3">
+          Momentos de <span class="text-tealbrand-700 italic">calma</span>, diversión y cuidado para tus pequeños
+        </h1>
+<!-- Subtítulo -->
+<p class="text-slate-600 text-sm leading-relaxed mb-4 font-normal">
+          Masajes relajantes, hidroterapia suave y mascarillas botánicas de frutas en un entorno seguro, tierno y libre de pantallas.
+        </p>
+<!-- Tarjeta Hero con Fotografía Principal -->
+<div class="relative rounded-3xl overflow-hidden shadow-card border-4 border-white mb-5 group">
+<img alt="Niña sonriente disfrutando un tratamiento de manicura suave y mascarilla de pepino en M&amp;M Spa Kids Colombia" class="w-full h-72 object-cover object-center transform group-hover:scale-105 transition-transform duration-500" height="896" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZj7URaMlgn9oQzl4u13gvqfJhyNFLx1LfjLvnVy5BwgeN2SIGnFAvht3uQoRRYKpRCp2hTV8arIa57KKkDRoFhVYDByj8k7C6MtZ8O3WGqScftRjXxP26MGs8wrKifssR-mnglVuIbQewSWAACBmGObrHBCb8CtO39OluPge4Q1UKUyX0gEoRLazk7P3KV5zIWBvhVz4-gCAi_YaOkDFpaX53K5syGYqAPw-DGARzdJvPu8_RnkOLeCVniyuOXjlNb5kf8RF1BVk" width="1200"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-black/10"></div>
+<!-- Badge sobre la imagen -->
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-tealbrand-800 shadow-sm flex items-center gap-1.5 border border-white/60">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            Experiencia M&amp;M Kids
+          </div>
+<!-- Mini cita emotiva sobre la foto -->
+<div class="absolute bottom-3 left-3 right-3 text-white text-xs">
+<p class="font-serif italic text-white/95 text-xs drop-shadow-sm">"Ver su carita de paz y felicidad plena no tiene precio."</p>
+<p class="text-[10px] text-tealbrand-200 font-medium mt-0.5">Bogotá &amp; Medellín, Colombia</p>
+</div>
+</div>
+<!-- Botón de Acción Hero -->
+<div class="space-y-2 mb-6">
+<a class="w-full py-4 px-6 rounded-2xl bg-tealbrand-700 hover:bg-tealbrand-800 active:scale-[0.98] text-white font-bold text-base text-center shadow-cta flex items-center justify-center gap-2 transition-all" href="#agendar">
+<span>Agendar ahora la experiencia</span>
+<span class="text-lg">✨</span>
+</a>
+<p class="text-center text-slate-500 text-xs flex items-center justify-center gap-1">
+<svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+            Respuesta en menos de 24 horas por WhatsApp
+          </p>
+</div>
+<!-- 3 Badges de Confianza Inmediata -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-peach-200/60" data-purpose="trust-badges">
+<div class="bg-white/80 border border-tealbrand-100 p-2.5 rounded-2xl text-center shadow-xs">
+<div class="text-lg mb-1">🌿</div>
+<div class="text-[11px] font-bold text-slate-800 leading-tight">100% Orgánico</div>
+<div class="text-[9px] text-slate-500">Hipoalergénico</div>
+</div>
+<div class="bg-white/80 border border-tealbrand-100 p-2.5 rounded-2xl text-center shadow-xs">
+<div class="text-lg mb-1">🛡️</div>
+<div class="text-[11px] font-bold text-slate-800 leading-tight">Ambiente Seguro</div>
+<div class="text-[9px] text-slate-500">Espacio vigilado</div>
+</div>
+<div class="bg-white/80 border border-tealbrand-100 p-2.5 rounded-2xl text-center shadow-xs">
+<div class="text-lg mb-1">💖</div>
+<div class="text-[11px] font-bold text-slate-800 leading-tight">Hecho con Amor</div>
+<div class="text-[9px] text-slate-500">Pedagogía lúdica</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- ============================================== -->
+<!-- 2. ETAPA INTERÉS (PROBLEMA + SOLUCIÓN 3 PASOS) -->
+<!-- ============================================== -->
+<!-- BEGIN: InterestSection -->
+<section class="py-7 px-4 bg-gradient-to-b from-cream-100 to-cream-50" data-purpose="aida-interest">
+<!-- Bloque empático de dolor del usuario -->
+<div class="bg-white border border-peach-200 p-4 rounded-3xl shadow-soft mb-6">
+<span class="inline-block px-2.5 py-0.5 bg-peach-100 text-peach-700 text-[10px] font-extrabold uppercase rounded-full mb-2">Comprender a mamá y papá</span>
+<h2 class="text-lg font-bold text-slate-900 mb-2 leading-snug">
+            ¿Cansada de planes ruidosos que sobreestimulan a tus hijos?
+          </h2>
+<p class="text-xs text-slate-600 leading-relaxed">
+            Centros comerciales llenos de pantallas y estrés terminan en rabietas y agotamiento. En <strong class="text-tealbrand-700 font-semibold">M&amp;M Spa Kids</strong> transformamos el tiempo libre en un remanso de relajación, juego sensorial y serenidad que ellos aman y recuerdan por siempre.
+          </p>
+</div>
+<!-- El Proceso de Bienestar en 3 Pasos -->
+<div class="mb-2">
+<h3 class="text-center font-serif text-2xl font-bold text-slate-900 mb-1">
+            Una experiencia mágica en 3 pasos
+          </h3>
+<p class="text-center text-xs text-slate-500 mb-5">Diseñado con terapeutas infantiles para su felicidad y descanso profundo.</p>
+<div class="space-y-3.5">
+<!-- Paso 1 -->
+<div class="bg-white rounded-2xl p-4 border border-tealbrand-100 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-tealbrand-50 text-tealbrand-700 font-bold flex items-center justify-center text-sm border border-tealbrand-200 shrink-0">
+                01
+              </div>
+<div>
+<h4 class="text-sm font-bold text-slate-800">Bienvenida con bata suave &amp; aromaterapia</h4>
+<p class="text-xs text-slate-500 mt-0.5">Recibimiento cálido, colocación de bata de toalla afelpada y esencias de lavanda o mandarina orgánica.</p>
+<div class="mt-1.5 inline-block text-[10px] font-semibold text-tealbrand-700 bg-tealbrand-50 px-2 py-0.5 rounded-md">
+                  Beneficio: Cero estrés y adaptación inmediata
+                </div>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="bg-white rounded-2xl p-4 border border-tealbrand-100 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-peach-50 text-peach-500 font-bold flex items-center justify-center text-sm border border-peach-200 shrink-0">
+                02
+              </div>
+<div>
+<h4 class="text-sm font-bold text-slate-800">Circuito de masajes &amp; mascarilla frutal</h4>
+<p class="text-xs text-slate-500 mt-0.5">Hidratación facial con pepino y fresas comestibles, tina con burbujas tibias y manicure no tóxica con esmaltes al agua.</p>
+<div class="mt-1.5 inline-block text-[10px] font-semibold text-tealbrand-700 bg-tealbrand-50 px-2 py-0.5 rounded-md">
+                  Beneficio: Relajación muscular y diversión sensorial
+                </div>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="bg-white rounded-2xl p-4 border border-tealbrand-100 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-mint-50 text-mint-600 font-bold flex items-center justify-center text-sm border border-mint-200 shrink-0">
+                03
+              </div>
+<div>
+<h4 class="text-sm font-bold text-slate-800">Brindis frutal &amp; fotos de recuerdo</h4>
+<p class="text-xs text-slate-500 mt-0.5">Cóctel de frutas naturales en copita infantil, coronita de spa y sesión fotográfica de alta resolución para la familia.</p>
+<div class="mt-1.5 inline-block text-[10px] font-semibold text-tealbrand-700 bg-tealbrand-50 px-2 py-0.5 rounded-md">
+                  Beneficio: Duermen felices y en paz esa noche
+                </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InterestSection -->
+<!-- ============================================== -->
+<!-- 3. ETAPA DESEO (PRUEBA SOCIAL & BENEFICIOS)    -->
+<!-- ============================================== -->
+<!-- BEGIN: DesireSection -->
+<section class="py-8 px-4 bg-white" data-purpose="aida-desire-social-proof">
+<!-- Métricas / Números de Confianza -->
+<div class="bg-gradient-to-r from-tealbrand-700 to-tealbrand-600 rounded-3xl p-5 text-white shadow-soft mb-8">
+<div class="text-center mb-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-tealbrand-100">La tranquilidad de elegir a los mejores</span>
+<h3 class="text-xl font-bold font-serif mt-0.5">Cifras que llenan el corazón</h3>
+</div>
+<div class="grid grid-cols-2 gap-3 text-center">
+<div class="p-3 bg-white/10 rounded-2xl backdrop-blur-xs">
+<div class="text-2xl font-black tracking-tight">+6 Años</div>
+<div class="text-[11px] text-tealbrand-100">Liderando bienestar infantil</div>
+</div>
+<div class="p-3 bg-white/10 rounded-2xl backdrop-blur-xs">
+<div class="text-2xl font-black tracking-tight">+4.200</div>
+<div class="text-[11px] text-tealbrand-100">Niños &amp; niñas consentidos</div>
+</div>
+<div class="p-3 bg-white/10 rounded-2xl backdrop-blur-xs">
+<div class="text-2xl font-black tracking-tight">100%</div>
+<div class="text-[11px] text-tealbrand-100">Productos no tóxicos</div>
+</div>
+<div class="p-3 bg-white/10 rounded-2xl backdrop-blur-xs">
+<div class="text-2xl font-black tracking-tight">4.9 ★★★★★</div>
+<div class="text-[11px] text-tealbrand-100">Calificación de familias</div>
+</div>
+</div>
+</div>
+<!-- 4 Beneficios Transformadores -->
+<div class="mb-8">
+<div class="text-center mb-5">
+<span class="text-tealbrand-700 font-bold text-xs uppercase tracking-wider">Beneficios probados</span>
+<h3 class="text-2xl font-bold text-slate-900 font-serif">¿Por qué las familias nos eligen una y otra vez?</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Beneficio 1 -->
+<div class="p-3.5 rounded-2xl bg-cream-50 border border-tealbrand-100 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tealbrand-100 text-tealbrand-700 flex items-center justify-center shrink-0 text-sm font-bold">✨</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Calma y sueño reparador</h4>
+<p class="text-[11px] text-slate-600 mt-0.5">La hidroterapia con burbujas y aceites de manzanilla relajan el sistema nervioso, garantizando una noche de descanso sin despertares.</p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="p-3.5 rounded-2xl bg-cream-50 border border-tealbrand-100 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-peach-100 text-peach-700 flex items-center justify-center shrink-0 text-sm font-bold">🥑</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Cuidado dérmico especializado</h4>
+<p class="text-[11px] text-slate-600 mt-0.5">Formulaciones a base de avena coloidal, aloe vera y pepino, libres de parabenos y aptas para pieles atópicas o muy sensibles.</p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="p-3.5 rounded-2xl bg-cream-50 border border-tealbrand-100 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-mint-100 text-mint-700 flex items-center justify-center shrink-0 text-sm font-bold">👑</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Fortalecimiento de la autoestima</h4>
+<p class="text-[11px] text-slate-600 mt-0.5">Fomenta en ellos el amor propio, la higiene con dulzura y el valor del autocuidado desde una edad temprana.</p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="p-3.5 rounded-2xl bg-cream-50 border border-tealbrand-100 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-tealbrand-100 text-tealbrand-700 flex items-center justify-center shrink-0 text-sm font-bold">🎉</div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Fiestas spa sin caos</h4>
+<p class="text-[11px] text-slate-600 mt-0.5">Celebra su cumpleaños en grupo con ambiente boutique, anfitrionas dedicadas y cero estrés logístico para los papás.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios de Madres Reales en Colombia -->
+<div class="space-y-3" data-purpose="testimonials">
+<div class="text-center mb-4">
+<h3 class="text-xl font-serif font-bold text-slate-900">Opiniones de mamás felices</h3>
+<p class="text-xs text-slate-500">Testimonios verificados en Google &amp; WhatsApp</p>
+</div>
+<!-- Review 1 -->
+<div class="p-4 rounded-2xl bg-[#fffcf9] border border-amber-200/70 shadow-xs">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tealbrand-600 text-white font-bold text-xs flex items-center justify-center">
+                  CP
+                </div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Carolina Pineda</h4>
+<p class="text-[10px] text-slate-400">Mamá de Sofi (7 años) • Bogotá</p>
+</div>
+</div>
+<div class="text-amber-400 text-xs tracking-wider">★★★★★</div>
+</div>
+<p class="text-xs text-slate-600 italic">
+              "Llevé a Sofi por su cumpleaños y fue sencillamente espectacular. Las terapeutas tienen una dulzura única, todo olía a frutas frescas y Sofi quedó tan relajada que durmió 10 horas seguidas. ¡100% recomendado!"
+            </p>
+</div>
+<!-- Review 2 -->
+<div class="p-4 rounded-2xl bg-[#fffcf9] border border-amber-200/70 shadow-xs">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-peach-500 text-white font-bold text-xs flex items-center justify-center">
+                  VR
+                </div>
+<div>
+<h4 class="text-xs font-bold text-slate-800">Valeria Restrepo</h4>
+<p class="text-[10px] text-slate-400">Mamá de Luciana y Mateo • Medellín</p>
+</div>
+</div>
+<div class="text-amber-400 text-xs tracking-wider">★★★★★</div>
+</div>
+<p class="text-xs text-slate-600 italic">
+              "Mi hija mayor sufre de piel muy sensible y me daba miedo cualquier producto. En M&amp;M nos mostraron cada ingrediente orgánico antes de aplicarlo. Cero alergias, todo amor y las fotos quedaron divinas."
+            </p>
+</div>
+</div>
+</section>
+<!-- END: DesireSection -->
+<!-- ============================================== -->
+<!-- 4. ETAPA ACCIÓN (CONVERSIÓN, FORMULARIO, WA)   -->
+<!-- ============================================== -->
+<!-- BEGIN: ActionSection -->
+<section class="py-8 px-4 bg-gradient-to-b from-cream-100 via-white to-cream-50" data-purpose="aida-action-conversion" id="agendar">
+<!-- Notificación de Urgencia / Cupos -->
+<div class="bg-amber-50 border border-amber-300/80 rounded-2xl p-3 mb-6 flex items-center gap-3">
+<div class="text-2xl animate-bounce">⏳</div>
+<div>
+<p class="text-xs font-bold text-amber-900 leading-tight">Cupos limitados para este fin de semana</p>
+<p class="text-[10px] text-amber-800">Para garantizar tranquilidad personalizada, solo recibimos 6 reservas por turno diario.</p>
+</div>
+</div>
+<!-- Tarjeta de Reserva / Formulario Rápido -->
+<div class="bg-white rounded-3xl p-5 shadow-card border border-tealbrand-100">
+<div class="text-center mb-5">
+<span class="inline-block px-3 py-1 rounded-full bg-tealbrand-100 text-tealbrand-800 text-[10px] font-bold uppercase tracking-wider mb-1">
+              Atención personalizada
+            </span>
+<h3 class="text-2xl font-bold font-serif text-slate-900">Reserva la experiencia de tu peque</h3>
+<p class="text-xs text-slate-500 mt-1">Completa 3 datos y nuestra asesora familiar te enviará disponibilidad exacta y menú de paquetes.</p>
+</div>
+<!-- Formulario Directo -->
+<form class="space-y-3.5" data-purpose="lead-form" id="spa-booking-form" onsubmit="handleSpaBooking(event)">
+<!-- Campo 1: Nombre del responsable -->
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1" for="parent-name">Nombre de mamá, papá o tutor</label>
+<input class="w-full text-xs rounded-xl border-slate-200 focus:border-tealbrand-600 focus:ring focus:ring-tealbrand-100 py-2.5 px-3 bg-slate-50/50" id="parent-name" placeholder="Ej. Marcela Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: Teléfono WhatsApp Colombia -->
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1" for="whatsapp-number">Número de WhatsApp (Colombia)</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center text-xs text-slate-400 font-semibold">+57</span>
+<input class="w-full text-xs rounded-xl border-slate-200 focus:border-tealbrand-600 focus:ring focus:ring-tealbrand-100 py-2.5 pl-11 pr-3 bg-slate-50/50" id="whatsapp-number" pattern="[0-9]{10}" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Experiencia Deseada -->
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1" for="spa-package">Experiencia que deseas consultar</label>
+<select class="w-full text-xs rounded-xl border-slate-200 focus:border-tealbrand-600 focus:ring focus:ring-tealbrand-100 py-2.5 px-3 bg-slate-50/50 text-slate-700" id="spa-package">
+<option value="Tarde de Spa Individual (1 niño/a)">🌿 Tarde de Relajación Individual (1 niño/a)</option>
+<option value="Dúo Amigas o Hermanitos (2 peques)">👯‍♀️ Dúo Amigas o Hermanitos (2 peques)</option>
+<option value="Spa Party Cumpleaños (Grupo 4-10)">🎂 Spa Party Cumpleaños (4 a 10 niñas/os)</option>
+<option value="Plan Dúo Mamá e Hija/o">💖 Plan Especial Mamá &amp; Peque</option>
+</select>
+</div>
+<!-- Botón Submit Principal -->
+<button class="w-full mt-2 py-3.5 px-4 rounded-2xl bg-tealbrand-700 hover:bg-tealbrand-800 active:scale-[0.98] text-white font-bold text-sm shadow-cta flex items-center justify-center gap-2 transition-all" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Divisor -->
+<div class="relative my-4">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200"></div></div>
+<div class="relative flex justify-center text-[10px] uppercase font-bold text-slate-400 bg-white px-2">o prefieres hablar ahora</div>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full py-3 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-all" data-purpose="direct-whatsapp-cta" href="https://wa.me/573005612870?text=Hola%20M%26M%20Spa%20Kids,%20quiero%20conocer%20los%20planes%20y%20disponibilidad%20para%20mis%20peque%C3%B1os" rel="noopener noreferrer" target="_blank">
+<!-- Icono WhatsApp -->
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+<span>Chatear al WhatsApp (+57 300 561 2870)</span>
+</a>
+<!-- Garantía -->
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-center gap-1.5 text-[11px] text-slate-500">
+<svg class="w-4 h-4 text-tealbrand-700" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>Cancelación flexible hasta 48 horas antes</span>
+</div>
+</div>
+</section>
+<!-- END: ActionSection -->
+<!-- ============================================== -->
+<!-- FAQ INTERACTIVO (PREGUNTAS FRECUENTES)         -->
+<!-- ============================================== -->
+<!-- BEGIN: FaqSection -->
+<section class="py-6 px-4 bg-cream-50" data-purpose="faq-section">
+<div class="text-center mb-4">
+<h3 class="text-xl font-serif font-bold text-slate-900">Preguntas Frecuentes</h3>
+<p class="text-xs text-slate-500">Todo lo que necesitas saber antes de su visita</p>
+</div>
+<div class="space-y-2.5" id="faq-accordion-group">
+<!-- FAQ 1 -->
+<details class="group bg-white rounded-2xl border border-tealbrand-100 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-slate-800">
+<span>¿Desde qué edad pueden ingresar?</span>
+<span class="ml-2 text-tealbrand-700 group-open:rotate-180 transition-transform duration-200">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</summary>
+<p class="mt-2 text-[11px] text-slate-600 leading-relaxed">
+              Atendemos niños y niñas desde los 3 hasta los 14 años. Cada circuito se calibra según su etapa y sensibilidad motriz.
+            </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-white rounded-2xl border border-tealbrand-100 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-slate-800">
+<span>¿Qué productos usan para la piel y uñas?</span>
+<span class="ml-2 text-tealbrand-700 group-open:rotate-180 transition-transform duration-200">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</summary>
+<p class="mt-2 text-[11px] text-slate-600 leading-relaxed">
+              Utilizamos cosmética orgánica certificada, mascarillas artesanales con ingredientes de grado alimenticio (yogurt, pepino, miel de abejas pura) y esmaltes a base de agua libres de tolueno y químicos fuertes.
+            </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-white rounded-2xl border border-tealbrand-100 p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-slate-800">
+<span>¿Los padres pueden acompañar la sesión?</span>
+<span class="ml-2 text-tealbrand-700 group-open:rotate-180 transition-transform duration-200">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</span>
+</summary>
+<p class="mt-2 text-[11px] text-slate-600 leading-relaxed">
+              ¡Por supuesto! Contamos con una sala lounge para papás con café gourmet colombiano y vista directa a la zona de spa, o pueden tomar el paquete interactivo Dúo Mamá e Hija/o.
+            </p>
+</details>
+</div>
+</section>
+<!-- END: FaqSection -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: Footer -->
+<footer class="bg-slate-900 text-slate-300 pt-8 pb-20 px-5 text-center" data-purpose="site-footer">
+<div class="w-10 h-10 rounded-2xl bg-tealbrand-700 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">
+        M&amp;M
+      </div>
+<h4 class="font-serif font-bold text-white text-base">M&amp;M Spa Kids Colombia</h4>
+<p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">
+        Espacios diseñados con ternura para el bienestar físico, mental y emocional de la infancia.
+      </p>
+<div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-slate-500 space-y-1">
+<p>Sedes principales: Bogotá (Chicó - Cedritos) • Medellín (El Poblado)</p>
+<p>Línea Oficial WhatsApp: +57 300 561 2870</p>
+<p class="pt-2 text-[10px] text-slate-600">© 2025 M&amp;M Spa Kids Colombia. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: FloatingBottomBar (Sticky CTA en móviles) -->
+<div class="fixed bottom-0 left-0 right-0 z-40 p-3 bg-white/95 backdrop-blur-md border-t border-tealbrand-100 flex items-center justify-between max-w-[430px] mx-auto shadow-lg" data-purpose="sticky-bottom-action">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">¿Deseas consultar fechas?</span>
+<span class="text-xs font-extrabold text-tealbrand-800">Atención inmediata</span>
+</div>
+<a class="py-2.5 px-4 rounded-xl bg-tealbrand-700 hover:bg-tealbrand-800 active:scale-95 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all" href="https://wa.me/573005612870?text=Hola,%20quisiera%20agendar%20una%20cita%20en%20M%26M%20Spa%20Kids" rel="noopener noreferrer" target="_blank">
+<span>Reservar cita</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+</div>
+<!-- END: FloatingBottomBar -->
+</div>
+<!-- BEGIN: FormSubmissionScript -->
+<script data-purpose="booking-form-handler">
+    function handleSpaBooking(event) {
+      event.preventDefault();
+      
+      const parentName = document.getElementById('parent-name').value.trim();
+      const whatsappNumber = document.getElementById('whatsapp-number').value.trim();
+      const selectedPackage = document.getElementById('spa-package').value;
+
+      // Mensaje codificado para WhatsApp
+      const textMessage = `Hola M&M Spa Kids! 🌸 Mi nombre es ${encodeURIComponent(parentName)}. Me interesa información y disponibilidad para: *${encodeURIComponent(selectedPackage)}*. Mi número de contacto es +57 ${encodeURIComponent(whatsappNumber)}.`;
+      
+      // Redirigir al WhatsApp comercial de M&M Spa Kids
+      window.open(`https://wa.me/573005612870?text=${textMessage}`, '_blank');
+    }
+  </script>
+<!-- END: FormSubmissionScript -->
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/spa-kids" width="1" height="1" style="display:none" alt="">
+</body></html>

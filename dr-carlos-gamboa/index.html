@@ -1,545 +1,553 @@
 <!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dr. Carlos Gamboa · Rinoplastia Estructural y Preservadora en Cali</title>
 
-<html class="scroll-smooth" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-<title>Dr. Carlos Gamboa · Rinoplastia de Precisión y Cirugía Plástica Facial | Cali</title>
-<!-- Google Fonts & Material Symbols -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
-          "colors": {
-            "on-secondary-fixed": "#0f1e1b",
-            "on-error": "#ffffff",
-            "surface-variant": "#e4e2df",
-            "primary-fixed": "#91f4e4",
-            "surface-container-high": "#eae8e5",
-            "inverse-on-surface": "#f2f0ed",
-            "on-secondary-container": "#566662",
-            "tertiary-container": "#89704c",
-            "on-tertiary-fixed": "#281800",
-            "tertiary-fixed": "#fedeb2",
-            "surface-dim": "#dbdad7",
-            "inverse-surface": "#30312f",
-            "primary-container": "#008376",
-            "secondary": "#52625e",
-            "error": "#ba1a1a",
-            "on-primary": "#ffffff",
-            "on-error-container": "#93000a",
-            "on-primary-fixed-variant": "#005048",
-            "on-secondary": "#ffffff",
-            "on-surface": "#1b1c1a",
-            "on-tertiary": "#ffffff",
-            "on-tertiary-fixed-variant": "#584323",
-            "primary-fixed-dim": "#74d7c8",
-            "secondary-fixed": "#d5e6e1",
-            "surface-bright": "#fbf9f6",
-            "outline": "#6e7a77",
-            "surface-container": "#efeeeb",
-            "surface": "#fbf9f6",
-            "surface-container-highest": "#e4e2df",
-            "surface-container-low": "#f5f3f0",
-            "error-container": "#ffdad6",
-            "surface-container-lowest": "#ffffff",
-            "background": "#fbf9f6",
-            "outline-variant": "#bdc9c6",
-            "primary": "#00685d",
-            "secondary-container": "#d2e3de",
-            "on-tertiary-container": "#fffbfa",
-            "inverse-primary": "#74d7c8",
-            "on-background": "#1b1c1a",
-            "secondary-fixed-dim": "#b9cac5",
-            "on-surface-variant": "#3e4947",
-            "surface-tint": "#006b60",
-            "tertiary": "#6f5836",
-            "on-primary-container": "#f2fffb",
-            "on-primary-fixed": "#00201c",
-            "on-secondary-fixed-variant": "#3a4a46",
-            "tertiary-fixed-dim": "#e0c298"
+          colors: {
+            "surface": "#fbfbfd",
+            "surface-low": "#f4f8f7",
+            "surface-card": "#ffffff",
+            "primary": "#008376",
+            "primary-dark": "#00645a",
+            "primary-light": "#e6f6f4",
+            "secondary-teal": "#0d9488",
+            "accent-cyan": "#06b6d4",
+            "accent-badge": "#e8faf6",
+            "on-surface": "#121d1b",
+            "on-surface-variant": "#495a56",
+            "outline-border": "#d2e3df",
+            "whatsapp": "#25D366",
+            "whatsapp-dark": "#128C7E"
           },
-          "borderRadius": {
-            "DEFAULT": "1rem",
-            "lg": "2rem",
-            "xl": "3rem",
-            "full": "9999px"
+          fontFamily: {
+            "serif": ["Playfair Display", "Georgia", "serif"],
+            "sans": ["Plus Jakarta Sans", "system-ui", "sans-serif"]
           },
-          "spacing": {
-            "space-xl": "3rem",
-            "gutter-sm": "0.75rem",
-            "gutter": "1rem",
-            "margin-tablet": "2rem",
-            "space-md": "1.25rem",
-            "space-xs": "0.375rem",
-            "space-lg": "2rem",
-            "space-sm": "0.75rem",
-            "margin": "1.25rem"
-          },
-          "fontFamily": {
-            "display-hero": ["Playfair Display"],
-            "label-accent": ["Plus Jakarta Sans"],
-            "body-sm": ["Plus Jakarta Sans"],
-            "headline-lg-mobile": ["Playfair Display"],
-            "title-md": ["Plus Jakarta Sans"],
-            "label-lg": ["Plus Jakarta Sans"],
-            "headline-lg": ["Playfair Display"],
-            "headline-md": ["Playfair Display"],
-            "display-hero-mobile": ["Playfair Display"],
-            "body-lg": ["Plus Jakarta Sans"],
-            "body-md": ["Plus Jakarta Sans"]
-          },
-          "fontSize": {
-            "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-            "label-accent": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
-            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
-            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "fontWeight": "600" }],
-            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "700" }],
-            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-            "headline-lg": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
-            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }],
-            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }]
+          boxShadow: {
+            "clinical": "0 14px 34px -10px rgba(0, 131, 118, 0.12), 0 4px 14px -4px rgba(18, 29, 27, 0.05)",
+            "cta": "0 10px 24px -4px rgba(0, 131, 118, 0.42)",
+            "glow": "0 0 20px rgba(0, 131, 118, 0.25)"
           }
-        }
-      }
+        },
+      },
     }
   </script>
-<style>
+
+  <style>
     .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      display: inline-block;
-      vertical-align: middle;
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
       line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
     }
-    /* Hide scrollbars for clean mobile feel */
-    ::-webkit-scrollbar {
+    details summary::-webkit-details-marker {
       display: none;
     }
-    * {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      -webkit-tap-highlight-color: transparent;
+    details[open] summary .faq-icon {
+      transform: rotate(180deg);
     }
   </style>
 </head>
-<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col items-center selection:bg-primary/20 selection:text-primary">
-<!-- Container Mobile Shell (390px Viewport Reference) -->
-<div class="w-full max-w-[430px] min-h-screen bg-surface flex flex-col relative shadow-[0_0_50px_rgba(27,42,39,0.06)] pb-24">
-<!-- 1. COMPONENTE SUPERIOR (TopAppBar Shared Component) -->
-<header class="docked full-width top-0 sticky z-40 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-sm border-b border-outline-variant/20 dark:border-outline/20">
-<div class="flex justify-between items-center w-full px-5 py-3 max-w-screen-md mx-auto">
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
-<div class="flex flex-col">
-<span class="font-headline-md text-headline-md font-semibold text-primary dark:text-inverse-primary tracking-tight">Dr. Carlos Gamboa</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant font-medium">Presidente SCCPF · Cali</span>
-</div>
-</div>
-<a class="bg-primary hover:opacity-90 active:scale-[0.98] transition-all duration-150 text-on-primary font-label-lg text-label-lg px-4 py-1.5 rounded-full flex items-center gap-1 shadow-sm" href="#agendar">
-<span>Agendar</span>
-<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</header>
-<main class="flex-1 flex flex-col">
-<!-- 2. A - ATENCIÓN (Hero Section) -->
-<section class="px-5 pt-6 pb-8 flex flex-col items-center text-center">
-<!-- Credential Badge -->
-<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container/50 border border-outline-variant/40 mb-4">
-<span class="material-symbols-outlined text-primary text-[14px]" data-icon="award_star" style="font-variation-settings: 'FILL' 1;">award_star</span>
-<span class="font-label-accent text-label-accent text-primary font-bold">Especialista en Rinoplastia Estructural y Preservadora · Cali</span>
-</div>
-<!-- H1 Benefit Headline -->
-<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface text-balance mb-3.5 tracking-tight font-semibold">
-          Tu perfil más armónico y natural, diseñado con precisión milimétrica
-        </h1>
-<!-- Subtitle -->
-<p class="font-body-md text-body-md text-on-surface-variant max-w-[340px] mb-6 font-normal">
-          Rinoplastia de alta precisión sin dolor innecesario ni cambios artificiales. Respiración óptima y proporciones que respetan la esencia única de tu rostro.
+
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden selection:bg-primary-light selection:text-primary">
+
+  <!-- TOP APP BAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-xs border-b border-outline-border/60">
+    <div class="flex justify-between items-center w-full px-4 py-3 max-w-lg mx-auto">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+          <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-base font-bold text-on-surface tracking-tight leading-tight">Dr. Carlos Gamboa</span>
+          <span class="text-[10px] font-semibold uppercase tracking-wider text-primary">Cirugía Facial · Cali</span>
+        </div>
+      </div>
+      <a href="https://wa.me/573218114942?text=Hola%20Dr.%20Carlos%20Gamboa,%20deseo%20informaci%C3%B3n%20sobre%20la%20rinoplastia%20estructural" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-primary-dark text-white px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all shadow-xs active:scale-95 flex items-center gap-1">
+        <span>Contacto</span>
+        <span class="material-symbols-outlined text-[14px]">call</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="w-full max-w-[440px] mx-auto pt-20 pb-24 px-4">
+
+    <!-- 1. A - ATENCIÓN (Hero Section) -->
+    <section class="pt-3 pb-8 text-center flex flex-col items-center">
+      
+      <!-- Real Authority Badge -->
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-accent-badge border border-primary/25 shadow-xs mb-3.5">
+        <span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+        <span class="text-[11px] font-bold text-primary uppercase tracking-wide">
+          Especialista en Rinoplastia Estructural · Presidente SCCPF
+        </span>
+      </div>
+
+      <!-- Main Mobile Headline (H1) -->
+      <h1 class="font-serif text-[29px] leading-[36px] font-bold text-on-surface text-center mb-3">
+        Tu nariz en <span class="italic text-primary font-serif font-normal">armonía natural</span>, diseñada con precisión milimétrica
+      </h1>
+
+      <!-- Specific Subtitle -->
+      <p class="text-sm font-normal text-on-surface-variant text-center max-w-sm mb-5 leading-relaxed">
+        Rinoplastia ultrasónica de alta precisión en Cali: sin taponamientos molestos, sin dolor innecesario y con resultados que respetan tu fisonomía única.
+      </p>
+
+      <!-- Verified Result Card with Overlay -->
+      <div class="w-full relative rounded-2xl overflow-hidden shadow-clinical border border-outline-border/60 mb-5 bg-surface-card">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1U84y46Q2IhCJjYeeof6U6SSMut0gTQiszX2e6tez8lxLeTYRItRMCYH-tYLGG5_ceRzvEP7Bq9awPsTIYFSW8O2psRjXIwV-ZoiLe7EU6CrQwbq1g4FlKg3SDKZDHjwDLDEpXo5gCze748A-b1rwTnQ1cnxDUYrmQDppbxLQUJpX-w46DdtGV9ZjbWxHmHDqzBLSQnpKtx67MpVm82Bdah3RxSeEk5QZ2ep_wYbVOhKLKFetcZwoQdYg" alt="Paciente del Dr. Carlos Gamboa con resultado natural de rinoplastia en Cali" class="w-full h-80 object-cover object-top">
+        <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-outline-border/80 flex items-center gap-2.5 shadow-sm">
+          <div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-primary text-[17px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          </div>
+          <span class="text-xs text-on-surface font-semibold text-left leading-snug">
+            Resultado Clínico Verificado · Armonía Natural y Respiración Libre
+          </span>
+        </div>
+      </div>
+
+      <!-- High Contrast Primary CTA -->
+      <a href="#agendar" class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-primary-dark text-white text-base font-semibold tracking-wide shadow-cta active:scale-[0.98] transition-all flex items-center justify-center gap-2 mb-2 group">
+        <span>Agendar ahora mi valoración</span>
+        <span class="material-symbols-outlined text-[19px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+
+      <!-- Micro-credencial -->
+      <p class="text-xs text-on-surface-variant flex items-center justify-center gap-1.5 mb-5">
+        <span class="material-symbols-outlined text-primary text-[15px]">timer</span>
+        <span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin compromiso</span>
+      </p>
+
+      <!-- 3 Micro-Garantías in Pills -->
+      <div class="grid grid-cols-3 gap-2 w-full">
+        <div class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white border border-outline-border/70 shadow-xs text-center">
+          <span class="material-symbols-outlined text-primary text-[20px] mb-1">auto_fix_high</span>
+          <span class="text-[11px] font-bold text-on-surface leading-tight">Técnica de Preservación</span>
+        </div>
+        <div class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white border border-outline-border/70 shadow-xs text-center">
+          <span class="material-symbols-outlined text-primary text-[20px] mb-1">view_in_ar</span>
+          <span class="text-[11px] font-bold text-on-surface leading-tight">Simulación 3D Previa</span>
+        </div>
+        <div class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white border border-outline-border/70 shadow-xs text-center">
+          <span class="material-symbols-outlined text-primary text-[20px] mb-1">air</span>
+          <span class="text-[11px] font-bold text-on-surface leading-tight">Sin Taponamientos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. I - INTERÉS (Empatía con el problema & Proceso Clínico) -->
+    <section class="py-7 border-t border-outline-border/50">
+      
+      <div class="text-center mb-5">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-primary mb-1 block">
+          Dilema Común & Criterio Clínico
+        </span>
+        <h2 class="font-serif text-[23px] leading-[30px] font-bold text-on-surface">
+          ¿Temes que tu nariz quede artificial, respingada en exceso o perder tu respiración?
+        </h2>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-outline-border/80 shadow-xs mb-7">
+        <p class="text-[14px] text-on-surface-variant leading-relaxed mb-3">
+          El temor más recurrente de quienes consultan es terminar con una apariencia "operada" o genérica que no guarde coherencia con sus rasgos faciales, o sufrir las molestias de tapones nasales dolorosos y dificultades para respirar.
         </p>
-<!-- Editorial Hero Image Box with Verified Result Badge -->
-<div class="w-full relative rounded-2xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(27,42,39,0.08)] mb-6 bg-surface-container-high border border-outline-variant/20">
-<img alt="Paciente sonriente tras rinoplastia natural y refinada en Cali" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1U84y46Q2IhCJjYeeof6U6SSMut0gTQiszX2e6tez8lxLeTYRItRMCYH-tYLGG5_ceRzvEP7Bq9awPsTIYFSW8O2psRjXIwV-ZoiLe7EU6CrQwbq1g4FlKg3SDKZDHjwDLDEpXo5gCze748A-b1rwTnQ1cnxDUYrmQDppbxLQUJpX-w46DdtGV9ZjbWxHmHDqzBLSQnpKtx67MpVm82Bdah3RxSeEk5QZ2ep_wYbVOhKLKFetcZwoQdYg"/>
-<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-xl flex items-center justify-between border border-outline-variant/30 shadow-sm">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[18px]" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<span class="font-label-lg text-label-lg text-on-surface font-semibold">Resultado Clínico Verificado</span>
-</div>
-<span class="font-label-accent text-label-accent text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">Armonía Natural</span>
-</div>
-</div>
-<!-- High-Contrast CTA -->
-<a class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(0,131,118,0.35)] active:scale-[0.98] transition-transform duration-150 hover:opacity-95" href="#agendar">
-<span>Agendar ahora mi valoración</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
-</a>
-<!-- Immediate Micro-credential Assurance -->
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 flex items-center justify-center gap-1 text-center">
-<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin compromiso
+        <p class="text-[14px] text-on-surface font-medium leading-relaxed bg-surface-low p-3.5 rounded-xl border-l-4 border-primary">
+          En la consulta del <strong>Dr. Carlos Gamboa</strong> en Cali, aplicamos técnica ultrasónica de precisión y cirugía de preservación: modelamos las estructuras milimétricamente respetando los tejidos cartilaginosos, optimizando la función respiratoria y logrando un contorno que parece haber nacido contigo.
         </p>
-<!-- 3 Trust Micro-Badges -->
-<div class="grid grid-cols-3 gap-2 w-full mt-6">
-<div class="flex flex-col items-center justify-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
-<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="science">science</span>
-<span class="font-label-accent text-label-accent text-on-surface font-semibold text-center leading-tight">Técnica de Preservación</span>
-</div>
-<div class="flex flex-col items-center justify-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
-<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="view_in_ar">view_in_ar</span>
-<span class="font-label-accent text-label-accent text-on-surface font-semibold text-center leading-tight">Simulación 3D Previa</span>
-</div>
-<div class="flex flex-col items-center justify-center p-2.5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 shadow-sm">
-<span class="material-symbols-outlined text-primary mb-1 text-[20px]" data-icon="air">air</span>
-<span class="font-label-accent text-label-accent text-on-surface font-semibold text-center leading-tight">Sin Taponamientos</span>
-</div>
-</div>
-</section>
-<!-- 3. I - INTERÉS (El Problema y la Solución) -->
-<section class="px-5 py-8 bg-surface-container-low border-y border-outline-variant/20 flex flex-col gap-6">
-<!-- Pain Point Card -->
-<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(27,42,39,0.04)]">
-<div class="flex items-center gap-2 text-error mb-2">
-<span class="material-symbols-outlined text-[20px]" data-icon="priority_high">priority_high</span>
-<span class="font-label-accent text-label-accent tracking-wider uppercase text-error font-bold">Dilema Común</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold mb-3 leading-snug">
-            ¿Temes que tu nariz quede artificial, respingada en exceso o con dificultad para respirar?
-          </h2>
-<p class="font-body-md text-body-md text-on-surface-variant font-normal leading-relaxed">
-            En la consulta del <strong>Dr. Carlos Gamboa</strong> en Cali, eliminamos el miedo a los resultados genéricos o de molde. Diseñamos con anatomía de preservación estructural y magnificación quirúrgica, garantizando que nadie note una cirugía, sino que todos admiren la armonía y frescura de tu rostro.
+      </div>
+
+      <!-- 3 Pasos con Beneficios Tangibles -->
+      <h3 class="font-serif text-[19px] font-bold text-on-surface mb-3.5 text-center">
+        Tu transformación en 3 pasos precisos y transparentes
+      </h3>
+
+      <div class="space-y-3.5">
+        <!-- Paso 01 -->
+        <div class="bg-white p-4 rounded-xl border border-outline-border/70 flex gap-3.5 items-start shadow-xs">
+          <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+            01
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-on-surface mb-0.5">
+              Valoración y Mapeo Facial 3D
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              <strong>Beneficio tangible:</strong> Mapeo fotográfico digitalizado en 3D para visualizar las proporciones áureas de tu nuevo perfil antes de tomar cualquier decisión quirúrgica.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="bg-white p-4 rounded-xl border border-outline-border/70 flex gap-3.5 items-start shadow-xs">
+          <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+            02
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-on-surface mb-0.5">
+              Plan Quirúrgico Personalizado
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              <strong>Beneficio tangible:</strong> Protocolo anatómico a tu medida (preservación estructural sin fracturas bruscas a ciegas) con presupuesto integral cerrado y sin costos ocultos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="bg-white p-4 rounded-xl border border-outline-border/70 flex gap-3.5 items-start shadow-xs">
+          <div class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+            03
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-on-surface mb-0.5">
+              Resultado Natural y Rápida Recuperación
+            </h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              <strong>Beneficio tangible:</strong> Sin taponamiento doloroso, respiración espontánea desde el día 1, mínima inflamación y retorno cómodo a tus actividades en 7 a 10 días.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. D - DESEO (Prueba Social, Casos Reales y Credenciales) -->
+    <section class="py-7 border-t border-outline-border/50">
+      
+      <!-- Metrics Grid -->
+      <div class="grid grid-cols-2 gap-2.5 mb-7">
+        <div class="bg-white p-4 rounded-xl text-center border border-outline-border/70 shadow-xs">
+          <span class="font-serif text-[26px] leading-tight text-primary font-bold block">+18 Años</span>
+          <span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">De Trayectoria</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl text-center border border-outline-border/70 shadow-xs">
+          <span class="font-serif text-[26px] leading-tight text-primary font-bold block">+3.800</span>
+          <span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Rinoplastias Exitosas</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl text-center border border-outline-border/70 shadow-xs">
+          <span class="font-serif text-[26px] leading-tight text-primary font-bold block">100%</span>
+          <span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Especialista Facial SCCPF</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl text-center border border-outline-border/70 shadow-xs">
+          <span class="font-serif text-[26px] leading-tight text-primary font-bold block">99.4%</span>
+          <span class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Satisfacción Pacientes</span>
+        </div>
+      </div>
+
+      <!-- Real Clinical Cases Showcase -->
+      <div class="text-center mb-5">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-primary block mb-1">
+          Casos Reales Clínicos en Cali
+        </span>
+        <h2 class="font-serif text-[22px] leading-tight font-bold text-on-surface">
+          Resultados sobrios que realzan tu identidad
+        </h2>
+      </div>
+
+      <!-- Case 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-outline-border/70 shadow-clinical mb-4">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1UXI5xaxtV5t3JZGqF5o3AoEtLg9FAbdFBSizb4tOq3iDoT7X1hdu7pkFcahCVGR-Yqrohu3xyfBG_jRm-6Q52LkBkZoCytx0vHzEpie3icw6mQNL_NPfc0ObqbZFTWzb-GLDgu53cbIniL6cHVXsXxhVmBH5qytNpD6-nG64kYjB_M8nuj9CevUuxu-Sn6ycWAfa99Vhxf42km5cMcse5RLk2Pi4rNebbXvCOSCaHUiWJiylrBvj2qPeg" alt="Perfil refinado de rinoplastia por el Dr. Carlos Gamboa" class="w-full h-72 object-cover object-center">
+        <div class="p-3.5">
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-sm font-bold text-on-surface">Perfil Refinado · Técnica Ultrasónica</span>
+            <span class="text-[10px] font-bold bg-accent-badge text-primary px-2.5 py-0.5 rounded-full border border-primary/20">Armonía Natural</span>
+          </div>
+          <p class="text-xs text-on-surface-variant">
+            Dorso liso, ángulo nasolabial armónico y conservación milimétrica de las líneas anatómicas.
           </p>
-</div>
-<!-- 3-Step Precision Route -->
-<div>
-<div class="mb-4">
-<span class="font-label-accent text-label-accent text-primary uppercase font-bold tracking-widest">Metodología Quirúrgica</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mt-0.5">Ruta de Precisión en 3 Pasos</h3>
-</div>
-<div class="space-y-3.5">
-<!-- Step 1 -->
-<div class="flex gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm items-start">
-<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="font-label-lg text-label-lg font-bold text-primary">01</span>
-</div>
-<div class="flex-1">
-<h4 class="font-title-md text-title-md text-on-surface mb-1">Valoración y Mapeo Facial 3D</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Análisis anatómico computarizado de proporciones áureas. Ves el resultado proyectado en tu propio rostro antes de cualquier decisión.</p>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="flex gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm items-start">
-<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="font-label-lg text-label-lg font-bold text-primary">02</span>
-</div>
-<div class="flex-1">
-<h4 class="font-title-md text-title-md text-on-surface mb-1">Plan Quirúrgico Personalizado</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Selección de técnica de preservación o estructural con presupuesto cerrado y garantizado, sin sobrecostos sorpresa.</p>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="flex gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 shadow-sm items-start">
-<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="font-label-lg text-label-lg font-bold text-primary">03</span>
-</div>
-<div class="flex-1">
-<h4 class="font-title-md text-title-md text-on-surface mb-1">Resultado Natural y Recuperación Rápida</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Cirugía con instrumental delicado que evita fracturas bruscas, permitiendo respirar desde el primer día y reincorporación laboral pronta.</p>
-</div>
-</div>
-</div>
-<!-- Contextual In-Step Chat Link -->
-<div class="mt-4 text-center">
-<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:underline font-semibold" href="https://wa.me/573218114942?text=Hola%20Dr.%20Gamboa,%20tengo%20dudas%20sobre%20mi%20caso%20particular%20de%20rinoplastia" target="_blank">
-<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
-<span>¿Tienes dudas sobre tu caso particular? Chatea con el especialista</span>
-</a>
-</div>
-</div>
-</section>
-<!-- 4. D - DESEO (Prueba Social, Resultados y Métricas de Confianza) -->
-<section class="px-5 py-8 flex flex-col gap-8">
-<!-- Authority Metrics Grid -->
-<div class="grid grid-cols-2 gap-3">
-<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 text-center shadow-sm">
-<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold block">+18 Años</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant font-medium">De Trayectoria</span>
-</div>
-<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 text-center shadow-sm">
-<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold block">+3.800</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant font-medium">Rinoplastias Exitosas</span>
-</div>
-<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 text-center shadow-sm">
-<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold block">99.4%</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant font-medium">Satisfacción Pacientes</span>
-</div>
-<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/25 text-center shadow-sm">
-<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold block">100%</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant font-medium">Especialista Facial SCCPF</span>
-</div>
-</div>
-<!-- Real Clinical Cases / Gallery -->
-<div>
-<div class="mb-4">
-<span class="font-label-accent text-label-accent text-primary uppercase font-bold tracking-widest">Resultados Reales</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mt-0.5">Galería de Casos Clínicos</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Evolución postquirúrgica preservando líneas y soporte nasal.</p>
-</div>
-<div class="grid grid-cols-2 gap-3">
-<!-- Case 1 Profile View -->
-<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/25 shadow-sm">
-<div class="relative h-48 bg-surface-container">
-<img alt="Perfil refinado postoperatorio rinoplastia" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1UXI5xaxtV5t3JZGqF5o3AoEtLg9FAbdFBSizb4tOq3iDoT7X1hdu7pkFcahCVGR-Yqrohu3xyfBG_jRm-6Q52LkBkZoCytx0vHzEpie3icw6mQNL_NPfc0ObqbZFTWzb-GLDgu53cbIniL6cHVXsXxhVmBH5qytNpD6-nG64kYjB_M8nuj9CevUuxu-Sn6ycWAfa99Vhxf42km5cMcse5RLk2Pi4rNebbXvCOSCaHUiWJiylrBvj2qPeg"/>
-<span class="absolute top-2 left-2 bg-inverse-surface/80 text-inverse-on-surface font-label-accent text-label-accent px-2 py-0.5 rounded-full backdrop-blur-sm">
-                  Perfil Refinado
-                </span>
-</div>
-<div class="p-2.5 text-center">
-<span class="font-label-accent text-label-accent text-primary font-bold block">Rinoplastia de Preservación</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Dorso liso &amp; ángulo natural</span>
-</div>
-</div>
-<!-- Case 2 Front/Oblique View -->
-<div class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/25 shadow-sm">
-<div class="relative h-48 bg-surface-container">
-<img alt="Armonía facial frontal natural tras procedimiento nasal" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XX_QBbRvgQc_54PEvNU8QGCoqMKcf2h_PxPIXDQLrBVzDddElBZA2z8XAMDsmJEnvX7746UnyXsmWRYvyYMboq79Honmpy_vvDwSrhcBpRZ8zofn6MYetcWh561tmDAyEuyOCeIgXmPC3V5auJejZTRE1AZ0N0g9ha3kVS1y3J3e0_UTZ1Ywax_Zinp4vI9hhdP0KHyuRSHut0mBL79UWIMPWHNC3Mp4gY_x8qTliF7sT2aYHrdbROIKk"/>
-<span class="absolute top-2 left-2 bg-inverse-surface/80 text-inverse-on-surface font-label-accent text-label-accent px-2 py-0.5 rounded-full backdrop-blur-sm">
-                  Proporción Frontal
-                </span>
-</div>
-<div class="p-2.5 text-center">
-<span class="font-label-accent text-label-accent text-primary font-bold block">Definición de Punta</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Simetría sin estigmas</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Outcome-Focused Benefits List -->
-<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm">
-<h4 class="font-title-md text-title-md text-on-surface mb-3.5 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-            Beneficios diseñados para tu tranquilidad
-          </h4>
-<ul class="space-y-3">
-<li class="flex items-start gap-2.5">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" data-icon="check">check</span>
-<div>
-<strong class="font-label-lg text-label-lg text-on-surface block">Armonía facial imperceptible</strong>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Ángulo nasolabial y dorso adaptados milimétricamente a tu fisonomía.</span>
-</div>
-</li>
-<li class="flex items-start gap-2.5">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" data-icon="check">check</span>
-<div>
-<strong class="font-label-lg text-label-lg text-on-surface block">Cero taponamientos obstructivos</strong>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Protocolo moderno que respeta la mucosa y permite respirar con tranquilidad.</span>
-</div>
-</li>
-<li class="flex items-start gap-2.5">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" data-icon="check">check</span>
-<div>
-<strong class="font-label-lg text-label-lg text-on-surface block">Recuperación confortable</strong>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Mínimo edema postoperatorio y ausencia de hematomas severos.</span>
-</div>
-</li>
-<li class="flex items-start gap-2.5">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5" data-icon="check">check</span>
-<div>
-<strong class="font-label-lg text-label-lg text-on-surface block">Acompañamiento VIP</strong>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Revisiones directas y cercanas con el Dr. Gamboa en Cali antes y después del procedimiento.</span>
-</div>
-</li>
-</ul>
-</div>
-<!-- Verified Testimonials -->
-<div class="space-y-3.5">
-<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex text-tertiary">
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<span class="font-label-accent text-label-accent text-primary bg-primary-fixed/30 px-2 py-0.5 rounded-full font-bold">Verificado</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-              "Tenía pánico de perder mis rasgos o quedar con nariz de molde. El Dr. Gamboa entendió exactamente lo que quería: corrigió mi giba conservando mi esencia. Cero dolor."
-            </p>
-<div class="flex items-center gap-1.5 font-label-accent text-label-accent text-on-surface-variant">
-<span class="font-bold text-on-surface">Camila Morales</span> · Paciente en Cali
-            </div>
-</div>
-<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex text-tertiary">
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<span class="font-label-accent text-label-accent text-primary bg-primary-fixed/30 px-2 py-0.5 rounded-full font-bold">Verificado</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-              "Viajé desde el exterior por sus credenciales. La simulación previa fue idéntica al resultado final. El profesionalismo de su equipo en Cali es insuperable."
-            </p>
-<div class="flex items-center gap-1.5 font-label-accent text-label-accent text-on-surface-variant">
-<span class="font-bold text-on-surface">Daniel R.</span> · Paciente Internacional
-            </div>
-</div>
-</div>
-</section>
-<!-- 5. A - ACCIÓN (Conversión Inmediata) -->
-<section class="px-5 py-8 bg-surface-container-lowest border-y border-outline-variant/30 scroll-mt-14" id="agendar">
-<!-- Urgency Micro-badge -->
-<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/10 border border-primary-container/30 mb-3">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="font-label-accent text-label-accent text-primary font-bold">Cupos limitados de valoración esta semana en Cali</span>
-</div>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mb-1.5">
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-outline-border/70 shadow-clinical mb-7">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1XX_QBbRvgQc_54PEvNU8QGCoqMKcf2h_PxPIXDQLrBVzDddElBZA2z8XAMDsmJEnvX7746UnyXsmWRYvyYMboq79Honmpy_vvDwSrhcBpRZ8zofn6MYetcWh561tmDAyEuyOCeIgXmPC3V5auJejZTRE1AZ0N0g9ha3kVS1y3J3e0_UTZ1Ywax_Zinp4vI9hhdP0KHyuRSHut0mBL79UWIMPWHNC3Mp4gY_x8qTliF7sT2aYHrdbROIKk" alt="Definición de punta y simetría nasal por el Dr. Carlos Gamboa" class="w-full h-72 object-cover object-top">
+        <div class="p-3.5">
+          <div class="flex justify-between items-center mb-1">
+            <span class="text-sm font-bold text-on-surface">Definición de Punta & Simetría</span>
+            <span class="text-[10px] font-bold bg-accent-badge text-primary px-2.5 py-0.5 rounded-full border border-primary/20">Sin Estigmas</span>
+          </div>
+          <p class="text-xs text-on-surface-variant">
+            Corrección de la asimetría nasal preservando soporte estructural para óptima respiración.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 Key Patient Benefits Focused on RESULTS -->
+      <div class="bg-surface-low p-4 rounded-2xl border border-outline-border/70 mb-7">
+        <h3 class="font-serif text-[17px] font-bold text-on-surface mb-3.5">
+          Beneficios reales diseñados para tu tranquilidad:
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-xs text-on-surface"><strong>Armonía facial imperceptible:</strong> Ángulo nasolabial y dorso adaptados a tu fisonomía. Nadie notará una cirugía; admirarán tu frescura.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-xs text-on-surface"><strong>Cero taponamientos obstructivos:</strong> Protocolo moderno que respeta la mucosa y te permite respirar con tranquilidad desde el primer día.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-xs text-on-surface"><strong>Recuperación confortable:</strong> Mínimo edema postoperatorio y ausencia de hematomas severos gracias al corte piezoeléctrico.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-primary text-[19px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="text-xs text-on-surface"><strong>Acompañamiento VIP directo:</strong> Revisiones directas y cercanas con el Dr. Gamboa en Cali antes y después del procedimiento.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Real Testimonials -->
+      <div class="space-y-3.5">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs relative">
+          <div class="flex items-center gap-1 text-primary mb-2">
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="text-[11px] font-bold text-primary ml-1">5.0 · Caso Verificado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant italic leading-relaxed mb-2.5">
+            "Tenía pánico de perder mis rasgos o quedar con nariz de molde. El Dr. Gamboa entendió exactamente lo que quería: corrigió mi giba conservando mi esencia. Cero dolor y respiré bien desde el primer instante."
+          </p>
+          <div class="flex justify-between items-center text-xs">
+            <span class="font-bold text-on-surface">Camila Morales</span>
+            <span class="text-[11px] text-on-surface-variant">Paciente en Cali</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs relative">
+          <div class="flex items-center gap-1 text-primary mb-2">
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="text-[11px] font-bold text-primary ml-1">5.0 · Caso Verificado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant italic leading-relaxed mb-2.5">
+            "Viajé desde el exterior por sus credenciales como Presidente de la SCCPF. La simulación previa fue idéntica al resultado final. La precisión quirúrgica de su equipo en Cali no tiene comparación."
+          </p>
+          <div class="flex justify-between items-center text-xs">
+            <span class="font-bold text-on-surface">Daniel R.</span>
+            <span class="text-[11px] text-on-surface-variant">Paciente Internacional (Miami)</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 4. A - ACCIÓN (Formulario minimalista de 3 campos & WhatsApp) -->
+    <section id="agendar" class="py-8 border-t border-outline-border/50 scroll-mt-20">
+      
+      <div class="bg-white p-6 rounded-2xl border-2 border-primary/30 shadow-clinical">
+        
+        <!-- Limited spots badge -->
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent-badge border border-primary/25 text-primary text-[11px] font-bold uppercase tracking-wider mb-3">
+          <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Cupos limitados de valoración esta semana en Cali
+        </div>
+
+        <h2 class="font-serif text-[22px] leading-snug font-bold text-on-surface mb-1">
           Empieza hoy tu transformación con precisión y seguridad
         </h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+
+        <p class="text-xs text-on-surface-variant mb-5 leading-relaxed">
           Completa 3 datos y nuestra coordinadora clínica te contactará para agendar tu cita presencial o virtual.
         </p>
-<!-- Minimalist 3-Field Intake Form -->
-<form class="space-y-4" id="triage-form" onsubmit="event.preventDefault(); alert('¡Gracias! Un asesor del Dr. Carlos Gamboa te contactará por WhatsApp en breve.');">
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-1.5 font-medium" for="nombre">Nombre y Apellido</label>
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-md font-body-md placeholder:text-outline outline-none transition-colors" id="nombre" placeholder="Ej. Sofía Herrera" required="" type="text"/>
-</div>
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-1.5 font-medium" for="telefono">WhatsApp o Celular</label>
-<div class="relative">
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-md font-body-md placeholder:text-outline outline-none transition-colors" id="telefono" placeholder="+57 300 000 0000" required="" type="tel"/>
-</div>
-</div>
-<div>
-<label class="block font-label-lg text-label-lg text-on-surface mb-1.5 font-medium" for="interes">¿Qué te interesa mejorar?</label>
-<select class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low border border-outline-variant/40 focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-md font-body-md outline-none transition-colors" id="interes">
-<option value="primaria">Rinoplastia Primaria Estética</option>
-<option value="funcional">Corrección Funcional / Desviación</option>
-<option value="secundaria">Rinoplastia Secundaria / Revisión</option>
-<option value="simulacion">Valoración General 3D</option>
-</select>
-</div>
-<!-- Primary Submit Button -->
-<button class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(0,131,118,0.35)] active:scale-[0.98] transition-all hover:opacity-95 mt-2" type="submit">
-<span>Quiero mi valoración ✨</span>
-</button>
-</form>
-<div class="relative my-6 flex items-center justify-center">
-<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/20"></div></div>
-<span class="relative bg-surface-container-lowest px-3 font-label-accent text-label-accent text-outline uppercase">O contáctanos al instante</span>
-</div>
-<!-- Priority Direct WhatsApp Button -->
-<a class="w-full h-[52px] rounded-full border-2 border-primary-container text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2.5 active:scale-[0.98] transition-all hover:bg-primary/5" href="https://wa.me/573218114942?text=Hola,%20quisiera%20agendar%20una%20valoraci%C3%B3n%20con%20el%20Dr.%20Carlos%20Gamboa%20en%20Cali." target="_blank">
-<span class="material-symbols-outlined text-primary text-[20px]" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
-<span>Chatear directo al WhatsApp (+57 321 811 4942)</span>
-</a>
-<!-- Micro-copy Legal & Privacy Confidence -->
-<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-4">
-          🔒 Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+
+        <form class="space-y-4" onsubmit="event.preventDefault(); window.open('https://wa.me/573218114942?text=Hola%20Dr.%20Carlos%20Gamboa,%20acabo%20de%20diligenciar%20el%20formulario%20para%20mi%20valoraci%C3%B3n%20de%20rinoplastia.', '_blank');">
+          
+          <!-- Field 1: Name -->
+          <div>
+            <label class="block text-xs font-bold text-on-surface mb-1" for="nombre">Nombre y Apellido *</label>
+            <div class="relative">
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Sofía Herrera" class="w-full px-3.5 py-3 rounded-xl border border-outline-border text-sm text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+              <span class="material-symbols-outlined absolute right-3.5 top-3.5 text-on-surface-variant/50 text-[18px]">person</span>
+            </div>
+          </div>
+
+          <!-- Field 2: WhatsApp -->
+          <div>
+            <label class="block text-xs font-bold text-on-surface mb-1" for="whatsapp">WhatsApp o Celular (+57) *</label>
+            <div class="relative">
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Ej. 300 123 4567" class="w-full px-3.5 py-3 rounded-xl border border-outline-border text-sm text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+              <span class="material-symbols-outlined absolute right-3.5 top-3.5 text-on-surface-variant/50 text-[18px]">chat</span>
+            </div>
+          </div>
+
+          <!-- Field 3: Treatment Interest -->
+          <div>
+            <label class="block text-xs font-bold text-on-surface mb-1" for="tratamiento">¿Qué te interesa mejorar? *</label>
+            <select id="tratamiento" name="tratamiento" class="w-full px-3.5 py-3 rounded-xl border border-outline-border text-sm text-on-surface bg-surface focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+              <option value="primaria">Rinoplastia Primaria Estética y Natural</option>
+              <option value="funcional">Rinoplastia Funcional (Problemas Respiratorios)</option>
+              <option value="ultrasonica">Rinoplastia Ultrasónica Sin Taponamiento</option>
+              <option value="revision">Rinoplastia Secundaria o de Revisión</option>
+            </select>
+          </div>
+
+          <!-- Action Button -->
+          <button type="submit" class="w-full py-4 px-6 rounded-xl bg-primary hover:bg-primary-dark text-white text-base font-bold tracking-wide shadow-cta active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-2">
+            <span>Quiero mi valoración ✨</span>
+          </button>
+        </form>
+
+        <!-- Separator -->
+        <div class="flex items-center my-4">
+          <div class="flex-grow border-t border-outline-border"></div>
+          <span class="px-3 text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant">o atención inmediata</span>
+          <div class="flex-grow border-t border-outline-border"></div>
+        </div>
+
+        <!-- Direct WhatsApp Button -->
+        <a href="https://wa.me/573218114942?text=Hola%20Dr.%20Carlos%20Gamboa,%20deseo%20agendar%20una%20valoraci%C3%B3n%20para%20rinoplastia." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-[#eafaf1] hover:bg-[#d5f5e3] border border-whatsapp text-[#0d7337] text-sm font-bold tracking-wide transition-all flex items-center justify-center gap-2 shadow-xs active:scale-[0.98]">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>Chatear directo al WhatsApp (+57 321 811 4942)</span>
+        </a>
+
+        <!-- Privacy notice -->
+        <p class="text-[11px] text-on-surface-variant text-center mt-3.5 flex items-center justify-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">lock</span>
+          <span>Tus datos están 100% protegidos bajo secreto médico y Ley 1581 de Protección de Datos de Colombia. Cero spam.</span>
         </p>
-</section>
-<!-- 6. PREGUNTAS FRECUENTES (Acordeón interactivo) -->
-<section class="px-5 py-8 flex flex-col gap-4">
-<div>
-<span class="font-label-accent text-label-accent text-primary uppercase font-bold tracking-widest">Resuelve tus dudas</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mt-0.5">Preguntas Frecuentes</h3>
-</div>
-<div class="space-y-2.5">
-<!-- FAQ 1 -->
-<details class="group bg-surface-container-lowest border border-outline-variant/25 rounded-2xl overflow-hidden transition-all duration-200">
-<summary class="flex justify-between items-center p-4 cursor-pointer select-none font-label-lg text-label-lg text-on-surface font-semibold list-none">
-<span>¿La rinoplastia ultrasónica o de preservación duele o requiere taponamientos?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              No. Empleamos técnicas estructurales y de preservación con instrumentos micro-quirúrgicos que respetan los tejidos biológicos. El postoperatorio no produce dolor severo sino una ligera congestión, y eliminamos por completo los taponamientos molestos del pasado.
-            </div>
-</details>
-<!-- FAQ 2 -->
-<details class="group bg-surface-container-lowest border border-outline-variant/25 rounded-2xl overflow-hidden transition-all duration-200">
-<summary class="flex justify-between items-center p-4 cursor-pointer select-none font-label-lg text-label-lg text-on-surface font-semibold list-none">
-<span>¿Cuánto tiempo toma la recuperación para volver a trabajar?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              La mayoría de pacientes pueden retomar actividades de oficina o teletrabajo entre los días 5 y 7. La férula nasal exterior se retira habitualmente al 7° día, momento en el cual el paciente ya se siente cómodo en público.
-            </div>
-</details>
-<!-- FAQ 3 -->
-<details class="group bg-surface-container-lowest border border-outline-variant/25 rounded-2xl overflow-hidden transition-all duration-200">
-<summary class="flex justify-between items-center p-4 cursor-pointer select-none font-label-lg text-label-lg text-on-surface font-semibold list-none">
-<span>¿Cómo garantizan que el resultado se vea 100% natural?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              Trabajamos con el concepto de armonización anatómica guiada por simulación 3D. El Dr. Gamboa analiza las proporciones de tu mentón, labios y frente para diseñar una estructura que encaje exclusivamente con tus rasgos, evitando narices genéricas o artificiales.
-            </div>
-</details>
-<!-- FAQ 4 -->
-<details class="group bg-surface-container-lowest border border-outline-variant/25 rounded-2xl overflow-hidden transition-all duration-200">
-<summary class="flex justify-between items-center p-4 cursor-pointer select-none font-label-lg text-label-lg text-on-surface font-semibold list-none">
-<span>¿Atienden a pacientes que viajan desde otras ciudades o el exterior?</span>
-<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
-</summary>
-<div class="px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-              Sí. Contamos con un protocolo internacional completo: realizamos la primera consulta y planeación de forma virtual vía videollamada, y coordinamos el hospedaje y tiempos quirúrgicos en Cali (mínimo de estancia sugerido: 8 a 10 días).
-            </div>
-</details>
-</div>
-</section>
-</main>
-<!-- 7. FOOTER COMPLETO (Shared Component Execution) -->
-<footer class="w-full mb-20 bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/30 flat no shadows">
-<div class="flex flex-col gap-4 px-5 py-8 w-full max-w-screen-md mx-auto text-center">
-<div>
-<h5 class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-semibold">Dr. Carlos Gamboa</h5>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rinoplastia de Precisión &amp; Cirugía Plástica Facial</p>
-</div>
-<div class="flex flex-wrap justify-center gap-2">
-<span class="font-label-accent text-label-accent text-primary dark:text-inverse-primary font-semibold hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors cursor-pointer">Miembro SCCPF</span>
-<span class="text-outline-variant">·</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant dark:text-surface-variant">Habilitación Seccional de Salud</span>
-<span class="text-outline-variant">·</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant dark:text-surface-variant">Política de Datos Ley 1581 de 2012</span>
-<span class="text-outline-variant">·</span>
-<span class="font-label-accent text-label-accent text-on-surface-variant dark:text-surface-variant">Términos y Consentimiento Médico</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-          © 2024 Dr. Carlos Gamboa · Cirugía Plástica Facial &amp; Rinoplastia Estructural · Cali, Colombia. Habilitación Seccional de Salud Valle del Cauca Código: 7600100000-01. Todos los derechos reservados.
-        </p>
-</div>
-</footer>
-<!-- 8. BOTTOM NAVBAR (BottomNavBar Shared Component) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe max-w-screen-md mx-auto bg-surface-container-lowest/90 dark:bg-inverse-surface/90 backdrop-blur-xl border-t border-outline-variant/20 dark:border-outline/20 shadow-[0_-4px_24px_rgba(27,42,39,0.08)]">
-<!-- Destination 1: Valoración (Active for this conversion funnel) -->
-<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container dark:bg-primary dark:text-on-primary rounded-full px-4 py-1.5 transition-all active:scale-[0.96]" href="#agendar">
-<span class="material-symbols-outlined text-[20px]" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-<span class="font-label-accent text-label-accent">Valoración</span>
-</a>
-<!-- Destination 2: WhatsApp -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-inverse-primary active:scale-[0.96] transition-all" href="https://wa.me/573218114942?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20la%20rinoplastia." target="_blank">
-<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
-<span class="font-label-accent text-label-accent">WhatsApp</span>
-</a>
-<!-- Destination 3: Ubicación -->
-<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-inverse-primary active:scale-[0.96] transition-all" href="https://maps.google.com/?q=Cali,+Valle+del+Cauca" target="_blank">
-<span class="material-symbols-outlined text-[20px]" data-icon="location_on">location_on</span>
-<span class="font-label-accent text-label-accent">Ubicación</span>
-</a>
-</nav>
-</div>
+      </div>
+
+    </section>
+
+    <!-- 5. PREGUNTAS FRECUENTES (FAQ Acordeón) -->
+    <section class="py-7 border-t border-outline-border/50">
+      
+      <div class="text-center mb-5">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-primary block mb-1">
+          Claridad Total
+        </span>
+        <h2 class="font-serif text-[22px] font-bold text-on-surface">
+          Preguntas Frecuentes
+        </h2>
+      </div>
+
+      <div class="space-y-2.5">
+        <!-- Q1 -->
+        <details class="group bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs">
+          <summary class="flex justify-between items-center font-bold text-sm text-on-surface cursor-pointer list-none">
+            <span>¿La rinoplastia ultrasónica duele o requiere taponamientos?</span>
+            <span class="material-symbols-outlined faq-icon text-primary transition-transform duration-200">expand_more</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-outline-border/40 text-xs text-on-surface-variant leading-relaxed">
+            No. Gracias al instrumental piezoeléctrico de micro-vibración, no se fracturan los huesos de forma traumática ni se lesionan vasos sanguíneos o mucosas, eliminando por completo la necesidad de taponamientos molestos.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs">
+          <summary class="flex justify-between items-center font-bold text-sm text-on-surface cursor-pointer list-none">
+            <span>¿Cuánto tiempo toma la recuperación para volver a trabajar?</span>
+            <span class="material-symbols-outlined faq-icon text-primary transition-transform duration-200">expand_more</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-outline-border/40 text-xs text-on-surface-variant leading-relaxed">
+            La mayoría de nuestros pacientes en Cali y del exterior se reincorporan a sus labores de oficina o teletrabajo en 7 a 10 días, momento en el cual se retira la férula protectora externa.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs">
+          <summary class="flex justify-between items-center font-bold text-sm text-on-surface cursor-pointer list-none">
+            <span>¿Cómo garantizan que el resultado se vea 100% natural?</span>
+            <span class="material-symbols-outlined faq-icon text-primary transition-transform duration-200">expand_more</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-outline-border/40 text-xs text-on-surface-variant leading-relaxed">
+            El Dr. Carlos Gamboa realiza una simulación fotográfica 3D exhaustiva en la consulta inicial, analizando las proporciones de mentón, frente y labios para crear un diseño que realce tus facciones sin perder tu identidad.
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="group bg-white p-4 rounded-xl border border-outline-border/70 shadow-xs">
+          <summary class="flex justify-between items-center font-bold text-sm text-on-surface cursor-pointer list-none">
+            <span>¿Atienden a pacientes que viajan desde otras ciudades o el exterior?</span>
+            <span class="material-symbols-outlined faq-icon text-primary transition-transform duration-200">expand_more</span>
+          </summary>
+          <div class="mt-2.5 pt-2.5 border-t border-outline-border/40 text-xs text-on-surface-variant leading-relaxed">
+            Sí. Contamos con un protocolo concierge de turismo médico: realizamos la primera valoración mediante videoconsulta y te acompañamos con asesoría en alojamiento, transporte y seguimiento clínico en Cali.
+          </div>
+        </details>
+      </div>
+
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer class="mt-8 pt-8 pb-14 border-t border-outline-border/50 text-center">
+      <div class="flex items-center justify-center space-x-2 mb-2">
+        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+        <span class="font-serif text-base font-bold text-on-surface">Dr. Carlos Gamboa</span>
+      </div>
+      <p class="text-xs text-on-surface-variant mb-1">
+        Rinoplastia de Precisión & Cirugía Plástica Facial
+      </p>
+      <p class="text-[11px] text-on-surface-variant/80 font-medium mb-3">
+        Miembro y Presidente SCCPF · Habilitación Seccional de Salud Valle del Cauca Cód. 7600100000-01
+      </p>
+
+      <div class="flex justify-center flex-wrap gap-x-4 gap-y-1 text-xs text-primary font-medium mb-4">
+        <a href="#agendar" class="hover:underline">Política de Datos Ley 1581 de 2012</a>
+        <span>·</span>
+        <a href="#agendar" class="hover:underline">Términos y Consentimiento Médico</a>
+      </div>
+
+      <p class="text-[10px] text-on-surface-variant/70 leading-relaxed max-w-xs mx-auto">
+        © 2025 Dr. Carlos Gamboa. Cirugía Plástica Facial & Rinoplastia Estructural en Cali, Colombia. Todos los derechos reservados.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- FIXED BOTTOM NAVIGATION BAR -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-t border-outline-border/70 py-2 px-3 shadow-lg">
+    <div class="flex justify-around items-center max-w-sm mx-auto">
+      <a href="#agendar" class="flex flex-col items-center justify-center bg-primary text-white rounded-full px-5 py-2 shadow-xs active:scale-95 transition-transform">
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[17px]">calendar_month</span>
+          <span class="text-xs font-bold tracking-wide">Valoración VIP</span>
+        </div>
+      </a>
+      <a href="https://wa.me/573218114942?text=Hola%20Dr.%20Carlos%20Gamboa,%20deseo%20agendar%20una%20valoraci%C3%B3n%20para%20rinoplastia." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center text-whatsapp-dark hover:text-primary px-3 py-1 font-semibold text-xs transition-colors">
+        <div class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp</span>
+        </div>
+      </a>
+      <a href="https://maps.google.com/?q=Cali,+Valle+del+Cauca" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary px-3 py-1 font-semibold text-xs transition-colors">
+        <div class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-[18px]">location_on</span>
+          <span>Cali</span>
+        </div>
+      </a>
+    </div>
+  </nav>
+
 <img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dr-carlos-gamboa" width="1" height="1" style="display:none" alt="">
-</body></html>
+</body>
+</html>

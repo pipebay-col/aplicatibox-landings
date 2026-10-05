@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html class="light scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Dr. Vengoechea · Estética Dental y Carillas Barranquilla</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#001e2f",
+            "surface-container-low": "#eaf6f4",
+            "tertiary-fixed-dim": "#e3c19d",
+            "on-primary": "#ffffff",
+            "surface-bright": "#f0fcfa",
+            "surface-container-high": "#dfebe9",
+            "secondary-fixed-dim": "#89ceff",
+            "on-secondary-fixed-variant": "#004c6e",
+            "outline": "#6e7978",
+            "inverse-on-surface": "#e8f3f1",
+            "primary-fixed": "#9ef1ea",
+            "surface-tint": "#006a65",
+            "tertiary-container": "#765c3f",
+            "secondary-fixed": "#c9e6ff",
+            "on-tertiary": "#ffffff",
+            "primary-container": "#006d68",
+            "inverse-surface": "#283232",
+            "tertiary-fixed": "#ffddb9",
+            "primary": "#00534f",
+            "on-secondary-container": "#004666",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d1dcdb",
+            "primary-fixed-dim": "#82d5ce",
+            "secondary": "#006591",
+            "inverse-primary": "#82d5ce",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#3e4948",
+            "surface": "#f0fcfa",
+            "surface-variant": "#d9e5e3",
+            "on-primary-container": "#98ebe5",
+            "background": "#f0fcfa",
+            "on-tertiary-container": "#fad6b2",
+            "on-error-container": "#93000a",
+            "on-background": "#131d1d",
+            "on-tertiary-fixed-variant": "#5a4227",
+            "surface-container": "#e5f0ef",
+            "secondary-container": "#39b8fd",
+            "on-surface": "#131d1d",
+            "surface-container-highest": "#d9e5e3",
+            "on-error": "#ffffff",
+            "on-primary-fixed-variant": "#00504c",
+            "on-tertiary-fixed": "#291802",
+            "on-primary-fixed": "#00201e",
+            "outline-variant": "#bec9c7",
+            "error": "#ba1a1a",
+            "tertiary": "#5c4529"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "margin-desktop": "3rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "gutter-desktop": "2rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "margin": "1.5rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Smooth clinical shading */
+    .soft-card-shadow {
+      box-shadow: 0 4px 20px -2px rgba(0, 109, 104, 0.05);
+    }
+    .elevated-cta-glow {
+      box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-primary min-h-screen flex flex-col justify-between">
+<!-- 1. TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface/90 dark:bg-surface-container/90 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline-variant/20 shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-gutter-mobile py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary dark:text-inverse-primary font-semibold">Dr. Vengoechea</span>
+</div>
+<!-- Desktop Nav & Mobile Action -->
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors duration-200 px-3 py-1.5 rounded-full" href="#proceso">Proceso Biomimético</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors duration-200 px-3 py-1.5 rounded-full" href="#resultados">Casos Clínicos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high transition-colors duration-200 px-3 py-1.5 rounded-full" href="#faq">Preguntas</a>
+</div>
+<a class="bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full active:scale-95 transition-transform duration-150 hover:bg-primary-container shadow-sm flex items-center gap-1.5" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm" data-icon="calendar_month">calendar_month</span>
+</a>
+</div>
+</header>
+<!-- MAIN CANVAS (Max Mobile-Friendly Constraint for conversion) -->
+<main class="w-full max-w-md mx-auto px-4 pt-4 pb-28 md:max-w-2xl lg:max-w-4xl transition-all">
+<!-- 2. A - ATENCIÓN (Hero Section) -->
+<section class="pt-2 pb-8 flex flex-col items-center text-center">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container-low border border-outline-variant/40 px-3 py-1.5 rounded-full mb-5 max-w-full">
+<span class="material-symbols-outlined text-primary text-sm shrink-0" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wide truncate">
+          Especialista en Carillas · Reg. Atlántico #08001 · Barranquilla
+        </span>
+</div>
+<!-- Hero Headline with Playfair Display & Italic Sophistication -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight mb-3">
+        Tu sonrisa soñada en Barranquilla, <span class="italic font-normal text-secondary">natural</span> y diseñada para durar.
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-6 leading-relaxed">
+        Carillas cerámicas ultrafinas E-max y diseño de sonrisa guiado por tecnología digital 3D. Sin desgastes agresivos ni dientes artificiales.
+      </p>
+<!-- Main Visual Clinical Transformation Card -->
+<div class="w-full relative mb-6 rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-lowest p-2">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+<img alt="Paciente real con sonrisa radiante en consulta odontológica boutique del Dr. Vengoechea en Barranquilla" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UVNVFzRU2xb397NHUEd3rs7NvUpdqlfjnYO4TJEenRwnpsr2BWbMzSSewJPk_yp-oVw3jVQUyKFgfuHMZaEOhO3RvvQj6br2n2r3vBkvPzV4HyXpetaVtQ74uIP7nUIutc4IVObYUauj5sM4eSMNfmmOYPOYaM_FXYkVdG-wAqm4z35kuLkiC0ybgjsQMaeLXBiihhSEBtIWAdJk4Pr8sDkhiURu5EFLM1eeXFGN8su99yRRGMDZ6T4lk"/>
+<!-- Translucent Floating Tag -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/30 rounded-full px-3 py-2 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold truncate">Resultado Clínico Dr. Vengoechea</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full font-bold shrink-0">100% E-max</span>
+</div>
+</div>
+</div>
+<!-- High Impact Conversion Primary CTA Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-title-md text-title-md px-8 py-4 rounded-full elevated-cta-glow hover:bg-primary-container active:scale-95 transition-all duration-200" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="sparkles">arrow_back_ios_new</span>
+</a>
+<!-- Micro Trust Credential -->
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-3 flex items-center justify-center gap-1 text-center flex-wrap">
+<span>✓ Respuesta en menos de 24 horas</span>
+<span class="hidden sm:inline">·</span>
+<span>Sin costo de valoración inicial</span>
+<span class="hidden sm:inline">·</span>
+<span>Simulación 3D previa</span>
+</p>
+<!-- 3 Quick Value Badges -->
+<div class="grid grid-cols-3 gap-2 w-full mt-6">
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-2.5 flex flex-col items-center text-center soft-card-shadow">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Tecnología 3D Guiada</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-2.5 flex flex-col items-center text-center soft-card-shadow">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Cero Desgaste Agresivo</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-2.5 flex flex-col items-center text-center soft-card-shadow">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="person_pin">person_pin</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Atención 1 a 1 en B/quilla</span>
+</div>
+</div>
+</section>
+<!-- 3. I - INTERÉS (Problema & Proceso Biomimético) -->
+<section class="py-8 scroll-mt-20" id="proceso">
+<!-- Empathy / Dilemma Box -->
+<div class="bg-surface-container-low border border-outline-variant/50 rounded-3xl p-5 mb-8 text-left relative overflow-hidden">
+<div class="flex items-center gap-2 mb-2 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="info">info</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">Odontología de Preservación</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+          ¿Temes que tu diseño de sonrisa se vea artificial, con <span class="italic text-primary font-normal">"dientes de tiza"</span> o desgaste tus dientes sanos?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En nuestra clínica en Barranquilla aplicamos protocolos biomiméticos estrictos: preservamos hasta el <strong>98% del esmalte dental original</strong> mediante micro-láminas de porcelana translúcida, calibradas artesanalmente para respetar la fisonomía y luz natural del rostro caribeño.
+        </p>
+</div>
+<!-- 3-Step Process with Tangible Benefits -->
+<div class="space-y-4">
+<h3 class="font-title-lg text-title-lg text-primary mb-4 flex items-center gap-2">
+<span>Nuestro proceso transparente paso a paso</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="arrow_forward">arrow_forward</span>
+</h3>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 flex gap-4 items-start soft-card-shadow">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-title-md text-title-md shrink-0">
+            01
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Valoración y Escaneo Digital 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Digitalizamos tu sonrisa con escáner intraoral sin pastas molestas ni radiaciones excesivas.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary bg-surface-container-low px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span><strong>Beneficio:</strong> Ves tu nueva sonrisa en pantalla 3D antes de tocar un solo diente.</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 flex gap-4 items-start soft-card-shadow">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-md text-title-md shrink-0">
+            02
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Plan Personalizado y Mock-up en Boca</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Fabricamos una maqueta temporal para que puedas verte al espejo y hablar en tiempo real.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary bg-surface-container-low px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span><strong>Beneficio:</strong> Pruebas forma, longitud y color reales en vivo sin ninguna sorpresa.</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 flex gap-4 items-start soft-card-shadow">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-title-md text-title-md shrink-0">
+            03
+          </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Sonrisa Definitiva con Carillas E-max</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Cementación adhesiva microscópica de piezas individuales de porcelana pura Ivoclar Vivadent.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary bg-surface-container-low px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span><strong>Beneficio:</strong> Brillo vítreo inalterable e inmune a tinciones de café, vino o té.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Consultation Prompt -->
+<div class="text-center mt-5">
+<a class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md hover:underline" href="https://wa.me/573008100215">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso? Consulta directamente con el equipo médico</span>
+</a>
+</div>
+</section>
+<!-- 4. D - DESEO (Prueba social, Métricas y Beneficios Diarios) -->
+<section class="py-8 scroll-mt-20" id="resultados">
+<!-- Metrics Grid -->
+<div class="grid grid-cols-2 gap-3 mb-8">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center soft-card-shadow">
+<p class="font-headline-md text-headline-md text-primary font-bold">+10 Años</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">de Trayectoria Clínica</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center soft-card-shadow">
+<p class="font-headline-md text-headline-md text-primary font-bold">+3.200</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sonrisas en Barranquilla</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center soft-card-shadow">
+<p class="font-headline-md text-headline-md text-secondary font-bold">99.4%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Satisfacción Comprobada</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center soft-card-shadow">
+<p class="font-headline-md text-headline-md text-secondary font-bold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Porcelana E-max Ivoclar</p>
+</div>
+</div>
+<!-- Experience Everyday Benefits -->
+<div class="mb-8">
+<div class="text-center mb-5">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Transformación Real</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Lo que experimentas al sonreír cada día</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex items-start gap-3.5 soft-card-shadow">
+<div class="bg-primary/10 p-2 rounded-xl text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Armonía y naturalidad absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tono translúcido calibrado a tu tono de piel. Nadie notará que tienes carillas, solo una sonrisa deslumbrante.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex items-start gap-3.5 soft-card-shadow">
+<div class="bg-primary/10 p-2 rounded-xl text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Preservación dental biológica</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Protocolo ultra-conservador sin desgastes destructivos que protege tus piezas dentales vivas para toda la vida.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex items-start gap-3.5 soft-card-shadow">
+<div class="bg-primary/10 p-2 rounded-xl text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Cerámica vítrea inalterable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Disfruta de café, té o vino tinto con total tranquilidad sin temor a pigmentaciones o pérdidas de brillo.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 flex items-start gap-3.5 soft-card-shadow">
+<div class="bg-primary/10 p-2 rounded-xl text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-0.5">Seguridad plena al hablar y sonreír</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Recupera la soltura de reír en fotos, reuniones de trabajo y eventos sociales sin esconder tus dientes.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials -->
+<div class="space-y-3">
+<h4 class="font-title-md text-title-md text-on-surface text-center mb-2">Testimonios verificados en Barranquilla</h4>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 soft-card-shadow">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hace 2 semanas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mb-3 italic">
+            "Tenía pánico de que mis dientes quedaran como chicles blancos. El Dr. Vengoechea diseñó unas carillas que se mimetizan perfecto con mi boca. ¡La mejor inversión que he hecho en Barranquilla!"
+          </p>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs">
+              MC
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Mariana C. Valbuena</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente Carillas E-max · Prado, Barranquilla</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 soft-card-shadow">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1 text-tertiary-container">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hace 1 mes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mb-3 italic">
+            "Viajé desde Miami para hacerme el diseño en Barranquilla. La atención personalizada y la prueba en 3D antes de fabricarlas me dieron una paz total. Atención 10/10."
+          </p>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xs">
+              AG
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Andrés Gómez R.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente Diseño Integral · Florida / Barranquilla</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. A - ACCIÓN (Lead Generation & Conversion Funnel) -->
+<section class="py-8 scroll-mt-20" id="agendar">
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-3xl p-5 md:p-8 shadow-xl relative overflow-hidden">
+<!-- Scarcity Badge -->
+<div class="inline-flex items-center gap-1.5 bg-error-container text-on-error-container px-3 py-1 rounded-full mb-3">
+<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
+<span class="font-label-sm text-label-sm font-bold">Cupos limitados de valoración esta semana en Barranquilla</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">
+          Empieza hoy tu transformación dental con total confianza
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Completa el formulario en 30 segundos y nuestro equipo de especialistas te contactará para coordinar tu cita clínica.
+        </p>
+<!-- 3-Field Conversion Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Nuestro equipo se pondrá en contacto contigo en menos de 24 horas.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="name">
+              Nombre y Apellido
+            </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-lg" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest border border-outline-variant/60 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/60" id="name" placeholder="Ej. Sofía Vergara" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="phone">
+              WhatsApp o Celular (+57)
+            </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-lg" data-icon="call">call</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest border border-outline-variant/60 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/60" id="phone" placeholder="300 000 0000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="treatment">
+              ¿Qué tratamiento te interesa?
+            </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-lg" data-icon="dentistry">dentistry</span>
+<select class="w-full pl-10 pr-8 py-2.5 bg-surface-container-lowest border border-outline-variant/60 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all appearance-none cursor-pointer" id="treatment">
+<option value="carillas">Carillas Cerámicas E-max</option>
+<option value="lentes">Lentes de Contacto Dental</option>
+<option value="diseno">Diseño de Sonrisa Completo</option>
+<option value="valoracion">Valoración Inicial</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-lg" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary text-on-primary font-title-md text-title-md py-3.5 px-6 rounded-full elevated-cta-glow hover:bg-primary-container active:scale-95 transition-all duration-150 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+</button>
+</form>
+<!-- Divider with OR text -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/40"></div></div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline uppercase tracking-wider">o contáctanos al instante</span>
+</div>
+<!-- Direct WhatsApp Concierge CTA -->
+<a class="w-full bg-[#128C7E] hover:bg-[#075E54] text-white font-title-md text-title-md py-3.5 px-6 rounded-full shadow-md active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" href="https://wa.me/573008100215" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 810 0215)</span>
+</a>
+<!-- Privacy & Medical Secrecy Guarantee -->
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-5 leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- 6. PREGUNTAS FRECUENTES (FAQ Acordeón) -->
+<section class="py-8 scroll-mt-20" id="faq">
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Claridad Total</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 transition-all">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer list-none">
+<span>¿El diseño de carillas desgasta mis dientes naturales?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            No con nuestro método. Practicamos odontología biomimética y conservadora. En el 90% de los casos solo se realiza un micropulido superficial en la capa externa de esmalte (fracciones de milímetro), preservando intacta la estructura y vitalidad del diente.
+          </p>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 transition-all">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer list-none">
+<span>¿Cuánto tiempo toma el tratamiento en Barranquilla?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            El protocolo completo suele completarse en tan solo 2 a 3 citas distribuidas en 5 a 7 días hábiles. Es ideal para pacientes que viajan desde el exterior o de otras ciudades de Colombia.
+          </p>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 transition-all">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer list-none">
+<span>¿Las carillas de porcelana se manchan con café o vino?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            No. La cerámica E-max Ivoclar es un material vítreo no poroso. A diferencia de las resinas compuestas, la porcelana no absorbe pigmentos externos ni cambia de color con el tiempo.
+          </p>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-4 transition-all">
+<summary class="flex justify-between items-center font-title-md text-title-md text-on-surface cursor-pointer list-none">
+<span>¿Cuentan con facilidades de pago o financiación?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed">
+            Sí, aceptamos tarjetas de crédito internacionales y nacionales, transferencias directas y planes de pago escalonados por fases de tratamiento durante tu estadía en Barranquilla.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- 7. FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/10 w-full px-gutter-mobile py-space-xl text-center space-y-space-md mt-auto">
+<div class="max-w-4xl mx-auto space-y-4">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="dentistry">dentistry</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold">Dr. Vengoechea</span>
+</div>
+<!-- Legal Links -->
+<div class="flex flex-wrap justify-center items-center gap-4 text-on-surface-variant dark:text-outline font-label-sm text-label-sm">
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-primary" href="#agendar">Registro Seccional de Salud</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-primary" href="#agendar">Aviso Legal y Privacidad</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-primary" href="#agendar">Protocolo Quirúrgico</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-1 focus:ring-primary" href="#agendar">Consentimiento Informado</a>
+</div>
+<!-- Copyright Notice -->
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline max-w-2xl mx-auto leading-relaxed">
+        © 2024 Dr. Vengoechea · Estética Dental y Carillas. Barranquilla, Atlántico. Registro Seccional de Salud Secretaría Departamental del Atlántico. Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- 8. BOTTOM NAVBAR (Shared Component Anchor for Mobile Destinations) -->
+<nav class="md:hidden fixed bottom-4 inset-x-4 max-w-md mx-auto z-50 flex justify-around items-center px-space-sm py-space-xs rounded-full bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-lg border border-outline-variant/40 dark:border-outline/20 shadow-lg shadow-primary/5 dark:shadow-black/20">
+<!-- Tab 1: Valoración (Active Intent Destination) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1.5 shadow-sm active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Valoración</span>
+</a>
+<!-- Tab 2: WhatsApp (Direct Chat) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed active:scale-95 transition-transform duration-150" href="https://wa.me/573008100215" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm">WhatsApp</span>
+</a>
+<!-- Tab 3: Casos Clínicos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed active:scale-95 transition-transform duration-150" href="#resultados">
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-sm text-label-sm">Casos Clínicos</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dr-vengoechea-carillas-barranquilla" width="1" height="1" style="display:none" alt="">
+</body></html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dra. Laura Cala · Cirugía Plástica Estética y Reconstructiva</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#dee8ff",
+            "tertiary-fixed": "#62fae3",
+            "primary-container": "#008376",
+            "primary-fixed-dim": "#74d7c8",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#3cddc7",
+            "on-secondary-fixed": "#00201d",
+            "on-secondary-fixed-variant": "#005049",
+            "outline-variant": "#bdc9c6",
+            "inverse-surface": "#263143",
+            "on-error-container": "#93000a",
+            "tertiary": "#00685c",
+            "secondary": "#006a61",
+            "on-tertiary": "#ffffff",
+            "primary": "#00685d",
+            "on-secondary-container": "#006f66",
+            "secondary-fixed": "#89f5e7",
+            "surface-dim": "#cfdaf2",
+            "on-tertiary-container": "#f2fffb",
+            "error-container": "#ffdad6",
+            "background": "#f9f9ff",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-container-highest": "#d8e3fb",
+            "error": "#ba1a1a",
+            "surface-container": "#e7eeff",
+            "surface-container-low": "#f0f3ff",
+            "on-background": "#111c2d",
+            "on-tertiary-fixed": "#00201c",
+            "on-surface": "#111c2d",
+            "inverse-primary": "#74d7c8",
+            "surface-variant": "#d8e3fb",
+            "tertiary-container": "#008375",
+            "surface-tint": "#006b60",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#f9f9ff",
+            "on-surface-variant": "#3e4947",
+            "on-primary-fixed-variant": "#005048",
+            "secondary-container": "#86f2e4",
+            "on-primary-fixed": "#00201c",
+            "on-tertiary-fixed-variant": "#005047",
+            "surface-bright": "#f9f9ff",
+            "outline": "#6e7a77",
+            "secondary-fixed-dim": "#6bd8cb",
+            "primary-fixed": "#91f4e4",
+            "on-error": "#ffffff",
+            "on-primary-container": "#f2fffb",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.75rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TOP APP BAR (Shared Component JSON Source of Truth) -->
+<header class="bg-surface/85 backdrop-blur-md dark:bg-inverse-surface/85 docked full-width top-0 sticky z-40 shadow-sm">
+<div class="flex justify-between items-center w-full px-space-md py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary tracking-tight font-bold">Dra. Laura Cala</span>
+</div>
+<a class="bg-primary-container text-on-primary-container text-label-md font-label-md px-4 py-2 rounded-full hover:opacity-90 active:scale-95 transition-all shadow-sm flex items-center gap-1" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="max-w-xl mx-auto px-4 sm:px-6 pt-4 pb-20">
+<!-- 1. ETAPA A - ATENCIÓN (Hero Section con Imagen de la Doctora) -->
+<section class="space-y-4 pt-2 pb-8">
+<!-- Badge de Credencial Real -->
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest border border-primary/20 rounded-full px-3.5 py-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-label-sm text-primary tracking-wide">Cirujana Plástica Miembro de Número SCCP · Vigilado Supersalud</span>
+</div>
+<!-- Titular de Impacto -->
+<h1 class="text-display-lg-mobile font-display-lg-mobile text-on-background leading-tight">
+        Tu belleza en su versión más <span class="italic text-primary font-serif">armónica y natural</span>, con rigor médico y seguridad quirúrgica
+      </h1>
+<!-- Subtítulo de Resultado Específico -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Cirugía plástica de alta definición, rejuvenecimiento facial y contorno corporal en Bogotá y Colombia. Procedimientos milimétricos diseñados para realzar tu anatomía innata sin apariencias artificiales ni cambios exagerados.
+      </p>
+<!-- Imagen Hero con Tarjetas Flotantes -->
+<div class="relative rounded-2xl overflow-hidden shadow-md mt-4 border border-primary/10">
+<img alt="High-end editorial medical photography of Dra. Laura Cala, an attractive, distinguished, and empathetic Colombian female plastic surgeon in her late 30s. She is smiling with warm confidence and elegance directly at the camera, wearing an immaculate tailored white medical coat over dark navy/teal scrubs with a subtle gold clinical pin. Seated in her luminous luxury private consultation suite in Bogota Colombia, panoramic window in background showing soft green foliage and gentle morning light, clean architectural cream and soft clinical teal details, diplomas neatly framed, photorealistic 8k, prestigious aesthetic plastic surgery standard." class="w-full aspect-[4/3] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4L6OOYfDH-TcsOnrfA0fEJDp3QUudYCIE_Zs_-vOBlXTaztmQ-6ioUQmN0hO9Xv7ZvZSK3fFHQ4-FG4R84YBqrZOprTI_vFqlnjxTBJ-1w5L0GBBuwjk0-4WNaa5BIX09jvXZdkeW6LYLSwOzD5WdUJYtk4Z1VBBlgvgAOxuSBY7Skuaz59hm1bLV6YRXNmPyP_tjS3l4mn2h7lIs3MfOgnicffp0sXXAaFubGvtkc78EVtJ5jTus-ncKT9uUpFexNehSmhqGyJ0"/>
+<!-- Overlay Badge Superior -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md rounded-full px-3 py-1 border border-primary/20 shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-primary font-bold">Cirugía Segura y Preservadora</span>
+</div>
+<!-- Card Flotante Inferior -->
+<div class="absolute bottom-3 inset-x-3 bg-surface-container-lowest/95 backdrop-blur-md p-3 rounded-xl border border-primary/15 shadow-sm flex items-center justify-between">
+<div>
+<p class="text-label-md font-label-md text-on-surface font-semibold">Dra. Laura Cala</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Especialista Certificada SCCP · Reg. 10204882</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="health_and_safety">health_and_safety</span>
+</div>
+</div>
+<!-- CTA de Alto Impacto -->
+<div class="pt-2">
+<a class="w-full bg-primary-container text-on-primary-container py-4 px-6 rounded-full flex items-center justify-center gap-2 text-label-lg font-label-lg shadow-md hover:opacity-90 active:scale-95 transition-all text-center" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant mt-2">
+          Respuesta en menos de 24 horas · Plan quirúrgico 100% personalizado · Sin costos ocultos
+        </p>
+</div>
+<!-- Fila de 3 Píldoras de Valor -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center flex flex-col items-center border border-primary/10">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="local_hospital">local_hospital</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Quirófanos Nivel IV</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center flex flex-col items-center border border-primary/10">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Preservación Anatómica</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2.5 text-center flex flex-col items-center border border-primary/10">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="person_pin">person_pin</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- 2. ETAPA I - INTERÉS (Dilema del Paciente & Metodología en 3 Pasos) -->
+<section class="space-y-6 py-6">
+<!-- Caja de Empatía Médica -->
+<div class="bg-surface-container-low rounded-2xl p-5 border-l-4 border-primary space-y-2">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-lg" data-icon="psychology_alt">psychology_alt</span>
+<span>Comprensión y Cercanía Médica</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-background">
+          ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          En nuestra práctica quirúrgica rechazamos la cirugía en serie. Analizamos tus proporciones áureas y vectores anatómicos para lograr una transformación elegante, sutil y segura que nadie sospeche que fue operada.
+        </p>
+</div>
+<!-- Proceso Predecible en 3 Pasos -->
+<div class="space-y-3">
+<h3 class="text-title-lg font-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+          Tu Ruta Quirúrgica Segura en 3 Fases
+        </h3>
+<!-- Paso 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 shadow-sm space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-bold">FASE 01</span>
+<span class="material-symbols-outlined text-primary text-lg" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface">Valoración y Mapeo Anatómico 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Evaluación milimétrica facial y corporal presencial o por videoconsulta. Simulación previa para alinear expectativas antes de quirófano.
+          </p>
+<div class="bg-surface-container-low p-2 rounded-lg text-label-sm font-label-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio tangible: Certeza clínica y diagnóstico sin presiones comerciales.</span>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 shadow-sm space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-bold">FASE 02</span>
+<span class="material-symbols-outlined text-primary text-lg" data-icon="receipt_long">receipt_long</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface">Plan Quirúrgico y Presupuesto Cerrado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Diseño anatómico con instrumental de preservación tisular y cotización total garantizada sin sobrecostos sorpresa.
+          </p>
+<div class="bg-surface-container-low p-2 rounded-lg text-label-sm font-label-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio tangible: Transparencia financiera total.</span>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 shadow-sm space-y-1.5">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-bold">FASE 03</span>
+<span class="material-symbols-outlined text-primary text-lg" data-icon="healing">healing</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface">Cirugía de Precisión y Recuperación Guiada</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Intervención en clínicas de cuarto nivel con protocolo de rápida recuperación y seguimiento directo 24/7 de tu cirujana.
+          </p>
+<div class="bg-surface-container-low p-2 rounded-lg text-label-sm font-label-sm text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio tangible: Retorno cómodo y seguro a tu vida diaria.</span>
+</div>
+</div>
+</div>
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 text-primary text-label-md font-label-md underline hover:opacity-80" href="https://wa.me/573126608820">
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+</a>
+</div>
+</section>
+<!-- 3. ETAPA D - DESEO (Métricas, Beneficios en Resultados & Prueba Social) -->
+<section class="space-y-6 py-6">
+<!-- Rejilla de 4 Métricas de Autoridad -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-primary/15 text-center shadow-sm">
+<span class="text-headline-md font-headline-md text-primary font-bold block">+12</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Años de Trayectoria Quirúrgica</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-primary/15 text-center shadow-sm">
+<span class="text-headline-md font-headline-md text-primary font-bold block">+3.800</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Procedimientos Exitosos</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-primary/15 text-center shadow-sm">
+<span class="text-headline-md font-headline-md text-primary font-bold block">99.4%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Satisfacción de Pacientes</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-primary/15 text-center shadow-sm">
+<span class="text-headline-md font-headline-md text-primary font-bold block">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Acreditación SCCP &amp; MinSalud</span>
+</div>
+</div>
+<!-- Beneficios Enfocados en el Resultado Real -->
+<div class="space-y-3 pt-2">
+<h3 class="text-headline-sm font-headline-sm text-on-background">
+          Lo que experimentas en tu <span class="italic font-serif text-primary">vida cotidiana</span>
+</h3>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="face">face</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Proporciones equilibradas que respetan tu fisionomía; notarás frescura y elegancia, jamás una cirugía evidente.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="bed">bed</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface">Preservación de tejidos y rápida recuperación</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Protocolos que minimizan hematomas e inflamación, reduciendo notablemente el tiempo de incapacidad.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="domain">domain</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface">Quirófanos de alta complejidad certificados</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Operaciones exclusivamente en clínicas avaladas con tecnología de punta y anestesiólogos certificados.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="concierge">concierge</span>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface">Acompañamiento VIP integral</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Seguimiento postoperatorio estrecho y conserjería personalizada para pacientes locales e internacionales.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Tarjeta de Resultados Reales con Fotografía de Paciente -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary/20 shadow-md">
+<div class="relative">
+<img alt="A stunning editorial aesthetic portrait of an attractive Colombian woman in her late 20s or early 30s showing an elegant, perfectly natural nose profile and three-quarter angle after a subtle rhinoplasty. Natural refined profile, gentle slope, natural tip definition, harmonious aesthetic balance, soft studio portrait lighting with warm neutral cream and soft rosy undertones, luxury aesthetic medicine and plastic surgery clinic atmosphere, hyper-realistic, medical photography standard, elegant and natural look, not overdone." class="w-full aspect-[4/3] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UgVhlzQFr_N2phyQ6KZXjkBR29WuqxNs0Qbrd4od20MTNhMbbnB7gAPMWbeP7f71xj6szosWOymDyzw78mCFPWhwRpbf-wl7kwLUU4gjhCboGOUTGtkPV8_gOtA5O69ghucGTm0A-ugLc3nU4fuxM2iXQhn3yFjDm4TByP6WhBu18Lky4VBW91xAX7zG1ebBAKhONumttfls3UCsXm2gdPaIqeye1vssVtuROrXH75SHxL5eOaTkK_FQ"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 text-inverse-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full backdrop-blur-sm">
+            Resultado Postquirúrgico Armónico
+          </div>
+</div>
+<div class="p-4 space-y-1.5">
+<div class="flex items-center justify-between">
+<h4 class="text-title-lg font-title-lg text-on-surface">Rinoplastia Estructural y Preservadora</h4>
+<span class="text-label-sm font-label-sm text-primary font-bold">12 Meses Postoperatorio</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Definición milimétrica del dorso y la punta nasal conservando la identidad del perfil, garantizando función respiratoria óptima y estética sin apariencia artificial.
+          </p>
+</div>
+</div>
+<!-- Testimonios Verificados de Pacientes Reales -->
+<div class="space-y-3 pt-2">
+<h3 class="text-headline-sm font-headline-sm text-on-background">Experiencias Reales</h3>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 space-y-2 shadow-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Tenía pánico de una rinoplastia que me cambiara el rostro. La Dra. Laura Cala respetó mis facciones, mi nariz luce natural y respiro perfecto."
+          </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-md font-label-md text-on-surface font-semibold">Mariana G. · 32 años</span>
+<span class="text-label-sm font-label-sm text-primary bg-surface-container-low px-2 py-0.5 rounded-full">Bogotá</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 space-y-2 shadow-sm">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Viajé desde Miami para mi lipoescultura de alta definición. La Dra. me dio total seguridad desde la videoconsulta. Mi silueta quedó atlética y estilizada."
+          </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-md font-label-md text-on-surface font-semibold">Carolina M. · 38 años</span>
+<span class="text-label-sm font-label-sm text-primary bg-surface-container-low px-2 py-0.5 rounded-full">Paciente Internacional (EE. UU.)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ETAPA A - ACCIÓN (Formulario Minimalista de Alta Conversión) -->
+<section class="space-y-4 py-8 scroll-mt-20" id="agendar">
+<!-- Banner de Escasez Ética -->
+<div class="bg-secondary-container/40 border border-primary/30 p-3 rounded-2xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary text-base animate-bounce" data-icon="event_available">event_available</span>
+<span class="text-label-md font-label-md text-on-secondary-fixed-variant">Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+<!-- Encabezado del Formulario -->
+<div class="text-center space-y-1">
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background">
+          Inicia hoy tu transformación con <span class="italic font-serif text-primary">seguridad médica</span>
+</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Completa este formulario breve para coordinar tu cita presencial o videoconsulta internacional:
+        </p>
+</div>
+<!-- Formulario 3 Campos -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/20 shadow-lg space-y-4">
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="nombre">Nombre y Apellido *</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" id="nombre" placeholder="Ej. Sofía Valenzuela" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="whatsapp">WhatsApp o Celular *</label>
+<div class="flex">
+<span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-outline-variant/50 bg-surface-container text-body-sm font-body-sm text-on-surface-variant">
+              🇨🇴 +57
+            </span>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-r-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" id="whatsapp" placeholder="312 000 0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1" for="procedimiento">¿Qué procedimiento te interesa evaluar? *</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/50 rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary" id="procedimiento">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="lipo">Contorno Corporal &amp; Lipo HD</option>
+<option value="rinoplastia">Rinoplastia &amp; Armonía Facial</option>
+<option value="mamoplastia">Mamoplastia Personalizada</option>
+<option value="rejuvenecimiento">Rejuvenecimiento Facial &amp; Párpados</option>
+<option value="integral">Valoración Quirúrgica Integral</option>
+</select>
+</div>
+<!-- Botón Principal -->
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-full text-label-lg font-label-lg shadow-md hover:opacity-90 active:scale-95 transition-all text-center flex items-center justify-center gap-1.5" onclick="alert('Gracias. Nuestro equipo médico se comunicará contigo vía WhatsApp en menos de 24 horas.');" type="button">
+<span>Quiero mi valoración médica ✨</span>
+</button>
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 text-label-sm font-label-sm text-outline">o contacto directo</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Opción Directa WhatsApp Verde -->
+<a class="w-full bg-[#25D366] text-white py-3 px-4 rounded-full text-label-md font-label-md shadow-sm hover:opacity-95 active:scale-95 transition-all flex items-center justify-center gap-2" href="https://wa.me/573126608820?text=Hola%20Dra.%20Laura%20Cala,%20deseo%20agendar%20una%20valoración%20clínica." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 312 660 8820)</span>
+</a>
+<!-- Microcopia de Confianza Médica -->
+<div class="flex items-start gap-2 pt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5" data-icon="lock">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto profesional médico y Ley 1581 de Protección de Datos de Colombia. Cero spam.</span>
+</div>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ Acordeón) -->
+<section class="space-y-4 py-6">
+<div class="text-center space-y-1">
+<h3 class="text-headline-sm font-headline-sm text-on-background">Preguntas Frecuentes</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Resolvemos tus principales inquietudes antes de tu cita</p>
+</div>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/30 transition-colors">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Cuánto tiempo de incapacidad se requiere?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Gracias a nuestras técnicas de preservación tisular e instrumental de última generación, los tiempos de reposo se minimizan considerablemente. La mayoría de los pacientes retoman labores de escritorio o vida cotidiana entre el 5º y el 8º día, según el procedimiento realizado.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/30 transition-colors">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿El presupuesto es cerrado o hay sobrecostos?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            El presupuesto entregado tras la valoración es 100% integral y cerrado. Incluye honorarios quirúrgicos, derechos de clínica de nivel IV, equipo de anestesiología, controles postoperatorios y póliza de seguro médico de complicaciones.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/30 transition-colors">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Cómo funciona para pacientes internacionales?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Contamos con un protocolo exclusivo: realizamos primero una videoconsulta diagnóstica 1 a 1, coordinamos exámenes de laboratorio previos, y nuestro departamento de conserjería asiste con hospedaje médico, transporte y enfermería privada durante tu estancia en Bogotá.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:border-primary/30 transition-colors">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none">
+<span>¿Cuáles son los cuidados previos necesarios?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 leading-relaxed">
+            Se realiza un paquete completo de exámenes de sangre, valoración cardiovascular y anestésica previa. Recomendamos evitar consumo de tabaco y antiinflamatorios dos semanas antes de la intervención.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component JSON Source of Truth) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface docked full-width flat no shadows">
+<div class="flex flex-col items-center text-center w-full px-space-md py-space-xl pb-28 max-w-7xl mx-auto space-y-space-md">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary">Dra. Laura Cala</span>
+</div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Aviso Legal y Consentimientos</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Política de Privacidad y Tratamiento de Datos</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Sociedad Colombiana de Cirugía Plástica (SCCP)</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Directorio Médico Verificado</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant max-w-2xl">
+        © 2024 Dra. Laura Cala Cirugía Plástica Estética y Reconstructiva. Vigilado Supersalud Colombia. Registro Médico No. 10204882. Sociedad Colombiana de Cirugía Plástica (SCCP). Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component JSON Source of Truth) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-space-xs bg-surface-container-lowest/90 backdrop-blur-lg dark:bg-inverse-surface/90 shadow-lg docked full-width bottom-0">
+<!-- WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="https://wa.me/573126608820">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm">WhatsApp</span>
+</a>
+<!-- Procedimientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="#procedimiento">
+<span class="material-symbols-outlined text-lg" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm">Procedimientos</span>
+</a>
+<!-- Testimonios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 transition-colors duration-200 hover:text-primary active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="rate_review">rate_review</span>
+<span class="text-label-sm font-label-sm">Testimonios</span>
+</a>
+<!-- Agendar (Active Navigation Item based on page conversion goal) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container dark:bg-primary-container dark:text-on-primary-container rounded-full px-3 py-1.5 transition-all duration-200 active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dra-laura-cala" width="1" height="1" style="display:none" alt="">
+</body></html>
