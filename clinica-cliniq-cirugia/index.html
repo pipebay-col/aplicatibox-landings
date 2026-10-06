@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cliniq Cirugía Plástica &amp; Estética | Embudo Clínico de Alta Precisión</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#5f706e",
+            "inverse-primary": "#7ad7c8",
+            "on-error-container": "#93000a",
+            "on-secondary-container": "#706050",
+            "surface-bright": "#f3fbf8",
+            "on-tertiary-fixed-variant": "#3a4a48",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#3e4947",
+            "surface-container": "#e7f0ec",
+            "primary-fixed-dim": "#7ad7c8",
+            "surface-tint": "#006a60",
+            "inverse-surface": "#2a3230",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#0e1e1d",
+            "tertiary-fixed": "#d4e6e3",
+            "on-background": "#151d1b",
+            "on-error": "#ffffff",
+            "on-primary-container": "#a8fff0",
+            "error": "#ba1a1a",
+            "secondary-container": "#f1dcc8",
+            "secondary": "#6b5c4c",
+            "on-primary-fixed-variant": "#005048",
+            "on-surface": "#151d1b",
+            "secondary-fixed-dim": "#d7c3b0",
+            "primary-container": "#007a6e",
+            "secondary-fixed": "#f4dfcb",
+            "background": "#f3fbf8",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface": "#f3fbf8",
+            "on-secondary-fixed-variant": "#524436",
+            "primary": "#005f55",
+            "surface-container-low": "#edf6f2",
+            "on-secondary-fixed": "#241a0d",
+            "tertiary": "#475855",
+            "on-primary-fixed": "#00201c",
+            "outline-variant": "#bdc9c6",
+            "surface-container-high": "#e1eae6",
+            "surface-dim": "#d3dcd8",
+            "on-tertiary-container": "#e1f3f0",
+            "inverse-on-surface": "#eaf3ef",
+            "tertiary-fixed-dim": "#b8cac7",
+            "surface-container-highest": "#dce4e1",
+            "outline": "#6e7977",
+            "primary-fixed": "#96f3e4",
+            "surface-variant": "#dce4e1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-lg": "4rem",
+            "margin-sm": "1rem",
+            "gutter-sm": "1rem",
+            "space-xl": "2.5rem",
+            "gutter-lg": "2.5rem",
+            "space-lg": "1.5rem",
+            "margin": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "4rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-xl": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-xl": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "500" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-primary min-h-screen flex flex-col font-body-md text-body-md pb-24">
+<!-- TOP APP BAR (Shared Components JSON Anchor) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-sm py-space-sm bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-sm dark:shadow-none border-b border-outline-variant/30 dark:border-outline-variant/10">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-[26px]">local_hospital</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary dark:text-inverse-primary font-semibold">Cliniq</span>
+</div>
+<!-- Desktop nav links hidden on mobile per responsive pivot rules -->
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-primary dark:text-inverse-primary font-semibold hover:text-primary-container transition-colors font-label-md text-label-md" href="#procedimientos">Cirugías</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#proceso">Proceso Clínico</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#testimonios">Casos Reales</a>
+<a class="text-on-surface-variant dark:text-tertiary-fixed-dim hover:text-primary transition-colors font-label-md text-label-md" href="#faq">Garantías</a>
+</nav>
+<div class="flex items-center space-x-2">
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg transition-transform duration-150 active:scale-[0.98] shadow-sm flex items-center gap-1.5" href="#agendar">
+<span>Valoración</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- MAIN CANVAS (AIDA FLOW) -->
+<main class="flex-grow w-full max-w-4xl mx-auto px-4 pt-20">
+<!-- ========================================== -->
+<!-- 1. ETAPA A - ATENCIÓN (HERO DE ALTO IMPACTO) -->
+<!-- ========================================== -->
+<section class="pt-4 pb-12 flex flex-col items-center text-center">
+<!-- Badge Oficial MinSalud / SCCP -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#DCEEEB] text-primary border border-primary/20 shadow-xs mb-4">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm tracking-wide">Habilitación MinSalud Res. 3100 · Cirujanos Miembros SCCP Colombia</span>
+</div>
+<!-- Titular Promesa en 3 Segundos -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background tracking-tight max-w-2xl mb-4 font-semibold">
+        Tu belleza en su versión más <span class="italic font-normal text-primary">armónica y natural</span>, con rigor médico y seguridad quirúrgica en Colombia.
+      </h1>
+<!-- Subtítulo de Resultado Específico -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-6 leading-relaxed">
+        Procedimientos de contorno corporal, rinoplastia estructural y rejuvenecimiento facial en Clínica Cliniq. Resultados milimétricos y elegantes que realzan tu fisonomía sin apariencias artificiales ni incapacidad prolongada.
+      </p>
+<!-- Fotografía Editorial Real del Equipo Médico (Placeholder Solicitado) -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md border border-[#E8E2D9] mb-6 bg-surface-container-low">
+<img alt="Especialistas quirúrgicos de Cliniq en consulta privada" class="w-full h-auto aspect-[4/3] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1WPf4qEnMaEy2G9GwBPMNZJTheGdjgN_GpGlsyud53yS238xPhaRbmC0ozpetIwIGasoRDIFY8XEgkyALdGAkgB7eN1xMSX3_kDIg0z6BpPrfi9vbhDeo51VHnjpOrvw2m9NFeifX2E3fDXPE8nH7rruNdJilQ8BY2oxbrj5l2zyR8nG49BBoGVWj8YypWF-zwlQfE4zxUu_t95rVNM6Z5NMZyslUvPd7aqkSxZMZ5lxzwO2OclcESPYrk"/>
+<!-- Pill Flotante de Credencial -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md py-2.5 px-3.5 rounded-xl border border-white/60 shadow-sm flex items-center justify-between gap-2 text-left">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<div class="leading-tight">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Equipo Quirúrgico Certificado Cliniq</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Valoración 1 a 1 personalizada | SCCP</p>
+</div>
+</div>
+<span class="shrink-0 bg-primary/10 text-primary px-2 py-0.5 rounded text-[11px] font-semibold tracking-wider">SEDES BOG/MDE</span>
+</div>
+</div>
+<!-- CTA Principal Hero -->
+<div class="w-full max-w-md space-y-3">
+<a class="w-full flex items-center justify-center gap-2 bg-primary-container hover:bg-[#006359] text-on-primary py-3.5 px-6 rounded-xl font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98]" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Micro-credenciales de fricción cero -->
+<p class="font-label-sm text-label-sm text-tertiary flex items-center justify-center gap-1.5 text-center">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+          Respuesta en menos de 24 horas · Sin cobros ocultos · Plan 100% individualizado
+        </p>
+</div>
+<!-- Fila de 3 Sellos de Confianza Quirúrgica -->
+<div class="grid grid-cols-3 gap-2 w-full mt-8 pt-6 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-lowest border border-[#E8E2D9]">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">domain_add</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-semibold">Quirófanos Nivel IV</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-lowest border border-[#E8E2D9]">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">healing</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-semibold">Preservación Anatómica</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-lowest border border-[#E8E2D9]">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1">hotel_class</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-semibold">Atención VIP Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. ETAPA I - INTERÉS (EMPATÍA Y RUTA CLÍNICA) -->
+<!-- ========================================== -->
+<section class="py-10 space-y-8" id="proceso">
+<!-- Miedos del Paciente vs Certeza Médica Cliniq -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-[#DDD6CC] shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-3 mb-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology_alt</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Tranquilidad &amp; Respaldo Quirúrgico</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+              ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+            </h2>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed pl-12">
+          En Clínica Cliniq entendemos que la cirugía estética no es vanidad efímera: es arquitectura corporal y salud emocional. Aplicamos el principio de proporción áurea, análisis milimétrico y preservación de tejidos vitales para lograr sobriedad, frescura y tranquilidad emocional absoluta.
+        </p>
+</div>
+<!-- El Proceso Quirúrgico en 3 Pasos Tangibles -->
+<div>
+<div class="text-center mb-6">
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Ruta de Transformación Asistida</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Tu experiencia en tres pasos certeros</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">De la primera consulta a tu recuperación guiada sin incertidumbres</p>
+</div>
+<div class="space-y-4">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-primary font-headline-sm text-headline-sm font-semibold tracking-tighter">01</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Diagnóstico</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Valoración y Mapeo Anatómico 3D</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Simulación tridimensional y palpación quirúrgica con el especialista principal para proyectar cambios exactos.
+            </p>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Beneficio: Certeza clínica y expectativas 100% claras antes de decidir.</span>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-primary font-headline-sm text-headline-sm font-semibold tracking-tighter">02</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/60 text-secondary font-label-sm text-label-sm">Certeza Financiera</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Plan Quirúrgico y Presupuesto Cerrado</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Cotización definitiva por escrito con quirófano nivel IV, anestesiología, fajas, medicamentos y todas las citas de control postoperatorio.
+            </p>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Beneficio: Transparencia financiera total, cero cobros imprevistos.</span>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-primary font-headline-sm text-headline-sm font-semibold tracking-tighter">03</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Recuperación</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Cirugía de Precisión y Recuperación Guiada</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Técnica mínimamente invasiva con drenajes linfáticos avanzados, hiperbárica y concierge médico disponible las 24 horas del día.
+            </p>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center gap-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>Beneficio: Retorno cómodo y seguro a tu vida diaria con monitoreo 24/7.</span>
+</div>
+</div>
+</div>
+<!-- Chat asistido rápido -->
+<div class="text-center mt-5">
+<a class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md hover:underline underline-offset-4" href="https://wa.me/573124732098?text=Hola,%20deseo%20información%20sobre%20las%20cirugías%20en%20Cliniq" target="_blank">
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. ETAPA D - DESEO (AUTORIDAD, BENEFICIOS Y PRUEBA SOCIAL) -->
+<!-- ========================================== -->
+<section class="py-10 space-y-10" id="testimonios">
+<!-- Métricas de Autoridad Quirúrgica -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-[#DDD6CC] text-center shadow-xs">
+<p class="font-headline-md text-headline-md text-primary font-bold">+15 Años</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Trayectoria Quirúrgica</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-[#DDD6CC] text-center shadow-xs">
+<p class="font-headline-md text-headline-md text-primary font-bold">+4.800</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Cirugías Exitosas</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-[#DDD6CC] text-center shadow-xs">
+<p class="font-headline-md text-headline-md text-primary font-bold">99.4%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Satisfacción Verificada</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-[#DDD6CC] text-center shadow-xs">
+<p class="font-headline-md text-headline-md text-primary font-bold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Acreditación SCCP &amp; MinSalud</p>
+</div>
+</div>
+<!-- Bento Grid de Beneficios Tangibles -->
+<div class="space-y-4" id="procedimientos">
+<div class="text-center">
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Por qué elegirnos</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Cirugía con criterio estético de alta costura</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Beneficio 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Armonía y sutileza absoluta</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Proporciones equilibradas sin rigidez, rostros con mímica intacta y contornos sin aspecto artificial u operado.
+              </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined">flare</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Preservación de tejidos y pronta recuperación</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Técnicas microquirúrgicas y ultrasonido que minimizan inflamación, hematomas y tiempos de reposo.
+              </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Quirófanos certificados de alta complejidad</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Intervenciones exclusivamente en instituciones acreditadas con anestesiólogos SCCP.
+              </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] flex gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined">travel_explore</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Acompañamiento VIP integral</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Línea de seguimiento directo 24/7 y asistencia especializada para pacientes que viajan desde otras ciudades o el exterior.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Breves Verificados -->
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Historias de satisfacción real</h4>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.9 / 5.0 en Google Reviews
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] relative flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+                "Buscaba una rinoplastia que armonizara mi perfil sin que se notara operada. En Cliniq el doctor me escuchó con paciencia y respetó totalmente mis facciones. Mi respiración y mi autoestima dieron un salto enorme."
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Camila R.</span>
+<span class="font-label-sm text-label-sm text-tertiary">Rinoplastia Ultrasónica · Bogotá</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-[#E8E2D9] relative flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+                "Viajé desde Miami para mi contorno corporal. Todo el protocolo de fajas, masajes linfáticos y controles fue milimétrico. El presupuesto cerrado me dio paz y los resultados son completamente atléticos y naturales."
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dra. Valentina O.</span>
+<span class="font-label-sm text-label-sm text-tertiary">Lipoescultura HD · Medellín</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. ETAPA A - ACCIÓN (FORMULARIO Y WHATSAPP) -->
+<!-- ========================================== -->
+<section class="py-10" id="agendar">
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-primary/20 shadow-xl relative overflow-hidden">
+<!-- Micro-Badge de Urgencia Serena -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/60 text-on-secondary-container border border-secondary/20 mb-3">
+<span class="material-symbols-outlined text-[15px]">event_available</span>
+<span class="font-label-sm text-label-sm font-semibold">Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">
+          Inicia hoy tu transformación con seguridad médica
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          Completa tus datos para agendar tu consulta diagnóstica presencial o telemedicina con el especialista.
+        </p>
+<!-- Formulario Quirúrgico Minimalista -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Cliniq se comunicará contigo en menos de 24 horas.');">
+<div>
+<label class="block font-label-md text-label-md uppercase text-secondary mb-1">Nombre y Apellido *</label>
+<input class="w-full bg-white border border-[#DDD6CC] rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="Ej. Sofía Restrepo" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase text-secondary mb-1">WhatsApp o Celular (+57) *</label>
+<input class="w-full bg-white border border-[#DDD6CC] rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase text-secondary mb-1">¿Qué procedimiento te interesa? *</label>
+<select class="w-full bg-white border border-[#DDD6CC] rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" required="">
+<option disabled="" selected="" value="">Selecciona tu cirugía de interés</option>
+<option value="rinoplastia">Rinoplastia Estructural / Ultrasónica</option>
+<option value="lipoescultura">Lipoescultura HD &amp; Contorno Corporal</option>
+<option value="mamas">Aumento o Reafirmación Mamaria</option>
+<option value="facial">Rejuvenecimiento Facial / Blefaroplastia</option>
+<option value="otro">Otro procedimiento / Valoración Integral</option>
+</select>
+</div>
+<!-- Botón Primario de Alto Contraste -->
+<button class="w-full bg-primary-container hover:bg-[#006359] text-on-primary font-label-lg text-label-lg py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-transform active:scale-[0.98] flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Separador de Vía Directa -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/30"></div></div>
+<span class="relative px-3 bg-surface-container-lowest text-xs text-on-surface-variant uppercase font-medium">o atención prioritaria</span>
+</div>
+<!-- Botón Directo WhatsApp Oficial -->
+<a class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-primary/30 text-primary hover:bg-primary/5 font-label-md text-label-md transition-colors" href="https://wa.me/573124732098?text=Hola,%20quisiera%20agendar%20mi%20cita%20de%20valoración%20en%20Cliniq" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Chatear directo al WhatsApp (+57 312 473 2098)</span>
+</a>
+<!-- Nota Legal y de Confidencialidad -->
+<p class="font-body-sm text-body-sm text-tertiary text-center mt-4 leading-normal">
+<span class="material-symbols-outlined text-[13px] align-middle text-primary">lock</span>
+          Tus datos están 100% protegidos bajo secreto médico profesional y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. TRANSPARENCIA & SOPORTE (FAQ ACORDEÓN) -->
+<!-- ========================================== -->
+<section class="py-8 space-y-4" id="faq">
+<div class="text-center mb-4">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Preguntas Frecuentes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resolvemos tus inquietudes antes de dar el primer paso</p>
+</div>
+<div class="space-y-3">
+<!-- Item 1 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-[#DDD6CC] p-4 transition-all">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none font-semibold">
+<span>¿Cuánto tiempo de incapacidad se requiere usualmente?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Gracias al uso de ultrasonido y técnicas de preservación anatómica, la mayoría de nuestros pacientes se reintegran a actividades de oficina entre los días 5 y 8 posteriores al procedimiento, con apoyo de fajas anatómicas y seguimiento diario.
+          </p>
+</details>
+<!-- Item 2 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-[#DDD6CC] p-4 transition-all">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none font-semibold">
+<span>¿El presupuesto pactado en la valoración es definitivo?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Absolutamente sí. En Cliniq emitimos presupuestos cerrados que incluyen derechos de sala de cirugía Nivel IV, honorarios del equipo quirúrgico y anestesiólogo, insumos, fajas postquirúrgicas, póliza de complicaciones y todos los controles posteriores.
+          </p>
+</details>
+<!-- Item 3 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-[#DDD6CC] p-4 transition-all">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none font-semibold">
+<span>¿Atienden pacientes internacionales o de otras regiones?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Sí. Contamos con un programa de Concierge Quirúrgico Internacional que incluye teleconsulta diagnóstica, coordinación de estadía en hoteles con enfermería aliada, transporte privado y acompañamiento bilingüe durante tu estancia en Bogotá o Medellín.
+          </p>
+</details>
+<!-- Item 4 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-[#DDD6CC] p-4 transition-all">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface cursor-pointer list-none font-semibold">
+<span>¿Dónde se realizan las cirugías?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Todas las intervenciones se efectúan exclusivamente en clínicas y centros hospitalarios de alta complejidad habilitados por el Ministerio de Salud de Colombia con quirófanos nivel IV y unidades de cuidado intensivo disponibles.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- FOOTER (Shared Components JSON Anchor) -->
+<!-- ========================================== -->
+<footer class="w-full mb-16 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/10 text-primary dark:text-inverse-primary">
+<div class="flex flex-col items-center text-center px-margin-sm py-space-xl space-y-space-md max-w-4xl mx-auto">
+<!-- Brand Logo Anchor -->
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-[28px]">local_hospital</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold">Cliniq</span>
+</div>
+<!-- Links mandated by JSON -->
+<div class="flex flex-wrap justify-center gap-y-2 gap-x-4 text-on-surface-variant dark:text-tertiary-fixed-dim font-label-md text-label-md">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#agendar">Habilitación MinSalud</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#proceso">Miembros SCCP</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#agendar">Política de Privacidad Ley 1581</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#agendar">Consentimiento Informado</a>
+</div>
+<!-- Sedes & Credenciales Oficiales -->
+<div class="font-body-sm text-body-sm text-on-surface-variant max-w-lg space-y-1">
+<p class="font-medium text-on-surface">Sede Chicó Reservado: Cra. 14 # 94-44, Bogotá D.C.</p>
+<p class="font-medium text-on-surface">Sede El Poblado: Cra. 43A # 1-50, Medellín, Antioquia</p>
+</div>
+<!-- Copyright mandated string verbatim -->
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 max-w-md">
+        © 2024 Cliniq Cirugía Plástica &amp; Estética. Habilitación MinSalud Res. 3100. Sedes Chicó Reservado (Bogotá) y El Poblado (Medellín).
+      </p>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- BOTTOM NAV BAR (Shared Components JSON Anchor) -->
+<!-- Mobile-only ergonomía táctil -->
+<!-- ========================================== -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs pb-safe bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-lg dark:shadow-none border-t border-outline-variant/40 dark:border-outline-variant/10">
+<!-- Item 1: Inicio (Active state matched by JSON specification) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold bg-surface-container-low dark:bg-surface-container-highest rounded-xl px-space-xs py-1 active:scale-[0.96] transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-0.5">Inicio</span>
+</a>
+<!-- Item 2: Cirugías -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-tertiary-fixed-dim px-space-xs py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.96]" href="#procedimientos">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+<span class="font-label-sm text-label-sm mt-0.5">Cirugías</span>
+</a>
+<!-- Item 3: Casos Reales -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-tertiary-fixed-dim px-space-xs py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.96]" href="#testimonios">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm mt-0.5">Casos Reales</span>
+</a>
+<!-- Item 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-tertiary-fixed-dim px-space-xs py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.96]" href="#agendar">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span class="font-label-sm text-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/clinica-cliniq-cirugia" width="1" height="1" style="display:none" alt="">
+</body></html>

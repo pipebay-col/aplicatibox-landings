@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Almapranaspa Medellín | Spa de Autor &amp; Bienestar Integral El Poblado</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#181c20",
+            "secondary-container": "#76f4e0",
+            "tertiary": "#634306",
+            "primary-fixed": "#9ef2e6",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#005047",
+            "on-tertiary-fixed": "#281800",
+            "on-secondary-fixed": "#00201c",
+            "on-secondary": "#ffffff",
+            "on-background": "#181c20",
+            "secondary-fixed": "#79f7e3",
+            "on-primary-fixed-variant": "#005049",
+            "on-secondary-container": "#006f63",
+            "on-tertiary-container": "#ffd69b",
+            "surface-dim": "#d7dadf",
+            "outline": "#6e7977",
+            "outline-variant": "#bec9c6",
+            "secondary-fixed-dim": "#59dbc7",
+            "surface-variant": "#e0e3e8",
+            "surface-container-high": "#e5e8ee",
+            "on-primary-fixed": "#00201d",
+            "inverse-on-surface": "#eef1f6",
+            "tertiary-fixed": "#ffddaf",
+            "on-tertiary-fixed-variant": "#604104",
+            "primary-container": "#006d64",
+            "surface": "#f7f9ff",
+            "inverse-surface": "#2d3135",
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-error": "#ffffff",
+            "inverse-primary": "#82d5ca",
+            "background": "#faf9f6",
+            "primary-fixed-dim": "#82d5ca",
+            "on-surface-variant": "#3e4947",
+            "surface-container-low": "#f1f4f9",
+            "error": "#ba1a1a",
+            "secondary": "#006b5f",
+            "tertiary-container": "#7e5a1e",
+            "primary": "#00534c",
+            "surface-container-highest": "#e0e3e8",
+            "surface-bright": "#f7f9ff",
+            "surface-tint": "#006a62",
+            "on-primary-container": "#98ebe0",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#eebf79",
+            "surface-container": "#ebeef3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.75rem",
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+      -webkit-font-smoothing: antialiased;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#faf9f6] text-on-surface antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Mobile Container Boundary (Mobile-first, max-w-md centered for preview) -->
+<div class="max-w-md mx-auto min-h-screen bg-[#faf9f6] relative flex flex-col pb-28 shadow-xl">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-margin-mobile py-space-sm w-full max-w-md mx-auto bg-surface/85 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa" data-weight="fill" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary">Almapranaspa</span>
+</div>
+<a class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-transform duration-150 shadow-sm hover:opacity-95" href="#reservar">
+        Agendar
+      </a>
+</header>
+<!-- CONTENT WRAPPER -->
+<main class="pt-16 flex-1 flex flex-col">
+<!-- ============================================== -->
+<!-- A - ATENCIÓN: HERO & FIRST IMPRESSION -->
+<!-- ============================================== -->
+<section class="px-margin-mobile pt-5 pb-space-lg flex flex-col">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 border border-outline-variant/40 text-on-secondary-container w-fit mb-3">
+<span class="font-label-caps text-label-caps text-primary uppercase">✦ Spa de Autor &amp; Bienestar Integral · Sede El Poblado, Medellín</span>
+</div>
+<!-- Potent 3-Second Benefit Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-primary tracking-tight mb-3">
+          Renueva tu cuerpo, reconecta con tu bienestar más profundo en Medellín
+        </h1>
+<!-- Specific Outcome Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+          Rituales de relajación profunda, masajes terapéuticos de autor y cuidado botánico diseñados a la medida de tu cuerpo para disolver la tensión y revitalizar tu energía sin prisas.
+        </p>
+<!-- Visual Hero Card with Exact Asset Provided -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 mb-5 bg-surface-container-high aspect-[4/3]">
+<img alt="Terapeuta experta realizando masaje facial holístico y relajación en Almapranaspa El Poblado Medellín" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjkkGE468F5IPAeSSD1RgSNfhHjEaAIV86a47OgT0Zx-AgzxB6IBEIDfCMt8-R-PErxsBuyjm3Gux4fBrWiSPKeJIDQLu6DnIRmeB_TfblRrCy8qfy7suesRblNiDD4AAvPn2R0xJgzdIAKJTUDQsGCFY3aI2o7LyeFzmz7xUEj04V87aqumLvUWYfQlyu9rhBBRfg_sgyciX5IshOZJhyopDnUMOIODpvFCbS3S9bY29_4woiGurjay5Ze7QC5TMhOFxpUZw1I7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<!-- Floating Credential Card -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2.5 rounded-2xl border border-outline-variant/30 flex items-center gap-2.5 shadow-md">
+<span class="material-symbols-outlined text-primary" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold leading-tight">Experiencia Signature Almaprana</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">100% Personalizado en cabina privada</p>
+</div>
+</div>
+</div>
+<!-- High-Contrast Primary CTA -->
+<div class="flex flex-col gap-2 mb-6">
+<a class="w-full py-3.5 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md text-center shadow-[0_8px_20px_rgba(0,109,100,0.22)] active:scale-95 transition-all duration-200 flex items-center justify-center gap-2" href="#reservar">
+<span>Agendar ahora mi valoración</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Sin costo adicional</span>
+</p>
+</div>
+<!-- Quick Trust Grid (3 Badges) -->
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-caps text-label-caps text-on-surface leading-tight">Protocolos Seguros</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Norma Sanitaria</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="school">school</span>
+<span class="font-label-caps text-label-caps text-on-surface leading-tight">Terapeutas Certificadas</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">+8 Años Exp.</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="meeting_room">meeting_room</span>
+<span class="font-label-caps text-label-caps text-on-surface leading-tight">Cabinas Privadas</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Aislamiento Acústico</span>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- I - INTERÉS: DOLOR EMPÁTICO & PROCESO 3 PASOS -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg bg-[#f3fbf8] border-y border-outline-variant/30 flex flex-col" id="proceso">
+<div class="mb-4">
+<span class="font-label-caps text-label-caps text-primary uppercase">Cuidado Consciente</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1">
+            ¿El estrés, la rutina o la tensión muscular están apagando tu bienestar?
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+          Las exigencias cotidianas en Medellín, las horas prolongadas frente a pantallas y la fatiga postural cargan silenciosamente tus hombros, cuello y zona lumbar. Con frecuencia dejamos para después el descanso, sintiendo cómo se apaga la vitalidad física y la luminosidad natural del rostro.
+        </p>
+<!-- Quote from Almapranaspa Sanctuary -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border-l-4 border-primary shadow-sm mb-6">
+<p class="font-headline-sm italic text-sm text-primary leading-snug">
+            "Almaprana nació en El Poblado como un santuario donde el tiempo se detiene. Aquí no aplicamos fórmulas en serie: escuchamos el lenguaje de tu cuerpo para devolverte ligereza real."
+          </p>
+<span class="block mt-2 font-label-caps text-label-caps text-on-surface-variant">— Dirección Terapéutica Almapranaspa</span>
+</div>
+<!-- 3-Step Process -->
+<h3 class="font-title-lg text-title-lg text-on-surface mb-3 flex items-center gap-2">
+<span>Nuestro proceso terapéutico de autor</span>
+</h3>
+<div class="space-y-3">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<span class="font-display-hero-mobile text-2xl font-bold text-primary/80 leading-none">01</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Valoración y Escucha Personalizada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Beneficio tangible:</strong> Cero tratamientos genéricos de catálogo. Analizamos tus zonas exactas de contractura, nivel de estrés y necesidades dérmicas antes de comenzar.
+              </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<span class="font-display-hero-mobile text-2xl font-bold text-primary/80 leading-none">02</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Plan y Ritual a tu Medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Beneficio tangible:</strong> Combinación de aceites botánicos puros prensados en frío, termoterapia suave y maniobras manuales descontracturantes con tiempos reales y sin afanes.
+              </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<span class="font-display-hero-mobile text-2xl font-bold text-primary/80 leading-none">03</span>
+<div>
+<h4 class="font-title-md text-title-md text-primary">Renovación Visible y Duradera</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Beneficio tangible:</strong> Alivio muscular profundo desde la primera sesión, descompresión postural y una piel visiblemente luminosa e hidratada que perdura semanas.
+              </p>
+</div>
+</div>
+</div>
+<!-- Micro WhatsApp Consultation Hook -->
+<div class="mt-4 text-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:underline" href="https://wa.me/573003423075?text=Hola%20Almapranaspa,%20tengo%20dudas%20sobre%20qué%20ritual%20elegir" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre qué ritual elegir? Consúltanos vía WhatsApp</span>
+</a>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- D - DESEO: MÉTRICAS, BENEFICIOS & TESTIMONIOS -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg flex flex-col" id="beneficios">
+<!-- Trust Metrics Grid -->
+<div class="grid grid-cols-2 gap-2.5 mb-6">
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 shadow-sm text-center">
+<span class="block font-headline-md text-headline-md font-semibold text-primary">+8 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">de Trayectoria Médica &amp; Spa</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 shadow-sm text-center">
+<span class="block font-headline-md text-headline-md font-semibold text-primary">+5.200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clientes Satisfechos</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 shadow-sm text-center">
+<div class="flex items-center justify-center gap-1 text-primary">
+<span class="font-headline-md text-headline-md font-semibold">4.9</span>
+<span class="material-symbols-outlined text-amber-500 text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calificación en Google</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/30 shadow-sm text-center">
+<span class="block font-headline-md text-headline-md font-semibold text-primary">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insumos Botánicos Puros</span>
+</div>
+</div>
+<!-- 4 Key Result-Driven Benefits -->
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-primary uppercase">Efectos Reales</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1 mb-4">
+            Resultados tangibles desde tu primera visita
+          </h2>
+<div class="space-y-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<div class="p-2 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="healing">healing</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">1. Alivio inmediato de contracturas y tensión profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Técnicas manuales precisas aplicadas anatómicamente en cuello, trapecios y lumbares para restaurar tu rango de movimiento.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<div class="p-2 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">2. Piel luminosa, hidratada y revitalizada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Fitocosmética orgánica rica en antioxidantes y sueros botánicos que devuelven tersura y tono radiante a tu piel.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<div class="p-2 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">3. Desconexión mental y reducción del cortisol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aromaterapia de grado terapéutico y atmósfera insonorizada diseñada para inducir un estado de calma neurológica total.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm flex items-start gap-3">
+<div class="p-2 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">4. Experiencia sensorial en cabinas individuales boutique</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Toallas de alto gramaje, temperatura ambiental cuidadosamente regulada e infusión herbal de cortesía al culminar.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Testimonials in Medellín -->
+<div class="mb-2">
+<span class="font-label-caps text-label-caps text-primary uppercase">Experiencias Verificadas</span>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-1 mb-3">La voz de nuestras visitantes</h3>
+<div class="space-y-3">
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-title-md text-title-md text-primary">Camila Echeverri</span>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                "Vivo en El Poblado y después de semanas de trabajo intenso el ritual descontracturante fue como volver a nacer. El ambiente es íntimo, cero ruidos de la ciudad y el trato de la terapeuta fue impecable."
+              </p>
+<span class="block mt-1 font-label-sm text-label-sm text-outline">Visita verificada · Ritual Almaprana Signature</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-title-md text-title-md text-primary">Valeria Jaramillo</span>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                "El facial botánico superó mis expectativas. Mi piel quedó con un brillo saludable que duró varios días sin ninguna rojez. La atención al detalle en cada momento hace que valga cada minuto."
+              </p>
+<span class="block mt-1 font-label-sm text-label-sm text-outline">Visita verificada · Cuidado Facial Glow</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- A - ACCIÓN: FORMULARIO DE CONVERSIÓN & WHATSAPP -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-low border-t border-outline-variant/30" id="reservar">
+<!-- Urgency Badge Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-5 border border-outline-variant/40 shadow-lg relative">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container/60 text-error mb-3 border border-error/20">
+<span class="material-symbols-outlined text-sm" data-icon="hourglass_top">hourglass_top</span>
+<span class="font-label-caps text-label-caps uppercase">Cupos limitados por agenda personalizada esta semana en El Poblado</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-1">
+            Empieza hoy tu ritual de bienestar y renovación
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5">
+            Diligencia tus datos para apartar tu horario de valoración y recibir la confirmación personalizada por WhatsApp.
+          </p>
+<!-- Minimalist 3-Field Lead Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Nuestro equipo en El Poblado te contactará en breve vía WhatsApp.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Nombre y Apellido</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant text-on-surface placeholder:text-outline text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Ej. Mariana Restrepo" required="" type="text"/>
+</div>
+<!-- Field 2: Phone with prefix -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">WhatsApp o Celular</label>
+<div class="flex">
+<span class="inline-flex items-center px-3.5 rounded-l-xl border border-r-0 border-outline-variant bg-surface-container text-on-surface-variant font-label-md text-label-md">
+                  🇨🇴 +57
+                </span>
+<input class="w-full px-4 py-3 rounded-r-xl bg-surface-container-lowest border border-outline-variant text-on-surface placeholder:text-outline text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" pattern="[0-9]{10}" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Experience Selector -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">¿Qué experiencia te interesa?</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant text-on-surface text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none">
+<option value="descontracturante">Ritual Descontracturante Profundo</option>
+<option value="relajante">Masaje Relajante &amp; Aromaterapia</option>
+<option value="facial">Cuidado Facial Botánico Glow</option>
+<option value="pareja">Experiencia Spa en Pareja</option>
+<option value="valoracion">Valoración Integral</option>
+</select>
+</div>
+<!-- Main High-Contrast Button -->
+<button class="w-full py-3.5 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md text-center shadow-md active:scale-95 transition-all duration-150 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Alternative Direct WhatsApp Connector -->
+<div class="relative my-5 flex items-center justify-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/30"></div>
+</div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline uppercase">o si prefieres agendar ya</span>
+</div>
+<a class="w-full py-3 px-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-title-md text-sm text-center shadow-sm active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" href="https://wa.me/573003423075?text=Hola%20Almapranaspa,%20deseo%20agendar%20mi%20cita%20de%20bienestar%20en%20El%20Poblado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 342 3075)</span>
+</a>
+<!-- Privacy Notice Micro-Text -->
+<p class="text-center font-body-sm text-[11px] text-outline mt-4 leading-normal">
+            🔒 Tus datos están 100% protegidos bajo secreto profesional y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- FAQ: PREGUNTAS FRECUENTES (Acordeones Nativos) -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg flex flex-col">
+<span class="font-label-caps text-label-caps text-primary uppercase">Claridad y Confianza</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1 mb-4">
+          Preguntas Frecuentes
+        </h2>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-3.5 shadow-sm transition-all duration-200">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cuánto dura cada sesión en Almaprana?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-2.5 leading-relaxed">
+              Nuestros rituales tienen una duración entre 60 y 90 minutos efectivos en cabina, más 15 minutos complementarios de bienvenida aromática, valoración inicial e infusión herbal al finalizar.
+            </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-3.5 shadow-sm transition-all duration-200">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Con cuánta anticipación debo reservar mi cita?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-2.5 leading-relaxed">
+              Para garantizar cabina privada y terapeuta exclusiva recomendamos reservar con 24 a 48 horas de antelación, especialmente para horarios vespertinos y fines de semana en nuestra sede El Poblado.
+            </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-3.5 shadow-sm transition-all duration-200">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Tienen opciones de gift cards o paquetes especiales?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-2.5 leading-relaxed">
+              Sí, contamos con elegantes bonos físicos de lujo y Gift Cards digitales personalizadas para fechas especiales, aniversarios, cumpleaños o regalos corporativos de bienestar.
+            </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-3.5 shadow-sm transition-all duration-200">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Qué protocolos de higiene y bioseguridad manejan?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-2.5 leading-relaxed">
+              Operamos bajo estricto cumplimiento de los estándares de la Secretaría Seccional de Salud de Antioquia. Cada cabina es sanitizada exhaustivamente entre citas, utilizamos sábanas y protectores individuales estériles y aceites orgánicos sellados.
+            </div>
+</details>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- FOOTER (Shared Component Anchor) -->
+<!-- ============================================== -->
+<footer class="w-full px-margin-mobile pt-space-xl pb-24 flex flex-col items-center text-center gap-space-md max-w-md mx-auto bg-surface-container-low border-t border-outline-variant/20">
+<!-- Logo / Brand -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary">Almapranaspa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+          Santuario de autor dedicado a la recuperación corporal, armonía holística y bienestar integral en el corazón verde de El Poblado.
+        </p>
+<!-- Legal Links verbatim from JSON -->
+<div class="flex flex-wrap justify-center gap-x-3 gap-y-2 text-on-surface-variant font-label-caps text-label-caps">
+<a class="hover:text-primary transition-colors duration-200" href="#">Políticas de Privacidad (Ley 1581)</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#">Términos y Condiciones</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#">Protocolos de Bioseguridad</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#">Acreditación Sanitaria</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#">Contacto El Poblado</a>
+</div>
+<!-- Copyright Text verbatim from JSON -->
+<div class="border-t border-outline-variant/30 pt-4 w-full">
+<p class="font-body-sm text-[11px] text-outline">
+            © 2024 Almapranaspa Medellín. Registro Seccional de Salud Antioquia | Sede El Poblado, Medellín, Colombia.
+          </p>
+</div>
+</footer>
+</main>
+<!-- BOTTOM NAVBAR (Shared Component Anchor - Active on 'Agendar' intent) -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center px-gutter-mobile py-space-xs w-full max-w-md mx-auto bg-surface/90 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,109,100,0.06)]">
+<!-- Tab 1: Rituales -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-all hover:text-primary active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="self_improvement">self_improvement</span>
+<span class="font-label-sm text-label-sm mt-0.5">Rituales</span>
+</a>
+<!-- Tab 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-all hover:text-primary active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="vital_signs">vital_signs</span>
+<span class="font-label-sm text-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Tab 3: Beneficios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-all hover:text-primary active:scale-95" href="#beneficios">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm mt-0.5">Beneficios</span>
+</a>
+<!-- Tab 4: Agendar (Active Tab according to landing page conversion intent) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-3 py-1.5 transition-all active:scale-95" href="#reservar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-sm text-label-sm mt-0.5 font-semibold">Agendar</span>
+</a>
+</nav>
+</div>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/almapranaspa-medellin" width="1" height="1" style="display:none" alt="">
+</body></html>

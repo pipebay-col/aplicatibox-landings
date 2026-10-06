@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dra. Sara Zapata · Odontología Estética &amp; Biomimética en Cali</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Typography: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed": "#91f4e4",
+            "on-primary-fixed-variant": "#005048",
+            "surface-tint": "#006b60",
+            "secondary-fixed-dim": "#abcec6",
+            "surface-variant": "#e4e2de",
+            "secondary-fixed": "#c7eae2",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e4e2de",
+            "on-tertiary-fixed-variant": "#594320",
+            "surface-dim": "#dbdad6",
+            "tertiary-fixed-dim": "#e2c195",
+            "on-primary-container": "#f2fffb",
+            "on-tertiary-fixed": "#281800",
+            "surface-container": "#efeeea",
+            "surface": "#fbf9f5",
+            "on-secondary-container": "#4a6a65",
+            "surface-container-high": "#eae8e4",
+            "on-surface-variant": "#3e4947",
+            "inverse-primary": "#74d7c8",
+            "on-tertiary-container": "#fffbff",
+            "on-primary-fixed": "#00201c",
+            "tertiary-container": "#8b704a",
+            "on-surface": "#1b1c1a",
+            "on-primary": "#ffffff",
+            "primary": "#00685d",
+            "background": "#fbf9f5",
+            "error": "#ba1a1a",
+            "on-background": "#1b1c1a",
+            "outline-variant": "#bdc9c6",
+            "primary-container": "#008376",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#fbf9f5",
+            "primary-fixed-dim": "#74d7c8",
+            "inverse-surface": "#30312e",
+            "tertiary": "#705833",
+            "surface-container-low": "#f5f3ef",
+            "on-error-container": "#93000a",
+            "outline": "#6e7a77",
+            "surface-container-lowest": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#00201c",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#c7eae2",
+            "tertiary-fixed": "#ffddb0",
+            "secondary": "#44645f",
+            "on-secondary-fixed-variant": "#2d4c47"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "gutter": "1.25rem",
+            "space-lg": "1.5rem",
+            "gutter-desktop": "2rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "3.5rem",
+            "margin": "1.25rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-md-mobile": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .shadow-luxury {
+      box-shadow: 0 4px 24px -2px rgba(27, 59, 54, 0.05);
+    }
+    .shadow-floating {
+      box-shadow: 0 12px 32px -4px rgba(27, 59, 54, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- ================= TOP APP BAR (Shared Component) ================= -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md text-primary dark:text-primary-fixed docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-5 py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="dentistry">dentistry</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface dark:text-inverse-on-surface tracking-tight leading-none font-bold">Dra. Sara Zapata</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5 tracking-wider uppercase">Odontología Estética · Cali</span>
+</div>
+</div>
+<a class="bg-primary-container text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full shadow-sm hover:opacity-95 active:scale-95 transition-all duration-150 inline-flex items-center gap-1.5" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- ================= MAIN AIDA CONTAINER ================= -->
+<main class="max-w-[480px] md:max-w-2xl lg:max-w-4xl mx-auto px-4 md:px-6 pt-4 pb-28 flex flex-col gap-10">
+<!-- ================= 1. ATENCIÓN (A) ================= -->
+<section class="flex flex-col gap-5 pt-2" id="atencion">
+<!-- Verified Regulatory Badge -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low border border-outline-variant/40 rounded-full px-3.5 py-1.5 self-start shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+          Especialista en Odontología Estética &amp; Biomimética · Cali, Colombia · Habilitación MinSalud Res. 3100
+        </p>
+</div>
+<!-- Hero Headline & Subtitle -->
+<div class="space-y-3">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface tracking-tight leading-tight">
+          Tu nueva sonrisa, <span class="italic font-normal text-primary">natural</span> y diseñada para durar toda la vida en Cali.
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Carillas cerámicas ultrafinas E-max, lentes de contacto dental y estética biomimética sin desgaste agresivo ni dolor. Armonía facial guiada por tecnología digital 3D en el sur y norte de Cali.
+        </p>
+</div>
+<!-- Hero Visual Card with Patient Image -->
+<div class="relative rounded-2xl overflow-hidden shadow-luxury border border-outline-variant/30 bg-surface-container-lowest group">
+<img alt="Paciente sonriente en clínica dental boutique de Cali" class="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1WvwdutW2MVjcmGIUPuZ4OnVFD4igiGKETfHRwFkSB9KTxD3gGjzSygfaFgHdYAecbcZjtcfkwFxi4v3ngksVlqhX3wXoIJfWzcuWzIVFvpQ8fdCOlOhyj4xiz03Y60AOE3_e5y840Cka-jM9NIBCTOHmXMUIAPtP1krzlOg8JGhlBksudN_dO_0YhzjixaI9F4BhIYLvz_-d44HGcqqKbKyMSDPKv7WiH8WY7kX6UYgjKSOCIcZX-KDA"/>
+<!-- Floating Result Badge Overlay -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/30 rounded-xl p-3 shadow-floating flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Resultado Clínico Dra. Sara Zapata</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">100% Cerámica E-max Natural</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant/70 text-lg" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+<!-- Primary CTA Button (Attention Anchor) -->
+<div class="flex flex-col gap-3 pt-1">
+<a class="w-full h-14 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-floating active:scale-95 transition-all duration-150 text-center font-bold tracking-wide" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Zero Friction Micro-guarantees -->
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant">
+          ✓ Respuesta en menos de 24 horas · Sin costo de valoración inicial · Simulación digital previa
+        </p>
+</div>
+<!-- 3 Rapid Trust Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium leading-tight">Tecnología 3D Guiada</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium leading-tight">Cero Desgaste Agresivo</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="person_check">person_check</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium leading-tight">Atención 1 a 1 en Cali</span>
+</div>
+</div>
+</section>
+<!-- ================= 2. INTERÉS (I) ================= -->
+<section class="flex flex-col gap-6 pt-4 border-t border-outline-variant/20" id="interes">
+<!-- Empathy / Pain-Point Block -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-5 shadow-luxury space-y-4">
+<div class="inline-flex items-center gap-2 text-error font-label-md text-label-md bg-error-container/40 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm" data-icon="help_outline">help_outline</span>
+<span>El dilema más común al buscar un diseño de sonrisa</span>
+</div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">
+          ¿Temes que tu diseño de sonrisa se vea artificial, con <span class="italic text-primary">"dientes de tiza"</span> o desgaste tus dientes sanos?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Comprendemos el temor que generan las técnicas tradicionales de tallado agresivo e irreversible. En la consulta de la <strong class="text-on-surface font-semibold">Dra. Sara Zapata</strong>, aplicamos <strong class="text-primary font-semibold">Odontología Biomimética</strong>: una filosofía que preserva hasta el 98% del esmalte dental original mediante micro-láminas cerámicas ultrafinas con gradientes de translucidez natural, integradas a tu fisonomía de forma orgánica e imperceptible.
+        </p>
+</div>
+<!-- 3-Step Clear Procedural Framework -->
+<div class="space-y-4">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Protocolo Biomimético</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tu transformación en 3 pasos precisos</h3>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<span class="flex-shrink-0 w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center font-bold">01</span>
+<div class="space-y-1.5">
+<h4 class="font-headline-sm text-[17px] text-on-surface leading-snug">Valoración y Escaneo Digital 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico milimétrico con escáner intraoral sin pastas incómodas ni náuseas.</p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold bg-surface-container-low px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Ves tu nueva sonrisa en pantalla 3D antes de empezar</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<span class="flex-shrink-0 w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center font-bold">02</span>
+<div class="space-y-1.5">
+<h4 class="font-headline-sm text-[17px] text-on-surface leading-snug">Plan Personalizado y Prueba Mock-up</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prueba estética real en vivo directamente en tu boca sin tocar tus piezas.</p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold bg-surface-container-low px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Apruebas forma, longitud y color con presupuesto cerrado</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<span class="flex-shrink-0 w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center font-bold">03</span>
+<div class="space-y-1.5">
+<h4 class="font-headline-sm text-[17px] text-on-surface leading-snug">Sonrisa Definitiva y Duradera</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cementación micrométrica de porcelana E-max bio-compatible de alta fidelidad.</p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold bg-surface-container-low px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Brillo vítreo inalterable resistente al café, té o vino</span>
+</div>
+</div>
+</div>
+</div>
+<!-- WhatsApp Quick Prompt -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex items-center justify-between border border-outline-variant/30 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm text-on-surface">¿Tienes dudas sobre tu caso particular?</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-semibold underline hover:opacity-80" href="https://wa.me/573022645042?text=Hola%20Dra.%20Sara%20Zapata,%20quiero%20hacer%20una%20consulta%20sobre%20mi%20caso" rel="noopener noreferrer" target="_blank">
+            Consulta directa
+          </a>
+</div>
+</div>
+</section>
+<!-- ================= 3. DESEO (D) ================= -->
+<section class="flex flex-col gap-6 pt-4 border-t border-outline-variant/20" id="deseo">
+<!-- Hard Trust Metrics Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold block">+12 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Trayectoria Clínica</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold block">+4.200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sonrisas Diseñadas en Cali</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold block">99.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Satisfacción Verificada</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 text-center shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold block">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Habilitación MinSalud</span>
+</div>
+</div>
+<!-- 4 Core Transformative Life Benefits -->
+<div class="space-y-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Beneficios Clínicos Reales</span>
+<h3 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Diseño pensado para tu bienestar cotidiano</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="face">face</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Armonía y naturalidad absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tono y translucidez calibrados al rostro para que nadie note que llevas carillas, solo una sonrisa radiante.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Cero desgaste agresivo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Protocolo ultra-conservador biomimético que protege la vitalidad pulpar de cada diente sano.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="coffee">coffee</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Cerámica vítrea inmune a manchas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Disfruta tu café colombiano o vino tinto con total tranquilidad: la porcelana E-max no cambia de color.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Seguridad plena al hablar y sonreír</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Olvídate de taparte la boca al reír en reuniones de trabajo, fotos familiares o compromisos sociales.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Patient Gallery & Testimonials -->
+<div class="space-y-4 pt-1">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Testimonios Reales en Cali</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historias de transformación auténtica</h3>
+</div>
+<!-- Featured Case Card with Patient Image 247 -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl overflow-hidden shadow-luxury">
+<img alt="Paciente disfrutando de su nueva sonrisa en Cali" class="w-full h-64 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1WakQ-on3jsoDIeGIKyL3bdMZtJPHqwu0zcjVTbwMCK9z2Cs-WZJUd0YfTIKaKURIC23g2JVnPuLH_EPeOrrup5M4hGUtMjdvWVuq51IVTJBWrTdFM-iQcWuCvMyYpx802mwhvJ79KRcIhPVD_sH2q14iyUJcjU7RH-WVZK5ByqcXRKnXpbCGXJQOkA64svE_hLUDHNDtX_Zo5Erbk7GlxfOpCVm5mW1Tc0mw2sVTcjbEf7kbtC0uhKL8E"/>
+<div class="p-5 space-y-3">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              "Tenía pánico de que mis dientes parecieran chiclets o postizos. La Dra. Sara entendió exactamente lo que quería: luz, armonía con mi fisonomía y CERO dolor. Ahora sonrío en cada foto sin dudar un segundo."
+            </p>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Dra. Camila Restrepo</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Paciente Verificada · Cali, Colombia</p>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-medium">8 Carillas E-max</span>
+</div>
+</div>
+</div>
+<!-- Secondary Testimonial -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm space-y-2">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Como médico, me importaba ante todo la bioseguridad y que no desgastaran mis dientes. La planificación con tecnología digital 3D fue impecable y el resultado es sumamente sobrio y distinguido."
+          </p>
+<div class="pt-1 flex items-center justify-between">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Dr. Camilo Echeverri <span class="font-normal text-on-surface-variant">· Médico Cirujano y Paciente</span></p>
+<span class="font-label-sm text-label-sm text-primary font-medium">Lentes Biomiméticos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. ACCIÓN (A) ================= -->
+<section class="flex flex-col gap-6 pt-4 border-t border-outline-variant/20" id="agendar">
+<!-- High-Conversion Booking Card -->
+<div class="bg-surface-container-lowest border-2 border-primary/20 rounded-3xl p-5 md:p-6 shadow-floating space-y-5">
+<!-- Scarcity Badge -->
+<div class="inline-flex items-center gap-2 bg-secondary-container/70 text-on-secondary-fixed-variant px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>Cupos limitados de valoración esta semana en Cali</span>
+</div>
+<div class="space-y-1">
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface font-bold">
+            Empieza hoy tu transformación con total confianza
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Diligencia el formulario para coordinar tu cita presencial o simulación inicial con la Dra. Sara Zapata en Cali.
+          </p>
+</div>
+<!-- 3-Field Minimalist Form -->
+<form class="space-y-4" id="contactForm" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! El equipo clínico de la Dra. Sara Zapata te contactará en menos de 24 horas por WhatsApp.');">
+<!-- Field 1: Name -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold" for="fullName">
+              Nombre Completo
+            </label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" id="fullName" placeholder="Ej. Valeria Mejía" required="" type="text"/>
+</div>
+<!-- Field 2: Phone / WhatsApp -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold" for="phone">
+              WhatsApp o Celular (+57)
+            </label>
+<div class="relative flex items-center">
+<span class="absolute left-4 font-body-md text-body-md text-on-surface-variant font-medium">+57</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl pl-14 pr-4 py-3.5 text-on-surface placeholder:text-on-surface-variant/50 font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" id="phone" pattern="[0-9]{10}" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment of Interest -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold" for="treatment">
+              ¿Qué tratamiento te interesa?
+            </label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3.5 text-on-surface font-body-md text-body-md focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" id="treatment">
+<option value="carillas">Carillas Cerámicas E-max</option>
+<option value="lentes">Lentes de Contacto Dental Sin Desgaste</option>
+<option value="diagnostico">Valoración General y Diagnóstico 3D</option>
+</select>
+</div>
+<!-- Main CTA Submit Button -->
+<button class="w-full h-14 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-floating hover:opacity-95 active:scale-95 transition-all duration-150 font-bold tracking-wide" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative flex items-center justify-center my-3">
+<div class="border-t border-outline-variant/40 w-full"></div>
+<span class="bg-surface-container-lowest px-3 font-label-sm text-label-sm text-on-surface-variant">o atención inmediata</span>
+</div>
+<!-- Direct WhatsApp Direct Trigger Button -->
+<a class="w-full h-13 py-3.5 border-2 border-primary text-primary hover:bg-primary/5 font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2.5 transition-all duration-150 font-semibold" href="https://wa.me/573022645042?text=Hola%20Dra.%20Sara%20Zapata,%20deseo%20agendar%20mi%20cita%20de%20valoración%20en%20Cali" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 302 264 5042)</span>
+</a>
+<!-- Legal and Privacy Assurance -->
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant pt-1 leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+<!-- FAQ Section (Resolving Clinical Objections) -->
+<div class="space-y-3 pt-2">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">Preguntas Frecuentes</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Respuestas claras antes de tu cita</h3>
+</div>
+<div class="space-y-2.5">
+<details class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-4 cursor-pointer group">
+<summary class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between list-none">
+<span>¿El procedimiento produce dolor o sensibilidad?</span>
+<span class="material-symbols-outlined text-primary text-xl group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+              No. Nuestro protocolo biomimético es mínimamente invasivo y prioriza la conservación del esmalte dental intacto. En la gran mayoría de casos no se requiere anestesia profunda ni genera sensibilidad post-operatoria.
+            </p>
+</details>
+<details class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-4 cursor-pointer group">
+<summary class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between list-none">
+<span>¿Cuánto tiempo toma completar el diseño?</span>
+<span class="material-symbols-outlined text-primary text-xl group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+              Generalmente se realiza en 2 o 3 sesiones clínicas espaciadas en un lapso de 7 a 10 días, incluyendo la sesión de escaneo 3D, prueba de mock-up en vivo y la cementación definitiva de tus carillas E-max.
+            </p>
+</details>
+<details class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-4 cursor-pointer group">
+<summary class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between list-none">
+<span>¿Las carillas E-max se manchan con el café o el vino?</span>
+<span class="material-symbols-outlined text-primary text-xl group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+              A diferencia de las resinas compuestas, la porcelana de disilicato de litio (E-max) posee una superficie vitrificada no porosa, garantizando estabilidad de color inalterable frente a pigmentos de café, té o alimentos.
+            </p>
+</details>
+<details class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-4 cursor-pointer group">
+<summary class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between list-none">
+<span>¿Qué facilidades y medios de pago manejan?</span>
+<span class="material-symbols-outlined text-primary text-xl group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+              Recibimos todas las tarjetas de crédito (con opciones de financiación hasta 36 cuotas), transferencias bancarias y convenios de pagos fraccionados por etapas del tratamiento.
+            </p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface w-full block pb-24 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center px-5 py-8 w-full max-w-7xl mx-auto gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="dentistry">dentistry</span>
+<span class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface">Dra. Sara Zapata</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant max-w-md">
+        © 2024 Dra. Sara Zapata • Odontología Estética &amp; Biomimética • Cali, Colombia. Registro Seccional de Salud del Valle del Cauca Código Prestador No. 7600100000-01
+      </p>
+<div class="flex flex-wrap justify-center gap-4 pt-1">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 hover:underline" href="#agendar">Habeas Data y Privacidad</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 hover:underline" href="#agendar">Consentimiento Informado</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 hover:underline" href="#agendar">Términos Clínicos</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 hover:underline" href="#agendar">Verificación SOGCS</a>
+</div>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component) ================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0_-4px_20px_-2px_rgba(27,59,54,0.08)]">
+<!-- Inicio -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-95" href="#atencion">
+<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
+<span class="mt-0.5">Inicio</span>
+</a>
+<!-- Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-95" href="#deseo">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="mt-0.5">Casos</span>
+</a>
+<!-- Consulta -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-95" href="https://wa.me/573022645042?text=Hola%20Dra.%20Sara,%20quiero%20hacer%20una%20consulta" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="mt-0.5">Consulta</span>
+</a>
+<!-- Agendar (Active Destination for Conversion Intent) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-3 py-1.5 font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dra-sara-zapata" width="1" height="1" style="display:none" alt="">
+</body></html>

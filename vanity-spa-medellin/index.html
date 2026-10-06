@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vanity Spa Medellín | Santuario de Autor en El Poblado</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CDN & Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#185e54",
+            "inverse-primary": "#7ad7c8",
+            "secondary-fixed": "#ffddb0",
+            "on-primary-fixed-variant": "#005048",
+            "secondary": "#76592c",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#7ad7c8",
+            "secondary-fixed-dim": "#e7c08a",
+            "on-secondary-fixed-variant": "#5c4217",
+            "surface-container-highest": "#e4e2df",
+            "on-surface-variant": "#3e4947",
+            "on-tertiary-fixed": "#00201b",
+            "background": "#fbf9f6",
+            "primary-container": "#007a6e",
+            "secondary-container": "#ffd79e",
+            "on-primary-container": "#a8fff0",
+            "on-surface": "#1b1c1a",
+            "tertiary-fixed": "#adefe1",
+            "surface-container-high": "#eae8e5",
+            "tertiary-fixed-dim": "#92d3c5",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary": "#005f55",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#efeeeb",
+            "on-tertiary-container": "#bafcee",
+            "on-secondary-container": "#795c2e",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "tertiary-container": "#36776c",
+            "on-background": "#1b1c1a",
+            "surface-bright": "#fbf9f6",
+            "surface": "#fbf9f6",
+            "surface-variant": "#e4e2df",
+            "on-primary-fixed": "#00201c",
+            "on-tertiary-fixed-variant": "#005046",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#30312f",
+            "surface-tint": "#006a60",
+            "surface-container-low": "#f5f3f0",
+            "on-secondary-fixed": "#281800",
+            "surface-dim": "#dbdad7",
+            "outline": "#6e7977",
+            "outline-variant": "#bdc9c6",
+            "primary-fixed": "#96f3e4"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-desktop": "2.5rem",
+            "space-sm": "0.75rem",
+            "margin": "1.5rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "margin-desktop": "5rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md border-b border-primary/10 dark:border-outline-variant/10 shadow-sm dark:shadow-none docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary tracking-tight font-bold">Vanity Spa Medellín</span>
+</div>
+<a class="bg-primary text-on-primary font-label-lg text-label-lg px-5 py-2 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150 flex items-center gap-1.5" href="#agendar">
+<span>Reservar</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<main class="w-full overflow-hidden pb-12">
+<!-- 2. A - ATENCIÓN (Hero Section) -->
+<section class="px-margin pt-6 pb-space-lg max-w-xl mx-auto flex flex-col items-center text-center" id="rituales">
+<!-- Real Credential Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-primary/15 text-primary text-left mb-5 shadow-xs">
+<span class="text-xs">🌿</span>
+<span class="font-label-sm text-label-sm tracking-normal">Spa de Autor &amp; Bienestar Integral · Sede El Poblado, Medellín · Registro Seccional de Salud</span>
+</div>
+<!-- H1 Clear Benefit in 3s -->
+<h1 class="font-display-lg-mobile text-display-lg-mobile font-headline-sm text-on-surface leading-tight mb-4">
+        Renueva tu cuerpo, reconecta con tu <span class="font-headline-lg-mobile italic text-primary font-normal">bienestar más profundo</span> en Medellín.
+      </h1>
+<!-- Result-specific Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-6 leading-relaxed">
+        Masajes descontracturantes de autor, rituales botánicos y cuidado facial diseñados a la medida de tu fisonomía para disolver la tensión y revitalizar tu energía sin prisas.
+      </p>
+<!-- Heroic Image Container with Floating Confidence Badge -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-primary/10 mb-6 bg-surface-container-low">
+<img alt="Experiencia Signature Vanity Spa en cabina privada en El Poblado Medellín" class="w-full aspect-[4/3] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO3Noc41xFWScsazZvCgyro_0UWHB09GorIAR9NZI78Mb8Y-NNoAWavdHJujBVlLF_jeUJQgX4_JktwpTOgM1NKjMRZsBB5nKetUNWaJYK-c660bY2eSjAs7FIHE9MYNFTxFSnRXK06vFsRDSOChhS9Y2McpuoAAKOF5UoPy4CzYj6psxJKgU2_OBMPSBHKCDJOz8V9mc-vY5lQVGAGd7WqHjhK0gyr53yy1jZVm0fn975n6H0UUyI1hdCXXEKUpD3y5V5TDKH4hg"/>
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-primary/15 shadow-md flex items-center gap-2 text-left">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="verified" data-weight="fill">verified</span>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">
+            Experiencia Signature Vanity Spa · 100% Personalizado en cabina privada
+          </p>
+</div>
+</div>
+<!-- High Contrast Primary CTA Button -->
+<div class="w-full flex flex-col gap-2.5 items-center mb-6">
+<a class="w-full min-h-[54px] bg-primary text-on-primary rounded-full px-6 py-3.5 font-title-md text-title-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-95 transition-all duration-150" href="#agendar">
+<span>Agendar mi ritual de relajación</span>
+<span class="material-symbols-outlined text-lg" data-icon="east">east</span>
+</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 text-center">
+<span class="text-primary font-semibold">✓</span> Respuesta en menos de 24 horas · Sin costo de valoración inicial · Protocolo exclusivo
+        </p>
+</div>
+<!-- 3 Pills of Value and Peace of Mind -->
+<div class="w-full grid grid-cols-1 gap-2.5 text-left">
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl border border-primary/10">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Protocolos Seguros (Norma Sanitaria)</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl border border-primary/10">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Terapeutas Certificadas (+8 Años Exp.)</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl border border-primary/10">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-base" data-icon="volume_off">volume_off</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Cabinas Privadas (Aislamiento Acústico)</span>
+</div>
+</div>
+</section>
+<!-- 3. I - INTERÉS (Problema del cliente & Metodología en 3 pasos) -->
+<section class="bg-surface-container-low py-space-xl px-margin border-y border-primary/10" id="proceso">
+<div class="max-w-xl mx-auto flex flex-col gap-6">
+<!-- Empathy Diagnostic Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-primary/10 shadow-sm flex flex-col gap-3">
+<div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-base" data-icon="self_improvement">self_improvement</span>
+            Diagnóstico Corporal
+          </div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            ¿El estrés, la rutina o la tensión muscular están apagando tu bienestar?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            El ritmo acelerado de Medellín, las largas jornadas frente a pantallas y las malas posturas generan nudos musculares en cuello, hombros y espalda baja. Cuando el cansancio se acumula, no basta un masaje genérico: requieres una pausa clínica que reequilibre tu mente y cuerpo.
+          </p>
+<div class="mt-2 pt-4 border-t border-primary/10 italic text-primary font-body-md text-body-md bg-surface-container-low/60 p-3.5 rounded-xl">
+            «En Vanity Spa creamos un refugio en El Poblado donde el tiempo se detiene. Escuchamos lo que tu anatomía necesita para devolverte ligereza real.»
+            <div class="not-italic font-label-sm text-label-sm text-on-surface-variant mt-2 font-semibold">
+              — Dirección Terapéutica Vanity Spa
+            </div>
+</div>
+</div>
+<!-- 3-Step Process Bento -->
+<div class="flex flex-col gap-3">
+<div class="text-center mb-2">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Método de Transformación</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Tu experiencia en tres momentos</h3>
+</div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/10 shadow-sm relative overflow-hidden">
+<span class="absolute right-3 top-1 font-display-lg text-surface-container-highest select-none font-bold opacity-40">01</span>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">Fase 1</span>
+<h4 class="font-title-md text-title-md text-on-surface">01 Valoración y Escucha Personalizada</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              Diagnóstico de zonas de sobrecarga y tensión muscular antes de iniciar la sesión en cabina.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+              Beneficio: Cero tratamientos genéricos de catálogo
+            </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/10 shadow-sm relative overflow-hidden">
+<span class="absolute right-3 top-1 font-display-lg text-surface-container-highest select-none font-bold opacity-40">02</span>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm font-bold">Fase 2</span>
+<h4 class="font-title-md text-title-md text-on-surface">02 Plan y Ritual a tu Medida</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              Combinación de aceites botánicos puros prensados en frío, termoterapia y maniobras descontracturantes profundas.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+              Beneficio: Tiempos reales, sin prisas ni interrupciones
+            </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/10 shadow-sm relative overflow-hidden">
+<span class="absolute right-3 top-1 font-display-lg text-surface-container-highest select-none font-bold opacity-40">03</span>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">Fase 3</span>
+<h4 class="font-title-md text-title-md text-on-surface">03 Renovación Visible y Duradera</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">
+              Alivio muscular instantáneo, descompresión postural y una piel radiante que mantiene su confort por días.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+              Beneficio: Sensación de ligereza que perdura por semanas
+            </div>
+</div>
+<!-- Assistance Link -->
+<div class="pt-3 text-center">
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-primary-container underline transition-colors" href="https://wa.me/573508128739?text=Hola%20Vanity%20Spa%2C%20tengo%20dudas%20sobre%20qu%C3%A9%20ritual%20elegir">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+              ¿Tienes dudas sobre qué ritual elegir? Consúltanos vía WhatsApp
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. D - DESEO (Métricas de confianza, Beneficios tangibles & Testimonios) -->
+<section class="py-space-xl px-margin max-w-xl mx-auto flex flex-col gap-8" id="resultados">
+<!-- Metrics Grid 2x2 -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 text-center shadow-xs">
+<div class="font-headline-md text-headline-md text-primary font-bold">+8 Años</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Trayectoria en Bienestar</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 text-center shadow-xs">
+<div class="font-headline-md text-headline-md text-primary font-bold">+5.200</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Clientes Satisfechos</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 text-center shadow-xs">
+<div class="font-headline-md text-headline-md text-secondary font-bold flex items-center justify-center gap-1">
+            4.9 <span class="material-symbols-outlined text-secondary text-xl" data-icon="star" data-weight="fill">star</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Google Reviews (+680)</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 text-center shadow-xs">
+<div class="font-headline-md text-headline-md text-primary font-bold">100%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1">Insumos Botánicos Puros</div>
+</div>
+</div>
+<!-- Tangible Benefits Section -->
+<div class="flex flex-col gap-4">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Cuidado Exclusivo</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Beneficios reales pensados para tu bienestar</h3>
+</div>
+<div class="space-y-3">
+<!-- 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-primary/10 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="flare">flare</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">1. Alivio Inmediato de Contracturas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Maniobras focalizadas en cuello, trapecios y lumbares desde la primera sesión con termoterapia reconfortante.
+              </p>
+</div>
+</div>
+<!-- 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-primary/10 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="face">face</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">2. Piel Luminosa, Hidratada y Revitalizada</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Fitocosmética orgánica rica en antioxidantes colombianos que devuelve elasticidad, suavidad y brillo saludable.
+              </p>
+</div>
+</div>
+<!-- 3 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-primary/10 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">3. Desconexión Mental y Reducción de Cortisol</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Aromaterapia clínica y cabinas insonorizadas que inducen descanso neurológico profundo y serenidad sostenida.
+              </p>
+</div>
+</div>
+<!-- 4 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-primary/10 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined" data-icon="local_cafe">local_cafe</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">4. Experiencia Sensorial en Cabinas Boutique</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Toallas de alto gramaje, temperatura regulada e infusión herbal digestiva de cortesía al culminar tu estancia.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Local Testimonials -->
+<div class="flex flex-col gap-3">
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Voces de Nuestra Comunidad</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Experiencias reales en El Poblado</h3>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/10 shadow-xs relative">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            «Llegué con un espasmo cervical terrible por semanas de trabajo remoto y salí flotando. La terapeuta entendió al instante dónde dolía sin aplicar dolor innecesario. El té herbal al final fue el toque perfecto.»
+          </p>
+<div class="mt-3 flex items-center justify-between border-t border-primary/5 pt-3">
+<span class="font-title-md text-title-md text-on-surface">Camila Echeverri</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">El Poblado, Medellín</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-primary/10 shadow-xs relative">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            «El mejor spa de Medellín. La privacidad es absoluta, cero ruidos de otros clientes. El facial botánico me dejó la piel reluciente para mi boda.»
+          </p>
+<div class="mt-3 flex items-center justify-between border-t border-primary/5 pt-3">
+<span class="font-title-md text-title-md text-on-surface">Valeria Jaramillo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Medellín, Antioquia</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. A - ACCIÓN (Formulario minimalista de 3 campos & WhatsApp directo) -->
+<section class="bg-surface-container-low py-space-xl px-margin border-t border-primary/10" id="agendar">
+<div class="max-w-xl mx-auto flex flex-col gap-4">
+<!-- Scarcity / Urgency Banner -->
+<div class="bg-secondary-fixed/50 border border-secondary/20 p-3 rounded-xl text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="hourglass_top">hourglass_top</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-bold">
+            Cupos limitados por agenda personalizada esta semana en El Poblado
+          </span>
+</div>
+<!-- Minimalist Form Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-primary/15 shadow-md">
+<div class="text-center mb-5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              Empieza hoy tu ritual de bienestar y renovación
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+              Diligencia tus datos para apartar tu horario de valoración y recibir confirmación prioritaria.
+            </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu solicitud para Vanity Spa. Te responderemos en menos de 24 horas.');">
+<!-- Field 1 -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">Nombre completo</label>
+<input class="w-full min-h-[48px] px-4 rounded-xl bg-surface-container border border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface transition-all placeholder:text-outline" placeholder="Ej. Mariana Restrepo" required="" type="text"/>
+</div>
+<!-- Field 2 -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">WhatsApp o Celular</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-body-md text-body-md text-on-surface-variant font-semibold">🇨🇴 +57</span>
+<input class="w-full min-h-[48px] pl-20 pr-4 rounded-xl bg-surface-container border border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface transition-all placeholder:text-outline" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3 -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">¿Qué experiencia te interesa?</label>
+<select class="w-full min-h-[48px] px-4 rounded-xl bg-surface-container border border-transparent focus:border-primary focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface transition-all">
+<option value="descontracturante">Ritual Descontracturante Profundo</option>
+<option value="facial">Cuidado Facial Botánico Glow</option>
+<option value="pareja">Experiencia Signature en Pareja</option>
+<option value="termoterapia">Terapia Anti-Estrés y Termoterapia</option>
+</select>
+</div>
+<!-- CTA Submit Button -->
+<button class="w-full min-h-[52px] bg-primary text-on-primary rounded-full px-6 py-3.5 font-title-md text-title-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-95 transition-all duration-150 mt-2" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-primary/10"></div></div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline tracking-wider font-semibold">
+              O SI PREFIERES ATENCIÓN INMEDIATA
+            </span>
+</div>
+<!-- Official WhatsApp Direct Button -->
+<a class="w-full min-h-[50px] bg-[#25D366] text-white rounded-full px-6 py-3 font-title-md text-title-md flex items-center justify-center gap-2 shadow-sm hover:opacity-95 active:scale-95 transition-all duration-150" href="https://wa.me/573508128739?text=Hola%20Vanity%20Spa%2C%20quisiera%20agendar%20una%20valoraci%C3%B3n" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 350 812 8739)</span>
+</a>
+<!-- Privacy and Legal Disclaimer -->
+<div class="mt-4 pt-3 text-center border-t border-primary/5">
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="lock">lock</span>
+              Tus datos están 100% protegidos bajo secreto profesional y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PREGUNTAS FRECUENTES (Interactive Accordion) -->
+<section class="py-space-xl px-margin max-w-xl mx-auto">
+<div class="text-left mb-6">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Resolución de Dudas</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3">
+<!-- Q1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-primary/10 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Cuánto dura cada sesión en Vanity Spa?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-md text-body-md text-on-surface-variant border-t border-primary/5">
+            Nuestros rituales tienen una duración efectiva de entre 60 y 90 minutos de terapia en cabina, más 15 minutos complementarios de bienvenida aromática e infusión orgánica final para una transición armoniosa.
+          </div>
+</details>
+<!-- Q2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-primary/10 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Con cuánta anticipación debo reservar mi cita?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-md text-body-md text-on-surface-variant border-t border-primary/5">
+            Para garantizar disponibilidad en cabinas privadas e individuales en nuestro santuario de El Poblado, recomendamos reservar con un margen de 24 a 48 horas de anticipación.
+          </div>
+</details>
+<!-- Q3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-primary/10 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Tienen opciones de gift cards o paquetes especiales?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-md text-body-md text-on-surface-variant border-t border-primary/5">
+            Sí, contamos con tarjetas de regalo físicas presentadas en estuche botánico de lujo y certificados digitales personalizados con validez de 6 meses para cualquier ritual o valor acordado.
+          </div>
+</details>
+<!-- Q4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-primary/10 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Qué protocolos de higiene y bioseguridad manejan?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-md text-body-md text-on-surface-variant border-t border-primary/5">
+            Cumplimos estrictamente las normas del Registro Seccional de Salud de Antioquia. Todas las sábanas y toallas son esterilizadas a grado hospitalario, y cada cabina se desinfecta y ventila durante 20 minutos entre usuarios.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- 7. FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-primary/10 dark:border-outline-variant/10 w-full">
+<div class="flex flex-col gap-space-md px-margin py-space-xl max-w-7xl mx-auto pb-28">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary font-bold">Vanity Spa Medellín</span>
+</div>
+<div class="flex flex-wrap gap-x-4 gap-y-2">
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-inverse-primary transition-colors underline" href="#agendar">Política de Privacidad y Tratamiento de Datos</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-inverse-primary transition-colors underline" href="#agendar">Términos del Servicio</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-inverse-primary transition-colors underline" href="#agendar">Habilitación en Salud</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-inverse-primary transition-colors underline" href="#agendar">Preguntas Frecuentes</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-primary dark:hover:text-inverse-primary transition-colors underline" href="#agendar">Contacto y Ubicación</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant leading-relaxed">
+        © 2024 Vanity Spa Medellín SAS. Registro Seccional de Salud No. 05001-XXXX. Vigilado Supersalud. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales. El Poblado, Medellín, Colombia.
+      </p>
+</div>
+</footer>
+<!-- 7. BOTTOM NAVIGATION BAR (Shared Component Anchor) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-space-xs pb-safe bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg border-t border-primary/10 dark:border-outline-variant/10 shadow-lg dark:shadow-none docked full-width bottom-0">
+<!-- Item 1: Rituales (Active for top-level exploration) -->
+<a class="flex flex-col items-center justify-center bg-primary dark:bg-inverse-primary text-on-primary dark:text-on-primary-fixed rounded-full px-space-md py-1 active:scale-95 transition-all duration-150" href="#rituales">
+<span class="material-symbols-outlined text-lg" data-icon="self_improvement">self_improvement</span>
+<span class="font-label-sm text-label-sm">Rituales</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors active:scale-95" href="#proceso">
+<span class="material-symbols-outlined text-lg" data-icon="spa">spa</span>
+<span class="font-label-sm text-label-sm">Proceso</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors active:scale-95" href="#resultados">
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-sm text-label-sm">Resultados</span>
+</a>
+<!-- Item 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-space-sm py-1 hover:bg-surface-container-high dark:hover:bg-surface-variant transition-colors active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/vanity-spa-medellin" width="1" height="1" style="display:none" alt="">
+</body></html>

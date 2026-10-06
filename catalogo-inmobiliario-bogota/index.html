@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catálogo Inmobiliario Bogotá | Asesoría Patrimonial &amp; Residencias Exclusivas</title>
+<!-- Google Fonts: Playfair Display & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-fixed": "#ffdbd1",
+            "inverse-on-surface": "#f1f1ee",
+            "surface-container": "#efeeeb",
+            "on-surface": "#1a1c1a",
+            "inverse-primary": "#ffb5a0",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#2a1700",
+            "primary": "#9f3c1f",
+            "on-secondary-fixed-variant": "#005049",
+            "tertiary-container": "#9b6b2b",
+            "surface-variant": "#e3e2e0",
+            "surface-dim": "#dbdad7",
+            "primary-fixed-dim": "#ffb5a0",
+            "outline-variant": "#dec0b9",
+            "on-error": "#ffffff",
+            "on-secondary-fixed": "#00201d",
+            "on-tertiary-container": "#fffbff",
+            "tertiary-fixed": "#ffddb8",
+            "on-tertiary-fixed-variant": "#653e00",
+            "on-surface-variant": "#57423c",
+            "secondary-fixed": "#a6f0e6",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#fffbff",
+            "secondary-fixed-dim": "#8ad4ca",
+            "inverse-surface": "#2f312f",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "surface": "#faf9f6",
+            "secondary-container": "#a3ede3",
+            "on-primary-fixed": "#3b0900",
+            "on-primary-fixed-variant": "#82270c",
+            "on-background": "#1a1c1a",
+            "secondary": "#186961",
+            "outline": "#8a726b",
+            "tertiary": "#7f5314",
+            "surface-container-low": "#f4f3f1",
+            "on-secondary-container": "#1e6e66",
+            "surface-tint": "#a23e22",
+            "on-error-container": "#93000a",
+            "surface-bright": "#faf9f6",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#f7bb74",
+            "surface-container-high": "#e9e8e5",
+            "surface-container-highest": "#e3e2e0",
+            "surface-container-lowest": "#ffffff",
+            "background": "#faf9f6",
+            "primary-container": "#bf5335"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": [
+              "Playfair Display"
+            ],
+            "label-lg": [
+              "Manrope"
+            ],
+            "body-sm": [
+              "Manrope"
+            ],
+            "display-mobile": [
+              "Playfair Display"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "display": [
+              "Playfair Display"
+            ],
+            "body-md": [
+              "Manrope"
+            ],
+            "label-sm": [
+              "Manrope"
+            ],
+            "body-lg": [
+              "Manrope"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "label-md": [
+              "Manrope"
+            ]
+          },
+          "fontSize": {
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "600"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-mobile": [
+              "38px",
+              {
+                "lineHeight": "44px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "500"
+              }
+            ],
+            "display": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-sm": [
+              "10px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "30px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-lg": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "500"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed pb-24 md:pb-0">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="sticky top-0 z-40 bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-4 h-16 max-w-7xl mx-auto">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" data-icon="real_estate_agent">real_estate_agent</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface dark:text-inverse-on-surface">Catálogo Inmobiliario Bogotá</span>
+</div>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-inverse-primary font-semibold font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150" href="#catalogo">Catálogo</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150" href="#beneficios">Beneficios</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150" href="#testimonios">Testimonios</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150" href="#faq">Preguntas</a>
+</nav>
+<a class="bg-primary text-on-primary hover:bg-primary-container px-4 py-2 rounded-lg font-label-md text-label-md active:scale-95 transition-transform duration-150 shadow-sm flex items-center gap-1.5" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- ================= ETAPA A: ATENCIÓN (HERO SECTION) ================= -->
+<section class="relative overflow-hidden pt-6 pb-12 md:py-20 max-w-7xl mx-auto px-4 md:px-margin" id="catalogo">
+<!-- Verified Badge -->
+<div class="flex items-center justify-center md:justify-start mb-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm tracking-wider text-secondary uppercase font-bold">Registro Inmobiliario Bogotá · Chicó, Rosales, Santa Ana y Cabrera</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Copy Column -->
+<div class="lg:col-span-6 flex flex-col text-left">
+<h1 class="font-display-mobile text-display-mobile md:font-display md:text-display text-on-surface leading-tight tracking-tight mb-4">
+          Tu próximo hogar <span class="italic font-normal text-primary">exclusivo</span> en Bogotá, curado sin rodeos.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+          Accede a las propiedades más codiciadas y fuera del mercado masivo en los sectores más valorizados del norte de Bogotá, con asesoría jurídica y patrimonial personalizada.
+        </p>
+<!-- CTA & Micro-credential -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6">
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-6 py-4 rounded-lg text-center active:scale-95 transition-all shadow-md flex items-center justify-center gap-2" href="#agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today">calendar_today</span>
+<span>Agendar ahora mi asesoría</span>
+</a>
+<a class="border border-secondary text-secondary hover:bg-secondary/10 font-label-lg text-label-lg px-5 py-4 rounded-lg text-center transition-colors flex items-center justify-center gap-2" href="https://wa.me/573185672660?text=Hola,%20quisiera%20conocer%20el%20dossier%20privado%20de%20propiedades%20en%20Bogota" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>WhatsApp Directo</span>
+</a>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-8">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Respuesta en menos de 24 horas · Dossier privado sin costo</span>
+</div>
+<!-- 3 Mini Badges de Confianza -->
+<div class="grid grid-cols-3 gap-2.5 pt-4 border-t border-outline-variant/30">
+<div class="flex flex-col items-start gap-1 p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Propiedades Verificadas</span>
+</div>
+<div class="flex flex-col items-start gap-1 p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="lock">lock</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Trato 1 a 1 Discreto</span>
+</div>
+<div class="flex flex-col items-start gap-1 p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="price_check">price_check</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Cero Comisiones Ocultas</span>
+</div>
+</div>
+</div>
+<!-- Visual Column (Hero Luxury Penthouse matching provided atmosphere) -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-xl overflow-hidden shadow-[0_8px_30px_rgba(35,28,24,0.08)] border border-outline-variant/40 bg-surface-container-lowest">
+<img alt="Penthouse de lujo en Rosales Bogotá con vista panorámica a los Cerros Orientales" class="w-full h-[380px] md:h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeSxuZ2gxv9lgYgJZoi9wN-_4zV6dvIcsgOlRoIWD4jz-_HqBHZktBFqeoe6HAUZ5KFw4hDHzAjL4UE9eGqHMKzPfensqedN9OfPIlY_GjIqMNNblgkZB7DDqxY2HkTkiceaDfrYWgw4Ffqn4BMefCYPh6KUGggScPwZd_J_dEZCG-WmKwH-LHqyYa7DLgJt0N7VXf5vasDryt7GUAk4ELY87omREkjnbcfB5c0tBO-86pDsbtTj_-YUyivU2U75zbLoIkFOSV8Ww"/>
+<!-- Floating Editorial Pill -->
+<div class="absolute top-4 left-4 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-outline-variant/40 shadow-sm flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Propiedad Destacada · Penthouse Rosales / Chicó</span>
+</div>
+<!-- Bottom Snapshot Overlay -->
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-lg bg-surface/90 backdrop-blur-md border border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">$ 4.850.000.000 COP</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Rosales Alto · 380 m² · 4 Suites · Terraza Cerros</p>
+</div>
+<a class="bg-primary text-on-primary px-3 py-2 rounded font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform" href="#agendar">
+<span>Ver ficha</span>
+<span class="material-symbols-outlined text-xs" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA I: INTERÉS (DILEMA & PROCESO EN 3 PASOS) ================= -->
+<section class="py-16 bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-4 md:px-margin">
+<!-- El Dilema -->
+<div class="max-w-3xl mx-auto text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-2 block">El Dilema Habitual</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">
+          ¿Cansado de portales masivos con fotos engañosas, inmuebles ya vendidos o asesores que no responden?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          En el mercado tradicional de Bogotá, el 80% del tiempo de búsqueda se pierde en filtraciones erróneas y visitas innecesarias. En <strong class="text-on-surface font-semibold">Catálogo Inmobiliario Bogotá</strong> filtramos el 95% del inventario para presentarle únicamente piezas arquitectónicas atemporales, libres de vicios de títulos y con valor patrimonial comprobable.
+        </p>
+</div>
+<!-- Proceso Transparente 3 Pasos Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 shadow-sm relative flex flex-col justify-between hover:border-primary transition-colors">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-lg text-headline-lg text-primary/40 font-bold">01</span>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="tune">tune</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Valoración y Perfilamiento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Escuchamos tus criterios exactos de metraje, luminosidad natural, sectores predilectos (Rosales, Chicó, Nogal, Cabrera, Santa Ana) y presupuesto, con total confidencialidad.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 font-label-sm text-label-sm text-secondary font-semibold">
+            SESIÓN PRIVADA DE 20 MINUTOS
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 shadow-sm relative flex flex-col justify-between hover:border-secondary transition-colors">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-lg text-headline-lg text-secondary/40 font-bold">02</span>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl" data-icon="inventory_2">inventory_2</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Dossier Privado a Medida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Recibes un dossier restringido con 3 a 5 propiedades ultra-selectas que cumplen tu estándar al 100%, con planos arquitectónicos reales y estudio de títulos preliminar en 24 horas.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 font-label-sm text-label-sm text-secondary font-semibold">
+            PROPIEDADES OFF-MARKET
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/40 shadow-sm relative flex flex-col justify-between hover:border-tertiary transition-colors">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-lg text-headline-lg text-tertiary/40 font-bold">03</span>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl" data-icon="key">key</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Visita VIP &amp; Negociación</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Recorrido privado y sin presiones comerciales. Acompañamiento legal, notarial y fiduciario en cada paso hasta el traspaso de escrituras y entrega de llaves.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 font-label-sm text-label-sm text-secondary font-semibold">
+            CIERRE BLINDADO AL 100%
+          </div>
+</div>
+</div>
+<!-- WhatsApp Alternative Callout -->
+<div class="p-6 rounded-xl bg-surface border border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" data-icon="real_estate_agent">real_estate_agent</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">¿Deseas evaluar la venta o renta patrimonial de tu inmueble?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Valoración técnica y estudio de mercado comparativo sin costo para propietarios.</p>
+</div>
+</div>
+<a class="whitespace-nowrap px-5 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-colors flex items-center gap-2" href="https://wa.me/573185672660?text=Hola,%20deseo%20evaluar%20la%20venta%20o%20renta%20de%20mi%20inmueble%20en%20Bogota" rel="noopener noreferrer" target="_blank">
+<span>Consulta directa por WhatsApp</span>
+<span class="material-symbols-outlined text-sm" data-icon="call_made">call_made</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA D: DESEO (MÉTRICAS, BENEFICIOS & TESTIMONIOS) ================= -->
+<section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-margin" id="beneficios">
+<!-- Metrics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-20">
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center">
+<p class="font-display-mobile md:font-display text-display-mobile md:text-display text-primary font-bold">+15</p>
+<p class="font-label-md text-label-md text-on-surface-variant font-semibold mt-1">Años de Trayectoria</p>
+<span class="font-label-sm text-label-sm text-outline">Especialistas Bogotá Norte</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center">
+<p class="font-display-mobile md:font-display text-display-mobile md:text-display text-secondary font-bold">+480</p>
+<p class="font-label-md text-label-md text-on-surface-variant font-semibold mt-1">Familias Satisfechas</p>
+<span class="font-label-sm text-label-sm text-outline">Transacciones Privadas</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center">
+<p class="font-display-mobile md:font-display text-display-mobile md:text-display text-tertiary font-bold">$85M+</p>
+<p class="font-label-md text-label-md text-on-surface-variant font-semibold mt-1">USD Transaccionados</p>
+<span class="font-label-sm text-label-sm text-outline">Seguridad Fiduciaria</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center">
+<p class="font-display-mobile md:font-display text-display-mobile md:text-display text-primary font-bold">99.2%</p>
+<p class="font-label-md text-label-md text-on-surface-variant font-semibold mt-1">Cierre Exitoso</p>
+<span class="font-label-sm text-label-sm text-outline">Sin Dilaciones Legales</span>
+</div>
+</div>
+<!-- Tangible Benefits Grid -->
+<div class="mb-20">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-2 block">Diferenciales Tangibles</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+          Por qué las familias más exigentes confían en nuestra curaduría
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex gap-4 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="architecture">architecture</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Curaduría Arquitectónica y Luz Natural</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Rechazamos inmuebles con distribuciones oscuras o patologías constructivas. Cada residencia ofrece techos altos, ventilación cruzada y orientación óptima frente a los Cerros Orientales o parques del Chicó.
+            </p>
+</div>
+</div>
+<div class="flex gap-4 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl" data-icon="gavel">gavel</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Seguridad Jurídica y Títulos Blindados</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Estudio de títulos de 20 años de trazabilidad con abogados inmobiliarios expertos. Cero contingencias de gravámenes, embargos o pleitos sucesorales.
+            </p>
+</div>
+</div>
+<div class="flex gap-4 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex-shrink-0 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl" data-icon="visibility_off">visibility_off</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acceso Exclusivo Off-Market</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Más del 40% de las transacciones residenciales de alto perfil nunca se publican en portales públicos. Accede antes que el resto a las propiedades silenciosas de Rosales y Cabrera.
+            </p>
+</div>
+</div>
+<div class="flex gap-4 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Asesoría Tributaria y Financiera Integral</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Estructuración eficiente para inversionistas nacionales y extranjeros (banca privada, cuentas fiduciarias en Colombia y en el exterior, optimización de ganancias ocasionales).
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Verificados -->
+<div class="pt-8" id="testimonios">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold mb-1 block">Testimonios Reales</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">La voz de nuestros clientes en Bogotá</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
+              "Llevaba 8 meses buscando un penthouse con terraza auténtica en Rosales. Con Catálogo Inmobiliario solo hicimos 2 visitas y cerramos en 15 días un inmueble que ni siquiera estaba publicado."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary font-label-md text-label-md">
+              AR
+            </div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Andrés Restrepo</p>
+<p class="font-label-sm text-label-sm text-secondary">Inversionista · Compra en Rosales</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
+              "El rigor legal y la delicadeza en el trato marcaron la diferencia. Nos asesoraron en el traspaso fiduciario de nuestro apartamento en Chicó Reservado con total pulcritud."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary font-label-md text-label-md">
+              CG
+            </div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Camila Gómez de la Torre</p>
+<p class="font-label-sm text-label-sm text-secondary">Propietaria · Chicó Reservado</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
+              "Vivimos en Miami y necesitábamos una residencia en Santa Ana para nuestras estancias en Colombia. Gestionaron la inspección técnica y el cierre legal sin necesidad de viajar antes de la firma."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-tertiary font-label-md text-label-md">
+              MS
+            </div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Mauricio Samper</p>
+<p class="font-label-sm text-label-sm text-secondary">Comprador Internacional · Santa Ana</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA A: ACCIÓN (FORMULARIO DE ALTA CONVERSIÓN) ================= -->
+<section class="py-16 md:py-20 bg-surface-container-high relative overflow-hidden" id="agendar">
+<div class="max-w-4xl mx-auto px-4 md:px-gutter">
+<!-- Scarcity / Urgency Banner -->
+<div class="mb-8 p-3 bg-primary-fixed border border-primary/20 rounded-lg text-center flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary text-base" data-icon="schedule">schedule</span>
+<span class="font-label-md text-label-md font-bold text-on-primary-fixed">Cupos semanales limitados para visitas guiadas personalizadas</span>
+</div>
+<div class="bg-surface-container-lowest p-6 md:p-10 rounded-2xl border border-outline-variant/40 shadow-xl">
+<div class="text-center mb-8">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">
+            Empieza hoy la búsqueda de tu propiedad soñada
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Diligencia el formulario para recibir un contacto confidencial y el catálogo privado curado a tu medida.
+          </p>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('¡Gracias! Un asesor senior de Catálogo Inmobiliario Bogotá se comunicará contigo en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="nombre">Nombre completo *</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="person">person</span>
+</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface border border-outline-variant/60 rounded-lg text-on-surface focus:outline-none focus:border-primary font-body-md text-body-md" id="nombre" placeholder="Ej. Juan Felipe Morales" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp o Celular -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="telefono">WhatsApp o Celular (+57) *</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="phone">phone</span>
+</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface border border-outline-variant/60 rounded-lg text-on-surface focus:outline-none focus:border-primary font-body-md text-body-md" id="telefono" placeholder="Ej. +57 318 567 2660" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tipo de propiedad -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5 font-semibold" for="tipo_propiedad">¿Qué tipo de propiedad buscas? *</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="apartment">apartment</span>
+</span>
+<select class="w-full pl-10 pr-8 py-3 bg-surface border border-outline-variant/60 rounded-lg text-on-surface focus:outline-none focus:border-primary font-body-md text-body-md appearance-none" id="tipo_propiedad" required="">
+<option disabled="" selected="" value="">Selecciona tu interés principal...</option>
+<option value="penthouse_rosales_chico">Penthouse / Apartamento en Rosales o Chicó</option>
+<option value="casa_santa_ana">Casa o Villa en Santa Ana Oriental</option>
+<option value="apartamento_cabrera_nogal">Residencia Exclusiva en Cabrera / El Nogal</option>
+<option value="inversion_renta">Inversión patrimonial para renta premium</option>
+<option value="venta_inmueble">Quiero vender mi inmueble de alto valor</option>
+</select>
+<span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-lg" data-icon="arrow_drop_down">arrow_drop_down</span>
+</span>
+</div>
+</div>
+<!-- Botón de conversión principal -->
+<div class="pt-2">
+<button class="w-full py-4 px-6 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración patrimonial ✨</span>
+</button>
+</div>
+<!-- WhatsApp Direct Option -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-2 text-secondary hover:text-on-secondary-container font-label-md text-label-md font-semibold transition-colors" href="https://wa.me/573185672660?text=Hola,%20quisiera%20recibir%20asesoria%20inmediata%20sobre%20propiedades%20en%20Bogota" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>O prefiere chatear directo al WhatsApp (+57 318 567 2660)</span>
+</a>
+</div>
+<!-- Privacy Microcopy -->
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant pt-2 border-t border-outline-variant/30">
+            Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</form>
+</div>
+</div>
+</section>
+<!-- ================= PREGUNTAS FRECUENTES (FAQ ACORDEÓN) ================= -->
+<section class="py-16 md:py-24 max-w-4xl mx-auto px-4 md:px-gutter" id="faq">
+<div class="text-center mb-12">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-2 block">Dudas Habituales</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Tienen propiedades que no aparecen publicadas en internet?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 pt-3 border-t border-outline-variant/20 leading-relaxed">
+          Sí, un porcentaje significativo de nuestro portafolio en Rosales, Cabrera y Santa Ana se gestiona bajo la modalidad de mandato privado off-market a solicitud expresa de familias y propietarios que exigen absoluta discreción.
+        </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cuánto tiempo toma encontrar la propiedad adecuada?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 pt-3 border-t border-outline-variant/20 leading-relaxed">
+          Gracias a nuestro pre-filtrado riguroso, nuestros clientes suelen seleccionar su inmueble definitivo entre las 3 o 4 primeras visitas personalizadas, reduciendo el ciclo total de búsqueda a menos de 3 semanas.
+        </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cobran honorarios al comprador por la búsqueda personalizada?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 pt-3 border-t border-outline-variant/20 leading-relaxed">
+          En transacciones habituales de compraventa en Colombia, los honorarios de corretaje inmobiliario son cubiertos en su totalidad por la parte vendedora conforme a los usos de la Lonja de Propiedad Raíz de Bogotá. Para el comprador la curaduría, visitas y asesoría son totalmente gratuitas.
+        </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-5 open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center cursor-pointer font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Prestan asesoría a compradores residentes en el exterior?</span>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 pt-3 border-t border-outline-variant/20 leading-relaxed">
+          Absolutamente. Contamos con un protocolo internacional completo para colombianos en el exterior e inversionistas extranjeros: videos guiados en alta definición, conferencias legales notariales y formalización a través de poderes consulares o fiducias con total apego a la normatividad cambiaria del Banco de la República.
+        </p>
+</details>
+</div>
+</section>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full px-6 py-12 flex flex-col gap-6 text-center max-w-7xl mx-auto mb-16 bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/20">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" data-icon="real_estate_agent">real_estate_agent</span>
+<span class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface font-semibold">Catálogo Inmobiliario Bogotá</span>
+</div>
+<!-- Navigation links from JSON -->
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 font-label-md text-label-md" href="#privacidad">Política de Privacidad</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 font-label-md text-label-md" href="#terminos">Términos y Condiciones</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150 font-label-md text-label-md" href="#habeas-data">Habeas Data</a>
+<a class="text-primary dark:text-inverse-primary font-medium hover:underline transition-colors duration-150 font-label-md text-label-md" href="#agendar">Contacto</a>
+</div>
+<!-- Legal String Exact from JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl mx-auto">
+      © 2024 Catálogo Inmobiliario Bogotá. Registro Mercantil e Inmobiliario N° 0048291-04. Cobertura en Rosales, Chicó, Nogal, Cabrera y Santa Ana. Tratamiento de datos personales conforme a la Ley 1581 de 2012 de Habeas Data de la República de Colombia.
+    </p>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Anchor - Mobile Only) ================= -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 pb-safe bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(35,28,24,0.04)]">
+<!-- Item 1: Catálogo (Active Tab matching intent) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold py-1 active:scale-95 transition-transform duration-150" href="#catalogo">
+<span class="material-symbols-outlined text-2xl" data-icon="apartment" style="font-variation-settings: 'FILL' 1;">apartment</span>
+<span class="font-label-sm text-label-sm mt-0.5">Catálogo</span>
+</a>
+<!-- Item 2: Beneficios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary dark:hover:text-inverse-primary" href="#beneficios">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm mt-0.5">Beneficios</span>
+</a>
+<!-- Item 3: Testimonios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary dark:hover:text-inverse-primary" href="#testimonios">
+<span class="material-symbols-outlined text-2xl" data-icon="reviews">reviews</span>
+<span class="font-label-sm text-label-sm mt-0.5">Testimonios</span>
+</a>
+<!-- Item 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary dark:hover:text-inverse-primary" href="#agendar">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/catalogo-inmobiliario-bogota" width="1" height="1" style="display:none" alt="">
+</body></html>

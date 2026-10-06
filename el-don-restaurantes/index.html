@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>El Don Restaurantes | Cocina de Autor &amp; Carnes Maduradas</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#fbf9f5",
+            "on-surface": "#1b1c1a",
+            "secondary-fixed": "#ffdad4",
+            "on-background": "#1b1c1a",
+            "secondary-fixed-dim": "#ffb4a8",
+            "on-surface-variant": "#4d4541",
+            "on-secondary-fixed": "#410100",
+            "on-tertiary-fixed-variant": "#763300",
+            "outline-variant": "#d0c4be",
+            "primary-fixed": "#ece0db",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#cfc4bf",
+            "inverse-on-surface": "#f2f0ed",
+            "surface-container-high": "#eae8e4",
+            "on-secondary-fixed-variant": "#8a1c10",
+            "primary": "#000000",
+            "secondary": "#ab3425",
+            "on-tertiary-container": "#c36e39",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#6d0300",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fbf9f5",
+            "surface-container-low": "#f5f3ef",
+            "tertiary-container": "#331200",
+            "surface-dim": "#dbdad6",
+            "inverse-surface": "#30312e",
+            "tertiary-fixed-dim": "#ffb68d",
+            "on-primary-fixed-variant": "#4c4542",
+            "on-tertiary-fixed": "#331200",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "primary-container": "#201a17",
+            "surface-container-highest": "#e4e2de",
+            "on-primary-container": "#8b827e",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#201a17",
+            "tertiary-fixed": "#ffdbc9",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#cfc4bf",
+            "surface-variant": "#e4e2de",
+            "surface-tint": "#645d59",
+            "outline": "#7f7570",
+            "secondary-container": "#fc6f5a",
+            "surface-container": "#efeeea",
+            "background": "#fbf9f5",
+            "tertiary": "#000000"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "subhead-editorial": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "subhead-editorial": ["19px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
+<!-- TOP APP BAR (Shared Component) -->
+<header class="docked full-width top-0 sticky z-40 bg-surface dark:bg-surface-container-lowest shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-4 h-16 max-w-screen-xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary dark:text-secondary-fixed">restaurant_menu</span>
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface dark:text-inverse-on-surface font-semibold">EL DON RESTAURANTES</span>
+</div>
+<!-- Trailing Action: Reservar Mesa -->
+<a class="font-label-lg text-label-lg bg-secondary text-on-secondary px-4 py-2 rounded-xl shadow-sm hover:bg-secondary/90 transition-all duration-150 active:scale-95" href="#reservar">
+        Reservar Mesa
+      </a>
+</div>
+</header>
+<main class="flex-grow w-full max-w-md mx-auto px-4 pb-20 md:max-w-2xl lg:max-w-4xl">
+<!-- 1. ATENCIÓN (Hero Section) -->
+<section class="pt-6 pb-10 flex flex-col items-center text-center">
+<!-- Top Authority Badge -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/40 mb-5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-on-surface tracking-wider">✦ Cocina de Autor &amp; Carnes Maduradas · Top Gastronómico Colombia</span>
+</div>
+<!-- H1 Mobile Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface mb-4 leading-tight">
+        Una experiencia culinaria memorable, con el <span class="italic font-normal text-secondary">auténtico sabor</span> y fuego de autor en Colombia.
+      </h1>
+<!-- Result-oriented Subtitle -->
+<p class="font-subhead-editorial text-subhead-editorial text-on-surface-variant max-w-xl mb-6">
+        Cortes madurados a la perfección, cocina a la leña contemporánea y maridajes exclusivos pensados para celebrar tus mejores momentos sin filas ni improvisaciones.
+      </p>
+<!-- Hero Card with Dish Image -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 mb-6 bg-surface-container-lowest">
+<img class="w-full h-72 md:h-96 object-cover object-center" data-alt="A gourmet grilled dry aged ribeye steak served on an artisanal rustic wooden cutting board with a hot clay bowl of golden Andean criolla potatoes and vibrant chimichurri herb sauce. Warm sunlight beams through a luxury Colombian restaurant interior with lush ferns, brick arches, and wine glasses on dark solid oak tables, exuding warm epicurean elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLBR1uC7tYEvx4s8rxtBX-CM3EZ5ynd2U8MFQP-FID5kmP5mq7CU7-m6IVLOI9nHGxQGu-aisE34N_P3hxtdOR1AdMKleBTIKAJO2TtT4nhqe4OxLgnc5TVPogc3TQxLqefR0ETBkj21bJOSNXZ1wfDtm7QYROTuyUy9bfeBoupbRl5POFbLN-CcKLfOkpUQ0e5tAbbayGuyJD3xLkihHmBdSUy_mO19nD1DSHtnsrBbMI7PtawjQNU_EDqBPd1U2EnFYmGUUfGi4"/>
+<!-- Floating badge on image -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2.5 rounded-xl border border-outline-variant/40 flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<p class="font-label-md text-label-md text-on-surface text-left">
+<span class="font-bold">Corte Insignia:</span> Ribeye Madurado 45 Días &amp; Papa Criolla Salteada
+          </p>
+</div>
+</div>
+<!-- High-Conversion Primary CTA -->
+<a class="w-full h-16 bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg tracking-wide rounded-xl shadow-md flex items-center justify-center gap-3 transition-transform duration-150 active:scale-95" href="#reservar">
+<span>Agendar ahora mi mesa</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<!-- Micro Credential below button -->
+<p class="mt-3 font-body-sm text-body-sm text-outline flex items-center justify-center gap-1.5 flex-wrap">
+<span class="text-secondary font-semibold">✓</span> Respuesta en menos de 24 horas 
+        <span class="text-outline-variant">•</span> Confirmación por WhatsApp 
+        <span class="text-outline-variant">•</span> Sin costo de reserva
+      </p>
+<!-- 3 Instant Value Pills -->
+<div class="grid grid-cols-3 gap-2 w-full mt-6">
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-2.5 text-center">
+<span class="material-symbols-outlined text-secondary block text-xl mb-1">skillet</span>
+<span class="font-label-caps text-label-caps text-on-surface block">Maduración Artesanal</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-2.5 text-center">
+<span class="material-symbols-outlined text-secondary block text-xl mb-1">wine_bar</span>
+<span class="font-label-caps text-label-caps text-on-surface block">Maridaje de Autor</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-2.5 text-center">
+<span class="material-symbols-outlined text-secondary block text-xl mb-1">award_star</span>
+<span class="font-label-caps text-label-caps text-on-surface block">Atención VIP 1 a 1</span>
+</div>
+</div>
+</section>
+<!-- 2. INTERÉS (Problema del cliente + Proceso 3 pasos) -->
+<section class="py-10 border-t border-outline-variant/20">
+<!-- Empathy / Pain point block -->
+<div class="bg-surface-container-high rounded-2xl p-6 mb-8 border border-outline-variant/40">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary/10 text-secondary mb-3">
+<span class="material-symbols-outlined text-sm">help_outline</span>
+<span class="font-label-caps text-label-caps">El dilema al salir a cenar</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3">
+          ¿Cansado de reservas complicadas, mesas apresuradas o carnes que no cumplen su promesa de calidad?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          En <strong>El Don Restaurantes</strong> valoramos tu tiempo y cada brindis. Diseñamos un entorno sereno con asignación continua de mesa, fuego ancestral con cortes madurados al punto milimétrico y servicio consagrado a superar tus expectativas gastronómicas en Colombia.
+        </p>
+</div>
+<!-- 3 Simple Steps Process -->
+<div class="text-center mb-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sencillo, refinado &amp; garantizado</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Tu experiencia perfecta en 3 simples pasos</h3>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-sm shrink-0">
+            01
+          </div>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Valoración de tu ocasión</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Cuéntanos fecha, comensales y tipo de ocasión (pareja, negocios, familia o celebración especial).</p>
+<div class="inline-flex items-center gap-1 text-secondary text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Beneficio: Mesa reservada en el mejor salón según tu preferencia.</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-sm shrink-0">
+            02
+          </div>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Selección personalizada de menú &amp; maridaje</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Coordinamos tus cortes predilectos, términos de cocción y etiquetas de cava sugeridas por nuestro sommelier.</p>
+<div class="inline-flex items-center gap-1 text-secondary text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Beneficio: Cero esperas de cocina y mesa lista al llegar.</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-sm shrink-0">
+            03
+          </div>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Velada inolvidable al fuego</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Disfruta de la mejor carne madurada y mixología botánica con servicio de alta etiqueta.</p>
+<div class="inline-flex items-center gap-1 text-secondary text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">celebration</span>
+<span>Beneficio: Momentos memorables y garantía de satisfacción gastronómica.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle Concierge link -->
+<div class="text-center mt-6">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-secondary hover:underline" href="https://wa.me/573176672552">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>¿Tienes un evento corporativo o fecha especial? Chatea con nuestro concierge</span>
+</a>
+</div>
+</section>
+<!-- 3. DESEO (Métricas de confianza + Beneficios sensoriales + Testimonios) -->
+<section class="py-10 border-t border-outline-variant/20">
+<!-- Metrics Grid -->
+<div class="grid grid-cols-2 gap-3 mb-10">
+<div class="bg-surface-container-low p-4 rounded-xl text-center border border-outline-variant/20">
+<span class="font-display-hero-mobile text-secondary font-bold block">+12</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Años de Trayectoria</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl text-center border border-outline-variant/20">
+<span class="font-display-hero-mobile text-secondary font-bold block">+65k</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Comensales Atendidos</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl text-center border border-outline-variant/20">
+<span class="font-display-hero-mobile text-secondary font-bold block">4.9 ★</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Google &amp; TripAdvisor</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl text-center border border-outline-variant/20">
+<span class="font-display-hero-mobile text-secondary font-bold block">100%</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Angus &amp; Brangus Certificado</span>
+</div>
+</div>
+<!-- 4 Sensory Result Benefits -->
+<div class="mb-10">
+<h3 class="font-headline-md text-headline-md text-center text-on-surface mb-6">Excelencia en cada detalle sensorial</h3>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">local_fire_department</span>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Sabor &amp; terneza inigualable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maduración en seco (Dry Aged) que concentra notas a mantequilla y nuez bajo cortes seleccionados de alta marmoleo.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">volume_off</span>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Ambiente íntimo y acústica cuidada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Salones privados y terrazas con iluminación cálida pensadas para conversar en privado sin estridencias.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">liquor</span>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Cava curada &amp; coctelería botánica</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Más de 180 etiquetas de vinos internacionales y tragos de autor macerados con hierbas de los Andes.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0">room_service</span>
+<div>
+<h4 class="font-headline-sm text-base text-on-surface font-semibold mb-1">Servicio concierge sin afán</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tu mesa está asignada para toda la velada, sin rotaciones apresuradas ni presión de tiempo.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials -->
+<div class="space-y-4">
+<div class="p-5 rounded-2xl bg-surface-container border border-outline-variant/30">
+<div class="flex text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-3">
+            "Celebramos nuestro aniversario en El Don. La carne se deshacía con el tenedor y la atención fue impecable desde la reserva por WhatsApp. Nivel mundial en Colombia."
+          </p>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">CR</div>
+<div>
+<p class="font-label-lg text-xs text-on-surface font-semibold">Camila Restrepo</p>
+<p class="font-body-sm text-[11px] text-outline">Bogotá / Medellín · Reseña Verificada</p>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container border border-outline-variant/30">
+<div class="flex text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-3">
+            "Como amante del asado y las carnes, el ribeye madurado de El Don es insuperable. Llegamos con clientes internacionales y quedaron fascinados."
+          </p>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-on-surface text-surface flex items-center justify-center font-bold text-xs">FM</div>
+<div>
+<p class="font-label-lg text-xs text-on-surface font-semibold">Dr. Felipe Mendoza</p>
+<p class="font-body-sm text-[11px] text-outline">Empresario · Reseña Verificada</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN (Conversión final con formulario 3 campos + WhatsApp) -->
+<section class="py-10 border-t border-outline-variant/20 scroll-mt-20" id="reservar">
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-outline-variant/40 shadow-xl relative overflow-hidden">
+<!-- Priority badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-caps text-label-caps">Cupos prioritarios para esta semana en Colombia</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">
+          Asegura hoy tu experiencia en El Don Restaurantes
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          Completa 3 datos y nuestro maitre confirmará tu mesa por WhatsApp de inmediato.
+        </p>
+<!-- Minimal 3-Field Reservation Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573176672552';">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Nombre y Apellido</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-lg">person</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface rounded-xl border border-outline-variant/50 focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface text-body-md" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">WhatsApp o Celular</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-lg">call</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface rounded-xl border border-outline-variant/50 focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface text-body-md" placeholder="+57 300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">¿Qué experiencia buscas?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-lg">event_seat</span>
+<select class="w-full h-12 pl-10 pr-4 bg-surface rounded-xl border border-outline-variant/50 focus:border-secondary focus:ring-1 focus:ring-secondary text-on-surface text-body-md appearance-none">
+<option value="romantica">Cena Romántica / Aniversario</option>
+<option value="negocios">Almuerzo de Negocios VIP</option>
+<option value="familiar">Cena Familiar / Amigos</option>
+<option value="celebracion">Celebración Especial / Cumpleaños</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Main CTA Button -->
+<button class="w-full h-16 bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg tracking-wide rounded-xl shadow-lg flex items-center justify-center gap-2 transition-transform duration-150 active:scale-95 mt-4" type="submit">
+<span>Quiero mi mesa en El Don ✨</span>
+</button>
+</form>
+<!-- Direct WhatsApp Quick Connect -->
+<div class="mt-6 pt-6 border-t border-outline-variant/20 text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">¿Prefieres asistencia inmediata por chat?</p>
+<a class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded-xl bg-[#25D366]/10 text-[#128C7E] hover:bg-[#25D366]/20 transition-all font-label-lg text-label-lg border border-[#25D366]/30" href="https://wa.me/573176672552" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Chatear directo al WhatsApp (+57 317 667 2552)</span>
+</a>
+</div>
+<!-- Privacy disclaimer -->
+<p class="mt-4 text-center font-body-sm text-[11px] text-outline leading-tight">
+          🔒 Tus datos están 100% protegidos bajo secreto profesional y la Ley 1581 de Protección de Datos Personales de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Acordeón interactivo) -->
+<section class="py-10 border-t border-outline-variant/20">
+<div class="text-center mb-6">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Información Clave</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-semibold">
+<span>¿Con cuánta anticipación debo hacer mi reserva?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Recomendamos agendar con 48 a 72 horas de antelación para fines de semana o fechas especiales. Sin embargo, gestionamos cupos del mismo día sujetos a disponibilidad inmediata mediante nuestro concierge de WhatsApp.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-semibold">
+<span>¿Tienen opciones vegetarianas o menú para niños?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Sí. Aunque nuestro corazón late en las carnes maduradas, contamos con exquisitas opciones de vegetales a la leña, pastas artesanales y preparaciones adaptadas para niños y preferencias dietéticas especiales.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-semibold">
+<span>¿Tienen salones privados para eventos corporativos o aniversarios?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            Disponemos de salones exclusivos con cava climatizada, audiovisuales y servicio sommelier privado en nuestras sedes de Bogotá y Medellín para grupos desde 8 hasta 45 personas.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-headline-sm text-base text-on-surface font-semibold">
+<span>¿Cuál es la política de cancelación o modificación de reserva?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3">
+            No cobramos anticipos para mesas regulares. Puedes reprogramar o cancelar tu reserva sin penalidad avisándonos con al menos 4 horas de anticipación a través de WhatsApp.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component) -->
+<footer class="w-full px-6 pt-10 pb-28 flex flex-col gap-6 text-center max-w-screen-md mx-auto border-t border-outline-variant/15 bg-primary-container dark:bg-surface-container-lowest text-primary-fixed dark:text-inverse-primary">
+<div class="font-headline-md text-headline-md text-primary-fixed uppercase tracking-widest">
+      EL DON RESTAURANTES
+    </div>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-outline-variant max-w-md mx-auto">
+      © 2024 El Don Restaurantes S.A.S. Todos los derechos reservados. Alta Cocina &amp; Fuego Colombiano.
+    </p>
+<div class="flex flex-col md:flex-row flex-wrap justify-center gap-3 font-label-md text-label-md text-on-primary-container dark:text-outline-variant">
+<a class="hover:text-secondary-fixed transition-colors duration-150 hover:underline" href="#">Sedes: Bogotá, Medellín, Cartagena</a>
+<span class="hidden md:inline">•</span>
+<a class="hover:text-secondary-fixed transition-colors duration-150 hover:underline" href="#">Certificación Maduración Premium</a>
+<span class="hidden md:inline">•</span>
+<a class="hover:text-secondary-fixed transition-colors duration-150 hover:underline" href="#">Políticas de Privacidad &amp; Tratamiento de Datos</a>
+<span class="hidden md:inline">•</span>
+<a class="hover:text-secondary-fixed transition-colors duration-150 hover:underline" href="#">Contacto &amp; Eventos Privados</a>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component - Mobile Only Destination) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface/95 dark:bg-surface-container-lowest/95 backdrop-blur-md shadow-lg dark:shadow-none">
+<!-- Tab 1: Menú -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-1 hover:text-secondary transition-colors duration-150 active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+<span class="font-label-caps text-label-caps">Menú</span>
+</a>
+<!-- Tab 2: Experiencia -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-1 hover:text-secondary transition-colors duration-150 active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl">local_fire_department</span>
+<span class="font-label-caps text-label-caps">Experiencia</span>
+</a>
+<!-- Tab 3: Reseñas -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-1 hover:text-secondary transition-colors duration-150 active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl">hotel_class</span>
+<span class="font-label-caps text-label-caps">Reseñas</span>
+</a>
+<!-- Tab 4: Reservar (ACTIVE NAVIGATION FOR THIS LANDING) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed font-bold py-1 active:scale-90 transition-transform duration-150" href="#reservar">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-label-caps text-label-caps">Reservar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/el-don-restaurantes" width="1" height="1" style="display:none" alt="">
+</body></html>

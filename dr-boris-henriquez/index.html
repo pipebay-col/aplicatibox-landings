@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Boris Henríquez · Cirugía Plástica y Reconstructiva Barranquilla</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#e4f2ef",
+            "on-secondary-fixed": "#00201d",
+            "tertiary": "#4a5755",
+            "on-background": "#141d1b",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-error": "#ffffff",
+            "background": "#f2fcf8",
+            "tertiary-fixed": "#d7e5e2",
+            "primary-container": "#007a6e",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#005048",
+            "on-tertiary-fixed-variant": "#3d4947",
+            "on-surface": "#141d1b",
+            "inverse-primary": "#7ad7c8",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#dbe5e1",
+            "error": "#ba1a1a",
+            "secondary-container": "#86f2e4",
+            "outline": "#6e7977",
+            "tertiary-fixed-dim": "#bcc9c7",
+            "tertiary-container": "#626f6d",
+            "surface-tint": "#006a60",
+            "surface-dim": "#d2dcd9",
+            "primary-fixed-dim": "#7ad7c8",
+            "on-primary-fixed": "#00201c",
+            "surface-container": "#e6f0ec",
+            "surface": "#f2fcf8",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#293230",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#89f5e7",
+            "on-secondary-container": "#006f66",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#96f3e4",
+            "primary": "#005f55",
+            "on-surface-variant": "#3e4947",
+            "surface-bright": "#f2fcf8",
+            "on-secondary-fixed-variant": "#005049",
+            "secondary": "#006a61",
+            "surface-variant": "#dbe5e1",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#121e1c",
+            "inverse-on-surface": "#e9f3ef",
+            "surface-container-high": "#e0eae7",
+            "outline-variant": "#bdc9c6",
+            "on-primary-container": "#a8fff0",
+            "surface-container-low": "#ecf6f2"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-md": "1rem",
+            "space-xl": "2.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "700" }],
+            "display": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary-container selection:text-on-primary">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-margin py-space-sm w-full max-w-md mx-auto bg-surface/85 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-title-lg font-title-lg font-bold text-primary tracking-tight">Dr. Boris Henríquez</span>
+</div>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary text-label-md font-label-md px-space-md py-space-xs rounded-full hover:bg-primary-container active:scale-[0.98] transition-all duration-200 shadow-sm" href="#formulario-valoracion">
+      Agendar
+    </a>
+</header>
+<!-- MAIN VIEWPORT CONTAINER (Mobile-First ~390px - 430px optimal frame) -->
+<main class="w-full max-w-md mx-auto px-margin pt-space-md pb-space-xl flex flex-col gap-space-xl">
+<!-- ================= 1. [A - ATENCIÓN] ================= -->
+<section class="flex flex-col gap-space-md">
+<!-- Micro-credencial real -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-surface-container-low border border-primary/20 text-on-surface-variant text-label-sm font-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Cirujano Plástico Certificado SCCP &amp; Ex-Junta Directiva ISAPS · Barranquilla, Colombia</span>
+</div>
+<!-- Titular de Impacto -->
+<h1 class="text-headline-lg font-headline-lg text-primary tracking-tight">
+        Tu belleza en su versión más armónica y natural, con rigor médico en Barranquilla.
+      </h1>
+<!-- Subtítulo de Especificidad Quirúrgica -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Más de 26 años esculpiendo fisonomías proporcionadas. Rinoplastia ultrasónica de preservación, contorno corporal de autor y rejuvenecimiento facial sin estigmas de quirófano para pacientes locales e internacionales.
+      </p>
+<!-- Tarjeta Hero con Fotografía Referenciada -->
+<div class="relative w-full rounded-3xl overflow-hidden bg-surface-container-lowest border border-primary-container/15 shadow-md">
+<img alt="Paciente en consulta médica del Dr. Boris Henríquez en Barranquilla" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1Uz9gFZfZxYC97D8AJEBOjrTlwY55-CZbUzFpMDUiYpEj6Siu2035bQ-sJymZ2umJraSJfuN6pnEV5nXW9K6ocOxaPgqcgsoo08rK0g5zmqQKQqCr3TosG1JspuyvjvhYLKvK1rZgqVvvHEdjXuae4cHhrOnb30nzUXhfD57jiK4dszSH0MAZsbPlbiqrZ9VFrjQThXLCoxwsvp8FIy00bm-Rkx-tndW9JSuWlN7pt6lDc4dXSxmugO7g"/>
+<!-- Badge Flotante sobre la Imagen -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md p-3 rounded-2xl border border-white/60 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<div>
+<p class="text-label-sm font-label-sm text-primary uppercase">Resultado Clínico Verificado</p>
+<p class="text-body-sm font-body-sm text-on-surface font-semibold">Armonía &amp; Naturalidad en Perfiloplastia</p>
+</div>
+</div>
+<span class="inline-flex items-center text-label-sm font-label-sm bg-primary/10 text-primary px-2 py-1 rounded-full">SCCP</span>
+</div>
+</div>
+<!-- CTA Principal Hero (54px de altura, táctil óptimo) -->
+<div class="flex flex-col gap-2 pt-1">
+<a class="w-full h-[54px] flex items-center justify-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-[0_8px_24px_rgba(0,122,110,0.28)] active:scale-[0.98] transition-all duration-200" href="#formulario-valoracion">
+<span class="material-symbols-outlined text-headline-sm" data-icon="calendar_month">calendar_month</span>
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-headline-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas · Sin cobros sorpresa · Plan 100% personalizado
+        </p>
+</div>
+<!-- Barra de 3 sellos de confianza rápidos -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low p-2.5 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-1 text-title-md" data-icon="precision_manufacturing">precision_manufacturing</span>
+<p class="text-label-sm font-label-sm text-primary leading-tight">Tecnología Ultrasónica</p>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[10px] mt-0.5">Sin fracturas bruscas</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-1 text-title-md" data-icon="workspace_premium">workspace_premium</span>
+<p class="text-label-sm font-label-sm text-primary leading-tight">26 Años Trayectoria</p>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[10px] mt-0.5">+4.500 cirugías</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-2xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-1 text-title-md" data-icon="travel_explore">travel_explore</span>
+<p class="text-label-sm font-label-sm text-primary leading-tight">Atención VIP Bilingüe</p>
+<span class="text-body-sm font-body-sm text-on-surface-variant text-[10px] mt-0.5">Barranquilla sede</span>
+</div>
+</div>
+</section>
+<!-- ================= 2. [I - INTERÉS] ================= -->
+<section class="flex flex-col gap-space-lg bg-surface-container-low/70 -mx-margin px-margin py-space-xl rounded-3xl border border-outline-variant/20">
+<!-- Problema / Miedo Principal del Paciente -->
+<div class="flex flex-col gap-2">
+<div class="inline-flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-title-md" data-icon="psychology">psychology</span>
+<span>HUMANISMO Y ÉTICA QUIRÚRGICA</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-primary">
+          ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed pt-1">
+          En la consulta del <strong class="text-on-surface font-semibold">Dr. Boris Henríquez</strong> descartamos las cirugías en serie y los cánones artificiales. Esculpimos con proporciones áureas respetando tu identidad y preservando tejidos, para que todos noten tu frescura pero nadie adivine una cirugía.
+        </p>
+</div>
+<!-- Proceso de Atención Médica en 3 Pasos -->
+<div class="flex flex-col gap-3">
+<!-- Paso 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 shadow-sm flex gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-md shrink-0">
+            01
+          </div>
+<div class="flex flex-col">
+<h3 class="text-title-md font-title-md text-on-surface">Valoración y Mapeo Anatómico 3D</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+              Simulación y análisis milimétrico presencial en Barranquilla o videoconsulta internacional sin presiones comerciales.
+            </p>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 shadow-sm flex gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-md shrink-0">
+            02
+          </div>
+<div class="flex flex-col">
+<h3 class="text-title-md font-title-md text-on-surface">Plan Quirúrgico y Presupuesto Cerrado</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+              Cotización integral por escrito con derechos de clínica de cuarto nivel, anestesiología certificada y seguimiento postoperatorio sin costos imprevistos.
+            </p>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-primary/10 shadow-sm flex gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-bold text-title-md shrink-0">
+            03
+          </div>
+<div class="flex flex-col">
+<h3 class="text-title-md font-title-md text-on-surface">Cirugía de Precisión y Recuperación</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+              Técnica mínimamente invasiva con ultrasonido piezoeléctrico para menor edema y retorno seguro a tu vida diaria en 7 a 10 días.
+            </p>
+</div>
+</div>
+</div>
+<!-- Enlace rápido a equipo de enfermería y concierge -->
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 text-primary text-label-md font-label-md hover:underline" href="https://wa.me/573005304050?text=Hola%20Dr.%20Boris%2C%20deseo%20hacer%20una%20pregunta%20rápida%20con%20el%20equipo%20médico" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-headline-sm" data-icon="support_agent">support_agent</span>
+<span>¿Tienes dudas clínicas previas? Consulta directa con enfermería VIP</span>
+</a>
+</div>
+</section>
+<!-- ================= 3. [D - DESEO] ================= -->
+<section class="flex flex-col gap-space-lg">
+<!-- Rejilla de Métricas de Confianza Comprobada -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-3xl border border-primary/15 text-center flex flex-col justify-center">
+<span class="text-display font-display text-primary">+26</span>
+<span class="text-label-md font-label-md text-on-surface">Años de Trayectoria</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Práctica quirúrgica continua</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-3xl border border-primary/15 text-center flex flex-col justify-center">
+<span class="text-display font-display text-primary">+4.500</span>
+<span class="text-label-md font-label-md text-on-surface">Pacientes Satisfechos</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Locales e internacionales</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-3xl border border-primary/15 text-center flex flex-col justify-center">
+<span class="text-display font-display text-primary">99.4%</span>
+<span class="text-label-md font-label-md text-on-surface">Satisfacción Verificada</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Acompañamiento postquirúrgico</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-3xl border border-primary/15 text-center flex flex-col justify-center">
+<span class="text-display font-display text-primary">100%</span>
+<span class="text-label-md font-label-md text-on-surface">Certificación Oficial</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Miembro SCCP &amp; ISAPS</span>
+</div>
+</div>
+<!-- 4 Beneficios clave de transformación de vida diaria -->
+<div class="flex flex-col gap-3">
+<h3 class="text-headline-sm font-headline-sm text-primary">
+          La diferencia de operarte con criterio de autor
+        </h3>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Beneficio 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0" data-icon="face">face</span>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">1. Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Proporciones equilibradas que realzan tus rasgos distintivos sin rigidez ni aspecto estirado o artificial.
+              </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0" data-icon="health_and_safety">health_and_safety</span>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">2. Preservación tisular y pronta recuperación</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Ultrasonido piezoeléctrico de última generación que respeta vasos sanguíneos, reduciendo notablemente morados y dolor.
+              </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0" data-icon="local_hospital">local_hospital</span>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">3. Quirófanos certificados de alta complejidad</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Intervenciones únicamente en instituciones de salud acreditadas en Barranquilla con anestesiólogos certificados de la SCCP.
+              </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex gap-3">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0" data-icon="loyalty">loyalty</span>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">4. Acompañamiento VIP integral</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1 leading-normal">
+                Monitoreo postquirúrgico directo con el Dr. Henríquez y concierge dedicado para traslados y hospedaje de pacientes externos.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios de Pacientes Verificadas -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-primary uppercase">Experiencias Reales</span>
+<span class="flex items-center text-primary text-body-sm">
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</span>
+</div>
+<!-- Tarjeta Testimonio 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2">
+<p class="text-body-md font-body-md text-on-surface italic">
+            "Tenía pánico de que mi nariz se viera operada o 'en punta'. El Dr. Henríquez me explicó cada detalle en el simulador. A los 8 días ya estaba en mi oficina sin morados. Mi rostro se ve dulce y fino."
+          </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<div>
+<p class="text-title-md font-title-md text-on-surface">Camila Morales</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Rinoplastia Ultrasónica · Barranquilla</p>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium bg-white px-2 py-0.5 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[13px]" data-icon="check_circle">check_circle</span> Verificada
+            </span>
+</div>
+</div>
+<!-- Tarjeta Testimonio 2 (Paciente Internacional) -->
+<div class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2">
+<p class="text-body-md font-body-md text-on-surface italic">
+            "Viajé desde Miami para mi contorno corporal y lipotransferencia de autor. La organización del concierge, la clínica de primer nivel y la calidad humana del doctor superaron cualquier expectativa."
+          </p>
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+<div>
+<p class="text-title-md font-title-md text-on-surface">Valeria S. Thompson</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Lipo HD &amp; Moldeamiento · Miami, FL</p>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium bg-white px-2 py-0.5 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-[13px]" data-icon="flight_takeoff">flight_takeoff</span> Health Tourist
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. [A - ACCIÓN] ================= -->
+<section class="scroll-mt-20 flex flex-col gap-space-md p-5 rounded-3xl bg-surface-container-lowest border-2 border-primary-container shadow-xl" id="formulario-valoracion">
+<!-- Badge de escasez clínica y exclusividad -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="event_seat">event_seat</span>
+<span>Cupos limitados por agenda quirúrgica en Barranquilla</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-headline-md font-headline-md text-primary">
+          Empieza hoy tu transformación con seguridad médica
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Completa tus datos para coordinar tu cita presencial o videoconsulta personalizada con el equipo del Dr. Boris Henríquez.
+        </p>
+</div>
+<!-- Formulario de 3 Campos -->
+<form class="flex flex-col gap-3.5 pt-1" id="leadForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.classList.add('hidden');">
+<!-- Campo 1: Nombre -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface" for="fullName">Nombre y Apellido *</label>
+<input class="h-[52px] rounded-2xl bg-surface border border-outline-variant/40 px-4 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-md" id="fullName" placeholder="ej. Mariana Restrepo" required="" type="text"/>
+</div>
+<!-- Campo 2: Celular / WhatsApp -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface" for="phone">WhatsApp o Celular (+57 con selector) *</label>
+<div class="flex gap-2">
+<span class="h-[52px] px-3.5 rounded-2xl bg-surface-container border border-outline-variant/40 flex items-center justify-center font-semibold text-primary text-body-md shrink-0">
+              🇨🇴 +57
+            </span>
+<input class="h-[52px] w-full rounded-2xl bg-surface border border-outline-variant/40 px-4 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-md" id="phone" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Procedimiento -->
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-on-surface" for="procedure">¿Qué procedimiento te interesa evaluar? *</label>
+<select class="h-[52px] rounded-2xl bg-surface border border-outline-variant/40 px-4 text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-md" id="procedure" required="">
+<option disabled="" selected="" value="">Selecciona un área de interés</option>
+<option value="rinoplastia">Rinoplastia Ultrasónica de Preservación</option>
+<option value="corporal">Contorno Corporal / Lipo HD de Alta Definición</option>
+<option value="facial">Rejuvenecimiento Facial / Deep Plane Facelift</option>
+<option value="mamas">Cirugía Mamaria (Aumento, Reducción, Levantamiento)</option>
+<option value="integral">Valoración Quirúrgica Integral</option>
+</select>
+</div>
+<!-- Botón CTA Principal -->
+<button class="w-full h-[54px] mt-2 flex items-center justify-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-full shadow-[0_8px_24px_rgba(0,122,110,0.28)] active:scale-[0.98] transition-all duration-200" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- Botón Secundario de WhatsApp Directo -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-3 text-label-sm font-label-sm text-outline">o contacto directo</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<a class="w-full h-[50px] flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-md text-label-md rounded-full shadow-sm active:scale-[0.98] transition-all duration-200" href="https://wa.me/573005304050?text=Hola%20Dr.%20Boris%20Henríquez%2C%20deseo%20agendar%20una%20valoración%20clínica%20en%20Barranquilla" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-headline-sm" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 530 4050)</span>
+</a>
+<!-- Aviso Legal y Habeas Data -->
+<p class="text-[11px] leading-tight text-center text-on-surface-variant pt-2">
+          🔒 Tus datos están 100% protegidos bajo secreto profesional médico y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</form>
+<!-- Mensaje de confirmación dinámico -->
+<div class="hidden p-6 rounded-2xl bg-surface-container border border-primary/20 text-center flex flex-col items-center gap-2" id="formSuccess">
+<span class="material-symbols-outlined text-primary text-headline-lg" data-icon="check_circle">check_circle</span>
+<h4 class="text-title-lg font-title-lg text-primary">¡Solicitud recibida con éxito!</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          Nuestra coordinadora de consulta te escribirá vía WhatsApp en un plazo menor a 24 horas laborables.
+        </p>
+</div>
+</section>
+<!-- ================= 5. [SECCIÓN FAQ DE OBJECIONES CLÍNICAS] ================= -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="text-label-md font-label-md text-primary uppercase">Transparencia Total</span>
+<h2 class="text-headline-md font-headline-md text-primary">
+          Preguntas frecuentes y resolución de dudas
+        </h2>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer transition-all">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>¿La rinoplastia ultrasónica duele o requiere taponamientos molestos?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-3 leading-relaxed">
+            No. Gracias al instrumental piezoeléctrico de ultrasonido, solo se remodela la estructura ósea milimétricamente sin romper vasos sanguíneos adyacentes. El dolor postoperatorio es prácticamente nulo y en la inmensa mayoría de los casos prescindimos de taponamientos intranasales rígidos.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer transition-all">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>¿El presupuesto entregado es realmente cerrado y definitivo?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-3 leading-relaxed">
+            Sí. Tu cotización clínica incluye todos los honorarios médicos quirúrgicos, derechos de sala en clínicas de cuarto nivel, anestesiología calificada, póliza de complicaciones y las consultas de control postoperatorio sin cobros imprevistos.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer transition-all">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>¿Cómo funciona el proceso para pacientes desde el exterior?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-3 leading-relaxed">
+            Iniciamos con una videoconsulta de alta definición directamente con el Dr. Boris Henríquez. Una vez definido el plan, nuestro departamento concierge te asiste con el hospedaje en hoteles con convenio médico en Barranquilla, transporte bilingüe y programación de tu estancia (habitualmente 10 a 14 días).
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden cursor-pointer transition-all">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface">
+<span>¿En qué clínicas y quirófanos de Barranquilla opera el Dr. Henríquez?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="pt-3 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 mt-3 leading-relaxed">
+            El Dr. Henríquez opera exclusivamente en centros hospitalarios habilitados de alta complejidad que cuentan con Unidades de Cuidados Intensivos (UCI), tecnología estéril avanzada y soporte vital completo, garantizando los más rigurosos estándares de bioseguridad en Colombia.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full px-margin pt-space-xl pb-32 flex flex-col gap-space-md max-w-md mx-auto bg-surface-container-low border-t border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-lg" data-icon="verified">verified</span>
+<span class="text-title-md font-title-md font-bold text-primary">Dr. Boris Henríquez</span>
+</div>
+<!-- Enlaces Institucionales y de Protección al Paciente -->
+<div class="flex flex-col gap-2">
+<a class="text-label-sm font-label-sm text-primary hover:underline" href="#">Sociedad Colombiana de Cirugía Plástica (SCCP)</a>
+<a class="text-label-sm font-label-sm text-primary hover:underline" href="#">Miembro ISAPS</a>
+<a class="text-label-sm font-label-sm text-primary hover:underline" href="#">Política de Privacidad y Habeas Data</a>
+<a class="text-label-sm font-label-sm text-primary hover:underline" href="#">Términos y Consentimiento Informado</a>
+</div>
+<!-- Copyright y Habilitación Oficial -->
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+      © 2024 Dr. Boris Henríquez · Cirujano Plástico, Estético y Reconstructivo. Habilitación MinSalud &amp; Secretaría de Salud del Atlántico. Barranquilla, Colombia. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales.
+    </p>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Anchor) ================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-sm max-w-md mx-auto right-0 bg-surface/90 backdrop-blur-lg shadow-lg border-t border-outline-variant/30">
+<!-- Item 1: Valoración (ACTIVO por foco principal de la Landing Page) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/60 text-on-secondary-container rounded-full px-space-sm py-space-xs transition-colors" href="#formulario-valoracion">
+<span class="material-symbols-outlined text-title-lg" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Valoración</span>
+</a>
+<!-- Item 2: Especialidades -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors" href="#formulario-valoracion">
+<span class="material-symbols-outlined text-title-lg" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm">Especialidades</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors" href="#formulario-valoracion">
+<span class="material-symbols-outlined text-title-lg" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- Item 4: WhatsApp VIP -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors" href="https://wa.me/573005304050?text=Hola%20Dr.%20Boris%20Henr%C3%ADquez%2C%20solicito%20asistencia%20VIP" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-title-lg text-[#25D366]" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="text-label-sm font-label-sm">WhatsApp VIP</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/dr-boris-henriquez" width="1" height="1" style="display:none" alt="">
+</body></html>

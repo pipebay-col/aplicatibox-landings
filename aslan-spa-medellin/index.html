@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Aslan Spa · Santuario de Bienestar &amp; Masajes en El Poblado, Medellín</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Outfit -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "primary": "#005f55",
+            "surface": "#f2fcf6",
+            "surface-container-high": "#e0eae5",
+            "surface-container-low": "#ecf6f1",
+            "surface-bright": "#f2fcf6",
+            "tertiary-container": "#007a6d",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#bdc9c6",
+            "on-secondary-fixed": "#00201c",
+            "inverse-surface": "#29322f",
+            "primary-fixed": "#96f3e4",
+            "on-surface-variant": "#3e4947",
+            "secondary-container": "#beece3",
+            "on-secondary-fixed-variant": "#224e48",
+            "on-primary-fixed": "#00201c",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#7ad7c8",
+            "surface-tint": "#006a60",
+            "on-secondary-container": "#416c66",
+            "surface-variant": "#dbe5e0",
+            "on-tertiary-fixed-variant": "#005047",
+            "tertiary": "#005f54",
+            "on-surface": "#141d1a",
+            "primary-fixed-dim": "#7ad7c8",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#a8ffef",
+            "secondary-fixed": "#beece3",
+            "on-primary-fixed-variant": "#005048",
+            "on-background": "#141d1a",
+            "on-error": "#ffffff",
+            "surface-container": "#e6f0eb",
+            "surface-dim": "#d2dcd7",
+            "surface-container-highest": "#dbe5e0",
+            "on-tertiary-fixed": "#00201c",
+            "inverse-on-surface": "#e9f3ee",
+            "secondary": "#3b6660",
+            "outline": "#6e7977",
+            "primary-container": "#007a6e",
+            "on-primary-container": "#a8fff0",
+            "background": "#f2fcf6",
+            "tertiary-fixed": "#79f7e3",
+            "tertiary-fixed-dim": "#59dbc7",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed-dim": "#a2cfc7"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "margin-lg": "5rem",
+            "gutter-lg": "2.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.75rem",
+            "gutter-sm": "1rem",
+            "space-xl": "3.5rem",
+            "space-lg": "2.25rem",
+            "space-md": "1.25rem",
+            "space-xs": "0.375rem",
+            "margin-md": "3rem"
+          },
+          "fontFamily": {
+            "title-md": ["Outfit"],
+            "title-lg": ["Outfit"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Outfit"],
+            "headline-lg": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-md": ["Outfit"],
+            "headline-md": ["Playfair Display"],
+            "label-xs": ["Outfit"]
+          },
+          "fontSize": {
+            "title-md": ["17px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+            "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "body-lg": ["17px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "display-hero-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+            "headline-lg": ["40px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "display-hero": ["56px", {"lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}],
+            "headline-md": ["28px", {"lineHeight": "38px", "fontWeight": "500"}],
+            "label-xs": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    .custom-shadow {
+      box-shadow: 0 12px 36px -8px rgba(0, 122, 110, 0.08), 0 4px 12px -2px rgba(27, 36, 33, 0.04);
+    }
+    .custom-shadow-lg {
+      box-shadow: 0 20px 48px -10px rgba(0, 95, 85, 0.12), 0 6px 18px -3px rgba(20, 29, 26, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md selection:bg-secondary-container selection:text-primary">
+<!-- ================= TOP APP BAR (Shared Component Exact JSON Mapping) ================= -->
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/20 dark:border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-margin py-space-xs max-w-7xl mx-auto">
+<!-- Leading Icon & Brand Anchor -->
+<a class="flex items-center gap-2 group active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl group-hover:rotate-12 transition-transform duration-300">spa</span>
+<div class="flex flex-col text-left">
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary dark:text-inverse-primary font-medium">Aslan Spa</span>
+<span class="font-label-xs text-label-xs text-outline tracking-wider -mt-1 font-title-md">El Poblado · Medellín</span>
+</div>
+</a>
+<!-- Trailing Action -->
+<div class="flex items-center gap-2">
+<span class="hidden sm:inline-flex items-center gap-1 font-label-xs text-label-xs bg-surface-container text-secondary px-2.5 py-1 rounded-full border border-outline-variant/30">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Sede Abierta
+        </span>
+<a class="bg-primary hover:bg-tertiary text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-lg shadow-sm hover:shadow active:scale-95 transition-all duration-200 flex items-center gap-1" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= CONTENEDOR PRINCIPAL MOBILE-FIRST (Max ~440px / Responsive Tablet/Desktop) ================= -->
+<main class="w-full max-w-md mx-auto pt-20 pb-24 px-4 sm:px-5 flex flex-col gap-y-10">
+<!-- ================= 1. ATENCIÓN (Hero Section) ================= -->
+<section class="flex flex-col pt-3" id="inicio">
+<!-- Badge de Credencial Real -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container text-primary px-3 py-1.5 rounded-full border border-secondary-container/80 self-start mb-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm material-symbols-fill">spa</span>
+<span class="font-label-xs text-label-xs tracking-wide">Spa de Autor &amp; Bienestar Integral · Sede El Poblado</span>
+</div>
+<!-- H1 Beneficio Claro en 3 Segundos -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface mb-3 tracking-tight">
+        Renueva tu cuerpo, reconecta con tu <span class="italic text-primary font-medium">bienestar más profundo</span> en Medellín.
+      </h1>
+<!-- Subtítulo de Resultado Específico -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+        Masajes descontracturantes de autor, rituales botánicos y cuidado facial diseñados a la medida de tu fisionomía para disolver la tensión y revitalizar tu energía sin prisas.
+      </p>
+<!-- Hero Card con Imagen Real del Contexto -->
+<div class="relative w-full rounded-2xl overflow-hidden custom-shadow-lg mb-6 border border-outline-variant/30 group">
+<img alt="Experiencia Signature Aslan Spa El Poblado Medellín" class="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADKEr1SaqoDzFDyFxGpzytEo4h53lO8qJs3wx5M2vCk8LahioqOy0UBVlumxbUgCJrd2fUhLqMAJ2rfsNOUZov-9l3m28l23tWKL-rO1kUo6UoOfBXcb0RQhg8O39u5EGmpK0ds53qq8wc-H3ntEN1Wpvvf25dBQwXdLUGCM3Ft-7uc_MKpQpBZpwvboOMlQFXHNQp3BkcjSHuLuLqaRp4eh_gqi127_b69u2VIeHOhIXUADppqbDleWptgesIRRlbgLYGkZ-JQnY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<!-- Tarjeta Flotante Elegante sobre la Imagen -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-3.5 rounded-xl border border-surface-container-high/60 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">verified</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold leading-tight">Experiencia Signature Aslan</p>
+<p class="font-body-sm text-body-sm text-outline">100% Personalizado en cabina privada</p>
+</div>
+</div>
+<span class="bg-primary/10 text-primary font-label-xs text-label-xs px-2 py-1 rounded-md">El Poblado</span>
+</div>
+</div>
+<!-- CTA Principal de Alto Contraste -->
+<div class="flex flex-col gap-2.5 text-center">
+<a class="w-full bg-primary hover:bg-[#004e46] text-on-primary font-title-md text-title-md py-4 px-6 rounded-xl custom-shadow hover:custom-shadow-lg active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 group font-semibold" href="#agendar">
+<span>Agendar mi ritual de relajación</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
+</a>
+<p class="font-label-xs text-label-xs text-outline flex items-center justify-center gap-1.5">
+<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas · Sin costo de valoración · Protocolo exclusivo
+        </p>
+</div>
+<!-- Trío de Badges de Confianza Rápida en Píldoras -->
+<div class="grid grid-cols-3 gap-2 mt-5">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">health_and_safety</span>
+<span class="font-label-xs text-label-xs text-on-surface font-medium leading-tight">Protocolos Seguros</span>
+<span class="font-body-sm text-body-sm text-outline text-[10px]">Norma Sanitaria</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">workspace_premium</span>
+<span class="font-label-xs text-label-xs text-on-surface font-medium leading-tight">Terapeutas Pro</span>
+<span class="font-body-sm text-body-sm text-outline text-[10px]">+8 Años Exp.</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">volume_off</span>
+<span class="font-label-xs text-label-xs text-on-surface font-medium leading-tight">Cabina Privada</span>
+<span class="font-body-sm text-body-sm text-outline text-[10px]">Insonorizada</span>
+</div>
+</div>
+</section>
+<!-- ================= 2. INTERÉS (Problema del Cliente & Solución en 3 Pasos) ================= -->
+<section class="flex flex-col pt-2" id="experiencia">
+<!-- Caja de Empatía / Dilema del Cliente -->
+<div class="bg-surface-container-low rounded-2xl p-5 border border-secondary-container/60 custom-shadow">
+<div class="flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-xl">self_improvement</span>
+<span class="font-label-md text-label-md tracking-wider">EL DILEMA COTIDIANO</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2.5">
+          ¿El estrés, la rutina o la tensión muscular están apagando tu bienestar?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          El ritmo acelerado de Medellín, las largas jornadas frente a pantallas y las malas posturas generan nudos musculares en cuello, hombros y espalda baja. Cuando el cansancio se acumula, no basta un masaje genérico: requieres una pausa clínica que reequilibre tu mente y cuerpo.
+        </p>
+<!-- Cita Destacada de Autor -->
+<div class="mt-4 pt-4 border-t border-outline-variant/30 bg-surface-container-lowest/70 p-3.5 rounded-xl">
+<p class="font-headline-sm text-headline-sm italic text-on-surface text-sm sm:text-base leading-snug">
+            «En Aslan Spa creamos un refugio en El Poblado donde el tiempo se detiene. Escuchamos lo que tu anatomía necesita para devolverte ligereza real.»
+          </p>
+<p class="font-label-xs text-label-xs text-primary font-semibold mt-2 text-right">
+            — Dirección Terapéutica Aslan Spa
+          </p>
+</div>
+</div>
+<!-- Proceso en 3 Pasos Numerados -->
+<div class="mt-8">
+<div class="text-center mb-5">
+<span class="font-label-xs text-label-xs text-primary bg-secondary-container/60 px-3 py-1 rounded-full">METODOLOGÍA DE AUTOR</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-2">Tu restauración en 3 pasos precisos</h3>
+</div>
+<div class="space-y-3.5">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow flex items-start gap-3.5">
+<span class="font-display-hero text-2xl text-secondary-container font-bold px-2 py-0.5 rounded-lg bg-primary text-on-primary shrink-0">01</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Valoración y Escucha Personalizada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+<span class="font-semibold text-primary">Cero tratamientos en serie:</span> identificamos zonas exactas de contractura, nivel de estrés y condición de la piel antes de tocar tu cuerpo.
+              </p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow flex items-start gap-3.5">
+<span class="font-display-hero text-2xl text-secondary-container font-bold px-2 py-0.5 rounded-lg bg-primary text-on-primary shrink-0">02</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Plan y Ritual a tu Medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+<span class="font-semibold text-primary">Sinfonía sensorial:</span> combinación de aceites botánicos puros, termoterapia suave y maniobras descontracturantes profundas a tu ritmo.
+              </p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow flex items-start gap-3.5">
+<span class="font-display-hero text-2xl text-secondary-container font-bold px-2 py-0.5 rounded-lg bg-primary text-on-primary shrink-0">03</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Renovación Visible y Duradera</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+<span class="font-semibold text-primary">Alivio inmediato:</span> descompresión postural, reducción notable del cortisol y sensación de ligereza que perdura durante semanas.
+              </p>
+</div>
+</div>
+</div>
+<!-- Micro-enlace de Asistencia Rápida -->
+<div class="mt-4 text-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-tertiary underline underline-offset-4 decoration-secondary" href="https://wa.me/573242873448?text=Hola%20Aslan%20Spa,%20quisiera%20asesoría%20sobre%20qué%20ritual%20elegir" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>¿Tienes dudas sobre qué ritual elegir? Consúltanos vía WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= 3. DESEO (Métricas, Beneficios Tangibles & Testimonios) ================= -->
+<section class="flex flex-col pt-2" id="beneficios">
+<!-- Métricas de Confianza en Cuadrícula 2x2 -->
+<div class="grid grid-cols-2 gap-3 mb-6">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow text-center">
+<p class="font-headline-lg text-headline-lg text-primary font-bold">+8 Años</p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Trayectoria &amp; Bienestar</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow text-center">
+<p class="font-headline-lg text-headline-lg text-primary font-bold">+5.200</p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Clientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow text-center">
+<div class="flex items-center justify-center gap-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">4.9</span>
+<span class="material-symbols-outlined text-amber-500 material-symbols-fill text-xl">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Google Reviews</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow text-center">
+<p class="font-headline-lg text-headline-lg text-primary font-bold">100%</p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Insumos Botánicos Puros</p>
+</div>
+</div>
+<!-- 4 Beneficios de Resultado para el Día a Día -->
+<div class="mb-8">
+<div class="text-center mb-4">
+<span class="font-label-xs text-label-xs text-primary bg-secondary-container/60 px-3 py-1 rounded-full">RESULTADOS PALPABLES</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-2">Por qué elegir la experiencia Aslan</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Beneficio 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">physical_therapy</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Alivio Inmediato de Contracturas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                Técnicas manuales precisas aplicadas anatómicamente para liberar nudos en trapecio, hombros y lumbares desde la primera sesión.
+              </p>
+</div>
+</div>
+<!-- Beneficio 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">local_florist</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Piel Luminosa, Hidratada y Sana</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                Fitocosmética orgánica rica en antioxidantes colombianos que regenera la barrera cutánea devolviendo tersura natural.
+              </p>
+</div>
+</div>
+<!-- Beneficio 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Desconexión Mental &amp; Menos Cortisol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                Aromaterapia de grado terapéutico y atmósfera insonorizada diseñada para inducir estados de descanso neurológico profundo.
+              </p>
+</div>
+</div>
+<!-- Beneficio 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">bathtub</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Cabinas Boutique Individuales</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                Lencería de alto gramaje, temperatura regulada e infusión herbal digestiva de cortesía antes y después de tu ritual.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales y Auténticos -->
+<div class="bg-surface-container-low rounded-2xl p-5 border border-secondary-container/70 custom-shadow" id="testimonios">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-xs text-label-xs text-primary font-semibold">HISTORIAS REALES</span>
+<h4 class="font-title-lg text-title-lg text-on-surface">Lo que dicen en Medellín</h4>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm material-symbols-fill">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill">star</span>
+<span class="material-symbols-outlined text-sm material-symbols-fill">star</span>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              «Llegué con un espasmo en la espalda por trabajo remoto y salí flotando. La terapeuta entendió al instante dónde dolía sin aplicar dolor innecesario. La vista verde y el té herbal son el complemento perfecto.»
+            </p>
+<div class="mt-3 flex items-center justify-between border-t border-surface-container pt-2">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold text-sm">Camila Echeverri</p>
+<p class="font-body-sm text-body-sm text-outline text-xs">El Poblado · Ritual Descontracturante</p>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container px-2 py-0.5 rounded text-primary">Verificado</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              «El mejor spa de Medellín. La privacidad es total, nada de salones compartidos ruidosos. El ritual facial me dejó la piel reluciente para mi boda. 100% recomendado.»
+            </p>
+<div class="mt-3 flex items-center justify-between border-t border-surface-container pt-2">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold text-sm">Valeria Jaramillo</p>
+<p class="font-body-sm text-body-sm text-outline text-xs">Medellín · Facial Botánico Glow</p>
+</div>
+<span class="font-label-xs text-label-xs bg-surface-container px-2 py-0.5 rounded text-primary">Verificado</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. ACCIÓN (Formulario de 3 Campos + WhatsApp Directo) ================= -->
+<section class="flex flex-col pt-2" id="agendar">
+<!-- Banner de Escasez / Urgencia Elegante -->
+<div class="bg-secondary-container/70 border border-primary/20 rounded-xl p-3 flex items-center justify-center gap-2 mb-4 text-center">
+<span class="material-symbols-outlined text-primary text-lg animate-bounce">hourglass_top</span>
+<span class="font-label-md text-label-md text-primary font-semibold">
+          ⏳ Cupos limitados por agenda personalizada esta semana en El Poblado
+        </span>
+</div>
+<!-- Tarjeta de Formulario Minimalista de 3 Campos -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/40 custom-shadow-lg">
+<div class="text-center mb-5">
+<span class="font-label-xs text-label-xs text-primary bg-secondary-container px-2.5 py-1 rounded-full">RESERVA INMEDIATA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-2">Personaliza tu cita</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completa tus datos y confirmamos tu horario preferido</p>
+</div>
+<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); handleBooking();">
+<!-- Campo 1: Nombre y Apellido -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-medium" for="nombre">Nombre completo</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-bright border border-[#d8e5e1] rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all placeholder:text-outline/70" id="nombre" placeholder="ej. Mariana Restrepo" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp o Celular -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-medium" for="telefono">WhatsApp / Teléfono (+57)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg">phone_iphone</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-bright border border-[#d8e5e1] rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all placeholder:text-outline/70" id="telefono" placeholder="ej. 310 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Selector de Experiencia -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1 font-medium" for="ritual">Experiencia de interés</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-outline text-lg">spa</span>
+<select class="w-full pl-10 pr-8 py-3 bg-surface-bright border border-[#d8e5e1] rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition-all appearance-none cursor-pointer" id="ritual" required="">
+<option value="Ritual Descontracturante Profundo">Ritual Descontracturante Profundo (Espalda &amp; Cuello)</option>
+<option value="Facial Botánico Glow &amp; Hidratación">Facial Botánico Glow &amp; Hidratación Profunda</option>
+<option value="Ritual en Pareja Signature">Ritual en Pareja Signature Aslan</option>
+<option value="Masaje Relajante con Piedras Volcánicas">Masaje Relajante con Piedras Volcánicas</option>
+<option value="Valoración Terapéutica Integral">Valoración Terapéutica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-outline text-lg pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Botón Principal -->
+<button class="w-full bg-primary hover:bg-[#004e46] text-on-primary font-title-md text-title-md py-3.5 px-4 rounded-xl shadow-md hover:shadow-lg active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 font-semibold" type="submit">
+<span>Quiero mi valoración ✨</span>
+</button>
+</form>
+<div class="hidden mt-3 p-3 bg-secondary-container text-primary rounded-xl text-center font-label-md text-label-md" id="formSuccess">
+          ✓ ¡Solicitud recibida! Te escribiremos en WhatsApp en minutos.
+        </div>
+<!-- Separador 'O SI PREFIERES ATENCIÓN INMEDIATA' -->
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-3 font-label-xs text-label-xs text-outline tracking-wider font-semibold">O ATENCIÓN INMEDIATA</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<!-- Botón Directo de WhatsApp Oficial -->
+<a class="w-full bg-[#1ebe5d] hover:bg-[#199e4d] text-white font-title-md text-title-md py-3 px-4 rounded-xl shadow-sm hover:shadow active:scale-98 transition-all duration-200 flex items-center justify-center gap-2 font-semibold text-sm" href="https://wa.me/573242873448?text=Hola%20Aslan%20Spa,%20deseo%20agendar%20mi%20cita%20hoy%20en%20El%20Poblado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Chatear directo al WhatsApp (+57 324 287 3448)</span>
+</a>
+<!-- Micro-texto de Privacidad -->
+<p class="font-body-sm text-body-sm text-outline text-center text-xs mt-3 leading-tight">
+          🔒 Tus datos están 100% protegidos bajo secreto profesional y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- ================= 5. PREGUNTAS FRECUENTES (Acordeones Interactivos) ================= -->
+<section class="flex flex-col pt-1" id="faq">
+<div class="text-center mb-4">
+<span class="font-label-xs text-label-xs text-primary bg-secondary-container/60 px-3 py-1 rounded-full">CLARIDAD TOTAL</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-2">Preguntas frecuentes</h3>
+</div>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-semibold text-sm">
+<span>¿Cuánto dura cada sesión en Aslan Spa?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-2.5 pt-2 border-t border-surface-container font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Nuestros rituales oscilan entre 60 y 90 minutos de terapia efectiva, precedidos de una valoración sin afanes y finalizados con infusión de autor en nuestra terraza con vista a la montaña.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-semibold text-sm">
+<span>¿Con cuánta anticipación debo reservar mi cita?</span>
+<summary-icon class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</summary-icon>
+</summary>
+<div class="mt-2.5 pt-2 border-t border-surface-container font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Recomendamos agendar con al menos 24 a 48 horas de antelación para asegurar cabina en fines de semana o tardes. También atendemos solicitudes prioritarias sujetas a cancelación del día.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-semibold text-sm">
+<span>¿Tienen opciones de gift cards o paquetes especiales?</span>
+<summary-icon class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</summary-icon>
+</summary>
+<div class="mt-2.5 pt-2 border-t border-surface-container font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sí. Emitimos bonos de regalo impresos en papel artesanal con estuche botánico o certificados digitales directos a WhatsApp, perfectos para cumpleaños, aniversarios o agradecimientos corporativos.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 open:border-primary/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface font-semibold text-sm">
+<span>¿Qué protocolos de higiene y bioseguridad manejan?</span>
+<summary-icon class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</summary-icon>
+</summary>
+<div class="mt-2.5 pt-2 border-t border-surface-container font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Cumplimos con la normatividad de la Secretaría de Salud de Antioquia: esterilización hospitalaria entre sesiones, sábanas y protectores 100% termosellados descartables o lencería de lavado térmico especializado.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Exact JSON Mapping) ================= -->
+<footer class="w-full mb-16 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/20">
+<div class="w-full px-margin py-space-xl flex flex-col items-center text-center space-y-space-md max-w-4xl mx-auto">
+<!-- Brand Logo / Headline -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary">Aslan Spa</span>
+</div>
+<!-- Links del Footer -->
+<nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-on-surface-variant dark:text-surface-variant hover:text-on-surface dark:hover:text-inverse-on-surface font-label-md text-label-md">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#agendar">Tratamiento de Datos</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#experiencia">Habilitación Sanitaria</a>
+<span>·</span>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#faq">Términos y Condiciones</a>
+<span>·</span>
+<a class="text-primary dark:text-inverse-primary underline underline-offset-4" href="https://wa.me/573242873448">Contacto El Poblado</a>
+</nav>
+<!-- Copyright Text -->
+<p class="font-body-sm text-body-sm text-outline dark:text-outline-variant max-w-2xl leading-relaxed">
+        © 2024 Aslan Spa S.A.S. - El Poblado, Medellín, Colombia. Registro Seccional de Salud y Protección Social de Antioquia Res. 4520-23. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales.
+      </p>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component Exact JSON Mapping) ================= -->
+<!-- Active state intent: Landing orientada a agendar -> tab "Agendar" activa -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs pb-safe bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-md shadow-[0_-4px_24px_rgba(0,122,110,0.08)] border-t border-outline-variant/20 dark:border-outline-variant/10">
+<!-- Item 1: Rituales (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant font-label-xs text-label-xs p-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#inicio">
+<span class="material-symbols-outlined text-xl mb-0.5">spa</span>
+<span>Rituales</span>
+</a>
+<!-- Item 2: Beneficios (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant font-label-xs text-label-xs p-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#beneficios">
+<span class="material-symbols-outlined text-xl mb-0.5">award_star</span>
+<span>Beneficios</span>
+</a>
+<!-- Item 3: Experiencia (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant font-label-xs text-label-xs p-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95" href="#experiencia">
+<span class="material-symbols-outlined text-xl mb-0.5">local_florist</span>
+<span>Experiencia</span>
+</a>
+<!-- Item 4: Agendar (ACTIVE - Strict style_active_navigation applied from JSON) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-primary dark:text-on-secondary rounded-full px-3 py-1 font-label-xs text-label-xs active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined text-xl mb-0.5 material-symbols-fill">calendar_month</span>
+<span class="font-semibold">Agendar</span>
+</a>
+</nav>
+<!-- Script para envío interactivo con redirección automática a WhatsApp -->
+<script>
+    function handleBooking() {
+      const nombre = document.getElementById('nombre').value;
+      const telefono = document.getElementById('telefono').value;
+      const ritual = document.getElementById('ritual').value;
+      
+      const successDiv = document.getElementById('formSuccess');
+      successDiv.classList.remove('hidden');
+
+      const mensaje = `Hola Aslan Spa El Poblado, me gustaría solicitar una cita.%0A%0A*Nombre:* ${encodeURIComponent(nombre)}%0A*Teléfono:* ${encodeURIComponent(telefono)}%0A*Experiencia:* ${encodeURIComponent(ritual)}%0A%0A¿Qué horarios tienen disponibles?`;
+      
+      setTimeout(() => {
+        window.open(`https://wa.me/573242873448?text=${mensaje}`, '_blank');
+      }, 700);
+    }
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/aslan-spa-medellin" width="1" height="1" style="display:none" alt="">
+</body></html>
