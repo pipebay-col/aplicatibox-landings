@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nakary Beauty Spa | Medicina Estética Boutique &amp; Armonización Facial</title>
+<!-- Google Fonts: Newsreader (Editorial Serif) & Manrope (Clean Clinical Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#6f625a",
+            "tertiary-container": "#5f7772",
+            "on-tertiary": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#005049",
+            "primary-fixed": "#95f3e5",
+            "on-tertiary-fixed": "#071f1c",
+            "inverse-on-surface": "#e2f5f0",
+            "surface-tint": "#006a61",
+            "secondary-fixed": "#f1dfd5",
+            "surface": "#ebfdf8",
+            "on-surface": "#0e1e1c",
+            "background": "#ebfdf8",
+            "primary": "#00655c",
+            "on-secondary-fixed": "#231a14",
+            "surface-container-highest": "#d4e6e2",
+            "surface-dim": "#ccded9",
+            "on-secondary-fixed-variant": "#50443d",
+            "on-primary-fixed": "#00201c",
+            "on-surface-variant": "#3e4947",
+            "on-tertiary-fixed-variant": "#344b47",
+            "on-tertiary-container": "#e4fef8",
+            "surface-container-high": "#daece7",
+            "surface-container": "#dff2ed",
+            "surface-container-low": "#e5f8f3",
+            "on-background": "#0e1e1c",
+            "secondary-fixed-dim": "#d4c3ba",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#cee8e2",
+            "tertiary-fixed-dim": "#b2ccc6",
+            "on-error": "#ffffff",
+            "surface-bright": "#ebfdf8",
+            "outline-variant": "#bdc9c6",
+            "primary-container": "#0d8075",
+            "inverse-primary": "#79d7c9",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#e0fff9",
+            "inverse-surface": "#233330",
+            "surface-variant": "#d4e6e2",
+            "outline": "#6e7977",
+            "secondary": "#685c54",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#f1dfd5",
+            "primary-fixed-dim": "#79d7c9",
+            "tertiary": "#475e5a",
+            "on-error-container": "#93000a",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "margin": "1.25rem",
+            "space-md": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "margin-desktop": "4rem",
+            "gutter-desktop": "2.5rem"
+          },
+          "fontFamily": {
+            "display-mobile": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "label-lg": ["Manrope", "sans-serif"],
+            "display": ["Newsreader", "serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "label-caps": ["Manrope", "sans-serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "title-md": ["Manrope", "sans-serif"],
+            "label-md": ["Manrope", "sans-serif"]
+          },
+          "fontSize": {
+            "display-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Luxury clinical ambient soft shadows */
+    .shadow-luxury-ambient {
+      box-shadow: 0 12px 36px -6px rgba(13, 128, 117, 0.08), 0 2px 8px -1px rgba(35, 51, 48, 0.04);
+    }
+    .shadow-glow-teal {
+      box-shadow: 0 8px 24px -2px rgba(13, 128, 117, 0.28);
+    }
+  </style>
+</head>
+<body class="bg-[#FAF9F6] text-on-surface font-body-md antialiased pb-24 md:pb-12 selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- ========================================================
+       TOP APP BAR (Derived from Shared Components JSON)
+       ======================================================== -->
+<header class="sticky top-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-margin py-space-xs max-w-7xl mx-auto">
+<!-- Leading Icon & Brand Name -->
+<a class="flex items-center space-x-2 group" href="#hero">
+<span class="material-symbols-outlined text-primary text-2xl transition-transform duration-200 group-hover:rotate-12" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm tracking-tight text-primary">Nakary Beauty Spa</span>
+</a>
+<!-- Trailing Action Button -->
+<a class="px-5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md active:scale-95 transition-transform duration-150 shadow-sm hover:opacity-90" href="#formulario-reserva">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- ========================================================
+       A - ATENCIÓN (ATTENTION)
+       ======================================================== -->
+<section class="relative pt-6 pb-12 px-margin md:px-margin-desktop max-w-6xl mx-auto overflow-hidden" id="hero">
+<!-- Medical Credential Badge -->
+<div class="flex justify-center mb-6">
+<div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="verified" data-weight="fill">verified</span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-center">
+          Medicina Estética Boutique Consciente · Registro Sanitario MinSalud Colombia
+        </span>
+</div>
+</div>
+<!-- Main Editorial Headline (AIDA Hook) -->
+<div class="text-center max-w-3xl mx-auto mb-6">
+<h1 class="text-display-mobile md:text-display font-display text-on-surface tracking-tight leading-tight">
+        Tu piel y rostro en su versión más armónica, <span class="italic text-primary font-headline-lg">sin perder tu esencia natural</span>
+</h1>
+<p class="mt-4 text-body-md md:text-body-lg font-body-md text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        Tratamientos médicos no invasivos de bioestimulación dérmica, rejuvenecimiento celular y armonización facial en Nakary Beauty Spa. Resultados sutiles y elegantes sin incapacidad laboral ni cambios exagerados.
+      </p>
+</div>
+<!-- Editorial Hero Card with Patient Photography -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-luxury-ambient bg-surface-container-lowest border border-outline-variant/20 mb-8 max-w-2xl mx-auto">
+<div class="relative aspect-[4/3] sm:aspect-[16/10] w-full overflow-hidden">
+<img alt="Paciente en bata blanca disfrutando de una infusión relajante con vista panorámica a las montañas en Nakary Beauty Spa" class="w-full h-full object-cover object-center transform scale-[1.01] hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1WWhV-JYhbWtI4zXlc3259rRZ_M30xCYmOi2NavNHR3IEzxG7gMZ4tU5w3yOw-zIH4b6HM7XRI4d7iamQnNMHFA8zgzIKwQ9LulsFeKZScFLqJjLwPk_mmS-czhNXGG2EDu67E8CkK125rE1nZOfuXzySngkNhps6KIke05G6D97IGKeIHtjb367olvq9C7m0NAdUhgl9ftksQxHBjIWIrEayvvGv_B1jThjDVlBD4z77_sun_W3fOQD3Y"/>
+<!-- Subtle gradient overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<!-- Floating Badge in image -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto flex items-center space-x-2.5 px-4 py-2.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-white/80 shadow-md">
+<span class="material-symbols-outlined text-primary-container text-lg" data-icon="auto_awesome" data-weight="fill">auto_awesome</span>
+<span class="font-label-md text-label-md text-on-surface font-bold tracking-tight">100% Armonía Natural y Luminosidad</span>
+</div>
+</div>
+</div>
+<!-- High-Impact Primary CTA -->
+<div class="flex flex-col items-center justify-center max-w-md mx-auto text-center space-y-3">
+<a class="w-full py-4 px-8 rounded-full bg-primary-container text-on-primary font-title-md text-title-md shadow-glow-teal hover:bg-primary transition-all duration-200 transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center space-x-2 group" href="#formulario-reserva">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center justify-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</p>
+</div>
+<!-- Trust Badges Cluster -->
+<div class="grid grid-cols-3 gap-2 mt-8 pt-6 border-t border-outline-variant/30 max-w-xl mx-auto">
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-label-caps text-label-caps text-on-surface font-bold">Tecnología INVIMA &amp; FDA</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="person_search">person_search</span>
+<span class="font-label-caps text-label-caps text-on-surface font-bold">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary-container mb-1" data-icon="villa">villa</span>
+<span class="font-label-caps text-label-caps text-on-surface font-bold">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ========================================================
+       I - INTERÉS (INTEREST)
+       ======================================================== -->
+<section class="py-12 bg-surface-container-low/50 border-y border-outline-variant/20" id="proceso-clinico">
+<div class="px-margin md:px-margin-desktop max-w-5xl mx-auto">
+<!-- Dilema & Empatía Médica -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 border border-outline-variant/20 shadow-luxury-ambient mb-12 relative overflow-hidden">
+<div class="max-w-2xl">
+<div class="inline-flex items-center space-x-1.5 text-primary mb-3">
+<span class="material-symbols-outlined text-base" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Filosofía Médica Nakary</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-3 leading-snug">
+            ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Te comprendemos a la perfección. En Nakary rechazamos las caras homogeneizadas y los volúmenes excesivos. Nuestro enfoque médico se basa en el respeto milimétrico de tu fisonomía mediante <strong>micro-dosis estratégicas</strong> y bioestimuladores de última generación. Restauramos la frescura juvenil y la firmeza celular, celebrando tus rasgos únicos.
+          </p>
+</div>
+</div>
+<!-- Proceso Clínico en 3 Pasos -->
+<div class="text-center mb-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Protocolo Seguro</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mt-1">Tu experiencia clínica en 3 pasos</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-3xl font-display font-headline-lg text-primary/30">01</span>
+<span class="material-symbols-outlined text-primary-container p-2 rounded-full bg-surface-container" data-icon="biometrics">csv</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-2">Valoración y Mapeo Facial 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Analizamos la arquitectura de tu piel, vector de envejecimiento y proporciones áureas.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center space-x-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Certeza clínica y plan exacto desde el día 1</span>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-3xl font-display font-headline-lg text-primary/30">02</span>
+<span class="material-symbols-outlined text-primary-container p-2 rounded-full bg-surface-container" data-icon="assignment_turned_in">assignment_turned_in</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-2">Plan Médico Personalizado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Definimos exactamente los activos bioestimulantes aprobados necesarios para tu objetivo.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center space-x-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Cero costos ocultos ni sorpresas, insumos puros</span>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:border-primary/40 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-3xl font-display font-headline-lg text-primary/30">03</span>
+<span class="material-symbols-outlined text-primary-container p-2 rounded-full bg-surface-container" data-icon="sparkles">arrow_back_ios_new</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-2">Aplicación Guiada y Glow Natural</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Procedimiento delicado, prácticamente indoloro en consultorio médico acreditado.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center space-x-1.5 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Reincorporación inmediata a tu rutina social y laboral</span>
+</div>
+</div>
+</div>
+<!-- Micro-CTA Intermedio WhatsApp -->
+<div class="mt-8 text-center">
+<a class="inline-flex items-center space-x-2 text-primary font-label-lg text-label-lg hover:underline underline-offset-4 active:opacity-80 transition-opacity" href="https://wa.me/573167465757?text=Hola%20Nakary%20Beauty%20Spa,%20tengo%20dudas%20sobre%20mi%20caso%20particular%20y%20quisiera%20orientación" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con una especialista</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================================
+       D - DESEO (DESIRE)
+       ======================================================== -->
+<section class="py-12 px-margin md:px-margin-desktop max-w-5xl mx-auto" id="casos-reales">
+<!-- Métricas de Autoridad y Confianza -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+<div class="bg-surface-container-lowest p-5 rounded-2xl text-center border border-outline-variant/20 shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-bold">+9 Años</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">De Trayectoria Médica</p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl text-center border border-outline-variant/20 shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-bold">+4.800</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl text-center border border-outline-variant/20 shadow-sm">
+<p class="text-headline-md font-headline-md text-primary font-bold">100%</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Insumos INVIMA &amp; FDA</p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl text-center border border-outline-variant/20 shadow-sm">
+<div class="flex items-center justify-center space-x-1 text-primary">
+<span class="text-headline-md font-headline-md font-bold">4.9</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">En Google Reviews</p>
+</div>
+</div>
+<!-- 4 Beneficios Clave para el Día a Día -->
+<div class="mb-14">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Por qué elegir Nakary</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mt-1">Ciencia médica para realzar tu belleza orgánica</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div class="flex items-start space-x-4 p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/20">
+<div class="p-2.5 rounded-xl bg-surface-container text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="face">face</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Técnicas de vectorización que descansan tu rostro sin congelar tus expresiones ni inflar pómulos de forma artificial.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4 p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/20">
+<div class="p-2.5 rounded-xl bg-surface-container text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="science">science</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Bioestimulación profunda</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Reactiva tu propia producción natural de colágeno y elastina de tipo I y III con resultados progresivos y duraderos.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4 p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/20">
+<div class="p-2.5 rounded-xl bg-surface-container text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="event_available">event_available</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Cero tiempo de reposo</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Sin bisturí ni cicatrices. Regresa a tus actividades cotidianas de inmediato sin que nadie note un procedimiento obvio.</p>
+</div>
+</div>
+<div class="flex items-start space-x-4 p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/20">
+<div class="p-2.5 rounded-xl bg-surface-container text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Acompañamiento médico VIP</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Monitoreo y seguimiento post-tratamiento directo con el equipo médico especialista para tu total tranquilidad.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados en Colombia -->
+<div>
+<div class="text-center mb-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Experiencias Reales</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mt-1">Lo que dicen nuestras pacientes</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+<div class="flex items-center space-x-1 text-primary mb-3">
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4 leading-relaxed">
+            "Tenía pánico de quedar con el rostro cambiado o hinchado. La doctora me escuchó con paciencia infinita y el resultado fue maravilloso: me veo fresca, luminosa y descansada, exactamente como quería."
+          </p>
+<div class="flex items-center justify-between pt-3 border-t border-outline-variant/20">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Dra. Marcela Restrepo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Medellín, Colombia · Bioestimulación Facial</p>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-caps text-label-caps">
+              Verificado
+            </span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+<div class="flex items-center space-x-1 text-primary mb-3">
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4 leading-relaxed">
+            "La sede parece un templo de desconexión en medio del estrés. Desde el diagnóstico supe que estaba en manos de especialistas serios con registro médico. Cero dolor y un cambio sutil espectacular."
+          </p>
+<div class="flex items-center justify-between pt-3 border-t border-outline-variant/20">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Camila Valenzuela</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bogotá, Colombia · Armonización Sutil</p>
+</div>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-caps text-label-caps">
+              Verificado
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================
+       A - ACCIÓN (ACTION) - EMBUSO DE CONVERSIÓN
+       ======================================================== -->
+<section class="py-12 px-margin md:px-margin-desktop bg-surface-container-low/40" id="formulario-reserva">
+<div class="max-w-xl mx-auto">
+<!-- Conversion Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 border border-outline-variant/30 shadow-luxury-ambient relative">
+<!-- Scarcity & Urgency Pill -->
+<div class="flex justify-center mb-4">
+<div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-error-container text-error text-center">
+<span class="inline-block w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-label-caps text-label-caps font-bold">Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+</div>
+<div class="text-center mb-6">
+<h2 class="text-headline-md font-headline-md text-on-surface">
+            Empieza hoy tu transformación armónica con total seguridad
+          </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+            Completa tus datos para coordinar tu cita prioritaria con nuestras especialistas médicas.
+          </p>
+</div>
+<!-- 3-Field Lead Form -->
+<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); handleBooking();">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="nombre">Nombre completo *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant/70 text-lg" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline/30 bg-white text-on-surface placeholder:text-outline-variant text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="nombre" placeholder="ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="telefono">WhatsApp o Celular (+57) *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant/70 text-lg" data-icon="phone">phone</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline/30 bg-white text-on-surface placeholder:text-outline-variant text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="telefono" placeholder="316 746 5757" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tratamiento de Interés -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="tratamiento">Tratamiento de interés *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant/70 text-lg" data-icon="medical_information">medical_information</span>
+<select class="w-full pl-10 pr-4 py-3 rounded-lg border border-outline/30 bg-white text-on-surface text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none appearance-none" id="tratamiento" required="">
+<option value="Armonización Facial">Armonización Facial Sutil</option>
+<option value="Bioestimuladores de Colágeno">Bioestimuladores de Colágeno</option>
+<option value="Rejuvenecimiento Cutáneo">Rejuvenecimiento Cutáneo y Glow</option>
+<option value="Valoración Integral">Aún no estoy segura (Valoración Diagnóstica)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-on-surface-variant/70 pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Conversion Submit CTA -->
+<div class="pt-2">
+<button class="w-full py-4 px-6 rounded-full bg-primary-container text-on-primary font-title-md text-title-md shadow-glow-teal hover:bg-primary transition-all duration-200 active:scale-95 flex items-center justify-center space-x-2 cursor-pointer" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</div>
+</form>
+<!-- Divider -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="w-full border-t border-outline-variant/30"></div>
+<span class="bg-surface-container-lowest px-3 text-label-caps font-label-caps text-on-surface-variant uppercase">O preferencia inmediata</span>
+</div>
+<!-- WhatsApp Direct CTA -->
+<a class="w-full py-3.5 px-6 rounded-full border-1.5 border-primary-container bg-surface-container text-primary font-label-lg text-label-lg hover:bg-primary hover:text-white transition-all duration-200 flex items-center justify-center space-x-2 active:scale-95" href="https://wa.me/573167465757?text=Hola%20Nakary%20Beauty%20Spa,%20deseo%20agendar%20mi%20valoración%20clínica%20inmediata" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 746 5757)</span>
+</a>
+<!-- Legal Disclaimer & Ley 1581 -->
+<p class="text-center font-body-sm text-[11px] leading-tight text-on-surface-variant/80 mt-5">
+          🔒 Tus datos están protegidos bajo la <strong>Ley 1581 de 2012 de Habeas Data</strong>. No compartimos tu información con terceros. Uso exclusivo para coordinación de cita médica en Colombia.
+        </p>
+</div>
+</div>
+</section>
+<!-- ========================================================
+       PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+       ======================================================== -->
+<section class="py-12 px-margin md:px-margin-desktop max-w-4xl mx-auto">
+<div class="text-center mb-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Claridad Total</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/20 overflow-hidden">
+<button class="w-full p-5 text-left flex justify-between items-center space-x-4 focus:outline-none" onclick="toggleFaq(1)">
+<span class="font-title-md text-title-md text-on-surface">¿Los tratamientos generan incapacidad laboral o dolor?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more" id="faq-icon-1">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/10 pt-3" id="faq-answer-1">
+          No. Empleamos microcánulas de punta roma y anestésicos tópicos clínicos de alta potencia. La molestia es mínima y el 95% de nuestras pacientes retoman sus reuniones, compromisos sociales o trabajo de inmediato el mismo día.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/20 overflow-hidden">
+<button class="w-full p-5 text-left flex justify-between items-center space-x-4 focus:outline-none" onclick="toggleFaq(2)">
+<span class="font-title-md text-title-md text-on-surface">¿Cuánto tiempo duran los resultados de la bioestimulación?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more" id="faq-icon-2">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/10 pt-3" id="faq-answer-2">
+          A diferencia de los rellenos temporales simples, los bioestimuladores promueven la síntesis natural de colágeno de tu propio cuerpo. Los efectos se aprecian a las pocas semanas y se mantienen estables entre 12 y 24 meses según los cuidados y el metabolismo de cada persona.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/20 overflow-hidden">
+<button class="w-full p-5 text-left flex justify-between items-center space-x-4 focus:outline-none" onclick="toggleFaq(3)">
+<span class="font-title-md text-title-md text-on-surface">¿Se notará que me hice un procedimiento estético?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more" id="faq-icon-3">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/10 pt-3" id="faq-answer-3">
+          Nuestra premisa de oro es la naturalidad. La gente notará que te ves descansada, luminosa y fresca, pero nadie podrá identificar una alteración artificial en tus facciones. Tu identidad se mantiene intacta.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/20 overflow-hidden">
+<button class="w-full p-5 text-left flex justify-between items-center space-x-4 focus:outline-none" onclick="toggleFaq(4)">
+<span class="font-title-md text-title-md text-on-surface">¿Qué incluye la primera sesión de valoración clínica?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more" id="faq-icon-4">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 text-body-md font-body-md text-on-surface-variant border-t border-outline-variant/10 pt-3" id="faq-answer-4">
+          Incluye mapeo dermatológico de tu estructura ósea y muscular, anamnesis clínica, revisión de contraindicaciones, cotización transparente sin letra chica y un té orgánico de cortesía en nuestro lounge boutique.
+        </div>
+</div>
+</div>
+</section>
+<!-- ========================================================
+       FOOTER (Derived from Shared Components JSON)
+       ======================================================== -->
+<footer class="bg-surface-container-high border-t border-outline-variant/30 text-on-surface-variant">
+<div class="flex flex-col items-center text-center w-full px-margin py-space-lg space-y-space-md max-w-7xl mx-auto">
+<!-- Brand Logo in Footer -->
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm text-primary">Nakary Beauty Spa</span>
+</div>
+<!-- Links from JSON -->
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-md font-label-md">
+<a class="hover:text-primary underline transition-colors duration-200" href="#proceso-clinico">Tratamientos Médicos</a>
+<a class="hover:text-primary underline transition-colors duration-200" href="#hero">Registro Médico &amp; Biosalud</a>
+<a class="hover:text-primary underline transition-colors duration-200" href="#formulario-reserva">Política de Datos Ley 1581</a>
+<a class="hover:text-primary underline transition-colors duration-200" href="#hero">Términos de Servicio</a>
+<a class="hover:text-primary underline transition-colors duration-200" href="#formulario-reserva">Sedes Colombia</a>
+</div>
+<!-- Copyright & Biosafety Compliance Text from JSON -->
+<p class="text-body-sm font-body-sm max-w-2xl text-on-surface-variant/80">
+        © 2024 Nakary Beauty Spa. Vigilado Supersalud. Registro Sanitario INVIMA y Secretaría de Salud. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales. Bogotá &amp; Medellín, Colombia.
+      </p>
+</div>
+</footer>
+<!-- ========================================================
+       BOTTOM NAVBAR (Derived from Shared Components JSON)
+       Mobile only (md:hidden) as per semantic responsive design
+       ======================================================== -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter py-space-xs bg-surface/90 backdrop-blur-lg shadow-lg rounded-t-xl border-t border-outline-variant/20">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors duration-150 active:scale-95" href="#proceso-clinico">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="text-label-md font-label-md mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors duration-150 active:scale-95" href="#proceso-clinico">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+<span class="text-label-md font-label-md mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors duration-150 active:scale-95" href="#casos-reales">
+<span class="material-symbols-outlined text-xl" data-icon="photo_library">photo_library</span>
+<span class="text-label-md font-label-md mt-0.5">Casos</span>
+</a>
+<!-- Item 4: Agendar (Active intent on conversion landing page) -->
+<a class="flex flex-col items-center justify-center text-primary font-bold active:scale-95 transition-transform duration-150" href="#formulario-reserva">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" data-weight="fill">calendar_month</span>
+<span class="text-label-md font-label-md mt-0.5">Agendar</span>
+</a>
+</nav>
+<!-- Interactive Logic for FAQ & Quick Booking Feedback -->
+<script>
+    function toggleFaq(id) {
+      const answer = document.getElementById(`faq-answer-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        answer.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function handleBooking() {
+      const nombre = document.getElementById('nombre').value;
+      const telefono = document.getElementById('telefono').value;
+      const tratamiento = document.getElementById('tratamiento').value;
+      
+      const text = encodeURIComponent(`Hola Nakary Beauty Spa, mi nombre es ${nombre}. Deseo agendar una valoración médica para: ${tratamiento}. Mi celular es ${telefono}.`);
+      window.open(`https://wa.me/573167465757?text=${text}`, '_blank');
+    }
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/nakary-beauty-spa" width="1" height="1" style="display:none" alt="">
+</body></html>

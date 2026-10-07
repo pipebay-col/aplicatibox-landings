@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fénix Medicina Estética | Armonización y Rejuvenecimiento Facial en Colombia</title>
+<!-- Google Fonts: Playfair Display + Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#006f64",
+            "on-tertiary-container": "#ffeed4",
+            "on-error": "#ffffff",
+            "secondary-fixed": "#71f8e4",
+            "inverse-surface": "#203431",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "tertiary": "#6a511b",
+            "surface-dim": "#c8dfda",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#4fdbc8",
+            "background": "#FAF9F6",
+            "on-secondary-fixed": "#00201c",
+            "surface-container": "#eaf5f2",
+            "surface-container-high": "#d6ede8",
+            "secondary": "#006b5f",
+            "surface-variant": "#d0e7e2",
+            "on-background": "#0a1f1c",
+            "primary": "#005f57",
+            "outline-variant": "#bdc9c6",
+            "on-tertiary-fixed-variant": "#5b430e",
+            "outline": "#6e7977",
+            "primary-fixed": "#99f3e6",
+            "inverse-primary": "#7dd6ca",
+            "on-error-container": "#93000a",
+            "on-primary-fixed-variant": "#005049",
+            "on-surface-variant": "#3e4947",
+            "on-surface": "#0a1f1c",
+            "inverse-on-surface": "#dff6f1",
+            "surface-container-low": "#f3faf7",
+            "primary-fixed-dim": "#7dd6ca",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed-variant": "#005048",
+            "surface": "#FAF9F6",
+            "secondary-container": "#6df5e1",
+            "on-primary-container": "#acfff3",
+            "on-primary-fixed": "#00201d",
+            "surface-bright": "#FAF9F6",
+            "tertiary-container": "#846931",
+            "tertiary-fixed-dim": "#e5c281",
+            "surface-tint": "#006a61",
+            "on-primary": "#ffffff",
+            "primary-container": "#0d7a70",
+            "on-tertiary-fixed": "#261900",
+            "surface-container-highest": "#d0e7e2",
+            "tertiary-fixed": "#ffdea4",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin": "2.5rem",
+            "gutter-sm": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.75rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "headline-md": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-sm": ["Manrope"],
+            "headline-xl": ["Playfair Display"],
+            "body-lg": ["Manrope"],
+            "display-hero": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "body-xl": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "label-sm": ["Manrope"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "46px", "fontWeight": "500" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-xl": ["48px", { "lineHeight": "58px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-hero": ["64px", { "lineHeight": "76px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-xl": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen relative overflow-x-hidden">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full px-margin-mobile py-space-sm max-w-7xl mx-auto bg-surface/85 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight leading-none">Fénix Medicina Estética</span>
+<span class="text-[9px] uppercase tracking-wider text-secondary font-bold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[11px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Habilitación REPS MinSalud
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="hidden md:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-colors duration-200 shadow-sm" href="#agenda-form">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+        Agendar
+      </a>
+<a class="md:hidden inline-flex items-center justify-center px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md active:scale-95 transition-transform" href="#agenda-form">
+        Agendar
+      </a>
+</div>
+</header>
+<main class="w-full">
+<!-- ==================== 1. ATENCIÓN (Hero Section) ==================== -->
+<section class="relative pt-4 pb-10 px-margin-mobile max-w-4xl mx-auto">
+<!-- Glow ambient backdrop -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Credencial Superior -->
+<div class="flex justify-center mb-4">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low border border-primary/20 text-primary shadow-xs">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="font-label-sm text-label-sm tracking-wide">Medicina Estética Habilitada MinSalud · Bogotá &amp; Colombia</span>
+</div>
+</div>
+<!-- H1 Hero Impact -->
+<div class="text-center space-y-3 mb-6">
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-headline-xl md:text-headline-xl text-primary font-semibold tracking-tight text-balance">
+          Tu rostro en su versión más armónica y radiante, <span class="italic font-normal text-secondary">sin perder tu esencia natural.</span>
+</h1>
+<p class="font-body-md text-body-md md:font-body-lg md:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+          Tratamientos médicos no invasivos de armonización facial, rejuvenecimiento cutáneo y bioestimulación de colágeno diseñados a tu medida en Fénix Medicina Estética. Resultados sutiles y elegantes sin incapacidad laboral ni cambios exagerados.
+        </p>
+</div>
+<!-- Imagen Hero Destacada con DataStore Placeholder -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-primary/10 mb-6 bg-surface-container-lowest">
+<img alt="Paciente sonriente en la suite clínica boutique de Fénix Medicina Estética" class="w-full h-[380px] md:h-[460px] object-cover object-center transform hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AEtjO1XwFuhhZZO3zSt93jOoTqClTpnC0NEkG_x1lS3wjiL3YRu-nHYRLgsA9AmDS24Ku0kl4aAoopJ9K5W5q9rteVhp-hcuW70TT-z1hrEgAfEAaw8mhN1qRvgrajTNwLv6JWuJhv6r9uukIbMPL4BJ2HqTI_Ate9pCxoxsA2Qg8QkQ3eDk-YUWELhDH3QoBrXtNggfYTQSJ09F3fykjJRj1JlCyg_UpcAeBsWHguU6EE7K8UDZFS8RLw_u1kw"/>
+<!-- Floating Glass Badge -->
+<div class="absolute bottom-4 left-4 right-4 md:left-6 md:right-auto bg-surface-container-lowest/85 backdrop-blur-md border border-primary/20 rounded-xl px-4 py-2.5 shadow-md flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Resultado Clínico Fénix</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">100% Armonía Natural y Luminosa</span>
+</div>
+</div>
+</div>
+<!-- CTA Principal Hero + Micro-credencial -->
+<div class="flex flex-col items-center gap-3 w-full max-w-md mx-auto mb-8">
+<a class="w-full min-h-[52px] h-[54px] rounded-full bg-primary-container hover:bg-primary text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-[0_8px_24px_rgba(13,122,112,0.22)] active:scale-[0.98] transition-all duration-200" href="#agenda-form">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<div class="flex items-center gap-1.5 text-on-surface-variant text-[11px] font-medium text-center">
+<span class="material-symbols-outlined text-sm text-secondary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- 3 Píldoras de Valor con Iconos -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-base">verified_user</span>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold">Insumos INVIMA &amp; FDA</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trazabilidad médica garantizada</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-base">face_retouching_natural</span>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold">Diagnóstico Facial 1 a 1</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin protocolos genéricos</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-base">cottage</span>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold">Sede Boutique Exclusiva</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Discreción y confort premium</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 2. INTERÉS (Problema + Metodología 3 Pasos) ==================== -->
+<section class="py-10 px-margin-mobile bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-4xl mx-auto space-y-8">
+<!-- Tarjeta de Empatía / Problema del Paciente -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container-lowest border border-primary/15 shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-error-container/40 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">psychology_alt</span>
+</div>
+<div class="space-y-2.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest font-bold">Comprendemos tu temor</span>
+<h2 class="font-headline-sm text-headline-sm md:font-headline-md md:text-headline-md text-on-surface font-semibold">
+                ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                En <strong>Fénix Medicina Estética</strong> rechazamos categóricamente las "caras clonadas" y la sobrecorrección. Nuestra práctica se basa en la <em>proporción áurea</em>, la anatomía facial dinámica y el uso de <strong>micro-dosis estratégicas</strong>. Nuestro objetivo jamás es transformarte, sino devolver a tus tejidos el sostén, frescura y luminosidad que el paso del tiempo o el estrés han atenuado.
+              </p>
+</div>
+</div>
+</div>
+<!-- Proceso Clínico de Certeza en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1 mb-6">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest font-bold">Protocolo Fénix</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-semibold">
+              Tu camino seguro en 3 pasos clínicos
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Claridad absoluta y acompañamiento médico desde el primer minuto.</p>
+</div>
+<div class="space-y-3">
+<!-- Paso 01 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<span class="w-10 h-10 rounded-full bg-surface-container text-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Valoración y Mapeo Facial 3D</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Evaluación fotográfica clínica y análisis vectorizado de vectores de tensión, estructura ósea y calidad dérmica.</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-start md:self-auto px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm font-bold border border-primary/10 whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Certeza clínica y plan exacto desde el día 1
+              </div>
+</div>
+<!-- Paso 02 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<span class="w-10 h-10 rounded-full bg-surface-container text-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Plan Médico Personalizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Definición de productos certificados (ácido hialurónico reticulado o bioestimuladores de hidroxiapatita cálcica / PLLA).</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-start md:self-auto px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm font-bold border border-primary/10 whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Presupuesto transparente y sin añadidos
+              </div>
+</div>
+<!-- Paso 03 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<span class="w-10 h-10 rounded-full bg-surface-container text-primary flex items-center justify-center font-headline-sm text-headline-sm font-semibold flex-shrink-0">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Aplicación Guiada y Glow Natural</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Procedimiento de precisión mediante microcánulas atraumáticas para minimizar inflamación y hematomas.</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-start md:self-auto px-3 py-1.5 rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm font-bold border border-primary/10 whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Sin dolor y con reincorporación inmediata
+              </div>
+</div>
+</div>
+<div class="pt-2 text-center">
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-secondary font-label-lg text-label-lg font-semibold group transition-colors" href="https://wa.me/573160442938?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20previa%20con%20el%20especialista" target="_blank">
+<span>¿Tienes dudas sobre algún procedimiento? Habla con un especialista</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 3. DESEO (Prueba Social + Beneficios) ==================== -->
+<section class="py-12 px-margin-mobile max-w-4xl mx-auto space-y-10">
+<!-- Métricas de Autoridad Médica (Cuadrícula 2x2) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-primary/10 text-center shadow-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-bold block">+8 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mt-1">De Trayectoria</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-primary/10 text-center shadow-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-bold block">+4.500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mt-1">Pacientes Felices</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-primary/10 text-center shadow-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-bold block">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mt-1">INVIMA &amp; FDA</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-primary/10 text-center shadow-xs">
+<div class="flex items-center justify-center gap-1 text-primary">
+<span class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold">4.9</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mt-1">Google Reviews</span>
+</div>
+</div>
+<!-- 4 Beneficios Tangibles (Estilo de Vida y Bienestar) -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest font-bold">Bienestar Tangible</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-semibold">
+            Resultados que se sienten, elegancia que se nota
+          </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-xl">self_improvement</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Armonía y sutileza absoluta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tu entorno notará tu rostro fresco y descansado, jamás intervenido o rígido.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-xl">spa</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bioestimulación profunda</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Activación de colágeno propio para recuperar la firmeza y tersura dérmica desde adentro.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cero tiempo de reposo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Continúa con tus compromisos laborales y sociales el mismo día, sin marcas agresivas.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-xl">health_and_safety</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Acompañamiento VIP continuo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Línea directa médica para dudas post-tratamiento y citas de control de evolución incluidas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados en Colombia -->
+<div class="space-y-4 pt-2">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest font-bold">Experiencias Reales</span>
+<h2 class="font-headline-sm text-headline-sm md:font-headline-md md:text-headline-md text-on-surface font-semibold">
+            La confianza de nuestros pacientes
+          </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Testimonio 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Paciente Verificado · Bogotá</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              "Tenía pánico de que mis labios o mis pómulos quedaran exagerados. En Fénix entendieron exactamente lo que buscaba: verme descansada y luminosa. Mis amigas me dicen que la piel se me ve radiante pero nadie nota que me hice un procedimiento."
+            </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/30">
+<span class="font-label-md text-label-md font-bold text-on-surface">Camila Restrepo</span>
+<span class="text-outline text-xs">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bioestimulación &amp; Armonización</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-primary/10 shadow-xs space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Paciente Verificado · Colombia</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              "La honestidad médica de la valoración me dio total seguridad. Me explicaron qué necesitaba y qué NO era conveniente para mi tipo de rostro. El proceso fue sin dolor alguno y la sede es preciosa."
+            </p>
+<div class="flex items-center gap-2 pt-1 border-t border-outline-variant/30">
+<span class="font-label-md text-label-md font-bold text-on-surface">Valentina Morales</span>
+<span class="text-outline text-xs">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rejuvenecimiento Cutáneo</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 4. ACCIÓN (Conversión Directa Sin Fricción) ==================== -->
+<section class="py-12 px-margin-mobile bg-surface-container-low border-t border-outline-variant/30" id="agenda-form">
+<div class="max-w-xl mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 border border-primary/20 shadow-md space-y-6">
+<!-- Badge de Urgencia Sutil -->
+<div class="flex justify-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-primary font-label-sm text-label-sm font-bold border border-secondary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">event_available</span>
+              Cupos limitados de valoración esta semana en Colombia
+            </span>
+</div>
+<div class="text-center space-y-2">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-semibold">
+              Empieza hoy tu transformación armónica con total confianza
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Diligencia este formulario breve y una asesora médica coordinará tu horario ideal en menos de 24 horas.
+            </p>
+</div>
+<!-- Formulario Minimalista de 3 Campos -->
+<form class="space-y-4" id="lead-form" onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden'); this.reset();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="fullName">Nombre y Apellido *</label>
+<input class="w-full h-12 rounded-lg bg-surface-container-lowest border border-primary/20 px-3.5 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="fullName" placeholder="Ej. Carolina Mendoza" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="phone">WhatsApp o Celular (+57) *</label>
+<input class="w-full h-12 rounded-lg bg-surface-container-lowest border border-primary/20 px-3.5 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="phone" placeholder="Ej. 316 044 2938" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="treatment">Tratamiento de interés *</label>
+<select class="w-full h-12 rounded-lg bg-surface-container-lowest border border-primary/20 px-3.5 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="treatment" required="">
+<option disabled="" selected="" value="">Selecciona un tratamiento</option>
+<option value="armonizacion">Armonización Facial</option>
+<option value="bioestimuladores">Bioestimuladores de Colágeno</option>
+<option value="rejuvenecimiento">Rejuvenecimiento Cutáneo</option>
+<option value="toxina">Toxina Botulínica Preventiva</option>
+<option value="orientacion">No estoy segura, requiero diagnóstico</option>
+</select>
+</div>
+<button class="w-full min-h-[52px] h-[52px] rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(13,122,112,0.25)] active:scale-[0.98] transition-all cursor-pointer" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="text-sm">✦</span>
+</button>
+<div class="hidden p-3 rounded-lg bg-surface-container text-primary font-body-sm text-body-sm text-center border border-primary/20" id="success-msg">
+              ¡Gracias! Tu solicitud ha sido recibida con éxito. Nuestro equipo médico te contactará vía WhatsApp en breve.
+            </div>
+</form>
+<!-- Divisor -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 text-[10px] font-label-sm font-bold uppercase tracking-wider text-outline">O ATENCIÓN INMEDIATA</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full min-h-[50px] h-[50px] rounded-full border border-primary/30 bg-surface-container-low hover:bg-surface-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-colors active:scale-[0.98]" href="https://wa.me/573160442938?text=Hola%20F%C3%A9nix%20Medicina%20Est%C3%A9tica%2C%20deseo%20agendar%20mi%20valoraci%C3%B3n%20cl%C3%ADnica" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Hablar por WhatsApp: +57 316 044 2938</span>
+</a>
+<!-- Mensaje Legal de Confianza -->
+<div class="flex items-start gap-2 text-on-surface-variant text-[11px] leading-relaxed pt-1">
+<span class="material-symbols-outlined text-[15px] text-primary flex-shrink-0 mt-0.5">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 5. RESOLUCIÓN DE DUDAS (FAQ) ==================== -->
+<section class="py-12 px-margin-mobile max-w-3xl mx-auto space-y-6">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest font-bold">Transparencia Total</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary font-semibold">
+          Preguntas frecuentes
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resolvemos las inquietudes más habituales antes de tu primera consulta.</p>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="rounded-xl bg-surface-container-lowest border border-primary/10 overflow-hidden shadow-xs">
+<button class="faq-btn w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface font-semibold focus:outline-none" type="button">
+<span>¿Los procedimientos generan incapacidad médica?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/10 pt-3">
+            No. Todos nuestros protocolos son mínimamente invasivos y ambulatorios. Utilizamos técnicas con microcánulas que previenen la inflamación severa, permitiéndote retomar tus actividades laborales y cotidianas inmediatamente tras finalizar la sesión.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-xl bg-surface-container-lowest border border-primary/10 overflow-hidden shadow-xs">
+<button class="faq-btn w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface font-semibold focus:outline-none" type="button">
+<span>¿Qué productos utilizan y qué respaldo tienen?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/10 pt-3">
+            Trabajamos exclusivamente con insumos de los laboratorios líderes a nivel mundial con registro sanitario INVIMA vigente en Colombia y aprobaciones de la FDA y EMA europea. Los productos se abren en tu presencia con trazabilidad de lote y fecha de vencimiento.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-xl bg-surface-container-lowest border border-primary/10 overflow-hidden shadow-xs">
+<button class="faq-btn w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface font-semibold focus:outline-none" type="button">
+<span>¿En cuánto tiempo se observan los resultados?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/10 pt-3">
+            En armonización con ácido hialurónico el cambio armónico es inmediato y se asienta de manera óptima entre el día 7 y 14. En bioestimuladores de colágeno, notarás una luminosidad inicial y la firmeza progresiva se consolida entre la 3ra y 6ta semana a medida que tu cuerpo genera su propio colágeno.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-xl bg-surface-container-lowest border border-primary/10 overflow-hidden shadow-xs">
+<button class="faq-btn w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-on-surface font-semibold focus:outline-none" type="button">
+<span>¿Qué incluye la valoración diagnóstica 1 a 1?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/10 pt-3">
+            Incluye el análisis médico visual y fotográfico de proporciones faciales, revisión de antecedentes clínicos, plan de tratamiento personalizado por fases y el desglose de presupuesto cerrado sin cobros sorpresa.
+          </div>
+</div>
+</div>
+</section>
+</main>
+<!-- ==================== FOOTER (Shared Component Anchor) ==================== -->
+<footer class="w-full px-margin-mobile py-space-xl pb-24 md:pb-12 flex flex-col items-center text-center gap-space-md bg-surface-container border-t border-outline-variant/40">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Fénix Medicina Estética</span>
+</div>
+<!-- Navigation / Legal Links -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-150" href="#agenda-form">Política de Privacidad</a>
+<a class="hover:text-primary transition-colors duration-150" href="#agenda-form">Términos y Condiciones</a>
+<a class="hover:text-primary transition-colors duration-150" href="#agenda-form">Consentimientos Informados REPS</a>
+<a class="hover:text-primary transition-colors duration-150" href="https://wa.me/573160442938" target="_blank">Contacto Médico</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl leading-relaxed">
+      © 2024 Fénix Medicina Estética S.A.S. Vigilado por MinSalud - Habilitación REPS Código 110010000001. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales. Bogotá, Colombia.
+    </p>
+</footer>
+<!-- ==================== BOTTOM NAV BAR (Mobile Navigation Shell) ==================== -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs bg-surface-container-lowest/90 backdrop-blur-lg shadow-[0_-4px_16px_rgba(13,122,112,0.06)] border-t border-outline-variant/30">
+<!-- Destino 1: Inicio -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">home</span>
+<span class="font-label-sm text-label-sm mt-0.5">Inicio</span>
+</a>
+<!-- Destino 2: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150" href="#agenda-form">
+<span class="material-symbols-outlined text-[20px]">dermatology</span>
+<span class="font-label-sm text-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Destino 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150" href="#agenda-form">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Destino 4: Agendar (Activo según el objetivo de conversión de la página) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/40 text-primary rounded-full px-3 py-1 font-bold active:scale-90 transition-transform duration-150" href="#agenda-form">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+<!-- Inline Script for Interactive FAQ -->
+<script>
+    document.querySelectorAll('.faq-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+        // Toggle current
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/fenix-medicina-estetica" width="1" height="1" style="display:none" alt="">
+</body></html>

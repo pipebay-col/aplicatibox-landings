@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sinigual Cosmopolita | Medicina Estética y Armonización Facial Colombia</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#6bd8cb",
+            "inverse-surface": "#2f312f",
+            "on-secondary-container": "#006f66",
+            "on-secondary-fixed": "#00201d",
+            "on-primary-fixed-variant": "#005048",
+            "primary-fixed-dim": "#74d7c8",
+            "on-surface-variant": "#3e4947",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#006a61",
+            "on-primary-fixed": "#00201c",
+            "outline": "#6e7a77",
+            "inverse-on-surface": "#f2f1ee",
+            "outline-variant": "#bdc9c6",
+            "inverse-primary": "#74d7c8",
+            "surface": "#faf9f6",
+            "surface-container-high": "#e9e8e5",
+            "surface-bright": "#faf9f6",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#fedeb2",
+            "secondary-fixed": "#89f5e7",
+            "on-background": "#1a1c1a",
+            "surface-variant": "#e3e2e0",
+            "surface-dim": "#dbdad7",
+            "on-error": "#ffffff",
+            "surface-tint": "#006b60",
+            "secondary-container": "#86f2e4",
+            "on-secondary-fixed-variant": "#005049",
+            "tertiary-fixed-dim": "#e0c298",
+            "on-secondary": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#e3e2e0",
+            "on-primary-container": "#f2fffb",
+            "on-primary": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-surface": "#1a1c1a",
+            "primary-fixed": "#91f4e4",
+            "primary-container": "#008376",
+            "tertiary": "#6f5836",
+            "on-tertiary-fixed-variant": "#584323",
+            "background": "#faf9f6",
+            "tertiary-container": "#89704c",
+            "on-tertiary-fixed": "#281800",
+            "primary": "#00685d",
+            "on-tertiary-container": "#fffbfa",
+            "surface-container-low": "#f4f3f1",
+            "surface-container": "#efeeeb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "gutter": "2rem",
+            "space-xl": "3.5rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2.25rem",
+            "space-md": "1.25rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": [
+              "2.5rem",
+              {
+                "lineHeight": "3rem",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "500"
+              }
+            ],
+            "display-lg-mobile": [
+              "2.25rem",
+              {
+                "lineHeight": "2.75rem",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-sm": [
+              "0.875rem",
+              {
+                "lineHeight": "1.375rem",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-sm": [
+              "1.25rem",
+              {
+                "lineHeight": "1.75rem",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "0.75rem",
+              {
+                "lineHeight": "1rem",
+                "letterSpacing": "0.08em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-lg": [
+              "1.125rem",
+              {
+                "lineHeight": "1.875rem",
+                "fontWeight": "400"
+              }
+            ],
+            "label-sm": [
+              "0.6875rem",
+              {
+                "lineHeight": "0.875rem",
+                "letterSpacing": "0.1em",
+                "fontWeight": "700"
+              }
+            ],
+            "label-lg": [
+              "0.875rem",
+              {
+                "lineHeight": "1.25rem",
+                "letterSpacing": "0.06em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg-mobile": [
+              "1.75rem",
+              {
+                "lineHeight": "2.25rem",
+                "letterSpacing": "0em",
+                "fontWeight": "500"
+              }
+            ],
+            "display-lg": [
+              "3.5rem",
+              {
+                "lineHeight": "4.25rem",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "1rem",
+              {
+                "lineHeight": "1.625rem",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-md": [
+              "1.75rem",
+              {
+                "lineHeight": "2.25rem",
+                "fontWeight": "500"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .clinical-shadow {
+      box-shadow: 0 12px 32px -4px rgba(27, 36, 33, 0.06);
+    }
+    .card-border {
+      border: 1px solid #ece9e1;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar (Shared Component) -->
+<header class="bg-surface docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-4 py-3 max-w-screen-md mx-auto">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Sinigual Cosmopolita</span>
+</div>
+<div>
+<a class="bg-primary text-on-primary text-label-md font-label-md px-4 py-2 rounded-full hover:bg-primary-container active:scale-95 transition-all duration-150 inline-flex items-center shadow-sm" href="#agendar">
+          Agendar
+        </a>
+</div>
+</div>
+</header>
+<!-- Main Conversion Canvas -->
+<main class="w-full max-w-screen-md mx-auto pb-28 overflow-hidden">
+<!-- 1. ETAPA ATENCIÓN (Hero Section) -->
+<section class="px-4 pt-6 pb-10">
+<!-- Accreditation Badge -->
+<div class="flex justify-center mb-5">
+<div class="inline-flex items-center gap-1.5 bg-[#fbf6ed] border border-[#c5a880]/40 text-[#8c6f48] px-3.5 py-1.5 rounded-full text-label-sm font-label-sm tracking-wide shadow-sm">
+<span class="material-symbols-outlined text-xs text-[#8c6f48]" data-icon="verified">verified</span>
+<span>✨ Habilitación Seccional MinSalud · Medicina Estética en Colombia</span>
+</div>
+</div>
+<!-- H1 Hook (3 Seconds) -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-center text-on-surface mb-4 font-normal tracking-tight">
+        Tu belleza en su versión más <span class="italic font-medium text-primary">armónica y natural</span>, sin perder tu esencia
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant text-center mb-6 max-w-lg mx-auto">
+        Tratamientos médicos no invasivos de bioestimulación cutánea, armonización facial y rejuvenecimiento con rigor ético. Resultados sutiles y elegantes sin incapacidad laboral ni transformaciones exageradas.
+      </p>
+<!-- Hero Visual with DataStore Image -->
+<div class="relative w-full rounded-2xl overflow-hidden mb-6 clinical-shadow border border-[#ece9e1]">
+<img alt="Paciente en Sinigual Cosmopolita con piel luminosa y resultados naturales" class="w-full h-auto object-cover aspect-[4/3] block" src="https://lh3.googleusercontent.com/aida/AEtjO1X8t1aZWlEcCugIbcTl1YuEYW9wphZW48YPGPKNbjmQ1G5FoIWLTfF26qQ6yQLzwLW1GMX_Gpq-FzpyhliMen9Q6OjWnypTUTZtCw6AhgwG-UVN46vY1WQnn_U5Ky_CbZEbO8YHxkTYzI60RifgUGYh7vC200Z23nuI3m4CEKD1ZKV8d7Fsejg9DXYPK14cD1VPxeUIfztLuE8VE1LNQWFAO33UkUBPwU3HRARCXvVmKTm3ez0HAmF-yw"/>
+<!-- Floating Clinical Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md border border-[#ece9e1] rounded-xl p-3 flex items-center justify-between shadow-md">
+<div class="flex items-center space-x-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-wider">Resultado Clínico Verificado · 100% Armonía Natural y Luminosa</span>
+</div>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified_user">verified_user</span>
+</div>
+</div>
+<!-- Hero Primary CTA -->
+<div class="text-center space-y-2 mb-6">
+<a class="w-full block bg-primary-container text-on-primary-container text-label-lg font-label-lg py-4 px-6 rounded-full hover:bg-primary active:scale-95 transition-all duration-200 shadow-md flex items-center justify-center gap-2" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="text-primary font-bold">✓</span> Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- 3 Trust Chips -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-[#ece9e1]">
+<div class="bg-[#e6f3f1] text-primary rounded-xl py-2 px-1 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-sm mb-1" data-icon="task_alt">task_alt</span>
+<span class="font-label-sm text-[10px] leading-tight font-semibold">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="bg-[#e6f3f1] text-primary rounded-xl py-2 px-1 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-sm mb-1" data-icon="face">face</span>
+<span class="font-label-sm text-[10px] leading-tight font-semibold">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="bg-[#e6f3f1] text-primary rounded-xl py-2 px-1 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-sm mb-1" data-icon="apartment">apartment</span>
+<span class="font-label-sm text-[10px] leading-tight font-semibold">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- 2. ETAPA INTERÉS (Empatía & Proceso Clínico) -->
+<section class="px-4 py-10 bg-surface-container-low border-y border-[#ece9e1]">
+<!-- Problem & Empathy Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 card-border clinical-shadow mb-8">
+<div class="flex items-center space-x-2 text-primary mb-2">
+<span class="material-symbols-outlined text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-md text-label-md tracking-wider">ÉTICA MÉDICA SINIGUAL</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-3">
+          ¿Temes tratamientos exagerados que alteren tus facciones o luzcan artificiales?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Rechazamos de manera rotunda los rostros sobre-rellenados y homogeneizados. Nuestra filosofía clínica en Colombia se basa en micro-dosis estratégicas, respeto a la proporción áurea y preservación absoluta de tu anatomía y gesticulación natural. No transformamos quien eres; potenciamos tu frescura celular.
+        </p>
+</div>
+<!-- 3 Steps Clinical Process -->
+<div class="mb-8">
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary tracking-widest block mb-1">METODOLOGÍA TRANSPARENTE</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tu viaje clínico en 3 fases</h3>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 card-border flex items-start space-x-4">
+<span class="font-headline-md text-primary bg-[#e6f3f1] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-medium">
+              01
+            </span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Valoración y Mapeo Facial 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                Evaluamos vector de soporte, calidad dermo-epidérmica y simetría muscular.
+              </p>
+<div class="inline-flex items-center gap-1 text-[#006a61] bg-[#e6f3f1]/60 px-2 py-0.5 rounded text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 card-border flex items-start space-x-4">
+<span class="font-headline-md text-primary bg-[#e6f3f1] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-medium">
+              02
+            </span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Plan Médico Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                Selección de bioactivos de origen suizo o estadounidense con certificación legal.
+              </p>
+<div class="inline-flex items-center gap-1 text-[#006a61] bg-[#e6f3f1]/60 px-2 py-0.5 rounded text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Cero costos ocultos ni tratamientos genéricos.</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 card-border flex items-start space-x-4">
+<span class="font-headline-md text-primary bg-[#e6f3f1] w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-medium">
+              03
+            </span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Aplicación Guiada &amp; Glow Natural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                Procedimiento bajo confort analgésico y técnicas de micro-cánula atraumática.
+              </p>
+<div class="inline-flex items-center gap-1 text-[#006a61] bg-[#e6f3f1]/60 px-2 py-0.5 rounded text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Reincorporación inmediata a tu rutina social y laboral.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Consultation Link -->
+<div class="text-center">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-label-lg text-label-lg group border-b border-primary pb-0.5" href="https://wa.me/573028284684" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre tu caso particular? Consulta con nuestro equipo médico</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- 3. ETAPA DESEO (Métricas, Beneficios & Testimonios) -->
+<section class="px-4 py-10">
+<!-- Grid de Métricas de Confianza Médica -->
+<div class="grid grid-cols-2 gap-3 mb-10">
+<div class="bg-surface-container-lowest p-4 rounded-2xl card-border text-center clinical-shadow">
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-primary mb-1">+8 Años</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">De Trayectoria Médica</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl card-border text-center clinical-shadow">
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-primary mb-1">+4.800</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pacientes Satisfechos</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl card-border text-center clinical-shadow">
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-primary mb-1">100%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Insumos INVIMA &amp; FDA</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl card-border text-center clinical-shadow">
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-primary mb-1">4.9 ★</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">En Google Reviews</div>
+</div>
+</div>
+<!-- 4 Beneficios de Impacto Tangible -->
+<div class="mb-10">
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary tracking-widest block mb-1">EXCELENCIA CLÍNICA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Beneficios tangibles en tu vida diaria</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-2xl card-border">
+<div class="w-10 h-10 rounded-xl bg-[#e6f3f1] text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" data-icon="sparkles">auto_awesome</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Rostro visiblemente descansado, fresco y rejuvenecido; jamás congelado, tirante ni con aspecto operado.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl card-border">
+<div class="w-10 h-10 rounded-xl bg-[#e6f3f1] text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Bioestimulación profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Activación endógena de colágeno tipo I y elastina. Tensado progresivo y recuperación del espesor celular dérmico.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl card-border">
+<div class="w-10 h-10 rounded-xl bg-[#e6f3f1] text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Cero tiempo de incapacidad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Protocolos con técnicas micro-invasivas: sin cicatrices visibles, sin hematomas severos ni reposo forzado.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl card-border">
+<div class="w-10 h-10 rounded-xl bg-[#e6f3f1] text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Acompañamiento VIP continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Línea directa y resolución de inquietudes post-tratamiento directamente con la especialista a cargo.
+            </p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div>
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary tracking-widest block mb-1">VOCES SINIGUAL</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Historias de pacientes reales</h3>
+</div>
+<div class="space-y-4">
+<!-- Testimonio Bogotá -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 card-border clinical-shadow">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center space-x-2">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-sm">
+                  CV
+                </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-base">Camila Valencia</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bogotá, D.C. · Tratamiento de Armonización</span>
+</div>
+</div>
+<div class="flex text-amber-500 text-xs">
+                ★★★★★
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Mi mayor miedo era terminar con los pómulos inflados que se ven en redes. En Sinigual la doctora me escuchó más de 40 minutos en el diagnóstico antes de tocarme la cara. El resultado fue tan sutil que mis amigas me decían que me veía descansada como si volviera de vacaciones."
+            </p>
+</div>
+<!-- Testimonio Medellín -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 card-border clinical-shadow">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center space-x-2">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-sm">
+                  MO
+                </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-base">Mariana Ospina</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Medellín, El Poblado · Bioestimulación Cutánea</span>
+</div>
+</div>
+<div class="flex text-amber-500 text-xs">
+                ★★★★★
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Trabajo en eventos corporativos y no podía parar ni un día por hematomas. El protocolo de bioestimulación fue impecable, salí directo a una reunión y a las 3 semanas la tensión y calidad de mi piel eran de otra categoría. Profesionalismo del más alto nivel en Colombia."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ETAPA ACCIÓN (Formulario de Conversión Prioritario) -->
+<section class="px-4 py-10 bg-surface-container-low border-t border-[#ece9e1]" id="agendar">
+<div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 card-border clinical-shadow">
+<!-- Scarcity / Urgency Header -->
+<div class="bg-[#fbf6ed] border border-[#c5a880]/30 rounded-xl p-3 mb-6 flex items-center space-x-2 text-[#8c6f48]">
+<span class="material-symbols-outlined text-lg" data-icon="alarm">alarm</span>
+<span class="font-label-sm text-label-sm font-semibold">Cupos clínicos limitados esta semana en nuestras sedes de Colombia</span>
+</div>
+<div class="text-center mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Solicita tu Valoración Médica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Un especialista sénior se comunicará para agendar tu diagnóstico presencial.
+          </p>
+</div>
+<!-- Conversion Form (3 Fields) -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por contactar a Sinigual Cosmopolita! Una coordinadora médica se comunicará en breve por WhatsApp.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Nombre y apellido completo</label>
+<input class="w-full bg-surface border border-[#dcd8cf] rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Ej. Valentina Restrepo" required="" type="text"/>
+</div>
+<!-- Field 2: Phone with Colombia Prefix -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">WhatsApp o Celular</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant font-label-md">
+                +57
+              </div>
+<input class="w-full bg-surface border border-[#dcd8cf] rounded-xl pl-12 pr-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" pattern="[0-9]{10}" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment Selector -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">¿Qué tratamiento te interesa evaluar?</label>
+<select class="w-full bg-surface border border-[#dcd8cf] rounded-xl px-4 py-3 text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="armonizacion">Armonización Facial Sutil</option>
+<option value="bioestimuladores">Bioestimuladores de Colágeno</option>
+<option value="rejuvenecimiento">Rejuvenecimiento Cutáneo</option>
+<option value="toxina">Toxina Preventiva &amp; Glow</option>
+</select>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary-container text-on-primary-container text-label-lg font-label-lg py-4 rounded-full hover:bg-primary active:scale-95 transition-all duration-200 shadow-md font-semibold tracking-wide flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-[#ece9e1]"></div></div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-on-surface-variant">o atención prioritaria</span>
+</div>
+<!-- WhatsApp Direct Secondary CTA -->
+<a class="w-full border border-primary text-primary hover:bg-[#e6f3f1] text-label-lg font-label-lg py-3.5 px-4 rounded-full flex items-center justify-center gap-2 transition-colors active:scale-95" href="https://wa.me/573028284684" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 302 828 4684)</span>
+</a>
+<!-- Privacy & Legal Notice -->
+<p class="font-label-sm text-[11px] text-on-surface-variant text-center mt-4 leading-normal">
+          Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ Acordeón) -->
+<section class="px-4 py-10">
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary tracking-widest block mb-1">TRANSPARENCIA CLÍNICA</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="bg-surface-container-lowest rounded-xl card-border p-4 group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface text-base">
+<span>¿Cuánto tiempo duran los resultados?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-[#ece9e1]">
+            Dependiendo del tratamiento seleccionado (bioestimulador, ácido hialurónico reticulado o neuromodulador), los resultados permanecen activos entre 6 a 18 meses. Al estimular colágeno propio, la mejoría en la piel tiene beneficios de largo plazo.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="bg-surface-container-lowest rounded-xl card-border p-4 group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface text-base">
+<span>¿Tendré inflamación o morados visibles?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-[#ece9e1]">
+            Utilizamos micro-cánulas de punta roma que minimizan drásticamente el riesgo de hematomas. La inflamación suele ser muy leve y cede en las primeras 24 a 48 horas, permitiendo reincorporación laboral inmediata.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="bg-surface-container-lowest rounded-xl card-border p-4 group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface text-base">
+<span>¿Qué productos utilizan y qué garantía tienen?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-[#ece9e1]">
+            Trabajamos exclusivamente con casas farmacéuticas de primera línea mundial con registro INVIMA en Colombia y aprobación FDA/CE. Se abre cada vial en presencia del paciente con su sticker de trazabilidad correspondiente.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="bg-surface-container-lowest rounded-xl card-border p-4 group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-headline-sm text-on-surface text-base">
+<span>¿Dónde están ubicadas las sedes clínicas?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-[#ece9e1]">
+            Contamos con sedes boutique privadas en Bogotá (Chicó Norte) y Medellín (El Poblado), diseñadas bajo estándares hospitalarios de bioseguridad en ambientes de serenidad y privacidad absoluta.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-low border-t border-outline-variant/40 pb-24">
+<div class="w-full px-5 py-8 max-w-screen-md mx-auto flex flex-col gap-4 text-center items-center">
+<div class="font-headline-md text-headline-md text-primary">Sinigual Cosmopolita</div>
+<!-- Institutional Links -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Habilitación Sanitaria Minsalud</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Protocolos de Bioseguridad</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Consentimiento Informado</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Política de Tratamiento de Datos Personales</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Términos y Condiciones Médicas</a>
+</div>
+<!-- Legal Copyright -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mt-2">
+        © 2024 Sinigual Cosmopolita S.A.S. Vigilado Supersalud Colombia - Registro Especial de Prestadores de Servicios de Salud (REPS). Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- BottomNavBar (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 pb-safe max-w-screen-md mx-auto bg-surface/95 backdrop-blur-md border-t border-outline-variant/30 shadow-md">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-2 py-1 hover:text-primary active:scale-95 transition-all duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Concierge -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-2 py-1 hover:text-primary active:scale-95 transition-all duration-150" href="https://wa.me/573028284684">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm mt-0.5">Concierge</span>
+</a>
+<!-- Item 3: Agendar (Active Navigation Tab) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-3 py-1 shadow-sm active:scale-95 transition-all duration-150" href="#agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+<!-- Item 4: Sedes -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-2 py-1 hover:text-primary active:scale-95 transition-all duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="location_on">location_on</span>
+<span class="text-label-sm font-label-sm mt-0.5">Sedes</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/sinigual-cosmopolita" width="1" height="1" style="display:none" alt="">
+</body></html>

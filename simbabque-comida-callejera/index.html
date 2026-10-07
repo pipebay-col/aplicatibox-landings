@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simbabque | Street Food de Autor en Colombia</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#faf9f7",
+            "primary": "#00685d",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "primary-fixed": "#91f4e4",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#dadad8",
+            "surface-container-highest": "#e3e2e0",
+            "background": "#faf9f7",
+            "tertiary-fixed": "#ffdcc3",
+            "surface-container": "#efeeec",
+            "secondary": "#006a61",
+            "surface-bright": "#faf9f7",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-secondary-fixed-variant": "#005049",
+            "on-background": "#1a1c1b",
+            "on-primary-container": "#f2fffb",
+            "on-secondary-container": "#006f66",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#b15f00",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#f1f1ef",
+            "primary-fixed-dim": "#74d7c8",
+            "surface-container-high": "#e9e8e6",
+            "tertiary": "#8d4b00",
+            "on-surface": "#1a1c1b",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "primary-container": "#008376",
+            "outline": "#6e7a77",
+            "on-tertiary-fixed": "#2f1500",
+            "secondary-fixed": "#89f5e7",
+            "inverse-surface": "#2f3130",
+            "surface-container-low": "#f4f3f1",
+            "on-surface-variant": "#3e4947",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-primary-fixed-variant": "#005048",
+            "outline-variant": "#bdc9c6",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-fixed": "#00201d",
+            "tertiary-fixed-dim": "#ffb77d",
+            "on-primary-fixed": "#00201c",
+            "surface-tint": "#006b60",
+            "error-container": "#ffdad6",
+            "secondary-container": "#86f2e4",
+            "surface-variant": "#e3e2e0",
+            "inverse-primary": "#74d7c8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter-mobile": "0.75rem",
+            "margin": "1.25rem",
+            "space-xl": "2.25rem",
+            "space-xs": "0.25rem",
+            "gutter": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "title-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero": ["40px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- ================= TOP APP BAR (Shared Component JSON) ================= -->
+<header class="sticky top-0 z-50 w-full bg-surface shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile max-w-[480px] mx-auto py-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="restaurant">restaurant</span>
+<span class="text-headline-lg-mobile font-headline-lg-mobile font-bold text-primary tracking-tight">Simbabque</span>
+</div>
+<a class="flex items-center gap-1 bg-surface-container-low px-3 py-1.5 rounded-full hover:bg-surface-container-high transition-transform duration-150 active:scale-95 text-primary" href="#reservas">
+<span class="material-symbols-outlined text-primary text-base" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-label-sm text-primary tracking-wide">BPM Inocuo</span>
+</a>
+</div>
+</header>
+<!-- ================= MAIN MOBILE-FIRST CANVAS (MAX 480PX) ================= -->
+<main class="w-full max-w-[480px] mx-auto px-margin-mobile pb-32">
+<!-- ================= 1. ATENCIÓN (Hero Section) ================= -->
+<section class="pt-space-md flex flex-col gap-space-md" id="atencion">
+<!-- Badge de Credencial Real -->
+<div class="inline-flex items-center gap-2 self-start bg-surface-container-low border border-outline-variant/30 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="local_fire_department">local_fire_department</span>
+<span class="text-label-sm font-label-sm text-primary">Sabor Callejero de Autor · Inocuidad &amp; BPM Certificada Colombia</span>
+</div>
+<!-- Titular H1 Serif Premium -->
+<h1 class="text-display-hero-mobile font-display-hero-mobile text-on-surface text-balance">
+        El auténtico sabor de la calle con la calidad y frescura que mereces en Colombia.
+      </h1>
+<!-- Subtítulo de Resultado -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Platos callejeros artesanales elaborados con cortes madurados premium, arepas de choclo hechas en casa e ingredientes frescos locales, con los más altos estándares de higiene y sin conservantes.
+      </p>
+<!-- Imagen Hero Destacada -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-md border border-outline-variant/20">
+<img alt="Parrillada artesanal Simbabque con arepa de choclo, quesos y papas criollas doradas" class="w-full h-72 object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1XUAUrAxHmY8hbhcXPdjbofzs3uFtaTUGhJChn7lXSzMYvUueWvkRz_JuMfnhCTIi1qOPPEZ9dzPlKwOhEg2rJstcEQgKvkinA9ylJJAjQPf2w7xsIJQgw8JNcCJ3HE0VPrFm-sca9fWqGnpST3KjTbH6L7EgMAF1vUV0Ck6qt_b5H43cqyG5dVjLj1YwAQVk_-ATAX0vaa09gox7UShr5vSvgBvG6QNhBL3lds9BNr67oI3Rfk4hUExRQ"/>
+<!-- Pill Flotante de Calidad -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-2 rounded-lg flex items-center justify-between border border-outline-variant/30 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="shield_with_heart" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<span class="text-label-sm font-label-sm text-on-surface">100% Sabor Artesanal &amp; Calidad Certificada</span>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold">15-20 min</span>
+</div>
+</div>
+<!-- Botón CTA Hero -->
+<a class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary py-4 px-6 rounded-full font-label-lg text-label-lg shadow-[0_10px_25px_-5px_rgba(0,104,93,0.3)] transition-all duration-150 active:scale-95 text-center mt-1" href="#reservas">
+<span>Agendar ahora mi pedido o mesa</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro-credencial Inmediata -->
+<div class="flex items-center justify-center gap-2 text-center text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-base" data-icon="bolt">bolt</span>
+<span>Respuesta en menos de 24 horas · Confirmación directa por WhatsApp</span>
+</div>
+<!-- Barra de Confianza (3 Pills) -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg border border-outline-variant/30 flex flex-col items-center text-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="spa">spa</span>
+<span class="text-label-sm font-label-sm text-on-surface">Ingredientes 100% Frescos</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg border border-outline-variant/30 flex flex-col items-center text-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="health_and_safety">health_and_safety</span>
+<span class="text-label-sm font-label-sm text-on-surface">Bioseguridad Sanitaria</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg border border-outline-variant/30 flex flex-col items-center text-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="flag">flag</span>
+<span class="text-label-sm font-label-sm text-on-surface">Sabor de Origen</span>
+</div>
+</div>
+</section>
+<!-- ================= 2. INTERÉS (Problema + 3 Pasos) ================= -->
+<section class="mt-space-xl flex flex-col gap-space-md" id="interes">
+<!-- Card con Dilema vs Solución -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-2 text-tertiary mb-2">
+<span class="material-symbols-outlined text-xl" data-icon="help_outline">help_outline</span>
+<span class="text-label-lg font-label-lg uppercase tracking-wider">El dilema del comensal</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-2">
+          ¿Cansado de comida callejera grasosa, con ingredientes de dudosa procedencia o esperas eternas?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">
+          En Simbabque rescatamos la cultura culinaria popular colombiana fusionándola con técnicas profesionales de brasa lenta, trazabilidad completa de cortes cárnicos madurados y cocinas abiertas con riguroso protocolo higiénico.
+        </p>
+<div class="bg-surface-container-low p-3 rounded-lg border border-outline-variant/20 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="workspace_premium">workspace_premium</span>
+<p class="text-body-sm font-body-sm text-on-surface">
+<strong>Garantía Simbabque:</strong> Sin aceites reciclados, sin rellenos artificiales y con carnes 100% de origen verificado.
+          </p>
+</div>
+</div>
+<!-- Proceso de Certeza en 3 Pasos -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="text-headline-md font-headline-md text-on-surface">Nuestro Proceso de Certeza</span>
+<span class="text-label-sm font-label-sm text-primary font-bold">3 PASOS SIMPLES</span>
+</div>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<span class="text-title-sm font-title-sm text-primary bg-surface-container-low w-8 h-8 rounded-full flex items-center justify-center shrink-0">01</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-title-sm font-title-sm text-on-surface">Valoración y Selección del Menú</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Escoge entre nuestras parrilladas gourmet, arepas de masa madre de choclo o mazorcadas artesanales.</p>
+<span class="text-label-sm font-label-sm text-primary mt-1 font-semibold">Beneficio: Personalización total a tu apetito y grupo.</span>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<span class="text-title-sm font-title-sm text-primary bg-surface-container-low w-8 h-8 rounded-full flex items-center justify-center shrink-0">02</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-title-sm font-title-sm text-on-surface">Preparación Artesanal al Minuto</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Fuego vivo de carbón de leña noble, sellado a punto perfecto y salsas elaboradas esa misma mañana.</p>
+<span class="text-label-sm font-label-sm text-primary mt-1 font-semibold">Beneficio: Textura crujiente, cero recalentados y máxima jugosidad.</span>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<span class="text-title-sm font-title-sm text-primary bg-surface-container-low w-8 h-8 rounded-full flex items-center justify-center shrink-0">03</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-title-sm font-title-sm text-on-surface">Resultado Inolvidable en Mesa o Casa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Disfruta una experiencia gastronómica que honra el alma callejera sin pesadez digestiva.</p>
+<span class="text-label-sm font-label-sm text-primary mt-1 font-semibold">Beneficio: La tranquilidad de comer rico, seguro y fresco.</span>
+</div>
+</div>
+</div>
+<!-- Callout interactivo con asesor -->
+<a class="bg-surface-container-low p-3.5 rounded-xl border border-outline-variant/30 flex items-center justify-between hover:bg-surface-container transition-colors" href="https://wa.me/573102928260?text=Hola%20Simbabque,%20quiero%20consultar%20el%20menú%20y%20hacer%20un%20pedido%20prioritario" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="support_agent">support_agent</span>
+<div>
+<p class="text-title-sm font-title-sm text-on-surface">¿Dudas con alérgenos o grupos?</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Habla al instante con nuestro asesor de mesa</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+</section>
+<!-- ================= 3. DESEO (Métricas + Beneficios + Testimonios) ================= -->
+<section class="mt-space-xl flex flex-col gap-space-md" id="deseo">
+<!-- Métricas Clave Bento Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<span class="text-headline-lg font-headline-lg text-primary">+6 Años</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">De Trayectoria</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<span class="text-headline-lg font-headline-lg text-primary">+18.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Comensales Felices</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<span class="text-headline-lg font-headline-lg text-primary">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Insumos Certificados</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col items-center text-center">
+<div class="flex items-center gap-1 text-primary">
+<span class="text-headline-lg font-headline-lg">4.9</span>
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Google Reviews</span>
+</div>
+</div>
+<!-- 4 Beneficios de Resultado Sensorial -->
+<div class="flex flex-col gap-3">
+<h2 class="text-headline-md font-headline-md text-on-surface">Beneficios Que Sientes en Cada Bocado</h2>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex gap-3 items-center">
+<div class="bg-surface-container p-2.5 rounded-full text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="outdoor_grill">outdoor_grill</span>
+</div>
+<div>
+<h3 class="text-title-sm font-title-sm text-on-surface">Carne jugosa madurada y a la brasa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Cortes seleccionados con reposo térmico que conservan el jugo natural intacto.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex gap-3 items-center">
+<div class="bg-surface-container p-2.5 rounded-full text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div>
+<h3 class="text-title-sm font-title-sm text-on-surface">Arepas de choclo y salsas naturales</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Maíz tierno desgranado a mano y chimichurri con hierbas de huertas andinas.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex gap-3 items-center">
+<div class="bg-surface-container p-2.5 rounded-full text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h3 class="text-title-sm font-title-sm text-on-surface">Higiene y trazabilidad alimentaria impecable</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Manipulación BPM que te permite disfrutar de comida callejera sin ningún remordimiento.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex gap-3 items-center">
+<div class="bg-surface-container p-2.5 rounded-full text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<div>
+<h3 class="text-title-sm font-title-sm text-on-surface">Atención cálida y experiencia fluida</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Servicio ágil y honesto, sea en mesa o para entrega a domicilio perfectamente empacada.</p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="flex flex-col gap-3">
+<h2 class="text-headline-md font-headline-md text-on-surface">Comensales Verificados en Colombia</h2>
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center text-xs">CR</span>
+<div>
+<p class="text-title-sm font-title-sm text-on-surface">Camila Restrepo</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Bogotá, Colombia · Cliente Frecuente</p>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Por fin un sitio donde la arepa de choclo sabe a maíz de verdad y la carne a la brasa no está seca ni grasosa. El local es impecable y la atención por WhatsApp fue inmediata."
+          </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center text-xs">JA</span>
+<div>
+<p class="text-title-sm font-title-sm text-on-surface">Julián Aristizábal</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Medellín, Colombia · Comensal Verificado</p>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Pedimos para un grupo de 8 personas un fin de semana. Llegó todo caliente, las papas criollas en su punto crocante y las salsas selladas al vacío. Calidad 10/10."
+          </p>
+</div>
+</div>
+</section>
+<!-- ================= 4. ACCIÓN (Conversión Final + Formulario + WhatsApp) ================= -->
+<section class="mt-space-xl flex flex-col gap-space-md" id="reservas">
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/40 shadow-lg relative">
+<!-- Badge de Cupos Limitados -->
+<div class="flex items-center justify-between mb-3">
+<span class="bg-tertiary/10 text-tertiary font-bold text-label-sm px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="hourglass_top">hourglass_top</span>
+            Cupos y Lotes Limitados por Jornada
+          </span>
+<span class="text-label-sm font-label-sm text-primary font-bold">Frescura Diaria</span>
+</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-1">
+          Haz tu Reserva o Pedido Prioritario
+        </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-5">
+          Asegura tus porciones artesanales antes de que se agoten los cortes madurados del día.
+        </p>
+<!-- Formulario Minimalista 3 Campos -->
+<form class="flex flex-col gap-3" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido recibida con prioridad. Nos contactaremos al WhatsApp en breve.');">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1">Nombre Completo *</label>
+<input class="w-full bg-surface-container-low border-0 focus:ring-2 focus:ring-primary rounded-lg text-body-md p-3 text-on-surface" placeholder="Ej. Mateo Gómez" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1">WhatsApp o Celular (+57) *</label>
+<input class="w-full bg-surface-container-low border-0 focus:ring-2 focus:ring-primary rounded-lg text-body-md p-3 text-on-surface" placeholder="Ej. 310 123 4567" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1">¿Qué experiencia o plato te interesa? *</label>
+<select class="w-full bg-surface-container-low border-0 focus:ring-2 focus:ring-primary rounded-lg text-body-md p-3 text-on-surface">
+<option value="parrillada">Parrillada Gourmet Simbabque (Res, Cerdo, Arepa Choclo)</option>
+<option value="choclo">Especialidad Arepas de Choclo con Queso y Costilla</option>
+<option value="mesa">Reserva de Mesa Presencial (Pareja o Grupo)</option>
+<option value="domicilio">Pedido Domicilio Prioritario</option>
+</select>
+</div>
+<!-- Botón Principal de Acción -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-4 px-6 rounded-full font-label-lg text-label-lg shadow-[0_10px_25px_-5px_rgba(0,104,93,0.3)] transition-transform duration-150 active:scale-95 text-center mt-2 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi experiencia Simbabque</span>
+<span class="material-symbols-outlined text-lg" data-icon="check_circle">check_circle</span>
+</button>
+</form>
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-3 text-label-sm text-outline font-semibold">O PREFIERES ATENCIÓN INMEDIATA</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 px-6 rounded-full font-label-lg text-label-lg transition-transform duration-150 active:scale-95 text-center shadow-sm" href="https://wa.me/573102928260?text=Hola%20Simbabque,%20quiero%20hacer%20un%20pedido%20prioritario%20o%20reserva" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Pedir al WhatsApp (+57 310 292 8260)</span>
+</a>
+<!-- Microcopy de Privacidad Legal Colombia -->
+<p class="text-body-sm font-body-sm text-outline text-center mt-4">
+          Tus datos están 100% protegidos bajo la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+<!-- Acordeón de Preguntas Frecuentes (FAQ) -->
+<div class="flex flex-col gap-2 mt-4">
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Preguntas Frecuentes</h3>
+<details class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 group">
+<summary class="flex justify-between items-center cursor-pointer font-title-sm text-title-sm text-on-surface list-none">
+<span>¿Cómo garantizan la inocuidad de las carnes?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 mt-2 border-t border-outline-variant/20">
+            Trabajamos con frigoríficos certificados por el Invima con cadena de frío continua. Todas las preparaciones cumplen estrictamente con las Buenas Prácticas de Manufactura (BPM).
+          </p>
+</details>
+<details class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 group">
+<summary class="flex justify-between items-center cursor-pointer font-title-sm text-title-sm text-on-surface list-none">
+<span>¿Cuánto tarda en llegar un pedido a domicilio?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 mt-2 border-t border-outline-variant/20">
+            El tiempo promedio de preparación y entrega es de 35 a 45 minutos. Empacamos con aislante térmico para preservar el calor y crocancia de las arepas y papas criollas.
+          </p>
+</details>
+<details class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/30 group">
+<summary class="flex justify-between items-center cursor-pointer font-title-sm text-title-sm text-on-surface list-none">
+<span>¿Puedo reservar mesa para cumpleaños o grupos?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-sm font-body-sm text-on-surface-variant pt-2 mt-2 border-t border-outline-variant/20">
+            Sí, tenemos zonas ambientadas para grupos de hasta 20 personas con atención de parrillero personalizada. Recomendamos avisar con 24 horas de antelación.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component JSON) ================= -->
+<footer class="bg-surface-container-high text-primary w-full transition-colors duration-200">
+<div class="flex flex-col items-center justify-center w-full px-margin-mobile py-space-xl text-center max-w-[480px] mx-auto mb-20">
+<span class="text-headline-lg-mobile font-headline-lg-mobile font-bold text-primary tracking-tight mb-2">Simbabque</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+        © 2024 Simbabque Street Food SAS. Todos los derechos reservados. Registro Sanitario Invima &amp; Inocuidad BPM Certificada.
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="hover:text-primary hover:underline text-on-surface-variant" href="#atencion">Inocuidad Alimentaria BPM</a>
+<a class="hover:text-primary hover:underline text-on-surface-variant" href="#atencion">Registro Sanitario Invima</a>
+<a class="hover:text-primary hover:underline text-on-surface-variant" href="#reservas">Política de Datos Ley 1581</a>
+<a class="hover:text-primary hover:underline text-on-surface-variant" href="#reservas">Términos del Servicio</a>
+</div>
+</div>
+</footer>
+<!-- ================= BOTTOM NAV BAR (Shared Component JSON) ================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-sm pb-[calc(0.5rem+env(safe-area-inset-bottom))] max-w-[480px] mx-auto inset-x-0 bg-surface-container-lowest shadow-[0_-4px_16px_rgba(0,104,93,0.08)]">
+<!-- Tab 1: Menú -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-md py-space-xs hover:text-primary hover:bg-surface-container rounded-full active:scale-95 transition-transform duration-150" href="#interes">
+<span class="material-symbols-outlined text-2xl" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="text-label-sm font-label-sm">Menú</span>
+</a>
+<!-- Tab 2: Reservar (Active State based on primary conversion intent) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-space-md py-space-xs active:scale-95 transition-transform duration-150 shadow-sm" href="#reservas">
+<span class="material-symbols-outlined text-2xl" data-icon="table_restaurant" style="font-variation-settings: 'FILL' 1;">table_restaurant</span>
+<span class="text-label-sm font-label-sm">Reservar</span>
+</a>
+<!-- Tab 3: Pedir WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-md py-space-xs hover:text-primary hover:bg-surface-container rounded-full active:scale-95 transition-transform duration-150" href="https://wa.me/573102928260?text=Hola%20Simbabque,%20quiero%20hacer%20un%20pedido%20directo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm">Pedir WhatsApp</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/simbabque-comida-callejera" width="1" height="1" style="display:none" alt="">
+</body></html>

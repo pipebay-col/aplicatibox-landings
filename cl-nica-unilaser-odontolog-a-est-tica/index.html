@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clínica Unilaser Odontología Estética | Diseño de Sonrisa y Carillas Cerámicas Colombia</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error": "#ba1a1a",
+            "on-primary-container": "#a8fff0",
+            "on-secondary-container": "#006f64",
+            "on-secondary-fixed-variant": "#005048",
+            "inverse-surface": "#283234",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-primary-fixed": "#00201c",
+            "primary-fixed-dim": "#7ad7c8",
+            "on-secondary-fixed": "#00201c",
+            "surface-container-low": "#ebf6f8",
+            "outline": "#6e7977",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#4fdbc8",
+            "inverse-primary": "#7ad7c8",
+            "on-tertiary-fixed": "#281800",
+            "secondary": "#006b5f",
+            "on-surface": "#131d1f",
+            "surface-bright": "#f0fbfe",
+            "tertiary-fixed-dim": "#e0c298",
+            "secondary-container": "#6df5e1",
+            "primary": "#005f55",
+            "surface-container-high": "#dfeaed",
+            "on-tertiary-fixed-variant": "#584323",
+            "primary-fixed": "#96f3e4",
+            "outline-variant": "#bdc9c6",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#66502f",
+            "secondary-fixed": "#71f8e4",
+            "surface-tint": "#006a60",
+            "inverse-on-surface": "#e8f3f5",
+            "on-tertiary-container": "#ffecd5",
+            "on-primary-fixed-variant": "#005048",
+            "tertiary-container": "#816845",
+            "on-background": "#131d1f",
+            "on-surface-variant": "#3e4947",
+            "surface-container-highest": "#dae4e7",
+            "background": "#f0fbfe",
+            "on-primary": "#ffffff",
+            "primary-container": "#007a6e",
+            "surface": "#f0fbfe",
+            "on-error": "#ffffff",
+            "surface-variant": "#dae4e7",
+            "surface-container": "#e5f0f2",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#d1dcde",
+            "tertiary-fixed": "#fedeb2"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-sm": "1rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "margin-lg": "4rem",
+            "margin": "1.5rem",
+            "gutter-lg": "2.5rem",
+            "space-sm": "0.75rem",
+            "space-lg": "2rem",
+            "space-xs": "0.375rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "title-md": ["Manrope"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["Manrope"],
+            "headline-xl": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "body-sm": ["Manrope"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+            "display-lg-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "body-md": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "headline-xl-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "title-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+            "label-md": ["13px", {"lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+            "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "body-sm": ["14px", {"lineHeight": "22px", "fontWeight": "400"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component) -->
+<header class="bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-md text-primary dark:text-inverse-primary docked full-width top-0 sticky z-40 shadow-sm transition-all duration-200">
+<div class="flex justify-between items-center w-full px-margin-sm py-space-xs max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="verified_user">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold tracking-tight">Clínica Unilaser Odontología Estética</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-full hover:bg-primary transition-all duration-200 shadow-sm active:scale-95" href="#agendar">
+          Agendar
+        </a>
+<a class="sm:hidden inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-1.5 rounded-full hover:bg-primary transition-all duration-200 active:scale-95" href="#agendar">
+          Agendar
+        </a>
+</div>
+</div>
+</header>
+<!-- MAIN WRAPPER (Mobile-First Journey with Desktop Elegance) -->
+<main class="w-full pb-28 md:pb-20">
+<!-- 1. A - ATENCIÓN (Hero Section) -->
+<section class="relative pt-6 pb-12 px-margin-sm md:px-margin-lg max-w-7xl mx-auto">
+<!-- Glow ambient background accent -->
+<div class="absolute -top-12 right-0 w-72 h-72 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="flex flex-col gap-6">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-secondary w-fit shadow-xs">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm">Habilitación MinSalud REPS · Odontología Estética &amp; Láser Colombia</span>
+</div>
+<!-- Hero Headline & Subhead -->
+<div class="space-y-4">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface text-balance">
+            Tu nueva sonrisa, <span class="text-primary italic font-serif">natural</span> y diseñada para durar toda la vida en Colombia.
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+            Carillas cerámicas ultrafinas E-max, lentes de contacto dental y diseño de sonrisa guiado por tecnología láser y escaneo 3D. Armonía facial sin desgastes agresivos ni dolor.
+          </p>
+</div>
+<!-- Hero Editorial Image with Floating Guarantee Card -->
+<div class="relative w-full rounded-2xl md:rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 mt-2">
+<img alt="Paciente en consulta de Clínica Unilaser Odontología Estética" class="w-full h-[360px] md:h-[480px] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1W_UiPtJSJhigkujoYvSUnLXcd3UEJmLj5dPsDFG-yBELLMkUgnUGcq1W9hvUmsJ3O5_vZVm3Y5ieZR6QJskC-mdjbzR9_HqAC8ASPuxPuQgcP2JnFmgSPZhqlQ-3Sdb6Lz36lHddQj7Xm4KGkt57o0trZAehOz3uYnpiERm_MZunDf17LFDTrN9k_xrfb0YvMDJhmVV7-ZsgCIim-dfvYzxmK1Sq6w0Mp-cOpqfTzbSbzrj6P_qGNjAdo"/>
+<!-- Subtle Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Floating Clinical Guarantee Tag -->
+<div class="absolute bottom-4 left-4 right-4 md:left-6 md:right-auto md:max-w-md bg-surface-container-lowest/95 backdrop-blur-md p-3.5 rounded-xl border border-secondary-container/40 shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">Protocolo Biomimético Certificado</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">
+                  100% Cerámica E-max Natural · Cero Desgaste Invasivo · Tecnología Láser
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- High Conversion Action Cluster -->
+<div class="flex flex-col gap-3 pt-2">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-primary-container text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-primary transition-all duration-200 shadow-md active:scale-95 text-center" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="flex items-center justify-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+            Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+          </p>
+</div>
+<!-- Immediate Trust Badges Pills -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tecnología 3D Láser</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="dentistry">dentistry</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Preservación Biológica</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-xl bg-surface-container-low/70">
+<span class="material-symbols-outlined text-primary mb-1 text-xl" data-icon="person_pin">person_pin</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. I - INTERÉS (El Problema y la Solución) -->
+<section class="py-12 px-margin-sm md:px-margin-lg bg-surface-container-low/60 border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto space-y-10">
+<!-- Fear Confrontation Box -->
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl border border-outline-variant/30 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-2xl shrink-0 mt-0.5" data-icon="help_outline">help_outline</span>
+<div class="space-y-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+                ¿Temes que tu diseño de sonrisa se vea artificial, "dientes de tiza" o desgaste tus dientes sanos?
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Entendemos el miedo a la odontología estética destructiva. En <strong class="text-primary font-semibold">Clínica Unilaser</strong> aplicamos un protocolo no invasivo donde preservamos hasta el <strong class="text-on-surface">98% del esmalte dental sano</strong>, integrando micro-láminas cerámicas personalizadas con fluorescencia idéntica a tus dientes biológicos.
+              </p>
+</div>
+</div>
+</div>
+<!-- 3-Step Process (Bento Rhythm) -->
+<div class="space-y-4">
+<div class="text-center md:text-left">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Metodología de Precisión</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">El paso a paso hacia tu sonrisa soñada</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:border-secondary transition-all">
+<div>
+<span class="font-headline-xl text-primary font-semibold opacity-40">01</span>
+<h4 class="font-title-md text-title-md text-on-surface mt-2 mb-2">Valoración y Escaneo Digital 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Sin moldes incómodos de silicona. Mediante cámara intraoral de alta fidelidad analizamos proporciones áureas y oclusión facial.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+                Ves tu nueva sonrisa proyectada en pantalla antes de tocar un solo diente.
+              </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:border-secondary transition-all">
+<div>
+<span class="font-headline-xl text-primary font-semibold opacity-40">02</span>
+<h4 class="font-title-md text-title-md text-on-surface mt-2 mb-2">Plan y Prueba Mock-up en Boca</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Diseñamos una arquitectura provisional transferible. Puedes mirarte al espejo, evaluar el color con tu piel y sentir la fonética real.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="thumb_up">thumb_up</span>
+                Pruebas la maqueta estética real antes de fabricar, con presupuesto cerrado.
+              </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:border-secondary transition-all">
+<div>
+<span class="font-headline-xl text-primary font-semibold opacity-40">03</span>
+<h4 class="font-title-md text-title-md text-on-surface mt-2 mb-2">Sonrisa Definitiva E-max &amp; Láser</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Cementación de alta adhesión micro-láser con porcelana pura de grado médico. Máxima resistencia biomecánica y brillo permanente.
+                </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="sparkles">arrow_back_ios_new</span>
+                Brillo inalterable resistente al café o vino, con ajuste anatómico de por vida.
+              </div>
+</div>
+</div>
+</div>
+<!-- Micro-Assistance Quick Chat Link -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary underline decoration-secondary-container underline-offset-4 transition-all" href="https://wa.me/573012792874?text=Hola%20Cl%C3%ADnica%20Unilaser,%20tengo%20dudas%20sobre%20mi%20caso%20particular%20de%20dise%C3%B1o%20de%20sonrisa" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+            ¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico
+          </a>
+</div>
+</div>
+</section>
+<!-- 3. D - DESEO (Prueba Social y Beneficios de Calidad de Vida) -->
+<section class="py-14 px-margin-sm md:px-margin-lg max-w-7xl mx-auto space-y-12">
+<!-- Metrics of Authority -->
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl md:rounded-3xl border border-outline-variant/30 shadow-sm">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+<div class="pt-2 md:pt-0">
+<p class="font-headline-xl text-headline-xl text-primary font-semibold">+14</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Años de Trayectoria</p>
+</div>
+<div class="pt-4 md:pt-0">
+<p class="font-headline-xl text-headline-xl text-primary font-semibold">+4.800</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Sonrisas Diseñadas</p>
+</div>
+<div class="pt-4 md:pt-0">
+<p class="font-headline-xl text-headline-xl text-primary font-semibold">99.4%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Satisfacción Verificada</p>
+</div>
+<div class="pt-4 md:pt-0">
+<p class="font-headline-xl text-headline-xl text-primary font-semibold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Porcelana Ivoclar E-max</p>
+</div>
+</div>
+</div>
+<!-- Real Lifestyle Benefits (4 Cards) -->
+<div class="space-y-6">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Estilo de Vida &amp; Bienestar</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Diseñado para tu vida real, sin limitaciones</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Armonía y naturalidad absoluta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Translucidez y opalescencia calibrada según el tono de tus labios, tono de piel y rasgos. Nadie notará dientes postizos o artificiales.
+              </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Cero desgaste agresivo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Protocolo conservador biomimético que respeta la arquitectura dental original y previene la sensibilidad post-tratamiento.
+              </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="coffee">coffee</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Cerámica vítrea inmune a manchas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Disfruta de tu café colombiano diario o una copa de vino tinto sin temor a perder la tonalidad. La superficie vítrea jamás retiene pigmentos.
+              </p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/20 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Seguridad plena al reír y hablar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Despídete del hábito involuntario de taparte la boca en reuniones de trabajo o fotografías. Sonríe con confianza espontánea.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Patient Testimonials in Colombia -->
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface">Casos y Experiencias Reales</h3>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+            Google Reviews 4.9/5
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between">
+<div class="space-y-2">
+<div class="flex text-tertiary gap-0.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                "Tenía pavor de que me desgastaran los dientes o quedara con una sonrisa tipo chicle blanco. Los doctores de Unilaser me mostraron la prueba en pantalla y en boca. El resultado es 100% natural, nadie sospecha que tengo carillas."
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/10 flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Camila Restrepo</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sede El Poblado · Medellín</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between">
+<div class="space-y-2">
+<div class="flex text-tertiary gap-0.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                "Vine desde Bogotá exclusivamente para realizarme el tratamiento en Unilaser. La tecnología láser y la calidez del equipo médico son inigualables. En solo dos citas mi sonrisa cambió por completo."
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/10 flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md text-on-surface">Juan David Morales</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sede Chicó · Bogotá</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. A - ACCIÓN (Conversión Prioritaria & Formulario) -->
+<section class="py-14 px-margin-sm md:px-margin-lg bg-surface-container-low/70 border-t border-outline-variant/20 scroll-mt-20" id="agendar">
+<div class="max-w-2xl mx-auto space-y-6">
+<!-- Scarcity Badge -->
+<div class="text-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container/40 border border-secondary text-primary font-label-sm text-label-sm shadow-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            Cupos limitados de valoración esta semana en Colombia
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-3">
+            Empieza hoy tu transformación dental con total confianza
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-lg mx-auto">
+            Completa tus datos para reservar tu diagnóstico digital 3D sin compromiso con uno de nuestros especialistas estéticos.
+          </p>
+</div>
+<!-- Conversion Form Card -->
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-3xl border border-outline-variant/30 shadow-md">
+<form class="space-y-4" id="appointment-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Un asesor de Clínica Unilaser se comunicará contigo vía WhatsApp en los próximos minutos.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="full_name">Nombre y Apellido</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-secondary-container/50 rounded-xl px-4 py-3 font-body-sm text-body-sm text-on-surface outline-none transition-all placeholder:text-outline/60" id="full_name" placeholder="Ej. Mariana Ospina" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Phone -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="phone">WhatsApp o Celular (Colombia)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-secondary-container/50 rounded-xl px-4 py-3 font-body-sm text-body-sm text-on-surface outline-none transition-all placeholder:text-outline/60" id="phone" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment Selector -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="treatment">¿Qué tratamiento te interesa?</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-secondary-container/50 rounded-xl px-4 py-3 font-body-sm text-body-sm text-on-surface outline-none transition-all" id="treatment">
+<option value="carillas">Carillas Cerámicas E-max</option>
+<option value="lentes">Lentes de Contacto Dental</option>
+<option value="aclaramiento">Aclaramiento Dental Láser</option>
+<option value="general">Valoración General 3D Integral</option>
+</select>
+</div>
+<!-- Primary Conversion Button -->
+<button class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-4 rounded-full hover:bg-primary transition-all duration-200 shadow-md active:scale-95 text-center" type="submit">
+              Quiero mi valoración clínica ✨
+            </button>
+<!-- Direct WhatsApp Alternate Button -->
+<div class="relative flex items-center justify-center my-3">
+<div class="border-t border-outline-variant/30 w-full"></div>
+<span class="bg-surface-container-lowest px-3 font-label-sm text-label-sm text-on-surface-variant">o atención prioritaria</span>
+<div class="border-t border-outline-variant/30 w-full"></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-label-md text-label-md px-6 py-3.5 rounded-full hover:brightness-105 transition-all duration-200 shadow-sm active:scale-95 text-center" href="https://wa.me/573012792874?text=Hola%20Cl%C3%ADnica%20Unilaser,%20quiero%20informaci%C3%B3n%20para%20agendar%20mi%20valoraci%C3%B3n%20cl%C3%ADnica" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+              Chatear directo al WhatsApp (+57 301 279 2874)
+            </a>
+<!-- Privacy Guarantee Microcopy -->
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center pt-2 leading-relaxed">
+              Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+            </p>
+</form>
+</div>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Resolución de Objeciones) -->
+<section class="py-14 px-margin-sm md:px-margin-lg max-w-4xl mx-auto space-y-8">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Claridad y Confianza</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- Item 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 open:bg-surface-container-low/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            No. En Clínica Unilaser nos guiamos bajo el estándar biomimético de mínima invasión. Utilizamos micro-láminas cerámicas y lentes de contacto dental con espesores tan delgados como 0.2 mm, preservando intacto hasta el 98% de tu esmalte original sin limados agresivos.
+          </p>
+</details>
+<!-- Item 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 open:bg-surface-container-low/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Cuánto tiempo toma completar el tratamiento?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Gracias al escaneo digital 3D y tecnología CAD/CAM en laboratorio propio, la mayoría de nuestros diseños cerámicos se completan entre 2 y 3 citas espaciadas en aproximadamente 5 a 8 días hábiles, facilitando la atención a pacientes que viajan desde el exterior o de otras ciudades de Colombia.
+          </p>
+</details>
+<!-- Item 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 open:bg-surface-container-low/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Las carillas cerámicas se manchan con café o vino?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            La cerámica vítrea de disilicato de litio E-max no es porosa. A diferencia de las resinas compuestas convencionales, las carillas cerámicas conservan su brillo, translucidez y color exacto de por vida, siendo completamente inmunes a pigmentos de café, té o vino tinto.
+          </p>
+</details>
+<!-- Item 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/20 p-5 open:bg-surface-container-low/40 transition-colors">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-on-surface list-none">
+<span>¿Cuentan con facilidades de pago o financiación?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sí. Contamos con planes de financiación directa sin intereses durante las fases del tratamiento, recibimos todas las tarjetas de crédito nacionales e internacionales y convenios bancarios en Colombia para que tu inversión sea cómoda y transparente.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/20 dark:border-outline/20 w-full">
+<div class="flex flex-col gap-space-md w-full px-margin-sm py-space-lg pb-space-xl text-center max-w-7xl mx-auto">
+<div class="flex flex-col items-center justify-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary font-semibold">Clínica Unilaser Odontología Estética</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+          Sedes exclusivas en El Poblado (Medellín) y Chicó Reservado (Bogotá). Odontología de alta precisión y bienestar estético.
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="#inicio">Habilitación MinSalud REPS</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="#inicio">Protección de Datos Ley 1581</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="#inicio">Política de Privacidad</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="#inicio">Términos del Servicio</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="#inicio">Consentimiento Informado</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed underline transition-colors duration-200" href="https://wa.me/573012792874">Línea Oficial WhatsApp</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl mx-auto leading-relaxed pt-2">
+        © 2024 Clínica Unilaser Odontología Estética. Vigilado por MinSalud - Código REPS Registro Especial de Prestadores de Salud. Protección de datos conforme a la Ley 1581 de 2012. Consulta y atención oficial: +57 301 279 2874. Colombia.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component - Mobile Only Fixed Navigation) -->
+<nav class="md:hidden bg-surface-container-lowest/90 dark:bg-inverse-surface/90 backdrop-blur-xl docked full-width bottom-0 rounded-t-xl shadow-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-sm py-space-xs">
+<!-- Tab 1: Inicio (Active) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-3 py-1.5 active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Inicio</span>
+</a>
+<!-- Tab 2: Carillas -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="sparkles">arrow_back_ios_new</span>
+<span class="font-label-sm text-label-sm">Carillas</span>
+</a>
+<!-- Tab 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95" href="#faq-accordion">
+<span class="material-symbols-outlined text-lg" data-icon="photo_library">photo_library</span>
+<span class="font-label-sm text-label-sm">Casos</span>
+</a>
+<!-- Tab 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/cl-nica-unilaser-odontolog-a-est-tica" width="1" height="1" style="display:none" alt="">
+</body></html>
