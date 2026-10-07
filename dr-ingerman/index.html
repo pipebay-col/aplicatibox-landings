@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Ingerman | Cirujano Plástico y Estético en Colombia</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#6e7a77",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#00201c",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-surface": "#121e1b",
+            "on-tertiary-fixed-variant": "#005048",
+            "error": "#ba1a1a",
+            "surface-container-low": "#e9f7f1",
+            "on-surface-variant": "#3e4947",
+            "surface-container-highest": "#d8e6e0",
+            "inverse-surface": "#27332f",
+            "tertiary": "#12675e",
+            "primary-fixed": "#91f4e4",
+            "surface-tint": "#006b60",
+            "on-secondary-container": "#006f63",
+            "secondary-container": "#76f4e0",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#effcf7",
+            "surface-dim": "#cfddd8",
+            "secondary-fixed-dim": "#59dbc7",
+            "outline-variant": "#bdc9c6",
+            "surface-variant": "#d8e6e0",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#005048",
+            "primary": "#00685d",
+            "inverse-primary": "#74d7c8",
+            "tertiary-container": "#348076",
+            "on-tertiary-container": "#f1fffb",
+            "on-background": "#121e1b",
+            "primary-fixed-dim": "#74d7c8",
+            "tertiary-fixed": "#a6f1e4",
+            "primary-container": "#008376",
+            "on-primary-container": "#f2fffb",
+            "inverse-on-surface": "#e6f4ee",
+            "on-secondary-fixed": "#00201c",
+            "tertiary-fixed-dim": "#8ad4c8",
+            "background": "#effcf7",
+            "surface-container-high": "#ddebe6",
+            "secondary-fixed": "#79f7e3",
+            "surface": "#effcf7",
+            "on-secondary-fixed-variant": "#005047",
+            "on-secondary": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface-container": "#e3f1ec",
+            "secondary": "#006b5f",
+            "on-tertiary-fixed": "#00201c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-lg": "1.75rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": [
+              "Playfair Display"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "label-uppercase": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-sm": [
+              "Playfair Display"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "label-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "display-hero": [
+              "Playfair Display"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "display-hero-mobile": [
+              "36px",
+              {
+                "lineHeight": "44px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0em",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "0em",
+                "fontWeight": "500"
+              }
+            ],
+            "label-uppercase": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.12em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "30px",
+                "letterSpacing": "0em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "0em",
+                "fontWeight": "500"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "400"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "500"
+              }
+            ],
+            "display-hero": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "letterSpacing": "-0.005em",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Mobile Viewport Container Shell (~390px centered) -->
+<div class="max-w-[430px] mx-auto min-h-screen bg-surface shadow-2xl relative flex flex-col pb-28">
+<!-- TopAppBar (from Shared Components JSON) -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md docked full-width top-0 sticky z-40 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-margin-mobile py-space-sm w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+<a class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary tracking-tight" href="#">Dr. Ingerman</a>
+</div>
+<a class="bg-primary-container text-on-primary-container font-label-lg text-label-lg px-4 py-1.5 rounded-full hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-200 active:scale-[0.98]" href="#contacto-form">
+          Agendar
+        </a>
+</div>
+</header>
+<!-- 1. ATENCIÓN: HERO SECTION -->
+<section class="px-margin-mobile pt-space-lg pb-space-xl flex flex-col gap-space-md">
+<!-- Credential Chip -->
+<div class="inline-flex items-center gap-2 self-start bg-surface-container-low border border-outline-variant/40 rounded-full px-3 py-1 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<span class="font-label-uppercase text-label-uppercase text-tertiary">SCCP · FILACP · MinSalud Colombia</span>
+</div>
+<!-- Compelling Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface text-balance">
+        Tu belleza en su versión más <span class="text-primary italic font-normal">armónica y natural</span>, con rigor médico y seguridad quirúrgica en Colombia
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Procedimientos milimétricos de contorno corporal, rinoplastia estructural y rejuvenecimiento facial diseñados para realzar tu fisonomía sin apariencias artificiales ni cambios exagerados.
+      </p>
+<!-- Doctor Image & Floating Badges Card -->
+<div class="relative w-full rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md bg-surface-container-lowest mt-space-xs">
+<img alt="Dr. Ingerman cirujano plástico certificado en consulta médica en Bogotá Colombia" class="w-full h-80 object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1VqACblMDWC1qjvJfOws78xJioqXe0WViA4Iw5s8d5hE2AUfk_AhFRcU_bMDucS8uqIVT3_2LjIvUk0FDLfJ1aafvrDt8ELYdjpaEgzl4a4gRJ0edsRf7nUslGpizWlkoV6l7FxLxU3bd_hBkjiPWXtAEs8VCSMuo8KGNLjlZhUMpekRszG5N0okmNkAT2ExNxrAa0UVi4sm_K5G_MltQRzG2A09hPITs7QtnRHAtgwfbkcqXxIjlgKd5U"/>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent flex flex-col justify-end p-4">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary-fixed text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="font-label-md text-label-md text-inverse-on-surface">Dr. Ingerman · Cirujano Plástico Certificado SCCP</p>
+</div>
+<div class="flex items-center gap-1.5 text-inverse-on-surface/90">
+<span class="material-symbols-outlined text-xs text-primary-fixed" data-icon="location_on">location_on</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">Sede Bogotá &amp; Atención Internacional</span>
+</div>
+</div>
+</div>
+<!-- Trust Pillars Badges -->
+<div class="grid grid-cols-3 gap-2 py-space-xs">
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="local_hospital">local_hospital</span>
+<span class="font-label-md text-label-md text-on-surface leading-tight">Quirófanos Nivel IV</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="architecture">architecture</span>
+<span class="font-label-md text-label-md text-on-surface leading-tight">Preservación Anatómica</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="handshake">handshake</span>
+<span class="font-label-md text-label-md text-on-surface leading-tight">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+<!-- Primary High-Conversion CTA -->
+<div class="flex flex-col gap-2 pt-2">
+<a class="w-full text-center bg-primary-container text-on-primary-container font-label-lg text-label-lg py-4 px-6 rounded-full shadow-[0_4px_20px_rgba(0,131,118,0.28)] hover:bg-secondary active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2" href="#contacto-form">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="font-body-sm text-body-sm text-center text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Respuesta en &lt;24h · Sin cobros sorpresa · Plan 100% individualizado
+        </p>
+</div>
+</section>
+<!-- 2. INTERÉS: PROBLEMA & PROCESO CLÍNICO EN 3 PASOS -->
+<section class="bg-surface-container-low px-margin-mobile py-space-xl rounded-3xl mx-2 border border-outline-variant/20 flex flex-col gap-space-lg">
+<!-- Empathetic Pain Point -->
+<div class="flex flex-col gap-2">
+<span class="font-label-uppercase text-label-uppercase text-tertiary">Compromiso Ético</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+          ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Comprendemos que someterse a un procedimiento quirúrgico genera inquietud. El Dr. Ingerman rechaza las cirugías estandarizadas en serie y los cánones artificiales; priorizamos la proporción áurea, el respeto a tu identidad fisonómica y la protección absoluta de tus tejidos.
+        </p>
+</div>
+<!-- 3-Step Transformation Bento Sequence -->
+<div class="flex flex-col gap-3">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-label-lg text-primary shrink-0">
+            01
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-lg">Valoración y Mapeo Anatómico 3D</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Diagnóstico milimétrico facial o corporal, simulación digital previa y definición conjunta de metas reales y seguras antes de tomar cualquier decisión.
+            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-label-lg text-primary shrink-0">
+            02
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-lg">Plan Quirúrgico y Presupuesto Cerrado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Cotización integral con transparencia total: clínica acreditada, anestesiología, honorarios, póliza médica y todos los controles postoperatorios incluidos.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center font-label-lg text-primary shrink-0">
+            03
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-lg">Cirugía de Precisión y Acompañamiento 24/7</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Intervención en clínica de cuarto nivel en Bogotá con tecnología de ultrasonido, fajas anatómicas de diseño médico y enfermería continua.
+            </p>
+</div>
+</div>
+</div>
+<!-- Micro Callout to Chat -->
+<div class="bg-surface p-4 rounded-xl border border-primary/20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="support_agent">support_agent</span>
+<span class="font-label-md text-label-md text-on-surface">¿Deseas orientación médica previa?</span>
+</div>
+<a class="font-label-lg text-label-lg text-primary font-semibold hover:underline" href="https://wa.me/573005737860?text=Hola%20Dr.%20Ingerman,%20deseo%20informaci%C3%B3n%20sobre%20una%20valoraci%C3%B3n" rel="noopener noreferrer" target="_blank">
+          Hablar hoy
+        </a>
+</div>
+</section>
+<!-- 3. DESEO: MÉTRICAS, BENEFICIOS TANGIBLES Y TESTIMONIOS -->
+<section class="px-margin-mobile py-space-xl flex flex-col gap-space-lg">
+<div class="text-center flex flex-col gap-1">
+<span class="font-label-uppercase text-label-uppercase text-tertiary">Excelencia Comprobada</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+          Seguridad de Clase Mundial
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Estándares médicos que protegen tu salud y garantizan resultados elegantes.
+        </p>
+</div>
+<!-- Trust Metrics Bento Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-primary font-bold">+15</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Años de Trayectoria Quirúrgica</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-primary font-bold">+4.200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Procedimientos Exitosos</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-primary font-bold">99.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Satisfacción Paciente Verificada</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="font-headline-lg-mobile text-primary font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Acreditación MinSalud &amp; SCCP</span>
+</div>
+</div>
+<!-- Procedure Category Cards -->
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="face">face</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface">Armonía y Sutileza Facial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Rinoplastia ultrasónica preservadora y Deep Plane Facelift para rejuvenecer sin perder expresividad ni rasgos esenciales.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface">Contorno Corporal Atlético y Curvilíneo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Lipoescultura HD y marcación suave con retracción tisular avanzada por ultrasonido que acelera tu regreso a la rutina.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface">Protocolo Concierge para Viajeros</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Asistencia personalizada para pacientes de Estados Unidos, Panamá y Europa: traslados, estancias boutique y recuperación guiada.
+            </p>
+</div>
+</div>
+</div>
+<!-- Verified Testimonials Carousel/Cards -->
+<div class="flex flex-col gap-3 pt-2">
+<h3 class="font-headline-sm text-headline-sm text-lg text-on-surface">Testimonios de Pacientes</h3>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant">Miami, USA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            "Viajé desde Florida con temor a un resultado artificial. El Dr. Ingerman me escuchó desde la videoconsulta, y mi rinoplastia quedó tan natural que nadie nota que fui operada, solo me dicen que luzco descansada."
+          </p>
+<span class="font-label-md text-label-md text-primary font-semibold">— Mariana C. · Rinoplastia Ultrasónica</span>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-uppercase text-label-uppercase text-on-surface-variant">Bogotá, Colombia</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+            "La recuperación fue increíblemente rápida gracias a las técnicas que utiliza. Todo el equipo de enfermería y el doctor estuvieron pendientes de cada detalle. Presupuesto 100% exacto."
+          </p>
+<span class="font-label-md text-label-md text-primary font-semibold">— Andrea P. · Contorno Corporal HD</span>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN: FORMULARIO DE CONVERSIÓN SIN FRICCIÓN & FAQ -->
+<section class="bg-surface-container-lowest px-margin-mobile py-space-xl rounded-t-3xl border-t border-outline-variant/30 flex flex-col gap-space-lg shadow-lg" id="contacto-form">
+<div class="text-center flex flex-col gap-1.5">
+<span class="self-center bg-secondary-container text-on-secondary-container px-3 py-0.5 rounded-full font-label-uppercase text-label-uppercase">
+          Cupos limitados de valoración este mes en Colombia
+        </span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-2">
+          Inicia hoy tu transformación con seguridad médica
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Diligencia el formulario para recibir una propuesta clínica personalizada por parte de nuestro equipo médico.
+        </p>
+</div>
+<!-- Frictionless Lead Form -->
+<form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('¡Gracias! Nuestro equipo médico se comunicará contigo en menos de 24 horas.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="nombre">Nombre y Apellido</label>
+<input class="w-full bg-surface border border-outline-variant rounded-xl p-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="nombre" name="nombre" placeholder="Ej. Camila Morales" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="whatsapp">WhatsApp o Celular (+57)</label>
+<input class="w-full bg-surface border border-outline-variant rounded-xl p-3 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="whatsapp" name="whatsapp" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="procedimiento">¿Qué procedimiento te interesa evaluar?</label>
+<select class="w-full bg-surface border border-outline-variant rounded-xl p-3 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="procedimiento" name="procedimiento" required="">
+<option value="">Selecciona una opción...</option>
+<option value="rinoplastia">Rinoplastia Ultrasónica / Estructural</option>
+<option value="lipoescultura">Lipoescultura HD y Contorno Corporal</option>
+<option value="facial">Rejuvenecimiento Facial / Deep Plane</option>
+<option value="mamoplastia">Mamoplastia de Aumento / Reducción Natural</option>
+<option value="otro">Otro procedimiento / Valoración Integral</option>
+</select>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg text-label-lg py-4 px-6 rounded-full shadow-[0_4px_20px_rgba(0,131,118,0.25)] hover:bg-secondary active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined text-base" data-icon="auto_awesome">auto_awesome</span>
+</button>
+<!-- Direct WhatsApp VIP Shortcut -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 font-label-uppercase text-label-uppercase text-outline">o canal prioritario</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<a class="w-full border-2 border-primary text-primary font-label-lg text-label-lg py-3.5 px-4 rounded-full text-center hover:bg-surface-container-low transition-all flex items-center justify-center gap-2" href="https://wa.me/573005737860?text=Hola%20Dr.%20Ingerman,%20deseo%20agendar%20mi%20valoraci%C3%B3n%20cl%C3%ADnica" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 573 7860)</span>
+</a>
+<!-- Privacy & Legal Guarantee -->
+<div class="flex items-start gap-2 pt-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary shrink-0 mt-0.5" data-icon="lock">lock</span>
+<p class="font-body-sm text-body-sm leading-tight text-xs text-on-surface-variant">
+            Tus datos están 100% protegidos bajo secreto médico profesional y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+</form>
+<!-- Accordion FAQ Section -->
+<div class="flex flex-col gap-3 pt-6 border-t border-outline-variant/20">
+<h3 class="font-headline-sm text-headline-sm text-lg text-on-surface">Preguntas Frecuentes</h3>
+<details class="group bg-surface rounded-xl p-3.5 border border-outline-variant/30 cursor-pointer">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface list-none">
+<span>¿Hacen valoraciones virtuales para el exterior?</span>
+<span class="material-symbols-outlined text-sm group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20">
+            Sí. Disponemos de un protocolo internacional estructurado que incluye análisis fotográfico computarizado, videoconsulta de 45 minutos y planeación logística completa previa a tu viaje a Bogotá.
+          </p>
+</details>
+<details class="group bg-surface rounded-xl p-3.5 border border-outline-variant/30 cursor-pointer">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface list-none">
+<span>¿En qué clínicas opera el Dr. Ingerman?</span>
+<span class="material-symbols-outlined text-sm group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20">
+            Únicamente en instituciones hospitalarias de alta complejidad de cuarto nivel debidamente acreditadas por MinSalud y la Seccional de Salud de Bogotá, con unidad de cuidados intensivos y anestesiólogos certificados.
+          </p>
+</details>
+<details class="group bg-surface rounded-xl p-3.5 border border-outline-variant/30 cursor-pointer">
+<summary class="flex justify-between items-center font-label-lg text-label-lg text-on-surface list-none">
+<span>¿El presupuesto incluye revisiones postoperatorias?</span>
+<span class="material-symbols-outlined text-sm group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20">
+            Absolutamente. Ofrecemos presupuestos cerrados que cubren honorarios quirúrgicos, quirófano, póliza obligatoria de complicaciones y todas tus citas de control hasta el alta médica definitiva.
+          </p>
+</details>
+</div>
+</section>
+<!-- Footer (from Shared Components JSON) -->
+<footer class="bg-surface-container dark:bg-inverse-surface w-full mb-16 border-t border-outline-variant/40 dark:border-outline/30">
+<div class="flex flex-col items-center text-center px-margin-mobile py-space-lg gap-space-sm max-w-7xl mx-auto">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary">Dr. Ingerman</span>
+<div class="flex flex-wrap justify-center gap-3 my-2">
+<a class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Aviso de Privacidad</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Términos y Condiciones</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Habilitación Médica Minsalud</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">Protocolos de Seguridad</a>
+</div>
+<p class="font-body-sm text-body-sm dark:text-inverse-on-surface text-on-surface-variant max-w-md">
+          © 2024 Dr. Ingerman • Cirujano Plástico y Estético. Registro Médico y Habilitación Seccional de Salud Colombia. Vigilado Supersalud. Tratamiento de datos Ley 1581 de 2012.
+        </p>
+</div>
+</footer>
+<!-- BottomNavBar (from Shared Components JSON) - Destino Activo: Valoración -->
+<nav class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-space-xs pb-safe shadow-[0_-4px_24px_rgba(0,104,93,0.08)] dark:shadow-none">
+<!-- Inicio (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim p-space-xs transition-all duration-200 hover:text-primary dark:hover:text-primary-fixed active:scale-95" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
+<span class="font-label-md text-label-md mt-0.5">Inicio</span>
+</a>
+<!-- Procedimientos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim p-space-xs transition-all duration-200 hover:text-primary dark:hover:text-primary-fixed active:scale-95" href="#procedimientos">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="font-label-md text-label-md mt-0.5">Procedimientos</span>
+</a>
+<!-- Valoración (Active Mapping) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container dark:bg-primary-fixed dark:text-on-primary-fixed rounded-full px-space-md py-space-xs transition-all duration-200 active:scale-95 shadow-sm" href="#contacto-form">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-md text-label-md mt-0.5 font-bold">Valoración</span>
+</a>
+<!-- Contacto (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim p-space-xs transition-all duration-200 hover:text-primary dark:hover:text-primary-fixed active:scale-95" href="https://wa.me/573005737860" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="font-label-md text-label-md mt-0.5">Contacto</span>
+</a>
+</nav>
+</div>
+</body></html>

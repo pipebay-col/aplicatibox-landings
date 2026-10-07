@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Corpo Láser Dra. Stella Pérez | Medicina Estética y Tecnología Láser Médica Bogotá</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-container": "#006f63",
+            "secondary": "#006b5f",
+            "on-secondary-fixed-variant": "#005047",
+            "on-tertiary-fixed-variant": "#00504a",
+            "inverse-on-surface": "#def6ef",
+            "tertiary-fixed": "#96f3e7",
+            "primary": "#00685e",
+            "secondary-container": "#76f4e0",
+            "surface-container-high": "#d5ede7",
+            "background": "#e6fff8",
+            "on-primary-fixed-variant": "#005048",
+            "tertiary-container": "#178279",
+            "on-secondary-fixed": "#00201c",
+            "surface-dim": "#c7dfd8",
+            "inverse-surface": "#1f3430",
+            "on-primary-container": "#f4fffb",
+            "on-primary": "#ffffff",
+            "on-background": "#0a1f1b",
+            "surface-container-low": "#e1f9f2",
+            "tertiary": "#006860",
+            "on-surface-variant": "#3d4947",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#006a60",
+            "primary-container": "#008377",
+            "outline-variant": "#bcc9c6",
+            "on-tertiary": "#ffffff",
+            "surface-container": "#dbf3ec",
+            "surface-bright": "#e6fff8",
+            "surface-container-highest": "#d0e8e1",
+            "on-tertiary-fixed": "#00201d",
+            "on-secondary": "#ffffff",
+            "surface": "#e6fff8",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#79f7e3",
+            "tertiary-fixed-dim": "#7ad6cb",
+            "primary-fixed-dim": "#6ed8c9",
+            "secondary-fixed-dim": "#59dbc7",
+            "on-error-container": "#93000a",
+            "on-surface": "#0a1f1b",
+            "inverse-primary": "#6ed8c9",
+            "on-error": "#ffffff",
+            "primary-fixed": "#8bf5e5",
+            "surface-variant": "#d0e8e1",
+            "error": "#ba1a1a",
+            "on-primary-fixed": "#00201c",
+            "outline": "#6d7a77",
+            "on-tertiary-container": "#f3fffc"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "margin": "3rem",
+            "space-md": "1.25rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.375rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-micro": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-micro": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .porcelain-card {
+      background: #ffffff;
+      box-shadow: 0 12px 32px -8px rgba(13, 126, 117, 0.07), 0 2px 6px -1px rgba(17, 38, 34, 0.03);
+      border: 1px solid rgba(10, 143, 130, 0.12);
+    }
+    .pulse-subtle {
+      animation: pulseTeal 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulseTeal {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.88; transform: scale(1.02); }
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- 1. TOP APP BAR (Shared Component Exact Specs) -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-margin-mobile py-space-xs max-w-7xl mx-auto bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-inverse-primary tracking-tight leading-none text-base">Corpo Láser Dra. Stella Pérez</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium text-[11px] leading-tight">Bogotá · Chicó &amp; Usaquén</span>
+</div>
+</div>
+<a class="bg-primary text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full hover:bg-primary-container transition-all shadow-sm active:scale-95 text-xs font-semibold uppercase tracking-wider" href="#formulario-cita">
+      Agendar
+    </a>
+</header>
+<main class="pt-20 pb-24 overflow-hidden">
+<!-- 2. A - ATENCIÓN: HERO SECTION (Mobile Optimized Conversion Anchor) -->
+<section class="px-margin-mobile pt-4 pb-space-lg flex flex-col gap-5 max-w-lg mx-auto">
+<!-- Verified Medical Credential Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-primary w-fit shadow-xs">
+<span class="material-symbols-outlined text-sm font-bold text-primary" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md tracking-tight font-semibold">MinSalud REPS · Dra. Stella Pérez · Bogotá</span>
+</div>
+<!-- H1 Mobile Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-semibold tracking-tight text-3xl leading-[1.18]">
+        Tu piel y silueta en su versión <span class="font-serif italic font-normal text-primary">más armónica</span>, con tecnología láser médica en Bogotá
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Tratamientos médicos no invasivos de rejuvenecimiento facial, tensión dérmica y contorno corporal con aparatología aprobada por FDA e INVIMA. Resultados naturales <span class="font-medium text-on-surface">sin quirófano ni tiempo de incapacidad laboral</span>.
+      </p>
+<!-- Editorial Hero Photograph -->
+<div class="relative w-full rounded-3xl overflow-hidden porcelain-card my-1">
+<img alt="Dra. Stella Pérez en su consultorio médico de alta tecnología en Bogotá" class="w-full h-[360px] object-cover object-top filter brightness-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-FpUoWPg9R0zunXRDGib4i8qfEvMCxg6fVakR1gj3xur-L2OVxNhJLTCP79AZpB2UGcIGW_zS5mFEa5IXXQ99NYNidZIyrBjX905IRdjQJOTRm864ptt8P15RWElTLuEaaNRQ5kfq-k8yU8nbDu4zlk1PPDOmsNoIWpL6HDwftnd8uqbsVWowbB9_u69kLp4pFyEnxbD6OpUa2NodWQRj6EbfdRkhWxGx5NThQi0utruiLgixOw6suU4JrGLQI06PmeTrg8E5CX4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-3 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-outline-variant/30 shadow-md">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="medical_services" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface text-xs font-bold leading-tight">Dra. Stella Pérez</p>
+<p class="font-label-md text-label-md text-primary text-[11px] leading-tight">Directora Médica Corpo Láser Bogotá</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Conversion CTA -->
+<div class="flex flex-col gap-2.5 pt-1">
+<a class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-4 px-6 rounded-full text-center flex items-center justify-center gap-2 shadow-lg shadow-primary/20 active:scale-95 transition-all text-base font-bold" href="#formulario-cita">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Micro Trust Signals -->
+<div class="flex items-center justify-center gap-2 text-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="bolt">bolt</span>
+<span>Respuesta &lt; 24h · Diagnóstico 1 a 1 · Presupuesto cerrado</span>
+</div>
+</div>
+<!-- 3 Key Pill Benefits -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-low rounded-2xl p-2.5 text-center flex flex-col items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-label-micro text-label-micro text-on-surface leading-tight">Tecnología FDA</span>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-2.5 text-center flex flex-col items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="event_available">event_available</span>
+<span class="font-label-micro text-label-micro text-on-surface leading-tight">Cero Incapacidad</span>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-2.5 text-center flex flex-col items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="location_on">location_on</span>
+<span class="font-label-micro text-label-micro text-on-surface leading-tight">Chicó / Usaquén</span>
+</div>
+</div>
+</section>
+<!-- 3. I - INTERÉS: DILEMA MÉDICO Y PROTOCOLO EN 3 PASOS -->
+<section class="bg-surface-container-low py-space-lg px-margin-mobile border-y border-outline-variant/20">
+<div class="max-w-lg mx-auto flex flex-col gap-6">
+<!-- Problem Empathy Card -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/30 porcelain-card">
+<div class="flex items-center gap-2 text-error mb-2">
+<span class="material-symbols-outlined text-lg" data-icon="help_outline">help_outline</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-xs">Criterio Médico Seguro</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface text-xl mb-3 leading-snug">
+            ¿Temes a los tratamientos artificiales o quedar con <span class="font-serif italic font-normal text-primary">efecto congelado</span>?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            En Clínica Corpo Láser descartamos los rellenos desproporcionados y las promesas milagro. Diseñamos con micro-precisión anatómica para devolver firmeza, luminosidad y tersura a tu piel, respetando la identidad única de tus facciones.
+          </p>
+</div>
+<!-- 3-Step Protocol Section -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface text-lg">Protocolo Clínico Transparente</h3>
+<span class="font-label-md text-label-md text-primary font-bold">100% Personalizado</span>
+</div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center font-bold text-sm shrink-0">
+              01
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface text-base mb-1 font-bold">Valoración y Mapeo Cutáneo Láser 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Diagnóstico milimétrico con análisis de capas dérmicas y flacidez.
+              </p>
+<div class="mt-2 text-xs font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza clínica y expectativas 100% reales.</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center font-bold text-sm shrink-0">
+              02
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface text-base mb-1 font-bold">Plan Médico y Presupuesto Cerrado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Combinación precisa de tecnología láser, bioestimulación y radiofrecuencia con costos claros.
+              </p>
+<div class="mt-2 text-xs font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Inversión transparente sin adiciones imprevistas.</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center font-bold text-sm shrink-0">
+              03
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface text-base mb-1 font-bold">Aplicación Guiada y Reincorporación</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Protocolos ambulatorios indoloros con enfriamiento epidérmico para que retomes tu día.
+              </p>
+<div class="mt-2 text-xs font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Efecto lifting sin cicatrices ni quirófano.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Question Banner -->
+<a class="p-4 rounded-2xl bg-surface-container text-on-surface flex items-center justify-between border border-primary/20 active:scale-98 transition-transform" href="https://wa.me/573016122605?text=Hola%20Dra.%20Stella%20Pérez,%20deseo%20hacer%20una%20consulta%20sobre%20mi%20caso" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="chat">chat</span>
+<div>
+<p class="font-title-md text-title-md text-xs font-bold leading-tight">¿Dudas sobre tu caso particular?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Habla directamente con nuestro equipo médico</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- 4. D - DESEO: MÉTRICAS DE AUTORIDAD, PRUEBA SOCIAL Y CASOS REALES -->
+<section class="py-space-lg px-margin-mobile max-w-lg mx-auto flex flex-col gap-8">
+<!-- Metrics Bento Grid -->
+<div class="flex flex-col gap-2">
+<h3 class="font-label-md text-label-md text-primary uppercase font-bold tracking-wider">Autoridad Médica Comprobada</h3>
+<p class="font-headline-sm text-headline-sm text-on-surface text-2xl font-semibold">Resultados que respaldan cada sesión</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold text-2xl leading-none mb-1">+12 Años</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Trayectoria Médica en Bogotá</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30">
+<p class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold text-2xl leading-none mb-1">+6.500</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30">
+<p class="font-display-hero-mobile text-display-hero-mobile text-secondary font-bold text-2xl leading-none mb-1">99.4%</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Satisfacción Clínica</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30">
+<p class="font-display-hero-mobile text-display-hero-mobile text-secondary font-bold text-2xl leading-none mb-1">100%</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Láser INVIMA &amp; FDA</p>
+</div>
+</div>
+<!-- Everyday Life Experience Grid -->
+<div class="flex flex-col gap-3">
+<h4 class="font-title-lg text-title-lg text-on-surface text-lg">Lo que experimentas en tu vida diaria</h4>
+<div class="porcelain-card p-4 rounded-2xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="sparkles">arrow_back_ios_new</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-sm font-bold text-on-surface">Armonía y frescura natural</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Aspecto descansado y rejuvenecido sin parecer operada ni cambios radicales.</p>
+</div>
+</div>
+<div class="porcelain-card p-4 rounded-2xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="autorenew">autorenew</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-sm font-bold text-on-surface">Bioestimulación profunda de colágeno</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Tensado biológico y redensificación progresiva visible a lo largo de los meses.</p>
+</div>
+</div>
+<div class="porcelain-card p-4 rounded-2xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="work_outline">work_outline</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-sm font-bold text-on-surface">Cero tiempo de reposo en cama</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Vuelve a tus reuniones ejecutivas o compromisos sociales sin marcas agresivas.</p>
+</div>
+</div>
+<div class="porcelain-card p-4 rounded-2xl flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="favorite">favorite</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-sm font-bold text-on-surface">Acompañamiento médico VIP continuo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Consultas de evolución y seguimiento post-tratamiento en nuestra sede en Bogotá.</p>
+</div>
+</div>
+</div>
+<!-- Testimonial Showcase with Patient Visual -->
+<div class="bg-surface-container-low rounded-3xl p-5 border border-outline-variant/30 flex flex-col gap-4">
+<div class="relative w-full h-48 rounded-2xl overflow-hidden">
+<img alt="Paciente con piel luminosa y tersa tras tratamiento láser en Corpo Láser Bogotá" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkqKI20O13oLuxJs9dK7Bcxm9MB0vSZ3I0ULykJWA51SFNrvS6De43GENsmxGBJ-xWLrQkykflzfEvmIW-ghqiYO_CX_9G8jbyRG4ltlXTDChSlcbdARRkIL5pq3g0U0dvwCjwG7uDYDHSDvdcGcML-8dlndf8Zbi3yGe7EMsDF2JymfQrenbFZHNvCxPN2nuTUF9IUxHF2JabaxVsx16g_Ws7_lS7FJr1s96Q19UQ4xYtkGQ2QMnR5-PZOGcQDof30mMWVNH-5o"/>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-semibold text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-amber-500 text-xs" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>Caso Verificado</span>
+</div>
+</div>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 shadow-xs">
+<div class="flex items-center gap-1 text-amber-500 mb-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs italic mb-2 leading-relaxed">
+            "Tenía pavor de hacerme algo en la cara y quedar rígida. La Dra. Stella fue meticulosa: el tensado dérmico me devolvió la línea de la mandíbula sin dolor. Al día siguiente estuve en la oficina como si nada."
+          </p>
+<div class="flex justify-between items-center text-xs">
+<span class="font-title-md text-title-md text-on-surface text-xs font-bold">Camila R.</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Chicó Reservado, Bogotá</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 shadow-xs">
+<div class="flex items-center gap-1 text-amber-500 mb-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs italic mb-2 leading-relaxed">
+            "La tecnología láser de esta clínica es otro nivel. Cero enrojecimiento persistente y el presupuesto que me dieron fue exactamente lo que pagué. Absoluta seriedad médica."
+          </p>
+<div class="flex justify-between items-center text-xs">
+<span class="font-title-md text-title-md text-on-surface text-xs font-bold">Valentina M.</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Usaquén, Bogotá</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. A - ACCIÓN: FORMULARIO DE CONVERSIÓN SIN FRICCIÓN -->
+<section class="py-space-lg px-margin-mobile bg-surface-container-low border-t border-outline-variant/30" id="formulario-cita">
+<div class="max-w-lg mx-auto flex flex-col gap-5">
+<div class="text-center">
+<span class="inline-block px-3 py-1 bg-secondary-container/50 text-secondary rounded-full font-label-md text-label-md font-bold mb-2">
+            Cupos limitados de valoración esta semana
+          </span>
+<h2 class="font-headline-md text-headline-md text-on-surface text-2xl font-bold leading-tight">
+            Inicia hoy tu transformación con total confianza
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+            Agenda tu valoración médica presencial con la Dra. Stella Pérez en Bogotá
+          </p>
+</div>
+<!-- 3-Field Conversion Form -->
+<form class="porcelain-card p-6 rounded-3xl flex flex-col gap-4 shadow-xl" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Corpo Láser se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Field 1: Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold text-xs" for="nombre">Nombre y Apellido *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm text-body-sm placeholder:text-outline-variant outline-none transition-all bg-surface-container-lowest" id="nombre" placeholder="Ej. María Fernanda Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Colombian WhatsApp Phone -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold text-xs" for="telefono">WhatsApp o Celular *</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center gap-1 text-on-surface font-label-md text-label-md border-r border-outline-variant/40 pr-2">
+<span>🇨🇴</span>
+<span class="font-bold text-xs">+57</span>
+</div>
+<input class="w-full pl-20 pr-4 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm text-body-sm placeholder:text-outline-variant outline-none transition-all bg-surface-container-lowest" id="telefono" pattern="[0-9]{10}" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Treatment Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold text-xs" for="tratamiento">¿Qué tratamiento te interesa? *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg" data-icon="spa">spa</span>
+<select class="w-full pl-10 pr-8 py-3 rounded-xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-sm text-body-sm outline-none transition-all bg-surface-container-lowest appearance-none" id="tratamiento" required="">
+<option value="Láser Rejuvenecimiento Facial">Láser Rejuvenecimiento Facial</option>
+<option value="Bioestimuladores de Colágeno">Bioestimuladores de Colágeno</option>
+<option value="Contorno Corporal y Tensión Dérmica">Contorno Corporal y Tensión Dérmica</option>
+<option value="Valoración Médica Integral">Valoración Médica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-outline text-base" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Main Action Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-4 rounded-full font-bold shadow-lg shadow-primary/25 active:scale-95 transition-all flex items-center justify-center gap-2 mt-2 text-base" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- Alternative Direct WhatsApp Button -->
+<div class="relative flex items-center justify-center my-1">
+<div class="border-t border-outline-variant/40 w-full"></div>
+<span class="bg-surface-container-lowest px-3 text-[11px] font-semibold text-outline uppercase tracking-wider absolute">o también</span>
+</div>
+<a class="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-label-lg text-label-lg py-3 rounded-full font-bold shadow-sm active:scale-95 transition-all flex items-center justify-center gap-2 text-sm" href="https://wa.me/573016122605?text=Hola%20Dra.%20Stella%20Pérez,%20deseo%20agendar%20mi%20valoración%20en%20Corpo%20Láser%20Bogotá" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 301 612 2605)</span>
+</a>
+<!-- Privacy Security Notice -->
+<div class="flex items-start gap-2 pt-2 text-[11px] text-on-surface-variant leading-tight">
+<span class="material-symbols-outlined text-xs text-primary shrink-0 mt-0.5" data-icon="lock">lock</span>
+<p>
+              Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de 2012 de Protección de Datos de Colombia. Cero spam.
+            </p>
+</div>
+</form>
+</div>
+</section>
+<!-- 6. PREGUNTAS FRECUENTES (INTERACTIVE ACCORDIONS) -->
+<section class="py-space-lg px-margin-mobile max-w-lg mx-auto flex flex-col gap-4">
+<div class="flex flex-col gap-1 text-center mb-2">
+<h3 class="font-label-md text-label-md text-primary uppercase font-bold tracking-wider">Claridad Médica</h3>
+<h2 class="font-headline-sm text-headline-sm text-on-surface text-2xl font-semibold">Preguntas Frecuentes</h2>
+</div>
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-low rounded-2xl p-4 border border-outline-variant/20 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md text-title-md text-on-surface text-sm font-bold">
+<span>¿Los procedimientos con tecnología láser duelen o queman la piel?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-lg" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed text-xs">
+          No. En Corpo Láser contamos con aparatología de última generación dotada de sistemas de enfriamiento criogénico epidérmico simultáneo. La sensación es de calor tolerable y no produce quemaduras ni marcas indeseadas cuando es operada por manos médicas especializadas.
+        </p>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-low rounded-2xl p-4 border border-outline-variant/20 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md text-title-md text-on-surface text-sm font-bold">
+<span>¿En cuántas sesiones se notan los resultados?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-lg" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed text-xs">
+          Apreciarás una mayor luminosidad y tersura desde los primeros 7 a 10 días. El tensado profundo y la producción de neocolegénesis alcanzan su pico óptimo entre los 30 y 60 días posteriores al tratamiento.
+        </p>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-low rounded-2xl p-4 border border-outline-variant/20 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md text-title-md text-on-surface text-sm font-bold">
+<span>¿Qué incluye la valoración inicial con la Dra. Stella Pérez?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-lg" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed text-xs">
+          Incluye mapeo dermatológico de tus capas dérmicas, evaluación de laxitud cutánea, prescripción del protocolo tecnológico idóneo y un plan de cotización con tarifa cerrada garantizada, sin costos ocultos.
+        </p>
+</details>
+<!-- FAQ Item 4 -->
+<details class="group bg-surface-container-low rounded-2xl p-4 border border-outline-variant/20 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-title-md text-title-md text-on-surface text-sm font-bold">
+<span>¿Dónde está ubicada la clínica y cuentan con parqueadero?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-lg" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 pt-3 border-t border-outline-variant/20 leading-relaxed text-xs">
+          Estamos ubicados en el corredor médico de Chicó / Usaquén en el norte de Bogotá. Las instalaciones cuentan con bahía y parqueadero con servicio de valet parking vigilado para total confort y privacidad.
+        </p>
+</details>
+</section>
+<!-- 7. FOOTER INSTITUCIONAL (Shared Component Exact Specs) -->
+<footer class="w-full px-margin-mobile py-space-lg mb-16 max-w-7xl mx-auto flex flex-col items-center text-center gap-space-sm bg-surface-container-low dark:bg-surface-container-high border-t border-outline-variant/30 dark:border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-inverse-primary text-base">Corpo Láser Dra. Stella Pérez</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs max-w-md">
+        © 2024 Corpo Láser Dra. Stella Pérez. Todos los derechos reservados. Bogotá D.C., Colombia. Vigilado Secretaría de Salud Bogotá - Registro Especial de Prestadores de Servicios de Salud (REPS).
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-2 text-xs">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Habeas Data - Ley 1581 de 2012</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Consentimiento Informado Médico</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Registro REPS Bogotá</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#">Política de Privacidad</a>
+</div>
+</footer>
+</main>
+<!-- 8. BOTTOM NAVBAR (Shared Component Exact Mobile Layout & Specs) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-space-xs bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-lg shadow-lg">
+<!-- Item 1: Procedimientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90" href="#procedimientos">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+<span class="font-label-micro text-label-micro tracking-wider mt-0.5">Procedimientos</span>
+</a>
+<!-- Item 2: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-micro text-label-micro tracking-wider mt-0.5">Resultados</span>
+</a>
+<!-- Item 3: WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90" href="https://wa.me/573016122605?text=Hola%20Dra.%20Stella%20Pérez,%20deseo%20agendar%20mi%20valoración%20en%20Corpo%20Láser%20Bogotá" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="font-label-micro text-label-micro tracking-wider mt-0.5">WhatsApp</span>
+</a>
+<!-- Item 4: Agendar (Active Primary Intent) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-bold active:scale-90 transition-transform" href="#formulario-cita">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-micro text-label-micro tracking-wider mt-0.5">Agendar</span>
+</a>
+</nav>
+</body></html>

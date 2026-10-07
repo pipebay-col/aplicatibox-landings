@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Bourbon Barbers · Grooming & Cuidado Masculino de Autor en Colombia</title>
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#dbdad7",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f6f5f2",
+            "surface-container": "#efeeeb",
+            "surface-container-high": "#e8e7e4",
+            "surface-bright": "#faf9f6",
+            "surface": "#faf9f6",
+            "background": "#faf9f6",
+            "primary": "#0d748a",
+            "primary-container": "#095c6e",
+            "on-primary": "#ffffff",
+            "secondary": "#0a6d63",
+            "secondary-container": "#daf5f0",
+            "on-secondary-container": "#00534b",
+            "tertiary": "#8c6b3e",
+            "outline": "#6e7977",
+            "outline-variant": "#d3dcda",
+            "on-surface": "#1a1c1b",
+            "on-surface-variant": "#3e4947"
+          },
+          borderRadius: {
+            "card": "1.25rem",
+            "button": "9999px"
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-card-shadow {
+      box-shadow: 0 10px 30px -10px rgba(13, 116, 138, 0.08), 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+    .glow-card-shadow {
+      box-shadow: 0 20px 48px -12px rgba(13, 116, 138, 0.16), 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container min-h-screen pb-24 font-sans">
+
+  <!-- ============================================== -->
+  <!-- HEADER STICKY (Elegante & Confiable)           -->
+  <!-- ============================================== -->
+  <header class="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-4 py-3 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+        <span class="material-symbols-outlined text-xl">content_cut</span>
+      </div>
+      <div>
+        <span class="font-serif text-lg font-bold tracking-tight text-on-surface block leading-none">BOURBON BARBERS</span>
+        <span class="text-[10px] tracking-wider uppercase text-primary font-semibold">Atelier Masculino · Colombia</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <a class="bg-primary text-on-primary text-xs px-4 py-2 rounded-button font-semibold hover:bg-primary-container transition-all active:scale-95 shadow-sm" href="#contacto-agendar">
+        Agendar
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- MAIN CONTAINER (Mobile-First AIDA Funnel)      -->
+  <!-- ============================================== -->
+  <main class="w-full max-w-md mx-auto pt-20 px-4 flex flex-col gap-8 md:max-w-xl">
+
+    <!-- ============================================== -->
+    <!-- 1. A - ATENCIÓN (HERO & BENEFICIO DIRECTO)     -->
+    <!-- ============================================== -->
+    <section class="flex flex-col items-center text-center pt-2">
+      <!-- Badge Superior de Credencial Real -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-button bg-secondary-container/60 border border-primary/20 mb-4">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        <span class="text-[11px] font-bold text-on-secondary-container tracking-wide uppercase">
+          🏆 Barbería de Autor &amp; Cuidado Estético Masculino · Colombia
+        </span>
+      </div>
+
+      <!-- Headline H1 Editorial en 3 Segundos -->
+      <h1 class="font-serif text-[32px] leading-[40px] font-normal text-on-surface tracking-tight mb-3">
+        Tu imagen impecable en su versión más <span class="italic text-primary font-serif">auténtica</span> y segura.
+      </h1>
+
+      <!-- Subtítulo Específico del Resultado -->
+      <p class="text-sm leading-relaxed text-on-surface-variant max-w-xs mb-5">
+        Corte milimétrico, diseño de barba con ritual de toalla caliente y terapia capilar personalizada. Una experiencia boutique privada para hombres que exigen excelencia.
+      </p>
+
+      <!-- Hero Card con Fotografía del Atelier -->
+      <div class="relative w-full rounded-card overflow-hidden custom-card-shadow border border-outline-variant/50 mb-5 bg-surface-container-lowest group">
+        <div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+          <img 
+            alt="Bourbon Barbers Atelier Masculino Colombia" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8BAm-0gcsAOa3vslAjk5BIIuwAaIf4HqJDexcaG9wxqtLeZ_x7-q_BoMRrncrTbD3rpnDSf0hogmTvsd4wSsN_M4pYDYsaLBVYxenR_4NNziRW0zo5_G5BXE0URjTio1d4uZXVqfaPXdAMfdq__9ig9NyWWMjR_LBZUFAXvEVWPEuJvpuGTbKL2EfwRGFoAGM3dPxla4FRiR4PNN9pZUZLi1Y-zirTldKp2pFOg1DcetZycIkmjl3It13vFrvtp7Im9L4PKB-v0w"
+          />
+        </div>
+        <!-- Floating Glass Badge -->
+        <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-surface-bright/90 backdrop-blur-md border border-outline-variant/60 flex items-center justify-between">
+          <div class="flex items-center gap-2.5 text-left">
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+            <div>
+              <p class="text-xs font-bold text-on-surface">Experiencia Bourbon Signature</p>
+              <p class="text-[11px] text-on-surface-variant">Atención 1 a 1 · Cero esperas incómodas</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-button bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase">
+            Exclusivo
+          </span>
+        </div>
+      </div>
+
+      <!-- CTA Principal de Alto Contraste -->
+      <div class="w-full flex flex-col items-center gap-2">
+        <a class="w-full py-4 px-6 rounded-button bg-primary text-on-primary font-semibold text-base text-center hover:bg-primary-container transition-all duration-200 active:scale-95 shadow-md flex items-center justify-center gap-2" href="#contacto-agendar">
+          <span>Agendar ahora mi cita de autor</span>
+          <span class="material-symbols-outlined text-xl">arrow_forward</span>
+        </a>
+        <!-- Micro-credencial -->
+        <p class="text-xs text-on-surface-variant flex items-center justify-center gap-1.5 pt-0.5">
+          <span class="material-symbols-outlined text-primary text-sm font-bold">schedule</span>
+          Respuesta en menos de 24 horas · Confirmación ágil por WhatsApp
+        </p>
+      </div>
+
+      <!-- 3 Puntos Rápidos de Confianza -->
+      <div class="grid grid-cols-3 gap-2 w-full mt-4">
+        <div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-center custom-card-shadow">
+          <span class="material-symbols-outlined text-primary text-xl mb-1">precision_manufacturing</span>
+          <span class="text-[11px] font-semibold text-on-surface leading-tight">Visagismo y Simetría</span>
+        </div>
+        <div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-center custom-card-shadow">
+          <span class="material-symbols-outlined text-primary text-xl mb-1">wine_bar</span>
+          <span class="text-[11px] font-semibold text-on-surface leading-tight">Bebida de Cortesía</span>
+        </div>
+        <div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-center custom-card-shadow">
+          <span class="material-symbols-outlined text-primary text-xl mb-1">lock</span>
+          <span class="text-[11px] font-semibold text-on-surface leading-tight">Atelier Privado</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 2. I - INTERÉS (EL DILEMA Y EL PROCESO)        -->
+    <!-- ============================================== -->
+    <section class="flex flex-col gap-4">
+      <!-- Objección / Problema del Cliente -->
+      <div class="p-5 rounded-card bg-surface-container-lowest border border-outline-variant/60 custom-card-shadow">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="material-symbols-outlined text-primary text-xl">sentiment_dissatisfied</span>
+          <span class="text-[11px] uppercase tracking-wider text-primary font-bold">El dilema habitual</span>
+        </div>
+        <h2 class="font-serif text-xl font-normal text-on-surface mb-2 leading-snug">
+          ¿Cansado de cortes apresurados que no respetan tus facciones ni duran más de una semana?
+        </h2>
+        <p class="text-xs leading-relaxed text-on-surface-variant">
+          En la mayoría de barberías comerciales te atienden con afán, sin analizar la estructura ósea de tu rostro, o usando máquinas estándar que irritan tu piel. En Bourbon Barbers creemos que tu tiempo y tu imagen merecen rigor técnico, productos de grado premium y una pausa con genuina comodidad.
+        </p>
+      </div>
+
+      <!-- Título Proceso -->
+      <div class="text-left mt-2">
+        <span class="text-[11px] text-primary uppercase font-bold tracking-wider">Protocolo de Precisión</span>
+        <h3 class="font-serif text-2xl text-on-surface mt-1">Tu experiencia en 3 simples pasos</h3>
+      </div>
+
+      <!-- 3 Pasos Numerados con Beneficio Tangible -->
+      <div class="flex flex-col gap-3">
+        <!-- Paso 01 -->
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow flex flex-col gap-1.5">
+          <div class="flex items-center justify-between">
+            <span class="font-serif text-2xl font-bold text-primary">01</span>
+            <span class="px-2.5 py-0.5 rounded-button bg-secondary-container/60 text-on-secondary-container text-[11px] font-semibold">Diagnóstico</span>
+          </div>
+          <h4 class="text-base font-semibold text-on-surface">Valoración de Visagismo &amp; Densidad</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Analizamos la forma de tu mandíbula, remolinos naturales, grosor del cabello y estilo personal antes de encender cualquier máquina.
+          </p>
+          <div class="mt-2 pt-2 border-t border-outline-variant/30 flex items-center gap-1.5 text-primary text-xs font-medium">
+            <span class="material-symbols-outlined text-sm">check_circle</span>
+            <span>Beneficio: Seguridad total; un corte adaptado a ti, no una plantilla repetida.</span>
+          </div>
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow flex flex-col gap-1.5">
+          <div class="flex items-center justify-between">
+            <span class="font-serif text-2xl font-bold text-primary">02</span>
+            <span class="px-2.5 py-0.5 rounded-button bg-secondary-container/60 text-on-secondary-container text-[11px] font-semibold">Técnica de Autor</span>
+          </div>
+          <h4 class="text-base font-semibold text-on-surface">Plan &amp; Ejecución Personalizada</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Tijera de precisión, degradados limpios sin saltos y perfilado de barba con aceite botánico y toallas calientes de aromaterapia.
+          </p>
+          <div class="mt-2 pt-2 border-t border-outline-variant/30 flex items-center gap-1.5 text-primary text-xs font-medium">
+            <span class="material-symbols-outlined text-sm">check_circle</span>
+            <span>Beneficio: Relajación profunda y cero irritaciones dérmicas.</span>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow flex flex-col gap-1.5">
+          <div class="flex items-center justify-between">
+            <span class="font-serif text-2xl font-bold text-primary">03</span>
+            <span class="px-2.5 py-0.5 rounded-button bg-secondary-container/60 text-on-secondary-container text-[11px] font-semibold">Definición</span>
+          </div>
+          <h4 class="text-base font-semibold text-on-surface">Resultado Impecable &amp; Larga Duración</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Acabado mate o satinado según tu preferencia con bálsamos hidratantes que mantienen las líneas definidas por semanas.
+          </p>
+          <div class="mt-2 pt-2 border-t border-outline-variant/30 flex items-center gap-1.5 text-primary text-xs font-medium">
+            <span class="material-symbols-outlined text-sm">check_circle</span>
+            <span>Beneficio: Salir listo para cualquier reunión o evento de alto impacto.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. D - DESEO (MÉTRICAS, BENEFICIOS & PRUEBA)   -->
+    <!-- ============================================== -->
+    <section class="flex flex-col gap-5">
+      <div class="text-center">
+        <span class="text-[11px] text-primary uppercase font-bold tracking-wider">Evidencia &amp; Respaldo</span>
+        <h2 class="font-serif text-2xl text-on-surface mt-1">Cifras que respaldan nuestro estándar</h2>
+      </div>
+
+      <!-- Métricas de Confianza (4 tarjetas en grid) -->
+      <div class="grid grid-cols-2 gap-3">
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 text-center custom-card-shadow">
+          <span class="font-serif text-3xl text-primary font-bold block leading-tight">+7</span>
+          <span class="text-[11px] text-on-surface-variant font-medium">Años de Trayectoria</span>
+        </div>
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 text-center custom-card-shadow">
+          <span class="font-serif text-3xl text-primary font-bold block leading-tight">+6.200</span>
+          <span class="text-[11px] text-on-surface-variant font-medium">Servicios de Autor</span>
+        </div>
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 text-center custom-card-shadow">
+          <span class="font-serif text-3xl text-primary font-bold block leading-tight">99.2%</span>
+          <span class="text-[11px] text-on-surface-variant font-medium">Satisfacción Verificada</span>
+        </div>
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 text-center custom-card-shadow">
+          <span class="font-serif text-3xl text-primary font-bold block leading-tight">4.9 ★</span>
+          <span class="text-[11px] text-on-surface-variant font-medium">Google Reviews (+480)</span>
+        </div>
+      </div>
+
+      <!-- 4 Beneficios Enfocados en RESULTADO -->
+      <div class="flex flex-col gap-2.5">
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 flex items-start gap-3.5 custom-card-shadow">
+          <div class="p-2 rounded-xl bg-secondary-container/60 text-primary">
+            <span class="material-symbols-outlined text-2xl">face</span>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-on-surface mb-0.5">Definición simétrica sin efecto artificial</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Líneas limpias que estilizan tu fisonomía y proyectan seguridad en cada ángulo.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 flex items-start gap-3.5 custom-card-shadow">
+          <div class="p-2 rounded-xl bg-secondary-container/60 text-primary">
+            <span class="material-symbols-outlined text-2xl">spa</span>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-on-surface mb-0.5">Piel calmada y libre de foliculitis</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Protocolo de afeitado con aceites botánicos y frío tensor para evitar enrojecimiento.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 flex items-start gap-3.5 custom-card-shadow">
+          <div class="p-2 rounded-xl bg-secondary-container/60 text-primary">
+            <span class="material-symbols-outlined text-2xl">schedule</span>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-on-surface mb-0.5">Puntualidad británica y cero filas</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Tu horario es sagrado. Tu sillón y barbero te esperan puntuales sin interrupciones.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-card bg-surface-container-lowest border border-outline-variant/50 flex items-start gap-3.5 custom-card-shadow">
+          <div class="p-2 rounded-xl bg-secondary-container/60 text-primary">
+            <span class="material-symbols-outlined text-2xl">local_bar</span>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-on-surface mb-0.5">Atmósfera lounge exclusiva</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Disfruta de café de especialidad colombiano o whisky bourbon de cortesía durante tu atención.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonios Breves Verificados -->
+      <div class="p-5 rounded-card bg-surface-container-low border border-outline-variant/50 flex flex-col gap-4">
+        <div class="flex items-center gap-1 text-primary">
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="text-xs text-on-surface ml-2 font-bold">Experiencias Reales</span>
+        </div>
+        <blockquote class="text-xs text-on-surface-variant italic leading-relaxed">
+          “Llevaba años saltando de barbería en barbería con cortes genéricos. En Bourbon entendieron exactamente cómo equilibrar mi barba con mi tipo de rostro. La atención y el café son de otro nivel.”
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs">
+            FR
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-on-surface">Felipe Restrepo</p>
+            <p class="text-[11px] text-outline">Empresario · Cliente habitual</p>
+          </div>
+        </div>
+
+        <div class="border-t border-outline-variant/40 pt-3">
+          <blockquote class="text-xs text-on-surface-variant italic leading-relaxed">
+            “El ritual de toalla caliente y el afeitado clásico no tiene comparación. Cero irritación en el cuello y un corte que se mantiene perfecto durante semanas.”
+          </blockquote>
+          <div class="flex items-center gap-3 mt-2">
+            <div class="w-9 h-9 rounded-full bg-secondary text-on-primary flex items-center justify-center font-bold text-xs">
+              AM
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-on-surface">Andrés Montoya</p>
+              <p class="text-[11px] text-outline">Consultor Financiero</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. A - ACCIÓN (FORMULARIO 3 CAMPOS + WHATSAPP)  -->
+    <!-- ============================================== -->
+    <section class="p-5 rounded-card bg-surface-container-lowest border border-primary/20 glow-card-shadow flex flex-col gap-4 scroll-mt-24" id="contacto-agendar">
+      <!-- Top Scarcity Pill -->
+      <div class="self-start inline-flex items-center gap-2 px-3 py-1 rounded-button bg-secondary-container/60 border border-primary/20">
+        <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+        <span class="text-[11px] text-on-secondary-container font-bold uppercase tracking-wider">
+          Cupos limitados por agenda esta semana
+        </span>
+      </div>
+
+      <div class="text-left">
+        <h2 class="font-serif text-2xl text-on-surface font-normal">
+          Asegura tu cita con tu especialista
+        </h2>
+        <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+          Diligencia tus datos en 30 segundos y nuestro concierge coordinará tu turno prioritario.
+        </p>
+      </div>
+
+      <!-- Formulario Minimalista 3 Campos -->
+      <form class="flex flex-col gap-3.5 mt-1" id="lead-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+        <!-- Campo 1: Nombre -->
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">Nombre completo *</label>
+          <input 
+            class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-sm" 
+            placeholder="Ej. Carlos Mendoza" 
+            required="" 
+            type="text"
+          />
+        </div>
+
+        <!-- Campo 2: WhatsApp -->
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">WhatsApp o Celular (+57) *</label>
+          <input 
+            class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-sm" 
+            placeholder="318 000 0000" 
+            required="" 
+            type="tel"
+          />
+        </div>
+
+        <!-- Campo 3: Qué te interesa -->
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">¿Qué servicio o experiencia te interesa? *</label>
+          <select class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-sm">
+            <option>Corte Signature &amp; Visagismo Facial</option>
+            <option>Diseño de Barba + Ritual Toalla Caliente</option>
+            <option>Experiencia Completa (Corte + Barba + Terapia)</option>
+            <option>Terapia Capilar &amp; Limpieza Facial Express</option>
+          </select>
+        </div>
+
+        <!-- Botón Quiero mi valoración -->
+        <button class="w-full py-4 px-6 rounded-button bg-primary text-on-primary font-semibold text-base hover:bg-primary-container transition-all duration-200 active:scale-95 shadow-md flex items-center justify-center gap-2 mt-1" type="submit">
+          <span>Quiero mi valoración</span>
+          <span class="material-symbols-outlined text-xl">auto_awesome</span>
+        </button>
+      </form>
+
+      <!-- Mensaje de Éxito Interactivo -->
+      <div class="hidden p-4 rounded-xl bg-secondary-container/40 border border-primary/20 text-center flex-col items-center gap-2" id="form-success">
+        <span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+        <h3 class="font-serif text-lg font-bold text-on-surface">¡Solicitud recibida!</h3>
+        <p class="text-xs text-on-surface-variant">Nuestro concierge se comunicará contigo vía WhatsApp en breve para confirmar el horario que mejor se adapte a tu agenda.</p>
+      </div>
+
+      <!-- Divisor -->
+      <div class="flex items-center gap-3 my-1">
+        <div class="h-px bg-outline-variant flex-1"></div>
+        <span class="text-[11px] text-outline font-semibold uppercase tracking-wider">O atención inmediata</span>
+        <div class="h-px bg-outline-variant flex-1"></div>
+      </div>
+
+      <!-- Botón WhatsApp Directo con Enlace Exacto Solicitado -->
+      <a 
+        class="w-full py-3.5 px-5 rounded-button border-2 border-emerald-600 bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-all duration-200 text-emerald-800 font-semibold text-sm flex items-center justify-center gap-2 active:scale-95 text-center shadow-sm" 
+        href="https://wa.me/573188927371?text=Hola%20Bourbon%20Barbers%2C%20quisiera%20agendar%20mi%20cita%20de%20autor" 
+        target="_blank"
+      >
+        <span class="material-symbols-outlined text-emerald-700 text-xl">chat</span>
+        <span>Chatear directo al WhatsApp (+57 318 892 7371)</span>
+      </a>
+
+      <!-- Aviso de Privacidad -->
+      <p class="text-[11px] text-on-surface-variant text-center flex items-center justify-center gap-1">
+        <span class="material-symbols-outlined text-xs text-outline">lock</span>
+        Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+      </p>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 5. PREGUNTAS FRECUENTES (FAQ ACORDEÓN)         -->
+    <!-- ============================================== -->
+    <section class="flex flex-col gap-3">
+      <div class="text-left mb-1">
+        <span class="text-[11px] text-primary uppercase font-bold tracking-wider">Claridad Total</span>
+        <h2 class="font-serif text-2xl text-on-surface mt-1">Preguntas Frecuentes</h2>
+      </div>
+
+      <details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow cursor-pointer transition-all">
+        <summary class="flex items-center justify-between text-sm font-semibold text-on-surface list-none">
+          <span>¿Cuánto dura una sesión de corte o barba completa?</span>
+          <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <p class="text-xs text-on-surface-variant pt-2.5 leading-relaxed border-t border-outline-variant/30 mt-2">
+          Nuestras citas se programan en bloques de 45 a 60 minutos para garantizar un servicio sin afanes, con tiempo dedicado al visagismo, toalla caliente y lavado relajante.
+        </p>
+      </details>
+
+      <details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow cursor-pointer transition-all">
+        <summary class="flex items-center justify-between text-sm font-semibold text-on-surface list-none">
+          <span>¿Debo reservar con anticipación?</span>
+          <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <p class="text-xs text-on-surface-variant pt-2.5 leading-relaxed border-t border-outline-variant/30 mt-2">
+          Sí. Para preservar la exclusividad del espacio y garantizar cero tiempos de espera, atendemos únicamente con cita previa confirmada por WhatsApp o formulario.
+        </p>
+      </details>
+
+      <details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow cursor-pointer transition-all">
+        <summary class="flex items-center justify-between text-sm font-semibold text-on-surface list-none">
+          <span>¿Qué productos utilizan para el cuidado de la piel y barba?</span>
+          <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <p class="text-xs text-on-surface-variant pt-2.5 leading-relaxed border-t border-outline-variant/30 mt-2">
+          Utilizamos pomadas a base de agua, aceites botánicos prensados en frío y bálsamos antisépticos hipoalergénicos con registro sanitario que no tapan los poros ni generan brotes.
+        </p>
+      </details>
+
+      <details class="group p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 custom-card-shadow cursor-pointer transition-all">
+        <summary class="flex items-center justify-between text-sm font-semibold text-on-surface list-none">
+          <span>¿Cuentan con parqueadero y opciones de pago?</span>
+          <span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <p class="text-xs text-on-surface-variant pt-2.5 leading-relaxed border-t border-outline-variant/30 mt-2">
+          Sí, disponemos de parqueadero privado vigilado. Aceptamos transferencias bancarias, tarjetas de crédito, débito y pagos digitales sin recargo.
+        </p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================== -->
+  <footer class="w-full flex flex-col gap-4 px-4 pt-10 pb-28 bg-surface-container-low mt-12 border-t border-outline-variant/40">
+    <div class="max-w-md mx-auto w-full flex flex-col gap-3 text-center md:max-w-xl">
+      <div class="flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-primary text-xl">content_cut</span>
+        <span class="font-serif text-lg font-bold text-on-surface">Bourbon Barbers Atelier</span>
+      </div>
+      <p class="text-xs text-on-surface-variant">
+        Barbería de autor, visagismo y cuidado estético masculino exclusivo en Colombia.
+      </p>
+      <nav class="flex flex-wrap justify-center gap-x-4 gap-y-1 pt-2 text-xs text-primary font-medium">
+        <a class="hover:underline" href="#contacto-agendar">Servicios &amp; Cortes</a>
+        <a class="hover:underline" href="#contacto-agendar">Reservas</a>
+        <a class="hover:underline" href="https://wa.me/573188927371" target="_blank">Línea WhatsApp Oficial</a>
+        <a class="hover:underline" href="#">Tratamiento de Datos Ley 1581</a>
+      </nav>
+      <p class="text-[11px] text-on-surface-variant/70 pt-3 border-t border-outline-variant/30">
+        © 2025 Bourbon Barbers Colombia. Todos los derechos reservados. Cumplimiento de Normatividad Sanitaria y Protección al Consumidor.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- BOTTOM NAV BAR (Fija para Móvil)               -->
+  <!-- ============================================== -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex items-center justify-around px-4 py-2 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/40 shadow-lg">
+    <a class="flex flex-col items-center justify-center text-primary font-bold px-3 py-1 bg-secondary-container/50 rounded-full active:scale-95 transition-transform" href="#">
+      <span class="material-symbols-outlined text-xl">home</span>
+      <span class="text-[10px]">Inicio</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant font-medium px-2 py-1 hover:text-primary active:scale-95 transition-transform" href="#contacto-agendar">
+      <span class="material-symbols-outlined text-xl">content_cut</span>
+      <span class="text-[10px]">Servicios</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant font-medium px-2 py-1 hover:text-primary active:scale-95 transition-transform" href="https://wa.me/573188927371" target="_blank">
+      <span class="material-symbols-outlined text-xl">chat</span>
+      <span class="text-[10px]">WhatsApp</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-on-surface-variant font-medium px-2 py-1 hover:text-primary active:scale-95 transition-transform" href="#contacto-agendar">
+      <span class="material-symbols-outlined text-xl">calendar_month</span>
+      <span class="text-[10px]">Agendar</span>
+    </a>
+  </nav>
+
+</body>
+</html>
