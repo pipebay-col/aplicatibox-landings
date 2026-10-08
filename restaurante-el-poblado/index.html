@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Restaurante El Poblado · Alta Gastronomía &amp; Cocina de Autor en Provenza, Medellín</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#fff8f5",
+            "tertiary-fixed-dim": "#e9bf91",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#fffbff",
+            "tertiary": "#755631",
+            "surface-container-highest": "#e8e1dd",
+            "on-tertiary-fixed": "#2b1700",
+            "on-secondary-fixed": "#002117",
+            "tertiary-container": "#916e47",
+            "surface-variant": "#e8e1dd",
+            "on-tertiary-fixed-variant": "#5e411e",
+            "on-primary-fixed": "#3b0900",
+            "on-error": "#ffffff",
+            "primary-container": "#c4502f",
+            "on-primary": "#ffffff",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#ffb5a0",
+            "inverse-primary": "#ffb5a0",
+            "secondary-fixed": "#baeed9",
+            "primary-fixed": "#ffdbd1",
+            "surface-container-low": "#faf2ee",
+            "primary": "#a33819",
+            "tertiary-fixed": "#ffddb9",
+            "secondary-container": "#baeed9",
+            "on-surface": "#1e1b19",
+            "surface-bright": "#fff8f5",
+            "outline": "#8b716b",
+            "background": "#fff8f5",
+            "surface-container-high": "#eee7e3",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "secondary": "#376757",
+            "on-surface-variant": "#57423c",
+            "surface-dim": "#e0d9d5",
+            "on-background": "#1e1b19",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-container": "#3d6d5d",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#1d4f40",
+            "inverse-surface": "#33302d",
+            "error-container": "#ffdad6",
+            "surface-container": "#f4ece9",
+            "surface-tint": "#a63a1b",
+            "secondary-fixed-dim": "#9ed1bd",
+            "outline-variant": "#dfc0b8",
+            "on-primary-fixed-variant": "#852305",
+            "inverse-on-surface": "#f7efeb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1rem",
+            "space-md": "1rem",
+            "space-3xl": "5rem",
+            "space-2xs": "0.25rem",
+            "space-2xl": "3.5rem",
+            "margin-tablet": "2rem",
+            "space-xs": "0.5rem",
+            "margin-desktop": "3.5rem",
+            "space-xl": "2.25rem",
+            "space-sm": "0.75rem",
+            "gutter": "1rem",
+            "gutter-desktop": "1.75rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "label-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "display-hero": [
+              "Playfair Display"
+            ],
+            "label-caps": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "display-hero-mobile": [
+              "Playfair Display"
+            ],
+            "headline-sm": [
+              "Playfair Display"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "500"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "letterSpacing": "0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-caps": [
+              "11px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.12em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "400"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero-mobile": [
+              "38px",
+              {
+                "lineHeight": "46px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "30px",
+                "fontWeight": "500"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    html {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed pb-24 md:pb-12">
+<!-- ================= TOP APP BAR (Shared Component) ================= -->
+<header class="docked full-width top-0 sticky z-40 bg-surface/90 dark:bg-surface-container/90 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-4 h-16 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="restaurant">restaurant</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface dark:text-inverse-on-surface">El Poblado</span>
+</div>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-label-lg text-label-lg" href="#menu">Menú</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-label-lg text-label-lg" href="#experiencia">Experiencia</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 font-label-lg text-label-lg" href="#opiniones">Opiniones</a>
+</nav>
+<a class="bg-primary hover:bg-primary-container text-on-primary px-4 py-2 rounded-xl font-label-lg text-label-lg active:scale-95 transition-transform duration-150 ease-out shadow-sm flex items-center gap-1.5" href="#reservar">
+<span>Reservar</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<main class="max-w-md mx-auto sm:max-w-xl md:max-w-4xl lg:max-w-5xl px-4 sm:px-6">
+<!-- ================= STAGE 1: A - ATENCIÓN ================= -->
+<section class="pt-5 pb-10">
+<!-- Badge Institucional / Ubicación -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container-low border border-outline-variant/40 rounded-full px-3.5 py-1.5 mb-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[15px]" data-icon="location_on">location_on</span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Cocina de Autor &amp; Alta Gastronomía · El Poblado, Medellín</span>
+</div>
+<!-- Titular de Impacto Inmediato (3 Segundos) -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface tracking-tight mb-4 leading-tight">
+        Una experiencia gastronómica que <span class="italic font-normal text-primary">recordarás siempre</span> en El Poblado
+      </h1>
+<!-- Subtítulo con Resultado Exacto -->
+<p class="font-body-md text-body-md md:font-body-lg md:text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+        Platos de autor inspirados en la biodiversidad colombiana, pesca salvaje del Pacífico, cortes madurados al fuego y maridajes exclusivos en una terraza íntima rodeada de naturaleza. <span class="font-semibold text-on-surface">Sin filas ni improvisaciones.</span>
+</p>
+<!-- Fotografía Destacada Hero con tarjeta flotante -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 mb-6 group">
+<img alt="Mesa de autor en Restaurante El Poblado con corte al fuego, plátano crocante, copa de vino y jardín tropical exuberante" class="w-full h-80 sm:h-96 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VBUmkJu4MH9EYU5tyus02VJvsevUwBV3jxJjIwm1cbLw-VsMT3yk53P67YYo870arat2T1prIZmioJq1y7BStPJ_Wk2JUSVU8ZrI_ptElQq3o32Ke3hyJTa6CxkKxYIMU1-g3j2T_X8vhznJmK296y6p-JYwohSh97gsnebzRlLK7NwgIAEd3UXAoz0OYl6TmWWGSXQrbQLbZ4zn-ue0iFn4RwSZisVkZYLnEebtVgABubXpHb9LGQQA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent pointer-events-none"></div>
+<!-- Tarjeta Flotante Elegante -->
+<div class="absolute bottom-3 left-3 right-3 sm:left-4 sm:right-auto sm:bottom-4 bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md rounded-xl p-3 border border-outline-variant/30 shadow-md flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-primary" data-icon="local_fire_department">local_fire_department</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary uppercase">Plato Insignia</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Pesca y Fuego de Autor · Provenza</p>
+</div>
+</div>
+<span class="bg-secondary/10 text-secondary px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide">Terraza Jardín</span>
+</div>
+</div>
+<!-- CTA Principal de Alto Contraste -->
+<div class="flex flex-col items-stretch gap-2.5 mb-8">
+<a class="w-full text-center bg-primary hover:bg-primary-container text-on-primary py-4 px-6 rounded-xl font-label-lg text-label-lg shadow-md active:scale-95 transition-all duration-150 flex items-center justify-center gap-2" href="#reservar">
+<span>Agendar ahora mi mesa o velada</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_month">calendar_month</span>
+</a>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" data-icon="check_circle">check_circle</span>
+<span>Respuesta en menos de 24 horas · Confirmación directa por WhatsApp</span>
+</p>
+</div>
+<!-- 3 Badges de Confianza Rápida -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<div class="bg-surface-container-low border border-outline-variant/20 rounded-xl p-3 flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-secondary/15 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[16px]" data-icon="eco">eco</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Insumos 100% Locales &amp; Frescos</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/20 rounded-xl p-3 flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary/15 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[16px]" data-icon="wine_bar">wine_bar</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Maridaje de Autor Curado</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/20 rounded-xl p-3 flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-tertiary/15 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[16px]" data-icon="room_service">room_service</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ================= STAGE 2: I - INTERÉS ================= -->
+<section class="py-10 border-t border-outline-variant/25" id="experiencia">
+<!-- Sección del Dilema/Problema -->
+<div class="bg-surface-container-low rounded-2xl p-6 sm:p-8 border border-outline-variant/30 mb-8">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="help_outline">help_outline</span>
+<span class="font-label-caps text-label-caps tracking-wider uppercase font-semibold">El Desafío Culinario En Medellín</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm sm:font-headline-md sm:text-headline-md text-on-surface mb-3">
+          ¿Cansado de reservas complicadas, mesas apresuradas o cenas que no cumplen su promesa?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En Medellín abundan opciones ruidosas y masivas donde el servicio corre contra el reloj y la experiencia carece de alma. En <strong class="text-on-surface">Restaurante El Poblado</strong> eliminamos la prisa: ofrecemos mesa continua para toda tu noche, cocina de autor con fuego vivo, cava botánica y una hospitalidad verdaderamente personalizada en el corazón de Provenza.
+        </p>
+</div>
+<!-- Metodología en 3 Pasos Numerados con Beneficio Tangible -->
+<div class="mb-8">
+<div class="text-center sm:text-left mb-6">
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Proceso Sin Fricción</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cómo orquestamos tu visita perfecta</h3>
+</div>
+<div class="space-y-4">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary/80 font-bold leading-none">01</span>
+<div class="flex-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Valoración de tu Ocasión</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5">
+                  Mesa con la mejor ubicación en terraza botánica o salón bioclimático reservada con antelación según tu tipo de celebración (aniversario, negocios o reunión íntima familiar).
+                </p>
+<div class="inline-flex items-center gap-1 text-[12px] font-semibold text-secondary bg-secondary/10 px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified">verified</span>
+<span>Beneficio: Mesa asignada y tiempos coordinados sin rotaciones bruscas.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary/80 font-bold leading-none">02</span>
+<div class="flex-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Plan de Menú &amp; Maridaje Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5">
+                  Sugerencias previas de nuestro sommelier y equipo de cocina para garantizar platos en su punto exacto, contemplando preferencias y restricciones sin sorpresas en la cuenta.
+                </p>
+<div class="inline-flex items-center gap-1 text-[12px] font-semibold text-secondary bg-secondary/10 px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified">verified</span>
+<span>Beneficio: Menú a la medida, maridaje sugerido y claridad absoluta.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm hover:border-primary/40 transition-colors">
+<div class="flex items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary/80 font-bold leading-none">03</span>
+<div class="flex-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Velada Inolvidable en El Poblado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5">
+                  Servicio pausado, música ambiental envolvente, iluminación sutil y un recuerdo culinario que tus invitados agradecerán por semanas.
+                </p>
+<div class="inline-flex items-center gap-1 text-[12px] font-semibold text-secondary bg-secondary/10 px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified">verified</span>
+<span>Beneficio: Resultado memorable sin presiones de tiempo.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-enlace Concierge -->
+<div class="text-center bg-surface-container-low/60 rounded-xl p-4 border border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:underline" href="https://wa.me/573118316060?text=Hola,%20quisiera%20asesoría%20con%20el%20maitre%20para%20un%20evento%20especial" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+<span>¿Tienes un evento corporativo o fecha especial? Chatea con nuestro maître</span>
+</a>
+</div>
+</section>
+<!-- ================= STAGE 3: D - DESEO ================= -->
+<section class="py-10 border-t border-outline-variant/25" id="opiniones">
+<div class="text-center mb-6">
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Excelencia Reconocida</span>
+<h2 class="font-headline-sm text-headline-sm sm:font-headline-md sm:text-headline-md text-on-surface mt-1">
+          La cocina que seduce los sentidos
+        </h2>
+</div>
+<!-- Métricas de Prueba Social (Grid 2x2 en móvil) -->
+<div class="grid grid-cols-2 gap-3 mb-8">
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl p-4 text-center">
+<p class="font-headline-md text-headline-md text-primary font-bold">+8 Años</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Maestría Culinaria</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl p-4 text-center">
+<p class="font-headline-md text-headline-md text-primary font-bold">+35.000</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Comensales Felices</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl p-4 text-center">
+<div class="flex items-center justify-center gap-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">4.9</span>
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">+1.4k Reseñas Google</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl p-4 text-center">
+<p class="font-headline-md text-headline-md text-secondary font-bold">100%</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Ingredientes de Origen</p>
+</div>
+</div>
+<!-- 4 Beneficios Clave Sensoriales (Bento Asimétrico) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+<!-- Beneficio 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined" data-icon="skillet">skillet</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Armonía de sabores y emoción en cada bocado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Técnicas de brasa viva y fermentos botánicos aplicados a pesca fresca del Pacífico colombiano y carnes de ganadería regenerativa y sostenible.
+          </p>
+</div>
+<!-- Beneficio 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined" data-icon="liquor">liquor</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cava curada &amp; coctelería botánica de autor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Más de 140 etiquetas de vinos internacionales minuciosamente seleccionados y destilados de autor con hierbas endémicas de Antioquia.
+          </p>
+</div>
+<!-- Beneficio 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary/15 flex items-center justify-center text-tertiary mb-3">
+<span class="material-symbols-outlined" data-icon="volume_off">volume_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ambiente íntimo y acústica cuidada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Salones privados y terrazas bioclimáticas acondicionadas para conversar plácidamente sin estridencias, música a volumen idóneo y vegetación tropical.
+          </p>
+</div>
+<!-- Beneficio 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant/25 rounded-2xl p-5 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined" data-icon="hourglass_empty">hourglass_empty</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Servicio concierge sin afán</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Tu mesa queda reservada exclusivamente para toda tu velada. Cero turnos apresurados, para que disfrutes de café y sobremesa sin interrupciones.
+          </p>
+</div>
+</div>
+<!-- Testimonios de Clientes Verificados -->
+<div class="mb-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-label-caps text-label-caps text-primary uppercase font-bold">Experiencias Reales</h3>
+<span class="text-xs text-on-surface-variant font-medium">Verificadas en Google</span>
+</div>
+<div class="space-y-3">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-4">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed text-xs">CM</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Camila Morales &amp; Pareja</p>
+<p class="text-[11px] text-on-surface-variant">Cena Aniversario en Provenza · Hace 1 semana</p>
+</div>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Buscábamos un sitio especial sin el bullicio de otros restaurantes en El Poblado. La mesa en la terraza con velas fue mágica. El plato de pesca al fuego y el maridaje del sommelier hicieron de nuestro aniversario algo inolvidable."
+            </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-2xl p-4">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-fixed text-xs">AR</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Alejandro Restrepo</p>
+<p class="text-[11px] text-on-surface-variant">Almuerzo Ejecutivo &amp; Socios · Hace 3 semanas</p>
+</div>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="star" data-weight="fill">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "La coordinación fue impecable desde el primer mensaje por WhatsApp. Llegamos y todo estaba dispuesto. Acústica perfecta para conversar de negocios y platos que deslumbraron a nuestros socios extranjeros."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STAGE 4: A - ACCIÓN ================= -->
+<section class="py-10 border-t border-outline-variant/25 scroll-mt-20" id="reservar">
+<!-- Tarjeta de Conversión Destacada -->
+<div class="bg-surface-container-lowest border-2 border-primary/20 rounded-3xl p-6 sm:p-8 shadow-xl">
+<div class="text-center mb-6">
+<div class="inline-flex items-center gap-1.5 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold mb-2">
+<span class="material-symbols-outlined text-[14px]" data-icon="bolt">bolt</span>
+<span>Cupos y mesas limitadas para esta semana en El Poblado</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Reserva tu experiencia culinaria
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Diligencia el formulario y nuestro maître confirmará tu disponibilidad en minutos.
+          </p>
+</div>
+<!-- Formulario Minimalista de 3 Campos -->
+<form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('res-success').classList.remove('hidden');">
+<!-- Campo 1: Nombre Completo -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="nombre">Nombre completo</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-[18px]" data-icon="person">person</span>
+<input class="w-full h-[52px] pl-10 pr-4 bg-surface border border-outline-variant/60 rounded-xl text-on-surface font-body-md text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="nombre" name="nombre" placeholder="Ej. Mariana Ospina" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp / Celular -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="telefono">WhatsApp o Celular (+57)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-[18px]" data-icon="phone">phone</span>
+<input class="w-full h-[52px] pl-10 pr-4 bg-surface border border-outline-variant/60 rounded-xl text-on-surface font-body-md text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="telefono" name="telefono" placeholder="Ej. +57 310 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tipo de Experiencia -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="experiencia-select">¿Qué experiencia te interesa?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-[18px]" data-icon="menu_book">menu_book</span>
+<select class="w-full h-[52px] pl-10 pr-8 bg-surface border border-outline-variant/60 rounded-xl text-on-surface font-body-md text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none appearance-none" id="experiencia-select" name="experiencia" required="">
+<option disabled="" selected="" value="">Selecciona tu velada deseada</option>
+<option value="degustacion">Menú Degustación (Pasos de Autor)</option>
+<option value="romantica">Cena Romántica / Aniversario</option>
+<option value="ejecutivo">Almuerzo Ejecutivo / Reunión de Negocios</option>
+<option value="privado">Evento Privado / Celebración Familiar</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-on-surface-variant pointer-events-none text-[18px]" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Botón Principal de Envío -->
+<button class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-md active:scale-98 transition-all duration-150 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración gastronómica ✨</span>
+</button>
+<!-- Mensaje de éxito tras envío interactivo -->
+<div class="hidden bg-secondary-container/50 border border-secondary text-on-secondary-container p-3 rounded-xl text-center font-label-md text-label-md" id="res-success">
+            ¡Solicitud recibida! Nuestro sommelier te contactará de inmediato por WhatsApp.
+          </div>
+</form>
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-4 text-xs font-semibold text-on-surface-variant">O PREFIERES CONTACTO INMEDIATO</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<!-- Botón Secundario Directo WhatsApp -->
+<a class="w-full h-[50px] border-2 border-secondary text-secondary hover:bg-secondary/5 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 transition-colors active:scale-98" href="https://wa.me/573118316060?text=Hola,%20quisiera%20reservar%20una%20mesa%20en%20Restaurante%20El%20Poblado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 311 831 6060)</span>
+</a>
+<!-- Nota de Privacidad -->
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-start gap-2 text-on-surface-variant text-[11px] leading-tight">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0" data-icon="security">security</span>
+<p>Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.</p>
+</div>
+</div>
+<!-- FAQ Interactivo con Acordeones -->
+<div class="mt-10">
+<div class="text-center mb-6">
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Resolvemos tus dudas</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl overflow-hidden">
+<button class="w-full p-4 text-left flex items-center justify-between font-label-lg text-label-lg text-on-surface" onclick="toggleFaq(this)">
+<span>¿Con cuánta anticipación debo hacer la reserva?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+              Para fines de semana recomendamos reservar con al menos 48 a 72 horas de anticipación. Para visitas entre semana (martes a jueves), usualmente 24 horas es suficiente para asegurar la mejor mesa en la terraza.
+            </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl overflow-hidden">
+<button class="w-full p-4 text-left flex items-center justify-between font-label-lg text-label-lg text-on-surface" onclick="toggleFaq(this)">
+<span>¿Cuentan con opciones vegetarianas o menú adaptado para alérgenos?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+              Absolutamente. Nuestra propuesta botanical-forward incluye opciones vegetarianas excepcionales, y adaptamos platos libres de gluten o lácteos notificándolo al momento de la reserva.
+            </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl overflow-hidden">
+<button class="w-full p-4 text-left flex items-center justify-between font-label-lg text-label-lg text-on-surface" onclick="toggleFaq(this)">
+<span>¿Se pueden organizar eventos corporativos o cenas privadas?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+              Sí, disponemos de nuestro Salón Cava y la Terraza Jardín en exclusividad para grupos de 10 a 45 comensales, con menús personalizados impresos y sommelier dedicado.
+            </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl overflow-hidden">
+<button class="w-full p-4 text-left flex items-center justify-between font-label-lg text-label-lg text-on-surface" onclick="toggleFaq(this)">
+<span>¿Cuál es la política de cancelación o reprogramación?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+              Puedes reprogramar sin costo avisándonos hasta con 6 horas de anticipación a través de WhatsApp. Comprendemos imprevistos y priorizamos tu flexibilidad.
+            </div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="bg-surface-container-low border border-outline-variant/25 rounded-2xl overflow-hidden">
+<button class="w-full p-4 text-left flex items-center justify-between font-label-lg text-label-lg text-on-surface" onclick="toggleFaq(this)">
+<span>¿Tienen servicio de parqueadero o Valet Parking?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+              Ofrecemos servicio de Valet Parking privado en la puerta de la terraza sobre la Calle 8 en Provenza, además de convenios con parqueaderos vigilados a escasos 50 metros.
+            </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<footer class="bg-surface-container-high dark:bg-surface-container-highest border-t border-outline-variant/40 dark:border-outline/20 flat no shadows mt-12">
+<div class="w-full px-4 py-8 flex flex-col items-center text-center gap-4 max-w-7xl mx-auto">
+<!-- Brand Logo in Footer -->
+<p class="font-headline-md text-headline-md font-medium text-on-surface dark:text-inverse-surface">
+        Restaurante El Poblado
+      </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        📍 Carrera 35 # 8A - 24, Provenza, El Poblado, Medellín, Colombia.<br/>
+        Cocina de fuego, biodiversidad y hospitalidad consciente.
+      </p>
+<!-- Footer Links -->
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-on-surface-variant dark:text-outline font-label-md text-label-md">
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#experiencia">Menú Degustación</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#reservar">Términos de Reserva</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="#reservar">Política de Privacidad</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="https://wa.me/573118316060">WhatsApp Oficial</a>
+<a class="hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="https://maps.google.com" rel="noopener" target="_blank">Ubicación El Poblado</a>
+</div>
+<!-- Copyright Text -->
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-2">
+        © 2025 Restaurante El Poblado, Medellín. Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVBAR (Shared Component) ================= -->
+<!-- Active Destination Mapping: Intent is Reservation / Landing conversion -> 'Reservar' is active -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 pb-safe bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md shadow-[0_-4px_16px_-2px_rgba(45,30,20,0.06)] dark:shadow-none">
+<!-- Item 0: Menú -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95 transition-transform duration-150 ease-out" href="#experiencia">
+<span class="material-symbols-outlined text-[20px]" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label-md text-label-md mt-0.5">Menú</span>
+</a>
+<!-- Item 1: Experiencia -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95 transition-transform duration-150 ease-out" href="#experiencia">
+<span class="material-symbols-outlined text-[20px]" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-md text-label-md mt-0.5">Experiencia</span>
+</a>
+<!-- Item 2: Opiniones -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-95 transition-transform duration-150 ease-out" href="#opiniones">
+<span class="material-symbols-outlined text-[20px]" data-icon="reviews">reviews</span>
+<span class="font-label-md text-label-md mt-0.5">Opiniones</span>
+</a>
+<!-- Item 3: Reservar (ACTIVE NAVIGATION) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold py-1.5 px-3 rounded-xl bg-primary-fixed/40 dark:bg-primary-container/40 active:scale-95 transition-transform duration-150 ease-out" href="#reservar">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_today" data-weight="fill">calendar_today</span>
+<span class="font-label-md text-label-md mt-0.5">Reservar</span>
+</a>
+</nav>
+<!-- Interactive Logic for FAQ Accordeons -->
+<script>
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close all first for accordion behavior
+      document.querySelectorAll('#faq-accordion > div > div').forEach(div => div.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion button .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/restaurante-el-poblado" width="1" height="1" style="display:none" alt="">
+</body></html>

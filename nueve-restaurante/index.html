@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nueve Restaurante | Cocina de Autor &amp; Cava · Quinta Camacho, Bogotá</title>
+<!-- Fonts Google -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed": "#3b0900",
+            "error-container": "#ffdad6",
+            "on-primary-fixed": "#400200",
+            "outline-variant": "#dec0bb",
+            "on-primary-fixed-variant": "#842417",
+            "error": "#ba1a1a",
+            "surface-variant": "#e8e1df",
+            "on-surface": "#1d1b1a",
+            "surface-dim": "#dfd9d7",
+            "tertiary": "#993113",
+            "surface-tint": "#a43b2c",
+            "on-secondary-fixed-variant": "#3d4a3e",
+            "outline": "#8a716d",
+            "surface-container": "#f3ecea",
+            "secondary-fixed": "#d8e7d6",
+            "secondary-container": "#d8e7d6",
+            "tertiary-container": "#ba4929",
+            "surface": "#fff8f6",
+            "surface-container-high": "#ede7e5",
+            "secondary": "#546255",
+            "on-secondary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f9f2f0",
+            "secondary-fixed-dim": "#bccabb",
+            "surface-container-highest": "#e8e1df",
+            "primary": "#983224",
+            "inverse-on-surface": "#f6efed",
+            "tertiary-fixed": "#ffdbd1",
+            "on-secondary-fixed": "#121e14",
+            "on-tertiary-fixed-variant": "#852305",
+            "primary-fixed-dim": "#ffb4a7",
+            "on-surface-variant": "#57423e",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#ffb5a0",
+            "on-primary-container": "#ffedea",
+            "inverse-surface": "#33302f",
+            "background": "#fff8f6",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#fff8f6",
+            "on-error-container": "#93000a",
+            "on-background": "#1d1b1a",
+            "primary-fixed": "#ffdad4",
+            "on-tertiary-container": "#ffede8",
+            "inverse-primary": "#ffb4a7",
+            "primary-container": "#b84a39",
+            "on-secondary-container": "#5a685b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "1.5rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.75rem",
+            "margin-md": "3rem",
+            "gutter-lg": "2.5rem",
+            "margin-lg": "5rem",
+            "space-lg": "2rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+            "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+            "headline-xl": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-xl-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle custom accent for details */
+    .border-dotted-accent {
+      border-bottom: 1px dotted #ebdcd7;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col font-body-md text-body-md pb-24 md:pb-0">
+<!-- ========================================== -->
+<!-- TOP APP BAR (Shared Component Execution)   -->
+<!-- ========================================== -->
+<header class="bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-gutter-sm max-w-7xl mx-auto h-16">
+<!-- Leading Icon & Brand Group -->
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl" data-icon="restaurant">restaurant</span>
+<a class="font-headline-sm text-headline-sm tracking-wide text-primary dark:text-inverse-primary uppercase font-bold" href="#hero">
+          Nueve
+        </a>
+</div>
+<!-- Trailing Action -->
+<a class="bg-primary-container text-on-primary-container font-label-lg text-label-lg px-4 py-2 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors duration-200 active:scale-95 transition-transform duration-150 flex items-center gap-1.5 shadow-sm" href="#reserva">
+<span>Reservar</span>
+<span class="material-symbols-outlined text-base" data-icon="calendar_today">calendar_today</span>
+</a>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- MAIN CONTENT CONTAINER (AIDA FLOW)        -->
+<!-- ========================================== -->
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- ========================================== -->
+<!-- [A] ATENCIÓN: HERO CONVERSIÓN MÓVIL        -->
+<!-- ========================================== -->
+<section class="w-full max-w-xl mx-auto px-gutter-sm pt-space-md pb-space-lg flex flex-col items-center text-center" id="hero">
+<!-- Credential Micro-Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant font-label-md text-label-md mb-space-sm border border-outline-variant/30">
+<span class="text-base">🍷</span>
+<span>Cocina de Autor &amp; Cava · Quinta Camacho, Bogotá</span>
+</div>
+<!-- Impactful Editorial H1 Headline -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface mb-space-sm tracking-tight text-balance leading-tight">
+        Una experiencia gastronómica que <span class="italic font-headline-xl-mobile text-primary">recordarás siempre</span> en Bogotá
+      </h1>
+<!-- Persuasive Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-space-md text-balance leading-relaxed">
+        Tapas contemporáneas de autor, maridaje curado por sumiller y pesca artesanal del Pacífico en una casona íntima de Quinta Camacho. Sin esperas ni platos genéricos.
+      </p>
+<!-- Gastronomic Visual Asset with Image Attachment and Floating Badge -->
+<div class="relative w-full rounded-xl overflow-hidden mb-space-md border border-outline-variant/30 shadow-[0_16px_36px_-12px_rgba(92,41,33,0.08)] bg-surface-container-low group">
+<img alt="Salmón con vegetales de temporada y maridaje de vino tinto en el patio colonial de Nueve Restaurante" class="w-full h-80 object-cover object-center transform group-hover:scale-[1.02] transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1WtPZ5mrwE-IkW0JP8ni6q-bo7OixecyK49NonM1hXvIQ6yBFkHg1HN09pKf0mw_9HilsyX3VVcXUUvTSOuatva4qP3aCWbNvvu4KJS62jAy91q5J8SyQkCoAercR0tO5OaY-puAtl9wLnoDzWnpJYucggqRT3yEZRibAuGiCpCyWefIqz_ZbMppv3mtGfRRawl2dtDKGx8eVsKhLaN2rXPBN3zz4-jgl_pCMtRbXRQ0tym8TvGB51E5-A"/>
+<!-- Floating Provenance Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/95 backdrop-blur-md px-3.5 py-2.5 rounded-lg border border-outline-variant/40 flex items-center gap-2.5 shadow-sm text-left">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shrink-0"></div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-wider leading-none mb-0.5">Plato Insignia</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-none">Pesca &amp; Reducción Ahumada con Maridaje</p>
+</div>
+</div>
+</div>
+<!-- High-Conversion Primary CTA -->
+<div class="w-full flex flex-col items-center gap-2 mb-space-md">
+<a class="w-full py-3.5 px-6 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-primary active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 tracking-wide text-center" href="#reserva">
+<span>Agendar ahora mi mesa o velada 🥂</span>
+</a>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="check_circle">check_circle</span>
+<span>Respuesta en menos de 24 horas · Confirmación directa por WhatsApp</span>
+</div>
+</div>
+<!-- Immediate Value Pills -->
+<div class="w-full flex flex-wrap justify-center gap-2 pt-1">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-secondary-fixed-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="eco">eco</span>
+          Insumos 100% Locales &amp; Frescos
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-secondary-fixed-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="wine_bar">wine_bar</span>
+          Maridaje de Autor Curado
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-secondary-fixed-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="award_star">award_star</span>
+          Atención 1 a 1 Exclusiva
+        </span>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full max-w-xl px-gutter-sm">
+<div class="w-full border-b border-outline-variant/20"></div>
+</div>
+<!-- ========================================== -->
+<!-- [I] INTERÉS: DOLOR DEL COMENSAL & PROCESO   -->
+<!-- ========================================== -->
+<section class="w-full max-w-xl mx-auto px-gutter-sm py-space-xl">
+<!-- The Diner's Pain Point Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md border border-outline-variant/30 mb-space-lg relative overflow-hidden">
+<div class="w-1.5 h-full bg-tertiary absolute left-0 top-0"></div>
+<div class="pl-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary block mb-1">La Realidad de Salir a Cenar</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb- space-sm leading-snug">
+            ¿Cansado de reservas complicadas, mesas apresuradas o cenas ruidosas que no cumplen su promesa?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Entendemos la frustración de reservar para una noche especial solo para ser presionado a entregar la mesa en 90 minutos o no poder conversar por la acústica estridente. En <strong class="text-on-surface font-semibold">Nueve</strong> eliminamos la prisa: tu mesa es tuya durante toda la jornada, con cocina viva enfocada en el producto y maridajes servidos con cadencia y calma.
+          </p>
+</div>
+</div>
+<!-- Process Title -->
+<div class="text-left mb-space-md">
+<span class="font-label-sm text-label-sm uppercase text-primary tracking-widest block font-bold">Cómo Funciona</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tu velada en 3 pasos pausados</h3>
+</div>
+<!-- 3-Step Process Flow -->
+<div class="space-y-4 mb-space-lg">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-xl p- space-md border border-outline-variant/25 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="font-headline-sm text-headline-sm text-primary">01</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1 text-lg">Valoración de tu Ocasión</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Selecciona tu ambiente predilecto: la calidez de nuestro salón de ladrillos coloniales o la frescura botánica del patio interior cubierto.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-secondary text-body-sm font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Mesa asignada y tiempos coordinados sin rotaciones forzadas.</span>
+</div>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-outline-variant/25 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="font-headline-sm text-headline-sm text-primary">02</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1 text-lg">Menú &amp; Maridaje Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Recibe sugerencias previas del sommelier y la cocina para armonizar nuestras tapas de autor con etiquetas exclusivas de bodegas independientes.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-secondary text-body-sm font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Menú a la medida y claridad absoluta antes de sentarte.</span>
+</div>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-outline-variant/25 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="font-headline-sm text-headline-sm text-primary">03</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1 text-lg">Velada Inolvidable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+              Un servicio pausado y atento, música envolvente a volumen ideal para dialogar y platos que despiertan sensaciones genuinas.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-secondary text-body-sm font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Momento extraordinario sin afán ni interrupciones.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Inquiry Link -->
+<div class="text-center bg-surface-container/60 p-space-sm rounded-lg border border-outline-variant/20">
+<a class="font-label-md text-label-md text-primary hover:text-tertiary transition-colors inline-flex items-center gap-1 underline underline-offset-4 font-semibold" href="https://wa.me/573154550111?text=Hola%20Nueve,%20tengo%20un%20evento%20especial%20o%20corporativo%20que%20quisiera%20coordinar" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes un evento corporativo o fecha especial? Chatea con nuestro maître</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full max-w-xl px-gutter-sm">
+<div class="w-full border-b border-outline-variant/20"></div>
+</div>
+<!-- ========================================== -->
+<!-- [D] DESEO: PRUEBA SOCIAL, MÉTRICAS & RESULTADOS -->
+<!-- ========================================== -->
+<section class="w-full max-w-xl mx-auto px-gutter-sm py-space-xl">
+<!-- Section Header -->
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest block mb-1">Garantía &amp; Confianza</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Un refugio gastronómico consagrado</h2>
+</div>
+<!-- Trust Metrics Grid (2x2 Bento) -->
+<div class="grid grid-cols-2 gap-3 mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/25 text-center shadow-sm">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-0.5">+12</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-0.5">Años de Trayectoria</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vanguardia culinaria</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/25 text-center shadow-sm">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-0.5">+38k</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-0.5">Comensales Felices</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">En Quinta Camacho</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/25 text-center shadow-sm">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold mb-0.5">4.9 ★</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-0.5">Google Reviews</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+1.2k reseñas orgánicas</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/25 text-center shadow-sm">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-bold mb-0.5">100%</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold mb-0.5">Origen Colombiano</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pesca &amp; huerta limpia</p>
+</div>
+</div>
+<!-- 4 Core Benefits Focused on Diner Result -->
+<div class="mb-space-lg">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">La promesa de cada visita a Nueve</h3>
+<div class="space-y-3">
+<div class="p- space-md bg-surface-container-low rounded-xl border border-outline-variant/20 flex gap-3.5">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="skillet">skillet</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface mb-0.5">Armonía de sabores y emoción en cada bocado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Técnicas de fuego milenario y pesca salvaje fresca transformadas con creatividad sin caer en pretensiones vacías.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl border border-outline-variant/20 flex gap-3.5">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="wine_bar">wine_bar</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface mb-0.5">Cava curada &amp; coctelería botánica de autor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Más de 90 etiquetas de bodegas boutique y macerados propios inspirados en la biodiversidad andina y tropical.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl border border-outline-variant/20 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0" data-icon="yard">yard</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface mb-0.5">Atmósfera íntima y acústica cuidada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Muros de ladrillo colonial y vegetación natural que amortiguan el sonido para permitir conversar placenteramente sin alzar la voz.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl border border-outline-variant/20 flex gap-3.5">
+<span class="material-symbols-outlined text-secondary text-2xl shrink-0" data-icon="hourglass_empty">hourglass_empty</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-base text-on-surface mb-0.5">Hospitalidad impecable sin afán</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mesa reservada para toda la velada; en Nueve jamás te pediremos retirarte para doblar la mesa de tu mesa.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Verified Diner Testimonials -->
+<div class="space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Lo que comparten nuestros comensales</h3>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center gap-1 text-primary text-xs mb-2">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-3">
+            "Celebramos nuestro décimo aniversario en el patio interior de Nueve. La atención del sommelier y la cocción de la pesca del día superaron cualquier expectativa en Bogotá. No hubo afán ni ruido; fue mágico."
+          </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2.5">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Camila Morales</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aniversario en Quinta Camacho</p>
+</div>
+<span class="inline-flex items-center gap-1 text-secondary text-xs font-semibold bg-secondary-fixed/40 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+              Verificado
+            </span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center gap-1 text-primary text-xs mb-2">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-3">
+            "Traje a inversionistas de Madrid y quedaron cautivados con la selección de tapas de autor y la cava. La acústica es perfecta para cerrar acuerdos con discreción absoluta."
+          </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2.5">
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Felipe Mendoza</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cena Ejecutiva de Negocios</p>
+</div>
+<span class="inline-flex items-center gap-1 text-secondary text-xs font-semibold bg-secondary-fixed/40 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+              Verificado
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Hairline Divider -->
+<div class="w-full max-w-xl px-gutter-sm">
+<div class="w-full border-b border-outline-variant/20"></div>
+</div>
+<!-- ========================================== -->
+<!-- [A] ACCIÓN: FORMULARIO, WHATSAPP & FAQ     -->
+<!-- ========================================== -->
+<section class="w-full max-w-xl mx-auto px-gutter-sm py-space-xl" id="reserva">
+<!-- Scarcity / Availability Callout -->
+<div class="bg-tertiary-fixed/30 border border-tertiary/20 rounded-xl p-3.5 flex items-center gap-3 mb-space-md text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-tertiary text-2xl shrink-0" data-icon="notification_important">notification_important</span>
+<p class="font-label-md text-label-md font-semibold">
+          Cupos y mesas limitados para esta semana en Quinta Camacho. Sugerimos agendar con 48h de anticipación.
+        </p>
+</div>
+<!-- High-Conversion Minimal Form Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md border border-outline-variant/30 shadow-[0_16px_36px_-12px_rgba(92,41,33,0.08)] mb-space-md">
+<div class="mb- space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Solicitar Reserva Prioritaria</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completa los 3 datos y nuestro equipo te contactará de inmediato con confirmación directa.</p>
+</div>
+<form class="space-y-4" id="booking-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- Field 1: Full Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="name">Nombre completo *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-lg" data-icon="person">person</span>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface text-on-surface border border-outline-variant/40 rounded-lg focus:outline-none focus:border-primary font-body-md text-body-md placeholder:text-outline/60 transition-colors" id="name" placeholder="Ej. Carolina Restrepo" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: WhatsApp Number -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="whatsapp">WhatsApp o Celular (+57) *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-lg" data-icon="chat">chat</span>
+<input class="w-full pl-10 pr-3 py-2.5 bg-surface text-on-surface border border-outline-variant/40 rounded-lg focus:outline-none focus:border-primary font-body-md text-body-md placeholder:text-outline/60 transition-colors" id="whatsapp" placeholder="315 455 0111" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Experience Type -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="experience">¿Qué experiencia te interesa? *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-lg" data-icon="restaurant_menu">restaurant_menu</span>
+<select class="w-full pl-10 pr-8 py-2.5 bg-surface text-on-surface border border-outline-variant/40 rounded-lg focus:outline-none focus:border-primary font-body-md text-body-md transition-colors appearance-none" id="experience" required="">
+<option value="romantica">Cena Romántica / Aniversario</option>
+<option value="maridaje">Menú Degustación &amp; Maridaje</option>
+<option value="corporativa">Reunión Corporativa / Privada</option>
+<option value="casual">Almuerzo Casual Gourmet</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Primary Submit Button -->
+<button class="w-full py-3.5 px-6 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow hover:bg-primary active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 tracking-wide font-semibold mt-2" type="submit">
+<span>Quiero mi mesa en Nueve ✨</span>
+</button>
+</form>
+<div class="hidden mt-4 p-3 bg-secondary-fixed/50 border border-secondary text-on-secondary-fixed text-center rounded-lg font-body-sm text-body-sm" id="form-success">
+          ¡Gracias! Tu solicitud ha sido recibida. El Maître te confirmará los detalles vía WhatsApp en breve.
+        </div>
+<!-- Privacy & Legal Microcopy -->
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-3 text-xs leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</div>
+<!-- Direct Alternative: Official WhatsApp Direct Link -->
+<div class="text-center mb-space-xl">
+<p class="font-label-md text-label-md text-on-surface-variant mb-2">¿Prefieres atención inmediata de sommelier?</p>
+<a class="w-full py-3 px-4 bg-secondary-container text-on-secondary-fixed-variant border border-secondary/30 rounded-lg hover:bg-secondary-fixed transition-colors flex items-center justify-center gap-2 font-label-md text-label-md font-semibold shadow-sm" href="https://wa.me/573154550111?text=Hola%20Nueve%20Restaurante,%20deseo%20consultar%20disponibilidad%20para%20una%20mesa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-green-700 text-lg" data-icon="chat">chat</span>
+<span>Escribir por WhatsApp al Maître (+57 315 455 0111)</span>
+</a>
+</div>
+<!-- FAQ Section (Accordions) -->
+<div class="w-full">
+<div class="text-left mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold tracking-widest block">Dudas Comunes</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-2.5" id="faq-accordion">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-low rounded-lg border border-outline-variant/30 overflow-hidden transition-all duration-200">
+<summary class="flex justify-between items-center p-3.5 cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none select-none">
+<span>¿Con cuánta anticipación debo reservar?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/15">
+              Recomendamos agendar con 24 a 48 horas de anticipación para veladas entre semana, y con al menos 4 a 5 días para viernes y sábados por la alta demanda de mesas en nuestro patio interior.
+            </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-low rounded-lg border border-outline-variant/30 overflow-hidden transition-all duration-200">
+<summary class="flex justify-between items-center p-3.5 cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none select-none">
+<span>¿Tienen opciones vegetarianas o para personas con celiaquía?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/15">
+              Sí. Al contar con cocina viva de origen, adaptamos platillos a restricciones vegetarianas, libres de gluten o alergias específicas si nos notificas al momento de confirmar tu reserva.
+            </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-low rounded-lg border border-outline-variant/30 overflow-hidden transition-all duration-200">
+<summary class="flex justify-between items-center p-3.5 cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none select-none">
+<span>¿Cuál es la política de descorche para vinos especiales?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/15">
+              Permitimos descorche de botellas especiales con tarifa estándar de servicio de cristalería y servicio de sumiller, con un máximo de 2 botellas por mesa. Consúltalo directamente con nuestro maître.
+            </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-low rounded-lg border border-outline-variant/30 overflow-hidden transition-all duration-200">
+<summary class="flex justify-between items-center p-3.5 cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none select-none">
+<span>¿Cuentan con parqueadero o servicio de valet parking?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-3.5 pb-3.5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/15">
+              Disponemos de servicio de valet parking vigilado en la entrada de la casona y parqueaderos públicos asociados a menos de 50 metros en el corredor de Quinta Camacho.
+            </div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- FOOTER (Shared Component Execution)       -->
+<!-- ========================================== -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/30 full-width pb-24 md:pb-8 flat no shadows">
+<div class="flex flex-col items-center text-center w-full px-gutter-sm py-margin max-w-7xl mx-auto space-y-4">
+<!-- Brand Logo / Headline -->
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary">
+        Nueve
+      </span>
+<!-- Location Highlight -->
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-base" data-icon="location_on">location_on</span>
+<span>Calle 70A # 10A-18, Quinta Camacho · Bogotá D.C., Colombia</span>
+</div>
+<!-- Links defined strictly in JSON -->
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2">
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 hover:opacity-80 transition-opacity duration-150" href="#hero">
+          Ubicación &amp; Horarios
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 hover:opacity-80 transition-opacity duration-150" href="#reserva">
+          Política de Tratamiento de Datos (Ley 1581)
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 hover:opacity-80 transition-opacity duration-150" href="https://wa.me/573154550111">
+          Contacto &amp; Prensa
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 hover:opacity-80 transition-opacity duration-150" href="#reserva">
+          Términos de Reserva
+        </a>
+</div>
+<!-- Legal Copyright verbatim from JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant max-w-xl pt-2">
+        © 2024 Nueve Restaurante. Quinta Camacho, Bogotá, Colombia. Todos los derechos reservados. Cumplimiento Habeas Data Ley 1581 de 2012.
+      </p>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- BOTTOM NAV BAR (Shared Component Execution)-->
+<!-- Contextual Active Lock: 'Reservar'         -->
+<!-- ========================================== -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-sm py-2 bg-surface/95 dark:bg-surface-container/95 backdrop-blur-md pb-safe border-t border-outline-variant/30 dark:border-outline/20 shadow-[0_-4px_16px_rgba(92,41,33,0.06)] dark:shadow-none">
+<!-- Item 1: Menú (Inactive) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-2xl" data-icon="menu_book">menu_book</span>
+<span class="font-label-sm text-label-sm mt-0.5">Menú</span>
+</a>
+<!-- Item 2: Experiencia (Inactive) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-2xl" data-icon="spa">spa</span>
+<span class="font-label-sm text-label-sm mt-0.5">Experiencia</span>
+</a>
+<!-- Item 3: Reseñas (Inactive) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-2xl" data-icon="reviews">reviews</span>
+<span class="font-label-sm text-label-sm mt-0.5">Reseñas</span>
+</a>
+<!-- Item 4: Reservar (ACTIVE NAVIGATION - Primary Intent Match) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-bold py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#reserva">
+<span class="material-symbols-outlined text-2xl fill-icon" data-icon="calendar_today" data-weight="fill">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5 font-bold">Reservar</span>
+</a>
+</nav>
+<!-- Interaction Script for Form Flow -->
+<script>
+    function handleFormSubmit() {
+      const name = document.getElementById('name').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const experience = document.getElementById('experience').value;
+      const successDiv = document.getElementById('form-success');
+      
+      if (name && whatsapp) {
+        successDiv.classList.remove('hidden');
+        setTimeout(() => {
+          const message = `Hola Nueve, me llamo ${name}. Deseo confirmar disponibilidad para la experiencia de "${experience}". Mi WhatsApp es ${whatsapp}.`;
+          const encodedMessage = encodeURIComponent(message);
+          window.open(`https://wa.me/573154550111?text=${encodedMessage}`, '_blank');
+        }, 1200);
+      }
+    }
+  </script>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/nueve-restaurante" width="1" height="1" style="display:none" alt="">
+</body></html>

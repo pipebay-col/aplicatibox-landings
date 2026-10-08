@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Akon 68 Living | Proyecto Residencial Boutique en Bogotá</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#8a726b",
+            "surface-variant": "#eae1dc",
+            "tertiary-fixed": "#efe0d2",
+            "surface-container-highest": "#eae1dc",
+            "inverse-surface": "#34302c",
+            "on-error-container": "#93000a",
+            "surface-container": "#f5ece7",
+            "secondary-container": "#86f2e4",
+            "surface-tint": "#a23e22",
+            "on-secondary-fixed-variant": "#005049",
+            "secondary-fixed-dim": "#6bd8cb",
+            "on-secondary": "#ffffff",
+            "primary": "#9f3c1f",
+            "on-secondary-container": "#006f66",
+            "primary-fixed": "#ffdbd1",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#fffbff",
+            "on-background": "#1f1b18",
+            "on-primary-fixed": "#3b0900",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#006a61",
+            "on-tertiary-fixed-variant": "#4f453b",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "tertiary": "#655a4f",
+            "primary-fixed-dim": "#ffb5a0",
+            "secondary-fixed": "#89f5e7",
+            "surface-dim": "#e1d8d3",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#57423c",
+            "on-tertiary": "#ffffff",
+            "surface-container-high": "#f0e6e1",
+            "background": "#fff8f5",
+            "on-tertiary-fixed": "#221a12",
+            "surface-container-low": "#fbf2ed",
+            "on-tertiary-container": "#fffbff",
+            "on-surface": "#1f1b18",
+            "outline-variant": "#dec0b9",
+            "inverse-primary": "#ffb5a0",
+            "on-primary-fixed-variant": "#82270c",
+            "tertiary-container": "#7e7367",
+            "primary-container": "#bf5335",
+            "tertiary-fixed-dim": "#d2c4b6",
+            "inverse-on-surface": "#f8efea",
+            "on-secondary-fixed": "#00201d",
+            "surface-bright": "#fff8f5",
+            "surface": "#fff8f5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-lg": "2rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "margin": "3.5rem",
+            "space-md": "1.25rem",
+            "space-sm": "0.75rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Warm architectural subtle shadow */
+    .sun-cast-shadow {
+      box-shadow: 0 16px 36px -12px rgba(36, 32, 29, 0.08), 0 4px 12px -2px rgba(36, 32, 29, 0.03);
+    }
+    .sun-cast-shadow-elevated {
+      box-shadow: 0 24px 48px -12px rgba(159, 60, 31, 0.12), 0 8px 16px -2px rgba(36, 32, 29, 0.04);
+    }
+    .mineral-border {
+      border: 1px solid rgba(138, 114, 107, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed font-body-md text-body-md min-h-screen">
+<!-- ================= TOP APP BAR (Shared Component) ================= -->
+<header class="bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-md docked full-width top-0 sticky z-40 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+<!-- Leading Icon & Brand Name -->
+<a class="flex items-center gap-2 group active:scale-[0.98] transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-primary text-2xl transition-transform group-hover:rotate-6">apartment</span>
+<span class="text-headline-sm font-headline-sm tracking-tight text-on-surface dark:text-inverse-on-surface font-semibold">
+          Akon 68 Living
+        </span>
+</a>
+<!-- Desktop Nav Links (Hidden on Mobile) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary-fixed font-semibold text-label-md font-label-md hover:opacity-90 transition-all duration-200" href="#proyectos">Proyectos</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-primary transition-all duration-200" href="#beneficios">Beneficios</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-primary transition-all duration-200" href="#testimonios">Testimonios</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-primary transition-all duration-200" href="#faq">Preguntas</a>
+</nav>
+<!-- Trailing Action Button -->
+<a class="bg-primary text-on-primary px-5 py-2.5 rounded-full text-label-md font-label-md hover:opacity-90 active:scale-[0.98] transition-all duration-150 shadow-sm inline-flex items-center gap-1.5" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- ================= MAIN CONTAINER ================= -->
+<main class="w-full max-w-xl mx-auto md:max-w-4xl lg:max-w-5xl px-4 sm:px-6 pt-4 pb-24">
+<!-- ============================================================== -->
+<!-- 1. A - ATENCIÓN (Hero Section)                                 -->
+<!-- ============================================================== -->
+<section class="pt-2 pb-12 flex flex-col items-center text-center" id="proyectos">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-low mineral-border text-on-surface-variant text-label-sm font-label-sm mb-5 shadow-xs animate-fade-in">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>Proyecto Residencial Premium · Akon 68 Living Bogotá / Colombia</span>
+</div>
+<!-- Main Headline (H1 Mobile / Responsive) -->
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg-mobile md:font-headline-lg text-on-surface tracking-tight mb-4 text-balance">
+        Tu nuevo hogar exclusivo en Bogotá, con <span class="italic font-normal text-primary">acabados de autor</span> y plusvalía asegurada.
+      </h1>
+<!-- Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mx-auto mb-6 text-balance">
+        Apartamentos de diseño contemporáneo con terrazas panorámicas, ventilación bioclimática y entrega con respaldo fiduciario integral en la mejor zona residencial de Bogotá.
+      </p>
+<!-- Hero Visual Card with High Resolution Property Image -->
+<div class="w-full relative rounded-2xl overflow-hidden sun-cast-shadow mineral-border mb-6 group bg-surface-container-lowest">
+<img alt="Breathtaking architectural and interior photography for Akon 68 Living in Colombia. An ultra-luxury, sunlit contemporary apartment living room and private terrace balcony overlooking city canopy and Andean mountains. Floor-to-ceiling panoramic glass windows with warm golden morning sunlight, designer oak wood furnishings, bouclé sofa, lush tropical foliage on balcony, refined warm coral and subtle teal architectural accents, Architectural Digest Colombia cover quality, photorealistic 8k, serene aspirational residential lifestyle." class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZhG3Xc0zOtlQXZw137uRDKrfyjEqisdkdcshmERzfNPqoKnuEqvUEPwBeLbKThNrQ3B40iLhnshLAiMJ6o7MAetYQkfegT6ud4XzTvOEjbyXaYdP80JzaLpZ2WUyZvJS4s4X8LXcXa6lNSks-ISXM1xcsaRnX-JJ5EoDzJ_V91R6Mkc1fNyWBK_7i-dl207cxBorBmwrUYaUOLqnZHWxQqiz9lYOls3-IEjQpP0Ag9hNr5eZbN8dSAneiuHyq4HS7hxxC9ApnTK4"/>
+<!-- Floating Architectural Badge -->
+<div class="absolute bottom-3 left-3 right-3 sm:left-4 sm:bottom-4 sm:right-auto flex items-center gap-2 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-full mineral-border shadow-md">
+<span class="material-symbols-outlined text-secondary text-base">architecture</span>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold tracking-wide">
+            Modelo Tipo Penthouse &amp; Suites · Acabados de Lujo
+          </span>
+</div>
+<!-- Location Watermark Badge Top Right -->
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-inverse-surface/80 backdrop-blur-md px-2.5 py-1 rounded-full text-inverse-on-surface text-label-caps font-label-caps">
+<span class="material-symbols-outlined text-xs">location_on</span>
+<span>Bogotá, D.C.</span>
+</div>
+</div>
+<!-- Single High-Conversion Primary CTA -->
+<div class="w-full max-w-md mx-auto flex flex-col items-center">
+<a class="w-full py-4 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary text-title-lg font-title-lg font-bold text-center transition-all duration-200 sun-cast-shadow hover:sun-cast-shadow-elevated active:scale-[0.98] flex items-center justify-center gap-2" href="#agendar">
+<span>Agendar ahora mi visita guiada</span>
+<span class="material-symbols-outlined text-xl">east</span>
+</a>
+<!-- Micro-credential below CTA -->
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center justify-center gap-1.5 mt-2.5 text-center">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span>
+<span>Respuesta en menos de 24 horas · Asesoría personalizada 1 a 1 sin costo</span>
+</p>
+</div>
+<!-- 3 Fast Trust Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 w-full mt-7">
+<div class="flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-surface-container-low mineral-border text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">security</span>
+<span class="text-label-sm font-label-sm font-medium">Respaldo Fiduciario 100%</span>
+</div>
+<div class="flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-surface-container-low mineral-border text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">near_me</span>
+<span class="text-label-sm font-label-sm font-medium">Ubicación Estratégica Chicó/Norte</span>
+</div>
+<div class="flex items-center justify-center gap-2 py-2 px-3 rounded-full bg-surface-container-low mineral-border text-on-surface">
+<span class="material-symbols-outlined text-secondary text-base">payments</span>
+<span class="text-label-sm font-label-sm font-medium">Financiación Directa</span>
+</div>
+</div>
+</section>
+<!-- ============================================================== -->
+<!-- 2. I - INTERÉS (Dolor + Solución + Proceso en 3 Pasos)         -->
+<!-- ============================================================== -->
+<section class="py-10 border-t border-outline-variant/30">
+<!-- Problem/Pain Point Callout -->
+<div class="bg-surface-container rounded-2xl p-6 sm:p-8 mineral-border mb-8 text-left relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary/5 rounded-full pointer-events-none blur-2xl"></div>
+<span class="text-label-caps font-label-caps text-primary tracking-widest block mb-2">
+          LA REALIDAD DEL MERCADO INMOBILIARIO
+        </span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-3 leading-snug">
+          ¿Cansado de proyectos sobre planos con retrasos interminables, fotos engañosas y asesores que no responden?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          En <strong class="text-on-surface font-semibold">Akon 68 Living</strong> comprendemos el valor de tu patrimonio. Eliminamos la incertidumbre con obras rigurosamente auditadas, especificaciones técnicas verificables en sala y comunicación ejecutiva directa desde el primer contacto. Tu inversión está protegida en cada etapa.
+        </p>
+</div>
+<!-- Section Sub-Header -->
+<div class="text-center mb-8">
+<span class="text-label-caps font-label-caps text-secondary font-bold tracking-widest block mb-1">
+          METODOLOGÍA TRANSPARENTE
+        </span>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+          Un proceso de compra diseñado con certeza y calma
+        </h3>
+</div>
+<!-- 3-Step Process -->
+<div class="space-y-4">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 mineral-border sun-cast-shadow flex gap-4 items-start">
+<div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-primary font-bold">
+            01
+          </div>
+<div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-1">
+              Valoración y Perfilamiento Personalizado
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Escuchamos tu presupuesto, metraje ideal y requerimientos de inversión sin presiones comerciales. Te presentamos las opciones exactas que maximizan tu rentabilidad y estilo de vida.
+            </p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 mineral-border sun-cast-shadow flex gap-4 items-start">
+<div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-secondary font-bold">
+            02
+          </div>
+<div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-1">
+              Dossier Privado &amp; Recorrido Guiado
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Conoce planos arquitectónicos detallados, especificaciones bioclimáticas y maqueta 3D interactiva en nuestra sala VIP, guiado por un especialista inmobiliario senior.
+            </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 mineral-border sun-cast-shadow flex gap-4 items-start">
+<div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-primary font-bold">
+            03
+          </div>
+<div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-1">
+              Cierre Seguro y Respaldo Fiduciario
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Plan de pagos adaptado a tu flujo de capital con titulación y encargo fiduciario blindado. Cuentas con auditoría contractual completa y garantía legal de entrega.
+            </p>
+</div>
+</div>
+</div>
+<!-- Secondary Ghost Link Button -->
+<div class="text-center mt-6">
+<a class="inline-flex items-center gap-1.5 text-on-surface hover:text-primary font-semibold text-body-md group transition-colors" href="https://wa.me/573165453143?text=Hola%20Akon%2068%20Living%2C%20tengo%20dudas%20sobre%20las%20tipologias%20disponibles" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre las tipologías disponibles? Chatea con un asesor patrimonial</span>
+<span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">east</span>
+</a>
+</div>
+</section>
+<!-- ============================================================== -->
+<!-- 3. D - DESEO (Métricas + Beneficios Clave + Testimonios)       -->
+<!-- ============================================================== -->
+<section class="py-10 border-t border-outline-variant/30" id="beneficios">
+<!-- Trust Metrics (2x2 Grid) -->
+<div class="grid grid-cols-2 gap-3 mb-10">
+<div class="bg-surface-container-lowest p-4 rounded-xl mineral-border text-center sun-cast-shadow">
+<span class="block text-headline-sm font-headline-sm text-primary font-bold">+15 Años</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Trayectoria Constructora</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl mineral-border text-center sun-cast-shadow">
+<span class="block text-headline-sm font-headline-sm text-primary font-bold">+480</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Familias &amp; Compradores</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl mineral-border text-center sun-cast-shadow">
+<span class="block text-headline-sm font-headline-sm text-secondary font-bold">4.9 ★</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">En Google Reviews</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl mineral-border text-center sun-cast-shadow">
+<span class="block text-headline-sm font-headline-sm text-secondary font-bold">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Entregas Conformes &amp; Fiducia</span>
+</div>
+</div>
+<!-- 4 Tangible Benefits Focused on Results -->
+<div class="text-center mb-8">
+<span class="text-label-caps font-label-caps text-primary font-bold tracking-widest block mb-1">
+          DIFERENCIALES EXCLUSIVOS
+        </span>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+          Diseñado para elevar tu calidad de vida y proteger tu patrimonio
+        </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+<!-- Benefit 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl mineral-border sun-cast-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">wb_sunny</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2 font-semibold">
+              Arquitectura Bioclimática y Luz Natural
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Techos de altura libre, ventanales piso a techo y ventilación cruzada que reducen el consumo energético y garantizan un confort térmico inigualable durante todo el año.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-sm font-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">energy_savings_leaf</span>
+<span>Ahorro energético pasivo y bienestar</span>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl mineral-border sun-cast-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">deck</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2 font-semibold">
+              Terrazas Privadas con Vista a los Cerros
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Espacios exteriores generosos pensados para BBQ, jardinería vertical y reuniones sociales privadas, disfrutando del paisaje oriental de Bogotá en completa intimidad.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-sm font-label-sm text-primary">
+<span class="material-symbols-outlined text-sm">landscape</span>
+<span>Vistas panorámicas protegidas</span>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl mineral-border sun-cast-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">countertops</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2 font-semibold">
+              Acabados de Autor Importados
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Cocinas italianas de diseño contemporáneo, carpintería en roble europeo y baños en piedra sinterizada de cero absorción que garantizan durabilidad y elegancia atemporal.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-sm font-label-sm text-primary">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>Materiales de estándar europeo</span>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl mineral-border sun-cast-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">trending_up</span>
+</div>
+<h4 class="text-title-lg font-title-lg text-on-surface mb-2 font-semibold">
+              Alta Valorización y Renta Proyectada
+            </h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Sector residencial de alta demanda corporativa y diplomática que blinda tu capital frente a fluctuaciones macroeconómicas con tasas de ocupación excepcionales.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-sm font-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">shield</span>
+<span>Retorno patrimonial seguro</span>
+</div>
+</div>
+</div>
+<!-- Real Verified Testimonials -->
+<div class="pt-4" id="testimonios">
+<div class="text-center mb-6">
+<span class="text-label-caps font-label-caps text-secondary font-bold tracking-widest block mb-1">
+            TESTIMONIOS REALES Y VERIFICADOS
+          </span>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+            Voces de propietarios e inversionistas
+          </h3>
+</div>
+<div class="space-y-4">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl mineral-border sun-cast-shadow text-left">
+<div class="flex items-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4">
+              "Comprar sobre planos siempre me daba temor, pero el equipo de Akon 68 cumplió cada fecha del cronograma. La luz natural y los acabados superaron por completo el render inicial."
+            </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">
+                CR
+              </div>
+<div>
+<p class="text-title-lg font-title-lg text-on-surface leading-tight font-semibold">Camila Restrepo</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Compradora Tipo Penthouse · Residente Bogotá</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl mineral-border sun-cast-shadow text-left">
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface italic mb-4">
+              "La asesoría fiduciaria y el retorno estimado fueron impecables. El apartamento se arrendó en menos de tres semanas a un directivo multinacional."
+            </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-md">
+                CM
+              </div>
+<div>
+<p class="text-title-lg font-title-lg text-on-surface leading-tight font-semibold">Carlos E. Mendoza</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Inversionista Patrimonial · Portafolio Inmobiliario</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================== -->
+<!-- 4. A - ACCIÓN (Lead Form Minimalista + WhatsApp Directo)      -->
+<!-- ============================================================== -->
+<section class="py-10 border-t border-outline-variant/30" id="agendar">
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-9 mineral-border sun-cast-shadow-elevated text-left">
+<!-- Scarcity Honest Alert -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>✦ Últimas unidades disponibles con precio de lista de lanzamiento</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">
+          Agenda hoy tu visita a la sala de ventas Akon 68
+        </h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+          Completa los datos a continuación para reservar tu franja exclusiva con un director de proyecto y recibir el dossier confidencial.
+        </p>
+<!-- 3-Field Minimalist Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Un asesor patrimonial de Akon 68 Living se comunicará contigo en menos de 24 horas.');">
+<!-- Field 1: Full Name -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-semibold" for="fullName">
+              Nombre completo
+            </label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-body-md" id="fullName" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Field 2: Phone / WhatsApp -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-semibold" for="phone">
+              WhatsApp o Celular (+57)
+            </label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-body-md" id="phone" placeholder="Ej. 312 456 7890" required="" type="tel"/>
+</div>
+<!-- Field 3: Typology Interest -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface mb-1 font-semibold" for="typology">
+              ¿Qué tipología te interesa?
+            </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-body-md" id="typology" required="">
+<option disabled="" selected="" value="">Selecciona una opción...</option>
+<option value="suites">Suites 1 Alcoba (55 m²)</option>
+<option value="familiar">Apartamento Familiar 2-3 Alcobas (85 - 120 m²)</option>
+<option value="penthouse">Penthouse con Terraza Privada (160+ m²)</option>
+<option value="inversion">Inversión Patrimonial / Renta</option>
+</select>
+</div>
+<!-- Primary Full-Width Conversion Button -->
+<div class="pt-2">
+<button class="w-full py-4 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary text-title-lg font-title-lg font-bold text-center transition-all duration-200 sun-cast-shadow hover:sun-cast-shadow-elevated active:scale-[0.98] flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración patrimonial ✨</span>
+</button>
+</div>
+</form>
+<!-- Divider with OR text -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/30"></div>
+</div>
+<span class="relative bg-surface-container-lowest px-4 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">
+            O si prefieres atención inmediata
+          </span>
+</div>
+<!-- 1-Touch WhatsApp Button -->
+<a class="w-full py-3.5 px-6 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-title-lg text-title-lg font-semibold flex items-center justify-center gap-2 transition-all duration-150 sun-cast-shadow active:scale-[0.98]" href="https://wa.me/573165453143?text=Hola%20Akon%2068%20Living%2C%20deseo%20agendar%20mi%20visita%20y%20conocer%20el%20dossier%20privado" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 545 3143)</span>
+</a>
+<!-- Privacy Microcopy -->
+<p class="text-label-sm font-label-sm text-on-surface-variant/80 mt-5 text-center flex items-center justify-center gap-1 leading-normal">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto fiduciario y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam comercial.</span>
+</p>
+</div>
+</section>
+<!-- ============================================================== -->
+<!-- 5. PREGUNTAS FRECUENTES (FAQ Acordeón)                         -->
+<!-- ============================================================== -->
+<section class="py-10 border-t border-outline-variant/30" id="faq">
+<div class="text-center mb-8">
+<span class="text-label-caps font-label-caps text-secondary font-bold tracking-widest block mb-1">
+          RESPUESTAS CLARAS
+        </span>
+<h3 class="text-headline-md font-headline-md text-on-surface">
+          Preguntas frecuentes de inversionistas
+        </h3>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl mineral-border sun-cast-shadow p-4 sm:p-5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer font-title-lg text-title-lg text-on-surface font-semibold gap-3">
+<span>¿Qué fiduciaria respalda los recursos de Akon 68 Living?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-body-md font-body-md text-on-surface-variant pt-2 border-t border-outline-variant/20">
+            Todos los desembolsos de preventa y cuotas iniciales son administrados a través de un Encargo Fiduciario Mercantil con Acción Fiduciaria / Alianza Fiduciaria (vigilada por la Superintendencia Financiera de Colombia). Los recursos únicamente son liberados a obra tras el cumplimiento formal del Punto de Equilibrio y licencias de construcción ejecutoriadas.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl mineral-border sun-cast-shadow p-4 sm:p-5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer font-title-lg text-title-lg text-on-surface font-semibold gap-3">
+<span>¿Cuáles son las fechas estimadas de entrega de las unidades?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-body-md font-body-md text-on-surface-variant pt-2 border-t border-outline-variant/20">
+            La torre residencial tiene su cronograma de entrega programado para el segundo semestre de 2026. Al reservar en fase de preventa inicial, cuentas con hasta 24 meses continuos para diferir el pago de tu cuota inicial mientras se ejecuta la estructura.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl mineral-border sun-cast-shadow p-4 sm:p-5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer font-title-lg text-title-lg text-on-surface font-semibold gap-3">
+<span>¿Tienen planes de financiación directa de la cuota inicial?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-body-md font-body-md text-on-surface-variant pt-2 border-t border-outline-variant/20">
+            Sí. Manejamos esquemas de pago flexibles: un 30% a 40% de cuota inicial financiada directamente con la constructora durante la etapa constructiva sin intereses de intermediación, y el saldo restante contra entrega mediante crédito hipotecario o leasing habitacional con el banco de tu preferencia.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl mineral-border sun-cast-shadow p-4 sm:p-5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer font-title-lg text-title-lg text-on-surface font-semibold gap-3">
+<span>¿Se permiten arriendos para estadías corporativas o vacacionales?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-body-md font-body-md text-on-surface-variant pt-2 border-t border-outline-variant/20">
+            El reglamento de propiedad horizontal contempla tipologías aptas para renta flexible y media estancia corporativa (ejecutivos, misiones diplomáticas y estancias médicas de alto perfil), optimizando la rentabilidad neta anual por metro cuadrado.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/30 full-width relative">
+<div class="flex flex-col gap-space-md w-full px-margin-mobile py-space-xl mb-16 max-w-7xl mx-auto text-left">
+<!-- Brand & Headline -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">apartment</span>
+<span class="text-headline-sm font-headline-sm text-on-surface dark:text-inverse-on-surface font-bold">
+          Akon 68 Living
+        </span>
+</div>
+<!-- Footer Legal Links from Shared JSON -->
+<nav class="flex flex-wrap gap-x-6 gap-y-2 text-label-caps font-label-caps pt-2">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#">Términos y Condiciones</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#">Política de Privacidad Ley 1581</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#">Reglamento de Propiedad Horizontal</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#">Contacto Sala de Ventas Bogotá</a>
+</nav>
+<!-- Copyright text verbatim from JSON -->
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant pt-2 leading-relaxed">
+        © 2024 Akon 68 Living. Todos los derechos reservados. Nit: 901.482.109-4. Sujeto a supervisión de la Superintendencia de Sociedades. Tratamiento de Datos Personales conforme a la Ley 1581 de 2012 (Habeas Data).
+      </p>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component, Mobile Only) ================= -->
+<nav class="md:hidden bg-surface/95 dark:bg-surface-container-highest/95 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs pb-safe shadow-[0_-4px_16px_rgba(36,32,29,0.06)] dark:shadow-none">
+<!-- Item 1: Proyectos (Active) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed font-semibold py-1 active:scale-95 transition-transform duration-150" href="#proyectos">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">domain</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proyectos</span>
+</a>
+<!-- Item 2: Beneficios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-95 transition-all duration-150" href="#beneficios">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+<span class="text-label-sm font-label-sm mt-0.5">Beneficios</span>
+</a>
+<!-- Item 3: Testimonios -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-95 transition-all duration-150" href="#testimonios">
+<span class="material-symbols-outlined text-2xl">reviews</span>
+<span class="text-label-sm font-label-sm mt-0.5">Testimonios</span>
+</a>
+<!-- Item 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-95 transition-all duration-150" href="#agendar">
+<span class="material-symbols-outlined text-2xl">calendar_today</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+<img src="https://val-southeast-supreme-purse.trycloudflare.com/api/t/akon-68-living" width="1" height="1" style="display:none" alt="">
+</body></html>
