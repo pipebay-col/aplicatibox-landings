@@ -127,6 +127,7 @@
   </style>
 </head>
 <body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen">
+<div style="max-width:1100px;margin:0 auto;">
 <!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest dark:bg-inverse-surface shadow-sm dark:shadow-none">
 <div class="max-w-[440px] mx-auto px-margin py-space-sm flex items-center justify-between">
@@ -134,7 +135,7 @@
 <span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
 <span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-inverse-primary tracking-tight">Luvanna Medicina Estética</span>
 </div>
-<a class="bg-primary text-on-primary px-3 py-1.5 rounded-full font-label-md text-label-md hover:bg-tertiary transition-colors active:scale-95 duration-150" href="#agendar">
+<a class="bg-primary text-on-primary px-5 py-3 rounded-full font-label-md text-label-md hover:bg-tertiary transition-colors active:scale-95 duration-150" href="#agendar">
         Agendar
       </a>
 </div>
@@ -160,7 +161,7 @@
 <!-- Hero Visual Card with High-Res Reference Asset -->
 <div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-[0_4px_20px_-2px_rgba(26,36,33,0.06)] border border-outline-variant/30">
 <div class="aspect-[4/3] w-full overflow-hidden relative">
-<img alt="Paciente radiante y natural en la sala boutique de Luvanna Medicina Estética" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1XwFuhhZZO3zSt93jOoTqClTpnC0NEkG_x1lS3wjiL3YRu-nHYRLgsA9AmDS24Ku0kl4aAoopJ9K5W5q9rteVhp-hcuW70TT-z1hrEgAfEAaw8mhN1qRvgrajTNwLv6JWuJhv6r9uukIbMPL4BJ2HqTI_Ate9pCxoxsA2Qg8QkQ3eDk-YUWELhDH3QoBrXtNggfYTQSJ09F3fykjJRj1JlCyg_UpcAeBsWHguU6EE7K8UDZFS8RLw_u1kw"/>
+<img src="hero-marca.jpg" alt="Luvanna Medicina Estética — tratamiento real en su clínica de Bogotá" style="width:100%;max-height:520px;object-fit:cover">
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
 <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
@@ -414,7 +415,7 @@
         </p>
 </div>
 <!-- Quick 3-Field Lead Capture Form -->
-<form class="space-y-3" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Luvanna se pondrá en contacto contigo de inmediato por WhatsApp.');">
+<form class="space-y-3" onsubmit="event.preventDefault(); var n=document.getElementById('fullName')?document.getElementById('fullName').value:''; var t=document.getElementById('phone')?document.getElementById('phone').value:''; var s=document.getElementById('service')?document.getElementById('service').value:''; var msg='Hola Luvanna, soy '+n+' ('+t+'). Quiero mi valoración: '+s; window.open('https://wa.me/573115203087?text='+encodeURIComponent(msg),'_blank');">
 <div>
 <label class="block font-label-md text-label-md text-on-surface mb-1" for="fullName">Nombre completo *</label>
 <input class="w-full h-12 px-3.5 rounded-xl border border-outline-variant bg-surface-bright text-on-surface font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="fullName" placeholder="Ej. Valentina Morales" required="" type="text"/>
@@ -538,4 +539,5 @@
 </a>
 </div>
 </nav>
+</div>
 </body></html>
