@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TopSmiles Dental Boutique · Odontología Biomimética de Lujo en Colombia</title>
+<!-- Material Symbols Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#008376",
+            "on-tertiary-fixed": "#002111",
+            "inverse-surface": "#2f3130",
+            "primary-fixed-dim": "#74d7c8",
+            "outline": "#6e7a77",
+            "on-tertiary": "#ffffff",
+            "secondary": "#2b685c",
+            "on-secondary-fixed-variant": "#0a5045",
+            "on-tertiary-fixed-variant": "#175034",
+            "on-tertiary-container": "#f7fff6",
+            "surface-container": "#efeeec",
+            "inverse-on-surface": "#f1f1ef",
+            "on-secondary-fixed": "#00201b",
+            "surface-bright": "#faf9f7",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "secondary-fixed": "#b1efdf",
+            "background": "#faf9f7",
+            "secondary-fixed-dim": "#95d2c4",
+            "outline-variant": "#bdc9c6",
+            "surface-tint": "#006b60",
+            "surface-dim": "#dadad8",
+            "surface-container-highest": "#e3e2e0",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#99d4ae",
+            "on-secondary": "#ffffff",
+            "on-surface": "#1a1c1b",
+            "surface": "#faf9f7",
+            "on-primary-fixed": "#00201c",
+            "on-secondary-container": "#306d61",
+            "surface-container-low": "#f4f3f1",
+            "on-primary-fixed-variant": "#005048",
+            "secondary-container": "#aeecdd",
+            "primary": "#00685d",
+            "inverse-primary": "#74d7c8",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#3e4947",
+            "tertiary": "#2f6749",
+            "surface-container-high": "#e9e8e6",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#488060",
+            "surface-variant": "#e3e2e0",
+            "on-background": "#1a1c1b",
+            "primary-fixed": "#91f4e4",
+            "tertiary-fixed": "#b4f0c9",
+            "on-primary-container": "#f2fffb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "3rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .glow-teal-subtle {
+      box-shadow: 0 16px 36px -12px rgba(0, 131, 118, 0.12), 0 4px 12px -2px rgba(28, 40, 38, 0.04);
+    }
+    .pulse-subtle {
+      animation: pulseTeal 2.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    }
+    @keyframes pulseTeal {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(0, 131, 118, 0.35);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(0, 131, 118, 0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed min-h-screen flex flex-col font-body-md text-body-md">
+<!-- ================= TOP APP BAR (Shared Component) ================= -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile py-space-sm max-w-screen-xl mx-auto bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="dentistry">dentistry</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold leading-tight">TopSmiles</span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-outline -mt-0.5">Dental Boutique</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="hidden sm:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/30 border border-outline-variant/40 text-[11px] font-medium text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span>MinSalud REPS</span>
+</div>
+<a class="bg-primary text-on-primary px-4 py-2 rounded-lg text-label-md font-label-md hover:bg-on-primary-fixed-variant transition-colors shadow-sm active:scale-95 duration-150 flex items-center gap-1" href="#booking-form">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- MAIN CONTAINER (Optimized for Mobile Canvas: ~390px - 440px max width centered) -->
+<main class="w-full max-w-[460px] mx-auto px-margin-mobile pt-20 pb-28 flex flex-col space-y-10">
+<!-- ================= SECTION A: ATENCIÓN (Hero Section) ================= -->
+<section class="flex flex-col pt-3" id="inicio">
+<!-- Accreditation Pill Badge -->
+<div class="self-start inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 border border-secondary/20 text-on-secondary-container mb-3.5">
+<span class="text-primary text-[13px] font-bold">✦</span>
+<span class="text-label-sm font-label-sm tracking-normal">Habilitación MinSalud REPS · Colombia</span>
+</div>
+<!-- Main Benefit H1 -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface mb-3 tracking-tight">
+        Tu nueva sonrisa, <span class="font-display-hero-mobile italic font-normal text-primary">natural</span> y diseñada para durar toda la vida en Colombia.
+      </h1>
+<!-- Specific Clinical Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Carillas cerámicas ultrafinas E-max, lentes de contacto dental y diseño de sonrisa biomimético sin desgastes agresivos ni dolor. Armonía facial guiada por tecnología digital 3D.
+      </p>
+<!-- Visual Card with Real Patient Smile (Image + Floating Clinical Guarantee) -->
+<div class="relative w-full rounded-2xl overflow-hidden border border-outline-variant/40 shadow-sm bg-surface-container-lowest mb-5">
+<div class="aspect-[4/3] w-full relative overflow-hidden bg-surface-container">
+<img alt="Paciente de TopSmiles Dental Boutique luciendo sonrisa natural con carillas cerámicas en un ambiente boutique de bienestar clínico" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1VH5Aaqiq5MeSDUTtaXudr7-RFeUfP8Rjkhi4EM2SkNklBW8XNmSGH_VMgkffchfKJ3KkE7NYUa7XsS8FVh8Ums4p_bQx_mSRmRzRGD6bvU4uZAyC2N06m07b34G9edZAoMMLBi7HA_0vgyQ5yRa46Yj8N05FeXaV9QBwvv-K6Y22YUXV0-ZnvSXz4mXihcWbOmSeaPhr1_c0SlGfloMYW---v0Xf1c3TNnUV9hDluLgo_dUS86FTgMFdQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+<!-- Floating Clinical Guarantee Badge -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-xl border border-outline-variant/30 flex items-center gap-2.5 shadow-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container/60 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[17px]" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="leading-tight">
+<p class="text-label-sm font-label-sm text-primary tracking-tight">Resultado Clínico Garantizado</p>
+<p class="text-[11px] text-on-surface-variant font-body-sm">100% Cerámica E-max Natural Ivoclar</p>
+</div>
+</div>
+</div>
+</div>
+<!-- High Contrast Primary CTA -->
+<div class="flex flex-col space-y-2.5">
+<a class="pulse-subtle w-full bg-primary-container text-on-primary py-3.5 px-5 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 tracking-wide shadow-md hover:bg-primary transition-all active:scale-[0.98]" href="#booking-form">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<!-- Immediate Trust Micro-Credential -->
+<p class="text-center font-body-sm text-body-sm text-outline flex items-center justify-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="check_circle">check_circle</span>
+<span>Respuesta en menos de 24h · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</p>
+</div>
+<!-- 3 Value Chips -->
+<div class="grid grid-cols-3 gap-2 mt-5">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1" data-icon="view_in_ar">view_in_ar</span>
+<span class="text-[11px] font-bold text-on-surface leading-tight">Tecnología 3D Guiada</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1" data-icon="shield">shield</span>
+<span class="text-[11px] font-bold text-on-surface leading-tight">Cero Desgaste Invasivo</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px] mb-1" data-icon="person_pin">person_pin</span>
+<span class="text-[11px] font-bold text-on-surface leading-tight">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ================= SECTION I: INTERÉS (Problema & 3 Pasos) ================= -->
+<section class="flex flex-col pt-4 border-t border-outline-variant/30" id="proceso">
+<!-- Empathy Badge & Title -->
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-error-container/40 text-on-error-container text-label-sm font-label-sm mb-2.5">
+<span class="material-symbols-outlined text-[14px]" data-icon="psychology_alt">psychology_alt</span>
+<span>Odontología Conservadora</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-3 tracking-tight">
+        ¿Temes que tu diseño de sonrisa se vea artificial, "dientes de tiza" o desgaste tus dientes sanos?
+      </h2>
+<!-- Pain Paragraph -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 shadow-sm mb-6">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En <strong class="text-on-surface font-semibold">TopSmiles Dental Boutique</strong> rechazamos categóricamente el limado mutilante y las carillas monótonas de molde. Aplicamos odontología biomimética preservando hasta el <span class="text-primary font-bold">98% del esmalte dental natural</span> con láminas vítreas estratificadas que replican la luminosidad, translucidez y textura real de la naturaleza dental.
+        </p>
+</div>
+<!-- 3-Step Guided Process -->
+<div class="flex flex-col space-y-4">
+<h3 class="text-label-md font-label-md text-outline uppercase tracking-wider">Tu Camino Clínico en 3 Fases:</h3>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 relative">
+<div class="flex items-start gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-primary font-bold text-label-md flex items-center justify-center shrink-0">
+              01
+            </span>
+<div class="flex-1">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold mb-1">
+                Valoración y Escaneo Digital 3D
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5 leading-relaxed">
+                Mapeo milimétrico intraoral sin pastas incómodas ni náuseas. Visualizas tu nueva sonrisa en pantalla 3D antes de tocar un solo diente.
+              </p>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low text-[11px] font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px]" data-icon="visibility">visibility</span>
+<span>Beneficio: Certeza clínica y simulación digital previa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 relative">
+<div class="flex items-start gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-primary font-bold text-label-md flex items-center justify-center shrink-0">
+              02
+            </span>
+<div class="flex-1">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold mb-1">
+                Plan Personalizado y Prueba Mock-up en Boca
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5 leading-relaxed">
+                Probamos una maqueta estética temporal en tu boca para evaluar textura, color y fonética antes de fabricar las definitivas.
+              </p>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low text-[11px] font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified_user">verified_user</span>
+<span>Beneficio: Cero sorpresas con presupuesto cerrado garantizado</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 relative">
+<div class="flex items-start gap-3">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-primary font-bold text-label-md flex items-center justify-center shrink-0">
+              03
+            </span>
+<div class="flex-1">
+<h4 class="font-headline-sm text-[18px] text-on-surface font-semibold mb-1">
+                Sonrisa Definitiva con Cerámica E-max
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2.5 leading-relaxed">
+                Micro-cementación de porcelana pura E-max biocompatible inmune a manchas de café, té o vino.
+              </p>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low text-[11px] font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px]" data-icon="sparkles" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span>Beneficio: Brillo vítreo inalterable por más de 15 años</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Action Link -->
+<div class="mt-4 text-center">
+<a class="inline-flex items-center gap-1.5 text-label-md font-label-md text-primary hover:text-on-primary-fixed-variant transition-colors group" href="https://wa.me/572590624437813" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-0.5 transition-transform" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+</section>
+<!-- ================= SECTION D: DESEO (Prueba Social, Métricas y Beneficios) ================= -->
+<section class="flex flex-col pt-4 border-t border-outline-variant/30" id="casos">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm mb-2.5">
+<span class="material-symbols-outlined text-[14px]" data-icon="award_star">award_star</span>
+<span>Excelencia Biomimética</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">
+        La ciencia detrás de cada sonrisa esculpida
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5">
+        Cifras respaldadas por pacientes locales e internacionales en Colombia.
+      </p>
+<!-- 4 Clean Metric Cards Grid -->
+<div class="grid grid-cols-2 gap-3 mb-6">
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/40 shadow-sm flex flex-col justify-center">
+<span class="font-headline-md text-[26px] text-primary font-bold tracking-tight">+14</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Años de Trayectoria Clínica</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/40 shadow-sm flex flex-col justify-center">
+<span class="font-headline-md text-[26px] text-primary font-bold tracking-tight">+4.800</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Sonrisas Diseñadas Exclusivas</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/40 shadow-sm flex flex-col justify-center">
+<span class="font-headline-md text-[26px] text-primary font-bold tracking-tight">99.4%</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Satisfacción Verificada</span>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-outline-variant/40 shadow-sm flex flex-col justify-center">
+<span class="font-headline-md text-[26px] text-primary font-bold tracking-tight">100%</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-snug">Porcelana E-max Ivoclar</span>
+</div>
+</div>
+<!-- 4 Real-Life Benefits -->
+<h3 class="text-label-md font-label-md text-on-surface mb-3 uppercase tracking-wider">Beneficios para tu vida cotidiana:</h3>
+<div class="space-y-3 mb-7">
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Tonos calibrados al biotipo facial; nadie notará que llevas carillas, solo una sonrisa radiante.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Cero desgaste agresivo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Máxima preservación biológica que protege la vitalidad pulpar sin sensibilidad dental.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="coffee">coffee</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Cerámica vítrea inmune a manchas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Disfruta tu café colombiano diario sin temor a pigmentaciones ni cambio de tono.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-2xl bg-surface-container-lowest border border-outline-variant/40">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" data-icon="mood">mood</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Seguridad plena al reír y hablar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Olvídate de taparte la boca en reuniones, fotos o eventos sociales con total soltura.
+            </p>
+</div>
+</div>
+</div>
+<!-- Verified 5-Star Testimonials -->
+<h3 class="text-label-md font-label-md text-on-surface mb-3 uppercase tracking-wider">Testimonios verificados:</h3>
+<div class="space-y-3">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 glow-teal-subtle">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[11px] text-outline font-medium">Paciente Verificada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-2 leading-relaxed">
+            "Tenía pánico a terminar con dientes postizos o dolor por tallado. Con la prueba en 3D vi exactamente cómo quedaría y fue cero invasivo. Mis amigos solo me dicen que luzco rejuvenecida."
+          </p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Camila Restrepo</span>
+<span class="text-[11px] text-secondary font-medium">Lentes de Contacto E-max</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/40 glow-teal-subtle">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[11px] text-outline font-medium">Paciente Internacional</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-2 leading-relaxed">
+            "Viajé a Colombia desde Miami exclusivamente para atenderme en TopSmiles. La precisión digital y el trato boutique superaron cualquier estándar médico. Resultados impecables."
+          </p>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Dr. Camilo Echeverri</span>
+<span class="text-[11px] text-secondary font-medium">Diseño Biomimético Superior</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION A: ACCIÓN (Formulario Minimalista) ================= -->
+<section class="flex flex-col pt-4 border-t border-outline-variant/30 scroll-mt-20" id="booking-form">
+<!-- Urgency Badge -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container text-label-sm font-label-sm mb-2.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">
+        Empieza hoy tu transformación dental con total confianza
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5">
+        Completa este formulario en 30 segundos y nuestro equipo clínico te contactará para agendar tu horario prioritario.
+      </p>
+<!-- Minimalist Form Card -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/40 shadow-md">
+<form class="flex flex-col space-y-4" id="lead-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden');">
+<!-- Field 1: Name -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="full-name">Nombre y Apellido *</label>
+<input class="w-full h-12 px-3.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" id="full-name" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Field 2: WhatsApp / Phone -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="phone-whatsapp">WhatsApp o Celular (+57) *</label>
+<input class="w-full h-12 px-3.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" id="phone-whatsapp" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+<!-- Field 3: Treatment Selection -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="treatment-choice">¿Qué tratamiento te interesa? *</label>
+<div class="relative">
+<select class="w-full h-12 px-3.5 pr-10 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface text-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer" id="treatment-choice" required="">
+<option value="carillas">Carillas Cerámicas E-max Ultrafinas</option>
+<option value="lentes">Lentes de Contacto Dental sin Desgaste</option>
+<option value="diagnostico">Valoración General y Diagnóstico 3D</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-outline absolute right-3 top-3 pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Primary Submit Button -->
+<button class="w-full h-13 py-3.5 px-4 bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-on-primary-fixed-variant transition-transform active:scale-95 shadow-md" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- Alternative WhatsApp Direct Button -->
+<a class="w-full h-12 px-4 rounded-lg border border-[#25D366] text-[#128C7E] bg-[#f0fbf6] font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-[#e1f7ec] transition-colors" href="https://wa.me/572590624437813?text=Hola%20TopSmiles%20Boutique,%20deseo%20información%20para%20una%20valoración%20dental." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-[#25D366]" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 259 062 4437813)</span>
+</a>
+<!-- Privacy Micro-copy -->
+<p class="text-[11px] text-outline font-body-sm text-center leading-normal pt-1">
+            🔒 Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+<!-- Success Alert Box (Initially hidden) -->
+<div class="hidden p-3 rounded-lg bg-secondary-container/40 border border-primary/30 text-primary text-center text-body-sm font-medium" id="form-success">
+            ¡Solicitud recibida con éxito! Nuestro concierge clínico se comunicará en breve por WhatsApp.
+          </div>
+</form>
+</div>
+</section>
+<!-- ================= SECTION: FAQ (Resolución de Objeciones) ================= -->
+<section class="flex flex-col pt-4 border-t border-outline-variant/30" id="faqs">
+<div class="inline-flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container text-label-sm font-label-sm mb-2.5">
+<span class="material-symbols-outlined text-[14px]" data-icon="help_outline">help_outline</span>
+<span>Preguntas Frecuentes</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">
+        Claridad médica sobre tu procedimiento
+      </h2>
+<!-- Accordion Items -->
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface list-none">
+<span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-2.5 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2.5 leading-relaxed">
+            No en nuestra práctica. Empleamos odontología biomimética y micro-lentes de contacto de 0.2 a 0.3 mm. En la gran mayoría de casos realizamos preparación cero invasiva (sin desgaste de esmalte sano), salvaguardando la estructura biológica de tus dientes.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface list-none">
+<span>¿Cuánto tiempo toma el tratamiento completo en Colombia?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-2.5 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2.5 leading-relaxed">
+            Gracias al flujo 100% digital con escaneo intraoral y laboratorio cerámico in-house, el tratamiento suele completarse en tan solo 3 a 5 días hábiles, ideal para pacientes residentes o de turismo odontológico.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface list-none">
+<span>¿Las carillas cerámicas se manchan con café o alimentos?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-2.5 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2.5 leading-relaxed">
+            La cerámica de disilicato de litio E-max de Ivoclar Vivadent posee una superficie vitrificada no porosa. Es químicamente resistente e impermeable a colorantes de café, vino tinto o frutos rojos.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md text-on-surface list-none">
+<span>¿Cuentan con facilidades de pago o financiación?</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-2.5 text-body-sm font-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-2.5 leading-relaxed">
+            Sí. Brindamos planes de pago escalonados por fases clínicas, pagos con tarjeta de crédito internacional sin recargo, y convenios de financiación para residentes colombianos.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component) ================= -->
+<footer class="w-full flex flex-col items-center text-center px-margin-mobile pt-space-xl pb-24 space-y-space-md bg-surface-container-low border-t border-outline-variant/40 mt-auto">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[24px]" data-icon="dentistry">dentistry</span>
+<span class="font-headline-md text-headline-md text-primary">TopSmiles</span>
+</div>
+<div class="max-w-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+        © 2024 TopSmiles Dental Boutique. Habilitación MinSalud Colombia Res. 3100. Vigilado Supersalud. Todos los derechos reservados.
+      </p>
+</div>
+<!-- Navigation links from JSON -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 max-w-sm">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 hover:underline" href="#booking-form">Habeas Data Ley 1581</a>
+<span class="text-outline-variant">•</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 hover:underline" href="#booking-form">Consentimiento Informado</a>
+<span class="text-outline-variant">•</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 hover:underline" href="https://wa.me/572590624437813" rel="noopener noreferrer" target="_blank">WhatsApp Concierge</a>
+<span class="text-outline-variant">•</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 hover:underline" href="#booking-form">Términos y Condiciones</a>
+</div>
+<div class="text-[11px] text-outline pt-2">
+      Medellín &amp; Bogotá · Colombia · Protocolos Biomiméticos Certificados
+    </div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Shared Component) ================= -->
+<!-- Contextual Active: 'Agendar' is the primary goal of this landing page, mapped to the action tab -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,131,118,0.06)] md:hidden">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150 active:scale-90" href="#inicio">
+<span class="material-symbols-outlined text-[20px]" data-icon="auto_fix">auto_fix</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150 active:scale-90" href="#proceso">
+<span class="material-symbols-outlined text-[20px]" data-icon="timeline">timeline</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1 hover:text-primary transition-colors duration-150 active:scale-90" href="#casos">
+<span class="material-symbols-outlined text-[20px]" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Item 4: Agendar (Active Tab) -->
+<a class="flex flex-col items-center justify-center text-primary font-bold bg-secondary-container/40 rounded-xl px-3 py-1 hover:text-primary transition-colors duration-150 active:scale-90" href="#booking-form">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+</body></html>
