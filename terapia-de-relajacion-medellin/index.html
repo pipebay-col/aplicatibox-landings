@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terapia de Relajación Medellín | Santuario de Bienestar Clínico y Masajes en El Poblado</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#efeeec",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#ebe1d4",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#1f1b13",
+            "on-secondary-container": "#006f63",
+            "tertiary-container": "#645d53",
+            "on-tertiary-fixed-variant": "#4c463c",
+            "secondary-container": "#76f4e0",
+            "surface-container-low": "#f4f3f1",
+            "on-surface-variant": "#3e4947",
+            "on-primary-fixed": "#00201c",
+            "primary-fixed-dim": "#84d5c8",
+            "on-background": "#1a1c1b",
+            "primary-fixed": "#9ff2e4",
+            "tertiary": "#4c463c",
+            "surface-bright": "#faf9f7",
+            "surface-container-high": "#e9e8e6",
+            "inverse-surface": "#2f3130",
+            "background": "#faf9f7",
+            "primary-container": "#006a60",
+            "on-secondary-fixed-variant": "#005047",
+            "inverse-on-surface": "#f1f1ef",
+            "surface-variant": "#e3e2e0",
+            "on-surface": "#1a1c1b",
+            "outline": "#6e7977",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#e3e2e0",
+            "secondary-fixed": "#79f7e3",
+            "surface-dim": "#dadad8",
+            "on-primary-fixed-variant": "#005048",
+            "inverse-primary": "#84d5c8",
+            "secondary": "#006b5f",
+            "primary": "#005048",
+            "surface-tint": "#016a60",
+            "on-primary-container": "#95e7da",
+            "on-secondary-fixed": "#00201c",
+            "on-tertiary-container": "#e0d7ca",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface": "#faf9f7",
+            "outline-variant": "#bec9c6",
+            "tertiary-fixed-dim": "#cfc5b9",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "secondary-fixed-dim": "#59dbc7"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "gutter-lg": "2rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-3xl": "6rem",
+            "gutter-sm": "1rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-active {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container selection:text-primary">
+<!-- ==================== SHARED COMPONENT: TopAppBar ==================== -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full px-space-md py-space-sm max-w-7xl mx-auto bg-surface/90 dark:bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<a class="flex items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300 group-hover:rotate-12" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary dark:text-primary-fixed">Terapia de Relajación Medellín</span>
+</a>
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg px-4 py-2 rounded-full bg-primary-container text-on-primary shadow-sm hover:bg-primary active:scale-95 transition-all duration-200" href="#booking-section">
+        Agendar
+      </a>
+</div>
+</header>
+<!-- ==================== 1. ATENCIÓN (ATTENTION) ==================== -->
+<section class="relative pt-space-md pb-space-2xl px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto overflow-hidden">
+<!-- Top Credential Pill -->
+<div class="flex justify-center mb-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-wide text-center">
+          Santuario de Bienestar Clínico · Registro Seccional de Salud Antioquia · El Poblado, Medellín
+        </span>
+</div>
+</div>
+<!-- H1 Headline -->
+<div class="text-center max-w-3xl mx-auto mb-space-md">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-background tracking-tight">
+        Renueva tu cuerpo, libera el estrés y reconecta con tu paz interior en Medellín.
+      </h1>
+</div>
+<!-- Subheadline -->
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Masajes descontracturantes de autor, hidroterapia botánica y rituales de relajación profunda diseñados para disolver la tensión muscular y recargar tu vitalidad en suites privadas insonorizadas en El Poblado.
+      </p>
+</div>
+<!-- Hero Image Container with Embedded Image Reference and Floating Badge -->
+<div class="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 mb-space-lg">
+<img alt="Sesión de masaje relajante y descontracturante en suite privada con vista natural en Medellín" class="w-full h-[360px] md:h-[500px] object-cover" src="hero-marca.jpg"/>
+<!-- Floating Badge -->
+<div class="absolute bottom-4 left-4 right-4 md:right-auto md:left-6 md:bottom-6 bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-3 md:p-4 border border-outline-variant/30 shadow-md flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="verified">verified</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase block">Experiencia Signature Medellín</span>
+<span class="font-title-md text-title-md text-on-surface">Cabina VIP Climatizada &amp; Insonorizada</span>
+</div>
+</div>
+</div>
+<!-- CTA Principal & Quick Sub-proof -->
+<div class="flex flex-col items-center justify-center gap-space-sm max-w-md mx-auto mb-space-lg">
+<a class="w-full text-center font-label-lg text-label-lg px-8 py-4 rounded-full bg-primary-container text-on-primary shadow-md hover:shadow-lg hover:bg-primary transition-all duration-200 active:scale-95" href="#booking-section">
+        Agendar ahora mi sesión
+      </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="schedule">schedule</span>
+        Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+      </p>
+</div>
+<!-- 3 Badges de Confianza Rápida -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 max-w-3xl mx-auto">
+<div class="flex items-center gap-2.5 p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="shield">shield</span>
+<div>
+<p class="font-title-md text-sm text-on-surface">Protocolos Seguros</p>
+<p class="font-body-sm text-xs text-on-surface-variant">Norma Sanitaria Oficial</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="psychology">psychology</span>
+<div>
+<p class="font-title-md text-sm text-on-surface">Terapeutas Certificadas</p>
+<p class="font-body-sm text-xs text-on-surface-variant">+8 Años de Experiencia</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="volume_off">volume_off</span>
+<div>
+<p class="font-title-md text-sm text-on-surface">Cabinas Climatizadas</p>
+<p class="font-body-sm text-xs text-on-surface-variant">Aislamiento Acústico Total</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 2. INTERÉS (INTEREST) ==================== -->
+<section class="py-space-2xl bg-surface-container-low/60 border-y border-outline-variant/20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-4xl mx-auto">
+<!-- Problema y Empatía -->
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider block mb-2">Comprender Tu Cuerpo</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface mb-space-sm">
+          ¿El estrés laboral, la rutina o la tensión muscular están apagando tu bienestar?
+        </h2>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-xs text-left mt-space-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Las largas jornadas frente a pantallas, el tráfico y la sobrecarga diaria generan contracturas en cuello, hombros y zona lumbar. No basta un masaje genérico: necesitas una pausa clínica que reequilibre tu mente y cuerpo.
+          </p>
+</div>
+</div>
+<!-- Cita Editorial -->
+<div class="relative bg-surface-container-lowest border-l-4 border-primary p-space-lg rounded-r-2xl shadow-xs mb-space-2xl">
+<span class="material-symbols-outlined text-primary/30 text-4xl absolute top-4 right-4" data-icon="format_quote">format_quote</span>
+<blockquote class="font-headline-sm text-headline-sm italic text-primary pr-6">
+          «En Terapia de Relajación Medellín creamos un refugio donde cada minuto está dedicado exclusivamente a devolverte la ligereza física y mental.»
+        </blockquote>
+<p class="font-label-md text-label-md text-tertiary mt-space-sm uppercase tracking-wider">
+          — Dirección Terapéutica &amp; Bienestar Somático
+        </p>
+</div>
+<!-- Proceso Clínico Restaurativo en 3 Pasos -->
+<div class="mb-space-xl">
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary uppercase">Metodología Comprobada</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Tu Viaje de Restauración en 3 Fases</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-hero-mobile text-3xl font-bold text-primary/40">01</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="hearing">hearing</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Valoración y Escucha Personalizada</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Evaluamos puntos clave de dolor, grado de sobrecarga y biotipo dérmico antes de iniciar.
+              </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 bg-surface-container-low/40 rounded-lg p-2.5">
+<span class="font-label-caps text-label-caps text-primary block">Beneficio:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Certeza del ritual exacto sin improvisaciones.</p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-hero-mobile text-3xl font-bold text-primary/40">02</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Plan &amp; Ritual Terapéutico a tu Medida</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Combinación de aceites botánicos andinos prensados en frío, termoterapia con piedras volcánicas y maniobras descontracturantes profundas.
+              </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 bg-surface-container-low/40 rounded-lg p-2.5">
+<span class="font-label-caps text-label-caps text-primary block">Beneficio:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Alivio muscular inmediato y relajación sin prisas en suite privada.</p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-display-hero-mobile text-3xl font-bold text-primary/40">03</span>
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="eco">eco</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Renovación Visible y Duradera</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Cierre con infusión herbal digestiva, hidratación de la piel y pautas ergonómicas de autocuidado.
+              </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 bg-surface-container-low/40 rounded-lg p-2.5">
+<span class="font-label-caps text-label-caps text-primary block">Beneficio:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Sensación de bienestar y calma mental prolongada por semanas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Enlace Contextual Concierge -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors duration-200" href="https://wa.me/573332489720?text=Hola,%20deseo%20asesoría%20sobre%20qué%20ritual%20terapéutico%20elegir" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+          ¿Tienes dudas sobre qué ritual elegir? Chatea con nuestro concierge
+          <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==================== 3. DESEO (DESIRE) ==================== -->
+<section class="py-space-2xl px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto">
+<!-- Métricas de Autoridad -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-space-md bg-surface-container-low rounded-3xl border border-outline-variant/30 shadow-sm mb-space-2xl text-center">
+<div class="p-2">
+<span class="font-headline-lg-mobile md:font-headline-md font-semibold text-primary block">+8 Años</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">En El Poblado</span>
+</div>
+<div class="p-2">
+<span class="font-headline-lg-mobile md:font-headline-md font-semibold text-primary block">+5.200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clientes Satisfechos</span>
+</div>
+<div class="p-2">
+<span class="font-headline-lg-mobile md:font-headline-md font-semibold text-primary block">4.9 ★</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Google Reviews</span>
+</div>
+<div class="p-2">
+<span class="font-headline-lg-mobile md:font-headline-md font-semibold text-primary block">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Botánicos INVIMA</span>
+</div>
+</div>
+<!-- 4 Beneficios Tangibles Orientados a Resultados -->
+<div class="mb-space-2xl">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary uppercase">Efectos Reales</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface">
+          Resultados Tangibles Desde la Primera Sesión
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Beneficio 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">1. Alivio Inmediato de Contracturas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Descompresión de nudos y puntos gatillo sin dolor residual gracias a manipulaciones mecánicas precisas ejecutadas por kinesiólogas certificadas.
+          </p>
+</div>
+<!-- Beneficio 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">2. Piel Luminosa, Hidratada y Revitalizada</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Fitocosmética orgánica andina rica en antioxidantes, manteca de karité pura y oleatos vegetales que restauran la barrera lipídica y aportan lozanía.
+          </p>
+</div>
+<!-- Beneficio 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="self_improvement">self_improvement</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">3. Desconexión Mental &amp; Reducción de Cortisol</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Aromaterapia clínica de lavanda y eucalipto silvestre, cabinas con cancelación acústica pasiva e inducción sonora a frecuencias alfa a 432 Hz.
+          </p>
+</div>
+<!-- Beneficio 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs hover:border-primary/40 transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-2xl" data-icon="bedroom_parent">bedroom_parent</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">4. Experiencia Sensorial en Cabinas Boutique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Lencería de algodón egipcio de 400 hilos, temperatura regulada a tu gusto exacto e infusión herbal de cortesía cosechada en fincas de Antioquia.
+          </p>
+</div>
+</div>
+</div>
+<!-- Testimonios Locales Auténticos -->
+<div class="mb-space-xl">
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary uppercase">Confianza Verificada</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Experiencias de Nuestra Comunidad</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Testimonio 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="text-xs font-semibold text-on-surface-variant ml-2">5.0 / 5.0</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4">
+              «Como cirujana, paso horas en quirófano con posturas fijas. La atención en Terapia de Relajación Medellín es de un rigor clínico impecable. Salí de mi sesión sin tensión en la espalda alta y con una sensación de ligereza que no sentía hace meses.»
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 text-primary flex items-center justify-center font-bold">
+              CM
+            </div>
+<div>
+<p class="font-title-md text-sm text-on-surface">Dra. Camila Morales</p>
+<p class="font-body-sm text-xs text-on-surface-variant">El Poblado, Medellín</p>
+</div>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm fill-active" data-icon="star" data-weight="fill">star</span>
+<span class="text-xs font-semibold text-on-surface-variant ml-2">5.0 / 5.0</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4">
+              «El aislamiento acústico de las cabinas es real: entras y la ciudad simplemente desaparece. El masaje descontracturante con piedras volcánicas me quitó el dolor lumbar por completo. El nivel de detalle y servicio es inigualable en Medellín.»
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/20">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 text-primary flex items-center justify-center font-bold">
+              SG
+            </div>
+<div>
+<p class="font-title-md text-sm text-on-surface">Santiago Gómez</p>
+<p class="font-body-sm text-xs text-on-surface-variant">Laureles, Medellín</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 4. ACCIÓN (ACTION) ==================== -->
+<section class="py-space-2xl bg-surface-container-low px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30" id="booking-section">
+<div class="max-w-3xl mx-auto">
+<!-- Banner de Escasez Ética -->
+<div class="mb-space-lg p-3.5 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center gap-2 text-center shadow-xs">
+<span class="material-symbols-outlined text-lg" data-icon="alarm">alarm</span>
+<span class="font-label-lg text-label-lg">
+          Cupos limitados por jornada para garantizar exclusividad y silencio en suites.
+        </span>
+</div>
+<!-- Formulario Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg md:p-space-xl border border-outline-variant/40 shadow-md mb-space-xl">
+<div class="text-center mb-space-lg">
+<span class="font-label-caps text-label-caps text-primary uppercase">Atención Personalizada</span>
+<h2 class="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md text-on-surface mt-1">
+            Solicita tu Diagnóstico &amp; Reserva
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Completa los 3 campos a continuación para apartar tu espacio prioritario en nuestra agenda clínica.
+          </p>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); window.location.href='https://wa.me/573332489720?text=Hola,%20quiero%20agendar%20mi%20sesi%C3%B3n%20en%20Terapia%20de%20Relajaci%C3%B3n%20Medell%C3%ADn'";">
+<!-- Campo 1: Nombre completo -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="full_name">Nombre completo *</label>
+<input class="w-full h-[52px] rounded-xl bg-surface-container-lowest border border-outline-variant px-4 text-on-surface focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all" id="full_name" name="full_name" placeholder="Ej. Laura Restrepo" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp o Celular -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="phone">WhatsApp o Celular (+57) *</label>
+<input class="w-full h-[52px] rounded-xl bg-surface-container-lowest border border-outline-variant px-4 text-on-surface focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all" id="phone" name="phone" placeholder="Ej. +57 300 123 4567" required="" type="tel"/>
+</div>
+<!-- Campo 3: Experiencia de interés -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="service_interest">¿Qué experiencia te interesa? *</label>
+<select class="w-full h-[52px] rounded-xl bg-surface-container-lowest border border-outline-variant px-4 text-on-surface focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all" id="service_interest" name="service_interest" required="">
+<option value="descontracturante">Masaje Descontracturante Profundo</option>
+<option value="pareja">Ritual Spa en Pareja</option>
+<option value="hidroterapia">Hidroterapia &amp; Relajación</option>
+<option value="anti-estres">Circuito Anti-Estrés Ejecutivo</option>
+</select>
+</div>
+<!-- Botón Principal de Acción -->
+<button class="w-full py-4 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary hover:shadow-lg transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 mt-2" type="submit">
+            Quiero mi valoración de relajación ✨
+          </button>
+</form>
+<!-- Botón Secundario Directo WhatsApp -->
+<div class="mt-4 pt-4 border-t border-outline-variant/30 text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">¿Prefieres agendar en tiempo real?</p>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full border-1.5 border-primary text-primary font-label-lg text-label-lg bg-surface-container-low hover:bg-secondary-container/20 transition-all duration-200" href="https://wa.me/573332489720?text=Hola,%20quiero%20agendar%20mi%20sesión%20en%20Terapia%20de%20Relajación%20Medellín" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+            Chatear directo al WhatsApp (+57 333 248 9720)
+          </a>
+</div>
+<!-- Microcopia de Seguridad de Datos -->
+<div class="mt-4 flex items-center justify-center gap-2 text-center text-on-surface-variant font-body-sm text-xs">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="lock">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.</span>
+</div>
+</div>
+<!-- Sección de Preguntas Frecuentes Desplegables -->
+<div class="mb-space-2xl">
+<div class="text-center mb-space-md">
+<span class="font-label-caps text-label-caps text-primary uppercase">Claridad y Confianza</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<div class="rounded-2xl bg-surface-container-lowest border border-outline-variant/30 p-4 transition-all">
+<button class="w-full flex items-center justify-between text-left font-title-md text-title-md text-on-surface focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');" type="button">
+<span>¿Cuánto dura una sesión estándar y qué incluye?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 mt-3">
+              Nuestras sesiones oscilan entre 60 y 90 minutos de terapia efectiva, además de 15 minutos complementarios de anamnesis clínica inicial, aromaterapia botánica personalizada y ritual de infusión digestiva de cortesía al finalizar.
+            </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-2xl bg-surface-container-lowest border border-outline-variant/30 p-4 transition-all">
+<button class="w-full flex items-center justify-between text-left font-title-md text-title-md text-on-surface focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');" type="button">
+<span>¿Es doloroso el masaje descontracturante?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 mt-3">
+              No. Nuestro protocolo clínico aplica presión gradual y controlada. A través de termoterapia previa con piedras volcánicas, suavizamos el tejido miofascial para liberar las contracturas sin generar microtraumatismos ni dolor residual.
+            </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-2xl bg-surface-container-lowest border border-outline-variant/30 p-4 transition-all">
+<button class="w-full flex items-center justify-between text-left font-title-md text-title-md text-on-surface focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.faq-icon').classList.toggle('rotate-180');" type="button">
+<span>¿Tienen parqueadero y acceso privado?</span>
+<span class="material-symbols-outlined faq-icon transition-transform duration-200 text-primary" data-icon="expand_more">expand_more</span>
+</button>
+<div class="hidden pt-3 font-body-md text-body-md text-on-surface-variant border-t border-outline-variant/20 mt-3">
+              Sí. Contamos con bahía de estacionamiento privada vigilada 24/7 en nuestra sede boutique en El Poblado, garantizando discreción total y comodidad desde tu llegada.
+            </div>
+</div>
+</div>
+</div>
+<!-- Ubicación Sede Boutique -->
+<div class="p-space-lg rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-xs text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface">Sede Boutique El Poblado</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Cra 35 #7-45, Provenza / El Poblado, Medellín, Colombia</p>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline inline-flex items-center gap-1" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span>Ver en Google Maps</span>
+<span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==================== SHARED COMPONENT: Footer ==================== -->
+<footer class="w-full px-space-md py-space-xl pb-24 md:pb-space-xl max-w-7xl mx-auto flex flex-col gap-space-md text-center md:text-left bg-surface-container-low dark:bg-surface-container-high border-t border-outline-variant/40 dark:border-outline/20">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">Terapia de Relajación Medellín</span>
+</div>
+<div class="flex flex-wrap justify-center gap-y-2 gap-x-4">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#booking-section">
+          El Poblado, Cra 35 #7-45, Medellín
+        </a>
+<span class="text-outline-variant hidden md:inline">·</span>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">
+          Términos y Condiciones
+        </a>
+<span class="text-outline-variant hidden md:inline">·</span>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="#">
+          Política de Privacidad y Datos Ley 1581
+        </a>
+<span class="text-outline-variant hidden md:inline">·</span>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="https://wa.me/573332489720">
+          Concierge WhatsApp: +57 (300) 912-3456
+        </a>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant mt-2">
+      © 2025 Terapia de Relajación Medellín. Vigilado Supersalud Colombia. Registro Sanitario Prestador de Servicios de Salud. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- ==================== SHARED COMPONENT: BottomNavBar ==================== -->
+<!-- Contextual State: Page intent is primary landing/booking ('Inicio' active) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-2 pb-safe bg-surface/95 dark:bg-surface-container-high/95 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(0,106,96,0.06)]">
+<!-- Tab 1: Inicio (Active) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/40 dark:bg-primary-container text-primary dark:text-on-primary-container rounded-full px-3 py-1 font-semibold active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-lg fill-active" data-icon="home" data-weight="fill">home</span>
+<span class="font-label-md text-label-md">Inicio</span>
+</a>
+<!-- Tab 2: Terapias -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-90 transition-all duration-150" href="#service_interest">
+<span class="material-symbols-outlined text-lg" data-icon="self_improvement">self_improvement</span>
+<span class="font-label-md text-label-md">Terapias</span>
+</a>
+<!-- Tab 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-90 transition-all duration-150" href="#faq-container">
+<span class="material-symbols-outlined text-lg" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Resultados</span>
+</a>
+<!-- Tab 4: Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed active:scale-90 transition-all duration-150" href="#booking-section">
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-md text-label-md">Agendar</span>
+</a>
+</nav>
+</body></html>
