@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gym Elite Colombia | Acondicionamiento Físico 1 a 1 Bogotá &amp; Medellín</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with custom theme config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#1a1c1a",
+            "on-primary": "#ffffff",
+            "primary": "#005f55",
+            "on-secondary-container": "#006f64",
+            "secondary-fixed-dim": "#74d7c8",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f4f3f0",
+            "inverse-on-surface": "#f2f1ee",
+            "outline-variant": "#bdc9c6",
+            "on-secondary-fixed-variant": "#005048",
+            "background": "#faf9f6",
+            "on-primary-container": "#a8fff0",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#4cd6fb",
+            "surface-variant": "#e3e2e0",
+            "on-surface-variant": "#3e4947",
+            "on-tertiary-fixed-variant": "#004e5f",
+            "tertiary-container": "#00768f",
+            "primary-fixed": "#96f3e4",
+            "secondary-fixed": "#91f4e4",
+            "outline": "#6e7977",
+            "tertiary-fixed": "#b3ebff",
+            "surface-tint": "#006a60",
+            "secondary-container": "#8ef1e1",
+            "surface-container-highest": "#e3e2e0",
+            "error": "#ba1a1a",
+            "tertiary": "#005c6f",
+            "primary-fixed-dim": "#7ad7c8",
+            "surface-container-high": "#e9e8e5",
+            "surface": "#faf9f6",
+            "on-tertiary-fixed": "#001f27",
+            "surface-dim": "#dbdad7",
+            "surface-container": "#efeeeb",
+            "on-primary-fixed": "#00201c",
+            "on-tertiary-container": "#d5f3ff",
+            "surface-bright": "#faf9f6",
+            "primary-container": "#007a6e",
+            "on-background": "#1a1c1a",
+            "on-primary-fixed-variant": "#005048",
+            "on-secondary-fixed": "#00201c",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "inverse-surface": "#2f312f",
+            "secondary": "#006b60",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#7ad7c8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": [
+              "Playfair Display"
+            ],
+            "title-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "label-caps": [
+              "Plus Jakarta Sans"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "display-hero": [
+              "Playfair Display"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ]
+          },
+          "fontSize": {
+            "display-hero-mobile": [
+              "34px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "title-lg": [
+              "18px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg-mobile": [
+              "26px",
+              {
+                "lineHeight": "32px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-caps": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "15px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-lg": [
+              "32px",
+              {
+                "lineHeight": "38px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "display-hero": [
+              "48px",
+              {
+                "lineHeight": "54px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "14px",
+              {
+                "lineHeight": "18px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "22px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "500"
+              }
+            ],
+            "body-sm": [
+              "13px",
+              {
+                "lineHeight": "18px",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "17px",
+              {
+                "lineHeight": "26px",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col justify-between">
+<!-- TOP APP BAR (Shared Component JSON execution) -->
+<header class="sticky top-0 z-50 w-full bg-surface/85 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-5 py-3 max-w-screen-md mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="fitness_center">fitness_center</span>
+<span class="font-headline-md text-headline-md tracking-tight font-bold text-primary">GYM ELITE</span>
+</div>
+<a class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all shadow-sm flex items-center gap-1.5" href="#agenda">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<main class="flex-grow max-w-screen-md mx-auto w-full px-5 pb-16 space-y-12">
+<!-- 1. ATENCIÓN (Hero Section) -->
+<section class="pt-6 flex flex-col gap-5">
+<!-- Badge de Credencial -->
+<div class="inline-flex items-center self-start gap-1.5 bg-surface-container px-3.5 py-1.5 rounded-full border border-primary/10 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">
+          ✦ Acondicionamiento Físico 1 a 1 · Sedes Boutique Bogotá &amp; Medellín
+        </span>
+</div>
+<!-- Titular H1 de Impacto -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface font-semibold tracking-tight text-balance">
+        Tu mejor versión física, fuerte, estética y sin lesiones en Colombia.
+      </h1>
+<!-- Subtítulo de Resultado Específico -->
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal leading-relaxed">
+        Entrenamiento personalizado 1 a 1 en suites privadas insonorizadas. Diagnóstico biomecánico y nutrición clínica diseñada a tu medida sin dietas extremas.
+      </p>
+<!-- Imagen Hero con Tarjeta Flotante -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(0,60,54,0.08)] border border-primary/10 aspect-[4/3] bg-surface-container-low group">
+<img alt="Entrenamiento personalizado 1 a 1 en Gym Elite Colombia" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1VpqN4w5NxV3D4XlQFjzesz5T24qywkiug-fUdmXdcxwMgtiMW2LFR0rruoXlW5_7cWJePw7cONJ19V7ADBoQsSSwgb4qIpWTgiLCCEiziGad7zbZLFvP9J5lndaiGj63ljHwH4PDrqzV17LF2xQgueD7wwyYFJfx1z7HAtlbesDt5BCMHvFn3Wq77f9BYpxLy7Z4NjjKtmuirfskMVDctkiqG8sJ2HF6PiGzm1y8TcjTjEkaYFC0AgMw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<!-- Tarjeta Flotante con efecto glassmorphism -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-3.5 rounded-lg border border-surface-container-lowest/40 flex items-center justify-between shadow-lg">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-xl" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<p class="font-title-lg text-title-lg text-on-surface leading-tight">Metodología Elite</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">100% Personalizado en Suite Privada</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">VIP</span>
+</div>
+</div>
+<!-- CTA Principal de Alto Impacto -->
+<div class="pt-2 flex flex-col gap-3">
+<a class="w-full h-14 bg-primary-container text-on-primary rounded-full flex items-center justify-center gap-2 font-title-lg text-title-lg hover:opacity-95 active:scale-95 transition-all shadow-[0_12px_36px_-4px_rgba(0,122,110,0.22)] text-center px-4" href="#agenda">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_month">calendar_month</span>
+<span>Agendar ahora mi valoración física y clínica</span>
+</a>
+<!-- Micro-credenciales de Seguridad -->
+<div class="flex items-center justify-center gap-2 text-center text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-base" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- Fila de 3 Sellos de Confianza (Bento Micro-Cards) -->
+<div class="grid grid-cols-3 gap-2.5 pt-2">
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-primary/10 flex flex-col items-center text-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="person_play">person_play</span>
+<span class="font-label-caps text-label-caps text-on-surface">Evaluación 1 a 1</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-primary/10 flex flex-col items-center text-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-caps text-label-caps text-on-surface">Bioseguridad &amp; Confort</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg border border-primary/10 flex flex-col items-center text-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="pin_drop">pin_drop</span>
+<span class="font-label-caps text-label-caps text-on-surface">Bogotá &amp; Medellín</span>
+</div>
+</div>
+</section>
+<!-- 2. INTERÉS (Problema Real + Proceso en 3 Pasos) -->
+<section class="pt-6 space-y-6" id="metodo">
+<!-- Pain Point Card -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-primary/10 relative overflow-hidden">
+<div class="absolute -top-6 -right-6 w-24 h-24 bg-primary-fixed/20 rounded-full blur-2xl"></div>
+<div class="inline-flex items-center gap-1 text-primary font-label-caps text-label-caps mb-2">
+<span class="material-symbols-outlined text-base" data-icon="error">error</span>
+<span>EL PROBLEMA ACTUAL</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mb-3">
+          ¿Cansado de pagar membresías donde entrenas solo, sin técnica y sin ver resultados?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Gimnasios abarrotados, rutinas genéricas de fotocopia y dolores lumbares que frustran la constancia. En Gym Elite entrenas en suites privadas con supervisión biomecánica médica constante para que cada minuto rinda frutos.
+        </p>
+</div>
+<!-- Proceso Transparente en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-left">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">NUESTRO PROTOCOLO MÉDICO</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Tu camino metódico hacia la excelencia</h3>
+</div>
+<div class="grid gap-3.5">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-primary/10 shadow-[0_4px_20px_-2px_rgba(0,60,54,0.04)] relative">
+<div class="flex items-start gap-4">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary/30 font-bold leading-none">01</span>
+<div class="space-y-1.5 flex-1">
+<h4 class="font-title-lg text-title-lg text-on-surface">Valoración Funcional &amp; Composición Corporal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Diagnóstico de postura, movilidad, masa muscular y grasa con bioimpedancia médica de precisión clínica.
+                </p>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded text-primary font-label-caps text-label-caps mt-1">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza absoluta de tu punto de partida</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-primary/10 shadow-[0_4px_20px_-2px_rgba(0,60,54,0.04)] relative">
+<div class="flex items-start gap-4">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary/30 font-bold leading-none">02</span>
+<div class="space-y-1.5 flex-1">
+<h4 class="font-title-lg text-title-lg text-on-surface">Plan de Entrenamiento &amp; Hábitos a Tu Medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Rutina progresiva adaptada a tu agenda ejecutiva, nivel actual y objetivos sin sobrecargas lesivas.
+                </p>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded text-primary font-label-caps text-label-caps mt-1">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Adherencia real sin perder tiempo ni energía</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-primary/10 shadow-[0_4px_20px_-2px_rgba(0,60,54,0.04)] relative">
+<div class="flex items-start gap-4">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary/30 font-bold leading-none">03</span>
+<div class="space-y-1.5 flex-1">
+<h4 class="font-title-lg text-title-lg text-on-surface">Transformación Visual &amp; Acompañamiento Continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Sesiones guiadas paso a paso con ajuste milimétrico de técnica, mediciones periódicas y reprogramación mensual.
+                </p>
+<div class="inline-flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded text-primary font-label-caps text-label-caps mt-1">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Resultados visibles, tonificados y sostenibles</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center pt-2">
+<a class="font-body-md text-body-md text-primary font-semibold hover:underline inline-flex items-center gap-1" href="https://wa.me/573134032893" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre tu caso particular? Consulta con nuestro equipo</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. DESEO (Métricas Comprobadas + 4 Beneficios + Testimonios) -->
+<section class="pt-4 space-y-8" id="sedes">
+<!-- Grid de Métricas de Confianza -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 text-center flex flex-col justify-center items-center shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">+10 Años</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">De Trayectoria</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 text-center flex flex-col justify-center items-center shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">+4.500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Vidas Transformadas</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 text-center flex flex-col justify-center items-center shadow-em">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">99.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Satisfacción Verificada</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 text-center flex flex-col justify-center items-center shadow-sm">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">100% NSCA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Entrenadores Pro</span>
+</div>
+</div>
+<!-- 4 Beneficios de Resultado Tangible -->
+<div class="space-y-4">
+<div class="text-left">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">RESULTADOS CLÍNICOS</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Bienestar que se nota en tu cuerpo y en tu mente</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="local_fire_department">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface text-sm font-bold">Pérdida de grasa y tonificación</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sin efecto rebote mediante estímulo metabólico progresivo.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface text-sm font-bold">Cero dolor lumbar y postural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Biomecánica terapéutica ideal para jornadas ejecutivas de oficina.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface text-sm font-bold">Energía y rendimiento mental</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Optimización mitocondrial y vigor físico para tu día a día.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-primary/10 flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="lock_clock">lock_clock</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface text-sm font-bold">Acompañamiento VIP &amp; Privacidad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Flexibilidad horaria sin interrupciones en suites cerradas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="space-y-4">
+<div class="text-left">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">CASOS DE ÉXITO</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Historias de clientes en Bogotá y Medellín</h3>
+</div>
+<div class="space-y-3">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-low p-5 rounded-xl border border-primary/10 relative">
+<div class="flex text-amber-500 mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Tenía 3 años con dolores constantes en la zona lumbar. En Gym Elite me corrigieron la técnica desde el día uno y bajé 7 kilos de grasa con total energía."
+            </p>
+<div class="mt-4 pt-3 border-t border-surface-variant flex items-center justify-between">
+<div>
+<p class="font-title-lg text-title-lg text-sm text-on-surface">Camila Morales</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Directora Financiera · Bogotá (El Nogal)</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-low p-5 rounded-xl border border-primary/10 relative">
+<div class="flex text-amber-500 mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "La privacidad y atención médica hacen una diferencia brutal. Es la hora más productiva y saludable de mi semana."
+            </p>
+<div class="mt-4 pt-3 border-t border-surface-variant flex items-center justify-between">
+<div>
+<p class="font-title-lg text-title-lg text-sm text-on-surface">Carlos Restrepo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Empresario Tech · Medellín (El Poblado)</p>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN (Embudo de Captación / Formulario de Conversión) -->
+<section class="pt-4 scroll-mt-20" id="agenda">
+<!-- Banner de Escasez Ética -->
+<div class="bg-primary/10 border border-primary/20 rounded-xl p-3.5 mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="alarm">alarm</span>
+<p class="font-body-sm text-body-sm text-primary font-semibold leading-tight">
+          Cupos limitados por semana para entrenamiento 1 a 1 en suites privadas. Garantizamos exclusividad por franja horaria.
+        </p>
+</div>
+<!-- Card del Formulario -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-primary/15 shadow-[0_12px_36px_-4px_rgba(0,122,110,0.12)]">
+<div class="mb-5 text-left">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">EVALUACIÓN SIN COSTO</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold mt-1">
+            Empieza hoy tu transformación con rigor y confort
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+            Diligencia tus datos y un especialista coordinará tu sesión de diagnóstico 1 a 1 en Rosales o El Poblado.
+          </p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido recibida con éxito. Un especialista de Gym Elite se comunicará contigo vía WhatsApp en breve.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">Nombre completo *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg" data-icon="badge">badge</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl pl-10 pr-4 py-3 text-on-surface font-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors" placeholder="Ej. Andrés Morales" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">WhatsApp o Celular (+57) *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg" data-icon="phone_iphone">phone_iphone</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl pl-10 pr-4 py-3 text-on-surface font-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors" placeholder="Ej. 310 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Objetivo -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5">¿Qué objetivo te interesa alcanzar? *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg" data-icon="track_changes">track_changes</span>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl pl-10 pr-4 py-3 text-on-surface font-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors appearance-none" required="">
+<option disabled="" selected="" value="">Selecciona tu prioridad</option>
+<option value="grasa">Pérdida de grasa &amp; Definición</option>
+<option value="tonificacion">Tonificación muscular &amp; Fuerza</option>
+<option value="postura">Salud postural / Alivio sin dolor</option>
+<option value="rendimiento">Rendimiento integral para ejecutivos</option>
+</select>
+</div>
+</div>
+<!-- Botón de Envío Principal -->
+<button class="w-full h-14 bg-primary text-on-primary rounded-full font-title-lg text-title-lg flex items-center justify-center gap-2 hover:opacity-95 active:scale-95 transition-all shadow-[0_12px_36px_-4px_rgba(0,122,110,0.22)] mt-2" type="submit">
+<span>Quiero mi valoración gratuita ✨</span>
+</button>
+</form>
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-surface-container-high"></div>
+<span class="flex-shrink mx-4 text-outline font-label-caps text-label-caps">O ATENCIÓN INMEDIATA</span>
+<div class="flex-grow border-t border-surface-container-high"></div>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full py-3.5 border-1.5 border-primary text-primary bg-primary/5 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary/10 active:scale-95 transition-all text-center" href="https://wa.me/573134032893" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 313 403 2893)</span>
+</a>
+<!-- Nota de Confianza Legal -->
+<div class="mt-4 pt-3 flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm leading-tight border-t border-surface-container">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5" data-icon="lock">lock</span>
+<span>Tus datos están 100% protegidos bajo secreto profesional y Ley 1581 de Datos Personales de Colombia. Cero spam.</span>
+</div>
+</div>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (Acordeón interactivo) -->
+<section class="pt-4 space-y-4">
+<div class="text-left">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">RESOLUCIÓN DE DUDAS</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-2.5" id="faq-container">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-primary/10 overflow-hidden shadow-sm transition-colors [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-lg text-title-lg text-sm text-on-surface select-none">
+<span>¿Si nunca he entrenado o tengo lesiones puedo empezar?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-surface-container pt-3">
+            Absolutamente. De hecho, más del 60% de nuestros usuarios llegan con hernias, molestias articulares o tras años de sedentarismo. Nuestra valoración médica inicial evalúa cada patrón de movimiento para adaptar las cargas con total seguridad.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-primary/10 overflow-hidden shadow-sm transition-colors [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-lg text-title-lg text-sm text-on-surface select-none">
+<span>¿Qué incluye exactamente la valoración inicial?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-surface-container pt-3">
+            Incluye escaneo corporal de bioimpedancia médica segmentada (masa magra, grasa visceral, agua corporal), test biomecánico de rango articular y definición de plan estratégico con tu entrenador asignado.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-primary/10 overflow-hidden shadow-sm transition-colors [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-lg text-title-lg text-sm text-on-surface select-none">
+<span>¿Cuentan con asesoría nutricional?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-surface-container pt-3">
+            Sí, todos nuestros programas integran pautas nutricionales clínicas basadas en hábitos sostenibles para ejecutivos, sin planes restrictivos ni suplementación obligatoria innecesaria.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl border border-primary/10 overflow-hidden shadow-sm transition-colors [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer font-title-lg text-title-lg text-sm text-on-surface select-none">
+<span>¿Dónde están ubicadas las suites boutique en Bogotá y Medellín?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-on-surface-variant font-body-md text-body-md border-t border-surface-container pt-3">
+            En Bogotá contamos con sede en Rosales / El Nogal (Zona Financiera Calle 72), y en Medellín en el corazón de El Poblado (sector Provenza/Castropol). Ambas sedes cuentan con parqueadero privado y valet parking.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component JSON execution) -->
+<footer class="bg-surface-container-low w-full">
+<div class="flex flex-col gap-6 px-5 pt-8 pb-28 w-full max-w-screen-md mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-primary">GYM ELITE</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Acondicionamiento físico de precisión &amp; suites privadas 1 a 1.</p>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container border border-primary/20 text-primary font-body-sm text-body-sm flex items-center gap-1.5 hover:text-primary transition-colors" href="https://wa.me/573134032893" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+<span>VIP Concierge WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-on-surface-variant font-label-caps text-label-caps">
+<a class="hover:text-primary transition-colors active:underline flex items-center gap-1.5" href="#sedes">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>Sede Bogotá Rosales</span>
+</a>
+<a class="hover:text-primary transition-colors active:underline flex items-center gap-1.5" href="#sedes">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>Sede Medellín El Poblado</span>
+</a>
+<a class="hover:text-primary transition-colors active:underline flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-base" data-icon="description">description</span>
+<span>Política de Tratamiento de Datos (Habeas Data)</span>
+</a>
+<a class="hover:text-primary transition-colors active:underline flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-base" data-icon="gavel">gavel</span>
+<span>Términos y Condiciones</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-4 border-t border-surface-container">
+        © 2024 Gym Elite Colombia S.A.S. Todos los derechos reservados. Sujeto a supervisión de la SIC.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component JSON execution) -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_20px_-2px_rgba(0,60,54,0.06)] md:hidden">
+<!-- Item 1: Suites (Activo) -->
+<a class="flex flex-col items-center justify-center text-primary font-semibold hover:text-primary transition-colors active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="domain" style="font-variation-settings: 'FILL' 1;">domain</span>
+<span class="font-label-caps text-label-caps mt-0.5">Suites</span>
+</a>
+<!-- Item 2: Método -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors active:scale-95 duration-150" href="#metodo">
+<span class="material-symbols-outlined text-2xl" data-icon="vital_signs">vital_signs</span>
+<span class="font-label-caps text-label-caps mt-0.5">Método</span>
+</a>
+<!-- Item 3: Sedes -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors active:scale-95 duration-150" href="#sedes">
+<span class="material-symbols-outlined text-2xl" data-icon="location_on">location_on</span>
+<span class="font-label-caps text-label-caps mt-0.5">Sedes</span>
+</a>
+<!-- Item 4: VIP Concierge -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant font-medium hover:text-primary transition-colors active:scale-95 duration-150" href="https://wa.me/573134032893" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+<span class="font-label-caps text-label-caps mt-0.5">VIP Concierge</span>
+</a>
+</nav>
+</body></html>
