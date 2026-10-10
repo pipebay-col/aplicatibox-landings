@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<title>Body Laser Bucaramanga | Medicina Estética &amp; Láser de Alta Precisión</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Container & Forms plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "outline": "#6e7977",
+            "on-primary-fixed": "#00201c",
+            "secondary-container": "#aaf0e1",
+            "secondary-fixed": "#aaf0e1",
+            "inverse-primary": "#7ad7c8",
+            "primary": "#005f55",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#cbfadd",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#005048",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#7ad7c8",
+            "on-secondary-container": "#286f64",
+            "on-surface": "#101e1b",
+            "inverse-surface": "#253330",
+            "on-background": "#101e1b",
+            "surface-container-high": "#dcece7",
+            "inverse-on-surface": "#e4f4ef",
+            "on-tertiary-fixed-variant": "#254f3a",
+            "on-secondary": "#ffffff",
+            "surface-container": "#e1f1ec",
+            "surface-tint": "#006a60",
+            "tertiary-fixed": "#bfedd1",
+            "surface-dim": "#cdded9",
+            "surface-variant": "#d6e6e1",
+            "surface": "#edfdf8",
+            "surface-container-highest": "#d6e6e1",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#00201b",
+            "on-error": "#ffffff",
+            "on-primary-container": "#a8fff0",
+            "surface-container-low": "#e7f7f2",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#002113",
+            "outline-variant": "#bdc9c6",
+            "on-surface-variant": "#3e4947",
+            "tertiary-container": "#4b755e",
+            "primary-container": "#007a6e",
+            "background": "#edfdf8",
+            "primary-fixed": "#96f3e4",
+            "secondary": "#21695e",
+            "tertiary-fixed-dim": "#a4d1b6",
+            "on-secondary-fixed-variant": "#005046",
+            "tertiary": "#335c47",
+            "surface-bright": "#edfdf8"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "label-md": ["Manrope"],
+            "label-sm": ["Manrope"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "title-lg": ["Manrope"],
+            "display": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "display-mobile": ["Playfair Display"],
+            "label-lg": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "title-md": ["Manrope"]
+          },
+          "fontSize": {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .badge-glow {
+      box-shadow: 0 4px 18px -2px rgba(0, 122, 110, 0.18);
+    }
+    .card-luminous {
+      box-shadow: 0px 4px 20px -2px rgba(0, 122, 110, 0.05), 0px 1px 3px 0px rgba(28, 42, 39, 0.02);
+    }
+    .card-luminous-hover:hover {
+      box-shadow: 0px 12px 32px -4px rgba(0, 122, 110, 0.09), 0px 4px 8px -2px rgba(28, 42, 39, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT: TopAppBar (Docked Top Navigation)                       -->
+<!-- ========================================================================= -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/85 backdrop-blur-md dark:bg-inverse-surface/85 border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-4 py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed font-semibold tracking-tight">Body Laser Bucaramanga</span>
+</div>
+<!-- Trailing Action -->
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full shadow-sm hover:shadow transition-all duration-200 active:scale-95 flex items-center gap-1.5" href="#agenda-seccion">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN CANVAS (MOBILE-OPTIMIZED CONTAINER ~390px - max-w-md / 430px)       -->
+<!-- ========================================================================= -->
+<main class="w-full max-w-md mx-auto px-4 pt-4 pb-28 space-y-10">
+<!-- 1. A - ATENCIÓN (Hero Section) -->
+<section class="space-y-4 pt-1">
+<!-- Badge superior de credencial real -->
+<div class="inline-flex items-center gap-2 bg-surface-container px-3.5 py-1.5 rounded-full border border-outline-variant/40 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-tight">
+          Tecnología Láser Médica Certificada · Cabecera del Llano, Bucaramanga · Habilitación MinSalud Santander
+        </span>
+</div>
+<!-- Titular H1 de beneficio claro en 3 segundos -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight font-headline-lg-mobile">
+        Tu piel y silueta en su versión más armónica, con tecnología láser médica en Bucaramanga.
+      </h1>
+<!-- Subtítulo específico del resultado -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Tratamientos no invasivos de rejuvenecimiento facial, depilación láser médica definitiva y moldeamiento corporal de alta precisión con tecnología avalada por INVIMA y FDA. Resultados naturales sin quirófano ni incapacidad.
+      </p>
+<!-- Fotografía hero principal -->
+<div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 card-luminous bg-surface-container-lowest">
+<img alt="Paciente en consultorio médico Body Laser Bucaramanga" class="w-full h-[360px] object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1WI4JWrwwiAh2BzYWFCL3TGYt0IZwNUMCZK2CQ01P2UDh-NQ5vAOfMWTNgUTJVorNU7z84Fw2Rv-q4ABDEPyaDUxIrH26WQMF9sxG8-ouRJCN1sc-ipPNeCQzap9XBzocqLUolXtEvaJPXkLYyaDfESTvHrXKeoKl2ph2jKbDSJroi8FJpHMU7QUQ_F3W2fLXmydkRUOdYBxBUlJHIYyUcVkjyOKVlAzC_hdZiV8tQU1g0qfrVPpXQ307M"/>
+<!-- Badge flotante -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md py-2.5 px-3.5 rounded-xl border border-outline-variant/40 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">100% Armonía &amp; Firmeza Natural · Sede Cabecera</span>
+</div>
+<span class="material-symbols-outlined text-outline text-lg" data-icon="pin_drop">pin_drop</span>
+</div>
+</div>
+<!-- CTA Principal de alto contraste -->
+<div class="pt-2 space-y-2.5">
+<a class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-lg badge-glow active:scale-[0.98] transition-transform duration-150" href="#agenda-seccion">
+<span>Agendar ahora mi valoración médica</span>
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today">calendar_today</span>
+</a>
+<!-- Micro-credencial inmediata debajo del botón -->
+<p class="text-center font-label-sm text-label-sm text-outline flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</p>
+</div>
+<!-- Fila de 3 micro-badges rápidos -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">Aparatología INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="stethoscope">stethoscope</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">Diagnóstico Facial &amp; Corporal 1 a 1</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-2.5 text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="location_city">location_city</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">Sede Boutique Cabecera</span>
+</div>
+</div>
+</section>
+<!-- 2. I - INTERÉS (Problema del cliente y Proceso en 3 pasos) -->
+<section class="space-y-6">
+<!-- Diagnóstico / Nombra el problema real -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/40 card-luminous space-y-3">
+<div class="inline-flex items-center gap-1.5 bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="health_and_safety">health_and_safety</span>
+<span>Honestidad Médica &amp; Bioseguridad</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+          ¿Temes tratamientos dolorosos, que dejen marcas o no entreguen los resultados prometidos?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Comprendemos el temor fundado a quemaduras, pigmentaciones residuales o inversiones frustradas en cabinas improvisadas. En Body Laser Bucaramanga aplicamos protocolos médicos rigurosos, calibrados por dermatólogos con micro-precisión óptica y bioestimulación celular. Tu bienestar epidérmico está blindado: confort continuo, cero cicatrices y total previsibilidad clínica.
+        </p>
+</div>
+<!-- Nuestro Método Clínico en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-semibold">Ruta Terapéutica Confiable</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Nuestro Método Clínico en 3 Pasos</h2>
+</div>
+<div class="space-y-3">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 flex items-start gap-3.5 card-luminous">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center shrink-0">01</span>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Valoración y Mapeo Cutáneo Láser 3D</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico milimétrico con análisis de capas dérmicas, fototipo y niveles de elastina.</p>
+<div class="pt-1 flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza clínica y expectativas 100% reales desde el primer día.</span>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 flex items-start gap-3.5 card-luminous">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center shrink-0">02</span>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Plan Médico Personalizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Combinación precisa de tecnología láser según tu tipo de piel con parámetros calibrados y presupuesto cerrado.</p>
+<div class="pt-1 flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Cero costos ocultos ni tratamientos genéricos.</span>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 flex items-start gap-3.5 card-luminous">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center shrink-0">03</span>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface">Aplicación Segura y Resultado Visible</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sesión confortable con enfriamiento epidérmico continuo para que retomes tu rutina de inmediato.</p>
+<div class="pt-1 flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Reincorporación instantánea a tu día a día en Bucaramanga sin incapacidad.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Enlace rápido de asistencia -->
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md hover:underline underline-offset-4" href="https://wa.me/573166466403?text=Hola,%20tengo%20dudas%20sobre%20mi%20caso%20particular%20en%20Body%20Laser">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Escríbenos por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. D - DESEO (Prueba Social, Resultados y Métricas) -->
+<section class="space-y-6">
+<!-- Métricas de confianza en grid de 4 tarjetas limpias -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-3.5 text-center card-luminous">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">+9 Años</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">De Experiencia Clínica</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-3.5 text-center card-luminous">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">+6.200</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pacientes Satisfechos en Santander</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-3.5 text-center card-luminous">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">100%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aparatología con INVIMA</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-3.5 text-center card-luminous">
+<div class="font-headline-sm text-headline-sm text-primary font-bold flex items-center justify-center gap-1">
+<span>4.9</span>
+<span class="material-symbols-outlined text-amber-500 text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Google Reviews</div>
+</div>
+</div>
+<!-- Resultados que se sienten en tu confianza y se notan en el espejo -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant/40 card-luminous space-y-4">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-semibold">Transformación Visible</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Resultados que se sienten en tu confianza y se notan en el espejo</h2>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Armonía y Luminosidad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cutis fresco, uniforme y rejuvenecido sin sensación de rigidez ni alterar tus expresiones naturales.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" data-icon="water_drop">water_drop</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Bioestimulación Profunda</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reactivación autóloga de colágeno y elastina dérmica para un tensado progresivo y elasticidad duradera.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" data-icon="timer_off">timer_off</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Cero Reposo en Cama</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Procedimientos diseñados para ejecutarse en 45 minutos. Regreso inmediato a tu jornada laboral o social en Bucaramanga.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5 shrink-0" data-icon="medical_information">medical_information</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Acompañamiento VIP</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Controles de evolución médica periódicos incluidos sin costo adicional para monitorear tu progreso.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios reales y verificados -->
+<div class="space-y-3">
+<h3 class="font-title-lg text-title-lg text-on-surface text-center">Experiencias de Nuestras Pacientes</h3>
+<div class="space-y-3">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 card-luminous space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Carolina Mantilla</p>
+<p class="font-label-sm text-label-sm text-outline">Cabecera del Llano · Rejuvenecimiento Láser</p>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Me daba pánico hacerme algo en la cara. La doctora en Cabecera me explicó cada parámetro y no dolió absolutamente nada. Mi piel recuperó una luz y frescura impresionante."
+            </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 card-luminous space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Silvia Fernanda Gómez</p>
+<p class="font-label-sm text-label-sm text-outline">Ruitoque Condominio · Depilación Láser Médica</p>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Venía de una mala experiencia en otra clínica donde sentía que me quemaban. Aquí el sistema de enfriamiento es un cambio total. Cero foliculitis y resultados desde la 2da cita."
+            </p>
+</div>
+<!-- Testimonio 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 card-luminous space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Juan Camilo Prada</p>
+<p class="font-label-sm text-label-sm text-outline">Floridablanca · Moldeamiento &amp; Tensado</p>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Puntualidad impecable, parqueadero cómodo en Cabecera y una atención médica que transmite tranquilidad total. La definición en el abdomen es notable."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. A - ACCIÓN (Formulario de Conversión + WhatsApp Directo) -->
+<section class="space-y-4 scroll-mt-20" id="agenda-seccion">
+<div class="bg-surface-container-lowest border-2 border-primary/20 rounded-3xl p-5 shadow-xl relative overflow-hidden">
+<!-- Banner de urgencia ética -->
+<div class="bg-secondary-container/80 -mx-5 -mt-5 px-5 py-2.5 mb-4 border-b border-secondary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="event_seat">event_seat</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">
+            Cupos limitados de valoración esta semana en Cabecera del Llano
+          </span>
+</div>
+<div class="space-y-1 mb-4 text-center">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Empieza hoy tu transformación con total confianza</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Agenda tu consulta de valoración dérmica personalizada con nuestros médicos especialistas. Te responderemos en menos de 24 horas laborables.
+          </p>
+</div>
+<!-- Formulario minimalista de 3 campos -->
+<form class="space-y-3.5" id="booking-form" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Body Laser Bucaramanga se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo 1: Nombre y Apellido -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface block font-medium" for="nombre">Nombre y Apellido</label>
+<div class="relative">
+<input class="w-full h-12 bg-background border border-outline-variant/60 rounded-xl px-3.5 pl-10 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/70" id="nombre" placeholder="ej. Mariana Restrepo" required="" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-xl" data-icon="person">person</span>
+</div>
+</div>
+<!-- Campo 2: WhatsApp o Celular -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface block font-medium" for="whatsapp">WhatsApp o Celular (+57)</label>
+<div class="relative">
+<input class="w-full h-12 bg-background border border-outline-variant/60 rounded-xl px-3.5 pl-10 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/70" id="whatsapp" pattern="[0-9]{10}" placeholder="316 000 0000" required="" type="tel"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-xl" data-icon="phone_iphone">phone_iphone</span>
+</div>
+</div>
+<!-- Campo 3: Tratamiento -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface block font-medium" for="tratamiento">¿Qué tratamiento te interesa?</label>
+<div class="relative">
+<select class="w-full h-12 bg-background border border-outline-variant/60 rounded-xl px-3.5 pl-10 pr-8 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all appearance-none" id="tratamiento">
+<option value="rejuvenecimiento">Rejuvenecimiento Facial Láser</option>
+<option value="depilacion">Depilación Láser Médica Definitiva</option>
+<option value="moldeamiento">Moldeamiento Corporal &amp; Tensado</option>
+<option value="integral">Valoración Médica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-xl" data-icon="spa">spa</span>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline text-xl pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Botón CTA principal de envío -->
+<button class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-lg badge-glow active:scale-[0.98] transition-transform duration-150 mt-2" type="submit">
+<span>Quiero mi valoración médica ✨</span>
+</button>
+</form>
+<!-- Separador -->
+<div class="relative my-4 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/40"></div></div>
+<span class="relative bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline">o si prefieres atención inmediata:</span>
+</div>
+<!-- Botón secundario directo a WhatsApp -->
+<a class="w-full h-12 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform duration-150" href="https://wa.me/573166466403?text=Hola%20Body%20Laser,%20deseo%20agendar%20mi%20valoración%20médica%20en%20Cabecera." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 646 6403)</span>
+</a>
+<!-- Microcopy de seguridad -->
+<p class="text-center font-label-sm text-label-sm text-outline mt-3 leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- 5. SECCIÓN TRANSPARENCIA / FAQ -->
+<section class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-semibold">Resolución de Dudas</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/40 overflow-hidden card-luminous transition-all">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none font-title-md text-title-md text-on-surface select-none">
+<span>¿El tratamiento con tecnología láser genera dolor o quemaduras?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-200" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20">
+            Nuestros equipos médicos cuentan con cabezales de zafiro criogénico con enfriamiento subcero continuo. Esto amortigua la sensación de calor y neutraliza el riesgo de quemaduras. Solo sentirás un cosquilleo suave y tolerable.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/40 overflow-hidden card-luminous transition-all">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none font-title-md text-title-md text-on-surface select-none">
+<span>¿Cuántas sesiones se requieren para ver cambios definitivos?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-200" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20">
+            Para rejuvenecimiento y firmeza notarás luminosidad inmediata desde la primera sesión; para depilación definitiva o remodelación profunda el protocolo estándar varía entre 6 y 8 sesiones según tu fototipo cutáneo y diagnóstico inicial.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/40 overflow-hidden card-luminous transition-all">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none font-title-md text-title-md text-on-surface select-none">
+<span>¿Qué cuidados posteriores debo tener tras una sesión?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-200" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20">
+            Los procedimientos no requieren incapacidad. Recomendamos uso constante de fotoprotector solar SPF 50+, hidratación dérmica y evitar exposición solar directa prolongada o saunas durante las primeras 48 horas.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/40 overflow-hidden card-luminous transition-all">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none font-title-md text-title-md text-on-surface select-none">
+<span>¿Dónde están ubicados en Bucaramanga y cuentan con parqueadero?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-200" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20">
+            Estamos ubicados en el sector médico exclusivo de Cabecera del Llano en Bucaramanga. Contamos con bahía de parqueo privado vigilado y acceso directo para tu total discreción y comodidad.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT: Footer (Legal / Habilitación / Enlaces RETHUS)          -->
+<!-- ========================================================================= -->
+<footer class="docked full-width bg-surface-container-lowest dark:bg-surface-container-high border-t border-outline-variant/30 dark:border-outline/20">
+<div class="flex flex-col items-center justify-center w-full px-5 py-8 pb-24 text-center max-w-4xl mx-auto space-y-4">
+<!-- Brand Logo / Headline -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed font-semibold">Body Laser Bucaramanga</span>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-4 font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-outline underline-offset-4 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 rounded-md" href="#agenda-seccion">
+          Política de Tratamiento de Datos (Ley 1581)
+        </a>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<a class="text-on-surface-variant dark:text-outline underline-offset-4 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 rounded-md" href="#agenda-seccion">
+          Consentimiento Informado Médico
+        </a>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<a class="text-on-surface-variant dark:text-outline underline-offset-4 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 rounded-md" href="#agenda-seccion">
+          Directorio Médico RETHUS
+        </a>
+</div>
+<!-- Copyright text -->
+<p class="font-body-sm text-body-sm text-outline leading-relaxed max-w-2xl">
+        © 2024 Body Laser Bucaramanga. IPS Habilitada por la Secretaría de Salud de Santander - Código de Habilitación No. 6800100000. Vigilado Supersalud. Cabecera del Llano, Bucaramanga, Colombia.
+      </p>
+</div>
+</footer>
+<!-- ========================================================================= -->
+<!-- SHARED COMPONENT: BottomNavBar (Fixed Navigation Shell for Mobile)        -->
+<!-- Contextual active selection: "Valoración" matches conversion landing goal -->
+<!-- ========================================================================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md border-t border-outline-variant/30 dark:border-outline/20 shadow-lg dark:shadow-none">
+<!-- Item 1: Tratamientos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 font-label-sm text-label-sm hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors duration-200 active:scale-95" href="#agenda-seccion">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="medical_services">medical_services</span>
+<span>Tratamientos</span>
+</a>
+<!-- Item 2: Valoración (ACTIVE MATCH for this conversion landing page) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-4 py-1.5 font-label-sm text-label-sm active:scale-95 transition-transform duration-150" href="#agenda-seccion">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span>Valoración</span>
+</a>
+<!-- Item 3: Contacto (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1.5 font-label-sm text-label-sm hover:bg-surface-container dark:hover:bg-surface-container-high transition-colors duration-200 active:scale-95" href="https://wa.me/573166466403" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl mb-0.5" data-icon="chat">chat</span>
+<span>Contacto</span>
+</a>
+</nav>
+</body></html>

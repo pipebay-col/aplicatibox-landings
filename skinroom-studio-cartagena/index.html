@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skinroom Studio Cartagena · Clínica Estética Facial &amp; Bienestar</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#1a1c1a",
+            "outline": "#6d7a77",
+            "inverse-primary": "#6bd8cb",
+            "tertiary-fixed-dim": "#a2d0c6",
+            "on-tertiary-container": "#f4fffb",
+            "on-primary": "#ffffff",
+            "on-error": "#ffffff",
+            "primary-container": "#008378",
+            "error-container": "#ffdad6",
+            "surface-tint": "#006a61",
+            "on-secondary-container": "#00476e",
+            "surface-container": "#efeeeb",
+            "on-primary-fixed": "#00201d",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1a1c1a",
+            "on-primary-container": "#f4fffc",
+            "tertiary-container": "#517d75",
+            "on-surface-variant": "#3d4947",
+            "background": "#faf9f6",
+            "on-primary-fixed-variant": "#005049",
+            "surface": "#faf9f6",
+            "on-tertiary-fixed": "#00201c",
+            "on-secondary-fixed-variant": "#004b73",
+            "surface-variant": "#e3e2e0",
+            "secondary-container": "#5bb8fe",
+            "on-tertiary-fixed-variant": "#224e47",
+            "surface-dim": "#dbdad7",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#bcc9c6",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f4f3f1",
+            "surface-container-high": "#e9e8e5",
+            "on-secondary-fixed": "#001d31",
+            "inverse-on-surface": "#f2f1ee",
+            "surface-container-highest": "#e3e2e0",
+            "tertiary": "#38645c",
+            "primary-fixed": "#89f5e7",
+            "tertiary-fixed": "#bdece2",
+            "on-error-container": "#93000a",
+            "surface-bright": "#faf9f6",
+            "secondary-fixed-dim": "#93ccff",
+            "primary-fixed-dim": "#6bd8cb",
+            "primary": "#00685f",
+            "secondary-fixed": "#cce5ff",
+            "secondary": "#006398",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#2f312f"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.25rem",
+            "space-xs": "0.25rem",
+            "margin": "1.25rem",
+            "margin-desktop": "3.5rem",
+            "space-2xl": "4rem",
+            "gutter-desktop": "2rem",
+            "margin-tablet": "2rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1rem);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-tertiary-fixed selection:text-on-tertiary-fixed overflow-x-hidden">
+<!-- TOP APP BAR -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-5 py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-display-hero-mobile text-title-md text-primary tracking-tight font-bold">Skinroom Studio</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="bg-primary text-on-primary text-label-lg font-label-lg px-4 py-2 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="#agenda-section">
+          Agendar
+        </a>
+</div>
+</div>
+</header>
+<main class="max-w-xl mx-auto px-5 pt-4 pb-28 sm:max-w-2xl">
+<!-- ETAPA A: ATENCIÓN (Hero Section) -->
+<section class="space-y-6 pt-2">
+<!-- Credencial Médica Badge -->
+<div class="inline-flex items-center gap-2 bg-surface-container px-3.5 py-1.5 rounded-full border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-wider text-[10px]">
+          Habilitación Sanitaria DADIS Cartagena · Insumos Certificados INVIMA
+        </span>
+</div>
+<!-- Titular Principal -->
+<div class="space-y-3">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight leading-tight">
+          Tu piel en su versión más armónica y radiante, en el corazón de Cartagena.
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Tratamientos faciales no invasivos, hidrafaciales clínicos, micro-nutrición y bioestimulación cutánea personalizada en Bocagrande. Resultados visibles desde la primera sesión sin incapacidad laboral ni cambios artificiales.
+        </p>
+</div>
+<!-- Imagen Hero Destacada -->
+<div class="relative rounded-3xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-lowest">
+<img alt="Paciente radiante y relajada en la suite privada de Skinroom Studio Bocagrande con vista al mar Caribe" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3pAUelTPTfH0uBnqK8Nvz9eyfQRgb6dmUuOT5LehwWAwlTSDN6pa3umsPwzl9nf1r_7YSVTkOG_X3Oy_QT31sNZiOeFOocXjWM1HtBG5qInOfXx4-VFaVX9YxrG5yxNm9pX-Hjw0Ok6Qn3dznBBrugGgcGvdVW4CwyhJklQ5yofRa0BbcfGOuf--n9oSih8670NRGUa8NpG3C2R5r8E_mfhsUd7K9FrK8C6faVkB5Jvq0lBkjG931WWC5sFllKjh5EP-xWOlttU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl p-3 border border-outline-variant/30 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<p class="font-label-md text-label-md text-primary font-medium">
+            100% Glow Natural y Saludable · Sede Bocagrande con vista al mar
+          </p>
+</div>
+</div>
+<!-- Botón CTA Principal -->
+<div class="space-y-2.5 pt-1">
+<a class="w-full flex items-center justify-center gap-2 py-4 px-6 rounded-full bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container active:scale-95 transition-all text-center" href="#agenda-section">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+</a>
+<div class="flex items-center justify-center gap-1.5 text-outline text-label-md font-label-md text-center">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- Micro-Badges de Valor -->
+<div class="grid grid-cols-3 gap-2.5 pt-2">
+<div class="bg-surface-container-low rounded-2xl p-3 border border-outline-variant/30 text-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl block mx-auto" data-icon="medical_services">medical_services</span>
+<p class="font-label-md text-label-md text-on-surface font-medium leading-snug">Aparatología INVIMA &amp; FDA</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-3 border border-outline-variant/30 text-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl block mx-auto" data-icon="dermatology">dermatology</span>
+<p class="font-label-md text-label-md text-on-surface font-medium leading-snug">Diagnóstico Facial 1 a 1</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-3 border border-outline-variant/30 text-center space-y-1">
+<span class="material-symbols-outlined text-primary text-xl block mx-auto" data-icon="location_on">location_on</span>
+<p class="font-label-md text-label-md text-on-surface font-medium leading-snug">Sede Bocagrande Exclusiva</p>
+</div>
+</div>
+</section>
+<!-- ETAPA I: INTERÉS (Problema del cliente y Solución en 3 Pasos) -->
+<section class="mt-14 space-y-8">
+<!-- Sección de Empatía & Problema Real -->
+<div class="bg-surface-container-low rounded-3xl p-6 border border-outline-variant/40 space-y-3">
+<div class="inline-flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-lg" data-icon="shield">shield</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Cuidado Biomimético Especializado</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          ¿Temes tratamientos agresivos que irriten tu piel o alteren tus facciones?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          El sol caribeño, la intensa humedad y la salinidad de Cartagena exigen un enfoque diferente. En Skinroom entendemos el temor a quedar con rojeces extremas o volúmenes artificiales. Por eso, diseñamos protocolos no invasivos que respetan el manto hidrolipídico y revitalizan tu expresión natural sin tiempos de incapacidad.
+        </p>
+</div>
+<!-- Protocolo Clínico en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="text-primary font-label-caps text-label-caps uppercase tracking-wider">Metodología Comprobada</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tu Protocolo Clínico en 3 Pasos</h3>
+</div>
+<div class="space-y-3">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4.5 border border-outline-variant/30 shadow-sm flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 font-bold font-title-md">
+              01
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Valoración y Mapeo Cutáneo Digital</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Evaluamos niveles de deshidratación profunda, fotodaño caribeño y sensibilidad cutánea. 
+                <span class="text-primary font-semibold block mt-1">Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4.5 border border-outline-variant/30 shadow-sm flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 font-bold font-title-md">
+              02
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Plan Médico y Protocolo Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Combinamos aparatología médica de grado dermatológico y principios botánicos estériles. 
+                <span class="text-primary font-semibold block mt-1">Beneficio: Inversión transparente sin sobrecostos ocultos ni recetas genéricas.</span>
+</p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4.5 border border-outline-variant/30 shadow-sm flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 font-bold font-title-md">
+              03
+            </div>
+<div class="space-y-1">
+<h4 class="font-title-md text-title-md text-on-surface">Aplicación Delicada y Glow Inmediato</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Técnicas sutiles sin dolor ni agresión que devuelven tersura y luz a tu rostro. 
+                <span class="text-primary font-semibold block mt-1">Beneficio: Reincorporación inmediata a tu rutina y eventos en Cartagena sin rojeces.</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Enlace discreto WhatsApp -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-1.5 text-primary text-label-lg font-label-lg underline underline-offset-4 hover:text-primary-container" href="https://wa.me/573165839396?text=Hola,%20quisiera%20una%20consulta%20previa%20sobre%20los%20tratamientos%20en%20Skinroom%20Cartagena" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+            ¿Tienes dudas previas? Consulta directa con nuestro equipo médico por WhatsApp
+          </a>
+</div>
+</div>
+</section>
+<!-- ETAPA D: DESEO (Prueba Social, Cifras y Transformación) -->
+<section class="mt-14 space-y-8">
+<!-- Grid de Métricas de Confianza -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest rounded-2xl p-4 text-center border border-outline-variant/30 shadow-sm">
+<p class="font-headline-md text-headline-md text-primary font-semibold">+8 Años</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">De Trayectoria en Cartagena</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 text-center border border-outline-variant/30 shadow-sm">
+<p class="font-headline-md text-headline-md text-primary font-semibold">+4.500</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 text-center border border-outline-variant/30 shadow-sm">
+<p class="font-headline-md text-headline-md text-primary font-semibold">100%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Insumos INVIMA Aprobados</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-4 text-center border border-outline-variant/30 shadow-sm">
+<p class="font-headline-md text-headline-md text-primary font-semibold">4.9 ★</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">En Google Reviews</p>
+</div>
+</div>
+<!-- Beneficios Tangibles de Estilo de Vida -->
+<div class="space-y-3">
+<div class="text-center space-y-1">
+<span class="text-tertiary font-label-caps text-label-caps uppercase tracking-wider">Resultados Reales</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Lo que vivirás en tu sesión</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="wb_sunny">wb_sunny</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Armonía y luminosidad inmediata</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cutis fresco, descansado y glow caribeño sin necesidad de bases de maquillaje pesado.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="water_drop">water_drop</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Regeneración celular profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reactivación de colágeno adaptada a la constante exposición solar y clima tropical.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Cero tiempo de reposo en cama</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continúa tus compromisos, agenda laboral o vacaciones en Cartagena de inmediato.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0" data-icon="support_agent">support_agent</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Acompañamiento VIP continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pautas de skincare domiciliario y seguimiento guiado directamente por especialistas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Verificados -->
+<div class="space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-center">Experiencias en Bocagrande</h3>
+<div class="space-y-3">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-low p-4.5 rounded-2xl border border-outline-variant/40 space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Camila Restrepo</p>
+<p class="font-body-sm text-body-sm text-outline">Residente en Bocagrande</p>
+</div>
+<div class="flex text-amber-500 text-sm">★★★★★</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Vivo expuesta al sol de la bahía y tenía la piel apagada. El Hidrafacial Clínico me devolvió la hidratación sin dejarme la cara roja. Pude salir a cenar esa misma noche con un glow impresionante."
+            </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-low p-4.5 rounded-2xl border border-outline-variant/40 space-y-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Valentina Morales</p>
+<p class="font-body-sm text-body-sm text-outline">Turista internacional</p>
+</div>
+<div class="flex text-amber-500 text-sm">★★★★★</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Vine a pasar una semana a Cartagena y agendé mi sesión antes de mi evento. La vista al mar desde la cabina relaja al instante y el profesionalismo médico es impecable. Volveré cada viaje."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ETAPA A: ACCIÓN (Conversión directa y formulario minimalista) -->
+<section class="mt-14 scroll-mt-20" id="agenda-section">
+<div class="bg-surface-container-lowest rounded-3xl p-6 border-2 border-primary/20 shadow-xl space-y-5">
+<!-- Badge Urgencia -->
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed/40 px-3.5 py-1.5 rounded-full border border-tertiary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Cupos limitados de valoración esta semana en Bocagrande</span>
+</div>
+<div class="space-y-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">Reserva tu Diagnóstico Facial</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completa tus datos para coordinar tu horario ideal en nuestra suite médica.</p>
+</div>
+<!-- Formulario minimalista de 3 campos -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Nuestro equipo en Bocagrande te contactará por WhatsApp en breve.');">
+<div class="space-y-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="fullname">Nombre completo</label>
+<input class="w-full px-4 py-3 rounded-full border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-body-md text-body-md" id="fullname" placeholder="Ej. Sofia Gomez" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="phone">WhatsApp o Celular (+57)</label>
+<input class="w-full px-4 py-3 rounded-full border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-body-md text-body-md" id="phone" placeholder="300 000 0000" required="" type="tel"/>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-lg text-label-lg text-on-surface" for="treatment">¿Qué tratamiento te interesa evaluar?</label>
+<select class="w-full px-4 py-3 rounded-full border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-body-md text-body-md appearance-none" id="treatment">
+<option value="hidrafacial">Hidrafacial Clínico &amp; Glow Caribe</option>
+<option value="bioestimulacion">Bioestimulación de Colágeno</option>
+<option value="manchas">Protocolo Manchas &amp; Fotodaño</option>
+<option value="integral">Valoración Integral</option>
+</select>
+</div>
+<!-- Botón Principal -->
+<button class="w-full py-4 px-6 rounded-full bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container active:scale-95 transition-all text-center" type="submit">
+            Quiero mi valoración clínica ✨
+          </button>
+</form>
+<div class="relative flex py-2 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-4 text-outline font-label-md text-label-md">o también</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Opción WhatsApp Directo -->
+<a class="w-full flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-full border-2 border-primary text-primary font-label-lg text-label-lg hover:bg-tertiary-fixed/30 active:scale-95 transition-all text-center" href="https://wa.me/573165839396?text=Hola%20Skinroom,%20quiero%20agendar%20una%20cita%20directa%20en%20Bocagrande" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 583 9396)</span>
+</a>
+<!-- Aviso Privacidad -->
+<p class="text-center font-body-sm text-body-sm text-outline text-[11px] leading-tight pt-1">
+          Datos 100% protegidos bajo secreto profesional y Ley 1581 de Protección de Datos de Colombia.
+        </p>
+</div>
+</section>
+<!-- PREGUNTAS FRECUENTES (Acordeón interactivo) -->
+<section class="mt-14 space-y-4">
+<div class="text-center space-y-1">
+<span class="text-tertiary font-label-caps text-label-caps uppercase tracking-wider">Transparencia y Claridad</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-2.5" id="faq-accordion">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Los procedimientos causan dolor o enrojecimiento?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-3 leading-relaxed">
+            No. Nuestros protocolos están formulados para ser no invasivos y altamente relajantes. La tecnología de succión hidrodinámica y nutrición celular respeta el tejido sin causar inflamación ni dolor, permitiéndote volver a tus actividades normales de inmediato.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cuánto duran los resultados del tratamiento?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-3 leading-relaxed">
+            Notarás un efecto glow, tersura y descongestión desde el minuto uno que perdura semanas. Con la continuidad adecuada y las recomendaciones de cuidado domiciliario que te entregamos, la salud celular de tu piel se mantendrá óptima todo el año.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Puedo exponerme al sol o playa después de la sesión?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-3 leading-relaxed">
+            Recomendamos esperar 24 a 48 horas antes de una exposición solar directa intensa o baños de mar prolongados, y usar siempre protector solar de amplio espectro para proteger la nueva capa cutánea oxigenada.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Dónde están ubicados en Bocagrande y cuentan con parqueadero?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-3 leading-relaxed">
+            Estamos ubicados en Carrera 3 # 6-45, Edificio Infinito, en la zona médica y residencial de Bocagrande. Contamos con servicio de bahía y parqueadero cubierto para pacientes del edificio.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-surface-container dark:bg-surface-container-high docked full-width border-t border-outline-variant/40">
+<div class="w-full px-5 py-10 pb-28 flex flex-col gap-6 text-center max-w-7xl mx-auto">
+<div class="space-y-2">
+<p class="font-display-hero-mobile text-headline-sm text-primary dark:text-primary-fixed">Skinroom Studio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mx-auto">
+          Carrera 3 # 6-45, Edificio Infinito, Bocagrande, Cartagena de Indias, Colombia.
+        </p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 text-on-surface-variant text-label-caps font-label-caps">
+<a class="hover:text-primary transition-colors duration-200" href="#agenda-section">Habeas Data &amp; Ley 1581 de 2012</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#agenda-section">Consentimientos Informados</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="https://wa.me/573165839396">Contáctanos por WhatsApp</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors duration-200" href="#agenda-section">Términos del Servicio</a>
+</div>
+<p class="text-body-sm font-body-sm text-outline max-w-xl mx-auto">
+        © 2024 Skinroom Studio Cartagena S.A.S. Todos los derechos reservados. Habilitación en Salud DADIS Cartagena Resolución No. 0428.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Mobile Navigation Shell) -->
+<nav class="bg-surface-container-lowest/95 backdrop-blur-xl docked full-width bottom-0 fixed z-50 rounded-t-lg shadow-lg border-t border-outline-variant/30">
+<div class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl border-t border-outline-variant/20">
+<!-- Inicio (Active) -->
+<a class="flex flex-col items-center justify-center text-primary bg-tertiary-fixed/40 rounded-full px-3 py-1.5 font-semibold active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-md font-label-md">Inicio</span>
+</a>
+<!-- Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary active:scale-90 transition-transform duration-150" href="#agenda-section">
+<span class="material-symbols-outlined text-xl" data-icon="dermatology">dermatology</span>
+<span class="text-label-md font-label-md">Tratamientos</span>
+</a>
+<!-- Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary active:scale-90 transition-transform duration-150" href="#agenda-section">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-md font-label-md">Resultados</span>
+</a>
+<!-- Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:text-primary active:scale-90 transition-transform duration-150" href="#agenda-section">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-md font-label-md">Agendar</span>
+</a>
+</div>
+</nav>
+</body></html>

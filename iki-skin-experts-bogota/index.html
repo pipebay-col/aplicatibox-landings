@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<title>IKI Skin Experts Bogotá · Dermatología Estética &amp; Armonización Facial Sutil</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatím -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "surface-tint": "#006b60",
+            "primary-fixed": "#91f4e4",
+            "on-surface-variant": "#3e4947",
+            "on-primary-fixed": "#00201c",
+            "inverse-surface": "#2c3130",
+            "on-tertiary-fixed-variant": "#304c46",
+            "on-tertiary-fixed": "#02201b",
+            "inverse-on-surface": "#edf2f0",
+            "on-primary": "#ffffff",
+            "background": "#f6faf8",
+            "error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#aecdc4",
+            "tertiary": "#45615a",
+            "surface-container": "#eaefed",
+            "on-tertiary-container": "#f1fffa",
+            "on-primary-container": "#f2fffb",
+            "on-tertiary": "#ffffff",
+            "primary": "#00685d",
+            "primary-container": "#008376",
+            "on-surface": "#181d1c",
+            "secondary-fixed": "#ffdcbb",
+            "tertiary-container": "#5d7a73",
+            "primary-fixed-dim": "#74d7c8",
+            "outline-variant": "#bdc9c6",
+            "surface-bright": "#f6faf8",
+            "inverse-primary": "#74d7c8",
+            "on-secondary-fixed-variant": "#5e4120",
+            "surface-dim": "#d6dbd9",
+            "secondary": "#785835",
+            "on-error": "#ffffff",
+            "secondary-container": "#fed2a7",
+            "on-error-container": "#93000a",
+            "on-primary-fixed-variant": "#005048",
+            "tertiary-fixed": "#cae9e0",
+            "outline": "#6e7a77",
+            "surface-container-low": "#f0f5f3",
+            "surface-variant": "#dfe3e1",
+            "surface-container-high": "#e5e9e7",
+            "surface": "#f6faf8",
+            "error": "#ba1a1a",
+            "on-background": "#181d1c",
+            "surface-container-highest": "#dfe3e1",
+            "on-secondary-fixed": "#2b1700",
+            "secondary-fixed-dim": "#e9bf94",
+            "on-secondary-container": "#795936",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "2.25rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "space-md": "1.25rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "4rem",
+            "margin-tablet": "2rem"
+          },
+          "fontFamily": {
+            "display-lg": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-xl": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-xl": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-xl": ["18px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "300" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col font-body-md text-body-md">
+<!-- 1. TOP APP BAR (Shared Component JSON execution) -->
+<header class="bg-surface/90 backdrop-blur-md text-primary docked full-width top-0 sticky z-40 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm font-medium tracking-wide text-on-surface">IKI Skin Experts</span>
+</div>
+<a class="bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-all duration-200 active:scale-95 shadow-sm hover:opacity-95" href="#agendar">
+        Agendar Cita
+      </a>
+</div>
+</header>
+<!-- MAIN EMBEDDED CONVERSION CANVAS -->
+<main class="flex-grow w-full max-w-md mx-auto px-margin-mobile pt-4 pb-20 space-y-12">
+<!-- 2. ETAPA A: ATENCIÓN (Hero Section con Imagen Editorial Real) -->
+<section class="space-y-5 pt-2" id="hero">
+<!-- Badge de Acreditación Médica Oficial -->
+<div class="inline-flex items-center gap-1.5 bg-surface-container px-3.5 py-1.5 rounded-full border border-outline-variant/40">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">
+          Habilitación Salud Bogotá · Sedes Chicó &amp; Usaquén · INVIMA
+        </span>
+</div>
+<!-- H1 Claro de Beneficio en 3 Segundos -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-normal leading-tight">
+        Tu piel en su versión más <span class="italic font-normal text-primary">armónica y radiante</span>, con respaldo médico en Bogotá.
+      </h1>
+<!-- Subtítulo de Resultado Concreto -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Tratamientos médicos no invasivos de bioestimulación dérmica, hidrafaciales clínicos y rejuvenecimiento cutáneo sin incapacidad ni rostros artificiales.
+      </p>
+<!-- Hero Card con Imagen Editorial Médica Real -->
+<div class="relative rounded-3xl overflow-hidden shadow-lg border border-surface-variant group">
+<img alt="Breathtaking high-end editorial beauty and clinical dermatology portrait of an attractive Latin Colombian woman in her late 20s or early 30s with glowing, radiant, perfectly healthy glass skin, rested harmonious natural facial contours, sitting in a luminous luxury private aesthetic dermatology clinic in northern Bogotá (Chicó / Usaquén). Large panoramic window in the background with soft views of the lush green Cerros Orientales mountains and gentle Colombian morning sunlight, warm cream and vibrant clinical teal interior accents, subtle orchids, photorealistic 8k, authentic natural beauty without exaggerated fillers, Vogue beauty and aesthetic medicine editorial quality." class="w-full aspect-square object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVU1LlGTrg9_8oYaykcjPqaD1xKtWfnZdZVdPAE4M8Wuy1WQ1rp71GhmvM8QdHUDgSzGmy2bE1dstNXeLJHVmB6ihbGpztKCCVA742pCQ7Eh2GlOdHhMLVzZ3NQ3zgDm8Bx0V45xpPShY2MDlULavM1v7nDCbErGrn--Dwv3jti08AGlDcbNXVUdHsljqH3fBXZ5xdLm4ZZOAUIFsyq0Kr7cljgqD32PzQLPPHwqEfY-8j6HgGsggFBDvMC6tYLXHJIAoLJa6KUSE"/>
+<!-- Overlay Gradiente Sutil de Iluminación y Badge Flotante -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent flex flex-col justify-end p-4">
+<div class="bg-surface/95 backdrop-blur-md rounded-2xl p-3 border border-surface-container-highest/60 flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">100% Piel Luminosa &amp; Armonía Natural</p>
+<p class="font-body-sm text-body-sm text-tertiary">Sede Chicó (Calle 93) &amp; Usaquén Reservado</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Principal & Micro-credencial sin fricción -->
+<div class="space-y-2.5 pt-1">
+<a class="w-full min-h-[52px] bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all duration-200 active:scale-95 text-center px-4" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center font-body-sm text-body-sm text-outline flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="schedule">schedule</span>
+          Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- Micro-badges de Confianza Médica -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Aparatología INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="fingerprint">fingerprint</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Diagnóstico Cutáneo 1 a 1</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="apartment">apartment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sedes Boutique Exclusivas</span>
+</div>
+</div>
+</section>
+<!-- 3. ETAPA I: INTERÉS (Dilema del Paciente + Protocolo en 3 Pasos) -->
+<section class="space-y-6 pt-4" id="interes">
+<!-- Manifiesto de Empatía Médica y Sutileza Facial -->
+<div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant/30 space-y-3">
+<div class="inline-flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-base" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Criterio Médico Especializado</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+          ¿Temes tratamientos exagerados que cambien tus facciones o dejen tu piel artificial?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En <strong class="text-on-surface font-semibold">IKI Skin Experts Bogotá</strong> rechazamos los rostros sobre-rellenados o congelados. Nuestra filosofía médica preserva tu identidad y bioestimula tu propio colágeno con micro-dosis estratégicas.
+        </p>
+</div>
+<!-- Proceso Clínico en 3 Pasos -->
+<div class="space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">
+          Cómo cuidamos tu piel en 3 pasos:
+        </h3>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex items-start gap-4 shadow-sm">
+<span class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+            01
+          </span>
+<div class="space-y-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Valoración y Mapeo Cutáneo 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Certeza clínica y plan exacto desde el día 1, sin tratamientos genéricos ni improvisación.
+            </p>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex items-start gap-4 shadow-sm">
+<span class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+            02
+          </span>
+<div class="space-y-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Plan Médico Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Insumos biocompatibles aprobados por INVIMA y presupuesto cerrado 100% transparente.
+            </p>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 flex items-start gap-4 shadow-sm">
+<span class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+            03
+          </span>
+<div class="space-y-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Aplicación Delicada y Glow Natural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-primary font-medium">Beneficio:</strong> Reincorporación inmediata a tu rutina social y laboral en Bogotá sin incapacidad médica.
+            </p>
+</div>
+</div>
+</div>
+<!-- Enlace directo para dudas particulares -->
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:underline" href="https://wa.me/573243284446?text=Hola%20IKI%20Skin%20Experts,%20quisiera%20consultar%20mi%20caso%20particular" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+          ¿Tienes dudas sobre tu caso particular? Chatea con una especialista
+        </a>
+</div>
+</section>
+<!-- 4. ETAPA D: DESEO (Prueba Social, Métricas y Beneficios Reales) -->
+<section class="space-y-6 pt-4" id="resultados">
+<!-- Métricas de Confianza Médica -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-semibold">+8 Años</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">De Trayectoria Clínica</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-semibold">+5.200</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Pacientes Satisfechos</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-primary font-semibold">100%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Insumos INVIMA &amp; FDA</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<div class="font-headline-md text-headline-md text-secondary font-semibold flex items-center justify-center gap-1">
+            4.9 <span class="material-symbols-outlined text-secondary text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Google Reviews Bogotá</div>
+</div>
+</div>
+<!-- 4 Beneficios Tangibles de Resultado Diario -->
+<div class="space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">
+          El estándar IKI en tu rostro:
+        </h3>
+<div class="space-y-2.5">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="face">face</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rostro fresco, descansado y luminoso sin rigidez muscular ni cambios artificiales.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="layers">layers</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Bioestimulación profunda de colágeno</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Firmeza progresiva natural y textura dérmica tersa y duradera por meses.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="event_available">event_available</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Cero tiempo de reposo en cama</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protocolos no quirúrgicos, sin hematomas agresivos ni tiempo de baja laboral.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="verified_user">verified_user</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Acompañamiento médico VIP continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seguimiento guiado post-tratamiento directo por nuestros especialistas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales y Locales en Bogotá -->
+<div class="space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">
+          Experiencias de nuestras pacientes:
+        </h3>
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed/50 text-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                CR
+              </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Camila Restrepo</p>
+<p class="font-body-sm text-body-sm text-outline">Sede Chicó (Calle 93)</p>
+</div>
+</div>
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+            "Tenía pánico de que me cambiaran las facciones. En IKI me escucharon con paciencia; mi piel se ve descansada y luminosa, nadie nota que me hice algo."
+          </p>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 text-secondary flex items-center justify-center font-label-md text-label-md font-bold">
+                VM
+              </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Valentina Morales</p>
+<p class="font-body-sm text-body-sm text-outline">Sede Usaquén (Carrera 7)</p>
+</div>
+</div>
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+            "La atención médica es impecable. Me explicaron cada producto antes de aplicarlo. Salí directo a mi trabajo con piel radiante."
+          </p>
+</div>
+</div>
+</section>
+<!-- 5. ETAPA A: ACCIÓN (Formulario de Conversión de 3 Campos + WhatsApp Directo) -->
+<section class="bg-surface-container-lowest rounded-3xl p-6 border-2 border-primary/20 shadow-xl space-y-5" id="agendar">
+<!-- Badge de Cupos Limitados -->
+<div class="inline-flex items-center gap-1.5 bg-error-container/40 text-on-error-container px-3 py-1 rounded-full border border-error-container">
+<span class="material-symbols-outlined text-xs text-error" data-icon="hourglass_top">hourglass_top</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wide">Cupos limitados de valoración esta semana en Bogotá</span>
+</div>
+<!-- Título de Conversión -->
+<div class="space-y-1">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">
+          Empieza hoy tu transformación armónica con total confianza
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Completa los 3 campos a continuación para coordinar tu horario prioritario en Chicó o Usaquén.
+        </p>
+</div>
+<!-- Formulario de 3 Campos -->
+<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.classList.add('opacity-50');">
+<!-- Campo 1: Nombre -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="nombre">
+            Nombre completo
+          </label>
+<input class="w-full min-h-[52px] px-4 rounded-2xl bg-surface-container-low border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-md text-body-md transition-all outline-none" id="nombre" name="nombre" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp o Celular -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="telefono">
+            WhatsApp o Celular (+57 Colombia)
+          </label>
+<div class="relative">
+<input class="w-full min-h-[52px] px-4 rounded-2xl bg-surface-container-low border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-md text-body-md transition-all outline-none" id="telefono" name="telefono" placeholder="310 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Tratamiento de Interés -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="tratamiento">
+            ¿Qué tratamiento te interesa?
+          </label>
+<div class="relative">
+<select class="w-full min-h-[52px] px-4 rounded-2xl bg-surface-container-low border border-outline-variant/60 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-md text-body-md transition-all outline-none appearance-none pr-10" id="tratamiento" name="tratamiento">
+<option value="bioestimulacion">Bioestimulación de Colágeno</option>
+<option value="hidrafacial">Hidrafacial Clínico &amp; Glow</option>
+<option value="armonizacion">Armonización Facial Sutil</option>
+<option value="integral">Valoración Médica Integral</option>
+</select>
+<span class="material-symbols-outlined text-outline pointer-events-none absolute right-3 top-1/2 -translate-y-1/2" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Botón Principal de Conversión -->
+<button class="w-full min-h-[52px] bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all duration-200 active:scale-95 text-center mt-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Mensaje de confirmación reactivo -->
+<div class="hidden p-3.5 bg-primary/10 rounded-2xl text-center space-y-1 border border-primary/20" id="formSuccess">
+<p class="font-label-md text-label-md text-primary font-bold">¡Solicitud recibida con éxito!</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Una médica asesora de IKI se comunicará contigo vía WhatsApp en breve.</p>
+</div>
+<!-- Separador O -->
+<div class="flex items-center gap-3 my-2">
+<div class="flex-grow h-px bg-outline-variant/30"></div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">o agiliza por chat</span>
+<div class="flex-grow h-px bg-outline-variant/30"></div>
+</div>
+<!-- Botón WhatsApp Directo -->
+<a class="w-full min-h-[52px] bg-[#008376] text-on-primary font-label-md text-label-md rounded-full flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition-all duration-200 active:scale-95 text-center px-4" href="https://wa.me/573243284446?text=Hola%20IKI%20Skin%20Experts,%20deseo%20agendar%20mi%20cita%20de%20valoración%20en%20Bogotá" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 324 328 4446)</span>
+</a>
+<!-- Micro-copys de Seguridad & Habeas Data -->
+<div class="pt-2 text-center">
+<p class="font-body-sm text-body-sm text-outline flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="lock">lock</span>
+          Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+</div>
+</section>
+<!-- 6. PREGUNTAS FRECUENTES (Acordeón Interactivo) -->
+<section class="space-y-4 pt-2" id="faq">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold text-center">
+        Preguntas frecuentes
+      </h2>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-lg text-label-lg text-on-surface">
+<span>¿Los procedimientos duelen o requieren incapacidad?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            No. Utilizamos anestesia tópica de grado hospitalario y cánulas ultrafinas de punta roma que minimizan cualquier molestia. Nuestros protocolos están diseñados para que puedas volver de inmediato a tus actividades en Bogotá.
+          </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-lg text-label-lg text-on-surface">
+<span>¿Cuánto duran los resultados obtenidos?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dependiendo del protocolo elegido (bioestimuladores de colágeno, ácido hialurónico biocompatible o regeneración con exosomas), la duración promedio oscila entre 12 y 24 meses, con una mejora celular continua en la elasticidad cutánea.
+          </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-lg text-label-lg text-on-surface">
+<span>¿Cómo garantizan que el resultado se verá natural?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Nuestro principio rector es la 'Belleza Invisible'. No aplicamos tratamientos estandarizados ni volúmenes excesivos. Analizamos tus proporciones anatómicas individuales para resaltar tus rasgos propios, no reemplazarlos.
+          </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-4 open:shadow-sm">
+<summary class="flex justify-between items-center cursor-pointer list-none font-label-lg text-label-lg text-on-surface">
+<span>¿Qué incluye la cita de valoración diagnóstica?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Incluye escaneo facial dermatológico profundo, diagnóstico de calidad cutánea por especialista médico, diseño del mapa de tratamiento personalizado y entrega del presupuesto cerrado sin compromisos adicionales.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- 7. FOOTER INSTITUCIONAL (Shared Component JSON execution) -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface text-primary dark:text-inverse-primary docked full-width pb-24 md:pb-8 border-t border-outline-variant/30 dark:border-outline/20">
+<div class="w-full px-margin-mobile md:px-margin py-space-xl max-w-7xl mx-auto flex flex-col gap-gutter-mobile">
+<!-- Brand & Sedes -->
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="text-headline-sm font-headline-sm font-medium text-primary dark:text-inverse-primary">IKI Skin Experts</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">
+          Medicina Estética &amp; Dermatología de Precisión · Bogotá D.C.
+        </p>
+</div>
+<!-- Links del JSON -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 py-2">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#hero">Sede Chicó (Calle 93)</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#hero">Sede Usaquén (Carrera 7)</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#interes">Acreditación Secretaría de Salud</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#interes">Certificaciones INVIMA</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#agendar">Política de Privacidad y Habeas Data</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 font-label-sm text-label-sm" href="#agendar">Términos y Consentimiento Médico</a>
+</div>
+<!-- Copyright y Acreditaciones Regulatorias Colombia -->
+<div class="pt-4 border-t border-outline-variant/30 dark:border-outline/20">
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant leading-relaxed">
+          © 2024 IKI Skin Experts Bogotá. Vigilado y Controlado por la Secretaría Distrital de Salud de Bogotá (Código de Habilitación IPS) y Productos con Registro Sanitario INVIMA. Tratamiento de Datos Personales conforme a la Ley Estatutaria 1581 de 2012 y Decreto 1377 de 2013.
+        </p>
+</div>
+</div>
+</footer>
+<!-- 8. BOTTOM NAVBAR MÓVIL (Shared Component JSON execution) -->
+<nav class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md text-primary dark:text-inverse-primary docked full-width bottom-0 fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-space-xs pb-safe shadow-md dark:shadow-none border-t border-outline-variant/30 dark:border-outline/20">
+<!-- Inicio (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary/10 dark:bg-primary-container/20 text-primary dark:text-primary-fixed rounded-full px-3 py-1 transition-all duration-200 active:scale-95" href="#hero">
+<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
+<span class="text-label-sm font-label-sm font-semibold">Inicio</span>
+</a>
+<!-- Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container transition-all duration-200 active:scale-95" href="#interes">
+<span class="material-symbols-outlined text-xl" data-icon="dermatology">dermatology</span>
+<span class="text-label-sm font-label-sm">Tratamientos</span>
+</a>
+<!-- Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container transition-all duration-200 active:scale-95" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- Agendar -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-3 py-1 hover:text-primary dark:hover:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container transition-all duration-200 active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Agendar</span>
+</a>
+</nav>
+</body></html>
