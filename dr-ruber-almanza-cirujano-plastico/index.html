@@ -11,7 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS v3 with Plugins -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+
+function handleAlmanzaSubmit() {
+  const nombre = (document.getElementById('nombre') || {}).value || '';
+  const procedimiento = (document.getElementById('procedimiento') || {}).value || '';
+  const mensaje = encodeURIComponent('Hola Dr. Ruber Almanza, mi nombre es ' + (nombre || 'un interesado') + '. Deseo coordinar mi valoración sin costo' + (procedimiento ? ' para: ' + procedimiento : '') + '.');
+  window.open('https://wa.me/573156741562?text=' + mensaje, '_blank');
+}
+</script>
 <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -174,7 +182,7 @@
 <!-- Surgeon Portrait Card with Exact Image -->
 <div class="relative w-full max-w-md mx-auto mb-8">
 <div class="relative overflow-hidden rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-lg shadow-primary/5">
-<img alt="Dr. Ruber Almanza Cirujano Plástico Certificado SCCP" class="w-full h-auto object-cover object-top aspect-[4/5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkqKI20O13oLuxJs9dK7Bcxm9MB0vSZ3I0ULykJWA51SFNrvS6De43GENsmxGBJ-xWLrQkykflzfEvmIW-ghqiYO_CX_9G8jbyRG4ltlXTDChSlcbdARRkIL5pq3g0U0dvwCjwG7uDYDHSDvdcGcML-8dlndf8Zbi3yGe7EMsDF2JymfQrenbFZHNvCxPN2nuTUF9IUxHF2JabaxVsx16g_Ws7_lS7FJr1s96Q19UQ4xYtkGQ2QMnR5-PZOGcQDof30mMWVNH-5o"/>
+<img alt="Dr. Ruber Almanza Cirujano Plástico Certificado SCCP" class="w-full h-auto object-cover object-top aspect-[4/5]" src="hero-marca.jpg"/>
 <!-- Bottom Floating Badge on Photo -->
 <div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl p-3 border border-outline-variant/40 flex items-center gap-3 shadow-md">
 <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
@@ -443,7 +451,7 @@
             </p>
 </div>
 <!-- Minimalist 3-field form -->
-<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido recibida con éxito. El equipo del Dr. Ruber Almanza se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<form class="space-y-4" onsubmit="event.preventDefault(); handleAlmanzaSubmit();">
 <div>
 <label class="block text-label-md font-label-md text-on-surface mb-1.5" for="nombre">Nombre y Apellido</label>
 <div class="relative">
