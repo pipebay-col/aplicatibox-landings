@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clínica GLW Bogotá | Armonización Facial Consciente &amp; Bioestimulación Dérmica</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed-dim": "#adcdc5",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#fffbff",
+            "surface": "#f8faf7",
+            "inverse-on-surface": "#f0f1ef",
+            "on-surface": "#191c1b",
+            "secondary-fixed": "#c9e9e0",
+            "inverse-surface": "#2e3130",
+            "primary-fixed-dim": "#74d7c8",
+            "on-surface-variant": "#3e4947",
+            "on-secondary-fixed-variant": "#2f4c46",
+            "surface-bright": "#f8faf7",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#4a6861",
+            "surface-container-highest": "#e1e3e1",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#f9dfba",
+            "surface-container-low": "#f2f4f2",
+            "outline-variant": "#bdc9c6",
+            "tertiary-container": "#867153",
+            "surface-dim": "#d9dad8",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed": "#261904",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#00201c",
+            "primary-container": "#008376",
+            "on-secondary-fixed": "#01201b",
+            "primary-fixed": "#91f4e4",
+            "on-background": "#191c1b",
+            "on-tertiary-fixed-variant": "#554429",
+            "background": "#f8faf7",
+            "on-primary-container": "#f2fffb",
+            "surface-tint": "#006b60",
+            "primary": "#00685d",
+            "surface-container-high": "#e7e9e6",
+            "outline": "#6e7a77",
+            "secondary": "#46645d",
+            "tertiary-fixed-dim": "#dcc3a0",
+            "tertiary": "#6b593c",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#005048",
+            "on-secondary": "#ffffff",
+            "surface-container": "#edeeec",
+            "secondary-container": "#c6e7de",
+            "inverse-primary": "#74d7c8",
+            "surface-variant": "#e1e3e1"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.375rem",
+            "space-md": "1.25rem",
+            "margin": "2rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .mineral-card-shadow {
+      box-shadow: 0 8px 30px -4px rgba(25, 28, 27, 0.05), 0 2px 6px 0 rgba(0, 131, 118, 0.03);
+    }
+    .modal-elevation {
+      box-shadow: 0 20px 45px -10px rgba(25, 28, 27, 0.08), 0 4px 12px 0 rgba(0, 131, 118, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-secondary-container selection:text-primary">
+<!-- TOP APP BAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-space-md py-space-sm flex justify-between items-center">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">spa</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm tracking-wider text-primary font-medium">CLÍNICA GLW</span>
+<span class="font-label-sm text-label-sm tracking-wider text-outline uppercase">Bogotá · Chicó Calle 93</span>
+</div>
+</div>
+<!-- Right Action CTAs -->
+<div class="flex items-center gap-space-sm">
+<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-space-md py-2 rounded-full font-semibold shadow-sm hover:opacity-95 transition-all active:scale-95 flex items-center gap-1" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS (Mobile-First Container) -->
+<main class="w-full max-w-xl mx-auto px-4 pt-20 pb-28">
+<!-- A - ATENCIÓN (Hero Section) -->
+<section class="pt-4 pb-8 flex flex-col gap-5">
+<!-- Top Health Credential Badge -->
+<div class="self-start inline-flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+          Habilitación Seccional MinSalud Bogotá · REPS Código 1100109923 · Sede Chicó Calle 93
+        </p>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-balance font-headline-md leading-tight">
+        Tu rostro en su versión más armónica y radiante, <span class="italic text-primary">sin perder tu esencia natural.</span>
+</h1>
+<!-- Tangible Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Tratamientos médicos no invasivos de bioestimulación dérmica, rejuvenecimiento cutáneo y armonización facial de alta precisión en Chicó, Bogotá. Resultados sutiles y elegantes sin incapacidad laboral ni rostros congelados.
+      </p>
+<!-- Hero Visual with Embedded Image & Floating Clinical Pill -->
+<div class="relative w-full rounded-2xl overflow-hidden mineral-card-shadow bg-surface-container-low border border-outline-variant/30">
+<img alt="Paciente en consulta de medicina estética en la sede Chicó de Clínica GLW Bogotá" class="w-full aspect-[4/4.5] object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1XfZ5Z18gqMoo1xhnKnTnS1IvJJtQJFnmNh4CnhgDRgtbxismHROl5l8ZPJrVFnc-2LMR_KTv2VFraViAP9lomQc-xWP_kbbg6glPlXLZkjoWvz4QOApb24-PFrwgWQg8WCyEpzpvjC6mQXWIqxm0nvM-GKE5L_gaGbeLfMGbDi58rLIH929HEa-uxNqfhrva8_d3hN3i0QuxmftkHlQpW7LZ91FG7bNHAHQD27BWHzVBPInlYuBT-3Smo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<!-- Floating Credential Badge -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-xl border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">verified</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Resultado Clínico Verificado</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Sede Chicó Calle 93 · Bogotá</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">auto_awesome</span>
+</div>
+</div>
+<!-- Primary High-Conversion CTA -->
+<div class="flex flex-col gap-2 pt-2">
+<a class="w-full py-4 px-6 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md text-center shadow-lg hover:bg-primary transition-all active:scale-95 flex items-center justify-center gap-2" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+          Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- 3 Micro-Guarantees Pills -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-lg">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Tecnología INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-lg">csv</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Sede Chicó Calle 93</span>
+</div>
+</div>
+</section>
+<!-- I - INTERÉS (Problema del Paciente + Metodología en 3 Pasos) -->
+<section class="py-10 border-t border-outline-variant/30 flex flex-col gap-8">
+<!-- The Dilemma Section -->
+<div class="bg-surface-container-low rounded-2xl p-5 border border-outline-variant/30 flex flex-col gap-3">
+<div class="inline-flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-lg">help_outline</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-semibold">El Dilema de la Medicina Estética</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+          ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          En <strong class="text-on-surface">Clínica GLW Bogotá</strong> rechazamos categóricamente la sobredosis estética. No transformamos tus rasgos en moldes prefabricados. Aplicamos micro-dosis estratégicas calculadas según la proporción áurea y los vectores dinámicos de tu propia anatomía.
+        </p>
+<div class="pt-2 flex items-center gap-2 text-primary font-label-md text-label-md font-medium">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Preservamos tu expresión, rejuvenecemos tu estructura dérmica.</span>
+</div>
+</div>
+<!-- 3-Step Methodology Pathway -->
+<div class="flex flex-col gap-4">
+<div>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Protocolo de Precisión</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium mt-1">Nuestro Método Clínico en 3 Pasos</h2>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Step 01 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 mineral-card-shadow flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary font-bold flex items-center justify-center shrink-0">
+              01
+            </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Valoración y Mapeo Facial 3D</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Diagnóstico milimétrico de soporte dérmico y vectores de tensión con escaneo de alta definición.
+              </p>
+<div class="mt-1 inline-flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">done</span>
+<span class="font-semibold">Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</div>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 mineral-card-shadow flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary font-bold flex items-center justify-center shrink-0">
+              02
+            </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Plan Médico Personalizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Selección de bioestimuladores de colágeno o ácido hialurónico biocompatible con presupuesto cerrado y transparente.
+              </p>
+<div class="mt-1 inline-flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">done</span>
+<span class="font-semibold">Beneficio: Cero costos ocultos ni improvisaciones.</span>
+</div>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/30 mineral-card-shadow flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-primary font-bold flex items-center justify-center shrink-0">
+              03
+            </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-on-surface">Aplicación Guiada y Glow Natural</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Procedimiento ambulatorio con microcánulas atraumáticas para cero hematomas y rápida recuperación dérmica.
+              </p>
+<div class="mt-1 inline-flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">done</span>
+<span class="font-semibold">Beneficio: Reincorporación inmediata a tu rutina social y laboral.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat link anchor -->
+<div class="pt-2 text-center">
+<a class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md underline underline-offset-4 hover:opacity-80 transition-opacity" href="https://wa.me/573243163986" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con una especialista médica</span>
+</a>
+</div>
+</div>
+</section>
+<!-- D - DESEO (Métricas de Confianza + Beneficios en Resultados + Testimonios) -->
+<section class="py-10 border-t border-outline-variant/30 flex flex-col gap-8">
+<!-- Authority Stats Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container p-4 rounded-2xl text-center flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">+8 Años</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Trayectoria Médica</span>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl text-center flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">+4.500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Pacientes Satisfechos</span>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl text-center flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl text-center flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">4.9 ★</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Google Reviews</span>
+</div>
+</div>
+<!-- 4 Tangible Benefits Cards -->
+<div class="flex flex-col gap-4">
+<div>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Resultados Reales</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium mt-1">La Diferencia Clínica GLW</h2>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">sentiment_satisfied</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Armonía y sutileza absoluta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Frescura descansada y luminosa, jamás aspecto operado o rígido. Tus amigos notarán que luces espectacular, sin saber el porqué.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">restart_alt</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Bioestimulación profunda de colágeno</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Reactivación celular orgánica que devuelve la densidad, firmeza y tersura propia de una piel joven de manera gradual y prolongada.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Cero reposo en cama</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Continúa de inmediato con tu agenda ejecutiva, reuniones o compromisos en Bogotá sin incapacidades molestas ni dolor.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Acompañamiento VIP continuo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Controles médicos de seguimiento post-tratamiento y canal prioritario directo con tu especialista médica.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Verified Testimonials -->
+<div class="flex flex-col gap-4">
+<div>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Experiencias Comprobadas</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium mt-1">Pacientes en Bogotá</h2>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Camila Restrepo</p>
+<p class="font-label-sm text-label-sm text-secondary">Tratamiento: Armonización Sutil · Chicó Calle 93</p>
+</div>
+<div class="flex text-amber-500 text-sm">
+                ★★★★★
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Mi gran miedo era perder mi expresión o verme artificial. La doctora en GLW escuchó con muchísima empatía lo que quería. El resultado fue exactamente lo que prometieron: luz natural, pómulos descansados y nadie notó que me hice algo, solo me decían que me veía radiante."
+            </p>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Valentina Morales</p>
+<p class="font-label-sm text-label-sm text-secondary">Tratamiento: Bioestimulación Radiesse · Bogotá</p>
+</div>
+<div class="flex text-amber-500 text-sm">
+                ★★★★★
+              </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Llevaba meses buscando una clínica en Bogotá con protocolos serios y médicos reales. La bioestimulación devolvió la firmeza que sentía que perdí después de los 35 años. La atención en el consultorio de la Calle 93 es impecable y la mano de la doctora es ultrasuave."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- A - ACCIÓN (Formulario de Captura Minimalista + Botón WhatsApp Directo + Cierre) -->
+<section class="py-10 border-t border-outline-variant/30 flex flex-col gap-6" id="agendar">
+<!-- Ethical Scarcity Banner -->
+<div class="bg-secondary-container/70 border border-secondary/30 rounded-2xl p-3.5 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">event_busy</span>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">Cupos limitados de valoración esta semana en Bogotá</p>
+<p class="font-label-sm text-label-sm text-on-secondary-container">Solo atendemos 4 valoraciones 1 a 1 por jornada para garantizar exclusividad y detalle clínico.</p>
+</div>
+</div>
+<div class="text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium">Empieza hoy tu transformación armónica con total confianza</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Diligencia tus datos y una coordinadora médica te asignará tu espacio prioritario en Chicó Calle 93.
+        </p>
+</div>
+<!-- Minimal Capture Form -->
+<form class="bg-surface-container-lowest p-5 rounded-3xl border border-outline-variant/40 mineral-card-shadow flex flex-col gap-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una especialista de Clínica GLW Bogotá se pondrá en contacto contigo en breve vía WhatsApp.');">
+<!-- Campo 1: Nombre -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="fullname">Nombre y Apellido *</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="fullname" placeholder="Ej. Sofia Gomez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp Celular -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="phone">WhatsApp o Celular (+57) *</label>
+<div class="relative">
+<span class="absolute left-4 top-3 text-on-surface-variant font-label-md">+57</span>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-xl pl-14 pr-4 py-3 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="phone" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Selección de Tratamiento -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="treatment">Tratamiento de Interés *</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/50 rounded-xl px-4 py-3 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="treatment" required="">
+<option disabled="" selected="" value="">Selecciona tu área de interés</option>
+<option value="armonizacion">Armonización Facial</option>
+<option value="bioestimuladores">Bioestimuladores de Colágeno</option>
+<option value="rejuvenecimiento">Rejuvenecimiento Cutáneo</option>
+<option value="toxina">Toxina Preventiva</option>
+</select>
+</div>
+<!-- Primary Conversion Submit Button -->
+<button class="w-full py-4 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md text-center shadow-md hover:bg-primary transition-all active:scale-95 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- Secondary Direct WhatsApp Button -->
+<a class="w-full py-3.5 rounded-full border border-primary text-primary font-label-lg text-label-lg text-center hover:bg-secondary-container/40 transition-all flex items-center justify-center gap-2" href="https://wa.me/573243163986" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Chatear directo al WhatsApp (+57 324 316 3986)</span>
+</a>
+<!-- Privacy & Legal Microcopy -->
+<p class="text-center font-label-sm text-label-sm text-outline leading-tight pt-1">
+          Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</form>
+<!-- Clinical FAQ Accordion Section -->
+<div class="pt-4 flex flex-col gap-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium text-center">Preguntas Frecuentes Clínicas</h3>
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿El procedimiento duele?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            No. Utilizamos anestesia tópica de grado hospitalario y microcánulas de punta roma ultra finas que reducen notablemente la molestia a un nivel casi imperceptible.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Cuánto duran los resultados?</span>
+<summary class="hidden"></summary>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Dependiendo del protocolo elegido: los bioestimuladores de colágeno inducen regeneración celular por 12 a 24 meses, mientras que el ácido hialurónico reticulado de alta gama mantiene su soporte entre 9 y 18 meses.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Cómo garantizan que se vea natural?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Nuestro principio es la armonía anatómica. Calculamos milimétricamente cada punto de soporte respetando tu mímica natural. Preferimos realizar retoques sutiles y progresivos antes que generar volumen artificial.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 transition-all">
+<summary class="font-title-md text-title-md text-on-surface cursor-pointer list-none flex justify-between items-center">
+<span>¿Dónde está ubicada la clínica en Bogotá?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Estamos ubicados en el exclusivo sector de El Chicó (Calle 93), en una torre médica privada con estacionamiento reservado y máxima discreción para nuestros pacientes.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full px-space-md py-space-xl pb-32 flex flex-col gap-space-md max-w-7xl mx-auto text-center bg-surface-container border-t border-outline-variant/40">
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-medium tracking-wide">CLÍNICA GLW BOGOTÁ</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Medicina estética, bioestimulación celular y armonización facial consciente de alta precisión.
+      </p>
+</div>
+<!-- Regulatory Links -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#agendar">Protocolos Clínicos</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#agendar">Acreditación MinSalud</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#agendar">Habeas Data &amp; Privacidad</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#agendar">Consentimiento Informado</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#agendar">Términos y Condiciones</a>
+</div>
+<!-- Legal & MinSalud Notice -->
+<div class="pt-2 text-center max-w-xl mx-auto">
+<p class="font-body-sm text-body-sm text-outline leading-relaxed text-xs">
+        © 2024 Clínica GLW Bogotá. Vigilado SuperSalud &amp; MinSalud Colombia. Registro Seccional de Salud. Cumplimiento Ley 1581 de 2012 de Protección de Datos Personales (Habeas Data). Sede Chicó Calle 93, Bogotá D.C.
+      </p>
+</div>
+</footer>
+<!-- MOBILE BOTTOM NAV BAR (Shared Component Anchor) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-sm py-space-xs pb-safe bg-surface-container-lowest/90 backdrop-blur-lg shadow-md border-t border-outline-variant/30 md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200 active:scale-95" href="#dilema">
+<span class="material-symbols-outlined text-xl">medical_services</span>
+<span class="font-label-sm text-label-sm mt-0.5">Tratamientos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200 active:scale-95" href="#metodo">
+<span class="material-symbols-outlined text-xl">architecture</span>
+<span class="font-label-sm text-label-sm mt-0.5">Proceso</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200 active:scale-95" href="#testimonios">
+<span class="material-symbols-outlined text-xl">auto_awesome</span>
+<span class="font-label-sm text-label-sm mt-0.5">Resultados</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container/60 text-primary rounded-full px-space-sm py-space-xs transition-all active:scale-95" href="#agendar">
+<span class="material-symbols-outlined text-xl font-bold">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+</body></html>
