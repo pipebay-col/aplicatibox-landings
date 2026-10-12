@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luxury LivingMed | Curaduría Inmobiliaria de Autor en Colombia</title>
+<!-- Google Fonts: Playfair Display & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#ffffff",
+            "surface-container-highest": "#e3e2e0",
+            "on-secondary-container": "#78603e",
+            "on-error": "#ffffff",
+            "primary-fixed-dim": "#b4c8e5",
+            "on-primary-fixed": "#071c32",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#281800",
+            "inverse-surface": "#2f312f",
+            "secondary-fixed": "#fedeb2",
+            "secondary-container": "#fedeb2",
+            "surface": "#faf9f6",
+            "error-container": "#ffdad6",
+            "background": "#faf9f6",
+            "outline-variant": "#c4c6cd",
+            "on-primary-container": "#768aa4",
+            "tertiary-fixed-dim": "#bfc7d3",
+            "secondary": "#725b38",
+            "on-secondary-fixed-variant": "#584323",
+            "on-primary-fixed-variant": "#354860",
+            "tertiary": "#040b13",
+            "surface-container": "#efeeeb",
+            "on-background": "#1a1c1a",
+            "inverse-on-surface": "#f2f1ee",
+            "surface-tint": "#4d6079",
+            "surface-container-low": "#f4f3f0",
+            "primary-fixed": "#d2e4ff",
+            "secondary-fixed-dim": "#e0c298",
+            "surface-dim": "#dbdad7",
+            "tertiary-fixed": "#dbe3ef",
+            "tertiary-container": "#1a222b",
+            "surface-container-high": "#e9e8e5",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#3f4751",
+            "surface-bright": "#faf9f6",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#818994",
+            "on-surface": "#1a1c1a",
+            "on-tertiary-fixed": "#141c25",
+            "primary-container": "#0d2238",
+            "on-surface-variant": "#44474d",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e3e2e0",
+            "outline": "#74777d",
+            "primary": "#000a1a",
+            "inverse-primary": "#b4c8e5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "margin": "1.25rem",
+            "gutter": "1.5rem",
+            "space-lg": "2rem",
+            "gutter-lg": "2.5rem",
+            "space-md": "1.25rem",
+            "space-xl": "3.5rem",
+            "margin-md": "3rem",
+            "space-xs": "0.375rem",
+            "margin-lg": "5rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "label-md": ["Manrope"],
+            "body-sm": ["Manrope"],
+            "headline-md": ["Playfair Display"],
+            "headline-xl": ["Playfair Display"],
+            "body-xl": ["Manrope"],
+            "display-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Manrope"],
+            "body-md": ["Manrope"],
+            "headline-lg": ["Playfair Display"],
+            "label-lg": ["Manrope"],
+            "display-lg": ["Playfair Display"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "300" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-veil-shadow {
+      box-shadow: 0 16px 40px -12px rgba(13, 34, 56, 0.07), 0 2px 6px -1px rgba(13, 34, 56, 0.03);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- ========================================================= -->
+<!-- SHARED COMPONENT: TopAppBar                               -->
+<!-- ========================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/95 dark:bg-surface/95 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-7xl mx-auto">
+<!-- Leading icon -->
+<button aria-label="Menú principal" class="p-1 text-primary dark:text-inverse-primary hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-80" type="button">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<!-- Brand Headline Anchor -->
+<a class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary dark:text-inverse-primary font-bold" href="#">
+        LUXURY LIVINGMED
+      </a>
+<!-- Trailing Action -->
+<a class="text-label-md font-label-md tracking-widest text-primary dark:text-inverse-primary font-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-80 py-1 px-2 rounded-lg bg-surface-container-high/60 border border-surface-container-highest" href="#contacto-asesoria">
+        CONCIERGE
+      </a>
+</div>
+</header>
+<!-- Main Viewport Wrap -->
+<main class="pt-[60px] pb-24 overflow-x-hidden">
+<!-- ========================================================= -->
+<!-- 1. ETAPA AIDA: ATENCIÓN (Hero Section)                     -->
+<!-- ========================================================= -->
+<section class="relative px-margin pt-space-md pb-space-lg max-w-4xl mx-auto">
+<!-- Credential Micro-Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container border border-surface-container-highest text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span>Curaduría Inmobiliaria de Autor · Cobertura Exclusiva Medellín &amp; Bogotá · Vigilado SIC</span>
+</div>
+<!-- H1 Headline with High Conversion Punch -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary font-bold tracking-tight mb-space-sm">
+        Tu próximo hogar o inversión patrimonial en Colombia, seleccionado con rigor y plusvalía blindada.
+      </h1>
+<!-- Specific Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant font-normal mb-space-md leading-relaxed">
+        Acceso privado a penthouses, residencias de autor y fincas campestres fuera de mercado en El Poblado, Llanogrande, Rosales y Santa Ana Oriental. Asesoría jurídica, fiduciaria y tributaria integral.
+      </p>
+<!-- Hero Visual Card with Verified Badge -->
+<div class="relative w-full rounded-xl overflow-hidden border border-surface-container-highest custom-veil-shadow mb-space-md bg-surface-container-low group">
+<div class="aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden relative">
+<img alt="Penthouse de lujo con terraza panorámica y acabados de autor en El Poblado Medellín" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1X8oTwhQZbbdu5FVvUAwZPKN_vcExzRxbiv5aLdsURiPOQoNPCpV9qcauFHI8mLhzEGyi0p3Kkcjiq7gHKhQGaD1fqExC6c6Qw2MXYSnmVDdkyWeeZ5L2BM2b1eUM-GuaCPY7TpEr5trW1jaUdymwmJ8kR0x7Wg_BW92mHqJFG8WvDnEytNdifAcZy1L9VcuqoInEBqeXBaASnunD4PrXAEq6HnulsLnPhsX__2iB9-gRuzJ_GFySpxOME"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-black/20"></div>
+<!-- Micro Badge Floating On Top of Image -->
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-lg border border-surface-container-highest flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-widest">COLECCIÓN PRIVADA OFF-MARKET</span>
+</div>
+<!-- Price & Location Pill bottom-left overlay -->
+<div class="absolute bottom-3 left-3 right-3 flex justify-between items-end text-on-primary">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Valle de Aburrá &amp; Sabana de Bogotá</p>
+<p class="font-headline-sm text-headline-sm font-semibold">Trophy Assets &amp; Penthouses</p>
+</div>
+<div class="hidden sm:block text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg bg-primary-container/80 backdrop-blur-sm border border-surface-container-highest/30 font-label-md text-label-md">Auditado 100%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main High-Conversion CTA Button -->
+<div class="flex flex-col gap-2.5 mb-space-md">
+<a class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg tracking-wider uppercase text-center flex items-center justify-center gap-2 hover:bg-tertiary-container transition-all duration-200 active:scale-[0.99] shadow-md border border-secondary/40" href="#contacto-asesoria">
+<span>Agendar ahora mi asesoría privada</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant font-label-sm text-label-sm tracking-wider text-center">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+<span>Respuesta en menos de 24 horas · Dossier privado 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- Quick Trust Badges Strip (3 items) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-space-xs border-t border-surface-container-highest">
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Propiedades 100% Verificadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Títulos y linderos validados</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-[22px]">lock</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Trato 1 a 1 Discreto (NDA)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reserva total de identidad</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-lowest border border-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-[22px]">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Blindaje Fiduciario y Legal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estructuración notarial segura</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 2. ETAPA AIDA: INTERÉS (El Problema y la Solución)        -->
+<!-- ========================================================= -->
+<section class="px-margin py-space-lg bg-surface-container-low border-y border-surface-container-highest">
+<div class="max-w-4xl mx-auto">
+<!-- Problem Identification Header -->
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold mb-1 block">El dilema del mercado tradicional</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mb-space-xs leading-snug">
+            ¿Cansado de portales masivos con propiedades ficticias, fotos engañosas o asesores que no responden ni filtran calidad?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            El 82% de las ofertas en portales genéricos carecen de disponibilidad real o presentan inconsistencias jurídicas graves. En <strong class="text-primary font-semibold">Luxury LivingMed</strong> operamos bajo el estándar de banca privada inmobiliaria: auditamos con antelación y curamos estrictamente solo el <span class="text-primary font-bold">1% de los activos más extraordinarios</span> de Colombia.
+          </p>
+</div>
+<!-- 3-Step Methodology Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mb-space-md">
+<!-- Step 01 -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow relative flex flex-col justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary/40 font-bold tracking-tight block mb-1">01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Valoración y Perfilamiento Confidencial</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Entendemos a fondo tus objetivos fiscales, estilo de vida familiar o expectativas de rendimiento en divisas.
+              </p>
+</div>
+<div class="pt-3 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm font-bold text-primary block uppercase tracking-wider">Beneficio Tangible</span>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Certeza absoluta de tus parámetros y ahorro de semanas de búsqueda infructuosa.</p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow relative flex flex-col justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary/40 font-bold tracking-tight block mb-1">02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Plan y Dossier Privado a la Medida</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Curaduría directa con acceso a colecciones patrimoniales cerradas y portafolios familiares no publicados.
+              </p>
+</div>
+<div class="pt-3 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm font-bold text-primary block uppercase tracking-wider">Beneficio Tangible</span>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Acceso prioritario a propiedades off-market antes de salir a portales masivos.</p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow relative flex flex-col justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg text-secondary/40 font-bold tracking-tight block mb-1">03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Negociación y Cierre Notarial Blindado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Estudio de títulos minucioso, minuta de promesa personalizada y acompañamiento fiduciario hasta la entrega de llaves.
+              </p>
+</div>
+<div class="pt-3 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm font-bold text-primary block uppercase tracking-wider">Beneficio Tangible</span>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Seguridad jurídica total, cero sorpresas fiscales y acompañamiento legal integral.</p>
+</div>
+</div>
+</div>
+<!-- Intermediate WhatsApp Concierge Link -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">chat</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-primary">¿Deseas una respuesta instantánea y personalizada?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conecta directamente con nuestro Director de Cuentas Patrimoniales.</p>
+</div>
+</div>
+<a class="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-primary-container text-primary font-label-md text-label-md tracking-wider uppercase hover:bg-surface-container transition-colors duration-200 inline-flex items-center justify-center gap-2" href="https://wa.me/573019736752?text=Hola,%20deseo%20conocer%20el%20dossier%20privado%20de%20propiedades%20off-market" rel="noopener noreferrer" target="_blank">
+<span>WhatsApp Concierge</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 3. ETAPA AIDA: DESEO (Métricas, Beneficios y Testimonios)  -->
+<!-- ========================================================= -->
+<section class="px-margin py-space-lg max-w-4xl mx-auto">
+<!-- High Net Worth Metric Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mb-space-lg text-center">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow">
+<span class="font-headline-lg text-headline-lg font-bold text-primary block">+15</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Años de Trayectoria</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow">
+<span class="font-headline-lg text-headline-lg font-bold text-primary block">+480</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Familias e Inversionistas</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow">
+<span class="font-headline-lg text-headline-lg font-bold text-primary block">$95M+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">USD Transaccionados</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary block">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Títulos Saneados</span>
+</div>
+</div>
+<!-- 4 Core Result-Driven Buyer Benefits -->
+<div class="mb-space-lg">
+<div class="text-center max-w-xl mx-auto mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold block mb-1">Diferenciales de Alto Impacto</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Por qué las familias patrimoniales eligen nuestra curaduría</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Benefit 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Ubicaciones Prime &amp; Alta Plusvalía</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Zonas no-vulnerables de alta valorización y demanda cautiva: El Poblado (Loma del Campestre, San Lucas), Llanogrande, Cabrera, Rosales y Santa Ana Oriental.
+              </p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Arquitectura de Autor &amp; Acabados Nobles</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Residencias diseñadas con maderas macizas, mármoles importados, automatización integral y diseño bioclimático con vistas perpetuas.
+              </p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Blindaje Legal &amp; Tributario</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Estudio de tradición de títulos de 20 años, estructuración mediante fiducias mercantiles y asesoría cambiaria experta para capital extranjero.
+              </p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest flex gap-3.5 items-start">
+<div class="p-2 rounded-lg bg-surface-container shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Discreción Absoluta &amp; Acceso Off-Market</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Propiedades comercializadas exclusivamente bajo estrictos acuerdos de confidencialidad (NDA), salvaguardando la privacidad de comprador y vendedor.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Real Verified Testimonials -->
+<div class="mb-space-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold block">Casos Reales</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Experiencias Patrimoniales Verificadas</h3>
+</div>
+<div class="hidden sm:flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Testimonial 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm ml-2">Adquisición Off-Market</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-4 leading-relaxed">
+                "Buscábamos un penthouse en El Poblado que no estuviera expuesto en redes ni portales. LivingMed nos presentó una propiedad fuera de mercado en menos de 10 días y su equipo fiduciario manejó la promesa y el giro en dólares con absoluta transparencia."
+              </p>
+</div>
+<div class="pt-3 border-t border-surface-container-highest flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md font-bold text-primary">Dr. Mauricio Echavarría Restrepo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inversionista Privado · El Poblado, Medellín</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm ml-2">Family Office Bogotá</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-4 leading-relaxed">
+                "La curaduría en Rosales superó lo que cualquier agencia tradicional nos había ofrecido. El estudio de títulos identificó a tiempo un gravamen menor antes de la firma y estructuraron la solución de inmediato. Impecable rigor."
+              </p>
+</div>
+<div class="pt-3 border-t border-surface-container-highest flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md font-bold text-primary">Valentina Santamaría &amp; Familia</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Residencia de Autor · Rosales, Bogotá</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- 4. ETAPA AIDA: ACCIÓN (Formulario de Cierre y FAQ)         -->
+<!-- ========================================================= -->
+<section class="px-margin py-space-xl bg-surface-container-low border-t border-surface-container-highest" id="contacto-asesoria">
+<div class="max-w-2xl mx-auto">
+<!-- Exclusivity Pill Header -->
+<div class="text-center mb-space-md">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/50 border border-secondary text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-3">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>Cupos limitados para asesorías personalizadas este mes</span>
+</div>
+<h2 class="font-headline-md text-headline-md sm:font-headline-lg sm:text-headline-lg text-primary font-bold mb-2">
+            Inicia hoy tu búsqueda patrimonial con total confidencialidad
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Diligencia el formulario a continuación para coordinar una sesión privada de perfilamiento o acceder a nuestro catálogo protegido.
+          </p>
+</div>
+<!-- 3-Field Minimalist Form -->
+<div class="p-6 sm:p-8 rounded-xl bg-surface-container-lowest border border-surface-container-highest custom-veil-shadow mb-space-md">
+<form class="space-y-4" id="leadForm" onsubmit="handleFormSubmit(event)">
+<!-- Field 1: Full Name -->
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-1.5 font-bold" for="fullName">
+                Nombre Completo *
+              </label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface border border-surface-container-highest text-primary font-body-md focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant" id="fullName" name="fullName" placeholder="Ej. Roberto Gómez Restrepo" required="" type="text"/>
+</div>
+<!-- Field 2: Phone / WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-1.5 font-bold" for="phone">
+                WhatsApp o Celular (+57) *
+              </label>
+<div class="relative">
+<input class="w-full px-4 py-3 rounded-lg bg-surface border border-surface-container-highest text-primary font-body-md focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant" id="phone" name="phone" placeholder="Ej. +57 301 973 6752" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Property Type Selector -->
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-1.5 font-bold" for="propertyType">
+                ¿Qué tipo de propiedad te interesa? *
+              </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface border border-surface-container-highest text-primary font-body-md focus:border-secondary focus:ring-0 transition-colors" id="propertyType" name="propertyType" required="">
+<option disabled="" selected="" value="">Selecciona una categoría preferencial</option>
+<option value="penthouse">Penthouse Urbano (El Poblado / Rosales / Chicó)</option>
+<option value="finca">Finca Campestre de Lujo (Llanogrande / Rionegro)</option>
+<option value="residencia">Residencia de Autor Unifamiliar</option>
+<option value="renta">Activo Patrimonial para Renta en USD / Family Office</option>
+<option value="offmarket">Portafolio Confidencial Off-Market Completo</option>
+</select>
+</div>
+<!-- Main High Contrast Submit Button -->
+<button class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg tracking-wider uppercase flex items-center justify-center gap-2 hover:bg-tertiary-container transition-all duration-200 active:scale-[0.99] shadow-lg border border-secondary/50 mt-2" type="submit">
+<span>Quiero mi valoración patrimonial ✨</span>
+</button>
+</form>
+<!-- Form Success Notice (Hidden by default) -->
+<div class="hidden mt-4 p-4 rounded-lg bg-surface-container border border-secondary text-center" id="formSuccess">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">task_alt</span>
+<p class="font-label-md text-label-md font-bold text-primary">Solicitud recibida con éxito</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Un Director de Cuentas Patrimoniales se comunicará en menos de 24 horas bajo estricta reserva.</p>
+</div>
+<!-- Divider: O ATENCIÓN INMEDIATA -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-surface-container-highest"></div></div>
+<span class="relative px-4 bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">O ATENCIÓN INMEDIATA</span>
+</div>
+<!-- Direct WhatsApp Button -->
+<a class="w-full py-3.5 px-5 rounded-lg border-2 border-primary text-primary font-label-md text-label-md tracking-wider uppercase flex items-center justify-center gap-2 hover:bg-surface-container transition-colors duration-200" href="https://wa.me/573019736752?text=Hola,%20deseo%20comunicarme%20directamente%20para%20una%20asesor%C3%ADa%20patrimonial%20inmediata" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-primary">chat</span>
+<span>Chatear directo al WhatsApp (+57 301 973 6752)</span>
+</a>
+<!-- Privacy & Habeas Data Disclaimer -->
+<p class="mt-4 text-center font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<span class="material-symbols-outlined text-[14px] align-middle text-secondary">lock</span>
+            Tus datos están 100% protegidos bajo secreto fiduciario y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+<!-- Interactive FAQ Accordion -->
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3 text-center sm:text-left">Preguntas Frecuentes sobre el Proceso</h3>
+<!-- FAQ Item 1 -->
+<div class="rounded-lg bg-surface-container-lowest border border-surface-container-highest overflow-hidden">
+<button class="w-full p-4 text-left flex justify-between items-center font-label-md text-label-md text-primary font-bold" onclick="toggleFaq('faq1')" type="button">
+<span>¿Qué implica que una propiedad sea 'Off-Market'?</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="faq1-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-surface-container-highest/60 pt-2" id="faq1">
+              Significa que los propietarios (familias prominentes o inversionistas corporativos) no desean exponer sus residencias en portales públicos por motivos de seguridad y prestigio. Se accede a ellas exclusivamente mediante firma de un acuerdo de confidencialidad (NDA).
+            </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-lg bg-surface-container-lowest border border-surface-container-highest overflow-hidden">
+<button class="w-full p-4 text-left flex justify-between items-center font-label-md text-label-md text-primary font-bold" onclick="toggleFaq('faq2')" type="button">
+<span>¿Cómo gestionan compradores extranjeros o fondos del exterior?</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="faq2-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-surface-container-highest/60 pt-2" id="faq2">
+              Coordinamos la canalización legal de divisas mediante el Banco de la República (formulario oficial cambiario), facilitando el otorgamiento de visa de inversionista y estructurando fiducias mercantiles con bancos AAA en Colombia.
+            </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-lg bg-surface-container-lowest border border-surface-container-highest overflow-hidden">
+<button class="w-full p-4 text-left flex justify-between items-center font-label-md text-label-md text-primary font-bold" onclick="toggleFaq('faq3')" type="button">
+<span>¿Tiene algún costo la primera sesión de asesoría y valoración?</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="faq3-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-surface-container-highest/60 pt-2" id="faq3">
+              La sesión inicial de perfilamiento y presentación del dossier curado no genera ningún costo ni compromiso. Solo cobramos honorarios por éxito una vez concretada la transacción notarial o fiduciaria.
+            </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================= -->
+<!-- SHARED COMPONENT: Footer                                  -->
+<!-- ========================================================= -->
+<footer class="w-full px-margin py-space-xl mb-16 flex flex-col gap-space-md bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-container-highest dark:border-surface-variant">
+<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary dark:text-inverse-primary tracking-widest font-bold">
+          LUXURY LIVINGMED
+        </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Boutique de Bienes Raíces Patrimoniales · Medellín &amp; Bogotá</p>
+</div>
+<!-- Footer Links Array -->
+<nav class="flex flex-wrap gap-x-6 gap-y-2">
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-75" href="#contacto-asesoria">
+          Aviso de Privacidad y Habeas Data
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-75" href="#contacto-asesoria">
+          Términos Patrimoniales y Fiduciarios
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-75" href="#contacto-asesoria">
+          Certificaciones de Propiedad
+        </a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-sm text-body-sm hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-75" href="#contacto-asesoria">
+          Protocolo de Confidencialidad
+        </a>
+<a class="text-primary dark:text-inverse-primary underline font-body-sm text-body-sm hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:opacity-75 font-semibold" href="https://wa.me/573019736752">
+          Contacto Concierge VIP
+        </a>
+</nav>
+</div>
+<!-- Copyright Text -->
+<div class="max-w-7xl mx-auto w-full border-t border-surface-container-highest/60 pt-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+        © 2024 Luxury LivingMed S.A.S. Todos los derechos reservados. Vigilado Superintendencia de Sociedades. Cumplimiento Habeas Data y Régimen de Protección de Datos Personales (Ley 1581 de 2012).
+      </p>
+</div>
+</footer>
+<!-- ========================================================= -->
+<!-- SHARED COMPONENT: BottomNavBar                            -->
+<!-- Contextual Active: 'Asesoría' (Landing de conversión)     -->
+<!-- ========================================================= -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs bg-surface/95 dark:bg-surface/95 backdrop-blur-md shadow-[0_-4px_20px_rgba(13,34,56,0.06)] dark:shadow-none">
+<!-- Item 0: Portafolio (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant font-normal hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150 py-1 px-3" href="#">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+<span class="font-label-sm text-label-sm mt-0.5">Portafolio</span>
+</a>
+<!-- Item 1: Regiones (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant font-normal hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150 py-1 px-3" href="#">
+<span class="material-symbols-outlined text-[22px]">location_city</span>
+<span class="font-label-sm text-label-sm mt-0.5">Regiones</span>
+</a>
+<!-- Item 2: Privado (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant font-normal hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150 py-1 px-3" href="#">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+<span class="font-label-sm text-label-sm mt-0.5">Privado</span>
+</a>
+<!-- Item 3: Asesoría (Active State: Conversion match) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 active:scale-95 transition-transform duration-150 py-1 px-3" href="#contacto-asesoria">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+<span class="font-label-sm text-label-sm mt-0.5">Asesoría</span>
+</a>
+</nav>
+<!-- Interactive Script for Form & FAQ -->
+<script>
+    function toggleFaq(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        content.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('leadForm');
+      const success = document.getElementById('formSuccess');
+      form.classList.add('opacity-50', 'pointer-events-none');
+      setTimeout(() => {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }, 500);
+    }
+  </script>
+</body></html>
