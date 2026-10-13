@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<title>Dr. Diego Sinisterra · Medicina Estética en Colombia</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 via CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#e7eeff",
+            "tertiary-fixed": "#b9eaff",
+            "on-secondary": "#ffffff",
+            "background": "#f9f9ff",
+            "inverse-primary": "#74d7c8",
+            "tertiary-container": "#227e9a",
+            "inverse-on-surface": "#ebf1ff",
+            "on-background": "#121c2c",
+            "error": "#ba1a1a",
+            "surface": "#f9f9ff",
+            "on-primary-fixed-variant": "#005048",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#f9f9ff",
+            "on-tertiary-fixed": "#001f29",
+            "surface-variant": "#d9e3f9",
+            "secondary-container": "#6df5e1",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#fafdff",
+            "inverse-surface": "#273141",
+            "primary-fixed-dim": "#74d7c8",
+            "on-secondary-container": "#006f64",
+            "tertiary": "#00647e",
+            "on-surface-variant": "#3e4947",
+            "primary": "#00685d",
+            "primary-container": "#008376",
+            "error-container": "#ffdad6",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#006b60",
+            "outline": "#6e7a77",
+            "on-secondary-fixed": "#00201c",
+            "surface-container-high": "#dee8ff",
+            "secondary-fixed": "#71f8e4",
+            "on-error": "#ffffff",
+            "surface-dim": "#d0daf0",
+            "outline-variant": "#bdc9c6",
+            "on-primary-container": "#f2fffb",
+            "secondary": "#006b5f",
+            "on-tertiary-fixed-variant": "#004d62",
+            "on-secondary-fixed-variant": "#005048",
+            "on-error-container": "#93000a",
+            "surface-container-low": "#f0f3ff",
+            "surface-container-highest": "#d9e3f9",
+            "secondary-fixed-dim": "#4fdbc8",
+            "primary-fixed": "#91f4e4",
+            "tertiary-fixed-dim": "#81d1f0",
+            "on-surface": "#121c2c",
+            "on-primary-fixed": "#00201c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "margin": "2rem",
+            "space-sm": "0.75rem",
+            "gutter": "1rem",
+            "space-md": "1.25rem",
+            "space-xs": "0.375rem",
+            "gutter-mobile": "0.75rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl-mobile": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Playfair Display", "serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1rem);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Mobile Outer Shell Container (Max Width Ergonomics for Mobile-First High Conversion) -->
+<div class="relative min-h-screen max-w-md mx-auto bg-surface shadow-2xl flex flex-col overflow-x-hidden border-x border-outline-variant/30">
+<!-- 1. TOP APP BAR (Shared Component Execution) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 max-w-md mx-auto right-0 bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-xl" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-semibold text-primary tracking-tight">Dr. Diego Sinisterra</span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider">MEDICINA ESTÉTICA</span>
+</div>
+</div>
+<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded-full hover:opacity-90 transition-opacity active:scale-95 duration-150 flex items-center gap-1.5 shadow-sm" href="#formulario-agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</header>
+<!-- MAIN BODY CONTENT (AIDA CONVERSION FUNNEL) -->
+<main class="flex-1 pt-16 pb-20">
+<!-- ============================================== -->
+<!-- A - ATENCIÓN (Hero Section con Imagen Médica)   -->
+<!-- ============================================== -->
+<section class="px-margin-mobile pt-6 pb-space-lg flex flex-col gap-5">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-2 self-start bg-surface-container-low px-3 py-1.5 rounded-full border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="text-label-sm font-label-sm text-primary tracking-wide">
+            Médico Especialista Certificado · Registro MinSalud REPS Colombia
+          </span>
+</div>
+<!-- H1 Headline (Editorial Playfair Display) -->
+<h1 class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface leading-tight tracking-tight">
+          Tu rostro en su versión más <span class="text-primary italic font-serif">armónica y natural</span>, sin perder tu esencia.
+        </h1>
+<!-- Subtitle: Medical clarity & tangible promise -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          Procedimientos médicos no invasivos de armonización facial, bioestimulación de colágeno y rejuvenecimiento cutáneo personalizado con criterio anatómico en Colombia. Resultados sutiles y elegantes sin incapacidad médica ni rostros artificiales.
+        </p>
+<!-- Medical Hero Portrait Card -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-lowest">
+<img alt="Dr. Diego Sinisterra en consulta médica de alta estética facial" class="w-full h-80 object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1VOEwvxwBGNh-z_D1rTOBY_oH6lEKaLuWXp9qbP_i4JXHI_9MqGegI1e1BbtouvagDub-jN4J5Y33xMCJfAfJVuY-Nx2fX6FMCRWf2vB8kvl_Gj8NlmD1Ogy5MWCmxCZjdVqgVwZGIDzmPkbd1mMEKSGy69y3yXS5sitSKrVKttlVn_aIxLtK8LjhVFSQmmDXF7k-amNtD2Tv9iUMZT_-IK0iLMoQVvwdP7ul3Arn7DGShrdiN3f1tV2f4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/40 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-lg" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">Dr. Diego Sinisterra · Resultado Clínico Verificado</span>
+</div>
+<span class="text-label-sm font-label-sm text-primary bg-secondary-fixed/40 px-2 py-0.5 rounded-full">Bogotá · Med</span>
+</div>
+</div>
+<!-- Primary High-Conversion CTA -->
+<div class="flex flex-col gap-2 pt-2">
+<a class="w-full min-h-[52px] bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20 hover:opacity-95 active:scale-95 transition-all text-center" href="#formulario-agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+</a>
+<p class="text-label-sm font-label-sm text-center text-outline">
+            Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+          </p>
+</div>
+<!-- Immediate Trust Badges Grid -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="shield">shield</span>
+<span class="text-label-sm font-label-sm font-semibold text-on-surface leading-tight">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="face">face</span>
+<span class="text-label-sm font-label-sm font-semibold text-on-surface leading-tight">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="flex flex-col items-center text-center p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-xl mb-1" data-icon="apartment">apartment</span>
+<span class="text-label-sm font-label-sm font-semibold text-on-surface leading-tight">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- I - INTERÉS (Empatía Médica y Proceso Seguro)  -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-low/60 border-y border-outline-variant/30 flex flex-col gap-6" id="tratamientos">
+<!-- Medical Empathy Block -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/40 shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span class="material-symbols-outlined text-xl" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+<span class="text-label-md font-label-md">Filosofía de Armonía Real</span>
+</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface leading-snug">
+            ¿Temes tratamientos exagerados que cambien tus facciones o te dejen un aspecto artificial?
+          </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Es el temor número uno de nuestros pacientes. En nuestra práctica clínica médica no aplicamos rellenos estándar ni modas pasajeras. Diseñamos dosis exactas y micro-vectores de sustentación que respetan milimétricamente la anatomía ósea y muscular propia de tu rostro.
+          </p>
+<div class="p-3 bg-secondary-fixed/20 rounded-xl border border-primary/20 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5" data-icon="check_circle">check_circle</span>
+<span class="text-body-sm font-body-sm text-on-surface">
+<strong>El estándar Sinisterra:</strong> Que todos noten tu luminosidad y frescura, pero nadie descifre qué procedimiento te realizaste.
+            </span>
+</div>
+</div>
+<!-- 3-Step Clinical Journey -->
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">Paso a paso clínico</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Tu camino médico seguro y predecible</h3>
+</div>
+<!-- Step 01 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm text-primary">01</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant font-medium">Fase Inicial</span>
+</div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-bold">Valoración y Mapeo Facial 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Diagnóstico milimétrico de soporte dérmico y vectores de tensión facial con fotografía clínica estandarizada.
+            </p>
+<div class="pt-2 text-label-md font-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="lightbulb">lightbulb</span>
+<span>Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm text-primary">02</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant font-medium">Prescripción</span>
+</div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-bold">Plan Médico Personalizado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Selección precisa de bioestimuladores de colágeno o ácido hialurónico biocompatible de alta cohesividad con registro sanitario.
+            </p>
+<div class="pt-2 text-label-md font-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="lightbulb">lightbulb</span>
+<span>Beneficio: Presupuesto cerrado, transparente y sin sorpresas.</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-headline-sm font-headline-sm text-primary">03</span>
+<span class="text-label-sm font-label-sm bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant font-medium">Ejecución</span>
+</div>
+<h4 class="text-label-lg font-label-lg text-on-surface font-bold">Aplicación Guiada y Glow Natural</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Procedimiento ambulatorio confortable mediante microcánulas de punta roma para minimizar hematomas e hinchazón.
+            </p>
+<div class="pt-2 text-label-md font-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="lightbulb">lightbulb</span>
+<span>Beneficio: Reincorporación inmediata a tu rutina social y laboral.</span>
+</div>
+</div>
+</div>
+<!-- WhatsApp triage link -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:underline decoration-primary underline-offset-4" href="https://wa.me/573169841671?text=Hola%20Dr.%20Diego%20Sinisterra,%20deseo%20hacer%20una%20consulta%20previa%20sobre%20los%20tratamientos">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>¿Tienes dudas específicas? Habla con el Concierge Médico</span>
+</a>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- D - DESEO (Prueba Social, Métricas y Beneficios)-->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-6" id="resultados">
+<!-- Audited Metrics Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm text-center">
+<span class="text-headline-lg font-headline-lg text-primary block font-bold">+10</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Años Trayectoria Médica</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm text-center">
+<span class="text-headline-lg font-headline-lg text-primary block font-bold">+4.500</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Pacientes Satisfechos</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm text-center">
+<span class="text-headline-lg font-headline-lg text-primary block font-bold">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm text-center">
+<div class="flex items-center justify-center gap-1 text-primary">
+<span class="text-headline-lg font-headline-lg font-bold">4.9</span>
+<span class="material-symbols-outlined text-xl" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Google Reviews Reales</span>
+</div>
+</div>
+<!-- 4 Patient Result Benefits -->
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1 mb-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">Resultados Visibles</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Lo que experimentarás en tu rostro</h3>
+</div>
+<!-- Benefit 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Proporciones calibradas para lucir fresca, descansada y luminosa, jamás aspecto operado o rígido.
+              </p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Bioestimulación profunda de colágeno</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Activación orgánica del colágeno propio para recuperar firmeza, elasticidad y lozanía duradera.
+              </p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Cero tiempo de reposo en cama</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Retoma tu jornada laboral o compromisos sociales el mismo día sin inflamación invasiva ni marcas agresivas.
+              </p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h4 class="text-label-lg font-label-lg text-on-surface font-semibold">Acompañamiento VIP continuo</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                Revisiones directas y control post-tratamiento personalizado por tu médico especialista tratante.
+              </p>
+</div>
+</div>
+</div>
+<!-- Verified Patient Reviews -->
+<div class="flex flex-col gap-3 pt-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">Testimonios Verificados</span>
+<!-- Testimonial 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Bogotá · Hace 2 semanas</span>
+</div>
+<p class="text-body-md font-body-md italic text-on-surface">
+              "Llevaba años dudando por miedo a que se me viera la cara hinchada. El Dr. Diego me explicó cada punto con calma. Me hice bioestimulador y toxina sutil; mi piel luce viva, descansada y 100% natural."
+            </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-semibold text-label-md font-label-md text-on-surface">Camila R. Valderrama</span>
+<span class="text-label-sm font-label-sm text-primary bg-surface-container px-2 py-0.5 rounded-full">Paciente Verificada</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Medellín · Hace 1 mes</span>
+</div>
+<p class="text-body-md font-body-md italic text-on-surface">
+              "La atención boutique y el criterio médico son excepcionales. No sentí dolor y salí directo a mi trabajo. El resultado en el contorno mandibular es justo la armonía que buscaba."
+            </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="font-semibold text-label-md font-label-md text-on-surface">Dra. Marcela Echeverri</span>
+<span class="text-label-sm font-label-sm text-primary bg-surface-container px-2 py-0.5 rounded-full">Paciente Verificada</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- A - ACCIÓN (Conversión Sin Fricción)           -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg bg-surface-container-low border-t border-outline-variant/30 flex flex-col gap-5" id="formulario-agendar">
+<!-- Scarcity Card Header -->
+<div class="bg-primary text-on-primary p-4 rounded-2xl flex items-center gap-3 shadow-md">
+<span class="material-symbols-outlined text-2xl animate-pulse text-secondary-fixed" data-icon="notifications_active">notifications_active</span>
+<div>
+<h4 class="text-label-lg font-label-lg font-bold">Cupos limitados de valoración esta semana en Colombia</h4>
+<p class="text-body-sm font-body-sm opacity-90">Atención personalizada con el Dr. Sinisterra por orden de solicitud.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/40 shadow-xl flex flex-col gap-4">
+<div class="flex flex-col gap-1 text-center">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface">
+              Empieza hoy tu transformación armónica con total confianza
+            </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Completa estos 3 datos y nuestra coordinadora clínica te contactará de inmediato con disponibilidad de agenda.
+            </p>
+</div>
+<!-- Minimalist 3-field form -->
+<form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud de valoración ha sido recibida prioritariamente. Nos comunicaremos a tu WhatsApp en breve.');">
+<!-- Field 1: Name -->
+<div class="flex flex-col gap-1.5">
+<label class="text-label-md font-label-md text-on-surface font-medium" for="nombre">Nombre completo</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-xl border border-outline-variant bg-surface text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md" id="nombre" name="nombre" placeholder="Ej. Carolina Montoya" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3.5 top-3 text-outline text-xl" data-icon="person">person</span>
+</div>
+</div>
+<!-- Field 2: WhatsApp / Phone -->
+<div class="flex flex-col gap-1.5">
+<label class="text-label-md font-label-md text-on-surface font-medium" for="telefono">WhatsApp o Celular (+57)</label>
+<div class="relative">
+<input class="w-full h-12 px-4 rounded-xl border border-outline-variant bg-surface text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md" id="telefono" name="telefono" placeholder="+57 300 123 4567" required="" type="tel"/>
+<span class="material-symbols-outlined absolute right-3.5 top-3 text-outline text-xl" data-icon="phone_iphone">phone_iphone</span>
+</div>
+</div>
+<!-- Field 3: Treatment Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="text-label-md font-label-md text-on-surface font-medium" for="tratamiento">Tratamiento de interés</label>
+<div class="relative">
+<select class="w-full h-12 px-4 pr-10 rounded-xl border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md appearance-none" id="tratamiento" name="tratamiento">
+<option value="armonizacion">Armonización Facial &amp; Toxina</option>
+<option value="bioestimulacion">Bioestimulación de Colágeno</option>
+<option value="rejuvenecimiento">Rejuvenecimiento &amp; Glow Dérmico</option>
+<option value="diagnostico">Valoración Diagnóstica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-3 text-outline text-xl pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Main High-Contrast Form CTA -->
+<button class="w-full min-h-[52px] mt-2 bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded-full flex items-center justify-center gap-2 shadow-lg shadow-primary-container/30 hover:opacity-95 active:scale-95 transition-all cursor-pointer font-bold" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative flex py-2 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-4 text-label-sm font-label-sm text-outline uppercase tracking-wider">O preferencia inmediata</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Direct WhatsApp Button -->
+<a class="w-full min-h-[48px] bg-surface-container text-primary border border-primary/30 rounded-full flex items-center justify-center gap-2 hover:bg-surface-variant font-label-md text-label-md font-semibold transition-all" href="https://wa.me/573169841671?text=Hola%20Dr.%20Diego%20Sinisterra,%20quiero%20agendar%20mi%20cita%20de%20valoración%20inmediata" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 316 984 1671)</span>
+</a>
+<!-- Privacy Guarantee Notice -->
+<p class="text-body-sm font-body-sm text-center text-outline leading-tight pt-1">
+            Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+          </p>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- PREGUNTAS FRECUENTES (Acordeón Interactivo)    -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-lg flex flex-col gap-4">
+<div class="flex flex-col gap-1 text-center">
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">Transparencia Total</span>
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="flex flex-col gap-3 pt-2">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Los procedimientos duelen o requieren incapacidad?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-2">
+              No generan dolor significativo. Empleamos anestesia tópica de grado hospitalario y microcánulas romas atraumáticas. No requieres días de reposo en cama; puedes reincorporarte a tus actividades laborales el mismo día siguiendo precauciones básicas.
+            </p>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Cuánto duran los resultados del ácido hialurónico y bioestimuladores?</span>
+<summary class="hidden"></summary>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-2">
+              El ácido hialurónico reticulado de alta gama dura entre 12 y 18 meses según la zona de aplicación. Los bioestimuladores de colágeno (como hidroxiapatita o policaprolactona) generan un banco de colágeno propio cuyos efectos tensores perduran hasta 24 meses.
+            </p>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Cómo garantizan que el resultado se vea 100% natural?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-2">
+              Mediante la técnica de micro-sustentación anatómica. No colocamos volumen donde no existía originalmente; restauramos los compartimentos grasos y vectores de juventud perdidos respetando tus gestos expresivos naturales.
+            </p>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-lg text-label-lg text-on-surface font-semibold list-none">
+<span>¿Qué incluye la cita de valoración médica inicial?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/20 pt-2">
+              Incluye análisis fotográfico clínico 3D, diagnóstico individualizado de calidad cutánea y vectorización facial realizado directamente por el Dr. Diego Sinisterra, junto a la cotización detallada de insumos aprobados por INVIMA.
+            </p>
+</details>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- FOOTER (Shared Component Exact Execution)      -->
+<!-- ============================================== -->
+<footer class="w-full px-margin-mobile py-space-xl flex flex-col gap-space-sm mb-16 bg-surface-container-low border-t border-outline-variant/40">
+<div class="flex flex-col gap-1">
+<span class="text-headline-md font-headline-md font-semibold text-primary">Dr. Diego Sinisterra</span>
+<span class="text-label-sm font-label-sm text-outline">Medicina Estética &amp; Armonización Facial</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+          © 2024 Dr. Diego Sinisterra Medicina Estética. Todos los derechos reservados. Registro Médico REPS / MinSalud Colombia. Vigilado Superintendencia Nacional de Salud.
+        </p>
+<div class="flex flex-col gap-2 pt-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Política de Datos Ley 1581</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Consentimiento Informado</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="https://wa.me/573169841671">WhatsApp Concierge Clínico</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Términos y Condiciones</a>
+</div>
+</footer>
+</main>
+<!-- ============================================== -->
+<!-- BOTTOM NAV BAR (Shared Component Execution)    -->
+<!-- Destination count: 4 | Inicio (Active)         -->
+<!-- ============================================== -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 pb-safe max-w-md mx-auto right-0 bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg border-t border-outline-variant/30 shadow-lg">
+<!-- Tab 1: Inicio (Active Destination) -->
+<a class="flex flex-col items-center justify-center bg-secondary-fixed/30 dark:bg-secondary/40 text-primary dark:text-secondary-fixed rounded-full px-3 py-1.5 font-bold hover:text-primary transition-colors active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Inicio</span>
+</a>
+<!-- Tab 2: Tratamientos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 hover:text-primary transition-colors active:scale-95 duration-150" href="#tratamientos">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+<span class="text-label-sm font-label-sm">Tratamientos</span>
+</a>
+<!-- Tab 3: Resultados (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 hover:text-primary transition-colors active:scale-95 duration-150" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- Tab 4: Agendar (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-dim px-3 py-1.5 hover:text-primary transition-colors active:scale-95 duration-150" href="#formulario-agendar">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Agendar</span>
+</a>
+</nav>
+</div>
+</body></html>

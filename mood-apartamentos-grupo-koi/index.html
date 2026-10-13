@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MOOD · KOI | Arquitectura Residencial de Autor &amp; Plusvalía en Colombia</title>
+<!-- Fonts Google -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#efeeec",
+            "surface-container-highest": "#e3e2e0",
+            "secondary-fixed": "#ffddb2",
+            "primary": "#000000",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "background": "#faf9f7",
+            "outline": "#75777d",
+            "on-tertiary-container": "#71897b",
+            "on-secondary-fixed": "#291800",
+            "inverse-primary": "#bac7e1",
+            "surface-container-high": "#e9e8e6",
+            "on-background": "#1a1c1b",
+            "on-tertiary-fixed-variant": "#354c3f",
+            "secondary-container": "#fed39b",
+            "primary-container": "#0e1c2f",
+            "tertiary-fixed-dim": "#b2cdbc",
+            "surface-bright": "#faf9f7",
+            "primary-fixed": "#d6e3fe",
+            "on-primary-fixed": "#0e1c2f",
+            "surface-dim": "#dadad8",
+            "primary-fixed-dim": "#bac7e1",
+            "on-error": "#ffffff",
+            "tertiary-container": "#082015",
+            "tertiary": "#000000",
+            "surface-tint": "#525f75",
+            "on-tertiary-fixed": "#082015",
+            "on-secondary-container": "#78592c",
+            "on-primary-container": "#77849c",
+            "tertiary-fixed": "#cee9d8",
+            "on-surface-variant": "#44474c",
+            "on-secondary-fixed-variant": "#5d4116",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#2f3130",
+            "on-primary": "#ffffff",
+            "surface": "#faf9f7",
+            "surface-container-low": "#f4f3f1",
+            "surface-variant": "#e3e2e0",
+            "on-primary-fixed-variant": "#3a475c",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f1f1ef",
+            "on-surface": "#1a1c1b",
+            "on-error-container": "#93000a",
+            "secondary": "#78592b",
+            "outline-variant": "#c5c6cd",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed-dim": "#e9c089"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "gutter": "2rem",
+            "margin-mobile": "1.5rem",
+            "space-sm": "0.75rem",
+            "space-xs": "0.375rem",
+            "space-md": "1.5rem",
+            "margin": "4rem",
+            "space-lg": "2.5rem",
+            "space-xl": "4rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "headline-sm-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+            "body-lg": ["18px", {"lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "300"}],
+            "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600"}],
+            "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "display-hero": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+            "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+            "headline-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+            "headline-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "500"}],
+            "headline-sm-mobile": ["20px", {"lineHeight": "28px", "fontWeight": "500"}],
+            "label-md": ["13px", {"lineHeight": "18px", "fontWeight": "500"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full px-space-md py-space-sm bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="apartment">apartment</span>
+<span class="font-headline-sm-mobile text-headline-sm-mobile tracking-widest uppercase text-on-surface dark:text-inverse-on-surface">MOOD · KOI</span>
+</div>
+<a class="font-label-caps text-label-caps bg-primary-container text-surface-container-lowest px-4 py-2 rounded-lg border border-outline-variant/20 active:scale-[0.98] transition-transform duration-150 flex items-center gap-1.5 shadow-sm" href="#contacto">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+</header>
+<main class="max-w-md mx-auto px-margin-mobile pt-space-md pb-space-xl flex flex-col gap-space-lg">
+<!-- 1. ATENCIÓN (A): HERO & FIRST VALUE PROPOSITION -->
+<section class="flex flex-col gap-space-sm pt-2">
+<!-- Credential Micro-Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-surface-container-low border border-outline-variant/40 rounded-full self-start">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wide">Proyecto Residencial de Autor · Grupo KOI · Respaldo Fiduciario Colombia</span>
+</div>
+<!-- H1 Main Impact Headline -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-primary tracking-tight mt-1">
+        Tu próximo apartamento exclusivo en Colombia, diseñado con <span class="italic text-secondary font-medium">arquitectura de autor</span> y plusvalía garantizada.
+      </h1>
+<!-- Supporting Editorial Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+        Apartamentos y penthouses de diseño contemporáneo, terrazas panorámicas y acabados nobles en ubicaciones de alta valorización. Inversión patrimonial con asesoría jurídica y fiduciaria blindada.
+      </p>
+<!-- Hero Image Card with Spatial Floating Pill -->
+<div class="relative w-full rounded-xl overflow-hidden border border-outline-variant/30 bg-surface-container-low shadow-[0_20px_40px_-12px_rgba(11,25,44,0.07)] my-2">
+<img alt="Vista panorámica terraza y sala de estar de lujo en penthouse de autor" class="w-full h-[320px] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WP4gE7ZOHPc3eB7JLEL6urqHKBlLwoa8LrPsLoMN_hk7Qmd1NagLr-_0xbSaZwdM087ZMF4Znoqvc7KmsQAqnsgE_IKgR0dDZZsAPBcC53o9hlu2gWb2Qd35A6ECoxVCvTuqf3t2x0uv5IBEwWfaQrGIl59rLkjF_B-6iknRgXpfp8vKUIa-NpniJVPBouGjNXvS9Nud-M2fYnk5tX7rp1g3VMuxErxQg0gbUBiYi3TwREFO5NNy1GuNc"/>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-2.5 rounded-lg border border-outline-variant/20 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+<span class="font-label-caps text-[10px] text-on-surface font-semibold tracking-wider">Disponibilidad Inmediata · Tipologías 1, 2 y 3 Alcobas</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Primary High-Conversion CTA -->
+<a class="w-full bg-primary-container text-surface-container-lowest font-label-caps text-label-caps text-center py-4 px-6 rounded-lg uppercase tracking-widest shadow-md hover:bg-black transition-all flex items-center justify-center gap-2 active:scale-[0.98]" href="#contacto">
+<span>Agendar ahora mi visita guiada</span>
+<span class="material-symbols-outlined text-base" data-icon="east">east</span>
+</a>
+<!-- Friction Reducer / Micro-Trust -->
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant/90 flex items-center justify-center gap-1.5">
+<span class="text-secondary font-bold">✓</span> Respuesta en menos de 24 horas · Dossier privado y planos sin costo
+      </p>
+<!-- 3 Tactile Trust Badges -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-2.5 rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="verified_user">verified_user</span>
+<span class="font-label-caps text-[9px] text-on-surface tracking-wider">100% Títulos Saneados</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-2.5 rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="shield">shield</span>
+<span class="font-label-caps text-[9px] text-on-surface tracking-wider">Fiducia Blindada</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 p-2.5 rounded-lg flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="support_agent">support_agent</span>
+<span class="font-label-caps text-[9px] text-on-surface tracking-wider">Atención 1 a 1 Discreta</span>
+</div>
+</div>
+</section>
+<!-- 2. INTERÉS (I): PROBLEM & ARCHITECTURAL SOLUTION -->
+<section class="flex flex-col gap-space-md border-t border-outline-variant/30 pt-space-lg">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Transparencia Inmobiliaria</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">
+          ¿Cansado de proyectos sobre planos que se retrasan o portales con fotos engañosas?
+        </h2>
+</div>
+<div class="bg-surface-container-low border-l-2 border-secondary p-4 rounded-r-lg flex flex-col gap-2">
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+          En el mercado tradicional, más del 40% de las preventas sufren desfases temporales o variaciones arbitrarias de acabados.
+        </p>
+<p class="font-body-md text-body-md text-on-surface font-normal">
+<strong class="text-primary font-semibold">MOOD Apartamentos elimina la incertidumbre:</strong> estructuración técnica rigurosa, fiducia bancaria vigilada por la Superfinanciera y catálogo de especificaciones firmado bajo contrato notarial sin sobrecostos imprevistos.
+        </p>
+</div>
+<!-- 3-Step Guided Process -->
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/30 flex items-start gap-3">
+<span class="font-headline-sm-mobile text-secondary font-bold">01</span>
+<div class="flex flex-col">
+<h3 class="font-body-md font-semibold text-on-surface">Valoración y Perfilamiento Personalizado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Certeza absoluta de tu presupuesto, capacidad fiduciaria y ahorro de semanas de búsqueda infructuosa.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/30 flex items-start gap-3">
+<span class="font-headline-sm-mobile text-secondary font-bold">02</span>
+<div class="flex flex-col">
+<h3 class="font-body-md font-semibold text-on-surface">Dossier Privado &amp; Recorrido Guiado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Acceso prioritario a tipologías premium con renders de escala 1:1 y especificaciones arquitectónicas antes del mercado masivo.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/30 flex items-start gap-3">
+<span class="font-headline-sm-mobile text-secondary font-bold">03</span>
+<div class="flex flex-col">
+<h3 class="font-body-md font-semibold text-on-surface">Cierre Notarial y Respaldo Fiduciario</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Custodia íntegra de aportes mediante encargo fiduciario y acompañamiento legal integral para compradores residentes o en el exterior.
+            </p>
+</div>
+</div>
+</div>
+<!-- WhatsApp Help Link -->
+<a class="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg border border-secondary/40 text-secondary bg-surface-container-lowest font-label-caps text-label-caps hover:bg-surface-container transition-colors" href="https://wa.me/573117040483?text=Hola,%20quisiera%20asesoría%20sobre%20el%20proyecto%20MOOD%20KOI" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="chat">chat</span>
+<span>¿Dudas inmediatas? Conversar con un Asesor Senior</span>
+</a>
+</section>
+<!-- 3. DESEO (D): AUDITED METRICS, ATTRIBUTES & PENTHOUSE SHOWCASE -->
+<section class="flex flex-col gap-space-md border-t border-outline-variant/30 pt-space-lg">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Solidez Comprobada</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">
+          Patrimonio forjado con rigor y excelencia espacial.
+        </h2>
+</div>
+<!-- Audited Metrics Bento Grid -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/30 text-center">
+<div class="font-headline-md-mobile text-primary font-bold">+15 Años</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant tracking-wider mt-1">Trayectoria Grupo KOI</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/30 text-center">
+<div class="font-headline-md-mobile text-primary font-bold">+480</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant tracking-wider mt-1">Inversionistas Satisfechos</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/30 text-center">
+<div class="font-headline-md-mobile text-secondary font-bold">100%</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant tracking-wider mt-1">Fiducia Completa</div>
+</div>
+<div class="bg-surface-container-lowest p-3.5 rounded-lg border border-outline-variant/30 text-center">
+<div class="font-headline-md-mobile text-primary font-bold">4.9 / 5</div>
+<div class="font-label-caps text-[10px] text-on-surface-variant tracking-wider mt-1">Satisfacción Verificada</div>
+</div>
+</div>
+<!-- 4 Tangible Lifestyle Outcomes -->
+<div class="flex flex-col gap-2.5">
+<div class="p-3 bg-surface-container-lowest border border-outline-variant/20 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="wb_sunny">wb_sunny</span>
+</div>
+<div>
+<h4 class="font-body-md font-semibold text-primary">Arquitectura Bioclimática y Luz Natural</h4>
+<p class="font-body-sm text-on-surface-variant">Ventilación cruzada eficiente y confort térmico sin climatización artificial forzada.</p>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest border border-outline-variant/20 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="landscape">landscape</span>
+</div>
+<div>
+<h4 class="font-body-md font-semibold text-primary">Terrazas Privadas con Vista a los Cerros</h4>
+<p class="font-body-sm text-on-surface-variant">Conexión con el horizonte andino y generosas áreas de comedor exterior privado.</p>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest border border-outline-variant/20 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="handyman">handyman</span>
+</div>
+<div>
+<h4 class="font-body-md font-semibold text-primary">Acabados de Autor Importados</h4>
+<p class="font-body-sm text-on-surface-variant">Piedras sinterizadas, carpintería arquitectónica en roble ahumado y herrajes de precisión.</p>
+</div>
+</div>
+<div class="p-3 bg-surface-container-lowest border border-outline-variant/20 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<h4 class="font-body-md font-semibold text-primary">Alta Valorización y Renta Proyectada</h4>
+<p class="font-body-sm text-on-surface-variant">Ubicación estratégica en corredor residencial consolidado con tasa de absorción premium.</p>
+</div>
+</div>
+</div>
+<!-- Featured Typology Showcase Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden shadow-sm flex flex-col">
+<div class="relative">
+<img alt="Penthouse de autor con cocina de concepto abierto, mármol y ventanales panorámicos hacia las montañas" class="w-full h-[260px] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X7ua529M1VH3NvrRAnxWwp3WU41HELCxR8nknEiLi_ABdeXzCKseIL4rDEmbu2b8FjBEIEwX6ke2L8Ebk_sWZHi5rH3MIoE68_Drx4uwA0HnlYHBX4wdNG021aYmvbopxTr7ihXKBmMLniTlznAgvWBvLG8BpGroFsS0kNKjhubljzXVlFbLe8Z2Un3txgcCGb-1QrQktsLfAPDkNFQvUooVy0aTLgOj0Olr3eH_fBC4QIN5p5z5frJlE"/>
+<span class="absolute top-3 left-3 bg-primary-container text-surface-container-lowest font-label-caps text-[10px] px-2.5 py-1 rounded">
+            TIPOLOGÍA INSIGNIA
+          </span>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm-mobile text-headline-sm-mobile text-primary">Tipo PH-Dúplex 01</h3>
+<span class="font-label-caps text-label-caps text-secondary font-bold">214 m² Totales</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            3 Alcobas en Suite · Terraza Lounge 42m² · Doble Altura Social · 3 Parqueaderos Privados + Cuarto Útil.
+          </p>
+<div class="pt-2 border-t border-outline-variant/20 flex justify-between items-center">
+<div>
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Inversión desde</span>
+<span class="font-headline-sm-mobile text-primary font-bold">$1.840M COP</span>
+</div>
+<a class="font-label-caps text-[11px] bg-secondary text-on-secondary px-3 py-2 rounded uppercase tracking-wider hover:bg-secondary-fixed-dim transition-colors" href="#contacto">
+              Consultar Unidad
+            </a>
+</div>
+</div>
+</div>
+<!-- Real Verified Testimonials -->
+<div class="flex flex-col gap-3">
+<div class="p-4 bg-surface-container-low border border-outline-variant/30 rounded-lg flex flex-col gap-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm italic text-on-surface">
+            "Buscaba transferir capital desde el exterior con total seguridad jurídica. El equipo de KOI estructuró la fiducia y los pagos con una precisión intachable. La vista al atardecer superó mis expectativas."
+          </p>
+<span class="font-label-caps text-[10px] text-on-surface-variant font-semibold tracking-wider">
+            — Dr. Mauricio V., Cirujano e Inversionista Patrimonial
+          </span>
+</div>
+<div class="p-4 bg-surface-container-low border border-outline-variant/30 rounded-lg flex flex-col gap-2">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm italic text-on-surface">
+            "La separación acústica y la calidad de los materiales son de estándar internacional. No es una constructora masiva; la atención y discreción fueron impecables de principio a fin."
+          </p>
+<span class="font-label-caps text-[10px] text-on-surface-variant font-semibold tracking-wider">
+            — Familia Restrepo, Propietarios Penthouse 402
+          </span>
+</div>
+</div>
+</section>
+<!-- 4. ACCIÓN (A): HIGH-CONVERSION CONTACT FORM & WHATSAPP DIRECT -->
+<section class="flex flex-col gap-space-md border-t border-outline-variant/30 pt-space-lg" id="contacto">
+<div class="flex flex-col gap-2 text-center items-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Atención Confidencial</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">
+          Inicia tu proceso de inversión exclusiva.
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+          Completa tus datos para recibir de inmediato el Dossier Privado, lista de precios actualizados y agendamiento 1 a 1.
+        </p>
+</div>
+<!-- 3-Field Minimalist Form -->
+<form class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/40 shadow-sm flex flex-col gap-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Un asesor patrimonial de Grupo KOI se comunicará contigo en menos de 24 horas.');">
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-caps text-[10px] uppercase tracking-wider text-on-surface-variant" for="fullname">Nombre y Apellido *</label>
+<input class="w-full bg-background border-b border-outline-variant/40 focus:border-secondary focus:ring-0 text-on-surface font-body-md text-sm px-3 py-2.5 rounded-none transition-colors placeholder:text-outline/50" id="fullname" placeholder="Ej. Alejandro Gómez" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-caps text-[10px] uppercase tracking-wider text-on-surface-variant" for="phone">WhatsApp o Celular (Colombia o Extranjero) *</label>
+<input class="w-full bg-background border-b border-outline-variant/40 focus:border-secondary focus:ring-0 text-on-surface font-body-md text-sm px-3 py-2.5 rounded-none transition-colors placeholder:text-outline/50" id="phone" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-1 text-left">
+<label class="font-label-caps text-[10px] uppercase tracking-wider text-on-surface-variant" for="typology">¿Qué tipología te interesa? *</label>
+<select class="w-full bg-background border-b border-outline-variant/40 focus:border-secondary focus:ring-0 text-on-surface font-body-md text-sm px-3 py-2.5 rounded-none transition-colors" id="typology">
+<option value="ph">Penthouse 3 Habs (214m² - Terraza Panorámica)</option>
+<option value="apto2">Apartamento 2 Habs (118m² - Vista Cerros)</option>
+<option value="suite1">Suite 1 Hab (68m² - Alta Rentabilidad)</option>
+<option value="asesoria">Asesoría Inversión / Portafolio Completo</option>
+</select>
+</div>
+<button class="w-full bg-primary-container text-surface-container-lowest font-label-caps text-label-caps py-4 px-6 rounded uppercase tracking-widest shadow-md hover:bg-black transition-all flex items-center justify-center gap-2 mt-2 active:scale-[0.98]" type="submit">
+<span>QUIERO MI ASESORÍA PATRIMONIAL ✨</span>
+</button>
+<p class="font-body-sm text-[11px] text-center text-on-surface-variant/70 leading-tight pt-1">
+          Protección de Datos: Tus datos están protegidos bajo Ley 1581 (Habeas Data Colombia). Confidencialidad y secreto fiduciario garantizados. Cero spam.
+        </p>
+</form>
+<div class="flex items-center gap-3">
+<div class="flex-1 h-px bg-outline-variant/30"></div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">o de manera directa</span>
+<div class="flex-1 h-px bg-outline-variant/30"></div>
+</div>
+<!-- Direct WhatsApp Action Button -->
+<a class="w-full bg-[#1b4332] text-surface-container-lowest font-label-caps text-label-caps py-3.5 px-4 rounded-lg uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-sm active:scale-[0.98] transition-transform" href="https://wa.me/573117040483?text=Hola,%20solicito%20el%20dossier%20privado%20de%20MOOD%20KOI" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+<span>Chatear directo al WhatsApp (+57 311 704 0483)</span>
+</a>
+</section>
+<!-- 5. PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+<section class="flex flex-col gap-space-md border-t border-outline-variant/30 pt-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Resolución de Dudas</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-primary">
+          Preguntas Frecuentes
+        </h2>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Accordion 1 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer list-none font-body-md font-semibold text-primary">
+<span>¿Qué entidad fiduciaria respalda los fondos?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Todos los recursos se administran a través de una Fiduciaria bancaria de primer orden vigilada por la Superintendencia Financiera de Colombia. Los giros al constructor solo proceden tras el cumplimiento estricto del punto de equilibrio técnico y financiero.
+          </p>
+</details>
+<!-- Accordion 2 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer list-none font-body-md font-semibold text-primary">
+<span>¿Cuáles son las fechas estimadas de entrega?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Contamos con tipologías de entrega inmediata para escrituración en 45 días hábiles, y unidades seleccionadas para entrega en el segundo semestre del año en curso con plan flexible de cuota inicial.
+          </p>
+</details>
+<!-- Accordion 3 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer list-none font-body-md font-semibold text-primary">
+<span>¿Tienen financiación directa de la cuota inicial?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Sí. Grupo KOI ofrece planes de fraccionamiento de la cuota inicial (hasta 30-40% del valor del inmueble) durante la etapa constructiva sin intereses remuneratorios, y convenios directos con banca para el crédito hipotecario o leasing residencial.
+          </p>
+</details>
+<!-- Accordion 4 -->
+<details class="group bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-3.5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center cursor-pointer list-none font-body-md font-semibold text-primary">
+<span>¿Se permiten arriendos para estadías cortas?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            El reglamento de propiedad horizontal contempla módulos diferenciados: pisos específicos optimizados para operación hotelera boutique de alta gama, y pisos reservados exclusivamente para residencia de largo plazo, preservando la privacidad total.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="w-full flex flex-col px-gutter-mobile pt-space-lg pb-space-xl gap-space-md text-center items-center mb-16 bg-primary-container dark:bg-inverse-surface border-t border-outline/30 dark:border-outline/20">
+<div class="flex flex-col items-center gap-1">
+<span class="font-headline-sm-mobile text-headline-sm-mobile tracking-widest uppercase text-surface-container-lowest dark:text-surface-bright">MOOD · KOI</span>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-outline-variant max-w-xs mt-1">
+        © 2024 MOOD Apartamentos por Grupo KOI. Todos los derechos reservados. Arquitectura patrimonial y fiducia verificada en Colombia.
+      </p>
+</div>
+<!-- Legal Links -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-on-primary-container text-xs font-label-caps">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#contacto">Dossier Legal</a>
+<span>·</span>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#contacto">Política de Privacidad</a>
+<span>·</span>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#contacto">Términos y Condiciones</a>
+<span>·</span>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#contacto">Línea Fiduciaria Bancaria</a>
+</div>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component Anchor, Mobile Destination Navigation) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/20 shadow-[0_-4px_20px_rgba(11,25,44,0.05)] dark:shadow-none">
+<!-- Tab 1: Proyecto (Active on this landing overview) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed py-space-xs active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="domain" style="font-variation-settings: 'FILL' 1;">domain</span>
+<span class="font-label-caps text-[10px] tracking-wider mt-0.5 font-semibold">Proyecto</span>
+</a>
+<!-- Tab 2: Tipologías -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-space-xs hover:text-secondary active:scale-95 transition-transform duration-150" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="floor_lamp">floor_lamp</span>
+<span class="font-label-caps text-[10px] tracking-wider mt-0.5">Tipologías</span>
+</a>
+<!-- Tab 3: Inversión -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-space-xs hover:text-secondary active:scale-95 transition-transform duration-150" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="account_balance">account_balance</span>
+<span class="font-label-caps text-[10px] tracking-wider mt-0.5">Inversión</span>
+</a>
+<!-- Tab 4: Contacto -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline py-space-xs hover:text-secondary active:scale-95 transition-transform duration-150" href="#contacto">
+<span class="material-symbols-outlined text-xl" data-icon="call">call</span>
+<span class="font-label-caps text-[10px] tracking-wider mt-0.5">Contacto</span>
+</a>
+</nav>
+</body></html>
