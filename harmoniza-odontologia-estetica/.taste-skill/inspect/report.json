@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T21:28:37.035Z",
+ "at": "2026-10-14T22:03:25.885Z",
  "allow": [
   "eyebrow"
  ],
@@ -13,7 +13,7 @@
    "filled": [
     0.49,
     0.54,
-    0.73,
+    0.75,
     0.79
    ],
    "motion": {
@@ -30,9 +30,9 @@
      "h": 900
     },
     "page": {
-     "height": 3100,
-     "screens": 3.4,
-     "words": 225,
+     "height": 3118,
+     "screens": 3.5,
+     "words": 274,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -259,7 +259,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.22,
-      "top": 2670,
+      "top": 2688,
       "tag": "div",
       "kind": "heading"
      }
@@ -277,18 +277,24 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.81,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.19,
+       "share": 0.16,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
       13,
+      15,
       16,
       20,
       24,
@@ -296,17 +302,17 @@
       30,
       52
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Manrope",
-      "size": 16,
-      "leading": 1.25,
+      "size": 15,
+      "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 11.6
+      "contrast": 6.5
      },
-     "measureChars": 58,
+     "measureChars": 179,
      "max": {
       "size": 52,
       "vw": 3.6,
@@ -321,7 +327,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [
@@ -356,8 +362,17 @@
        }
       },
       {
-       "color": "#1b1712",
+       "color": "#1d1810",
        "top": 1781,
+       "hsl": {
+        "h": 37,
+        "s": 0.29,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 2648,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -366,7 +381,7 @@
       },
       {
        "color": "#201c17",
-       "top": 2757,
+       "top": 2775,
        "hsl": {
         "h": 33,
         "s": 0.16,
@@ -377,23 +392,23 @@
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.39
+       "share": 0.48
       },
       {
        "color": "#f2ede4",
-       "share": 0.25
+       "share": 0.22
       },
       {
        "color": "#c9a96e",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#ddd5c4",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#15120f",
-       "share": 0.05
+       "share": 0.04
       }
      ],
      "button": null,
@@ -467,7 +482,7 @@
    "filled": [
     0.75,
     0.46,
-    0.58,
+    0.63,
     0.64
    ],
    "motion": {
@@ -484,9 +499,9 @@
      "h": 1024
     },
     "page": {
-     "height": 3204,
+     "height": 3222,
      "screens": 3.1,
-     "words": 225,
+     "words": 274,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -713,7 +728,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.41,
-      "top": 2774,
+      "top": 2792,
       "tag": "div",
       "kind": "heading"
      }
@@ -731,18 +746,24 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.81,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.19,
+       "share": 0.16,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
       13,
+      15,
       16,
       20,
       24,
@@ -750,17 +771,17 @@
       30,
       46
      ],
-     "sizeCount": 7,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Manrope",
-      "size": 16,
-      "leading": 1.25,
+      "size": 15,
+      "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 11.6
+      "contrast": 6.5
      },
-     "measureChars": 58,
+     "measureChars": 90,
      "max": {
       "size": 46,
       "vw": 6,
@@ -810,8 +831,26 @@
        }
       },
       {
-       "color": "#1b1712",
+       "color": "#231d13",
        "top": 832,
+       "hsl": {
+        "h": 37,
+        "s": 0.3,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#1d1810",
+       "top": 1837,
+       "hsl": {
+        "h": 37,
+        "s": 0.29,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 2752,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -822,23 +861,23 @@
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.39
+       "share": 0.48
       },
       {
        "color": "#f2ede4",
-       "share": 0.25
+       "share": 0.22
       },
       {
        "color": "#c9a96e",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#ddd5c4",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#15120f",
-       "share": 0.05
+       "share": 0.04
       }
      ],
      "button": null,
@@ -913,8 +952,8 @@
     0.69,
     0.5,
     0.84,
-    0.7,
-    0.66
+    0.69,
+    0.72
    ],
    "motion": {
     "elements": 57,
@@ -930,9 +969,9 @@
      "h": 844
     },
     "page": {
-     "height": 3480,
+     "height": 3498,
      "screens": 4.1,
-     "words": 231,
+     "words": 280,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -1243,7 +1282,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.7,
-      "top": 2945,
+      "top": 2963,
       "tag": "div",
       "kind": "heading"
      }
@@ -1261,16 +1300,21 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.81,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.19,
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
       13,
       15,
@@ -1285,13 +1329,13 @@
      "notLoaded": [],
      "body": {
       "font": "Manrope",
-      "size": 16,
-      "leading": 1.25,
+      "size": 15,
+      "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 11.6
+      "contrast": 6.5
      },
-     "measureChars": 18,
+     "measureChars": 39,
      "max": {
       "size": 30,
       "vw": 7.7,
@@ -1306,7 +1350,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.07,
+     "centerShare": 0.06,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1330,8 +1374,26 @@
        }
       },
       {
-       "color": "#1b1712",
+       "color": "#231d13",
        "top": 707,
+       "hsl": {
+        "h": 37,
+        "s": 0.3,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#1d1810",
+       "top": 1812,
+       "hsl": {
+        "h": 37,
+        "s": 0.29,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 2923,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -1340,7 +1402,7 @@
       },
       {
        "color": "#201c17",
-       "top": 3049,
+       "top": 3067,
        "hsl": {
         "h": 33,
         "s": 0.16,
@@ -1351,23 +1413,23 @@
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.39
+       "share": 0.48
       },
       {
        "color": "#f2ede4",
-       "share": 0.26
+       "share": 0.23
       },
       {
        "color": "#c9a96e",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#ddd5c4",
-       "share": 0.13
+       "share": 0.11
       },
       {
        "color": "#15120f",
-       "share": 0.05
+       "share": 0.04
       }
      ],
      "button": null,
@@ -1461,6 +1523,27 @@
   },
   {
    "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.5:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
    "id": "first-action",
    "width": 1440,
    "message": "No visible button in the first screen.",
@@ -1476,6 +1559,16 @@
    "width": 1440,
    "message": "No video anywhere on the page.",
    "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 179 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
   },
   {
    "level": "WARN",
