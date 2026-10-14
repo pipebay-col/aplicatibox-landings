@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:42:44.744Z",
+ "at": "2026-10-14T19:43:49.795Z",
  "allow": [],
  "viewports": [
   {
@@ -384,9 +384,9 @@
    "load": "load",
    "screens": 3,
    "filled": [
-    0.75,
-    0.93,
-    0.66
+    0.84,
+    0.87,
+    0.6
    ],
    "motion": {
     "elements": 19,
@@ -444,7 +444,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.65,
-     "top": 663,
+     "top": 591,
      "tag": "div",
      "kind": "heading"
     },
@@ -467,7 +467,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 108,
+      "top": 449,
       "tag": "div",
       "kind": "heading"
      },
@@ -488,7 +488,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.65,
-      "top": 663,
+      "top": 591,
       "tag": "div",
       "kind": "heading"
      },
@@ -509,7 +509,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.97,
-      "top": 1790,
+      "top": 1718,
       "tag": "div",
       "kind": "heading"
      },
@@ -530,7 +530,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.57,
-      "top": 2184,
+      "top": 2112,
       "tag": "div",
       "kind": "heading"
      },
@@ -551,7 +551,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.93,
-      "top": 2498,
+      "top": 2426,
       "tag": "div",
       "kind": "heading"
      }
@@ -623,14 +623,14 @@
     },
     "eyebrows": [
      {
-      "text": "Tratamientos",
+      "text": "Agenda por WhatsApp — 1 clic",
       "above": "Tu sonrisa en su versión más armónica",
       "upper": false,
       "tracked": false,
       "mono": false,
       "pill": false,
-      "size": 13,
-      "top": 28
+      "size": 16,
+      "top": 405
      }
     ],
     "numbered": [],
@@ -654,7 +654,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 603,
+       "top": 531,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -745,7 +745,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 742
+       "top": 670
       }
      ]
     },
@@ -773,10 +773,10 @@
    "load": "load",
    "screens": 4,
    "filled": [
-    0.66,
+    0.71,
     1,
-    0.67,
-    0.73
+    0.6,
+    0.71
    ],
    "motion": {
     "elements": 19,
@@ -834,33 +834,12 @@
      "align": "left",
      "position": "right",
      "widthRatio": 1.29,
-     "top": 785,
+     "top": 685,
      "tag": "div",
      "kind": "heading"
     },
     "h1": null,
     "headings": [
-     {
-      "text": "HARMONIZA",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 24,
-      "vw": 6.2,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": true,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 14,
-      "tag": "div",
-      "kind": "heading"
-     },
      {
       "text": "Tu sonrisa en su versión más armónica",
       "words": 7,
@@ -878,7 +857,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 136,
+      "top": 497,
       "tag": "div",
       "kind": "heading"
      },
@@ -899,7 +878,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 1.29,
-      "top": 785,
+      "top": 685,
       "tag": "div",
       "kind": "heading"
      },
@@ -920,7 +899,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 1.91,
-      "top": 1912,
+      "top": 1812,
       "tag": "div",
       "kind": "heading"
      },
@@ -941,7 +920,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 1.12,
-      "top": 2306,
+      "top": 2206,
       "tag": "div",
       "kind": "heading"
      },
@@ -962,7 +941,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 1.83,
-      "top": 2620,
+      "top": 2520,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "HARMONIZA",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2725,
       "tag": "div",
       "kind": "heading"
      }
@@ -1032,7 +1032,18 @@
      "centerShare": 0,
      "smallText": 0
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Agenda por WhatsApp — 1 clic",
+      "above": "Tu sonrisa en su versión más armónica",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 453
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#1a1816",
@@ -1054,7 +1065,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 725,
+       "top": 625,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1145,7 +1156,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 864
+       "top": 764
       }
      ]
     },
@@ -1219,8 +1230,11 @@
    "level": "FAIL",
    "id": "eyebrow",
    "width": 768,
-   "message": "1 eyebrow/kicker label(s) above headings: \"Tratamientos\" above \"Tu sonrisa en su versión más armónica\"",
-   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+   "message": "1 eyebrow/kicker label(s) above headings: \"Agenda por WhatsApp — 1 clic\" above \"Tu sonrisa en su versión más armónica\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    390
+   ]
   }
  ],
  "images": [
