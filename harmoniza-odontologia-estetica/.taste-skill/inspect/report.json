@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:51:50.822Z",
+ "at": "2026-10-14T19:53:12.608Z",
  "allow": [],
  "viewports": [
   {
@@ -317,16 +317,7 @@
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#ffffff",
-       "bg": "#00d084"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -703,16 +694,7 @@
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#ffffff",
-       "bg": "#00d084"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -1101,16 +1083,7 @@
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#ffffff",
-       "bg": "#00d084"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -1165,17 +1138,6 @@
   }
  ],
  "findings": [
-  {
-   "level": "FAIL",
-   "id": "contrast",
-   "width": 1440,
-   "message": "Unreadable text: \"Agendar por WhatsApp ahora\" 2:1 (#ffffff on #00d084)",
-   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
   {
    "level": "WARN",
    "id": "first-action",
