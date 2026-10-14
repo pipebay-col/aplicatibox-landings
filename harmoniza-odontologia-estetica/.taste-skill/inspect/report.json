@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:53:12.608Z",
+ "at": "2026-10-14T19:55:41.363Z",
  "allow": [],
  "viewports": [
   {
@@ -376,15 +376,15 @@
    "load": "load",
    "screens": 4,
    "filled": [
-    0.77,
-    0.83,
-    0.56,
+    0.91,
+    0.82,
+    0.66,
     0.51
    ],
    "motion": {
-    "elements": 23,
+    "elements": 20,
     "css": 0,
-    "transitions": 14,
+    "transitions": 11,
     "scripted": 9,
     "videos": 0,
     "playingVideos": 0
@@ -395,9 +395,9 @@
      "h": 1024
     },
     "page": {
-     "height": 3731,
+     "height": 3659,
      "screens": 3.6,
-     "words": 170,
+     "words": 166,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -437,7 +437,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.65,
-     "top": 619,
+     "top": 547,
      "tag": "div",
      "kind": "heading"
     },
@@ -460,7 +460,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 108,
+      "top": 36,
       "tag": "div",
       "kind": "heading"
      },
@@ -481,7 +481,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.65,
-      "top": 619,
+      "top": 547,
       "tag": "div",
       "kind": "heading"
      },
@@ -502,7 +502,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 1746,
+      "top": 1674,
       "tag": "div",
       "kind": "heading"
      },
@@ -523,7 +523,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 2140,
+      "top": 2068,
       "tag": "div",
       "kind": "heading"
      },
@@ -544,7 +544,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.93,
-      "top": 2454,
+      "top": 2382,
       "tag": "div",
       "kind": "heading"
      },
@@ -565,7 +565,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 2705,
+      "top": 2633,
       "tag": "p",
       "kind": "statement"
      }
@@ -598,11 +598,10 @@
       15,
       16,
       21,
-      24,
       34,
       38
      ],
-     "sizeCount": 7,
+     "sizeCount": 6,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -626,22 +625,11 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
+     "upperShare": 0,
      "centerShare": 0.03,
      "smallText": 0
     },
-    "eyebrows": [
-     {
-      "text": "Tratamientos",
-      "above": "Tu sonrisa en su versión más armónica",
-      "upper": false,
-      "tracked": false,
-      "mono": false,
-      "pill": false,
-      "size": 13,
-      "top": 28
-     }
-    ],
+    "eyebrows": [],
     "numbered": [],
     "color": {
      "bodyBg": "#1a1816",
@@ -663,7 +651,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 559,
+       "top": 487,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -674,11 +662,11 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.33
+       "share": 0.31
       },
       {
        "color": "#475569",
-       "share": 0.23
+       "share": 0.24
       },
       {
        "color": "#e7e7e7",
@@ -690,7 +678,7 @@
       },
       {
        "color": "#b49a53",
-       "share": 0.09
+       "share": 0.08
       }
      ],
      "button": null,
@@ -729,7 +717,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 698
+       "top": 626
       }
      ]
     },
@@ -753,18 +741,18 @@
    "load": "load",
    "screens": 6,
    "filled": [
-    0.76,
-    1,
-    0.48,
-    0.64,
-    0.67,
+    0.78,
+    0.93,
+    0.56,
+    0.58,
+    0.58,
     0.58
    ],
    "motion": {
-    "elements": 23,
+    "elements": 20,
     "css": 0,
-    "transitions": 11,
-    "scripted": 12,
+    "transitions": 10,
+    "scripted": 10,
     "videos": 0,
     "playingVideos": 0
    },
@@ -774,9 +762,9 @@
      "h": 844
     },
     "page": {
-     "height": 4325,
-     "screens": 5.1,
-     "words": 170,
+     "height": 4225,
+     "screens": 5,
+     "words": 166,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -816,33 +804,12 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.69,
-     "top": 693,
+     "top": 593,
      "tag": "div",
      "kind": "heading"
     },
     "h1": null,
     "headings": [
-     {
-      "text": "HARMONIZA",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 24,
-      "vw": 6.2,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": true,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 14,
-      "tag": "div",
-      "kind": "heading"
-     },
      {
       "text": "Tu sonrisa en su versión más armónica",
       "words": 7,
@@ -860,7 +827,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 136,
+      "top": 36,
       "tag": "div",
       "kind": "heading"
      },
@@ -881,7 +848,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.69,
-      "top": 693,
+      "top": 593,
       "tag": "div",
       "kind": "heading"
      },
@@ -902,7 +869,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.65,
-      "top": 1820,
+      "top": 1720,
       "tag": "div",
       "kind": "heading"
      },
@@ -923,7 +890,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.65,
-      "top": 2214,
+      "top": 2114,
       "tag": "div",
       "kind": "heading"
      },
@@ -944,7 +911,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2528,
+      "top": 2428,
       "tag": "div",
       "kind": "heading"
      },
@@ -965,13 +932,13 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.69,
-      "top": 2779,
+      "top": 2679,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 6,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
@@ -998,11 +965,10 @@
       15,
       16,
       21,
-      24,
       34,
       38
      ],
-     "sizeCount": 7,
+     "sizeCount": 6,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -1026,7 +992,7 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
+     "upperShare": 0,
      "centerShare": 0.03,
      "smallText": 0
     },
@@ -1052,7 +1018,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 633,
+       "top": 533,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1063,11 +1029,11 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.33
+       "share": 0.31
       },
       {
        "color": "#475569",
-       "share": 0.23
+       "share": 0.24
       },
       {
        "color": "#e7e7e7",
@@ -1079,7 +1045,7 @@
       },
       {
        "color": "#b49a53",
-       "share": 0.09
+       "share": 0.08
       }
      ],
      "button": null,
@@ -1118,7 +1084,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 772
+       "top": 672
       }
      ]
     },
@@ -1165,13 +1131,6 @@
    "alsoAt": [
     768
    ]
-  },
-  {
-   "level": "FAIL",
-   "id": "eyebrow",
-   "width": 768,
-   "message": "1 eyebrow/kicker label(s) above headings: \"Tratamientos\" above \"Tu sonrisa en su versión más armónica\"",
-   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
   }
  ],
  "images": [
