@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T21:11:50.492Z",
+ "at": "2026-10-14T21:28:37.035Z",
  "allow": [
   "eyebrow"
  ],
@@ -9,19 +9,18 @@
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 5,
+   "screens": 4,
    "filled": [
-    0.5,
-    0.61,
-    0.89,
-    1,
-    1
+    0.49,
+    0.54,
+    0.73,
+    0.79
    ],
    "motion": {
-    "elements": 49,
+    "elements": 53,
     "css": 0,
-    "transitions": 8,
-    "scripted": 41,
+    "transitions": 43,
+    "scripted": 10,
     "videos": 0,
     "playingVideos": 0
    },
@@ -31,10 +30,10 @@
      "h": 900
     },
     "page": {
-     "height": 3669,
-     "screens": 4.1,
-     "words": 280,
-     "img": 3,
+     "height": 3100,
+     "screens": 3.4,
+     "words": 225,
+     "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -43,14 +42,10 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 7,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [
-      "historia-1.png",
-      "historia-3.png",
-      "clinica-1.jpg"
-     ],
+     "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -117,7 +112,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 870,
+      "top": 874,
       "tag": "div",
       "kind": "heading"
      },
@@ -138,7 +133,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.21,
-      "top": 1088,
+      "top": 1131,
       "tag": "div",
       "kind": "heading"
      },
@@ -159,7 +154,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.31,
-      "top": 1826,
+      "top": 1813,
       "tag": "div",
       "kind": "heading"
      },
@@ -180,7 +175,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2244,
+      "top": 2219,
       "tag": "div",
       "kind": "heading"
      },
@@ -201,14 +196,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.04,
-      "top": 2244,
+      "top": 2219,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "1 sesión",
+      "text": "1 día",
       "words": 2,
-      "chars": 8,
+      "chars": 5,
       "lines": 1,
       "size": 30,
       "vw": 2.1,
@@ -221,8 +216,8 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.08,
-      "top": 2244,
+      "widthRatio": 0.05,
+      "top": 2219,
       "tag": "div",
       "kind": "heading"
      },
@@ -243,14 +238,14 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.23,
-      "top": 2383,
+      "top": 2354,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Tu nueva sonrisa empieza con un mensaje.",
-      "words": 7,
-      "chars": 40,
+      "text": "Agenda tu valoración.",
+      "words": 3,
+      "chars": 21,
       "lines": 1,
       "size": 30,
       "vw": 2.1,
@@ -263,82 +258,55 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.43,
-      "top": 2765,
+      "widthRatio": 0.22,
+      "top": 2670,
       "tag": "div",
       "kind": "heading"
-     },
-     {
-      "text": "Resultados con pacientes reales",
-      "words": 4,
-      "chars": 31,
-      "lines": 1,
-      "size": 34,
-      "vw": 2.4,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.5,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 3036,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 9,
      "maxLines": 1,
      "over2Lines": 0,
-     "statements": 1,
-     "centered": 2,
-     "medianWords": 4,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Manrope",
-       "share": 0.82,
+       "share": 0.81,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.16,
-       "mono": false
-      },
-      {
-       "family": "Playfair Display",
-       "share": 0.02,
+       "share": 0.19,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
+      13,
       16,
       20,
+      24,
       28,
       30,
-      34,
       52
      ],
-     "sizeCount": 6,
-     "notLoaded": [
-      "Playfair Display"
-     ],
+     "sizeCount": 7,
+     "notLoaded": [],
      "body": {
       "font": "Manrope",
       "size": 16,
-      "leading": 1.2,
+      "leading": 1.25,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 11.6
      },
-     "measureChars": 75,
+     "measureChars": 58,
      "max": {
       "size": 52,
       "vw": 3.6,
@@ -353,12 +321,12 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Odontología estética · Medellín · Rating 4.5",
+      "text": "4.5 en reseñas · Medellín",
       "above": "Tu sonrisa, en su versión más armónica.",
       "upper": false,
       "tracked": false,
@@ -389,7 +357,7 @@
       },
       {
        "color": "#1b1712",
-       "top": 1794,
+       "top": 1781,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -397,46 +365,46 @@
        }
       },
       {
-       "color": "#1a1816",
-       "top": 2976,
+       "color": "#201c17",
+       "top": 2757,
        "hsl": {
-        "h": 30,
-        "s": 0.08,
-        "l": 0.09
+        "h": 33,
+        "s": 0.16,
+        "l": 0.11
        }
       }
      ],
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.4
+       "share": 0.39
       },
       {
        "color": "#f2ede4",
-       "share": 0.24
+       "share": 0.25
       },
       {
        "color": "#c9a96e",
-       "share": 0.14
+       "share": 0.13
       },
       {
        "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#7a7264",
-       "share": 0.04
+       "color": "#15120f",
+       "share": 0.05
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Al escribir aceptas la política de datos",
-       "ratio": 3.8,
+       "text": "Al enviar aceptas la política de datos (",
+       "ratio": 3.6,
        "need": 4.5,
-       "size": 16,
+       "size": 13,
        "fg": "#7a7264",
-       "bg": "#1b1712"
+       "bg": "#201c17"
       }
      ]
     },
@@ -462,10 +430,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 13,
+     "roundedBoxes": 11,
      "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 7,
+     "roundedMedia": 4,
      "mediaRadius": 14,
      "textShadow": 0,
      "cardRows": [
@@ -473,7 +441,7 @@
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 920
+       "top": 924
       }
      ]
     },
@@ -495,19 +463,18 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 5,
+   "screens": 4,
    "filled": [
     0.75,
-    0.47,
-    0.8,
-    1,
-    1
+    0.46,
+    0.58,
+    0.64
    ],
    "motion": {
-    "elements": 49,
+    "elements": 53,
     "css": 0,
-    "transitions": 11,
-    "scripted": 38,
+    "transitions": 42,
+    "scripted": 11,
     "videos": 0,
     "playingVideos": 0
    },
@@ -517,10 +484,10 @@
      "h": 1024
     },
     "page": {
-     "height": 4286,
-     "screens": 4.2,
-     "words": 280,
-     "img": 3,
+     "height": 3204,
+     "screens": 3.1,
+     "words": 225,
+     "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -529,14 +496,10 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 6,
+     "realPictures": 3,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [
-      "historia-1.png",
-      "historia-3.png",
-      "clinica-1.jpg"
-     ],
+     "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -603,7 +566,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.57,
-      "top": 860,
+      "top": 864,
       "tag": "div",
       "kind": "heading"
      },
@@ -624,7 +587,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 1166,
+      "top": 1187,
       "tag": "div",
       "kind": "heading"
      },
@@ -645,7 +608,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.58,
-      "top": 1904,
+      "top": 1869,
       "tag": "div",
       "kind": "heading"
      },
@@ -666,7 +629,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 2468,
+      "top": 2323,
       "tag": "div",
       "kind": "heading"
      },
@@ -687,14 +650,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.08,
-      "top": 2468,
+      "top": 2323,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "1 sesión",
+      "text": "1 día",
       "words": 2,
-      "chars": 8,
+      "chars": 5,
       "lines": 1,
       "size": 30,
       "vw": 3.9,
@@ -707,8 +670,8 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.15,
-      "top": 2468,
+      "widthRatio": 0.09,
+      "top": 2323,
       "tag": "div",
       "kind": "heading"
      },
@@ -729,14 +692,14 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 2607,
+      "top": 2458,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Tu nueva sonrisa empieza con un mensaje.",
-      "words": 7,
-      "chars": 40,
+      "text": "Agenda tu valoración.",
+      "words": 3,
+      "chars": 21,
       "lines": 1,
       "size": 30,
       "vw": 3.9,
@@ -749,82 +712,55 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.8,
-      "top": 2989,
+      "widthRatio": 0.41,
+      "top": 2774,
       "tag": "div",
       "kind": "heading"
-     },
-     {
-      "text": "Resultados con pacientes reales",
-      "words": 4,
-      "chars": 31,
-      "lines": 1,
-      "size": 34,
-      "vw": 4.4,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.5,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.84,
-      "top": 3260,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 9,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
-     "centered": 1,
-     "medianWords": 4,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Manrope",
-       "share": 0.82,
+       "share": 0.81,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.16,
-       "mono": false
-      },
-      {
-       "family": "Playfair Display",
-       "share": 0.02,
+       "share": 0.19,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
+      13,
       16,
       20,
+      24,
       28,
       30,
-      34,
       46
      ],
-     "sizeCount": 6,
-     "notLoaded": [
-      "Playfair Display"
-     ],
+     "sizeCount": 7,
+     "notLoaded": [],
      "body": {
       "font": "Manrope",
       "size": 16,
-      "leading": 1.2,
+      "leading": 1.25,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 11.6
      },
-     "measureChars": 65,
+     "measureChars": 58,
      "max": {
       "size": 46,
       "vw": 6,
@@ -839,12 +775,12 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.02,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Odontología estética · Medellín · Rating 4.5",
+      "text": "4.5 en reseñas · Medellín",
       "above": "Tu sonrisa, en su versión más armónica.",
       "upper": false,
       "tracked": false,
@@ -875,19 +811,10 @@
       },
       {
        "color": "#1b1712",
-       "top": 1872,
+       "top": 832,
        "hsl": {
         "h": 33,
         "s": 0.2,
-        "l": 0.09
-       }
-      },
-      {
-       "color": "#1a1816",
-       "top": 3200,
-       "hsl": {
-        "h": 30,
-        "s": 0.08,
         "l": 0.09
        }
       }
@@ -895,34 +822,34 @@
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.4
+       "share": 0.39
       },
       {
        "color": "#f2ede4",
-       "share": 0.24
+       "share": 0.25
       },
       {
        "color": "#c9a96e",
-       "share": 0.14
+       "share": 0.13
       },
       {
        "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#7a7264",
-       "share": 0.04
+       "color": "#15120f",
+       "share": 0.05
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Al escribir aceptas la política de datos",
-       "ratio": 3.8,
+       "text": "Al enviar aceptas la política de datos (",
+       "ratio": 3.6,
        "need": 4.5,
-       "size": 16,
+       "size": 13,
        "fg": "#7a7264",
-       "bg": "#1b1712"
+       "bg": "#201c17"
       }
      ]
     },
@@ -948,18 +875,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 13,
+     "roundedBoxes": 11,
      "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 4,
-     "mediaRadius": 12,
+     "roundedMedia": 1,
+     "mediaRadius": 18,
      "textShadow": 0,
      "cardRows": [
       {
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 910
+       "top": 914
       }
      ]
     },
@@ -981,21 +908,19 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 7,
+   "screens": 5,
    "filled": [
-    0.78,
-    0.48,
-    0.67,
-    0.78,
-    1,
-    1,
-    1
+    0.69,
+    0.5,
+    0.84,
+    0.7,
+    0.66
    ],
    "motion": {
-    "elements": 53,
+    "elements": 57,
     "css": 0,
-    "transitions": 10,
-    "scripted": 43,
+    "transitions": 47,
+    "scripted": 10,
     "videos": 0,
     "playingVideos": 0
    },
@@ -1005,10 +930,10 @@
      "h": 844
     },
     "page": {
-     "height": 5156,
-     "screens": 6.1,
-     "words": 286,
-     "img": 3,
+     "height": 3480,
+     "screens": 4.1,
+     "words": 231,
+     "img": 0,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -1017,14 +942,10 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 1,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [
-      "historia-1.png",
-      "historia-3.png",
-      "clinica-1.jpg"
-     ],
+     "pictureSamples": [],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -1091,7 +1012,91 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 735,
+      "top": 739,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "I",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 839,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "II",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.05,
+      "top": 839,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "III",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 839,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "IV",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 839,
       "tag": "div",
       "kind": "heading"
      },
@@ -1112,7 +1117,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 1185,
+      "top": 1162,
       "tag": "div",
       "kind": "heading"
      },
@@ -1133,7 +1138,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 1923,
+      "top": 1844,
       "tag": "div",
       "kind": "heading"
      },
@@ -1154,7 +1159,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 2539,
+      "top": 2442,
       "tag": "div",
       "kind": "heading"
      },
@@ -1175,14 +1180,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.16,
-      "top": 2539,
+      "top": 2442,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "1 sesión",
+      "text": "1 día",
       "words": 2,
-      "chars": 8,
+      "chars": 5,
       "lines": 1,
       "size": 30,
       "vw": 7.7,
@@ -1195,8 +1200,8 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.29,
-      "top": 2539,
+      "widthRatio": 0.17,
+      "top": 2442,
       "tag": "div",
       "kind": "heading"
      },
@@ -1217,17 +1222,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 2722,
+      "top": 2595,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Tu nueva sonrisa empieza con un mensaje.",
-      "words": 7,
-      "chars": 40,
-      "lines": 2,
-      "size": 24,
-      "vw": 6.2,
+      "text": "Agenda tu valoración.",
+      "words": 3,
+      "chars": 21,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
       "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
@@ -1237,88 +1242,61 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.79,
-      "top": 3204,
+      "widthRatio": 0.7,
+      "top": 2945,
       "tag": "div",
       "kind": "heading"
-     },
-     {
-      "text": "Resultados con pacientes reales",
-      "words": 4,
-      "chars": 31,
-      "lines": 2,
-      "size": 34,
-      "vw": 8.7,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.5,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.69,
-      "top": 3610,
-      "tag": "p",
-      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
+     "count": 13,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
-     "centered": 2,
-     "medianWords": 4,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 2,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Manrope",
-       "share": 0.83,
+       "share": 0.81,
        "mono": false
       },
       {
        "family": "Fraunces",
-       "share": 0.15,
-       "mono": false
-      },
-      {
-       "family": "Playfair Display",
-       "share": 0.02,
+       "share": 0.19,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
+      13,
       15,
       16,
       20,
       24,
+      26,
       28,
-      30,
-      34
+      30
      ],
-     "sizeCount": 7,
-     "notLoaded": [
-      "Playfair Display"
-     ],
+     "sizeCount": 8,
+     "notLoaded": [],
      "body": {
       "font": "Manrope",
       "size": 16,
-      "leading": 1.2,
+      "leading": 1.25,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 11.6
      },
      "measureChars": 18,
      "max": {
-      "size": 34,
-      "vw": 8.7,
-      "font": "Playfair Display",
-      "text": "Resultados con pacientes reales"
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
+      "text": "4.5+"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1331,18 +1309,7 @@
      "centerShare": 0.07,
      "smallText": 0
     },
-    "eyebrows": [
-     {
-      "text": "Inicio",
-      "above": "Resultados con pacientes reales",
-      "upper": false,
-      "tracked": false,
-      "mono": false,
-      "pill": false,
-      "size": 16,
-      "top": 3516
-     }
-    ],
+    "eyebrows": [],
     "numbered": [],
     "color": {
      "bodyBg": "#15120f",
@@ -1364,7 +1331,7 @@
       },
       {
        "color": "#1b1712",
-       "top": 703,
+       "top": 707,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -1372,46 +1339,46 @@
        }
       },
       {
-       "color": "#1a1816",
-       "top": 3550,
+       "color": "#201c17",
+       "top": 3049,
        "hsl": {
-        "h": 30,
-        "s": 0.08,
-        "l": 0.09
+        "h": 33,
+        "s": 0.16,
+        "l": 0.11
        }
       }
      ],
      "textColors": [
       {
        "color": "#a89f90",
-       "share": 0.4
+       "share": 0.39
       },
       {
        "color": "#f2ede4",
-       "share": 0.25
+       "share": 0.26
       },
       {
        "color": "#c9a96e",
-       "share": 0.14
+       "share": 0.13
       },
       {
        "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#7a7264",
-       "share": 0.04
+       "color": "#15120f",
+       "share": 0.05
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Al escribir aceptas la política de datos",
-       "ratio": 3.8,
+       "text": "Al enviar aceptas la política de datos (",
+       "ratio": 3.6,
        "need": 4.5,
-       "size": 16,
+       "size": 13,
        "fg": "#7a7264",
-       "bg": "#1b1712"
+       "bg": "#201c17"
       }
      ]
     },
@@ -1426,35 +1393,31 @@
     },
     "surfaces": {
      "shadowStatic": 0,
-     "shadowOverlay": 0,
+     "shadowOverlay": 1,
      "shadowSamples": [],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 0,
-     "hairlineSamples": [],
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.box-border.w-full 390px"
+     ],
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
+     "roundedBoxes": 5,
      "boxRadius": 16,
      "squareMedia": 0,
-     "roundedMedia": 4,
-     "mediaRadius": 12,
+     "roundedMedia": 1,
+     "mediaRadius": 18,
      "textShadow": 0,
      "cardRows": [
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 2005
-      },
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 2800
+       "top": 1926
       }
      ]
     },
@@ -1489,41 +1452,8 @@
    "level": "WARN",
    "id": "contrast",
    "width": 1440,
-   "message": "Low-contrast text: \"Al escribir aceptas la política de datos\" 3.8:1 needs 4.5:1",
+   "message": "Low-contrast text: \"Al enviar aceptas la política de datos (\" 3.6:1 needs 4.5:1",
    "fix": "Darken or lighten the text colour.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "font-count",
-   "width": 1440,
-   "message": "3 typefaces in use (Manrope, Fraunces, Playfair Display).",
-   "fix": "Two at most.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "font-fallback",
-   "width": 1440,
-   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Playfair Display",
-   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "grey-body",
-   "width": 1440,
-   "message": "The running text is a soft grey on its ground (6.5:1).",
-   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
    "alsoAt": [
     768,
     390
@@ -1549,10 +1479,10 @@
   },
   {
    "level": "WARN",
-   "id": "card-rows",
+   "id": "hairline",
    "width": 390,
-   "message": "2 rows of identical boxed cards.",
-   "fix": "Vary the composition; not every section is a card grid."
+   "message": "1 thin rule(s)/divider line(s): div.box-border.w-full 390px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields."
   }
  ],
  "images": [
@@ -1561,8 +1491,7 @@
    "width": 1440,
    "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-02.jpg"
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg"
    ]
   },
   {

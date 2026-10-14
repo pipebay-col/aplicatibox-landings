@@ -26,36 +26,48 @@
 html,body{margin:0;padding:0;background:#15120F}
 body > div { max-width:100vw; overflow-x:hidden }
 img{max-width:100%;height:auto}
-/* TABLET 768-1024 */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* NAV PWA: FIJA abajo en móvil, oculta en desktop */
+@media (max-width: 767px) {
+  [data-pencil-name="Nav"] { position:fixed !important; bottom:0 !important; left:0 !important; right:0 !important; z-index:50 !important; box-shadow:0 -8px 24px rgba(0,0,0,0.45) !important; border-top:1px solid #2E2820 !important; padding-bottom:max(12px, env(safe-area-inset-bottom)) !important; background:#1B1712 !important }
+  body { padding-bottom:70px !important }
+}
+@media (min-width: 768px) {
   [data-pencil-name="Nav"] { display:none !important }
+}
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
   div[data-pencil-name="H1"] { font-size:46px !important }
   div[data-pencil-name="HeroImg"] { height:400px !important }
 }
-/* DESKTOP 1025+ */
+/* DESKTOP */
 @media (min-width: 1025px) {
-  [data-pencil-name="Nav"] { display:none !important }
   div[data-pencil-name="H1"] { font-size:52px !important; text-align:center }
   div[data-pencil-name="HeroImg"] { width:1100px !important; height:460px !important }
 }
-/* MÓVIL <768 */
+/* MÓVIL detalle */
 @media (max-width: 767px) {
   div[data-pencil-name="H1"] { font-size:28px !important; line-height:1.2 !important; text-align:center }
-  div[data-pencil-name="AccionTitle"] { font-size:24px !important }
+  div[data-pencil-name="FormTitle"] { font-size:26px !important }
   div[data-pencil-name="Sub"] { font-size:15px !important; text-align:center; padding:0 16px }
   div[data-pencil-name="HeroImg"] { width:100% !important; height:280px !important }
-  [data-pencil-name="Grid"] { flex-direction:column !important; gap:14px !important; padding:0 12px }
-  [data-pencil-name="Grid"] > div { width:100% !important }
+  [data-pencil-name="Badges"] { flex-wrap:wrap !important }
+  [data-pencil-name="Badges"] > div { width:100% !important }
 }
+/* CRAFT: sombras suaves internas en cards */
+[data-pencil-name="TestiCard"], [data-pencil-name="FaqCard"], [data-pencil-name="FormBox"], [data-pencil-name="MetCard"], [data-pencil-name="BeneGrid"] > div {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+/* focus visible en inputs */
+input:focus { border:1px solid #C9A96E !important; border-radius:12px }
 </style></head>
   <body>
     <div
-      data-pencil-name="Harmoniza Conv"
-      class="box-border w-full max-w-full max-w-[1440px] mx-auto mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#15120F] overflow-hidden"
+      data-pencil-name="Harmoniza Craft"
+      class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#15120F] overflow-hidden"
     >
       <div
-        data-pencil-name="Hero"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[64px_20px_32px_20px] justify-start items-center bg-[#15120F]"
+        id="inicio" data-pencil-name="Hero"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[64px_20px_36px_20px] justify-start items-center bg-[#15120F]"
       >
         <div
           data-pencil-name="Chip"
@@ -64,7 +76,7 @@ img{max-width:100%;height:auto}
           <div
             class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            Odontología estética · Medellín · Rating 4.5
+            4.5 en reseñas · Medellín
           </div>
         </div>
         <div
@@ -81,12 +93,12 @@ img{max-width:100%;height:auto}
         </div>
         <div
           data-pencil-name="HeroImg"
-          class="box-border w-full h-[320px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1656768151253-bef870f1b7bd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDB8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[18px]"
+          class="box-border w-full h-[320px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1596738317850-3023fb966dc7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDN8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[18px]"
         ></div>
         <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="CTA" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[14px_30px] justify-start items-center bg-[#C9A96E] rounded-[980px]"><div
             class="text-[16px]/[normal] box-border text-[#15120F] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            <span style="color:#141210">Agenda tu valoración — es gratis
+            <span style="color:#15120F">Agenda tu valoración — es gratis
           </span></div>
         </div></a>
         <div
@@ -137,22 +149,32 @@ img{max-width:100%;height:auto}
           class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
         >
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[8px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
+            <div
+              class="text-[24px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+            >
+              I
+            </div>
             <div
               class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
-              Precio claro desde la primera cita
+              Precio claro
             </div>
             <div
               class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              Sabes el costo exacto antes de empezar. Sin sorpresas.
+              El costo exacto, en 3D, antes de empezar. Sin sorpresas.
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[8px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
+            <div
+              class="text-[24px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+            >
+              II
+            </div>
             <div
               class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
@@ -161,12 +183,17 @@ img{max-width:100%;height:auto}
             <div
               class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              Ves tu sonrisa nueva en 3D y la apruebas antes del tratamiento.
+              Ves tu sonrisa nueva y la apruebas antes del tratamiento.
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[8px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
+            <div
+              class="text-[24px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+            >
+              III
+            </div>
             <div
               class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
@@ -175,27 +202,32 @@ img{max-width:100%;height:auto}
             <div
               class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              La transformación se completa en el 90% de los casos en un día.
+              El 90% de transformaciones se completan en un día.
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[8px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
+            <div
+              class="text-[24px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+            >
+              IV
+            </div>
             <div
               class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
-              Respaldo de +1.000 pacientes
+              Respaldo real
             </div>
             <div
               class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              Historias reales publicadas por la propia clínica.
+              +1.000 pacientes con historias publicadas.
             </div>
           </div>
         </div>
       </div>
       <div
-        data-pencil-name="Tratamientos"
+        id="tratamientos" data-pencil-name="Tratamientos"
         class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[32px] justify-start items-start bg-[#15120F]"
       >
         <div
@@ -206,15 +238,15 @@ img{max-width:100%;height:auto}
         </div>
         <div
           data-pencil-name="TratList"
-          class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] justify-start items-start"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] justify-start items-start"
         >
           <div
             data-pencil-name="TratCard"
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
           >
             <div
               data-pencil-name="Img"
-              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1714300989598-114cf7d0c8d7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDF8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+              class="box-border [flex:1_1_0] h-[180px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1790574318882-572fa08ee6e6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDR8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
             ></div>
             <div
               class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
@@ -224,16 +256,16 @@ img{max-width:100%;height:auto}
             <div
               class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              Sesión única, resultado que ves antes de empezar.
+              Sesión única. Resultado aprobado por ti antes de empezar.
             </div>
           </div>
           <div
             data-pencil-name="TratCard"
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
           >
             <div
               data-pencil-name="Img"
-              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1704455306925-1401c3012117?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDF8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+              class="box-border [flex:1_1_0] h-[180px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1707930897652-6ed8e2c33d99?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDR8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
             ></div>
             <div
               class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
@@ -248,11 +280,11 @@ img{max-width:100%;height:auto}
           </div>
           <div
             data-pencil-name="TratCard"
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
           >
             <div
               data-pencil-name="Img"
-              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1642207579596-4727855e0994?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDJ8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+              class="box-border [flex:1_1_0] h-[180px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1551184451-76b762941ad6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
             ></div>
             <div
               class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
@@ -287,7 +319,7 @@ img{max-width:100%;height:auto}
           >
             <div
               data-pencil-name="Foto"
-              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1774897795513-9198beb13875?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDJ8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+              class="box-border w-[52px] shrink-0 h-[52px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1693858086937-04b5cec1df8d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
             ></div>
             <div
               data-pencil-name="Info"
@@ -302,14 +334,14 @@ img{max-width:100%;height:auto}
                 data-pencil-name="Stars"
                 class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
               >
-                5.0 · Paciente verificado
+                5.0 de 5 · Reseña verificada
               </div>
             </div>
           </div>
           <div
             class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            “Vi mi sonrisa nueva en la pantalla antes de empezar. Cero miedo, cero sorpresas.”
+            “Vi mi sonrisa nueva en pantalla antes de empezar. Cero miedo.”
           </div>
         </div>
         <div
@@ -322,7 +354,7 @@ img{max-width:100%;height:auto}
           >
             <div
               data-pencil-name="Foto"
-              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1580601274731-d4b9f05b5f8b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDN8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+              class="box-border w-[52px] shrink-0 h-[52px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1556452578-f140ac938de9?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDZ8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
             ></div>
             <div
               data-pencil-name="Info"
@@ -337,14 +369,14 @@ img{max-width:100%;height:auto}
                 data-pencil-name="Stars"
                 class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
               >
-                5.0 · Paciente verificado
+                5.0 de 5 · Reseña verificada
               </div>
             </div>
           </div>
           <div
             class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            “El implante se siente propio. Volví a morder una manzana sin pensarlo.”
+            “El implante se siente propio. Volví a morder una manzana.”
           </div>
         </div>
         <div
@@ -357,7 +389,7 @@ img{max-width:100%;height:auto}
           >
             <div
               data-pencil-name="Foto"
-              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1612294355484-3f5a3249d65d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDR8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+              class="box-border w-[52px] shrink-0 h-[52px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1599651515421-43a8e7dbf212?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTMyMDd8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
             ></div>
             <div
               data-pencil-name="Info"
@@ -372,14 +404,14 @@ img{max-width:100%;height:auto}
                 data-pencil-name="Stars"
                 class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
               >
-                5.0 · Paciente verificado
+                5.0 de 5 · Reseña verificada
               </div>
             </div>
           </div>
           <div
             class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            “La armonización me devolvió la confianza en las fotos. Vale cada peso.”
+            “La armonización me devolvió la confianza en las fotos.”
           </div>
         </div>
       </div>
@@ -397,7 +429,7 @@ img{max-width:100%;height:auto}
             4.5+
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             Rating en reseñas
           </div>
@@ -412,7 +444,7 @@ img{max-width:100%;height:auto}
             98%
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             Lo recomendarían
           </div>
@@ -424,10 +456,10 @@ img{max-width:100%;height:auto}
           <div
             class="text-[30px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
           >
-            1 sesión
+            1 día
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             Transformación típica
           </div>
@@ -450,13 +482,11 @@ img{max-width:100%;height:auto}
           <div
             class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            ¿Duele?
+            0
           </div>
           <div
             class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
-          >
-            Anestesia local y sedación opcional. La mayoría reporta cero dolor.
-          </div>
+          ></div>
         </div>
         <div
           data-pencil-name="FaqCard"
@@ -465,13 +495,11 @@ img{max-width:100%;height:auto}
           <div
             class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            ¿Cuánto cuesta?
+            1
           </div>
           <div
             class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
-          >
-            La valoración es gratis. El plan y precio exacto lo ves en 3D antes de aprobar.
-          </div>
+          ></div>
         </div>
         <div
           data-pencil-name="FaqCard"
@@ -480,40 +508,77 @@ img{max-width:100%;height:auto}
           <div
             class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            ¿Cuánto dura?
+            2
           </div>
           <div
             class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
-          >
-            Microdiseño: una sesión de 2-3 horas. Implantes: 2-3 visitas.
-          </div>
+          ></div>
         </div>
       </div>
       <div
-        id="agenda" data-pencil-name="Accion"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] p-[40px] justify-start items-center bg-[#1B1712]"
+        id="agenda" data-pencil-name="Form"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[40px] justify-start items-center bg-[#1B1712]"
       >
         <div
-          data-pencil-name="AccionTitle"
+          data-pencil-name="FormTitle"
           class="text-[30px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
         >
-          Tu nueva sonrisa empieza con un mensaje.
+          Agenda tu valoración.
         </div>
         <div
-          class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
         >
-          Quedan 3 cupos de valoración gratis esta semana.
+          Déjanos tus datos y te confirmamos por WhatsApp en minutos.
         </div>
-        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="waBtn" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px_34px] justify-start items-start bg-[#C9A96E] rounded-[980px]"><div
-            class="text-[16px]/[normal] box-border text-[#15120F] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+        <div
+          data-pencil-name="FormBox"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] p-[20px] justify-start items-start bg-[#201C17] rounded-[20px]"
+        >
+          <div
+            data-pencil-name="InputNombre"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[14px_16px] justify-start items-start bg-[#15120F] rounded-[12px]"
           >
-            <span style="color:#141210">Escribir por WhatsApp ahora
-          </span></div>
-        </div></a>
-        <div
-          class="text-[16px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
-        >
-          Al escribir aceptas la política de datos (Ley 1581). Sin spam.
+            <div
+              class="text-[16px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Tu nombre
+            </div>
+          </div>
+          <div
+            data-pencil-name="InputWa"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[14px_16px] justify-start items-start bg-[#15120F] rounded-[12px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Tu WhatsApp
+            </div>
+          </div>
+          <div
+            data-pencil-name="InputTrat"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[14px_16px] justify-start items-start bg-[#15120F] rounded-[12px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              ¿Qué tratamiento te interesa?
+            </div>
+          </div>
+          <div
+            data-pencil-name="SubmitBtn"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[14px_20px] justify-start items-center bg-[#C9A96E] rounded-[980px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#15120F] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+            >
+              Solicitar mi valoración gratis
+            </div>
+          </div>
+          <div
+            class="text-[13px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Al enviar aceptas la política de datos (Ley 1581). Sin spam.
+          </div>
         </div>
       </div>
       <div
@@ -525,29 +590,29 @@ img{max-width:100%;height:auto}
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
+            class="text-[13px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
             Inicio
           </div>
         </div></a>
-        <a href="#beneficios" style="text-decoration:none;display:flex"><div
-          data-pencil-name="NavItem-beneficios"
+        <a href="#tratamientos" style="text-decoration:none;display:flex"><div
+          data-pencil-name="NavItem-tratamientos"
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
+            class="text-[13px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
-            Beneficios
+            Tratamientos
           </div>
         </div></a>
         <a href="#agenda" style="text-decoration:none;display:flex"><div
@@ -555,12 +620,12 @@ img{max-width:100%;height:auto}
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
+            class="text-[13px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
             Agenda
           </div>
@@ -570,39 +635,56 @@ img{max-width:100%;height:auto}
   
 <script>
 (function(){
+  function val(sel){ var e=document.querySelector('[data-pencil-name="'+sel+'"] input'); return e?e.value.trim():''; }
+  var formBox = document.querySelector('[data-pencil-name="FormBox"]');
+  if(!formBox) return;
+  // inyectar inputs reales dentro de los "input frames":
+  var map=[['InputNombre','Escribe tu nombre','nombre'],['InputWa','Escribe tu WhatsApp','whatsapp'],['InputTrat','Microdiseño / Implantes / Armonización','tratamiento']];
+  map.forEach(function(m){
+    var frame=document.querySelector('[data-pencil-name="'+m[0]+'"]');
+    if(!frame) return;
+    var placeholder=frame.querySelector('div');
+    var input=document.createElement('input');
+    input.type='text'; input.name=m[2]; input.placeholder=m[1];
+    input.style.cssText='background:transparent;border:none;outline:none;color:#F2EDE4;font-family:Manrope,sans-serif;font-size:14px;width:100%';
+    if(placeholder){ placeholder.style.display='none'; }
+    frame.appendChild(input);
+  });
+  var btn=document.querySelector('[a-wa-submit]');
+  var submitFrame=document.querySelector('[data-pencil-name="SubmitBtn"]');
+  if(submitFrame){
+    submitFrame.style.cursor='pointer';
+    submitFrame.addEventListener('click',function(){
+      var n=val('InputNombre'), w=val('InputWa'), t=val('InputTrat');
+      if(!n||!w){ alert('Escribe tu nombre y WhatsApp para agendar 🙂'); return; }
+      var msg='Hola Harmoniza, soy '+n+'. Quiero agendar valoración'+(t?' para '+t:'')+'. Mi WhatsApp: '+w;
+      window.open('https://wa.me/573150596255?text='+encodeURIComponent(msg),'_blank');
+    });
+  }
+})();
+</script>
+<script>
+(function(){
   var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els = document.querySelectorAll('[data-pencil-name]');
   if (!rm) {
     els.forEach(function(e){
-      e.style.opacity='0'; e.style.transform='translateY(22px)';
-      e.style.transition='opacity .8s cubic-bezier(0.32,0.72,0,1), transform .8s cubic-bezier(0.32,0.72,0,1)';
+      e.style.opacity='0'; e.style.transform='translateY(18px)';
+      e.style.transition='opacity .7s cubic-bezier(0.32,0.72,0,1), transform .7s cubic-bezier(0.32,0.72,0,1)';
     });
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){
-        if (en.isIntersecting) {
-          en.target.style.opacity='1'; en.target.style.transform='translateY(0)';
-          io.unobserve(en.target);
-        }
+        if (en.isIntersecting) { en.target.style.opacity='1'; en.target.style.transform='translateY(0)'; io.unobserve(en.target); }
       });
-    }, {threshold:0.12});
+    }, {threshold:0.1});
     els.forEach(function(e){ io.observe(e); });
   }
-  document.querySelectorAll('a[href*="wa.me"]').forEach(function(b){
-    b.style.transition = 'transform .35s cubic-bezier(0.32,0.72,0,1)';
-    b.addEventListener('mouseenter', function(){ b.style.transform='scale(1.04)'; });
+  document.querySelectorAll('a[href*="wa.me"], [data-pencil-name="SubmitBtn"], [data-pencil-name="CTA"]').forEach(function(b){
+    b.style.transition='transform .3s cubic-bezier(0.32,0.72,0,1)';
+    b.addEventListener('mouseenter', function(){ b.style.transform='scale(1.03)'; });
     b.addEventListener('mousedown', function(){ b.style.transform='scale(0.97)'; });
     b.addEventListener('mouseleave', function(){ b.style.transform='scale(1)'; });
   });
 })();
 </script></body>
 </html>
-<div data-pencil-name="ResultadosReales" class="box-border flex flex-col gap-6 px-[60px] py-[60px]" style="background:#1A1816">
-  <p style="font-family:'Playfair Display',serif;font-size:34px;color:#B49A53;margin:0;text-align:center">Resultados con pacientes reales</p>
-  <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
-    <img src="historia-1.png" alt="Resultado real de la clínica" style="width:280px;height:auto;border-radius:12px;object-fit:cover">
-    <img src="historia-3.png" alt="Resultado real de la clínica" style="width:280px;height:auto;border-radius:12px;object-fit:cover">
-    <img src="clinica-1.jpg" alt="Resultado real de la clínica" style="width:280px;height:auto;border-radius:12px;object-fit:cover">
-  </div>
-</div>
-
-      
