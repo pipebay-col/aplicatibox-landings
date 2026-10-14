@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perla Medical Spa | Medicina Estética &amp; Bienestar Clínico Colombia</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#735c00",
+            "surface-container-high": "#eae8e5",
+            "on-primary-fixed-variant": "#00504e",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#30312f",
+            "outline-variant": "#bdc9c8",
+            "on-primary-fixed": "#00201f",
+            "secondary-fixed": "#71f8e4",
+            "on-secondary-container": "#006f64",
+            "on-surface": "#1b1c1a",
+            "on-secondary": "#ffffff",
+            "primary-fixed": "#98f2ef",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f5f3f0",
+            "primary-container": "#0d7c7a",
+            "on-background": "#1b1c1a",
+            "primary-fixed-dim": "#7bd5d2",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#006a68",
+            "surface-container-highest": "#e4e2df",
+            "surface-bright": "#fbf9f6",
+            "on-secondary-fixed": "#00201c",
+            "tertiary-container": "#cca730",
+            "tertiary-fixed": "#ffe088",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#7bd5d2",
+            "inverse-on-surface": "#f2f0ed",
+            "outline": "#6e7978",
+            "on-tertiary-container": "#4f3e00",
+            "on-primary-container": "#c2fffc",
+            "secondary-fixed-dim": "#4fdbc8",
+            "primary": "#006160",
+            "surface-variant": "#e4e2df",
+            "surface-dim": "#dbdad7",
+            "on-surface-variant": "#3e4948",
+            "on-secondary-fixed-variant": "#005048",
+            "tertiary-fixed-dim": "#e9c349",
+            "on-tertiary-fixed": "#241a00",
+            "on-tertiary-fixed-variant": "#574500",
+            "error": "#ba1a1a",
+            "surface-container": "#efeeeb",
+            "secondary-container": "#6df5e1",
+            "surface-container-lowest": "#ffffff",
+            "background": "#fbf9f6",
+            "secondary": "#006b5f",
+            "surface": "#fbf9f6"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-tablet": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter-desktop": "2.5rem",
+            "space-xl": "2.5rem",
+            "margin-desktop": "5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-2xl": "4rem",
+            "space-3xl": "6rem",
+            "margin": "1.25rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400"}],
+            "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+            "title-lg": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "display-hero": ["56px", {"lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+            "body-lg": ["17px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}],
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "0", "fontWeight": "500"}],
+            "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0", "fontWeight": "500"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container relative">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="docked full-width top-0 sticky z-50 bg-surface-bright/85 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-primary">Perla Medical Spa</span>
+</div>
+<!-- Desktop Nav links -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-primary font-semibold text-body-sm hover:underline" href="#procedimientos">Procedures</a>
+<a class="text-on-surface-variant text-body-sm hover:text-primary" href="#metodo">Concierge</a>
+<a class="text-on-surface-variant text-body-sm hover:text-primary" href="https://wa.me/573175114325" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+</nav>
+<!-- Action Button -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container px-space-md py-space-xs rounded-full text-label-md font-label-md active:scale-95 transition-transform duration-150 hover:bg-primary shadow-sm" href="#formulario-reserva">
+          Book
+        </a>
+</div>
+</div>
+</header>
+<!-- ================= ETAPA 1: ATENCIÓN (Hero Section) ================= -->
+<section class="relative pt-space-md pb-space-2xl px-margin overflow-hidden">
+<div class="max-w-xl mx-auto flex flex-col items-center text-center">
+<!-- Badge Superior de Confianza Médica -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface-variant mb-space-md text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified_user">verified_user</span>
+<span>Habilitación Seccional MinSalud Colombia · Medicina Estética Consciente</span>
+</div>
+<!-- Titular H1 Persuasivo -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight mb-space-sm">
+        Tu rostro y cuerpo en su versión más armónica, sin perder tu esencia natural.
+      </h1>
+<!-- Subtítulo Específico -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed max-w-lg">
+        Tratamientos médicos no invasivos de bioestimulación dérmica, hidrafaciales botánicos y rejuvenecimiento sutil diseñados a tu medida en Perla Medical Spa. Resultados visibles sin incapacidad ni rostros congelados.
+      </p>
+<!-- Fotografía Hero con Tarjeta Flotante -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-lg border border-primary-container/10 mb-space-lg group">
+<img alt="Paciente en cabina de Perla Medical Spa recibiendo tratamiento facial de hidratación profunda por especialista médica" class="w-full h-80 sm:h-96 object-cover object-center transform transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VXBKzpnhque-Oki5jIG1jlnE3700BGM6xaLaGlNmRt7CJzlpP9IQRASMuPa_hBVH2jrm9NoPWRyeqxsQmL_DrICb737gHOvTe_xBGrWWTvkBvV0NYS3U-l9PjS0YsGk4kXCZCZ7z-1APdlCZDBPiSfG2J1k5kpTbKGycwxXJ-DIC6-vQyLbZoaNO7YvlPKFSxFuhOtNe6x2xl2sf-uq5VFjjgM0JXGBNB5V2cO5-BjXyDhivQatpipzHQ"/>
+<!-- Tarjeta superpuesta de autenticidad clínica -->
+<div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-surface-bright/90 backdrop-blur-md rounded-2xl p-3 border border-surface-container-highest shadow-sm flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold text-left">
+            100% Armonía &amp; Luminosidad · Cero dolor ni cambios exagerados
+          </p>
+</div>
+</div>
+<!-- CTA Hero Principal de Alto Contraste -->
+<div class="w-full max-w-md flex flex-col items-center gap-2 mb-space-lg">
+<a class="w-full py-4 px-6 rounded-full bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md text-center shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 flex items-center justify-center gap-2" href="#formulario-reserva">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- 3 Badges Rápidos de Valor -->
+<div class="grid grid-cols-3 gap-2 w-full pt-space-xs border-t border-outline-variant/30">
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-0.5" data-icon="verified">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tecnología INVIMA &amp; FDA</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-0.5" data-icon="person_search">person_search</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-0.5" data-icon="nature_people">nature_people</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA 2: INTERÉS (Empatía & Metodología en 3 Pasos) ================= -->
+<section class="py-space-2xl px-margin bg-surface-container-low" id="metodo">
+<div class="max-w-xl mx-auto">
+<!-- Dilema y Empatía Clínica -->
+<div class="bg-surface-container-lowest p-space-lg rounded-3xl border border-primary-container/10 shadow-sm mb-space-xl">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/40 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-tertiary text-xl" data-icon="help_center">help_center</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm font-semibold">
+          ¿Temes tratamientos exagerados que cambien tus facciones o dejen tu piel artificial?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-3">
+          Entendemos tu precaución. En Colombia, el mayor temor de las pacientes es verse con rostros sobre-rellenados o perder la gesticulación natural.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          En Perla Medical Spa aplicamos una estricta política de <strong class="text-primary font-semibold">micro-dosis estratégicas</strong> y bioestimuladores de colágeno propio. Nuestro objetivo es que todos noten tu luz, pero nadie adivine qué te hiciste.
+        </p>
+</div>
+<!-- Metodología en 3 Pasos -->
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Protocolo Médico Cerrado</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Cómo diseñamos tu armonía paso a paso</h3>
+</div>
+<div class="space-y-space-md">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm hover:border-primary transition-colors">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm shrink-0">
+            01
+          </div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mb-1">Valoración y Mapeo Cutáneo 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Evaluamos la arquitectura ósea, vectores de tensión dérmica e hidratación celular.
+            </p>
+<div class="mt-2 inline-flex items-center gap-1 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza clínica y plan exacto desde el día 1, sin improvisaciones.</span>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm hover:border-primary transition-colors">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm shrink-0">
+            02
+          </div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mb-1">Plan Médico Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Combinamos principios activos biocompatibles de absorción gradual ajustados a tu edad y estilo de vida.
+            </p>
+<div class="mt-2 inline-flex items-center gap-1 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Inversión transparente sin sobrecostos ni fórmulas genéricas.</span>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 flex gap-4 items-start shadow-sm hover:border-primary transition-colors">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm shrink-0">
+            03
+          </div>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mb-1">Aplicación Guiada y Glow Natural</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sesiones ejecutadas por médicas especialistas en instalaciones climatizadas de máxima asepsia y confort.
+            </p>
+<div class="mt-2 inline-flex items-center gap-1 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Reincorporación inmediata a tu rutina social y laboral con piel radiante.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-CTA de consulta intermedia -->
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-2 text-primary font-title-md hover:underline bg-surface-container-lowest px-5 py-2.5 rounded-full border border-primary-container/20 shadow-sm" href="https://wa.me/573175114325?text=Hola,%20quisiera%20consultar%20mi%20caso%20particular%20con%20una%20especialista" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con una especialista</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA 3: DESEO (Prueba Social, Beneficios & Testimonios) ================= -->
+<section class="py-space-2xl px-margin" id="procedimientos">
+<div class="max-w-xl mx-auto">
+<!-- Métricas de Autoridad -->
+<div class="grid grid-cols-2 gap-3 mb-space-2xl">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+<div class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary mb-0.5">+8 Años</div>
+<p class="font-label-md text-label-md text-on-surface-variant">De Trayectoria Clínica</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+<div class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary mb-0.5">+5.200</div>
+<p class="font-label-md text-label-md text-on-surface-variant">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+<div class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary mb-0.5">100%</div>
+<p class="font-label-md text-label-md text-on-surface-variant">Insumos INVIMA &amp; FDA</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center shadow-sm">
+<div class="flex items-center justify-center gap-1 text-tertiary">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-primary">4.9</span>
+<span class="material-symbols-outlined text-xl text-tertiary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">Google Reviews Verificadas</p>
+</div>
+</div>
+<!-- Beneficios Enfocados en Resultados Cotidianos -->
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Transformación Sutil</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Lo que notarás al mirarte al espejo</h3>
+</div>
+<div class="grid grid-cols-1 gap-3.5 mb-space-2xl">
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex items-start gap-3.5 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg" data-icon="face">face</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cutis fresco, descansado y luminoso, jamás aspecto operado o rígido.</p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex items-start gap-3.5 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg" data-icon="bloodtype">bloodtype</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Bioestimulación profunda de colágeno</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Reactivación celular de tu colágeno natural para restaurar firmeza y luminosidad duradera.</p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex items-start gap-3.5 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg" data-icon="alarm_off">alarm_off</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Cero tiempo de reposo en cama</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Procedimientos no invasivos e indoloros para continuar con tus compromisos el mismo día.</p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 flex items-start gap-3.5 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Acompañamiento médico VIP continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Controles de evolución clínica y pautas de skincare domiciliario asistido por especialistas.</p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="text-center mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Historias Reales</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">La experiencia en palabras de nuestras pacientes</h3>
+</div>
+<div class="space-y-4">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center gap-1 text-tertiary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-3">
+            "Tenía pánico de quedar con pómulos inflados o la mirada tiesa. En Perla me hicieron bioestimulación y el cambio fue mágico: mi piel recobró elasticidad y luz propia. Mis colegas en Medellín me dicen que luzco rejuvenecida como si hubiera dormido un mes en un resort."
+          </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Camila Restrepo</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sede El Poblado · Medellín</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span> Paciente Verificada
+            </span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl border border-outline-variant/30 shadow-sm relative">
+<div class="flex items-center gap-1 text-tertiary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-3">
+            "La atención médica 1 a 1 en Bogotá es de otro nivel. Cero presión para comprar paquetes innecesarios. Me diseñaron un protocolo con hidrafacial y microdosis; salí directa a una cena de trabajo sin una sola marca ni enrojecimiento."
+          </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-2">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Valentina Morales</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Sede Chicó Norte · Bogotá</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span> Paciente Verificada
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ETAPA 4: ACCIÓN (Conversión, Formulario & WhatsApp) ================= -->
+<section class="py-space-2xl px-margin bg-surface-container-high/40" id="formulario-reserva">
+<div class="max-w-xl mx-auto">
+<!-- Banner de Escasez Ética -->
+<div class="bg-tertiary-fixed/30 border border-tertiary-container/50 rounded-2xl p-3 text-center mb-space-md">
+<div class="flex items-center justify-center gap-2 text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-base animate-pulse" data-icon="event_busy">event_busy</span>
+<span class="font-label-md text-label-md font-semibold">Cupos semanales de valoración limitados en Colombia</span>
+</div>
+</div>
+<!-- Encabezado Formulario -->
+<div class="text-center mb-space-md">
+<h3 class="font-headline-md text-headline-md text-primary">Empieza hoy tu transformación armónica con total confianza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Completa estos 3 datos y nuestra coordinación médica te responderá hoy mismo.</p>
+</div>
+<!-- Formulario Minimalista de 3 Campos -->
+<div class="bg-surface-container-lowest p-space-lg rounded-3xl border border-primary-container/10 shadow-lg">
+<form class="space-y-4" onsubmit="handleFormSubmit(event)">
+<!-- Campo 1: Nombre completo -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1 uppercase tracking-wide" for="nombre">
+              Nombre Completo *
+            </label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/50 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md transition-all outline-none" id="nombre" name="nombre" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp / Celular -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1 uppercase tracking-wide" for="whatsapp">
+              WhatsApp o Celular (+57) *
+            </label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/50 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md transition-all outline-none" id="whatsapp" name="whatsapp" placeholder="Ej. 310 123 4567" required="" type="tel"/>
+</div>
+<!-- Campo 3: Tratamiento de Interés -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1 uppercase tracking-wide" for="tratamiento">
+              ¿Qué tratamiento te interesa? *
+            </label>
+<select class="w-full px-4 py-3 rounded-2xl bg-surface-container-lowest border border-outline-variant/50 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-on-surface font-body-md transition-all outline-none cursor-pointer" id="tratamiento" name="tratamiento" required="">
+<option value="Bioestimulación Dérmica">Bioestimulación Dérmica</option>
+<option value="Hidrafacial Glow">Hidrafacial Glow</option>
+<option value="Armonización Facial Sutil">Armonización Facial Sutil</option>
+<option value="Rejuvenecimiento No Invasivo">Rejuvenecimiento No Invasivo</option>
+</select>
+</div>
+<!-- Botón Principal de Conversión -->
+<button class="w-full py-4 px-6 rounded-full bg-primary-container hover:bg-primary text-on-primary font-title-md text-title-md font-semibold text-center shadow-lg hover:shadow-xl active:scale-95 transition-all duration-200 mt-2 flex items-center justify-center gap-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- Separador -->
+<div class="relative my-4 flex items-center justify-center">
+<div class="border-t border-outline-variant/40 w-full"></div>
+<span class="bg-surface-container-lowest px-3 text-on-surface-variant font-label-sm text-label-sm">o</span>
+</div>
+<!-- Botón Alternativo Directo a WhatsApp -->
+<a class="w-full py-3.5 px-6 rounded-full border-2 border-primary text-primary hover:bg-primary-container/10 font-title-md text-title-md font-semibold text-center transition-all duration-200 flex items-center justify-center gap-2" href="https://wa.me/573175114325?text=Hola,%20quisiera%20agendar%20mi%20valoraci%C3%B3n%20cl%C3%ADnica%20en%20Perla%20Medical%20Spa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 317 511 4325)</span>
+</a>
+<!-- Micro-copy de Seguridad y Habeas Data -->
+<p class="font-body-sm text-body-sm text-outline text-center mt-4">
+          Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</div>
+<!-- FAQ en Acordeón -->
+<div class="mt-space-xl">
+<h3 class="font-headline-sm text-headline-sm text-primary text-center mb-space-md">Preguntas Frecuentes</h3>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<details class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm group">
+<summary class="p-4 font-title-md text-title-md font-semibold text-on-surface cursor-pointer flex justify-between items-center list-none">
+<span>¿Los procedimientos generan dolor o molestias?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high">
+              No. Aplicamos crema anestésica tópica de grado hospitalario 20 minutos antes y usamos micro-cánulas de punta roma atraumática que evitan hematomas y minimizan cualquier molestia al máximo.
+            </div>
+</details>
+<!-- FAQ 2 -->
+<details class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm group">
+<summary class="p-4 font-title-md text-title-md font-semibold text-on-surface cursor-pointer flex justify-between items-center list-none">
+<span>¿Tendré incapacidad o marcas visibles?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high">
+              Cero tiempo de reposo en cama. Puedes reanudar tus actividades laborales y sociales de inmediato. En casos aislados puede haber un ligero enrojecimiento que desaparece en menos de 2 horas.
+            </div>
+</details>
+<!-- FAQ 3 -->
+<details class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm group">
+<summary class="p-4 font-title-md text-title-md font-semibold text-on-surface cursor-pointer flex justify-between items-center list-none">
+<span>¿Cómo garantizan que no quedaré con aspecto 'operado'?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high">
+              Nuestra filosofía médica se basa en bioestimulación del propio colágeno y micro-dosis. No sobrecargamos tejidos. Respetamos tu anatomía original para que tu expresión continúe siendo exactamente la tuya.
+            </div>
+</details>
+<!-- FAQ 4 -->
+<details class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-sm group">
+<summary class="p-4 font-title-md text-title-md font-semibold text-on-surface cursor-pointer flex justify-between items-center list-none">
+<span>¿Cuáles son las opciones y facilidades de pago?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-primary" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-1 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high">
+              Aceptamos todas las tarjetas de crédito, débito, transferencias bancarias nacionales (Bancolombia/Davivienda) y pagos internacionales seguros para turistas médicos.
+            </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="bg-surface-container-lowest">
+<div class="flex flex-col items-center w-full px-margin py-space-xl mb-space-3xl max-w-7xl mx-auto text-center space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="spa">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary">Perla Medical Spa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        © 2024 Perla Medical Spa Colombia. All rights reserved. Vigilado SuperSalud.
+      </p>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#terminos">Habeas Data Colombia</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#resolucion">MinSalud Resolución 3100</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#vip">VIP Concierge &amp; Travel Protocol</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#privacidad">Medical Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (Mobile Responsive Pivot) ================= -->
+<!-- Strict adherence to BottomNavBar from Shared Components JSON: destination_count: 4, labels: ["Procedures", "Concierge", "WhatsApp", "Book Now"] -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-sm pb-safe bg-surface-bright/90 backdrop-blur-md shadow-lg">
+<!-- Tab 1: Procedures -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200" href="#procedimientos">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-label-sm mt-0.5">Procedures</span>
+</a>
+<!-- Tab 2: Concierge -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200" href="#metodo">
+<span class="material-symbols-outlined text-xl" data-icon="support_agent">support_agent</span>
+<span class="font-label-sm text-label-sm mt-0.5">Concierge</span>
+</a>
+<!-- Tab 3: WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-space-sm py-space-xs hover:text-primary transition-colors duration-200" href="https://wa.me/573175114325" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm mt-0.5">WhatsApp</span>
+</a>
+<!-- Tab 4: Book Now (Active state mapping for Booking/Conversion Landing Page) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-space-md py-space-xs active:scale-95 transition-transform duration-150 shadow-sm" href="#formulario-reserva">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm mt-0.5 font-semibold">Book Now</span>
+</a>
+</nav>
+<!-- Lightweight Inline JS for Form Submission & Interaction -->
+<script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const nombre = form.nombre.value;
+      const tel = form.whatsapp.value;
+      const tratamiento = form.tratamiento.value;
+
+      // Mensaje de feedback amigable
+      const originalBtn = form.querySelector('button[type="submit"]');
+      const originalText = originalBtn.innerHTML;
+      
+      originalBtn.disabled = true;
+      originalBtn.innerHTML = '<span>¡Agendando tu cita...!</span>';
+
+      setTimeout(() => {
+        // Redirección directa y suave a WhatsApp con el mensaje estructurado
+        const text = encodeURIComponent(`Hola Perla Medical Spa, mi nombre es ${nombre}. Deseo agendar mi valoración clínica para ${tratamiento}. Mi contacto es ${tel}.`);
+        window.location.href = `https://wa.me/573175114325?text=${text}`;
+      }, 700);
+    }
+  </script>
+</body></html>
