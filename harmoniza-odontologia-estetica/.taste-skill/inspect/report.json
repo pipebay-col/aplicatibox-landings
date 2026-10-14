@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T22:03:25.885Z",
+ "at": "2026-10-14T22:52:08.827Z",
  "allow": [
   "eyebrow"
  ],
@@ -13,7 +13,7 @@
    "filled": [
     0.49,
     0.54,
-    0.75,
+    0.69,
     0.79
    ],
    "motion": {
@@ -30,13 +30,13 @@
      "h": 900
     },
     "page": {
-     "height": 3118,
+     "height": 3138,
      "screens": 3.5,
      "words": 274,
      "img": 0,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 11,
      "sections": 0,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -112,7 +112,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 874,
+      "top": 876,
       "tag": "div",
       "kind": "heading"
      },
@@ -133,7 +133,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.21,
-      "top": 1131,
+      "top": 1133,
       "tag": "div",
       "kind": "heading"
      },
@@ -154,7 +154,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.31,
-      "top": 1813,
+      "top": 1815,
       "tag": "div",
       "kind": "heading"
      },
@@ -175,7 +175,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2219,
+      "top": 2221,
       "tag": "div",
       "kind": "heading"
      },
@@ -196,7 +196,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.04,
-      "top": 2219,
+      "top": 2221,
       "tag": "div",
       "kind": "heading"
      },
@@ -217,7 +217,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.05,
-      "top": 2219,
+      "top": 2221,
       "tag": "div",
       "kind": "heading"
      },
@@ -238,7 +238,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.23,
-      "top": 2354,
+      "top": 2356,
       "tag": "div",
       "kind": "heading"
      },
@@ -259,7 +259,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.22,
-      "top": 2688,
+      "top": 2708,
       "tag": "div",
       "kind": "heading"
      }
@@ -277,7 +277,7 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.84,
+       "share": 0.81,
        "mono": false
       },
       {
@@ -287,7 +287,7 @@
       },
       {
        "family": "ui-sans-serif",
-       "share": 0,
+       "share": 0.03,
        "mono": false
       }
      ],
@@ -310,7 +310,7 @@
       "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 7.6
      },
      "measureChars": 179,
      "max": {
@@ -344,35 +344,35 @@
     ],
     "numbered": [],
     "color": {
-     "bodyBg": "#15120f",
+     "bodyBg": "#1a1816",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.17,
-      "l": 0.07
+      "s": 0.08,
+      "l": 0.09
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "top": 0,
        "hsl": {
         "h": 30,
-        "s": 0.17,
-        "l": 0.07
-       }
-      },
-      {
-       "color": "#1d1810",
-       "top": 1781,
-       "hsl": {
-        "h": 37,
-        "s": 0.29,
+        "s": 0.08,
         "l": 0.09
        }
       },
       {
+       "color": "#211e1a",
+       "top": 1783,
+       "hsl": {
+        "h": 34,
+        "s": 0.12,
+        "l": 0.12
+       }
+      },
+      {
        "color": "#1b1712",
-       "top": 2648,
+       "top": 2668,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -380,48 +380,39 @@
        }
       },
       {
-       "color": "#201c17",
-       "top": 2775,
+       "color": "#262220",
+       "top": 2795,
        "hsl": {
-        "h": 33,
-        "s": 0.16,
-        "l": 0.11
+        "h": 20,
+        "s": 0.09,
+        "l": 0.14
        }
       }
      ],
      "textColors": [
       {
-       "color": "#a89f90",
+       "color": "#b8b4ac",
        "share": 0.48
       },
       {
-       "color": "#f2ede4",
+       "color": "#f3f4f6",
        "share": 0.22
       },
       {
-       "color": "#c9a96e",
+       "color": "#b49a53",
        "share": 0.11
       },
       {
-       "color": "#ddd5c4",
+       "color": "#e0dcd2",
        "share": 0.11
       },
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Al enviar aceptas la política de datos (",
-       "ratio": 3.6,
-       "need": 4.5,
-       "size": 13,
-       "fg": "#7a7264",
-       "bg": "#201c17"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -456,7 +447,7 @@
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 924
+       "top": 926
       }
      ]
     },
@@ -481,9 +472,9 @@
    "screens": 4,
    "filled": [
     0.75,
-    0.46,
-    0.63,
-    0.64
+    0.49,
+    0.73,
+    0.73
    ],
    "motion": {
     "elements": 53,
@@ -499,13 +490,13 @@
      "h": 1024
     },
     "page": {
-     "height": 3222,
-     "screens": 3.1,
+     "height": 3242,
+     "screens": 3.2,
      "words": 274,
      "img": 0,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 11,
      "sections": 0,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -581,7 +572,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.57,
-      "top": 864,
+      "top": 866,
       "tag": "div",
       "kind": "heading"
      },
@@ -602,7 +593,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 1187,
+      "top": 1189,
       "tag": "div",
       "kind": "heading"
      },
@@ -623,7 +614,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.58,
-      "top": 1869,
+      "top": 1871,
       "tag": "div",
       "kind": "heading"
      },
@@ -644,7 +635,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 2323,
+      "top": 2325,
       "tag": "div",
       "kind": "heading"
      },
@@ -665,7 +656,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.08,
-      "top": 2323,
+      "top": 2325,
       "tag": "div",
       "kind": "heading"
      },
@@ -686,7 +677,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.09,
-      "top": 2323,
+      "top": 2325,
       "tag": "div",
       "kind": "heading"
      },
@@ -707,7 +698,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 2458,
+      "top": 2460,
       "tag": "div",
       "kind": "heading"
      },
@@ -728,7 +719,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.41,
-      "top": 2792,
+      "top": 2812,
       "tag": "div",
       "kind": "heading"
      }
@@ -746,7 +737,7 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.84,
+       "share": 0.81,
        "mono": false
       },
       {
@@ -756,7 +747,7 @@
       },
       {
        "family": "ui-sans-serif",
-       "share": 0,
+       "share": 0.03,
        "mono": false
       }
      ],
@@ -779,7 +770,7 @@
       "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 7.6
      },
      "measureChars": 90,
      "max": {
@@ -813,44 +804,44 @@
     ],
     "numbered": [],
     "color": {
-     "bodyBg": "#15120f",
+     "bodyBg": "#1a1816",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.17,
-      "l": 0.07
+      "s": 0.08,
+      "l": 0.09
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "top": 0,
        "hsl": {
         "h": 30,
-        "s": 0.17,
-        "l": 0.07
-       }
-      },
-      {
-       "color": "#231d13",
-       "top": 832,
-       "hsl": {
-        "h": 37,
-        "s": 0.3,
-        "l": 0.11
-       }
-      },
-      {
-       "color": "#1d1810",
-       "top": 1837,
-       "hsl": {
-        "h": 37,
-        "s": 0.29,
+        "s": 0.08,
         "l": 0.09
        }
       },
       {
+       "color": "#221e1b",
+       "top": 834,
+       "hsl": {
+        "h": 26,
+        "s": 0.11,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#211e1a",
+       "top": 1839,
+       "hsl": {
+        "h": 34,
+        "s": 0.12,
+        "l": 0.12
+       }
+      },
+      {
        "color": "#1b1712",
-       "top": 2752,
+       "top": 2772,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -860,37 +851,28 @@
      ],
      "textColors": [
       {
-       "color": "#a89f90",
+       "color": "#b8b4ac",
        "share": 0.48
       },
       {
-       "color": "#f2ede4",
+       "color": "#f3f4f6",
        "share": 0.22
       },
       {
-       "color": "#c9a96e",
+       "color": "#b49a53",
        "share": 0.11
       },
       {
-       "color": "#ddd5c4",
+       "color": "#e0dcd2",
        "share": 0.11
       },
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Al enviar aceptas la política de datos (",
-       "ratio": 3.6,
-       "need": 4.5,
-       "size": 13,
-       "fg": "#7a7264",
-       "bg": "#201c17"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -925,7 +907,7 @@
        "count": 4,
        "iconTopped": false,
        "rounded": true,
-       "top": 914
+       "top": 916
       }
      ]
     },
@@ -950,16 +932,16 @@
    "screens": 5,
    "filled": [
     0.69,
-    0.5,
-    0.84,
-    0.69,
-    0.72
+    0.62,
+    0.72,
+    0.62,
+    0.73
    ],
    "motion": {
-    "elements": 57,
+    "elements": 56,
     "css": 0,
-    "transitions": 47,
-    "scripted": 10,
+    "transitions": 56,
+    "scripted": 0,
     "videos": 0,
     "playingVideos": 0
    },
@@ -969,13 +951,13 @@
      "h": 844
     },
     "page": {
-     "height": 3498,
-     "screens": 4.1,
-     "words": 280,
+     "height": 3544,
+     "screens": 4.2,
+     "words": 277,
      "img": 0,
      "video": 0,
      "canvas": 0,
-     "svg": 0,
+     "svg": 11,
      "sections": 0,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -1051,7 +1033,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 739,
+      "top": 767,
       "tag": "div",
       "kind": "heading"
      },
@@ -1072,7 +1054,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.03,
-      "top": 839,
+      "top": 867,
       "tag": "div",
       "kind": "heading"
      },
@@ -1093,7 +1075,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.05,
-      "top": 839,
+      "top": 867,
       "tag": "div",
       "kind": "heading"
      },
@@ -1114,7 +1096,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.08,
-      "top": 839,
+      "top": 867,
       "tag": "div",
       "kind": "heading"
      },
@@ -1135,7 +1117,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.07,
-      "top": 839,
+      "top": 867,
       "tag": "div",
       "kind": "heading"
      },
@@ -1156,7 +1138,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 1162,
+      "top": 1190,
       "tag": "div",
       "kind": "heading"
      },
@@ -1177,7 +1159,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 1844,
+      "top": 1872,
       "tag": "div",
       "kind": "heading"
      },
@@ -1198,7 +1180,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 2442,
+      "top": 2470,
       "tag": "div",
       "kind": "heading"
      },
@@ -1219,7 +1201,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.16,
-      "top": 2442,
+      "top": 2470,
       "tag": "div",
       "kind": "heading"
      },
@@ -1240,7 +1222,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.17,
-      "top": 2442,
+      "top": 2470,
       "tag": "div",
       "kind": "heading"
      },
@@ -1261,7 +1243,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 2595,
+      "top": 2623,
       "tag": "div",
       "kind": "heading"
      },
@@ -1282,7 +1264,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.7,
-      "top": 2963,
+      "top": 3009,
       "tag": "div",
       "kind": "heading"
      }
@@ -1300,7 +1282,7 @@
      "families": [
       {
        "family": "Manrope",
-       "share": 0.84,
+       "share": 0.81,
        "mono": false
       },
       {
@@ -1310,7 +1292,7 @@
       },
       {
        "family": "ui-sans-serif",
-       "share": 0,
+       "share": 0.03,
        "mono": false
       }
      ],
@@ -1333,7 +1315,7 @@
       "leading": 1.55,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 7.6
      },
      "measureChars": 39,
      "max": {
@@ -1356,44 +1338,44 @@
     "eyebrows": [],
     "numbered": [],
     "color": {
-     "bodyBg": "#15120f",
+     "bodyBg": "#1a1816",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.17,
-      "l": 0.07
+      "s": 0.08,
+      "l": 0.09
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "top": 0,
        "hsl": {
         "h": 30,
-        "s": 0.17,
-        "l": 0.07
-       }
-      },
-      {
-       "color": "#231d13",
-       "top": 707,
-       "hsl": {
-        "h": 37,
-        "s": 0.3,
-        "l": 0.11
-       }
-      },
-      {
-       "color": "#1d1810",
-       "top": 1812,
-       "hsl": {
-        "h": 37,
-        "s": 0.29,
+        "s": 0.08,
         "l": 0.09
        }
       },
       {
+       "color": "#221e1b",
+       "top": 735,
+       "hsl": {
+        "h": 26,
+        "s": 0.11,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#211e1a",
+       "top": 1840,
+       "hsl": {
+        "h": 34,
+        "s": 0.12,
+        "l": 0.12
+       }
+      },
+      {
        "color": "#1b1712",
-       "top": 2923,
+       "top": 2969,
        "hsl": {
         "h": 33,
         "s": 0.2,
@@ -1401,48 +1383,39 @@
        }
       },
       {
-       "color": "#201c17",
-       "top": 3067,
+       "color": "#262220",
+       "top": 3113,
        "hsl": {
-        "h": 33,
-        "s": 0.16,
-        "l": 0.11
+        "h": 20,
+        "s": 0.09,
+        "l": 0.14
        }
       }
      ],
      "textColors": [
       {
-       "color": "#a89f90",
+       "color": "#b8b4ac",
        "share": 0.48
       },
       {
-       "color": "#f2ede4",
+       "color": "#f3f4f6",
        "share": 0.23
       },
       {
-       "color": "#c9a96e",
+       "color": "#b49a53",
        "share": 0.11
       },
       {
-       "color": "#ddd5c4",
+       "color": "#e0dcd2",
        "share": 0.11
       },
       {
-       "color": "#15120f",
+       "color": "#1a1816",
        "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": [
-      {
-       "text": "Al enviar aceptas la política de datos (",
-       "ratio": 3.6,
-       "need": 4.5,
-       "size": 13,
-       "fg": "#7a7264",
-       "bg": "#201c17"
-      }
-     ]
+     "lowContrast": []
     },
     "buttons": {
      "count": 0,
@@ -1479,7 +1452,7 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1926
+       "top": 1954
       }
      ]
     },
@@ -1501,21 +1474,10 @@
  "findings": [
   {
    "level": "WARN",
-   "id": "palette-cream",
+   "id": "font-count",
    "width": 1440,
-   "message": "Yellow-cream background (text #f2ede4).",
-   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "contrast",
-   "width": 1440,
-   "message": "Low-contrast text: \"Al enviar aceptas la política de datos (\" 3.6:1 needs 4.5:1",
-   "fix": "Darken or lighten the text colour.",
+   "message": "3 typefaces in use (Manrope, Fraunces, ui-sans-serif).",
+   "fix": "Two at most.",
    "alsoAt": [
     768,
     390
@@ -1529,17 +1491,6 @@
    "fix": "Body copy 16–20px.",
    "alsoAt": [
     768
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "grey-body",
-   "width": 1440,
-   "message": "The running text is a soft grey on its ground (6.5:1).",
-   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
-   "alsoAt": [
-    768,
-    390
    ]
   },
   {
