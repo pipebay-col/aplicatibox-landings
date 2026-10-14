@@ -170,7 +170,7 @@
 </div>
 <!-- Hero Visual with Portrait & Micro-Badge -->
 <div class="relative rounded-2xl overflow-hidden clinical-shadow border border-outline-variant/30 bg-surface-container-lowest">
-<img alt="Dra. Catherine Zuluaga en su clínica de odontología biomimética en Colombia" class="w-full h-[400px] object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1VG_JZy3IuFpqFs1rPY4VzshNKYndpRC-w7qtXwPWdXaqQlfYmdFCMrCgzPIYy4Mvdp2f_CObtY43wSLCPdYwHfykgWzAHbTailmr9E-dWow6Ih1V_nSfE-lTYztKybdzlFK-_z7r57N-u92Ps--z7_SbZt9B18aLSU6zWFSPwu_R8YCvF_TscPlR8TgHJjVwuVLUWkpz5Z3Q-720MNg5fKXiPOnuVCkfkDjtDYSC1YHE7mimbONE1b1oA"/>
+<img alt="Dra. Catherine Zuluaga, odontóloga estética, en su clínica de Envigado, Medellín" class="w-full h-[400px] object-cover object-top" src="hero-marca.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent flex flex-col justify-end p-4">
 <div class="inline-flex items-center gap-2 backdrop-blur-md bg-surface-container-lowest/90 px-3 py-2 rounded-xl border border-white/40 shadow-sm max-w-fit">
 <span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">spa</span>
@@ -393,7 +393,7 @@
             Completa tus datos para coordinar tu cita personalizada directamente con la especialista.
           </p>
 </div>
-<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); alert('¡Gracias! La Dra. Catherine Zuluaga o su equipo clínico te contactará en menos de 24 horas.');">
+<form class="space-y-4" id="leadForm" onsubmit="event.preventDefault(); var n=document.getElementById('name').value.trim(); var p=document.getElementById('phone').value.replace(/\D/g,''); var t=document.getElementById('treatment'); var trat=t.options[t.selectedIndex].text; var msg='Hola Dra. Catherine Zuluaga, soy '+(n||'una paciente interesada')+'. Quisiera agendar mi valoración de '+trat+'. Mi celular es +57 '+(p||'el que aparece en mi WhatsApp')+'.'; window.location.href='https://wa.me/573126675722?text='+encodeURIComponent(msg);">
 <!-- Field 1: Name -->
 <div class="space-y-1">
 <label class="font-label-sm text-label-sm text-on-surface" for="name">Nombre y Apellido</label>
