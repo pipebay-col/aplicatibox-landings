@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:32:08.720Z",
+ "at": "2026-10-14T19:39:18.690Z",
  "allow": [],
  "viewports": [
   {
@@ -9,15 +9,15 @@
    "load": "load",
    "screens": 3,
    "filled": [
-    0.64,
+    0.57,
     0.68,
     0.52
    ],
    "motion": {
-    "elements": 0,
+    "elements": 22,
     "css": 0,
     "transitions": 0,
-    "scripted": 0,
+    "scripted": 22,
     "videos": 0,
     "playingVideos": 0
    },
@@ -27,9 +27,9 @@
      "h": 900
     },
     "page": {
-     "height": 2386,
-     "screens": 2.7,
-     "words": 183,
+     "height": 2383,
+     "screens": 2.6,
+     "words": 180,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -46,9 +46,7 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "✓"
-     ]
+     "emoji": []
     },
     "hero": {
      "text": "Tu sonrisa en su versión más armónica",
@@ -153,7 +151,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.3,
-      "top": 1821,
+      "top": 1818,
       "tag": "div",
       "kind": "heading"
      },
@@ -174,7 +172,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.5,
-      "top": 2165,
+      "top": 2162,
       "tag": "div",
       "kind": "heading"
      }
@@ -278,7 +276,7 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.3
+       "share": 0.29
       },
       {
        "color": "#475569",
@@ -289,22 +287,22 @@
        "share": 0.13
       },
       {
-       "color": "#1a1816",
-       "share": 0.13
-      },
-      {
        "color": "#e7e7e7",
        "share": 0.12
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.1
       }
      ],
      "button": null,
      "lowContrast": [
       {
        "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1,
+       "ratio": 1.1,
        "need": 4.5,
        "size": 16,
-       "fg": "#1a1816",
+       "fg": "#141210",
        "bg": "#1a1816"
       },
       {
@@ -317,11 +315,11 @@
       },
       {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
+       "ratio": 3.4,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00d084"
+       "bg": "#00a15c"
       }
      ]
     },
@@ -383,14 +381,14 @@
    "screens": 3,
    "filled": [
     0.75,
-    0.89,
-    0.6
+    0.93,
+    0.66
    ],
    "motion": {
-    "elements": 0,
+    "elements": 22,
     "css": 0,
     "transitions": 0,
-    "scripted": 0,
+    "scripted": 22,
     "videos": 0,
     "playingVideos": 0
    },
@@ -400,9 +398,9 @@
      "h": 1024
     },
     "page": {
-     "height": 2692,
+     "height": 2689,
      "screens": 2.6,
-     "words": 183,
+     "words": 180,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -419,9 +417,7 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "✓"
-     ]
+     "emoji": []
     },
     "hero": {
      "text": "Tratamientos de alto impacto",
@@ -504,7 +500,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.79,
+      "widthRatio": 0.97,
       "top": 1790,
       "tag": "div",
       "kind": "heading"
@@ -525,8 +521,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.79,
-      "top": 2187,
+      "widthRatio": 0.57,
+      "top": 2184,
       "tag": "div",
       "kind": "heading"
      },
@@ -547,7 +543,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.93,
-      "top": 2501,
+      "top": 2498,
       "tag": "div",
       "kind": "heading"
      }
@@ -661,7 +657,7 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.3
+       "share": 0.29
       },
       {
        "color": "#475569",
@@ -672,22 +668,22 @@
        "share": 0.13
       },
       {
-       "color": "#1a1816",
-       "share": 0.13
-      },
-      {
        "color": "#e7e7e7",
        "share": 0.12
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.1
       }
      ],
      "button": null,
      "lowContrast": [
       {
        "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1,
+       "ratio": 1.1,
        "need": 4.5,
        "size": 16,
-       "fg": "#1a1816",
+       "fg": "#141210",
        "bg": "#1a1816"
       },
       {
@@ -700,11 +696,11 @@
       },
       {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
+       "ratio": 3.4,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00d084"
+       "bg": "#00a15c"
       }
      ]
     },
@@ -767,14 +763,14 @@
    "filled": [
     0.66,
     1,
-    0.57,
-    0.62
+    0.67,
+    0.73
    ],
    "motion": {
-    "elements": 0,
+    "elements": 22,
     "css": 0,
     "transitions": 0,
-    "scripted": 0,
+    "scripted": 22,
     "videos": 0,
     "playingVideos": 0
    },
@@ -784,9 +780,9 @@
      "h": 844
     },
     "page": {
-     "height": 2814,
+     "height": 2811,
      "screens": 3.3,
-     "words": 183,
+     "words": 180,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -803,9 +799,7 @@
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
-     "emoji": [
-      "✓"
-     ]
+     "emoji": []
     },
     "hero": {
      "text": "Tratamientos de alto impacto",
@@ -909,7 +903,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.65,
+      "widthRatio": 1.91,
       "top": 1912,
       "tag": "div",
       "kind": "heading"
@@ -930,8 +924,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.65,
-      "top": 2309,
+      "widthRatio": 1.12,
+      "top": 2306,
       "tag": "div",
       "kind": "heading"
      },
@@ -952,7 +946,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 1.83,
-      "top": 2623,
+      "top": 2620,
       "tag": "div",
       "kind": "heading"
      }
@@ -1055,7 +1049,7 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.3
+       "share": 0.29
       },
       {
        "color": "#475569",
@@ -1066,22 +1060,22 @@
        "share": 0.13
       },
       {
-       "color": "#1a1816",
-       "share": 0.13
-      },
-      {
        "color": "#e7e7e7",
        "share": 0.12
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.1
       }
      ],
      "button": null,
      "lowContrast": [
       {
        "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1,
+       "ratio": 1.1,
        "need": 4.5,
        "size": 16,
-       "fg": "#1a1816",
+       "fg": "#141210",
        "bg": "#1a1816"
       },
       {
@@ -1094,11 +1088,11 @@
       },
       {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 2,
+       "ratio": 3.4,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00d084"
+       "bg": "#00a15c"
       }
      ]
     },
@@ -1157,20 +1151,9 @@
  "findings": [
   {
    "level": "FAIL",
-   "id": "emoji",
-   "width": 1440,
-   "message": "Emoji in the page: ✓",
-   "fix": "Remove. Use words or real imagery.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "FAIL",
    "id": "contrast",
    "width": 1440,
-   "message": "Unreadable text: \"Agenda por WhatsApp — 1 clic\" 1:1 (#1a1816 on #1a1816); \"data-pencil-name=\"CTA\" class=\"box-border\" 1.2:1 (#000000 on #1a1816); \"Agendar por WhatsApp ahora\" 2:1 (#ffffff on #00d084)",
+   "message": "Unreadable text: \"Agenda por WhatsApp — 1 clic\" 1.1:1 (#141210 on #1a1816); \"data-pencil-name=\"CTA\" class=\"box-border\" 1.2:1 (#000000 on #1a1816)",
    "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
    "alsoAt": [
     768,
@@ -1222,13 +1205,6 @@
    "alsoAt": [
     768
    ]
-  },
-  {
-   "level": "FAIL",
-   "id": "still-page",
-   "width": 1440,
-   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
-   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
   },
   {
    "level": "FAIL",
