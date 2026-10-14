@@ -25,12 +25,20 @@
   <style>
 html,body{margin:0;padding:0;background:#1A1816}
 body > div { max-width:100vw; overflow-x:hidden }
-@media (max-width: 768px) {
+@media (min-width: 1025px) {
   [data-pencil-name="Nav"] { display:none !important }
-  [data-pencil-name="H1"] { font-size:34px !important; white-space:normal !important; text-align:center }
+  [data-pencil-name="H1"] { font-size:52px !important; text-align:center }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  [data-pencil-name="H1"] { font-size:44px !important }
+  [data-pencil-name="Nav"] { display:none !important }
+}
+@media (max-width: 767px) {
+  [data-pencil-name="Nav"] { display:none !important }
+  [data-pencil-name="H1"] { font-size:30px !important; line-height:1.15 !important }; white-space:normal !important; text-align:center }
   [data-pencil-name="Sub"] { font-size:15px !important; text-align:center; padding:0 16px }
   [data-pencil-name="Hero"] { padding:36px 16px !important; height:auto !important }
-  [data-pencil-name="HeroImg"] { width:92% !important; height:230px !important }
+  [data-pencil-name="HeroImg"] { width:100% !important; height:300px !important }
   [data-pencil-name="Grid"] { flex-direction:column !important; gap:14px !important; padding:0 12px }
   [data-pencil-name="Grid"] > div { width:100% !important }
   [data-pencil-name="PorQue"] > div, [data-pencil-name="Testimonios"] > div { width:94% !important }
@@ -42,7 +50,7 @@ img{max-width:100%;height:auto}
   <body>
     <div
       data-pencil-name="Harmoniza AIDA"
-      class="box-border w-[390px] h-fit flex flex-col gap-0 justify-start items-start bg-[#1A1816] overflow-hidden"
+      class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#1A1816] overflow-hidden"
     >
       <div
         data-pencil-name="Hero"
@@ -53,7 +61,7 @@ img{max-width:100%;height:auto}
           class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[6px_14px] justify-start items-start bg-[#3A3A2E] rounded-[980px]"
         >
           <div
-            class="text-[12px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             Rating 4.5+ · Reseñas verificadas
           </div>
@@ -82,7 +90,7 @@ img{max-width:100%;height:auto}
             class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
           >
             <div
-              class="text-[11px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               +12 años exp.
             </div>
@@ -91,7 +99,7 @@ img{max-width:100%;height:auto}
             class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
           >
             <div
-              class="text-[11px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               +1000 pacientes
             </div>
@@ -100,7 +108,7 @@ img{max-width:100%;height:auto}
             class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
           >
             <div
-              class="text-[11px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               Diseño digital previo
             </div>
@@ -121,7 +129,7 @@ img{max-width:100%;height:auto}
             ¿Postergas el dentista por desconfianza al precio?
           </div>
           <div
-            class="text-[13px]/[20px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[15px]/[20px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             En Harmoniza ves el diseño de tu sonrisa en digital, sabes el costo antes de empezar, y
             apruebas el resultado antes de tocar un solo diente.
@@ -147,12 +155,12 @@ img{max-width:100%;height:auto}
               class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
             >
               <div
-                class="text-[14px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
+                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
               >
                 Consulta y escaneo digital
               </div>
               <div
-                class="text-[12px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
               >
                 Tu sonrisa en 3D en la primera visita
               </div>
@@ -174,12 +182,12 @@ img{max-width:100%;height:auto}
               class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
             >
               <div
-                class="text-[14px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
+                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
               >
                 Diseño que tú apruebas
               </div>
               <div
-                class="text-[12px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
               >
                 Ves el resultado final antes de empezar
               </div>
@@ -201,12 +209,12 @@ img{max-width:100%;height:auto}
               class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
             >
               <div
-                class="text-[14px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
+                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
               >
                 Sesión de transformación
               </div>
               <div
-                class="text-[12px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
               >
                 Tratamiento en una sola sesión
               </div>
@@ -237,7 +245,7 @@ img{max-width:100%;height:auto}
               4.5+
             </div>
             <div
-              class="text-[11px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               Rating en Google
             </div>
@@ -251,7 +259,7 @@ img{max-width:100%;height:auto}
               98%
             </div>
             <div
-              class="text-[11px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               Recomendarían
             </div>
@@ -265,12 +273,12 @@ img{max-width:100%;height:auto}
             class="box-border w-full h-fit shrink-0 flex flex-row gap-[8px] p-[18px] justify-start items-start bg-[#23231D] rounded-[16px]"
           >
             <div
-              class="text-[13px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[15px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               “Vi mi sonrisa nueva en la pantalla antes de empezar. Cero miedo.”
             </div>
             <div
-              class="text-[11px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               Paciente verificado de Harmoniza
             </div>
@@ -279,12 +287,12 @@ img{max-width:100%;height:auto}
             class="box-border w-full h-fit shrink-0 flex flex-row gap-[8px] p-[18px] justify-start items-start bg-[#23231D] rounded-[16px]"
           >
             <div
-              class="text-[13px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[15px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               “El implante se siente propio. Profesionalismo de principio a fin.”
             </div>
             <div
-              class="text-[11px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
             >
               Paciente verificado de Harmoniza
             </div>
@@ -302,7 +310,7 @@ img{max-width:100%;height:auto}
           Agenda tu valoración, gratis.
         </div>
         <div
-          class="text-[13px]/[normal] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+          class="text-[15px]/[normal] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
         >
           Cupos limitados esta semana. Respuesta en minutos por WhatsApp.
         </div>
@@ -313,7 +321,7 @@ img{max-width:100%;height:auto}
           </span></div>
         </div></a>
         <div
-          class="text-[10px]/[normal] box-border text-[#8A8578] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+          class="text-[13px]/[normal] box-border text-[#6B675C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
         >
           Al escribir aceptas la política de datos (Ley 1581). Sin spam.
         </div>
@@ -326,12 +334,12 @@ img{max-width:100%;height:auto}
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[10px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[10px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             Inicio
           </div>
@@ -340,12 +348,12 @@ img{max-width:100%;height:auto}
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[10px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[10px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             Tratamientos
           </div>
@@ -354,12 +362,12 @@ img{max-width:100%;height:auto}
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[10px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[10px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
           >
             Agenda
           </div>

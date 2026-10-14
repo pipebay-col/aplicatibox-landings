@@ -1,25 +1,25 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T20:13:02.286Z",
- "allow": [],
+ "at": "2026-10-14T20:56:41.864Z",
+ "allow": [
+  "eyebrow"
+ ],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 5,
+   "screens": 3,
    "filled": [
-    0.65,
-    0.62,
-    0.67,
-    0.2,
-    0.3
+    0.71,
+    0.6,
+    0.49
    ],
    "motion": {
-    "elements": 30,
+    "elements": 17,
     "css": 0,
-    "transitions": 7,
-    "scripted": 23,
+    "transitions": 10,
+    "scripted": 7,
     "videos": 0,
     "playingVideos": 0
    },
@@ -29,9 +29,9 @@
      "h": 900
     },
     "page": {
-     "height": 3897,
-     "screens": 4.3,
-     "words": 140,
+     "height": 2344,
+     "screens": 2.6,
+     "words": 162,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -41,7 +41,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -59,19 +59,19 @@
      "words": 7,
      "chars": 39,
      "lines": 1,
-     "size": 56,
-     "vw": 3.9,
+     "size": 52,
+     "vw": 3.6,
      "font": "Playfair Display",
      "weight": 600,
      "tracking": 0,
-     "leading": 1.2,
+     "leading": 0.85,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.71,
-     "top": 90,
+     "widthRatio": 0.66,
+     "top": 80,
      "tag": "div",
      "kind": "heading"
     },
@@ -82,8 +82,29 @@
       "words": 7,
       "chars": 39,
       "lines": 1,
-      "size": 56,
-      "vw": 3.9,
+      "size": 52,
+      "vw": 3.6,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 0.85,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 80,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Resultados que hablan solos.",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -92,9 +113,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.71,
-      "top": 90,
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1056,
       "tag": "div",
       "kind": "heading"
      },
@@ -103,8 +124,8 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 48,
-      "vw": 3.3,
+      "size": 36,
+      "vw": 2.5,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -114,18 +135,18 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.06,
-      "top": 978,
+      "widthRatio": 0.04,
+      "top": 1135,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "+12",
+      "text": "98%",
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 48,
-      "vw": 3.3,
+      "size": 36,
+      "vw": 2.5,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -134,166 +155,19 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
+      "position": "right",
       "widthRatio": 0.05,
-      "top": 978,
+      "top": 1135,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "+1000",
-      "words": 1,
-      "chars": 5,
-      "lines": 1,
-      "size": 48,
-      "vw": 3.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.09,
-      "top": 978,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Tres caminos a una misma meta.",
-      "words": 6,
-      "chars": 30,
-      "lines": 1,
-      "size": 40,
-      "vw": 2.8,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.41,
-      "top": 1217,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Microdiseño",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 28,
-      "vw": 1.9,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.11,
-      "top": 1624,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Implantes",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 28,
-      "vw": 1.9,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.09,
-      "top": 1624,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Armonización",
-      "words": 1,
-      "chars": 12,
-      "lines": 1,
-      "size": 28,
-      "vw": 1.9,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.12,
-      "top": 1624,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "¿Por qué no usar el chat de la web?",
-      "words": 9,
-      "chars": 35,
-      "lines": 1,
-      "size": 40,
-      "vw": 2.8,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.44,
-      "top": 1894,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Resultados reales, publicados por la clínica.",
-      "words": 6,
-      "chars": 45,
-      "lines": 1,
-      "size": 40,
-      "vw": 2.8,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 1,
-      "top": 2091,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Tu nueva sonrisa empieza hoy.",
-      "words": 5,
+      "text": "Agenda tu valoración, gratis.",
+      "words": 4,
       "chars": 29,
       "lines": 1,
-      "size": 48,
-      "vw": 3.3,
+      "size": 30,
+      "vw": 2.1,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -303,8 +177,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.46,
-      "top": 2894,
+      "widthRatio": 0.27,
+      "top": 1441,
       "tag": "div",
       "kind": "heading"
      },
@@ -325,58 +199,58 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3264,
+      "top": 1711,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 12,
+     "count": 6,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 1,
      "centered": 1,
-     "medianWords": 1,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.71,
+       "family": "Plus Jakarta Sans",
+       "share": 0.86,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.29,
+       "share": 0.14,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
+      13,
       15,
-      17,
-      21,
-      28,
+      16,
+      30,
+      32,
       34,
-      40,
-      48,
-      56
+      36,
+      52
      ],
      "sizeCount": 8,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Plus Jakarta Sans",
       "size": 15,
-      "leading": 1.2,
+      "leading": 1.33,
       "weight": 400,
       "tracking": 0,
-      "contrast": 5.9
+      "contrast": 7.4
      },
-     "measureChars": 153,
+     "measureChars": 127,
      "max": {
-      "size": 56,
-      "vw": 3.9,
+      "size": 52,
+      "vw": 3.6,
       "font": "Playfair Display",
       "text": "Tu sonrisa, en su versión más armónica."
      },
@@ -388,10 +262,21 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.03,
      "smallText": 0
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Rating 4.5+ · Reseñas verificadas",
+      "above": "Tu sonrisa, en su versión más armónica.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 13,
+      "top": 42
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#1a1816",
@@ -413,7 +298,7 @@
       },
       {
        "color": "#f5f4f0",
-       "top": 1794,
+       "top": 593,
        "hsl": {
         "h": 48,
         "s": 0.2,
@@ -423,24 +308,24 @@
      ],
      "textColors": [
       {
-       "color": "#9c948c",
+       "color": "#5a5548",
        "share": 0.31
       },
       {
-       "color": "#fbfbfb",
-       "share": 0.2
+       "color": "#1a1816",
+       "share": 0.16
       },
       {
-       "color": "#4a4440",
-       "share": 0.18
-      },
-      {
-       "color": "#b49a53",
+       "color": "#e7e2d4",
        "share": 0.13
       },
       {
-       "color": "#6b6560",
-       "share": 0.07
+       "color": "#9c948c",
+       "share": 0.09
+      },
+      {
+       "color": "#d4b96a",
+       "share": 0.09
       }
      ],
      "button": null,
@@ -468,10 +353,10 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 16,
      "squareMedia": 0,
-     "roundedMedia": 10,
+     "roundedMedia": 4,
      "mediaRadius": 12,
      "textShadow": 0,
      "cardRows": []
@@ -479,13 +364,13 @@
     "heroMedia": [
      {
       "type": "bg-image",
-      "ratio": 0.48
+      "ratio": 0.33
      }
     ],
     "nav": null,
     "fontsLoaded": [
-     "inter",
-     "playfair display"
+     "playfair display",
+     "plus jakarta sans"
     ]
    },
    "consoleErrors": []
@@ -494,19 +379,17 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 5,
+   "screens": 3,
    "filled": [
-    0.66,
-    0.61,
-    0.57,
-    0.4,
+    0.81,
+    0.71,
     0.51
    ],
    "motion": {
-    "elements": 30,
+    "elements": 17,
     "css": 0,
-    "transitions": 11,
-    "scripted": 19,
+    "transitions": 10,
+    "scripted": 7,
     "videos": 0,
     "playingVideos": 0
    },
@@ -516,9 +399,9 @@
      "h": 1024
     },
     "page": {
-     "height": 4653,
-     "screens": 4.5,
-     "words": 140,
+     "height": 2841,
+     "screens": 2.8,
+     "words": 162,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -528,7 +411,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -542,23 +425,23 @@
      "emoji": []
     },
     "hero": {
-     "text": "+1000",
-     "words": 1,
-     "chars": 5,
-     "lines": 1,
-     "size": 48,
-     "vw": 6.3,
+     "text": "Tu sonrisa, en su versión más armónica.",
+     "words": 7,
+     "chars": 39,
+     "lines": 2,
+     "size": 44,
+     "vw": 5.7,
      "font": "Playfair Display",
      "weight": 600,
      "tracking": 0,
-     "leading": 1.2,
+     "leading": 1,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "right",
-     "widthRatio": 0.18,
-     "top": 545,
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 80,
      "tag": "div",
      "kind": "heading"
     },
@@ -568,30 +451,30 @@
       "text": "Tu sonrisa, en su versión más armónica.",
       "words": 7,
       "chars": 39,
-      "lines": 1,
-      "size": 34,
-      "vw": 4.4,
+      "lines": 2,
+      "size": 44,
+      "vw": 5.7,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.81,
-      "top": 36,
+      "widthRatio": 0.96,
+      "top": 80,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "4.5+",
-      "words": 1,
-      "chars": 4,
+      "text": "Resultados que hablan solos.",
+      "words": 4,
+      "chars": 28,
       "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "size": 32,
+      "vw": 4.2,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -601,18 +484,18 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.11,
-      "top": 545,
+      "widthRatio": 0.54,
+      "top": 1120,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "+12",
+      "text": "4.5+",
       "words": 1,
-      "chars": 3,
+      "chars": 4,
       "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "size": 36,
+      "vw": 4.7,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -621,19 +504,19 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.09,
-      "top": 545,
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 1199,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "+1000",
+      "text": "98%",
       "words": 1,
-      "chars": 5,
+      "chars": 3,
       "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "size": 36,
+      "vw": 4.7,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -643,144 +526,18 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.18,
-      "top": 545,
+      "widthRatio": 0.09,
+      "top": 1199,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Tres caminos a una misma meta.",
-      "words": 6,
-      "chars": 30,
-      "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.74,
-      "top": 784,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Microdiseño",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.2,
-      "top": 1191,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Implantes",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.16,
-      "top": 1589,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Armonización",
-      "words": 1,
-      "chars": 12,
-      "lines": 1,
-      "size": 28,
-      "vw": 3.6,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.23,
-      "top": 1987,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "¿Por qué no usar el chat de la web?",
-      "words": 9,
-      "chars": 35,
-      "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.74,
-      "top": 2257,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Resultados reales, publicados por la clínica.",
-      "words": 6,
-      "chars": 45,
-      "lines": 1,
-      "size": 40,
-      "vw": 5.2,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 1,
-      "top": 2454,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Tu nueva sonrisa empieza hoy.",
-      "words": 5,
+      "text": "Agenda tu valoración, gratis.",
+      "words": 4,
       "chars": 29,
       "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "size": 30,
+      "vw": 3.9,
       "font": "Playfair Display",
       "weight": 600,
       "tracking": 0,
@@ -790,8 +547,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.66,
-      "top": 3257,
+      "widthRatio": 0.51,
+      "top": 1545,
       "tag": "div",
       "kind": "heading"
      },
@@ -812,540 +569,60 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 3627,
+      "top": 1815,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 12,
-     "maxLines": 1,
-     "over2Lines": 0,
-     "statements": 1,
-     "centered": 1,
-     "medianWords": 5,
-     "mixedFontHeadings": 0
-    },
-    "type": {
-     "families": [
-      {
-       "family": "Inter",
-       "share": 0.71,
-       "mono": false
-      },
-      {
-       "family": "Playfair Display",
-       "share": 0.29,
-       "mono": false
-      }
-     ],
-     "familyCount": 2,
-     "sizes": [
-      15,
-      17,
-      28,
-      34,
-      40,
-      48
-     ],
-     "sizeCount": 6,
-     "notLoaded": [],
-     "body": {
-      "font": "Inter",
-      "size": 15,
-      "leading": 1.2,
-      "weight": 400,
-      "tracking": 0,
-      "contrast": 6.5
-     },
-     "measureChars": 67,
-     "max": {
-      "size": 48,
-      "vw": 6.3,
-      "font": "Playfair Display",
-      "text": "4.5+"
-     },
-     "monoShare": 0,
-     "monoProseShare": 0,
-     "monoFamilies": [],
-     "monoSamples": [],
-     "microLabels": 0,
-     "microLabelShare": 0,
-     "microSamples": [],
-     "upperShare": 0,
-     "centerShare": 0.04,
-     "smallText": 0
-    },
-    "eyebrows": [],
-    "numbered": [],
-    "color": {
-     "bodyBg": "#1a1816",
-     "bodyBgHsl": {
-      "h": 30,
-      "s": 0.08,
-      "l": 0.09
-     },
-     "dark": true,
-     "sectionBgs": [
-      {
-       "color": "#1a1816",
-       "top": 0,
-       "hsl": {
-        "h": 30,
-        "s": 0.08,
-        "l": 0.09
-       }
-      }
-     ],
-     "textColors": [
-      {
-       "color": "#9c948c",
-       "share": 0.31
-      },
-      {
-       "color": "#fbfbfb",
-       "share": 0.2
-      },
-      {
-       "color": "#4a4440",
-       "share": 0.18
-      },
-      {
-       "color": "#b49a53",
-       "share": 0.13
-      },
-      {
-       "color": "#6b6560",
-       "share": 0.07
-      }
-     ],
-     "button": null,
-     "lowContrast": []
-    },
-    "buttons": {
-     "count": 0,
-     "inHero": 0,
-     "withShadow": 0,
-     "withGradient": 0,
-     "mono": 0,
-     "upper": 0,
-     "heroLabels": []
-    },
-    "surfaces": {
-     "shadowStatic": 0,
-     "shadowOverlay": 0,
-     "shadowSamples": [],
-     "gradients": 0,
-     "scrims": 0,
-     "gradientSamples": [],
-     "gradientText": 0,
-     "hairlines": 0,
-     "hairlineSamples": [],
-     "outlinedBoxes": 0,
-     "dashed": 0,
-     "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 0,
-     "roundedMedia": 7,
-     "mediaRadius": 12,
-     "textShadow": 0,
-     "cardRows": []
-    },
-    "heroMedia": [
-     {
-      "type": "bg-image",
-      "ratio": 0.2
-     },
-     {
-      "type": "bg-image",
-      "ratio": 0.1
-     }
-    ],
-    "nav": null,
-    "fontsLoaded": [
-     "inter",
-     "playfair display"
-    ]
-   },
-   "consoleErrors": []
-  },
-  {
-   "width": 390,
-   "height": 844,
-   "load": "load",
-   "screens": 7,
-   "filled": [
-    0.52,
-    0.43,
-    0.53,
-    0.28,
-    0.53,
-    0.67,
-    0.58
-   ],
-   "motion": {
-    "elements": 30,
-    "css": 0,
-    "transitions": 8,
-    "scripted": 22,
-    "videos": 0,
-    "playingVideos": 0
-   },
-   "metrics": {
-    "viewport": {
-     "w": 390,
-     "h": 844
-    },
-    "page": {
-     "height": 5219,
-     "screens": 6.2,
-     "words": 140,
-     "img": 3,
-     "video": 0,
-     "canvas": 0,
-     "svg": 0,
-     "sections": 0,
-     "horizontalOverflow": 0,
-     "overflowCulprits": [],
-     "uiFragments": 0,
-     "uiAbuse": false,
-     "realPictures": 7,
-     "videoCount": 0,
-     "uiPictures": 0,
-     "pictureSamples": [
-      "historia-1.png",
-      "historia-3.png",
-      "clinica-1.jpg"
-     ],
-     "blendText": 0,
-     "sideScrollers": 0,
-     "brokenImages": [],
-     "emoji": []
-    },
-    "hero": {
-     "text": "+1000",
-     "words": 1,
-     "chars": 5,
-     "lines": 1,
-     "size": 48,
-     "vw": 12.3,
-     "font": "Playfair Display",
-     "weight": 600,
-     "tracking": 0,
-     "leading": 1.2,
-     "upper": false,
-     "italic": false,
-     "mono": false,
-     "align": "left",
-     "position": "right",
-     "widthRatio": 0.35,
-     "top": 591,
-     "tag": "div",
-     "kind": "heading"
-    },
-    "h1": null,
-    "headings": [
-     {
-      "text": "Tu sonrisa, en su versión más armónica.",
-      "words": 7,
-      "chars": 39,
-      "lines": 2,
-      "size": 34,
-      "vw": 8.7,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 36,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "4.5+",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.22,
-      "top": 591,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "+12",
-      "words": 1,
-      "chars": 3,
-      "lines": 1,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.18,
-      "top": 591,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "+1000",
-      "words": 1,
-      "chars": 5,
-      "lines": 1,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.35,
-      "top": 591,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Tres caminos a una misma meta.",
-      "words": 6,
-      "chars": 30,
-      "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.49,
-      "top": 830,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Microdiseño",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.4,
-      "top": 1237,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Implantes",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.32,
-      "top": 1635,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Armonización",
-      "words": 1,
-      "chars": 12,
-      "lines": 1,
-      "size": 28,
-      "vw": 7.2,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.43,
-      "top": 2033,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "¿Por qué no usar el chat de la web?",
-      "words": 9,
-      "chars": 35,
-      "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.49,
-      "top": 2303,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Resultados reales, publicados por la clínica.",
-      "words": 6,
-      "chars": 45,
-      "lines": 1,
-      "size": 40,
-      "vw": 10.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 1,
-      "top": 2500,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Tu nueva sonrisa empieza hoy.",
-      "words": 5,
-      "chars": 29,
-      "lines": 1,
-      "size": 48,
-      "vw": 12.3,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.33,
-      "top": 3303,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Resultados con pacientes reales",
-      "words": 4,
-      "chars": 31,
-      "lines": 2,
-      "size": 34,
-      "vw": 8.7,
-      "font": "Playfair Display",
-      "weight": 400,
-      "tracking": 0,
-      "leading": 1.5,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.69,
-      "top": 3673,
-      "tag": "p",
-      "kind": "statement"
-     }
-    ],
-    "headingSummary": {
-     "count": 12,
+     "count": 6,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
      "centered": 1,
-     "medianWords": 5,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Inter",
-       "share": 0.71,
+       "family": "Plus Jakarta Sans",
+       "share": 0.86,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.29,
+       "share": 0.14,
        "mono": false
       }
      ],
      "familyCount": 2,
      "sizes": [
+      13,
       15,
-      17,
-      28,
+      16,
+      30,
+      32,
       34,
-      40,
-      48
+      36,
+      44
      ],
-     "sizeCount": 6,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
-      "font": "Inter",
+      "font": "Plus Jakarta Sans",
       "size": 15,
-      "leading": 1.2,
+      "leading": 1.33,
       "weight": 400,
       "tracking": 0,
-      "contrast": 6.5
+      "contrast": 7.4
      },
-     "measureChars": 22,
+     "measureChars": 62,
      "max": {
-      "size": 48,
-      "vw": 12.3,
+      "size": 44,
+      "vw": 5.7,
       "font": "Playfair Display",
-      "text": "4.5+"
+      "text": "Tu sonrisa, en su versión más armónica."
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1355,10 +632,21 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.03,
      "smallText": 0
     },
-    "eyebrows": [],
+    "eyebrows": [
+     {
+      "text": "Rating 4.5+ · Reseñas verificadas",
+      "above": "Tu sonrisa, en su versión más armónica.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 13,
+      "top": 42
+     }
+    ],
     "numbered": [],
     "color": {
      "bodyBg": "#1a1816",
@@ -1380,7 +668,7 @@
       },
       {
        "color": "#f5f4f0",
-       "top": 2203,
+       "top": 637,
        "hsl": {
         "h": 48,
         "s": 0.2,
@@ -1390,24 +678,24 @@
      ],
      "textColors": [
       {
-       "color": "#9c948c",
+       "color": "#5a5548",
        "share": 0.31
       },
       {
-       "color": "#fbfbfb",
-       "share": 0.2
+       "color": "#1a1816",
+       "share": 0.16
       },
       {
-       "color": "#4a4440",
-       "share": 0.18
-      },
-      {
-       "color": "#b49a53",
+       "color": "#e7e2d4",
        "share": 0.13
       },
       {
-       "color": "#6b6560",
-       "share": 0.07
+       "color": "#9c948c",
+       "share": 0.09
+      },
+      {
+       "color": "#d4b96a",
+       "share": 0.09
       }
      ],
      "button": null,
@@ -1435,8 +723,8 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 16,
      "squareMedia": 0,
      "roundedMedia": 4,
      "mediaRadius": 12,
@@ -1446,13 +734,384 @@
     "heroMedia": [
      {
       "type": "bg-image",
-      "ratio": 0.23
+      "ratio": 0.28
      }
     ],
     "nav": null,
     "fontsLoaded": [
-     "inter",
-     "playfair display"
+     "playfair display",
+     "plus jakarta sans"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.7,
+    0.67,
+    0.75,
+    0.67,
+    0.58
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 0,
+    "transitions": 9,
+    "scripted": 8,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3622,
+     "screens": 4.3,
+     "words": 162,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "historia-1.png",
+      "historia-3.png",
+      "clinica-1.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Tu sonrisa, en su versión más armónica.",
+     "words": 7,
+     "chars": 39,
+     "lines": 2,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0,
+     "leading": 1.15,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 80,
+     "tag": "div",
+     "kind": "heading"
+    },
+    "h1": null,
+    "headings": [
+     {
+      "text": "Tu sonrisa, en su versión más armónica.",
+      "words": 7,
+      "chars": 39,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 80,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Resultados que hablan solos.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1215,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "4.5+",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 1337,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "98%",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 1337,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Agenda tu valoración, gratis.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1731,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Resultados con pacientes reales",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.69,
+      "top": 2076,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Plus Jakarta Sans",
+       "share": 0.86,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.14,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      30,
+      32,
+      34,
+      36
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Plus Jakarta Sans",
+      "size": 15,
+      "leading": 1.33,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 22,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "text": "4.5+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Rating 4.5+ · Reseñas verificadas",
+      "above": "Tu sonrisa, en su versión más armónica.",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 13,
+      "top": 42
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#1a1816",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a1816",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#f5f4f0",
+       "top": 634,
+       "hsl": {
+        "h": 48,
+        "s": 0.2,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5a5548",
+       "share": 0.31
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.16
+      },
+      {
+       "color": "#e7e2d4",
+       "share": 0.13
+      },
+      {
+       "color": "#9c948c",
+       "share": 0.09
+      },
+      {
+       "color": "#d4b96a",
+       "share": 0.09
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.33
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "playfair display",
+     "plus jakarta sans"
     ]
    },
    "consoleErrors": []
@@ -1466,6 +1125,7 @@
    "message": "Yellow-cream background (section #f5f4f0).",
    "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
    "alsoAt": [
+    768,
     390
    ]
   },
@@ -1477,17 +1137,6 @@
    "fix": "Body copy 16–20px.",
    "alsoAt": [
     768
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "grey-body",
-   "width": 1440,
-   "message": "The running text is a soft grey on its ground (5.9:1).",
-   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
-   "alsoAt": [
-    768,
-    390
    ]
   },
   {
@@ -1512,7 +1161,7 @@
    "level": "WARN",
    "id": "measure",
    "width": 1440,
-   "message": "Longest paragraph runs about 153 characters per line.",
+   "message": "Longest paragraph runs about 127 characters per line.",
    "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
   }
  ],
@@ -1522,8 +1171,7 @@
    "width": 1440,
    "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg",
-    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-02.jpg"
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg"
    ]
   },
   {
