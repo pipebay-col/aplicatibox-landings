@@ -22,217 +22,258 @@
         margin: 0;
       }
     </style>
-  </head>
+  <style>
+html,body{margin:0;padding:0;background:#1A1816}
+body > div { max-width:100vw; overflow-x:hidden }
+@media (max-width: 768px) {
+  [data-pencil-name="Nav"] { gap:12px !important; padding:14px !important; flex-wrap:wrap !important }
+  [data-pencil-name="H1"] { font-size:34px !important; white-space:normal !important; text-align:center }
+  [data-pencil-name="Sub"] { font-size:15px !important; text-align:center; padding:0 16px }
+  [data-pencil-name="Hero"] { padding:36px 16px !important; height:auto !important }
+  [data-pencil-name="HeroImg"] { width:92% !important; height:230px !important }
+  [data-pencil-name="Grid"] { flex-direction:column !important; gap:14px !important; padding:0 12px }
+  [data-pencil-name="Grid"] > div { width:100% !important }
+  [data-pencil-name="PorQue"] > div, [data-pencil-name="Testimonios"] > div { width:94% !important }
+  [data-pencil-name="Contacto"] { padding:40px 16px !important }
+}
+img{max-width:100%;height:auto}
+</style>
+</head>
   <body>
     <div
-      data-pencil-name="Landing Harmoniza"
-      class="box-border w-[1440px] h-fit flex flex-col gap-0 justify-start items-start bg-[#0A0A0A] overflow-hidden"
+      data-pencil-name="Harmoniza V2"
+      class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#1A1816] overflow-hidden"
     >
       <div
         data-pencil-name="Nav"
-        class="box-border w-full h-fit shrink-0 flex flex-row gap-[380px] p-[24px] justify-start items-center"
+        class="box-border w-full h-fit shrink-0 flex flex-row gap-[300px] p-[20px] justify-start items-center"
       >
         <div
-          data-pencil-name="Logo"
-          class="text-[22px]/[normal] box-border text-[#E8D5B5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
-        >
-          HARMONIZA
-        </div>
-        <div
-          class="box-border w-fit shrink-0 h-fit flex flex-row gap-[32px] justify-start items-center"
+          data-pencil-name="LogoBox"
+          class="box-border w-fit shrink-0 h-[44px] flex flex-row gap-0 justify-start items-center"
         >
           <div
-            class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            data-pencil-name="Logo"
+            class="text-[24px]/[normal] box-border text-[#B49A53] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            HARMONIZA
+          </div>
+        </div>
+        <div
+          class="box-border w-fit shrink-0 h-fit flex flex-row gap-[28px] justify-start items-center"
+        >
+          <div
+            class="text-[13px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
             Tratamientos
           </div>
           <div
-            class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            class="text-[13px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
             Resultados
           </div>
           <div
-            class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            class="text-[13px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
-            Agenda
+            Contacto
           </div>
         </div>
       </div>
       <div
         data-pencil-name="Hero"
-        class="box-border w-full h-[620px] shrink-0 flex flex-col gap-[20px] p-[60px] justify-center items-center bg-[#121212]"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[24px] p-[70px] justify-center items-center bg-[#1A1816]"
       >
         <div
           data-pencil-name="H1"
-          class="text-[60px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[58px]/[normal] box-border text-[#FBFBFB] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
           Tu sonrisa en su versión más armónica
         </div>
         <div
           data-pencil-name="Sub"
-          class="text-[18px]/[normal] box-border text-[#B8B8B8] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[19px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Una sonrisa no debe cambiar quién eres, sino revelar tu mejor versión. Odontología
-          estética premium en Medellín.
+          Agenda tu valoración en 1 clic por WhatsApp — sin formularios ni esperas. Rating 4.5+ en
+          reseñas reales de pacientes.
         </div>
         <div
           data-pencil-name="HeroImg"
-          class="box-border w-[1200px] h-[380px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1679517720888-254efb5a9f2c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMDI3MDh8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[16px]"
+          class="box-border w-[1100px] h-[400px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1708127851232-d1a1bcbd5449?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMDU3NTd8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
         ></div>
-        <div
-          data-pencil-name="CTA"
-          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px] justify-start items-center bg-[#E8D5B5] rounded-[32px]"
+        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:block"><div
+     <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:block">     data-pencil-name="CTA"
+          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[14px] justify-start items-center bg-[#B49A53] rounded-[28px]"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#0A0A0A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            class="text-[16px]/[normal] box-border text-[#1A1816] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
-            Agenda tu valoración
-          </div>
-        </div>
+            Agenda por WhatsApp — 1 clic
+          </div></a>
+        </div></a>
       </div>
       <div
         data-pencil-name="Tratamientos"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[32px] p-[60px] justify-start items-start"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[28px] p-[60px] justify-start items-start bg-[#FBFBFB]"
       >
         <div
           data-pencil-name="TratTitle"
-          class="text-[40px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[38px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Tratamientos
+          Tratamientos de alto impacto
         </div>
         <div
           data-pencil-name="Grid"
-          class="box-border w-full h-fit shrink-0 flex flex-row gap-[24px] justify-start items-start"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[20px] justify-start items-start"
         >
           <div
             data-pencil-name="Card-Microdiseño de Sonrisa"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[20px] justify-start items-start bg-[#1A1A1A] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[10px] p-[18px] justify-start items-start bg-[#FFFFFF] rounded-[12px]"
           >
             <div
               data-pencil-name="Img"
-              class="box-border w-full h-[220px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1729433319341-125a0f4bd725?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMDI3MDl8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[8px]"
+              class="box-border w-full h-[200px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[#E7E7E7] rounded-[8px]"
             ></div>
             <div
-              class="text-[22px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[21px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
               Microdiseño de Sonrisa
             </div>
             <div
-              class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[13px]/[normal] box-border text-[#475569] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
-              Diseño digital de tu sonrisa antes de tocar un solo diente.
+              Diseño digital previo: ves tu resultado antes de empezar.
             </div>
           </div>
           <div
             data-pencil-name="Card-Implantes"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[20px] justify-start items-start bg-[#1A1A1A] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[10px] p-[18px] justify-start items-start bg-[#FFFFFF] rounded-[12px]"
           >
             <div
               data-pencil-name="Img"
-              class="box-border w-full h-[220px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1643660527088-cfeb71ea4a09?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMDI3MDl8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[8px]"
+              class="box-border w-full h-[200px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[#E7E7E7] rounded-[8px]"
             ></div>
             <div
-              class="text-[22px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[21px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
               Implantes
             </div>
             <div
-              class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[13px]/[normal] box-border text-[#475569] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
-              Reemplazo permanente, natural e indoloro.
+              Solución permanente con cirugía guiada, mínima invasión.
             </div>
           </div>
           <div
             data-pencil-name="Card-Armonización Orofacial"
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[12px] p-[20px] justify-start items-start bg-[#1A1A1A] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[10px] p-[18px] justify-start items-start bg-[#FFFFFF] rounded-[12px]"
           >
             <div
               data-pencil-name="Img"
-              class="box-border w-full h-[220px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1560841565-acaaefbcb5fc?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMDI3MTB8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[8px]"
+              class="box-border w-full h-[200px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[#E7E7E7] rounded-[8px]"
             ></div>
             <div
-              class="text-[22px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[21px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
               Armonización Orofacial
             </div>
             <div
-              class="text-[14px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              class="text-[13px]/[normal] box-border text-[#475569] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
             >
-              Equilibrio estético entre sonrisa y rostro.
+              Equilibrio entre sonrisa, labios y rostro completo.
             </div>
           </div>
         </div>
       </div>
       <div
-        data-pencil-name="Credenciales"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[20px] p-[60px] justify-start items-center"
+        data-pencil-name="PorQue"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[60px] justify-start items-center bg-[#1A1816]"
       >
         <div
-          data-pencil-name="CredTitle"
-          class="text-[36px]/[normal] box-border text-[#E8D5B5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          data-pencil-name="DolorTitle"
+          class="text-[34px]/[normal] box-border text-[#B49A53] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Rating superior a 4.5 en reseñas reales
+          ¿Por qué agendar aquí y no por el chat de la web?
         </div>
         <div
-          data-pencil-name="CredSub"
-          class="text-[16px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="box-border w-[850px] h-fit shrink-0 flex flex-row gap-[8px] p-[20px] justify-start items-center bg-[#32373C] rounded-[12px]"
         >
-          Basado en las reseñas de nuestros pacientes de los últimos 12 meses
+          <div
+            class="text-[16px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            ✓ El chat de una web no guarda tus datos ni te recuerda la cita.
+          </div>
+        </div>
+        <div
+          class="box-border w-[850px] h-fit shrink-0 flex flex-row gap-[8px] p-[20px] justify-start items-center bg-[#32373C] rounded-[12px]"
+        >
+          <div
+            class="text-[16px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            ✓ Aquí tu cita queda agendada al instante en nuestro WhatsApp.
+          </div>
+        </div>
+        <div
+          class="box-border w-[850px] h-fit shrink-0 flex flex-row gap-[8px] p-[20px] justify-start items-center bg-[#32373C] rounded-[12px]"
+        >
+          <div
+            class="text-[16px]/[normal] box-border text-[#F3F4F6] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            ✓ Respuesta en minutos en horario de atención — con una persona real.
+          </div>
         </div>
       </div>
       <div
         data-pencil-name="Testimonios"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[24px] p-[60px] justify-start items-start"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[20px] p-[60px] justify-start items-center"
       >
         <div
           data-pencil-name="TestTitle"
-          class="text-[36px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[34px]/[normal] box-border text-[#FBFBFB] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Pacientes que ya revelaron su mejor versión
+          Historias reales de pacientes
         </div>
         <div
-          class="box-border w-[800px] h-fit shrink-0 flex flex-row gap-[12px] p-[24px] justify-start items-start bg-[#1A1A1A] rounded-[12px]"
+          class="box-border w-[750px] h-fit shrink-0 flex flex-row gap-[8px] p-[22px] justify-start items-start bg-[#32373C] rounded-[12px]"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#D0D0D0] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            class="text-[16px]/[normal] box-border text-[#E7E7E7] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
             “El microdiseño superó lo que imaginé — vi mi sonrisa nueva antes de empezar.”
           </div>
         </div>
         <div
-          class="box-border w-[800px] h-fit shrink-0 flex flex-row gap-[12px] p-[24px] justify-start items-start bg-[#1A1A1A] rounded-[12px]"
+          class="box-border w-[750px] h-fit shrink-0 flex flex-row gap-[8px] p-[22px] justify-start items-start bg-[#32373C] rounded-[12px]"
         >
           <div
-            class="text-[16px]/[normal] box-border text-[#D0D0D0] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+            class="text-[16px]/[normal] box-border text-[#E7E7E7] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
-            “Profesionalismo de principio a fin. Mi implante se siente propio.”
+            “Mi implante se siente propio. Cero miedo, cero dolor.”
           </div>
         </div>
       </div>
       <div
         data-pencil-name="Contacto"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[80px] justify-start items-center"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[70px] justify-start items-center bg-[#FBFBFB]"
       >
         <div
-          class="text-[40px]/[normal] box-border text-[#F5F5F5] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[38px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Agenda tu valoración hoy
+          Tu nueva sonrisa empieza con un mensaje
         </div>
         <div
-          class="text-[16px]/[normal] box-border text-[#9A9A9A] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          class="text-[16px]/[normal] box-border text-[#475569] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
         >
-          Escríbenos directo por WhatsApp — respondemos en minutos.
+          Escríbenos directo — respondemos en minutos y agendamos tu valoración.
         </div>
-        <a href="https://wa.me/573150596255?text=Hola%2C%20quiero%20agendar%20una%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:block"
-        ><div
-          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px] justify-start items-start bg-[#25D366] rounded-[32px]"
+        <div
+          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px] justify-start items-start bg-[#00D084] rounded-[28px]"
         >
           <div
             class="text-[16px]/[normal] box-border text-[#FFFFFF] font-[Inter,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
           >
-            Escríbenos por WhatsApp
+            Agendar por WhatsApp ahora
           </div>
-        </div></a>
+        </div>
       </div>
     </div>
   </body>
