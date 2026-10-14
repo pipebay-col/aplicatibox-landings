@@ -1,23 +1,24 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:43:49.795Z",
+ "at": "2026-10-14T19:51:50.822Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 3,
+   "screens": 4,
    "filled": [
-    0.57,
-    0.68,
-    0.52
+    0.6,
+    0.62,
+    0.54,
+    0.49
    ],
    "motion": {
-    "elements": 19,
+    "elements": 23,
     "css": 0,
-    "transitions": 0,
-    "scripted": 19,
+    "transitions": 9,
+    "scripted": 14,
     "videos": 0,
     "playingVideos": 0
    },
@@ -27,9 +28,9 @@
      "h": 900
     },
     "page": {
-     "height": 2383,
-     "screens": 2.6,
-     "words": 180,
+     "height": 3056,
+     "screens": 3.4,
+     "words": 170,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -43,8 +44,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
-      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "historia-1.png",
+      "historia-3.png",
       "clinica-1.jpg"
      ],
      "blendText": 0,
@@ -113,7 +114,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.35,
-      "top": 925,
+      "top": 905,
       "tag": "div",
       "kind": "heading"
      },
@@ -134,7 +135,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.52,
-      "top": 1424,
+      "top": 1404,
       "tag": "div",
       "kind": "heading"
      },
@@ -155,7 +156,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.3,
-      "top": 1818,
+      "top": 1798,
       "tag": "div",
       "kind": "heading"
      },
@@ -176,39 +177,55 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.5,
-      "top": 2162,
+      "top": 2142,
       "tag": "div",
       "kind": "heading"
+     },
+     {
+      "text": "Resultados con pacientes reales",
+      "words": 4,
+      "chars": 31,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2423,
+      "tag": "p",
+      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 5,
+     "count": 6,
      "maxLines": 1,
      "over2Lines": 0,
-     "statements": 0,
-     "centered": 0,
-     "medianWords": 7,
+     "statements": 1,
+     "centered": 1,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Inter",
-       "share": 0.66,
+       "share": 0.73,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.21,
-       "mono": false
-      },
-      {
-       "family": "ui-sans-serif",
-       "share": 0.13,
+       "share": 0.27,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
       13,
       16,
@@ -229,7 +246,7 @@
       "tracking": 0,
       "contrast": 10.9
      },
-     "measureChars": 133,
+     "measureChars": 112,
      "max": {
       "size": 58,
       "vw": 4,
@@ -244,7 +261,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0.01,
-     "centerShare": 0,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -269,7 +286,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 865,
+       "top": 845,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -280,50 +297,34 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.29
+       "share": 0.33
       },
       {
        "color": "#475569",
-       "share": 0.2
-      },
-      {
-       "color": "#000000",
-       "share": 0.13
+       "share": 0.23
       },
       {
        "color": "#e7e7e7",
-       "share": 0.12
+       "share": 0.13
       },
       {
        "color": "#1a1816",
-       "share": 0.1
+       "share": 0.12
+      },
+      {
+       "color": "#b49a53",
+       "share": 0.09
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1.1,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#141210",
-       "bg": "#1a1816"
-      },
-      {
-       "text": "data-pencil-name=\"CTA\" class=\"box-border",
-       "ratio": 1.2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#000000",
-       "bg": "#1a1816"
-      },
-      {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 3.4,
+       "ratio": 2,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00a15c"
+       "bg": "#00d084"
       }
      ]
     },
@@ -349,18 +350,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 6,
      "boxRadius": 12,
      "squareMedia": 0,
      "roundedMedia": 4,
-     "mediaRadius": 8,
+     "mediaRadius": 12,
      "textShadow": 0,
      "cardRows": [
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1004
+       "top": 984
       }
      ]
     },
@@ -382,17 +383,18 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 3,
+   "screens": 4,
    "filled": [
-    0.84,
-    0.87,
-    0.6
+    0.77,
+    0.83,
+    0.56,
+    0.51
    ],
    "motion": {
-    "elements": 19,
+    "elements": 23,
     "css": 0,
-    "transitions": 0,
-    "scripted": 19,
+    "transitions": 14,
+    "scripted": 9,
     "videos": 0,
     "playingVideos": 0
    },
@@ -402,9 +404,9 @@
      "h": 1024
     },
     "page": {
-     "height": 2689,
-     "screens": 2.6,
-     "words": 180,
+     "height": 3731,
+     "screens": 3.6,
+     "words": 170,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -418,8 +420,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
-      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "historia-1.png",
+      "historia-3.png",
       "clinica-1.jpg"
      ],
      "blendText": 0,
@@ -444,7 +446,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.65,
-     "top": 591,
+     "top": 619,
      "tag": "div",
      "kind": "heading"
     },
@@ -467,7 +469,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 449,
+      "top": 108,
       "tag": "div",
       "kind": "heading"
      },
@@ -488,7 +490,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.65,
-      "top": 591,
+      "top": 619,
       "tag": "div",
       "kind": "heading"
      },
@@ -508,8 +510,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.97,
-      "top": 1718,
+      "widthRatio": 0.79,
+      "top": 1746,
       "tag": "div",
       "kind": "heading"
      },
@@ -529,8 +531,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.57,
-      "top": 2112,
+      "widthRatio": 0.79,
+      "top": 2140,
       "tag": "div",
       "kind": "heading"
      },
@@ -551,17 +553,38 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.93,
-      "top": 2426,
+      "top": 2454,
       "tag": "div",
       "kind": "heading"
+     },
+     {
+      "text": "Resultados con pacientes reales",
+      "words": 4,
+      "chars": 31,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2705,
+      "tag": "p",
+      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 5,
+     "count": 6,
      "maxLines": 1,
      "over2Lines": 0,
-     "statements": 0,
-     "centered": 0,
+     "statements": 1,
+     "centered": 1,
      "medianWords": 7,
      "mixedFontHeadings": 0
     },
@@ -569,21 +592,16 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.66,
+       "share": 0.73,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.21,
-       "mono": false
-      },
-      {
-       "family": "ui-sans-serif",
-       "share": 0.13,
+       "share": 0.27,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
       13,
       15,
@@ -603,7 +621,7 @@
       "tracking": 0,
       "contrast": 10.9
      },
-     "measureChars": 92,
+     "measureChars": 98,
      "max": {
       "size": 38,
       "vw": 4.9,
@@ -618,19 +636,19 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0.01,
-     "centerShare": 0,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Agenda por WhatsApp — 1 clic",
+      "text": "Tratamientos",
       "above": "Tu sonrisa en su versión más armónica",
       "upper": false,
       "tracked": false,
       "mono": false,
       "pill": false,
-      "size": 16,
-      "top": 405
+      "size": 13,
+      "top": 28
      }
     ],
     "numbered": [],
@@ -654,7 +672,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 531,
+       "top": 559,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -665,50 +683,34 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.29
+       "share": 0.33
       },
       {
        "color": "#475569",
-       "share": 0.2
-      },
-      {
-       "color": "#000000",
-       "share": 0.13
+       "share": 0.23
       },
       {
        "color": "#e7e7e7",
-       "share": 0.12
+       "share": 0.13
       },
       {
        "color": "#1a1816",
-       "share": 0.1
+       "share": 0.12
+      },
+      {
+       "color": "#b49a53",
+       "share": 0.09
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1.1,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#141210",
-       "bg": "#1a1816"
-      },
-      {
-       "text": "data-pencil-name=\"CTA\" class=\"box-border",
-       "ratio": 1.2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#000000",
-       "bg": "#1a1816"
-      },
-      {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 3.4,
+       "ratio": 2,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00a15c"
+       "bg": "#00d084"
       }
      ]
     },
@@ -734,18 +736,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 6,
      "boxRadius": 12,
      "squareMedia": 0,
      "roundedMedia": 4,
-     "mediaRadius": 8,
+     "mediaRadius": 12,
      "textShadow": 0,
      "cardRows": [
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 670
+       "top": 698
       }
      ]
     },
@@ -753,10 +755,6 @@
      {
       "type": "bg-image",
       "ratio": 0.2
-     },
-     {
-      "type": "img",
-      "ratio": 0.15
      }
     ],
     "nav": null,
@@ -771,18 +769,20 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 4,
+   "screens": 6,
    "filled": [
-    0.71,
+    0.76,
     1,
-    0.6,
-    0.71
+    0.48,
+    0.64,
+    0.67,
+    0.58
    ],
    "motion": {
-    "elements": 19,
+    "elements": 23,
     "css": 0,
-    "transitions": 0,
-    "scripted": 19,
+    "transitions": 11,
+    "scripted": 12,
     "videos": 0,
     "playingVideos": 0
    },
@@ -792,9 +792,9 @@
      "h": 844
     },
     "page": {
-     "height": 2811,
-     "screens": 3.3,
-     "words": 180,
+     "height": 4325,
+     "screens": 5.1,
+     "words": 170,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -808,8 +808,8 @@
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
-      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "historia-1.png",
+      "historia-3.png",
       "clinica-1.jpg"
      ],
      "blendText": 0,
@@ -832,14 +832,35 @@
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "right",
-     "widthRatio": 1.29,
-     "top": 685,
+     "position": "center",
+     "widthRatio": 0.69,
+     "top": 693,
      "tag": "div",
      "kind": "heading"
     },
     "h1": null,
     "headings": [
+     {
+      "text": "HARMONIZA",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 14,
+      "tag": "div",
+      "kind": "heading"
+     },
      {
       "text": "Tu sonrisa en su versión más armónica",
       "words": 7,
@@ -857,7 +878,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 497,
+      "top": 136,
       "tag": "div",
       "kind": "heading"
      },
@@ -876,9 +897,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "right",
-      "widthRatio": 1.29,
-      "top": 685,
+      "position": "center",
+      "widthRatio": 0.69,
+      "top": 693,
       "tag": "div",
       "kind": "heading"
      },
@@ -898,8 +919,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 1.91,
-      "top": 1812,
+      "widthRatio": 0.65,
+      "top": 1820,
       "tag": "div",
       "kind": "heading"
      },
@@ -919,8 +940,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 1.12,
-      "top": 2206,
+      "widthRatio": 0.65,
+      "top": 2214,
       "tag": "div",
       "kind": "heading"
      },
@@ -940,39 +961,39 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 1.83,
-      "top": 2520,
+      "widthRatio": 0.92,
+      "top": 2528,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "HARMONIZA",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 24,
-      "vw": 6.2,
+      "text": "Resultados con pacientes reales",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
       "font": "Playfair Display",
       "weight": 400,
       "tracking": 0,
-      "leading": 1.2,
-      "upper": true,
+      "leading": 1.5,
+      "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.36,
-      "top": 2725,
-      "tag": "div",
-      "kind": "heading"
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.69,
+      "top": 2779,
+      "tag": "p",
+      "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 6,
+     "count": 7,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 0,
-     "centered": 0,
+     "statements": 1,
+     "centered": 1,
      "medianWords": 7,
      "mixedFontHeadings": 0
     },
@@ -980,21 +1001,16 @@
      "families": [
       {
        "family": "Inter",
-       "share": 0.66,
+       "share": 0.73,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.21,
-       "mono": false
-      },
-      {
-       "family": "ui-sans-serif",
-       "share": 0.13,
+       "share": 0.27,
        "mono": false
       }
      ],
-     "familyCount": 3,
+     "familyCount": 2,
      "sizes": [
       13,
       15,
@@ -1014,7 +1030,7 @@
       "tracking": 0,
       "contrast": 10.9
      },
-     "measureChars": 45,
+     "measureChars": 48,
      "max": {
       "size": 38,
       "vw": 9.7,
@@ -1029,21 +1045,10 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0.01,
-     "centerShare": 0,
+     "centerShare": 0.03,
      "smallText": 0
     },
-    "eyebrows": [
-     {
-      "text": "Agenda por WhatsApp — 1 clic",
-      "above": "Tu sonrisa en su versión más armónica",
-      "upper": false,
-      "tracked": false,
-      "mono": false,
-      "pill": false,
-      "size": 16,
-      "top": 453
-     }
-    ],
+    "eyebrows": [],
     "numbered": [],
     "color": {
      "bodyBg": "#1a1816",
@@ -1065,7 +1070,7 @@
       },
       {
        "color": "#fbfbfb",
-       "top": 625,
+       "top": 633,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -1076,50 +1081,34 @@
      "textColors": [
       {
        "color": "#f3f4f6",
-       "share": 0.29
+       "share": 0.33
       },
       {
        "color": "#475569",
-       "share": 0.2
-      },
-      {
-       "color": "#000000",
-       "share": 0.13
+       "share": 0.23
       },
       {
        "color": "#e7e7e7",
-       "share": 0.12
+       "share": 0.13
       },
       {
        "color": "#1a1816",
-       "share": 0.1
+       "share": 0.12
+      },
+      {
+       "color": "#b49a53",
+       "share": 0.09
       }
      ],
      "button": null,
      "lowContrast": [
       {
-       "text": "Agenda por WhatsApp — 1 clic",
-       "ratio": 1.1,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#141210",
-       "bg": "#1a1816"
-      },
-      {
-       "text": "data-pencil-name=\"CTA\" class=\"box-border",
-       "ratio": 1.2,
-       "need": 4.5,
-       "size": 16,
-       "fg": "#000000",
-       "bg": "#1a1816"
-      },
-      {
        "text": "Agendar por WhatsApp ahora",
-       "ratio": 3.4,
+       "ratio": 2,
        "need": 4.5,
        "size": 16,
        "fg": "#ffffff",
-       "bg": "#00a15c"
+       "bg": "#00d084"
       }
      ]
     },
@@ -1145,18 +1134,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
+     "roundedBoxes": 6,
      "boxRadius": 12,
      "squareMedia": 0,
      "roundedMedia": 4,
-     "mediaRadius": 8,
+     "mediaRadius": 12,
      "textShadow": 0,
      "cardRows": [
       {
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 764
+       "top": 772
       }
      ]
     },
@@ -1180,19 +1169,8 @@
    "level": "FAIL",
    "id": "contrast",
    "width": 1440,
-   "message": "Unreadable text: \"Agenda por WhatsApp — 1 clic\" 1.1:1 (#141210 on #1a1816); \"data-pencil-name=\"CTA\" class=\"box-border\" 1.2:1 (#000000 on #1a1816)",
+   "message": "Unreadable text: \"Agendar por WhatsApp ahora\" 2:1 (#ffffff on #00d084)",
    "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "font-count",
-   "width": 1440,
-   "message": "3 typefaces in use (Inter, Playfair Display, ui-sans-serif).",
-   "fix": "Two at most.",
    "alsoAt": [
     768,
     390
@@ -1220,7 +1198,7 @@
    "level": "WARN",
    "id": "measure",
    "width": 1440,
-   "message": "Longest paragraph runs about 133 characters per line.",
+   "message": "Longest paragraph runs about 112 characters per line.",
    "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
    "alsoAt": [
     768
@@ -1230,11 +1208,8 @@
    "level": "FAIL",
    "id": "eyebrow",
    "width": 768,
-   "message": "1 eyebrow/kicker label(s) above headings: \"Agenda por WhatsApp — 1 clic\" above \"Tu sonrisa en su versión más armónica\"",
-   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
-   "alsoAt": [
-    390
-   ]
+   "message": "1 eyebrow/kicker label(s) above headings: \"Tratamientos\" above \"Tu sonrisa en su versión más armónica\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
   }
  ],
  "images": [
