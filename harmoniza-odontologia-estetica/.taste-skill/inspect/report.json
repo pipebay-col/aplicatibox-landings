@@ -1,0 +1,1267 @@
+{
+ "url": "./index.html",
+ "at": "2026-10-14T19:32:08.720Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.64,
+    0.68,
+    0.52
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2386,
+     "screens": 2.7,
+     "words": 183,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✓"
+     ]
+    },
+    "hero": {
+     "text": "Tu sonrisa en su versión más armónica",
+     "words": 7,
+     "chars": 37,
+     "lines": 1,
+     "size": 58,
+     "vw": 4,
+     "font": "Playfair Display",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.7,
+     "top": 154,
+     "tag": "div",
+     "kind": "heading"
+    },
+    "h1": null,
+    "headings": [
+     {
+      "text": "Tu sonrisa en su versión más armónica",
+      "words": 7,
+      "chars": 37,
+      "lines": 1,
+      "size": 58,
+      "vw": 4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.7,
+      "top": 154,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos de alto impacto",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 925,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "¿Por qué agendar aquí y no por el chat de la web?",
+      "words": 12,
+      "chars": 49,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 1424,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Historias reales de pacientes",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.3,
+      "top": 1821,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.5,
+      "top": 2165,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.21,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      16,
+      19,
+      21,
+      24,
+      34,
+      38,
+      58
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 133,
+     "max": {
+      "size": 58,
+      "vw": 4,
+      "font": "Playfair Display",
+      "text": "Tu sonrisa en su versión más armónica"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#1a1816",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a1816",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#fbfbfb",
+       "top": 865,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f4f6",
+       "share": 0.3
+      },
+      {
+       "color": "#475569",
+       "share": 0.2
+      },
+      {
+       "color": "#000000",
+       "share": 0.13
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.13
+      },
+      {
+       "color": "#e7e7e7",
+       "share": 0.12
+      }
+     ],
+     "button": null,
+     "lowContrast": [
+      {
+       "text": "Agenda por WhatsApp — 1 clic",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#1a1816",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "data-pencil-name=\"CTA\" class=\"box-border",
+       "ratio": 1.2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#000000",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "Agendar por WhatsApp ahora",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#00d084"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1004
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.34
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "inter",
+     "playfair display"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.75,
+    0.89,
+    0.6
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2692,
+     "screens": 2.6,
+     "words": 183,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✓"
+     ]
+    },
+    "hero": {
+     "text": "Tratamientos de alto impacto",
+     "words": 4,
+     "chars": 28,
+     "lines": 1,
+     "size": 38,
+     "vw": 4.9,
+     "font": "Playfair Display",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.65,
+     "top": 663,
+     "tag": "div",
+     "kind": "heading"
+    },
+    "h1": null,
+    "headings": [
+     {
+      "text": "Tu sonrisa en su versión más armónica",
+      "words": 7,
+      "chars": 37,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 108,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos de alto impacto",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 38,
+      "vw": 4.9,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 663,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "¿Por qué agendar aquí y no por el chat de la web?",
+      "words": 12,
+      "chars": 49,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1790,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Historias reales de pacientes",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2187,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 38,
+      "vw": 4.9,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 2501,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.21,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      15,
+      16,
+      21,
+      24,
+      34,
+      38
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 92,
+     "max": {
+      "size": 38,
+      "vw": 4.9,
+      "font": "Playfair Display",
+      "text": "Tratamientos de alto impacto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Tratamientos",
+      "above": "Tu sonrisa en su versión más armónica",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 28
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#1a1816",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a1816",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#fbfbfb",
+       "top": 603,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f4f6",
+       "share": 0.3
+      },
+      {
+       "color": "#475569",
+       "share": 0.2
+      },
+      {
+       "color": "#000000",
+       "share": 0.13
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.13
+      },
+      {
+       "color": "#e7e7e7",
+       "share": 0.12
+      }
+     ],
+     "button": null,
+     "lowContrast": [
+      {
+       "text": "Agenda por WhatsApp — 1 clic",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#1a1816",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "data-pencil-name=\"CTA\" class=\"box-border",
+       "ratio": 1.2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#000000",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "Agendar por WhatsApp ahora",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#00d084"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 742
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.2
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "inter",
+     "playfair display"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.66,
+    1,
+    0.57,
+    0.62
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 2814,
+     "screens": 3.3,
+     "words": 183,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✓"
+     ]
+    },
+    "hero": {
+     "text": "Tratamientos de alto impacto",
+     "words": 4,
+     "chars": 28,
+     "lines": 1,
+     "size": 38,
+     "vw": 9.7,
+     "font": "Playfair Display",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 1.29,
+     "top": 785,
+     "tag": "div",
+     "kind": "heading"
+    },
+    "h1": null,
+    "headings": [
+     {
+      "text": "HARMONIZA",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 14,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu sonrisa en su versión más armónica",
+      "words": 7,
+      "chars": 37,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 136,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos de alto impacto",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 38,
+      "vw": 9.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 1.29,
+      "top": 785,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "¿Por qué agendar aquí y no por el chat de la web?",
+      "words": 12,
+      "chars": 49,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 1912,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Historias reales de pacientes",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 2309,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 38,
+      "vw": 9.7,
+      "font": "Playfair Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1.83,
+      "top": 2623,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.21,
+       "mono": false
+      },
+      {
+       "family": "ui-sans-serif",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      15,
+      16,
+      21,
+      24,
+      34,
+      38
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.9
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 38,
+      "vw": 9.7,
+      "font": "Playfair Display",
+      "text": "Tratamientos de alto impacto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#1a1816",
+     "bodyBgHsl": {
+      "h": 30,
+      "s": 0.08,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a1816",
+       "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.08,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#fbfbfb",
+       "top": 725,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#f3f4f6",
+       "share": 0.3
+      },
+      {
+       "color": "#475569",
+       "share": 0.2
+      },
+      {
+       "color": "#000000",
+       "share": 0.13
+      },
+      {
+       "color": "#1a1816",
+       "share": 0.13
+      },
+      {
+       "color": "#e7e7e7",
+       "share": 0.12
+      }
+     ],
+     "button": null,
+     "lowContrast": [
+      {
+       "text": "Agenda por WhatsApp — 1 clic",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#1a1816",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "data-pencil-name=\"CTA\" class=\"box-border",
+       "ratio": 1.2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#000000",
+       "bg": "#1a1816"
+      },
+      {
+       "text": "Agendar por WhatsApp ahora",
+       "ratio": 2,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#00d084"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 864
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.23
+     }
+    ],
+    "nav": null,
+    "fontsLoaded": [
+     "inter",
+     "playfair display"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✓",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Agenda por WhatsApp — 1 clic\" 1:1 (#1a1816 on #1a1816); \"data-pencil-name=\"CTA\" class=\"box-border\" 1.2:1 (#000000 on #1a1816); \"Agendar por WhatsApp ahora\" 2:1 (#ffffff on #00d084)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 1440,
+   "message": "3 typefaces in use (Inter, Playfair Display, ui-sans-serif).",
+   "fix": "Two at most.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 1440,
+   "message": "No visible button in the first screen.",
+   "fix": "Give the one primary action a real button in the first screen (a filled or solid-bordered control, 44px or taller), not only a link in the navigation.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 133 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 768,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Tratamientos\" above \"Tu sonrisa en su versión más armónica\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\tablet-page-01.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\mobile-page-01.jpg"
+   ]
+  }
+ ]
+}
