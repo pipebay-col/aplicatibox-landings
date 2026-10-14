@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T19:39:18.690Z",
+ "at": "2026-10-14T19:42:44.744Z",
  "allow": [],
  "viewports": [
   {
@@ -14,10 +14,10 @@
     0.52
    ],
    "motion": {
-    "elements": 22,
+    "elements": 19,
     "css": 0,
     "transitions": 0,
-    "scripted": 22,
+    "scripted": 19,
     "videos": 0,
     "playingVideos": 0
    },
@@ -30,7 +30,7 @@
      "height": 2383,
      "screens": 2.6,
      "words": 180,
-     "img": 0,
+     "img": 3,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -39,10 +39,14 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 1,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
+      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "clinica-1.jpg"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -345,11 +349,11 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
+     "roundedBoxes": 3,
      "boxRadius": 12,
      "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 14,
+     "roundedMedia": 4,
+     "mediaRadius": 8,
      "textShadow": 0,
      "cardRows": [
       {
@@ -385,10 +389,10 @@
     0.66
    ],
    "motion": {
-    "elements": 22,
+    "elements": 19,
     "css": 0,
     "transitions": 0,
-    "scripted": 22,
+    "scripted": 19,
     "videos": 0,
     "playingVideos": 0
    },
@@ -401,7 +405,7 @@
      "height": 2689,
      "screens": 2.6,
      "words": 180,
-     "img": 0,
+     "img": 3,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -410,10 +414,14 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 1,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
+      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "clinica-1.jpg"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -726,11 +734,11 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
+     "roundedBoxes": 3,
      "boxRadius": 12,
      "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 14,
+     "roundedMedia": 4,
+     "mediaRadius": 8,
      "textShadow": 0,
      "cardRows": [
       {
@@ -745,6 +753,10 @@
      {
       "type": "bg-image",
       "ratio": 0.2
+     },
+     {
+      "type": "img",
+      "ratio": 0.15
      }
     ],
     "nav": null,
@@ -767,10 +779,10 @@
     0.73
    ],
    "motion": {
-    "elements": 22,
+    "elements": 19,
     "css": 0,
     "transitions": 0,
-    "scripted": 22,
+    "scripted": 19,
     "videos": 0,
     "playingVideos": 0
    },
@@ -783,7 +795,7 @@
      "height": 2811,
      "screens": 3.3,
      "words": 180,
-     "img": 0,
+     "img": 3,
      "video": 0,
      "canvas": 0,
      "svg": 0,
@@ -792,10 +804,14 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 1,
+     "realPictures": 4,
      "videoCount": 0,
      "uiPictures": 0,
-     "pictureSamples": [],
+     "pictureSamples": [
+      "photo-1588776814546-1ffcf47267a5?w=800&q=80&auto",
+      "photo-1601362840469-51e4d8d58785?w=800&q=80&auto",
+      "clinica-1.jpg"
+     ],
      "blendText": 0,
      "sideScrollers": 0,
      "brokenImages": [],
@@ -1118,11 +1134,11 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
+     "roundedBoxes": 3,
      "boxRadius": 12,
      "squareMedia": 0,
-     "roundedMedia": 1,
-     "mediaRadius": 14,
+     "roundedMedia": 4,
+     "mediaRadius": 8,
      "textShadow": 0,
      "cardRows": [
       {
@@ -1181,13 +1197,6 @@
     768,
     390
    ]
-  },
-  {
-   "level": "FAIL",
-   "id": "few-pictures",
-   "width": 1440,
-   "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
-   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
   },
   {
    "level": "WARN",
