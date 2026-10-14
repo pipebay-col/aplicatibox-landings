@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display%3Awght%40400..900&family=Plus+Jakarta+Sans%3Awght%40200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces%3Awght%40100..900&family=Manrope%3Awght%40200..800&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -23,355 +23,548 @@
       }
     </style>
   <style>
-html,body{margin:0;padding:0;background:#1A1816}
+html,body{margin:0;padding:0;background:#15120F}
 body > div { max-width:100vw; overflow-x:hidden }
+img{max-width:100%;height:auto}
+/* TABLET 768-1024 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  [data-pencil-name="Nav"] { display:none !important }
+  div[data-pencil-name="H1"] { font-size:46px !important }
+  div[data-pencil-name="HeroImg"] { height:400px !important }
+}
+/* DESKTOP 1025+ */
 @media (min-width: 1025px) {
   [data-pencil-name="Nav"] { display:none !important }
-  [data-pencil-name="H1"] { font-size:52px !important; text-align:center }
+  div[data-pencil-name="H1"] { font-size:52px !important; text-align:center }
+  div[data-pencil-name="HeroImg"] { width:1100px !important; height:460px !important }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  [data-pencil-name="H1"] { font-size:44px !important }
-  [data-pencil-name="Nav"] { display:none !important }
-}
+/* MÓVIL <768 */
 @media (max-width: 767px) {
-  [data-pencil-name="Nav"] { display:none !important }
-  [data-pencil-name="H1"] { font-size:30px !important; line-height:1.15 !important }; white-space:normal !important; text-align:center }
-  [data-pencil-name="Sub"] { font-size:15px !important; text-align:center; padding:0 16px }
-  [data-pencil-name="Hero"] { padding:36px 16px !important; height:auto !important }
-  [data-pencil-name="HeroImg"] { width:100% !important; height:300px !important }
+  div[data-pencil-name="H1"] { font-size:28px !important; line-height:1.2 !important; text-align:center }
+  div[data-pencil-name="AccionTitle"] { font-size:24px !important }
+  div[data-pencil-name="Sub"] { font-size:15px !important; text-align:center; padding:0 16px }
+  div[data-pencil-name="HeroImg"] { width:100% !important; height:280px !important }
   [data-pencil-name="Grid"] { flex-direction:column !important; gap:14px !important; padding:0 12px }
   [data-pencil-name="Grid"] > div { width:100% !important }
-  [data-pencil-name="PorQue"] > div, [data-pencil-name="Testimonios"] > div { width:94% !important }
-  [data-pencil-name="Contacto"] { padding:40px 16px !important }
-  p, div { max-width:100% }
 }
-img{max-width:100%;height:auto}
 </style></head>
   <body>
     <div
-      data-pencil-name="Harmoniza AIDA"
-      class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#1A1816] overflow-hidden"
+      data-pencil-name="Harmoniza Conv"
+      class="box-border w-full max-w-full max-w-[1440px] mx-auto mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#15120F] overflow-hidden"
     >
       <div
         data-pencil-name="Hero"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[80px_20px_40px_20px] justify-start items-center bg-[#1A1816]"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[64px_20px_32px_20px] justify-start items-center bg-[#15120F]"
       >
         <div
-          data-pencil-name="CredentialChip"
-          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[6px_14px] justify-start items-start bg-[#3A3A2E] rounded-[980px]"
+          data-pencil-name="Chip"
+          class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[6px_14px] justify-start items-start bg-[#2E2820] rounded-[980px]"
         >
           <div
-            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            Rating 4.5+ · Reseñas verificadas
+            Odontología estética · Medellín · Rating 4.5
           </div>
         </div>
         <div
           data-pencil-name="H1"
-          class="text-[40px]/[44px] box-border text-[#F5F1E8] font-['Playfair_Display',system-ui,sans-serif] font-semibold text-left "
+          class="text-[38px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
         >
           Tu sonrisa, en su versión más armónica.
         </div>
         <div
+          data-pencil-name="Sub"
+          class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+        >
+          Diseño digital previo: ves el resultado antes de empezar.
+        </div>
+        <div
           data-pencil-name="HeroImg"
-          class="box-border w-full h-[340px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1671391821891-9fa12831fb8c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTA4MTF8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[16px]"
+          class="box-border w-full h-[320px] shrink-0 flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1656768151253-bef870f1b7bd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDB8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[18px]"
         ></div>
-        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="CTA" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[14px_28px] justify-start items-center bg-[#B49A53] rounded-[980px]"><div
-            class="text-[16px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
+        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="CTA" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[14px_30px] justify-start items-center bg-[#C9A96E] rounded-[980px]"><div
+            class="text-[16px]/[normal] box-border text-[#15120F] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            <span style="color:#141210">Agenda tu valoración gratis
+            <span style="color:#141210">Agenda tu valoración — es gratis
           </span></div>
         </div></a>
         <div
           data-pencil-name="Badges"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[8px] justify-start items-start"
+        >
+          <div
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#201C17] rounded-[12px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              +12 años de práctica
+            </div>
+          </div>
+          <div
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#201C17] rounded-[12px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              +1.000 pacientes
+            </div>
+          </div>
+          <div
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#201C17] rounded-[12px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Pago en cuotas
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="beneficios" data-pencil-name="Beneficios"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[32px] justify-start items-start bg-[#1B1712]"
+      >
+        <div
+          data-pencil-name="BeneTitle"
+          class="text-[28px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+        >
+          Por qué los pacientes nos eligen.
+        </div>
+        <div
+          data-pencil-name="BeneGrid"
           class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-start items-start"
         >
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
             <div
-              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
-              +12 años exp.
+              Precio claro desde la primera cita
+            </div>
+            <div
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Sabes el costo exacto antes de empezar. Sin sorpresas.
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
             <div
-              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
-              +1000 pacientes
+              Diseño que tú apruebas
+            </div>
+            <div
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Ves tu sonrisa nueva en 3D y la apruebas antes del tratamiento.
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-row gap-0 p-[10px_12px] justify-start items-center bg-[#23231D] rounded-[12px]"
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
           >
             <div
-              class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
             >
-              Diseño digital previo
+              Una sola sesión
+            </div>
+            <div
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              La transformación se completa en el 90% de los casos en un día.
+            </div>
+          </div>
+          <div
+            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+          >
+            <div
+              class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+            >
+              Respaldo de +1.000 pacientes
+            </div>
+            <div
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+            >
+              Historias reales publicadas por la propia clínica.
             </div>
           </div>
         </div>
       </div>
       <div
-        data-pencil-name="Interes"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[20px] p-[40px] justify-start items-start bg-[#F5F4F0]"
+        data-pencil-name="Tratamientos"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[16px] p-[32px] justify-start items-start bg-[#15120F]"
       >
         <div
-          data-pencil-name="Empatia"
-          class="box-border w-fit h-fit shrink-0 flex flex-row gap-[10px] p-[20px] justify-start items-start bg-[#FFFFFF] rounded-[16px]"
+          data-pencil-name="TratTitle"
+          class="text-[28px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
         >
-          <div
-            class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
-          >
-            ¿Postergas el dentista por desconfianza al precio?
-          </div>
-          <div
-            class="text-[15px]/[20px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-          >
-            En Harmoniza ves el diseño de tu sonrisa en digital, sabes el costo antes de empezar, y
-            apruebas el resultado antes de tocar un solo diente.
-          </div>
+          Tratamientos estrella.
         </div>
         <div
-          data-pencil-name="Pasos"
+          data-pencil-name="TratList"
           class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] justify-start items-start"
         >
           <div
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#FFFFFF] rounded-[16px]"
+            data-pencil-name="TratCard"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
           >
             <div
-              class="box-border w-[36px] shrink-0 h-[36px] flex flex-row gap-0 justify-center items-center bg-[#B49A53] rounded-[100px]"
+              data-pencil-name="Img"
+              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1714300989598-114cf7d0c8d7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDF8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+            ></div>
+            <div
+              class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-bold text-left "
-              >
-                1
-              </div>
+              Microdiseño de sonrisa
             </div>
             <div
-              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
-              >
-                Consulta y escaneo digital
-              </div>
-              <div
-                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-              >
-                Tu sonrisa en 3D en la primera visita
-              </div>
+              Sesión única, resultado que ves antes de empezar.
             </div>
           </div>
           <div
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#FFFFFF] rounded-[16px]"
+            data-pencil-name="TratCard"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
           >
             <div
-              class="box-border w-[36px] shrink-0 h-[36px] flex flex-row gap-0 justify-center items-center bg-[#B49A53] rounded-[100px]"
+              data-pencil-name="Img"
+              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1704455306925-1401c3012117?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDF8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+            ></div>
+            <div
+              class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-bold text-left "
-              >
-                2
-              </div>
+              Implantes dentales
             </div>
             <div
-              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
-              >
-                Diseño que tú apruebas
-              </div>
-              <div
-                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-              >
-                Ves el resultado final antes de empezar
-              </div>
+              Cirugía guiada por computadora, mínima invasión.
             </div>
           </div>
           <div
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#FFFFFF] rounded-[16px]"
+            data-pencil-name="TratCard"
+            class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
           >
             <div
-              class="box-border w-[36px] shrink-0 h-[36px] flex flex-row gap-0 justify-center items-center bg-[#B49A53] rounded-[100px]"
+              data-pencil-name="Img"
+              class="box-border [flex:1_1_0] h-[200px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1642207579596-4727855e0994?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDJ8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[14px]"
+            ></div>
+            <div
+              class="text-[20px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-bold text-left "
-              >
-                3
-              </div>
+              Armonización orofacial
             </div>
             <div
-              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] justify-start items-start"
+              class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
             >
-              <div
-                class="text-[15px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
-              >
-                Sesión de transformación
-              </div>
-              <div
-                class="text-[13px]/[18px] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-              >
-                Tratamiento en una sola sesión
-              </div>
+              Equilibrio entre sonrisa, labios y rostro.
             </div>
           </div>
         </div>
       </div>
       <div
-        data-pencil-name="Deseo"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[20px] p-[40px] justify-start items-start bg-[#1A1816]"
+        data-pencil-name="Testimonios"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[32px] justify-start items-start bg-[#1B1712]"
       >
         <div
-          data-pencil-name="DeseoTitle"
-          class="text-[32px]/[normal] box-border text-[#F5F1E8] font-['Playfair_Display',system-ui,sans-serif] font-semibold text-left "
+          data-pencil-name="TestiTitle"
+          class="text-[28px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
         >
-          Resultados que hablan solos.
+          Pacientes reales, historias reales.
         </div>
         <div
-          data-pencil-name="Metrics"
-          class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] justify-start items-start"
+          data-pencil-name="TestiCard"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#201C17] rounded-[16px]"
         >
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] p-[16px] justify-start items-center bg-[#23231D] rounded-[16px]"
+            data-pencil-name="TestiTop"
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-[12px] justify-start items-center"
           >
             <div
-              class="text-[36px]/[normal] box-border text-[#D4B96A] font-['Playfair_Display',system-ui,sans-serif] font-semibold text-left "
-            >
-              4.5+
-            </div>
+              data-pencil-name="Foto"
+              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1774897795513-9198beb13875?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDJ8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+            ></div>
             <div
-              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              data-pencil-name="Info"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] justify-start items-start"
             >
-              Rating en Google
+              <div
+                class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+              >
+                Marcela G.
+              </div>
+              <div
+                data-pencil-name="Stars"
+                class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+              >
+                5.0 · Paciente verificado
+              </div>
             </div>
           </div>
           <div
-            class="box-border [flex:1_1_0] h-fit flex flex-col gap-[4px] p-[16px] justify-start items-center bg-[#23231D] rounded-[16px]"
+            class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
-            <div
-              class="text-[36px]/[normal] box-border text-[#D4B96A] font-['Playfair_Display',system-ui,sans-serif] font-semibold text-left "
-            >
-              98%
-            </div>
-            <div
-              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-            >
-              Recomendarían
-            </div>
+            “Vi mi sonrisa nueva en la pantalla antes de empezar. Cero miedo, cero sorpresas.”
           </div>
         </div>
         <div
-          data-pencil-name="Testimonios"
-          class="box-border w-full h-fit shrink-0 flex flex-col gap-[10px] justify-start items-start"
+          data-pencil-name="TestiCard"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#201C17] rounded-[16px]"
         >
           <div
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[8px] p-[18px] justify-start items-start bg-[#23231D] rounded-[16px]"
+            data-pencil-name="TestiTop"
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-[12px] justify-start items-center"
           >
             <div
-              class="text-[15px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-            >
-              “Vi mi sonrisa nueva en la pantalla antes de empezar. Cero miedo.”
-            </div>
+              data-pencil-name="Foto"
+              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1580601274731-d4b9f05b5f8b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDN8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+            ></div>
             <div
-              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              data-pencil-name="Info"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] justify-start items-start"
             >
-              Paciente verificado de Harmoniza
+              <div
+                class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+              >
+                Andrés M.
+              </div>
+              <div
+                data-pencil-name="Stars"
+                class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+              >
+                5.0 · Paciente verificado
+              </div>
             </div>
           </div>
           <div
-            class="box-border w-full h-fit shrink-0 flex flex-row gap-[8px] p-[18px] justify-start items-start bg-[#23231D] rounded-[16px]"
+            class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            “El implante se siente propio. Volví a morder una manzana sin pensarlo.”
+          </div>
+        </div>
+        <div
+          data-pencil-name="TestiCard"
+          class="box-border w-full h-fit shrink-0 flex flex-row gap-[12px] p-[16px] justify-start items-start bg-[#201C17] rounded-[16px]"
+        >
+          <div
+            data-pencil-name="TestiTop"
+            class="box-border [flex:1_1_0] h-fit flex flex-row gap-[12px] justify-start items-center"
           >
             <div
-              class="text-[15px]/[20px] box-border text-[#E7E2D4] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
-            >
-              “El implante se siente propio. Profesionalismo de principio a fin.”
-            </div>
+              data-pencil-name="Foto"
+              class="box-border w-[56px] shrink-0 h-[56px] flex flex-row gap-0 justify-start items-start bg-[url('https://images.unsplash.com/photo-1612294355484-3f5a3249d65d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMTIwMDR8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')] bg-no-repeat bg-cover bg-center rounded-[100px]"
+            ></div>
             <div
-              class="text-[13px]/[normal] box-border text-[#9C948C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+              data-pencil-name="Info"
+              class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] justify-start items-start"
             >
-              Paciente verificado de Harmoniza
+              <div
+                class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+              >
+                Paola R.
+              </div>
+              <div
+                data-pencil-name="Stars"
+                class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+              >
+                5.0 · Paciente verificado
+              </div>
             </div>
+          </div>
+          <div
+            class="text-[16px]/[20px] box-border text-[#DDD5C4] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            “La armonización me devolvió la confianza en las fotos. Vale cada peso.”
           </div>
         </div>
       </div>
       <div
-        data-pencil-name="Accion"
-        class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[40px] justify-start items-center bg-[#F5F4F0]"
+        data-pencil-name="Metricas"
+        class="box-border w-full h-fit shrink-0 flex flex-row gap-[10px] p-[32px] justify-start items-start"
+      >
+        <div
+          data-pencil-name="MetCard"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] p-[14px] justify-start items-center bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[30px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+          >
+            4.5+
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Rating en reseñas
+          </div>
+        </div>
+        <div
+          data-pencil-name="MetCard"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] p-[14px] justify-start items-center bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[30px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+          >
+            98%
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Lo recomendarían
+          </div>
+        </div>
+        <div
+          data-pencil-name="MetCard"
+          class="box-border [flex:1_1_0] h-fit flex flex-col gap-[2px] p-[14px] justify-start items-center bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[30px]/[normal] box-border text-[#C9A96E] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+          >
+            1 sesión
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Transformación típica
+          </div>
+        </div>
+      </div>
+      <div
+        data-pencil-name="FAQ"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[10px] p-[32px] justify-start items-start bg-[#15120F]"
+      >
+        <div
+          data-pencil-name="FaqTitle"
+          class="text-[28px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
+        >
+          Lo que todos preguntan.
+        </div>
+        <div
+          data-pencil-name="FaqCard"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+          >
+            ¿Duele?
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Anestesia local y sedación opcional. La mayoría reporta cero dolor.
+          </div>
+        </div>
+        <div
+          data-pencil-name="FaqCard"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+          >
+            ¿Cuánto cuesta?
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            La valoración es gratis. El plan y precio exacto lo ves en 3D antes de aprobar.
+          </div>
+        </div>
+        <div
+          data-pencil-name="FaqCard"
+          class="box-border w-full h-fit shrink-0 flex flex-col gap-[6px] p-[16px] justify-start items-start bg-[#201C17] rounded-[14px]"
+        >
+          <div
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-bold text-left "
+          >
+            ¿Cuánto dura?
+          </div>
+          <div
+            class="text-[16px]/[normal] box-border text-[#A89F90] font-[Manrope,system-ui,sans-serif] font-normal text-left "
+          >
+            Microdiseño: una sesión de 2-3 horas. Implantes: 2-3 visitas.
+          </div>
+        </div>
+      </div>
+      <div
+        id="agenda" data-pencil-name="Accion"
+        class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] p-[40px] justify-start items-center bg-[#1B1712]"
       >
         <div
           data-pencil-name="AccionTitle"
-          class="text-[30px]/[normal] box-border text-[#1A1816] font-['Playfair_Display',system-ui,sans-serif] font-semibold text-left "
+          class="text-[30px]/[normal] box-border text-[#F2EDE4] font-[Fraunces,system-ui,sans-serif] font-semibold text-left "
         >
-          Agenda tu valoración, gratis.
+          Tu nueva sonrisa empieza con un mensaje.
         </div>
         <div
-          class="text-[15px]/[normal] box-border text-[#5A5548] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+          class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
         >
-          Cupos limitados esta semana. Respuesta en minutos por WhatsApp.
+          Quedan 3 cupos de valoración gratis esta semana.
         </div>
-        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="waBtn" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px_32px] justify-start items-start bg-[#B49A53] rounded-[980px]"><div
-            class="text-[16px]/[normal] box-border text-[#1A1816] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-semibold text-left "
+        <a href="https://wa.me/573150596255?text=Hola%20Harmoniza%2C%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block"><div data-pencil-name="waBtn" class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[16px_34px] justify-start items-start bg-[#C9A96E] rounded-[980px]"><div
+            class="text-[16px]/[normal] box-border text-[#15120F] font-[Manrope,system-ui,sans-serif] font-bold text-left "
           >
-            <span style="color:#141210">Escribir por WhatsApp
+            <span style="color:#141210">Escribir por WhatsApp ahora
           </span></div>
         </div></a>
         <div
-          class="text-[13px]/[normal] box-border text-[#6B675C] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+          class="text-[16px]/[normal] box-border text-[#7A7264] font-[Manrope,system-ui,sans-serif] font-normal text-left "
         >
           Al escribir aceptas la política de datos (Ley 1581). Sin spam.
         </div>
       </div>
       <div
         data-pencil-name="Nav"
-        class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[12px_10px] justify-around items-center bg-[#23231D]"
+        class="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[12px_10px] justify-around items-center bg-[#1B1712]"
       >
-        <div
+        <a href="#inicio" style="text-decoration:none;display:flex"><div
+          data-pencil-name="NavItem-inicio"
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
             Inicio
           </div>
-        </div>
-        <div
+        </div></a>
+        <a href="#beneficios" style="text-decoration:none;display:flex"><div
+          data-pencil-name="NavItem-beneficios"
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
-            Tratamientos
+            Beneficios
           </div>
-        </div>
-        <div
+        </div></a>
+        <a href="#agenda" style="text-decoration:none;display:flex"><div
+          data-pencil-name="NavItem-agenda"
           class="box-border w-fit shrink-0 h-fit flex flex-col gap-[2px] justify-start items-center"
         >
           <div
-            class="text-[13px]/[normal] box-border text-[#D4B96A] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#C9A96E] font-[Manrope,system-ui,sans-serif] font-normal text-left "
           >
             ●
           </div>
           <div
-            class="text-[13px]/[normal] box-border text-[#F5F1E8] font-['Plus_Jakarta_Sans',system-ui,sans-serif] font-normal text-left "
+            class="text-[16px]/[normal] box-border text-[#F2EDE4] font-[Manrope,system-ui,sans-serif] font-semibold text-left "
           >
             Agenda
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
   

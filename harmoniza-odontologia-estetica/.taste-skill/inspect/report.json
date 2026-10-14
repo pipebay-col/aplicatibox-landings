@@ -1,6 +1,6 @@
 {
  "url": "./index.html",
- "at": "2026-10-14T20:56:41.864Z",
+ "at": "2026-10-14T21:11:50.492Z",
  "allow": [
   "eyebrow"
  ],
@@ -9,17 +9,19 @@
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 3,
+   "screens": 5,
    "filled": [
-    0.71,
-    0.6,
-    0.49
+    0.5,
+    0.61,
+    0.89,
+    1,
+    1
    ],
    "motion": {
-    "elements": 17,
+    "elements": 49,
     "css": 0,
-    "transitions": 10,
-    "scripted": 7,
+    "transitions": 8,
+    "scripted": 41,
     "videos": 0,
     "playingVideos": 0
    },
@@ -29,9 +31,9 @@
      "h": 900
     },
     "page": {
-     "height": 2344,
-     "screens": 2.6,
-     "words": 162,
+     "height": 3669,
+     "screens": 4.1,
+     "words": 280,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -41,7 +43,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 7,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -61,17 +63,17 @@
      "lines": 1,
      "size": 52,
      "vw": 3.6,
-     "font": "Playfair Display",
+     "font": "Fraunces",
      "weight": 600,
      "tracking": 0,
-     "leading": 0.85,
+     "leading": 1.2,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "left",
+     "align": "center",
      "position": "center",
-     "widthRatio": 0.66,
-     "top": 80,
+     "widthRatio": 0.7,
+     "top": 112,
      "tag": "div",
      "kind": "heading"
     },
@@ -84,28 +86,28 @@
       "lines": 1,
       "size": 52,
       "vw": 3.6,
-      "font": "Playfair Display",
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
-      "leading": 0.85,
+      "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.66,
-      "top": 80,
+      "widthRatio": 0.7,
+      "top": 112,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Resultados que hablan solos.",
-      "words": 4,
-      "chars": 28,
+      "text": "Por qué los pacientes nos eligen.",
+      "words": 6,
+      "chars": 33,
       "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Playfair Display",
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -114,8 +116,50 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.29,
-      "top": 1056,
+      "widthRatio": 0.3,
+      "top": 870,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos estrella.",
+      "words": 2,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1088,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Pacientes reales, historias reales.",
+      "words": 4,
+      "chars": 35,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1826,
       "tag": "div",
       "kind": "heading"
      },
@@ -124,9 +168,9 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 36,
-      "vw": 2.5,
-      "font": "Playfair Display",
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -136,7 +180,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 1135,
+      "top": 2244,
       "tag": "div",
       "kind": "heading"
      },
@@ -145,30 +189,9 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 36,
-      "vw": 2.5,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.05,
-      "top": 1135,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Agenda tu valoración, gratis.",
-      "words": 4,
-      "chars": 29,
-      "lines": 1,
       "size": 30,
       "vw": 2.1,
-      "font": "Playfair Display",
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -177,8 +200,71 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.27,
-      "top": 1441,
+      "widthRatio": 0.04,
+      "top": 2244,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1 sesión",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.08,
+      "top": 2244,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Lo que todos preguntan.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 2383,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje.",
+      "words": 7,
+      "chars": 40,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 2765,
       "tag": "div",
       "kind": "heading"
      },
@@ -199,59 +285,64 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1711,
+      "top": 3036,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 6,
+     "count": 10,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 1,
+     "centered": 2,
      "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.86,
+       "family": "Manrope",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Fraunces",
+       "share": 0.16,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.14,
+       "share": 0.02,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
-      13,
-      15,
       16,
+      20,
+      28,
       30,
-      32,
       34,
-      36,
       52
      ],
-     "sizeCount": 8,
-     "notLoaded": [],
+     "sizeCount": 6,
+     "notLoaded": [
+      "Playfair Display"
+     ],
      "body": {
-      "font": "Plus Jakarta Sans",
-      "size": 15,
-      "leading": 1.33,
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.2,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.4
+      "contrast": 6.5
      },
-     "measureChars": 127,
+     "measureChars": 75,
      "max": {
       "size": 52,
       "vw": 3.6,
-      "font": "Playfair Display",
+      "font": "Fraunces",
       "text": "Tu sonrisa, en su versión más armónica."
      },
      "monoShare": 0,
@@ -262,74 +353,92 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Rating 4.5+ · Reseñas verificadas",
+      "text": "Odontología estética · Medellín · Rating 4.5",
       "above": "Tu sonrisa, en su versión más armónica.",
       "upper": false,
       "tracked": false,
       "mono": false,
       "pill": true,
-      "size": 13,
-      "top": 42
+      "size": 16,
+      "top": 70
      }
     ],
     "numbered": [],
     "color": {
-     "bodyBg": "#1a1816",
+     "bodyBg": "#15120f",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.08,
-      "l": 0.09
+      "s": 0.17,
+      "l": 0.07
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#1a1816",
+       "color": "#15120f",
        "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 1794,
+       "hsl": {
+        "h": 33,
+        "s": 0.2,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a1816",
+       "top": 2976,
        "hsl": {
         "h": 30,
         "s": 0.08,
         "l": 0.09
        }
-      },
-      {
-       "color": "#f5f4f0",
-       "top": 593,
-       "hsl": {
-        "h": 48,
-        "s": 0.2,
-        "l": 0.95
-       }
       }
      ],
      "textColors": [
       {
-       "color": "#5a5548",
-       "share": 0.31
+       "color": "#a89f90",
+       "share": 0.4
       },
       {
-       "color": "#1a1816",
-       "share": 0.16
+       "color": "#f2ede4",
+       "share": 0.24
       },
       {
-       "color": "#e7e2d4",
+       "color": "#c9a96e",
+       "share": 0.14
+      },
+      {
+       "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#9c948c",
-       "share": 0.09
-      },
-      {
-       "color": "#d4b96a",
-       "share": 0.09
+       "color": "#7a7264",
+       "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": []
+     "lowContrast": [
+      {
+       "text": "Al escribir aceptas la política de datos",
+       "ratio": 3.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#7a7264",
+       "bg": "#1b1712"
+      }
+     ]
     },
     "buttons": {
      "count": 0,
@@ -353,24 +462,31 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
-     "boxRadius": 16,
+     "roundedBoxes": 13,
+     "boxRadius": 14,
      "squareMedia": 0,
-     "roundedMedia": 4,
-     "mediaRadius": 12,
+     "roundedMedia": 7,
+     "mediaRadius": 14,
      "textShadow": 0,
-     "cardRows": []
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 920
+      }
+     ]
     },
     "heroMedia": [
      {
       "type": "bg-image",
-      "ratio": 0.33
+      "ratio": 0.39
      }
     ],
     "nav": null,
     "fontsLoaded": [
-     "playfair display",
-     "plus jakarta sans"
+     "fraunces",
+     "manrope"
     ]
    },
    "consoleErrors": []
@@ -379,17 +495,19 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 3,
+   "screens": 5,
    "filled": [
-    0.81,
-    0.71,
-    0.51
+    0.75,
+    0.47,
+    0.8,
+    1,
+    1
    ],
    "motion": {
-    "elements": 17,
+    "elements": 49,
     "css": 0,
-    "transitions": 10,
-    "scripted": 7,
+    "transitions": 11,
+    "scripted": 38,
     "videos": 0,
     "playingVideos": 0
    },
@@ -399,9 +517,9 @@
      "h": 1024
     },
     "page": {
-     "height": 2841,
-     "screens": 2.8,
-     "words": 162,
+     "height": 4286,
+     "screens": 4.2,
+     "words": 280,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -411,7 +529,7 @@
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
@@ -429,19 +547,19 @@
      "words": 7,
      "chars": 39,
      "lines": 2,
-     "size": 44,
-     "vw": 5.7,
-     "font": "Playfair Display",
+     "size": 46,
+     "vw": 6,
+     "font": "Fraunces",
      "weight": 600,
      "tracking": 0,
-     "leading": 1,
+     "leading": 1.2,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.96,
-     "top": 80,
+     "widthRatio": 0.95,
+     "top": 112,
      "tag": "div",
      "kind": "heading"
     },
@@ -452,30 +570,30 @@
       "words": 7,
       "chars": 39,
       "lines": 2,
-      "size": 44,
-      "vw": 5.7,
-      "font": "Playfair Display",
+      "size": 46,
+      "vw": 6,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
-      "leading": 1,
+      "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.96,
-      "top": 80,
+      "widthRatio": 0.95,
+      "top": 112,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Resultados que hablan solos.",
-      "words": 4,
-      "chars": 28,
+      "text": "Por qué los pacientes nos eligen.",
+      "words": 6,
+      "chars": 33,
       "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Playfair Display",
+      "size": 28,
+      "vw": 3.6,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -484,8 +602,50 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.54,
-      "top": 1120,
+      "widthRatio": 0.57,
+      "top": 860,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos estrella.",
+      "words": 2,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1166,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Pacientes reales, historias reales.",
+      "words": 4,
+      "chars": 35,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 1904,
       "tag": "div",
       "kind": "heading"
      },
@@ -494,9 +654,9 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 36,
-      "vw": 4.7,
-      "font": "Playfair Display",
+      "size": 30,
+      "vw": 3.9,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -506,7 +666,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 1199,
+      "top": 2468,
       "tag": "div",
       "kind": "heading"
      },
@@ -515,30 +675,9 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 36,
-      "vw": 4.7,
-      "font": "Playfair Display",
-      "weight": 600,
-      "tracking": 0,
-      "leading": 1.2,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.09,
-      "top": 1199,
-      "tag": "div",
-      "kind": "heading"
-     },
-     {
-      "text": "Agenda tu valoración, gratis.",
-      "words": 4,
-      "chars": 29,
-      "lines": 1,
       "size": 30,
       "vw": 3.9,
-      "font": "Playfair Display",
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -547,8 +686,71 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.51,
-      "top": 1545,
+      "widthRatio": 0.08,
+      "top": 2468,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1 sesión",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 2468,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Lo que todos preguntan.",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 2607,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje.",
+      "words": 7,
+      "chars": 40,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 2989,
       "tag": "div",
       "kind": "heading"
      },
@@ -569,13 +771,13 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 1815,
+      "top": 3260,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 6,
+     "count": 10,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
@@ -586,42 +788,47 @@
     "type": {
      "families": [
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.86,
+       "family": "Manrope",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Fraunces",
+       "share": 0.16,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.14,
+       "share": 0.02,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
-      13,
-      15,
       16,
+      20,
+      28,
       30,
-      32,
       34,
-      36,
-      44
+      46
      ],
-     "sizeCount": 8,
-     "notLoaded": [],
+     "sizeCount": 6,
+     "notLoaded": [
+      "Playfair Display"
+     ],
      "body": {
-      "font": "Plus Jakarta Sans",
-      "size": 15,
-      "leading": 1.33,
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.2,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.4
+      "contrast": 6.5
      },
-     "measureChars": 62,
+     "measureChars": 65,
      "max": {
-      "size": 44,
-      "vw": 5.7,
-      "font": "Playfair Display",
+      "size": 46,
+      "vw": 6,
+      "font": "Fraunces",
       "text": "Tu sonrisa, en su versión más armónica."
      },
      "monoShare": 0,
@@ -632,74 +839,92 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Rating 4.5+ · Reseñas verificadas",
+      "text": "Odontología estética · Medellín · Rating 4.5",
       "above": "Tu sonrisa, en su versión más armónica.",
       "upper": false,
       "tracked": false,
       "mono": false,
       "pill": true,
-      "size": 13,
-      "top": 42
+      "size": 16,
+      "top": 70
      }
     ],
     "numbered": [],
     "color": {
-     "bodyBg": "#1a1816",
+     "bodyBg": "#15120f",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.08,
-      "l": 0.09
+      "s": 0.17,
+      "l": 0.07
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#1a1816",
+       "color": "#15120f",
        "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 1872,
+       "hsl": {
+        "h": 33,
+        "s": 0.2,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a1816",
+       "top": 3200,
        "hsl": {
         "h": 30,
         "s": 0.08,
         "l": 0.09
        }
-      },
-      {
-       "color": "#f5f4f0",
-       "top": 637,
-       "hsl": {
-        "h": 48,
-        "s": 0.2,
-        "l": 0.95
-       }
       }
      ],
      "textColors": [
       {
-       "color": "#5a5548",
-       "share": 0.31
+       "color": "#a89f90",
+       "share": 0.4
       },
       {
-       "color": "#1a1816",
-       "share": 0.16
+       "color": "#f2ede4",
+       "share": 0.24
       },
       {
-       "color": "#e7e2d4",
+       "color": "#c9a96e",
+       "share": 0.14
+      },
+      {
+       "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#9c948c",
-       "share": 0.09
-      },
-      {
-       "color": "#d4b96a",
-       "share": 0.09
+       "color": "#7a7264",
+       "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": []
+     "lowContrast": [
+      {
+       "text": "Al escribir aceptas la política de datos",
+       "ratio": 3.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#7a7264",
+       "bg": "#1b1712"
+      }
+     ]
     },
     "buttons": {
      "count": 0,
@@ -723,24 +948,31 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 3,
-     "boxRadius": 16,
+     "roundedBoxes": 13,
+     "boxRadius": 14,
      "squareMedia": 0,
      "roundedMedia": 4,
      "mediaRadius": 12,
      "textShadow": 0,
-     "cardRows": []
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 910
+      }
+     ]
     },
     "heroMedia": [
      {
       "type": "bg-image",
-      "ratio": 0.28
+      "ratio": 0.37
      }
     ],
     "nav": null,
     "fontsLoaded": [
-     "playfair display",
-     "plus jakarta sans"
+     "fraunces",
+     "manrope"
     ]
    },
    "consoleErrors": []
@@ -749,19 +981,21 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 5,
+   "screens": 7,
    "filled": [
-    0.7,
+    0.78,
+    0.48,
     0.67,
-    0.75,
-    0.67,
-    0.58
+    0.78,
+    1,
+    1,
+    1
    ],
    "motion": {
-    "elements": 17,
+    "elements": 53,
     "css": 0,
-    "transitions": 9,
-    "scripted": 8,
+    "transitions": 10,
+    "scripted": 43,
     "videos": 0,
     "playingVideos": 0
    },
@@ -771,9 +1005,9 @@
      "h": 844
     },
     "page": {
-     "height": 3622,
-     "screens": 4.3,
-     "words": 162,
+     "height": 5156,
+     "screens": 6.1,
+     "words": 286,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -801,19 +1035,19 @@
      "words": 7,
      "chars": 39,
      "lines": 2,
-     "size": 30,
-     "vw": 7.7,
-     "font": "Playfair Display",
+     "size": 28,
+     "vw": 7.2,
+     "font": "Fraunces",
      "weight": 600,
      "tracking": 0,
-     "leading": 1.15,
+     "leading": 1.2,
      "upper": false,
      "italic": false,
      "mono": false,
-     "align": "left",
+     "align": "center",
      "position": "center",
-     "widthRatio": 0.92,
-     "top": 80,
+     "widthRatio": 0.9,
+     "top": 112,
      "tag": "div",
      "kind": "heading"
     },
@@ -824,30 +1058,30 @@
       "words": 7,
       "chars": 39,
       "lines": 2,
-      "size": 30,
-      "vw": 7.7,
-      "font": "Playfair Display",
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
-      "leading": 1.15,
+      "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.92,
-      "top": 80,
+      "widthRatio": 0.9,
+      "top": 112,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Resultados que hablan solos.",
-      "words": 4,
-      "chars": 28,
+      "text": "Por qué los pacientes nos eligen.",
+      "words": 6,
+      "chars": 33,
       "lines": 2,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Playfair Display",
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -856,8 +1090,50 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.79,
-      "top": 1215,
+      "widthRatio": 0.84,
+      "top": 735,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamientos estrella.",
+      "words": 2,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1185,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Pacientes reales, historias reales.",
+      "words": 4,
+      "chars": 35,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1923,
       "tag": "div",
       "kind": "heading"
      },
@@ -866,9 +1142,9 @@
       "words": 1,
       "chars": 4,
       "lines": 1,
-      "size": 36,
-      "vw": 9.2,
-      "font": "Playfair Display",
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -877,8 +1153,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.17,
-      "top": 1337,
+      "widthRatio": 0.16,
+      "top": 2539,
       "tag": "div",
       "kind": "heading"
      },
@@ -887,9 +1163,30 @@
       "words": 1,
       "chars": 3,
       "lines": 1,
-      "size": 36,
-      "vw": 9.2,
-      "font": "Playfair Display",
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.16,
+      "top": 2539,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "1 sesión",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -898,19 +1195,40 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.17,
-      "top": 1337,
+      "widthRatio": 0.29,
+      "top": 2539,
       "tag": "div",
       "kind": "heading"
      },
      {
-      "text": "Agenda tu valoración, gratis.",
+      "text": "Lo que todos preguntan.",
       "words": 4,
-      "chars": 29,
+      "chars": 23,
       "lines": 2,
-      "size": 30,
-      "vw": 7.7,
-      "font": "Playfair Display",
+      "size": 28,
+      "vw": 7.2,
+      "font": "Fraunces",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2722,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Tu nueva sonrisa empieza con un mensaje.",
+      "words": 7,
+      "chars": 40,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Fraunces",
       "weight": 600,
       "tracking": 0,
       "leading": 1.2,
@@ -920,7 +1238,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 1731,
+      "top": 3204,
       "tag": "div",
       "kind": "heading"
      },
@@ -941,59 +1259,66 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.69,
-      "top": 2076,
+      "top": 3610,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 6,
+     "count": 10,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 1,
+     "centered": 2,
      "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
-       "family": "Plus Jakarta Sans",
-       "share": 0.86,
+       "family": "Manrope",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Fraunces",
+       "share": 0.15,
        "mono": false
       },
       {
        "family": "Playfair Display",
-       "share": 0.14,
+       "share": 0.02,
        "mono": false
       }
      ],
-     "familyCount": 2,
+     "familyCount": 3,
      "sizes": [
-      13,
       15,
       16,
+      20,
+      24,
+      28,
       30,
-      32,
-      34,
-      36
+      34
      ],
      "sizeCount": 7,
-     "notLoaded": [],
+     "notLoaded": [
+      "Playfair Display"
+     ],
      "body": {
-      "font": "Plus Jakarta Sans",
-      "size": 15,
-      "leading": 1.33,
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.2,
       "weight": 400,
       "tracking": 0,
-      "contrast": 7.4
+      "contrast": 6.5
      },
-     "measureChars": 22,
+     "measureChars": 18,
      "max": {
-      "size": 36,
-      "vw": 9.2,
+      "size": 34,
+      "vw": 8.7,
       "font": "Playfair Display",
-      "text": "4.5+"
+      "text": "Resultados con pacientes reales"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1003,74 +1328,92 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.07,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Rating 4.5+ · Reseñas verificadas",
-      "above": "Tu sonrisa, en su versión más armónica.",
+      "text": "Inicio",
+      "above": "Resultados con pacientes reales",
       "upper": false,
       "tracked": false,
       "mono": false,
-      "pill": true,
-      "size": 13,
-      "top": 42
+      "pill": false,
+      "size": 16,
+      "top": 3516
      }
     ],
     "numbered": [],
     "color": {
-     "bodyBg": "#1a1816",
+     "bodyBg": "#15120f",
      "bodyBgHsl": {
       "h": 30,
-      "s": 0.08,
-      "l": 0.09
+      "s": 0.17,
+      "l": 0.07
      },
      "dark": true,
      "sectionBgs": [
       {
-       "color": "#1a1816",
+       "color": "#15120f",
        "top": 0,
+       "hsl": {
+        "h": 30,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#1b1712",
+       "top": 703,
+       "hsl": {
+        "h": 33,
+        "s": 0.2,
+        "l": 0.09
+       }
+      },
+      {
+       "color": "#1a1816",
+       "top": 3550,
        "hsl": {
         "h": 30,
         "s": 0.08,
         "l": 0.09
        }
-      },
-      {
-       "color": "#f5f4f0",
-       "top": 634,
-       "hsl": {
-        "h": 48,
-        "s": 0.2,
-        "l": 0.95
-       }
       }
      ],
      "textColors": [
       {
-       "color": "#5a5548",
-       "share": 0.31
+       "color": "#a89f90",
+       "share": 0.4
       },
       {
-       "color": "#1a1816",
-       "share": 0.16
+       "color": "#f2ede4",
+       "share": 0.25
       },
       {
-       "color": "#e7e2d4",
+       "color": "#c9a96e",
+       "share": 0.14
+      },
+      {
+       "color": "#ddd5c4",
        "share": 0.13
       },
       {
-       "color": "#9c948c",
-       "share": 0.09
-      },
-      {
-       "color": "#d4b96a",
-       "share": 0.09
+       "color": "#7a7264",
+       "share": 0.04
       }
      ],
      "button": null,
-     "lowContrast": []
+     "lowContrast": [
+      {
+       "text": "Al escribir aceptas la política de datos",
+       "ratio": 3.8,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#7a7264",
+       "bg": "#1b1712"
+      }
+     ]
     },
     "buttons": {
      "count": 0,
@@ -1094,24 +1437,37 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 4,
+     "roundedBoxes": 6,
      "boxRadius": 16,
      "squareMedia": 0,
      "roundedMedia": 4,
      "mediaRadius": 12,
      "textShadow": 0,
-     "cardRows": []
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2005
+      },
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2800
+      }
+     ]
     },
     "heroMedia": [
      {
       "type": "bg-image",
-      "ratio": 0.33
+      "ratio": 0.3
      }
     ],
     "nav": null,
     "fontsLoaded": [
-     "playfair display",
-     "plus jakarta sans"
+     "fraunces",
+     "manrope"
     ]
    },
    "consoleErrors": []
@@ -1122,7 +1478,7 @@
    "level": "WARN",
    "id": "palette-cream",
    "width": 1440,
-   "message": "Yellow-cream background (section #f5f4f0).",
+   "message": "Yellow-cream background (text #f2ede4).",
    "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
    "alsoAt": [
     768,
@@ -1131,12 +1487,46 @@
   },
   {
    "level": "WARN",
-   "id": "body-size",
+   "id": "contrast",
    "width": 1440,
-   "message": "Body text is 15px.",
-   "fix": "Body copy 16–20px.",
+   "message": "Low-contrast text: \"Al escribir aceptas la política de datos\" 3.8:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
    "alsoAt": [
-    768
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 1440,
+   "message": "3 typefaces in use (Manrope, Fraunces, Playfair Display).",
+   "fix": "Two at most.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Playfair Display",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.5:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
    ]
   },
   {
@@ -1159,10 +1549,10 @@
   },
   {
    "level": "WARN",
-   "id": "measure",
-   "width": 1440,
-   "message": "Longest paragraph runs about 127 characters per line.",
-   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+   "id": "card-rows",
+   "width": 390,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
   }
  ],
  "images": [
@@ -1171,7 +1561,8 @@
    "width": 1440,
    "fold": "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-fold.jpg",
    "pages": [
-    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg"
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\Usuario\\AppData\\Local\\hermes\\agency\\github-landings\\harmoniza-odontologia-estetica\\.taste-skill\\inspect\\desktop-page-02.jpg"
    ]
   },
   {
