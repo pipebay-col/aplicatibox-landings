@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>CorpoBello Medical Spa · Medicina Estética &amp; Spa Consciente</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline-variant": "#bdc9c6",
+            "on-primary-container": "#f2fffb",
+            "on-surface-variant": "#3e4947",
+            "on-surface": "#1b1c1a",
+            "surface": "#fbf9f5",
+            "on-secondary-fixed-variant": "#3f4944",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#bec9c2",
+            "primary-container": "#008376",
+            "primary-fixed": "#91f4e4",
+            "surface-dim": "#dbdad6",
+            "secondary-container": "#d7e2db",
+            "inverse-primary": "#74d7c8",
+            "surface-bright": "#fbf9f5",
+            "surface-tint": "#006b60",
+            "surface-container-low": "#f5f3ef",
+            "on-secondary-container": "#5a6560",
+            "tertiary-fixed-dim": "#e0c298",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#fedeb2",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#005048",
+            "on-primary": "#ffffff",
+            "primary": "#00685d",
+            "secondary-fixed": "#dae5de",
+            "on-tertiary-fixed-variant": "#584323",
+            "on-primary-fixed": "#00201c",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "inverse-surface": "#30312e",
+            "surface-container-highest": "#e4e2de",
+            "on-tertiary-fixed": "#281800",
+            "tertiary": "#6f5836",
+            "surface-container-high": "#eae8e4",
+            "outline": "#6e7a77",
+            "surface-variant": "#e4e2de",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "on-background": "#1b1c1a",
+            "surface-container": "#efeeea",
+            "on-tertiary-container": "#fffbfa",
+            "tertiary-container": "#89704c",
+            "secondary": "#56615b",
+            "on-secondary-fixed": "#141e19",
+            "primary-fixed-dim": "#74d7c8",
+            "background": "#fbf9f5"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "space-xl": "3rem",
+            "space-md": "1.25rem",
+            "gutter-tablet": "1.5rem",
+            "space-lg": "2rem",
+            "gutter-desktop": "2rem",
+            "margin-desktop": "3rem",
+            "margin": "1.25rem",
+            "space-sm": "0.75rem",
+            "margin-tablet": "2rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "title-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "label-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "title-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-xl-mobile": [
+              "Playfair Display"
+            ],
+            "headline-xl": [
+              "Playfair Display"
+            ]
+          },
+          "fontSize": {
+            "title-lg": [
+              "18px",
+              {
+                "lineHeight": "26px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-lg-mobile": [
+              "26px",
+              {
+                "lineHeight": "34px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "500"
+              }
+            ],
+            "label-sm": [
+              "11px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "500"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.06em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "22px",
+              {
+                "lineHeight": "30px",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-lg": [
+              "32px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "500"
+              }
+            ],
+            "body-lg": [
+              "16px",
+              {
+                "lineHeight": "26px",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "14px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "400"
+              }
+            ],
+            "title-md": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-xl-mobile": [
+              "32px",
+              {
+                "lineHeight": "40px",
+                "letterSpacing": "-0.015em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md text-primary dark:text-inverse-primary docked full-width top-0 sticky z-40 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-5 py-3 max-w-lg mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary" data-icon="spa">spa</span>
+<span class="text-title-lg font-title-lg text-primary dark:text-inverse-primary tracking-tight">CorpoBello Medical Spa</span>
+</div>
+<a class="text-label-md font-label-md px-4 py-1.5 rounded-full bg-secondary-container/60 text-primary dark:text-inverse-primary hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 active:scale-[0.98]" href="https://wa.me/573104567850?text=Hola%20CorpoBello%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n">
+        Contactar
+      </a>
+</div>
+</header>
+<!-- MAIN WRAPPER: Mobile-Centric Responsive Canvas -->
+<main class="w-full max-w-lg mx-auto px-5 pt-4 pb-28 space-y-10">
+<!-- ========================================== -->
+<!-- 1. A - ATENCIÓN (Hero & Credenciales)      -->
+<!-- ========================================== -->
+<section class="space-y-6 pt-2">
+<!-- Credencial Oficial REPS -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/40 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-[16px]" data-icon="verified_user">verified_user</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-wide">MinSalud REPS · Medicina Estética Consciente en Colombia (Sedes Bogotá y Medellín)</span>
+</div>
+<!-- Titular H1 Persuasivo -->
+<div class="space-y-3">
+<h1 class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface">
+          Tu piel y rostro en su versión más <span class="italic font-normal text-primary">armónica, radiante</span> y sin perder tu esencia.
+        </h1>
+<p class="text-body-md font-body-md text-secondary">
+          Tratamientos médicos no invasivos de bioestimulación dérmica, hidrafaciales botánicos y rejuvenecimiento cutáneo en cabinas climatizadas con aromaterapia clínica. Resultados sutiles y elegantes sin incapacidad laboral ni rostros congelados.
+        </p>
+</div>
+<!-- Hero Visual Asset -->
+<div class="relative rounded-lg overflow-hidden shadow-[0_12px_32px_-6px_rgba(26,36,33,0.08)] border border-primary/10 bg-surface-container-lowest">
+<img alt="Paciente en cabina de CorpoBello Medical Spa recibiendo protocolo de rejuvenecimiento médico facial" class="w-full aspect-[4/5] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1UHo3a5xGFGqix92-OEQDtRda681XiYgrmPKuQRr5G6GHUz7XgeGouDd8sX_6buH5jjmCxUgRVqtq3dHvpG5eBdF9sMlJAy5ro_yyHKwRLU18jEw7wezL9YqHgWqkAwixf_NONckNQxlJLTfB247Jz609TrjO9Aca1FF30gWWyknzdhgDOm6OCfRbsiIDYY2SXUrjvMJCJsSAkyTQc859i7qdLFbekV7xle-S0ll9QCP_h2i3vAfh17o7U"/>
+<!-- Tarjeta de caso clínico / flotante -->
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-3.5 rounded-DEFAULT shadow-lg flex items-center justify-between border border-white/60">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-secondary">Cabina Protocolo VIP</p>
+<p class="text-title-md font-title-md text-on-surface">100% Armonía &amp; Luminosidad</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm bg-secondary-container text-primary font-semibold px-2.5 py-1 rounded-full">MinSalud</span>
+</div>
+</div>
+<!-- CTA Principal & Micro-credencial -->
+<div class="space-y-3 pt-2">
+<a class="flex items-center justify-center gap-2 w-full min-h-[54px] rounded-full bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container active:scale-[0.98] transition-all duration-200" href="#formulario-cita">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="text-center text-label-sm font-label-sm text-secondary">
+          Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- Trío de Garantías Rápidas -->
+<div class="grid grid-cols-3 gap-2.5 pt-2">
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT text-center border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1" data-icon="verified">verified</span>
+<p class="text-label-sm font-label-sm font-semibold text-on-surface">Insumos INVIMA &amp; FDA</p>
+<p class="text-[10px] text-secondary mt-0.5">Dispositivos y activos puros</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT text-center border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1" data-icon="stethoscope">stethoscope</span>
+<p class="text-label-sm font-label-sm font-semibold text-on-surface">Diagnóstico Facial 1 a 1</p>
+<p class="text-[10px] text-secondary mt-0.5">Con médico estético</p>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-DEFAULT text-center border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mb-1" data-icon="location_on">location_on</span>
+<p class="text-label-sm font-label-sm font-semibold text-on-surface">Sedes Boutique</p>
+<p class="text-[10px] text-secondary mt-0.5">Bogotá &amp; Medellín</p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. I - INTERÉS (Problema & Proceso 3 Pasos)-->
+<!-- ========================================== -->
+<section class="space-y-6 pt-6">
+<!-- Caja de Dilema / Dolor del Paciente -->
+<div class="bg-surface-container-low p-5 rounded-lg border border-primary/15 relative overflow-hidden">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-full bg-error-container text-on-error-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" data-icon="help_outline">help_outline</span>
+</div>
+<div class="space-y-2">
+<h2 class="text-headline-md font-headline-md text-on-surface">
+              ¿Temes tratamientos exagerados que cambien tus facciones o dejen tu piel artificial?
+            </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Rechazamos de raíz el sobre-relleno y la estandarización. En CorpoBello defendemos la micro-dosificación anatómica: resaltar tus ángulos naturales, recuperar el volumen dérmico perdido y restaurar la luminosidad celular intacta.
+            </p>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 italic text-label-md font-label-md text-tertiary">
+          "La mejor medicina estética es aquella que todos admiran pero nadie puede delatar."
+        </div>
+</div>
+<!-- Proceso Clínico Transparente en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="text-label-md font-label-md text-primary font-bold">RUTINA CLÍNICA CONSCIENTE</span>
+<h3 class="text-headline-md font-headline-md text-on-surface">Tu camino hacia un cutis renovado</h3>
+</div>
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/20 shadow-sm flex gap-4">
+<div class="text-headline-md font-headline-md text-primary font-bold shrink-0">01</div>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface">Valoración y Mapeo Cutáneo 3D</h4>
+<p class="text-body-md font-body-md text-secondary">
+              Evaluamos capas dérmicas, nivel de colágeno, manchas y líneas finas con dermatoscopia digital de precisión.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-semibold pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Certeza clínica y plan exacto desde el día 1.</span>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/20 shadow-sm flex gap-4">
+<div class="text-headline-md font-headline-md text-primary font-bold shrink-0">02</div>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface">Plan Médico y Spa Personalizado</h4>
+<p class="text-body-md font-body-md text-secondary">
+              Combinamos bioestimuladores certificados, tecnología ultrasónica o peeling enzimático según tu objetivo real.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-semibold pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Inversión transparente con presupuesto cerrado sin sobrecostos.</span>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/20 shadow-sm flex gap-4">
+<div class="text-headline-md font-headline-md text-primary font-bold shrink-0">03</div>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface">Aplicación Guiada y Glow Natural</h4>
+<p class="text-body-md font-body-md text-secondary">
+              Procedimientos indoloros bajo ambiente sensorial cálido con aromaterapia botánica y música relajante.
+            </p>
+<div class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-semibold pt-1">
+<span class="material-symbols-outlined text-[15px]" data-icon="task_alt">task_alt</span>
+<span>Beneficio: Reincorporación inmediata a tu rutina social y laboral con piel radiante.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick WhatsApp Question Banner -->
+<div class="p-3.5 rounded-full bg-secondary-container/40 border border-primary/20 flex items-center justify-between">
+<div class="flex items-center gap-2 pl-2">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="chat">chat</span>
+<span class="text-label-md font-label-md text-on-surface">¿Tienes dudas sobre algún procedimiento?</span>
+</div>
+<a class="px-3 py-1 bg-surface-container-lowest text-primary text-label-sm font-label-sm font-semibold rounded-full shadow-sm hover:text-primary" href="https://wa.me/573104567850?text=Hola%20tengo%20una%20duda%20sobre%20un%20tratamiento">
+          Preguntar
+        </a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. D - DESEO (Beneficios, Métricas & Social)-->
+<!-- ========================================== -->
+<section class="space-y-6 pt-6">
+<!-- Métricas Clave de Confianza -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">+8 Años</p>
+<p class="text-label-sm font-label-sm text-secondary">Trayectoria Clínica</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">+4.500</p>
+<p class="text-label-sm font-label-sm text-secondary">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">100%</p>
+<p class="text-label-sm font-label-sm text-secondary">Insumos INVIMA &amp; FDA</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 text-center shadow-sm">
+<p class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">4.9 ★</p>
+<p class="text-label-sm font-label-sm text-secondary">Google Reviews Colombia</p>
+</div>
+</div>
+<!-- Beneficios Reales de Resultado -->
+<div class="space-y-3">
+<h3 class="text-headline-md font-headline-md text-on-surface">Lo que experimentarás con nosotros:</h3>
+<div class="space-y-2.5">
+<div class="p-3.5 bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" data-icon="spa">spa</span>
+<div>
+<p class="text-title-md font-title-md text-on-surface">Armonía y sutileza absoluta</p>
+<p class="text-body-md font-body-md text-secondary">Tu entorno notará tu cutis fresco, iluminado y descansado, jamás un aspecto operado o rígido.</p>
+</div>
+</div>
+<div class="p-3.5 bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" data-icon="water_drop">water_drop</span>
+<div>
+<p class="text-title-md font-title-md text-on-surface">Bioestimulación profunda de colágeno</p>
+<p class="text-body-md font-body-md text-secondary">Reactiva la síntesis natural de tus propios fibroblastos para devolver firmeza y densidad dérmica duradera.</p>
+</div>
+</div>
+<div class="p-3.5 bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" data-icon="schedule">schedule</span>
+<div>
+<p class="text-title-md font-title-md text-on-surface">Cero tiempo de reposo en cama</p>
+<p class="text-body-md font-body-md text-secondary">Nuestros protocolos ambulatorios están formulados para permitirte continuar tu agenda el mismo día.</p>
+</div>
+</div>
+<div class="p-3.5 bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" data-icon="support_agent">support_agent</span>
+<div>
+<p class="text-title-md font-title-md text-on-surface">Acompañamiento VIP continuo</p>
+<p class="text-body-md font-body-md text-secondary">Línea directa con tu especialista para monitorear evolución post-sesión y pautas de skincare domiciliario.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Verificados de Pacientes -->
+<div class="space-y-3 pt-2">
+<h4 class="text-title-md font-title-md text-secondary tracking-wide">EXPERIENCIAS REALES</h4>
+<div class="space-y-3">
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary text-label-sm">
+                  MC
+                </div>
+<div>
+<p class="text-label-md font-label-md text-on-surface">María Camila Restrepo</p>
+<p class="text-[11px] text-secondary">Sede Bogotá · Chicó Reservado</p>
+</div>
+</div>
+<div class="flex text-tertiary text-xs">★★★★★</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant italic">
+              "Tenía pánico de quedar con pómulos exagerados. La doctora me explicó cada mililitro y el resultado fue increíble: mi piel se ve jugosa y tensa como hace 7 años."
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/20 shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-primary text-label-sm">
+                  AV
+                </div>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Alejandra Villegas</p>
+<p class="text-[11px] text-secondary">Sede Medellín · El Poblado</p>
+</div>
+</div>
+<div class="flex text-tertiary text-xs">★★★★★</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant italic">
+              "El hidrafacial con activos botánicos y la cabina con vista y aromaterapia te desconectan por completo. Es mi cita mensual fija para mantener mi rostro radiante."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. A - ACCIÓN (Formulario de Conversión)   -->
+<!-- ========================================== -->
+<section class="space-y-5 pt-6" id="formulario-cita">
+<!-- Badge de Escasez / Alta Demanda -->
+<div class="bg-primary/10 border border-primary/20 p-3 rounded-full flex items-center justify-center gap-2 text-primary font-semibold text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="alarm">alarm</span>
+<span>Cupos limitados de valoración esta semana en Colombia</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-primary/20 shadow-[0_16px_36px_-8px_rgba(26,36,33,0.06)] space-y-5">
+<div class="text-center space-y-1">
+<h3 class="text-headline-md font-headline-md text-on-surface">Empieza hoy tu transformación armónica</h3>
+<p class="text-body-md font-body-md text-secondary">Diligencia tus datos para recibir asesoría personalizada sin compromiso.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por confiar en CorpoBello! Un asesor médico se contactará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo Nombre -->
+<div class="space-y-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant" for="nombre">Nombre y Apellido *</label>
+<input class="w-full h-[50px] px-4 rounded-DEFAULT bg-surface border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface outline-none transition-all duration-150" id="nombre" placeholder="Ej: Marcela González" required="" type="text"/>
+</div>
+<!-- Campo WhatsApp / Celular -->
+<div class="space-y-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant" for="telefono">WhatsApp o Celular (+57) *</label>
+<input class="w-full h-[50px] px-4 rounded-DEFAULT bg-surface border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface outline-none transition-all duration-150" id="telefono" placeholder="Ej: 310 123 4567" required="" type="tel"/>
+</div>
+<!-- Campo Procedimiento de Interés -->
+<div class="space-y-1">
+<label class="text-label-sm font-label-sm text-on-surface-variant" for="tratamiento">¿Qué tratamiento te interesa evaluar? *</label>
+<select class="w-full h-[50px] px-4 rounded-DEFAULT bg-surface border border-outline-variant/40 focus:border-primary focus:ring-2 focus:ring-primary/20 text-body-md font-body-md text-on-surface outline-none transition-all duration-150" id="tratamiento" required="">
+<option disabled="" selected="" value="">Selecciona tu opción</option>
+<option value="armonizacion">Armonización Facial Sutil (Micro-dosis)</option>
+<option value="bioestimulacion">Bioestimulación Dérmica de Colágeno</option>
+<option value="hidrafacial">Hidrafacial Glow Botánico y Limpieza Médica</option>
+<option value="rejuvenecimiento">Rejuvenecimiento de Cuello y Escote</option>
+<option value="no-segura">Deseo una valoración médica diagnóstica integral</option>
+</select>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full min-h-[54px] rounded-full bg-primary text-on-primary font-title-md text-title-md shadow-md hover:bg-primary-container active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="sparkles">arrow_back_ios_new</span>
+</button>
+</form>
+<!-- Divisor y Botón WhatsApp Directo -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/20"></div>
+<span class="flex-shrink mx-3 text-label-sm font-label-sm text-secondary">o si prefieres atención inmediata</span>
+<div class="flex-grow border-t border-outline-variant/20"></div>
+</div>
+<a class="w-full min-h-[50px] rounded-full bg-[#25D366]/10 text-[#00685d] border border-[#25D366]/30 font-title-md text-title-md flex items-center justify-center gap-2 hover:bg-[#25D366]/20 transition-all duration-150" href="https://wa.me/573104567850?text=Hola%20CorpoBello%2C%20deseo%20agendar%20mi%20cita%20de%20valoraci%C3%B3n">
+<span class="material-symbols-outlined text-[20px]" data-icon="phone_iphone">phone_iphone</span>
+<span>Hablar directo por WhatsApp</span>
+</a>
+<!-- Aviso Legal & Confidencialidad -->
+<p class="text-[11px] text-secondary text-center leading-relaxed">
+          Tus datos se encuentran 100% protegidos bajo la Ley 1581 de 2012 (Habeas Data) y secreto profesional médico. Jamás compartiremos tu información.
+        </p>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. PREGUNTAS FRECUENTES (FAQ)             -->
+<!-- ========================================== -->
+<section class="space-y-4 pt-4">
+<div class="text-center space-y-1">
+<h3 class="text-headline-md font-headline-md text-on-surface">Preguntas Frecuentes</h3>
+<p class="text-body-md font-body-md text-secondary">Claridad y transparencia en cada detalle</p>
+</div>
+<div class="space-y-3">
+<!-- FAQ Item 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-DEFAULT border border-outline-variant/20 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface list-none">
+<span>¿Los procedimientos causan dolor o molestias?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-md font-body-md text-secondary mt-2.5 pt-2.5 border-t border-outline-variant/15">
+            No. Utilizamos anestesia tópica de grado médico formulada exclusivamente y cánulas atraumáticas que garantizan una experiencia cómoda y serena en todo momento.
+          </p>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-DEFAULT border border-outline-variant/20 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface list-none">
+<span>¿Tendré tiempo de incapacidad laboral?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-md font-body-md text-secondary mt-2.5 pt-2.5 border-t border-outline-variant/15">
+            Cero incapacidad. Podrás retomar tus compromisos el mismo día. Sólo recomendamos evitar sauna, piscina o ejercicio extenuante por 24 a 48 horas según el protocolo.
+          </p>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-DEFAULT border border-outline-variant/20 shadow-sm cursor-pointer">
+<summary class="flex items-center justify-between font-title-md text-title-md text-on-surface list-none">
+<span>¿Dónde están ubicadas las sedes boutique?</span>
+<span class="material-symbols-outlined text-secondary group-open:rotate-180 transition-transform duration-200" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="text-body-md font-body-md text-secondary mt-2.5 pt-2.5 border-t border-outline-variant/15">
+            Contamos con sedes privadas con valet parking en Bogotá (Chicó Reservado - Cra. 11 # 93) y en Medellín (El Poblado - Milla de Oro). Ambas diseñadas bajo estándares de máxima discreción.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline-variant/15 flat no shadows">
+<div class="flex flex-col gap-4 w-full px-5 py-8 pb-24 text-center max-w-lg mx-auto">
+<div class="space-y-1">
+<p class="text-title-md font-title-md text-primary dark:text-inverse-primary tracking-tight">CorpoBello Medical Spa</p>
+<p class="text-label-sm font-label-sm text-secondary">Medicina Estética &amp; Spa Consciente</p>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150 active:opacity-80" href="#">
+          Habilitación MinSalud REPS Código 1100132456-01
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150 active:opacity-80" href="#">
+          Política de Privacidad y Tratamiento de Datos Personales (Ley 1581 de 2012)
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150 active:opacity-80" href="#">
+          Términos del Servicio Clínico
+        </a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150 active:opacity-80" href="https://wa.me/573104567850">
+          Línea Exclusiva Concierge VIP
+        </a>
+</div>
+<p class="text-label-sm font-label-sm text-secondary mt-2">
+        © 2024 CorpoBello Medical Spa Colombia. Todos los derechos reservados.
+      </p>
+</div>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component Anchor - Ergonómica & Móvil) -->
+<nav class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 pb-safe shadow-[0_-4px_20px_rgba(26,36,33,0.06)] dark:shadow-none">
+<!-- Item 1: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-all duration-150 active:scale-95" href="#formulario-cita">
+<span class="material-symbols-outlined text-[22px]" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 2: Proceso -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-all duration-150 active:scale-95" href="#formulario-cita">
+<span class="material-symbols-outlined text-[22px]" data-icon="timeline">timeline</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- Item 3: Casos -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed-dim py-1.5 px-3 hover:text-primary dark:hover:text-inverse-primary transition-all duration-150 active:scale-95" href="#formulario-cita">
+<span class="material-symbols-outlined text-[22px]" data-icon="photo_library">photo_library</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Item 4: Agendar (Active Intent Match for this Landing Page) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-inverse-primary font-semibold py-1.5 px-3 rounded-full bg-secondary-container/50 dark:bg-secondary-container/20 hover:text-primary dark:hover:text-inverse-primary transition-all duration-150 active:scale-95" href="#formulario-cita">
+<span class="material-symbols-outlined text-[22px]" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+</body></html>
