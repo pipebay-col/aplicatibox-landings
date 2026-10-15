@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THX FIT | Medicina Estética &amp; Modelado Corporal · Bogotá &amp; Medellín</title>
+<!-- Material Symbols Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Editorial and Clean Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#b2ccc7",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f2fffb",
+            "secondary-fixed": "#70f8e9",
+            "inverse-surface": "#293231",
+            "surface": "#f2fbf9",
+            "on-background": "#141d1c",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e0eae8",
+            "on-secondary-fixed-variant": "#00504a",
+            "on-surface-variant": "#3e4947",
+            "primary": "#00685d",
+            "on-error-container": "#93000a",
+            "surface-dim": "#d2dcda",
+            "surface-bright": "#f2fbf9",
+            "inverse-on-surface": "#e9f3f1",
+            "on-tertiary-fixed": "#061f1d",
+            "secondary-fixed-dim": "#4fdbcd",
+            "on-secondary-container": "#007168",
+            "secondary": "#006a62",
+            "surface-container-low": "#ecf6f4",
+            "outline": "#6e7a77",
+            "tertiary-fixed": "#cde8e3",
+            "error": "#ba1a1a",
+            "tertiary": "#48605d",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-secondary-fixed": "#00201d",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#74d7c8",
+            "on-tertiary-container": "#f0fffb",
+            "surface-variant": "#dbe5e2",
+            "outline-variant": "#bdc9c6",
+            "on-primary-fixed-variant": "#005048",
+            "secondary-container": "#70f8e9",
+            "on-primary-fixed": "#00201c",
+            "background": "#f2fbf9",
+            "surface-container-highest": "#dbe5e2",
+            "on-surface": "#141d1c",
+            "primary-fixed": "#91f4e4",
+            "tertiary-container": "#607975",
+            "on-tertiary-fixed-variant": "#334b48",
+            "surface-tint": "#006b60",
+            "primary-container": "#008376",
+            "surface-container": "#e6f0ee",
+            "primary-fixed-dim": "#74d7c8"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "margin-desktop": "2.5rem",
+            "margin": "1.25rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "gutter": "1rem",
+            "gutter-mobile": "0.75rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "21px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-shadow-soft {
+      box-shadow: 0 4px 20px -2px rgba(30, 39, 38, 0.05);
+    }
+    .custom-shadow-teal {
+      box-shadow: 0 8px 30px -4px rgba(0, 131, 118, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container min-h-screen">
+<!-- ========================================== -->
+<!-- 1. TOP APP BAR (Shared Component Anchor)    -->
+<!-- ========================================== -->
+<header class="bg-surface/85 dark:bg-inverse-surface/85 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 shadow-sm dark:shadow-none docked full-width top-0 sticky z-40">
+<div class="flex justify-between items-center w-full px-margin max-w-7xl mx-auto h-16">
+<!-- Leading Brand Cluster -->
+<a class="flex items-center gap-2 group active:scale-[0.98] transition-transform duration-150" href="#hero">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md tracking-tight font-semibold text-primary dark:text-primary-fixed">THX FIT</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium -mt-1 hidden sm:block">Medicina Estética &amp; Modelado Corporal</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#metodo">Tratamientos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#beneficios">Resultados</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#faq">FAQ</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-full bg-secondary-container/60 text-on-secondary-container hover:opacity-90 transition-opacity flex items-center justify-center" href="https://wa.me/573212410056?text=Hola%20THX%20FIT,%20deseo%20agendar%20mi%20valoración%20médica" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+</a>
+<a class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-lg text-label-md font-semibold hover:opacity-90 active:scale-[0.98] transition-all shadow-sm" href="#agendar">
+          Agendar
+        </a>
+</div>
+</div>
+</header>
+<main class="w-full max-w-md mx-auto md:max-w-4xl px-margin space-y-space-xl pt-4">
+<!-- ========================================== -->
+<!-- 2. A - ATENCIÓN (Hero Section)             -->
+<!-- ========================================== -->
+<section class="space-y-space-md pt-2" id="hero">
+<!-- Badge superior de credencial real -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/40">
+<span class="material-symbols-outlined text-primary text-base" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide">Habilitación MinSalud REPS · Insumos Certificados INVIMA &amp; FDA</span>
+</div>
+<!-- Titular H1 persuasivo en 3 segundos -->
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface font-semibold tracking-tight">
+        Tu figura más armónica, firme y definida, <span class="italic text-primary">sin cirugías</span> ni incapacidad.
+      </h1>
+<!-- Subtítulo de valor -->
+<p class="font-body-md text-body-md md:font-body-lg md:text-body-lg text-on-surface-variant leading-relaxed">
+        Tratamientos médicos avanzados de bioestimulación dérmica, reducción localizada y tonificación muscular guiada por médicos especialistas en sedes exclusivas de Bogotá y Medellín.
+      </p>
+<!-- Fotografía destacada (Imagen del lounge boutique con la modelo) -->
+<div class="relative rounded-2xl overflow-hidden custom-shadow-teal bg-surface-container-low border border-primary/10">
+<img alt="Paciente THX FIT sonriente en el lounge médico boutique de Bogotá con vista panorámica" class="w-full h-[360px] md:h-[440px] object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XdcSJBnJKNiWbDXLFxKRuvcCaS7cEUfxj0L6OR0ffMjaBJMqDQcsO1HWa0eSX-YC5zusUPl8B6I-IaCExDhWOIS9WkxT6uR66kiE_TKcJG2H3av009bpcYcyvznsu3YHnAZ0e0JAh8VvHtA6cKuaQos85khElQ6dEZhsiiZPkU79CEWleadpVVifjy535CXQwu9hF7yAd8QV2UFnnWn-Dpw1EnYFezXu-DiooocnqsXMaqBxb527T-3Js"/>
+<!-- Overlay Card Flotante -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-3.5 rounded-xl border border-outline-variant/30 flex items-center gap-3 shadow-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-bold truncate">Resultado Clínico Verificado</p>
+<p class="font-body-sm text-body-sm text-primary font-medium">100% Firmeza, Contorno y Luminosidad</p>
+</div>
+<span class="inline-flex items-center gap-0.5 text-secondary font-bold text-xs bg-surface-container px-2 py-1 rounded-full shrink-0">
+            ★ 4.9
+          </span>
+</div>
+</div>
+<!-- CTA Principal de alto impacto -->
+<div class="space-y-2 pt-2">
+<a class="w-full bg-primary-container text-on-primary-container h-[52px] rounded-lg font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 shadow-md hover:bg-secondary active:scale-[0.98] transition-all" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="flex items-center justify-center gap-2 text-center text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="schedule">schedule</span>
+<span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+</div>
+</div>
+<!-- Tira de 3 píldoras de valor -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Tecnología INVIMA &amp; FDA</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="stethoscope">stethoscope</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Diagnóstico 1 a 1</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl border border-outline-variant/30 text-center flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="apartment">apartment</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight">Sedes Boutique VIP</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. I - INTERÉS (Dolor & Solución THX FIT)  -->
+<!-- ========================================== -->
+<section class="space-y-space-lg" id="metodo">
+<!-- Tarjeta de dolor empático -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-2xl p-5 space-y-3">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" data-icon="help_center">help_center</span>
+<span class="font-label-md text-label-md tracking-wider">COMPRENSIÓN MÉDICA</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+          ¿Cansada de métodos invasivos dolorosos o de pagar tratamientos que no dan resultados reales?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Comprendemos la frustración de enfrentar cicatrices, semanas de incapacidad dolorosa o invertir en cabinas estéticas genéricas sin rigor médico. En THX FIT combinamos biotecnología regenerativa aplicada por médicos colegiados para modelar tu figura con delicadeza, sin traumatismos.
+        </p>
+</div>
+<!-- El Método THX FIT en 3 Pasos -->
+<div class="space-y-4">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest font-bold">PROTOCOLO MÉDICO AVANZADO</span>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">El Método THX FIT en 3 Fases</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sutil, progresivo y anatómicamente armónico.</p>
+</div>
+<div class="space-y-3">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 text-primary flex items-center justify-center font-bold text-base shrink-0">
+              01
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Valoración y Mapeo Cutáneo 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico clínico de flacidez, tejido graso localizado y tono fibrilar por médico especialista.</p>
+<div class="pt-1 inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza médica y plan exacto desde el primer minuto.</span>
+</div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 text-primary flex items-center justify-center font-bold text-base shrink-0">
+              02
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Plan Médico Personalizado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Micro-dosis estratégicas de bioestimuladores de colágeno (Radiesse/Sculptra) y aparatología focalizada médica.</p>
+<div class="pt-1 inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Presupuesto cerrado y honesto, sin costos imprevistos.</span>
+</div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow-soft flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 text-primary flex items-center justify-center font-bold text-base shrink-0">
+              03
+            </div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Aplicación Guiada y Tonificación Visible</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Procedimientos ambulatorios indoloros con confort sensorial en suites privadas con vista relajante.</p>
+<div class="pt-1 inline-flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Reincorporación inmediata a tu rutina social y laboral.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Enlace interactivo a WhatsApp para dudas particulares -->
+<a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container border border-outline-variant/30 text-on-surface hover:bg-surface-container-high transition-colors" href="https://wa.me/573212410056?text=Hola,%20quisiera%20consultar%20dudas%20específicas%20sobre%20el%20método%20THX%20FIT" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="forum">forum</span>
+<span class="font-body-sm text-body-sm font-medium">¿Tienes dudas sobre tu caso particular?</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold inline-flex items-center gap-0.5">
+            Consultar con médica
+            <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</span>
+</a>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. D - DESEO (Autoridad, Beneficios & Pruebas) -->
+<!-- ========================================== -->
+<section class="space-y-space-lg" id="beneficios">
+<!-- Grid de Métricas de Autoridad -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+8 Años</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Trayectoria Médica Exclusiva</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">+5.200</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Pacientes Satisfechos</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Insumos INVIMA &amp; FDA</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">4.9 ★</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Google Reviews Colombia</p>
+</div>
+</div>
+<!-- Sección "Lo que experimentas en tu cuerpo" -->
+<div class="space-y-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest font-bold">TRANSFORMACIÓN INTEGRAL</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Lo que experimentas en tu cuerpo</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20 flex gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="spa">spa</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm">Armonía y sutileza anatómica</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Resaltamos tus curvas naturales sin generar volúmenes exagerados ni apariencia artificial.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20 flex gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm">Bioestimulación profunda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Reactiva colágeno tipo I y elastina para devolver turgencia y suavidad dérmica sostenida.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20 flex gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm">Cero días de incapacidad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Continúa con tu agenda profesional o eventos sociales el mismo día de tu sesión.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/20 flex gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-sm">Acompañamiento VIP continuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Seguimiento fotográfico y médico evolutivo personalizado en cada etapa de tu proceso.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Historias reales de pacientes</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Verificadas</span>
+</div>
+<!-- Review Card 1 (Bogotá) -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow-soft space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Camila R. · 34 años</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sede Chicó (Bogotá) · Bioestimulación &amp; Abdomen</p>
+</div>
+<div class="text-secondary font-bold text-xs tracking-wider">★★★★★</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Le temía muchísimo a la liposucción tradicional por el dolor y los riesgos. Con el protocolo de THX FIT reduje cintura y recuperé la firmeza tras mi embarazo sin un solo día de reposo. La atención en Chicó es un lujo absoluto."
+          </p>
+</div>
+<!-- Review Card 2 (Medellín) -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 custom-shadow-soft space-y-2">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Mariana G. · 29 años</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sede El Poblado (Medellín) · Tonificación y Glúteos</p>
+</div>
+<div class="text-secondary font-bold text-xs tracking-wider">★★★★★</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "La doctora fue súper sincera en la valoración; no me vendió cosas innecesarias sino exactamente lo que mi cuerpo requería. En 4 sesiones la celulitis disminuyó radicalmente y mis glúteos lucen tonificados."
+          </p>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. A - ACCIÓN (Lead Generation & Booking)   -->
+<!-- ========================================== -->
+<section class="bg-surface-container-lowest border-2 border-primary/20 rounded-3xl p-5 md:p-8 custom-shadow-teal space-y-5" id="agendar">
+<!-- Alerta de escasez honesta -->
+<div class="bg-surface-container p-3 rounded-xl border border-primary/20 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="event_busy">event_busy</span>
+<p class="font-label-md text-label-md text-on-surface">
+<span class="text-primary font-bold">Cupos limitados esta semana:</span> Agenda tu diagnóstico médico personalizado en Bogotá o Medellín.
+        </p>
+</div>
+<div class="space-y-1 text-center">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Agenda tu Valoración Clínica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin compromiso. Un médico especialista evaluará tu piel y estructura corporal.</p>
+</div>
+<!-- Formulario de 3 campos -->
+<form class="space-y-3.5" onsubmit="event.preventDefault(); alert('¡Gracias! Una especialista de THX FIT se comunicará contigo vía WhatsApp en los próximos minutos.');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">Nombre y Apellido</label>
+<input class="w-full h-12 px-3.5 rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm placeholder:text-outline" placeholder="Ej. Carolina Montoya" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">WhatsApp o Celular (+57)</label>
+<input class="w-full h-12 px-3.5 rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm placeholder:text-outline" placeholder="Ej. 310 000 0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1 font-semibold">Procedimiento de tu interés</label>
+<select class="w-full h-12 px-3.5 rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+<option value="bioestimulacion">Bioestimulación de Colágeno (Firmeza)</option>
+<option value="reduccion">Reducción y Moldeamiento Corporal</option>
+<option value="facial">Rejuvenecimiento Facial y Cuello</option>
+<option value="integral">Valoración Integral THX FIT</option>
+</select>
+</div>
+<button class="w-full h-[52px] bg-primary-container text-on-primary-container font-headline-sm text-headline-sm rounded-lg font-bold shadow-md hover:bg-secondary active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="sparkles">auto_awesome</span>
+</button>
+</form>
+<!-- Botón directo de WhatsApp -->
+<div class="relative flex py-1 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-3 text-on-surface-variant font-label-sm text-label-sm">o también</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<a class="w-full h-12 border-2 border-primary text-primary font-label-md text-label-md font-bold rounded-lg flex items-center justify-center gap-2 hover:bg-surface-container transition-colors" href="https://wa.me/573212410056?text=Hola%20THX%20FIT,%20quiero%20chatear%20directo%20para%20conocer%20disponibilidad" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 321 241 0056)</span>
+</a>
+<!-- Microcopy de privacidad -->
+<div class="flex items-start gap-2 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-primary shrink-0 mt-0.5" data-icon="lock">lock</span>
+<span>Tus datos médicos están protegidos bajo secreto profesional y Ley 1581 de 2012 (Habeas Data). Cero spam garantizado.</span>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. FAQ & Preguntas Frecuentes Clínicas     -->
+<!-- ========================================== -->
+<section class="space-y-4" id="faq">
+<div class="text-center space-y-1">
+<span class="font-label-sm text-label-sm text-primary tracking-widest font-bold">TRANSPARENCIA TOTAL</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Preguntas Frecuentes</h3>
+</div>
+<div class="space-y-2.5">
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface font-semibold text-sm cursor-pointer list-none">
+<span>¿Los procedimientos generan dolor o incapacidad médica?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            No. Nuestros tratamientos son 100% ambulatorios. Utilizamos anestesia tópica de grado médico y dispositivos de confort que minimizan cualquier molestia. Puedes reincorporarte a tus labores inmediatamente al salir de la clínica.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface font-semibold text-sm cursor-pointer list-none">
+<span>¿Cuánto tiempo duran los resultados de bioestimulación?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            A diferencia de rellenos temporales simples, los bioestimuladores promueven la producción de tu propio colágeno natural, con efectos visibles que perduran entre 18 y 24 meses según el metabolismo y cuidados de cada paciente.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface font-semibold text-sm cursor-pointer list-none">
+<span>¿Cómo garantizan que el resultado se vea natural?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            En THX FIT no creemos en patrones repetitivos ni facciones exageradas. Mapeamos tu biomecánica corporal para aplicar micro-dosis armónicas que embellecen y reafirman sin distorsionar tu esencia única.
+          </p>
+</details>
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface font-semibold text-sm cursor-pointer list-none">
+<span>¿Dónde están ubicadas las sedes clínicas?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 pt-2 border-t border-outline-variant/20 leading-relaxed">
+            Contamos con consultorios médicos boutique en las zonas más exclusivas: en Bogotá sobre el corredor de El Chicó (Calle 93) y en Medellín en El Poblado (Milla de Oro), con parqueadero privado y máxima discreción.
+          </p>
+</details>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- 7. FOOTER (Shared Component Anchor)        -->
+<!-- ========================================== -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/30 w-full mb-16 mt-space-xl">
+<div class="flex flex-col items-center justify-center text-center w-full px-margin py-space-xl max-w-7xl mx-auto space-y-4">
+<!-- Logo in footer -->
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline-md text-headline-md font-semibold text-primary dark:text-primary-fixed">THX FIT</span>
+</div>
+<!-- Ubicaciones físicas certificadas -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-on-surface-variant text-body-sm font-body-sm max-w-md">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg border border-outline-variant/20">
+<strong class="text-on-surface block font-semibold">Sede Bogotá D.C.</strong>
+<span>El Chicó · Calle 93 · Consultorios Médicos VIP</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg border border-outline-variant/20">
+<strong class="text-on-surface block font-semibold">Sede Medellín</strong>
+<span>El Poblado · Milla de Oro · Torre Médica</span>
+</div>
+</div>
+<!-- Links Legales exactos del JSON -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors underline" href="#terminos">Términos de Servicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors underline" href="#privacidad">Aviso de Privacidad Ley 1581 Habeas Data</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors underline" href="#habilitacion">Habilitación Sanitaria</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors underline" href="#contacto">Contacto Médico</a>
+</div>
+<!-- Copyright text exacto del JSON -->
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-2">
+        © 2024 THX FIT Colombia S.A.S. Todos los derechos reservados. Habilitación MinSalud &amp; Registro Sanitario INVIMA.
+      </p>
+</div>
+</footer>
+<!-- ========================================== -->
+<!-- 8. BOTTOM NAV BAR (Shared Component Anchor)-->
+<!-- ========================================== -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter py-2 max-w-md mx-auto bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md border-t border-outline-variant/30 dark:border-outline/20 shadow-lg dark:shadow-none">
+<!-- Item 1: Inicio -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary transition-colors active:scale-[0.95]" href="#hero">
+<span class="material-symbols-outlined text-2xl" data-icon="spa">spa</span>
+<span class="font-label-sm text-label-sm mt-0.5">Inicio</span>
+</a>
+<!-- Item 2: Tratamientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary transition-colors active:scale-[0.95]" href="#metodo">
+<span class="material-symbols-outlined text-2xl" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- Item 3: Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant py-1 hover:text-primary transition-colors active:scale-[0.95]" href="#beneficios">
+<span class="material-symbols-outlined text-2xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-sm text-label-sm mt-0.5">Resultados</span>
+</a>
+<!-- Item 4: Agendar (Active intent for booking landing) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/60 dark:bg-primary-container text-on-secondary-container dark:text-on-primary-container rounded-full px-3 py-1 shadow-sm active:scale-[0.95]" href="#agendar">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-sm text-label-sm font-bold mt-0.5">Agendar</span>
+</a>
+</nav>
+</body></html>
