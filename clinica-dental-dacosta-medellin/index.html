@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clínica Dental Dacosta Medellín · Odontología Biomimética y Alta Estética</title>
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#008376',
+              tealDark: '#005f56',
+              tealDeep: '#00423c',
+              tealLight: '#e6f7f4',
+              tealSurface: '#f0fbf8',
+              cream: '#faf9f6',
+              surface: '#ffffff',
+              dark: '#14221f',
+              muted: '#526661',
+              border: '#dbe7e4',
+              gold: '#c59f60'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .font-serif-italic { font-family: 'Playfair Display', Georgia, serif; font-style: italic; }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-teal/20 selection:text-brand-tealDeep min-h-screen pb-24">
+
+  <!-- ================= TOP APP BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-border/60 transition-all">
+    <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-full bg-brand-tealLight flex items-center justify-center text-brand-teal">
+          <span class="material-symbols-outlined text-xl">dentistry</span>
+        </div>
+        <div>
+          <span class="font-serif text-lg font-bold tracking-tight text-brand-dark block leading-none">Clínica Dacosta</span>
+          <span class="text-[10px] text-brand-muted tracking-wider uppercase font-semibold">El Poblado · Medellín</span>
+        </div>
+      </div>
+      <a href="#contacto" class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-brand-teal text-white rounded-full text-xs font-semibold tracking-wide hover:bg-brand-tealDark active:scale-95 transition-all shadow-sm">
+        <span class="material-symbols-outlined text-sm">calendar_month</span>
+        <span>Agendar</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT (AIDA FUNNEL) ================= -->
+  <main class="max-w-md mx-auto pt-20 px-4 space-y-12">
+
+    <!-- ================= 1. ATENCIÓN (HERO SECTION) ================= -->
+    <section class="pt-2 space-y-5">
+      <!-- Badge superior de credencial real -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-tealLight border border-brand-teal/20 text-brand-tealDeep shadow-sm">
+        <span class="material-symbols-outlined text-sm text-brand-teal">verified</span>
+        <span class="text-[11px] font-semibold tracking-wide uppercase">
+          MinSalud REPS #050012389101 · El Poblado, Medellín
+        </span>
+      </div>
+
+      <!-- Titular H1 de beneficio claro en 3 segundos -->
+      <h1 class="font-serif text-3xl sm:text-[34px] leading-[1.22] font-semibold text-brand-dark tracking-tight">
+        Tu nueva sonrisa, <span class="font-serif-italic text-brand-teal">natural</span> y diseñada para durar toda la vida en Medellín.
+      </h1>
+
+      <!-- Subtítulo específico del resultado -->
+      <p class="text-sm sm:text-base text-brand-muted leading-relaxed">
+        Carillas cerámicas ultrafinas E-max, lentes de contacto dental y diseño de sonrisa biomimético sin desgastes agresivos ni dolor. Armonía facial guiada por tecnología digital 3D.
+      </p>
+
+      <!-- Fotografía de resultado clínico auténtico -->
+      <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-md bg-brand-surface group">
+        <div class="aspect-[4/3] w-full relative">
+          <img 
+            src="https://lh3.googleusercontent.com/aida/AEtjO1VU9fgC-sRhmTB0RhuJ_ClPEUaap9Z2KYBdIWcTEXYr7zS-OE6xmVSuJqxKk14aKxlVUWJRpM_tMRgBFd0LDeRdqDANnDbtkCcc5OTdt8lZjLSmBdfQqGndOsM_sRYKSXKy86d5Zn1NjGkWbMqvD8GazO3t_uQNB_ADqHkvGr_YPJSNWJgp6S2_dM1TZa_YJw3Otq4PMdB2lz0dnUpS9hDs8-HI0hHpwyFL0qAIS6vMPUHak_GOMCz6VIs" 
+            alt="Resultado clínico diseño de sonrisa natural en Clínica Dental Dacosta Medellín" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          
+          <!-- Badge sobre la imagen -->
+          <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md p-3 rounded-xl border border-brand-border/60 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-tealLight text-brand-teal flex items-center justify-center">
+                <span class="material-symbols-outlined text-base">auto_awesome</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-dark">100% Cerámica E-max Natural</p>
+                <p class="text-[11px] text-brand-muted">Cero desgaste agresivo · Enfoque biomimético</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-brand-teal text-white font-semibold px-2 py-0.5 rounded-full">Medellín</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Único de Alto Contraste -->
+      <div class="space-y-2 pt-1">
+        <a href="#contacto" class="w-full flex items-center justify-center gap-2.5 py-4 px-6 bg-brand-teal text-white rounded-xl font-bold text-base tracking-wide shadow-lg shadow-brand-teal/25 hover:bg-brand-tealDark active:scale-[0.98] transition-all">
+          <span>Agendar ahora mi valoración clínica</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+        <!-- Micro-credencial -->
+        <p class="text-center text-xs text-brand-muted flex items-center justify-center gap-1.5 pt-0.5">
+          <span class="text-brand-teal font-bold text-sm">⚡</span>
+          <span>Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa</span>
+        </p>
+      </div>
+
+      <!-- 3 Pill Badges de Credenciales Clave -->
+      <div class="grid grid-cols-3 gap-2 pt-2 border-t border-b border-brand-border/70 py-3">
+        <div class="text-center flex flex-col items-center">
+          <span class="material-symbols-outlined text-brand-teal text-xl mb-1">biotech</span>
+          <span class="text-[11px] font-bold text-brand-dark leading-tight">Tecnología 3D</span>
+          <span class="text-[10px] text-brand-muted">Escáner sin pastas</span>
+        </div>
+        <div class="text-center flex flex-col items-center border-x border-brand-border/70 px-1">
+          <span class="material-symbols-outlined text-brand-teal text-xl mb-1">shield_with_heart</span>
+          <span class="text-[11px] font-bold text-brand-dark leading-tight">Preserva 98%</span>
+          <span class="text-[10px] text-brand-muted">Esmalte biológico</span>
+        </div>
+        <div class="text-center flex flex-col items-center">
+          <span class="material-symbols-outlined text-brand-teal text-xl mb-1">location_on</span>
+          <span class="text-[11px] font-bold text-brand-dark leading-tight">El Poblado</span>
+          <span class="text-[10px] text-brand-muted">San Fernando Plaza</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. INTERÉS (EL PROBLEMA & PROCESO 3 PASOS) ================= -->
+    <section class="space-y-6">
+      <!-- Tarjeta de Empatía con el Problema -->
+      <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-sm space-y-3">
+        <div class="inline-flex items-center gap-1.5 text-rose-700 bg-rose-50 px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider">
+          <span class="material-symbols-outlined text-sm">error</span>
+          <span>El dilema más común del paciente</span>
+        </div>
+        <h2 class="font-serif text-2xl font-semibold text-brand-dark leading-tight">
+          ¿Temes que tu diseño de sonrisa se vea artificial, "dientes de tiza" o desgaste tus dientes sanos?
+        </h2>
+        <p class="text-sm text-brand-muted leading-relaxed">
+          Comprendemos tu inquietud. En la odontología convencional se suele limar agresivamente el esmalte sano para cementar bloques opacos y planos. En <strong class="text-brand-dark font-semibold">Clínica Dental Dacosta</strong> aplicamos <strong class="text-brand-teal font-semibold">odontología biomimética suiza</strong>: preservamos hasta el 98% de tu estructura dental viva, recreando la translucidez, textura vítrea y mamelones de un diente natural joven.
+        </p>
+
+        <!-- Comparativa rápida: Tradicional vs Dacosta -->
+        <div class="pt-2 space-y-2">
+          <div class="p-3 rounded-xl bg-rose-50/60 border border-rose-100 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-rose-600 text-lg flex-shrink-0 mt-0.5">close</span>
+            <p class="text-xs text-rose-900 leading-snug">
+              <strong class="font-semibold">Odontología tradicional:</strong> Desgaste mutilante a muñón, dientes hiper-blancos que parecen chicles y sensibilidad al frío.
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-brand-tealLight/60 border border-brand-teal/20 flex items-start gap-2.5">
+            <span class="material-symbols-outlined text-brand-teal text-lg flex-shrink-0 mt-0.5">check_circle</span>
+            <p class="text-xs text-brand-tealDeep leading-snug">
+              <strong class="font-semibold">Protocolo Dacosta Biomimético:</strong> Micro-láminas cerámicas individuales de 0.3 mm, acople anatómico perfecto y cero dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proceso en 3 Pasos con Beneficios Tangibles -->
+      <div class="space-y-4">
+        <div class="text-center space-y-1">
+          <span class="text-[11px] font-bold tracking-widest uppercase text-brand-teal">Protocolo Seguro y Predecible</span>
+          <h3 class="font-serif text-2xl font-semibold text-brand-dark">Tu nueva sonrisa en 3 pasos</h3>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Paso 01 -->
+          <div class="bg-white p-5 rounded-2xl border border-brand-border shadow-sm flex items-start gap-4">
+            <span class="font-serif text-3xl font-bold text-brand-teal leading-none pt-1">01</span>
+            <div class="space-y-1">
+              <h4 class="font-bold text-base text-brand-dark">Valoración &amp; Escaneo Digital 3D</h4>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Sin pastas incómodas ni náuseas. Mapeamos milimétricamente tus facciones y dientes para diseñar en pantalla tu sonrisa ideal.
+              </p>
+              <div class="inline-flex items-center gap-1 text-[11px] font-semibold text-brand-teal pt-1">
+                <span class="material-symbols-outlined text-sm">visibility</span>
+                <span>Beneficio: Ves el resultado final en 3D antes de iniciar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 02 -->
+          <div class="bg-white p-5 rounded-2xl border border-brand-border shadow-sm flex items-start gap-4">
+            <span class="font-serif text-3xl font-bold text-brand-teal leading-none pt-1">02</span>
+            <div class="space-y-1">
+              <h4 class="font-bold text-base text-brand-dark">Plan Personalizado &amp; Prueba Mock-up</h4>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Colocamos una maqueta temporal sobre tus dientes para que te mires al espejo, hables y valides longitud, color y armonía con tus labios.
+              </p>
+              <div class="inline-flex items-center gap-1 text-[11px] font-semibold text-brand-teal pt-1">
+                <span class="material-symbols-outlined text-sm">thumb_up</span>
+                <span>Beneficio: Cero incertidumbre; pruebas tu sonrisa real en boca</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 03 -->
+          <div class="bg-white p-5 rounded-2xl border border-brand-border shadow-sm flex items-start gap-4">
+            <span class="font-serif text-3xl font-bold text-brand-teal leading-none pt-1">03</span>
+            <div class="space-y-1">
+              <h4 class="font-bold text-base text-brand-dark">Sonrisa Definitiva con Cerámica E-max</h4>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Cementación microscópica de lentes cerámicos Ivoclar Vivadent de altísima resistencia. Brillo vítreo inmune a café, vino o té.
+              </p>
+              <div class="inline-flex items-center gap-1 text-[11px] font-semibold text-brand-teal pt-1">
+                <span class="material-symbols-outlined text-sm">verified</span>
+                <span>Beneficio: Sonrisa impecable, resistente y natural por más de 15 años</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enlace intermedio a WhatsApp -->
+        <div class="text-center pt-1">
+          <a href="https://wa.me/573112909972?text=Hola%20Cl%C3%ADnica%20Dacosta,%20quisiera%20hacer%20una%20consulta%20previa%20sobre%20mi%20caso" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-brand-teal font-semibold hover:text-brand-tealDark underline underline-offset-4">
+            <span class="material-symbols-outlined text-sm">chat</span>
+            <span>¿Tienes dudas de tu caso? Chatea con nuestro equipo clínico</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. DESEO (MÉTRICAS, BENEFICIOS Y TESTIMONIOS) ================= -->
+    <section class="space-y-6">
+      <!-- Métricas de Confianza (Bento grid) -->
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-sm text-center">
+          <span class="font-serif text-3xl font-bold text-brand-teal block">+14 Años</span>
+          <span class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider mt-0.5 block">Trayectoria en El Poblado</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-sm text-center">
+          <span class="font-serif text-3xl font-bold text-brand-teal block">+4,800</span>
+          <span class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider mt-0.5 block">Sonrisas Diseñadas</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-sm text-center">
+          <span class="font-serif text-3xl font-bold text-brand-teal block">99.4%</span>
+          <span class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider mt-0.5 block">Satisfacción Auditada</span>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-sm text-center">
+          <div class="flex items-center justify-center gap-1 text-brand-teal">
+            <span class="font-serif text-3xl font-bold">100%</span>
+          </div>
+          <span class="text-[11px] font-semibold text-brand-muted uppercase tracking-wider mt-0.5 block">Porcelana E-max Ivoclar</span>
+        </div>
+      </div>
+
+      <!-- Beneficios Enfocados en RESULTADO -->
+      <div class="space-y-3">
+        <h3 class="font-serif text-2xl font-semibold text-brand-dark text-center">
+          Diseñada para tu estilo de vida sin restricciones
+        </h3>
+
+        <div class="space-y-2.5">
+          <!-- Beneficio 1 -->
+          <div class="p-4 bg-white rounded-2xl border border-brand-border shadow-sm flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-xl">sentiment_satisfied</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-brand-dark">Armonía y sutileza absoluta</h4>
+              <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+                Lentes calibrados minuciosamente a tu tono de piel, labios y facciones. Nadie notará que llevas carillas; solo percibirán una sonrisa fresca, luminosa y elegante.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="p-4 bg-white rounded-2xl border border-brand-border shadow-sm flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-xl">shield</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-brand-dark">Cero desgaste agresivo ni dolor</h4>
+              <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+                Preservación estricta del nervio y de la vitalidad dental. No tendrás tallados mutilantes ni quedarás expuesto a sensibilidad extrema al frío o al calor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="p-4 bg-white rounded-2xl border border-brand-border shadow-sm flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-xl">coffee</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-brand-dark">Cerámica vítrea antimanchas</h4>
+              <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+                Estructura cristalina sellada que repele el café colombiano, el vino tinto o el té negro. Tu tono y brillo se mantendrán inalterables año tras año.
+              </p>
+            </div>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="p-4 bg-white rounded-2xl border border-brand-border shadow-sm flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-xl">mood</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-brand-dark">Seguridad plena al reír y hablar</h4>
+              <p class="text-xs text-brand-muted leading-relaxed mt-0.5">
+                Recupera la soltura de reírte a carcajadas en fotos familiares, reuniones de negocios o citas sin taparte la boca por inseguridad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonios Breves y Reales -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold tracking-widest uppercase text-brand-teal">Testimonios Reales</span>
+          <span class="text-xs text-brand-muted flex items-center gap-1">
+            <span class="text-amber-500 font-bold">★ 4.9/5.0</span> en Google Reviews
+          </span>
+        </div>
+
+        <!-- Testimonio 1 -->
+        <div class="bg-white p-4.5 rounded-2xl border border-brand-border shadow-sm space-y-2 p-4">
+          <div class="flex text-amber-500 text-xs">
+            ★★★★★
+          </div>
+          <p class="text-xs text-brand-dark italic leading-relaxed">
+            "Tenía pánico de que mis dientes parecieran postizos o de perder mi esmalte original. El equipo en San Fernando Plaza me explicó la técnica biomimética y con el mock-up me dio absoluta paz mental. Quedó idéntico a mis facciones naturales."
+          </p>
+          <div class="flex items-center justify-between pt-1 text-[11px]">
+            <span class="font-bold text-brand-tealDeep">Mariana Restrepo C.</span>
+            <span class="text-brand-muted">Empresaria · El Poblado, Medellín</span>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="bg-white p-4.5 rounded-2xl border border-brand-border shadow-sm space-y-2 p-4">
+          <div class="flex text-amber-500 text-xs">
+            ★★★★★
+          </div>
+          <p class="text-xs text-brand-dark italic leading-relaxed">
+            "Viajé desde Miami específicamente para mi diseño con carillas E-max. El estándar de la clínica supera por mucho a lo que he visto en Estados Unidos. En solo 5 días salí sonriendo feliz a mis reuniones de trabajo."
+          </p>
+          <div class="flex items-center justify-between pt-1 text-[11px]">
+            <span class="font-bold text-brand-tealDeep">David Ospina M.</span>
+            <span class="text-brand-muted">Paciente Internacional · Miami, FL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. ACCIÓN (FORMULARIO 3 CAMPOS + WHATSAPP) ================= -->
+    <section class="space-y-4" id="contacto">
+      <!-- Banner de Escasez / Cupos Limitados -->
+      <div class="bg-amber-50 border border-amber-200/80 rounded-xl p-3 flex items-center gap-2.5 text-amber-900">
+        <span class="material-symbols-outlined text-amber-600 text-xl flex-shrink-0">event_available</span>
+        <p class="text-xs leading-tight">
+          <strong class="font-bold">Cupos clínicos limitados esta semana en El Poblado:</strong> Atención personalizada para asegurar diagnóstico 1 a 1 sin carreras.
+        </p>
+      </div>
+
+      <!-- Card del Formulario de Conversión Minimalista -->
+      <div class="bg-white p-6 rounded-2xl border border-brand-border shadow-md space-y-5">
+        <div class="text-center space-y-1">
+          <span class="text-[11px] font-bold tracking-widest uppercase text-brand-teal">Primer Paso</span>
+          <h3 class="font-serif text-2xl font-semibold text-brand-dark">Inicia el diseño de tu nueva sonrisa</h3>
+          <p class="text-xs text-brand-muted">
+            Completa tus datos para coordinar tu escaneo 3D y diagnóstico guiado por especialista en nuestra sede boutique.
+          </p>
+        </div>
+
+        <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden');">
+          <!-- Campo 1: Nombre y Apellido -->
+          <div class="space-y-1">
+            <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-brand-dark">
+              Nombre y Apellido *
+            </label>
+            <div class="relative">
+              <span class="material-symbols-outlined absolute left-3.5 top-3 text-brand-muted text-lg">person</span>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required 
+                placeholder="Ej. Camila Morales" 
+                class="w-full bg-brand-cream/60 border border-brand-border rounded-xl pl-10 pr-4 py-3 text-sm text-brand-dark placeholder:text-brand-muted/70 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal focus:outline-none transition-colors"
+              />
+            </div>
+          </div>
+
+          <!-- Campo 2: WhatsApp o Celular -->
+          <div class="space-y-1">
+            <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-brand-dark">
+              WhatsApp o Celular (+57) *
+            </label>
+            <div class="relative">
+              <span class="absolute left-3.5 top-3 text-xs font-bold text-brand-tealDeep flex items-center gap-1">
+                🇨🇴 +57
+              </span>
+              <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                required 
+                placeholder="311 290 9972" 
+                class="w-full bg-brand-cream/60 border border-brand-border rounded-xl pl-16 pr-4 py-3 text-sm text-brand-dark placeholder:text-brand-muted/70 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal focus:outline-none transition-colors"
+              />
+            </div>
+          </div>
+
+          <!-- Campo 3: ¿Qué tratamiento te interesa? -->
+          <div class="space-y-1">
+            <label for="tratamiento" class="block text-xs font-bold uppercase tracking-wider text-brand-dark">
+              ¿Qué te interesa? *
+            </label>
+            <div class="relative">
+              <select 
+                id="tratamiento" 
+                name="tratamiento" 
+                class="w-full bg-brand-cream/60 border border-brand-border rounded-xl px-3.5 py-3 text-sm text-brand-dark focus:border-brand-teal focus:ring-1 focus:ring-brand-teal focus:outline-none transition-colors appearance-none"
+              >
+                <option value="carillas-emax">Carillas Cerámicas E-max (Máxima Estética)</option>
+                <option value="lentes-contacto">Lentes de Contacto Dental (Cero Desgaste)</option>
+                <option value="diseno-3d">Diseño de Sonrisa Digital 3D Completo</option>
+                <option value="valoracion-general">Valoración y Diagnóstico con Especialista</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-3.5 top-3.5 text-brand-muted pointer-events-none text-lg">expand_more</span>
+            </div>
+          </div>
+
+          <!-- Botón de Conversión Primario -->
+          <button type="submit" class="w-full py-4 px-6 bg-brand-teal text-white rounded-xl font-bold text-base tracking-wide shadow-md shadow-brand-teal/30 hover:bg-brand-tealDark active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+            <span>Quiero mi valoración clínica ✨</span>
+          </button>
+        </form>
+
+        <!-- Mensaje de confirmación local interactivo -->
+        <div id="formSuccess" class="hidden p-4 rounded-xl bg-brand-tealLight border border-brand-teal/30 text-center space-y-1">
+          <p class="text-xs font-bold text-brand-tealDeep uppercase">¡Solicitud recibida correctamente!</p>
+          <p class="text-xs text-brand-muted">Una coordinadora clínica de El Poblado se comunicará contigo vía WhatsApp en menos de 24 horas.</p>
+        </div>
+
+        <!-- Separador -->
+        <div class="relative flex py-1 items-center">
+          <div class="flex-grow border-t border-brand-border"></div>
+          <span class="flex-shrink mx-3 text-[11px] font-semibold text-brand-muted uppercase tracking-wider">o si prefieres</span>
+          <div class="flex-grow border-t border-brand-border"></div>
+        </div>
+
+        <!-- Botón de WhatsApp Directo Requerido -->
+        <a 
+          href="https://wa.me/573112909972?text=Hola%20Cl%C3%ADnica%20Dental%20Dacosta%20Medell%C3%ADn,%20deseo%20agendar%20mi%20cita%20de%20valoraci%C3%B3n%20para%20dise%C3%B1o%20de%20sonrisa" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-full py-3.5 px-4 bg-emerald-50 text-emerald-800 border border-emerald-300 hover:bg-emerald-100 rounded-xl font-bold text-sm tracking-wide flex items-center justify-center gap-2 transition-colors active:scale-[0.98]"
+        >
+          <span class="material-symbols-outlined text-emerald-600 text-lg">chat</span>
+          <span>Chatear directo al WhatsApp (+57 311 290 9972)</span>
+        </a>
+
+        <!-- Aviso de Privacidad Formal -->
+        <p class="text-center text-[11px] text-brand-muted leading-tight pt-1">
+          🔒 Tus datos están 100% protegidos bajo secreto médico profesional y la Ley 1581 de 2012 de Habeas Data de Colombia. No compartimos tu información con terceros y solo te contactamos con fines de tu cita clínica.
+        </p>
+      </div>
+
+      <!-- Preguntas Frecuentes Desplegables -->
+      <div class="bg-white p-5 rounded-2xl border border-brand-border shadow-sm space-y-3">
+        <h4 class="font-serif text-lg font-semibold text-brand-dark text-center">Preguntas Frecuentes</h4>
+        
+        <div class="space-y-2 text-xs">
+          <details class="group p-3 rounded-xl bg-brand-cream/70 border border-brand-border/60">
+            <summary class="font-semibold text-brand-dark flex items-center justify-between cursor-pointer list-none">
+              <span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+              <span class="material-symbols-outlined text-brand-teal text-base group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="mt-2 text-brand-muted leading-relaxed">
+              En Clínica Dacosta priorizamos la odontología biomimética conservadora: no realizamos limados agresivos ni muñones. Las carillas de porcelana ultrafinas (0.3 mm) se adhieren químicamente con preparación micro-invasiva que respeta tu esmalte original.
+            </p>
+          </details>
+
+          <details class="group p-3 rounded-xl bg-brand-cream/70 border border-brand-border/60">
+            <summary class="font-semibold text-brand-dark flex items-center justify-between cursor-pointer list-none">
+              <span>¿Cuánto tiempo toma el tratamiento completo en Medellín?</span>
+              <span class="material-symbols-outlined text-brand-teal text-base group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="mt-2 text-brand-muted leading-relaxed">
+              Gracias a nuestro laboratorio digital y escaneo intraoral 3D, el proceso toma entre 2 a 3 citas distribuidas en 4 a 6 días hábiles. Ideal para pacientes locales y quienes viajan desde el exterior.
+            </p>
+          </details>
+
+          <details class="group p-3 rounded-xl bg-brand-cream/70 border border-brand-border/60">
+            <summary class="font-semibold text-brand-dark flex items-center justify-between cursor-pointer list-none">
+              <span>¿Las carillas cerámicas se manchan con café o vino?</span>
+              <span class="material-symbols-outlined text-brand-teal text-base group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <p class="mt-2 text-brand-muted leading-relaxed">
+              No. A diferencia de las resinas compuestas, la porcelana vítrea E-max no tiene microporosidades, por lo que es completamente impermeable y no absorbe pigmentos de café, té, frutos rojos ni vino.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Sede Boutique El Poblado -->
+      <div class="p-4 bg-brand-tealSurface rounded-2xl border border-brand-teal/20 text-xs space-y-2 text-brand-dark">
+        <div class="flex items-center gap-2 text-brand-teal font-bold">
+          <span class="material-symbols-outlined text-base">apartment</span>
+          <span>Sede Boutique El Poblado</span>
+        </div>
+        <p class="text-brand-muted leading-relaxed">
+          Cra 43A # 1-50, Complejo San Fernando Plaza · Milla de Oro, El Poblado, Medellín. Contamos con parqueadero privado con valet, seguridad integral y ambiente relajante con vista panorámica.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="mt-12 bg-white border-t border-brand-border py-8 px-4 text-center max-w-md mx-auto space-y-4">
+    <div class="flex items-center justify-center gap-2 text-brand-dark">
+      <span class="material-symbols-outlined text-brand-teal">dentistry</span>
+      <span class="font-serif font-bold text-base">Clínica Dental Dacosta</span>
+    </div>
+    <div class="space-y-1 text-[11px] text-brand-muted">
+      <p>Habilitación MinSalud REPS Seccional Medellín Código 050012389101</p>
+      <p>Protección de Datos Personales Ley 1581 de 2012</p>
+      <p>Cra 43A # 1-50, San Fernando Plaza, El Poblado, Medellín, Colombia</p>
+    </div>
+    <p class="text-[10px] text-brand-muted/80 pt-2">
+      © 2024 Clínica Dental Dacosta Medellín. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- ================= BOTTOM NAVIGATION BAR (MOBILE) ================= -->
+  <nav class="fixed bottom-3 inset-x-4 z-50 max-w-md mx-auto bg-white/95 backdrop-blur-md rounded-2xl border border-brand-border/80 shadow-lg px-4 py-2 flex items-center justify-around">
+    <a href="#" class="flex flex-col items-center gap-0.5 text-brand-teal font-semibold">
+      <span class="material-symbols-outlined text-xl">home</span>
+      <span class="text-[10px] tracking-tight">Inicio</span>
+    </a>
+    <a href="#contacto" class="flex flex-col items-center gap-0.5 text-brand-muted hover:text-brand-teal transition-colors">
+      <span class="material-symbols-outlined text-xl">biotech</span>
+      <span class="text-[10px] tracking-tight">Proceso</span>
+    </a>
+    <a href="#contacto" class="flex flex-col items-center gap-0.5 text-brand-muted hover:text-brand-teal transition-colors">
+      <span class="material-symbols-outlined text-xl">photo_library</span>
+      <span class="text-[10px] tracking-tight">Casos</span>
+    </a>
+    <a href="#contacto" class="flex flex-col items-center gap-0.5 text-brand-teal font-bold bg-brand-tealLight px-3 py-1 rounded-xl">
+      <span class="material-symbols-outlined text-xl">calendar_month</span>
+      <span class="text-[10px] tracking-tight">Agendar</span>
+    </a>
+  </nav>
+
+</body>
+</html>
