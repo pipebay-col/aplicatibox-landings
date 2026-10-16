@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Yesid Cárdenas · Cirugía Plástica, Estética y Reconstructiva</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#e6f0ec",
+            "background": "#f2fcf8",
+            "primary-fixed-dim": "#7ad7c8",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#e9f3ef",
+            "surface-variant": "#dbe5e1",
+            "on-tertiary-fixed": "#081f1c",
+            "surface-container-high": "#e0eae7",
+            "inverse-surface": "#293230",
+            "surface": "#f2fcf8",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary-fixed": "#00201c",
+            "secondary-fixed": "#91f4e4",
+            "surface-container-low": "#ecf6f2",
+            "tertiary-container": "#5a716c",
+            "primary-fixed": "#96f3e4",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#00201c",
+            "surface-dim": "#d2dcd9",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#006f64",
+            "outline": "#6e7977",
+            "on-primary-fixed-variant": "#005048",
+            "on-primary-container": "#a8fff0",
+            "on-surface-variant": "#3e4947",
+            "on-primary": "#ffffff",
+            "on-background": "#141d1b",
+            "secondary-fixed-dim": "#74d7c8",
+            "inverse-primary": "#7ad7c8",
+            "surface-container-highest": "#dbe5e1",
+            "on-error-container": "#93000a",
+            "surface-tint": "#006a60",
+            "surface-bright": "#f2fcf8",
+            "on-tertiary-container": "#dbf4ee",
+            "primary": "#005f55",
+            "primary-container": "#007a6e",
+            "secondary-container": "#8ef1e1",
+            "tertiary-fixed": "#cfe8e2",
+            "secondary": "#006b60",
+            "tertiary": "#425854",
+            "on-tertiary-fixed-variant": "#354b47",
+            "on-surface": "#141d1b",
+            "tertiary-fixed-dim": "#b3ccc6",
+            "outline-variant": "#bdc9c6",
+            "on-secondary-fixed-variant": "#005048",
+            "on-error": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "gutter": "1rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "label-xs": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+    /* Luxury clinical card shadows */
+    .clinical-card {
+      box-shadow: 0 4px 20px -2px rgba(19, 28, 26, 0.05), 0 2px 6px -1px rgba(0, 122, 110, 0.03);
+    }
+    .cta-shadow {
+      box-shadow: 0 10px 24px -4px rgba(0, 122, 110, 0.28);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-secondary-container selection:text-primary">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface-container-lowest/90 dark:bg-surface-container/90 backdrop-blur-md docked full-width top-0 sticky z-40 shadow-sm">
+<div class="flex justify-between items-center w-full px-4 h-16 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary fill text-2xl" data-icon="verified">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">Dr. Yesid Cárdenas</span>
+<span class="font-label-xs text-label-xs text-primary font-semibold tracking-wider">CIRUJANO PLÁSTICO SCCP · FILACP</span>
+</div>
+</div>
+<!-- Trailing Action -->
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all" href="#contacto-valoracion">
+        Agendar
+      </a>
+</div>
+</header>
+<main class="w-full overflow-hidden pb-12">
+<!-- 1. ETAPA AIDA: ATENCIÓN (HERO MOBILE-FIRST) -->
+<section class="px-5 pt-6 pb-10 max-w-md mx-auto md:max-w-4xl lg:max-w-6xl">
+<!-- Authority Micro-Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container/50 border border-outline-variant/40 mb-4">
+<span class="material-symbols-outlined text-primary text-base fill" data-icon="verified">verified</span>
+<span class="font-label-xs text-label-xs text-primary tracking-wide">
+          Cirujano Plástico Certificado SCCP #384 · FILACP · MinSalud Colombia
+        </span>
+</div>
+<!-- Persuasive Value H1 (Mobile Optimized) -->
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight mb-4">
+        Tu belleza en su versión más armónica y natural, con rigor médico y seguridad en Colombia.
+      </h1>
+<!-- Result-Focused Subheadline -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Procedimientos milimétricos de contorno corporal de alta definición, rinoplastia estructural ultrasónica y rejuvenecimiento facial diseñados para realzar tu fisonomía sin apariencias artificiales ni incapacidades prolongadas.
+      </p>
+<!-- Editorial Medical Portrait Card -->
+<div class="relative w-full rounded-2xl overflow-hidden mb-6 border border-outline-variant/30 clinical-card bg-surface-container-lowest">
+<img alt="Dr. Yesid Cárdenas en su consultorio boutique de cirugía plástica en Medellín con vista panorámica a la montaña" class="w-full h-[380px] md:h-[480px] object-cover object-top" src="https://lh3.googleusercontent.com/aida/AEtjO1UUgG0yiMfyh_ka5_BqCBVVEOoYOXL-pMpqdtGxxL-p8DsR_6-ir8aZwpZ36YzcdNEODECv78bxKlMzS-LIfX427OseiVgfIViePVd0onaWh7-Vs8iPnFEzhE--k66rkSoQZGvz4PGBtxIFLhBT9Cjh-EurcU4XpH3hrWJFWHtlpi2zzMkl3CK3lhRT5yo-mJ98iZEZ5-Z-7qpAfWZbQZjvOW9AGLMIfPFNYLjyjRr9TPUeYD_Vbeylcg"/>
+<!-- Floating Credential Chip on Photo -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-3 rounded-xl border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="medical_services">medical_services</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Consulta Privada Exclusiva</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant">Sedes El Poblado (Medellín) &amp; Chicó (Bogotá)</p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-xs text-label-xs font-bold">
+            1 a 1
+          </span>
+</div>
+</div>
+<!-- Primary High-Conversion CTA Block -->
+<div class="space-y-3 mb-8">
+<a class="w-full flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md py-4 px-6 rounded-full cta-shadow active:scale-95 transition-all text-center" href="#contacto-valoracion">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="calendar_month">calendar_month</span>
+</a>
+<p class="text-center font-label-xs text-label-xs text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm fill" data-icon="auto_awesome">auto_awesome</span>
+          Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- 3 Rapid Trust Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/20 clinical-card">
+<span class="material-symbols-outlined text-primary text-2xl fill" data-icon="verified">verified</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Quirófanos Nivel IV</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant">Clínicas con UCI permanente</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/20 clinical-card">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Preservación Tisular</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant">Tecnología ultrasónica precisa</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/20 clinical-card">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="chat">chat</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Atención 1 a 1</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant">Enfermería y seguimiento 24/7</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. ETAPA AIDA: INTERÉS (EMPATÍA CLÍNICA Y PROCESO EN 3 PASOS) -->
+<section class="px-5 py-12 bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-md mx-auto md:max-w-4xl lg:max-w-6xl">
+<!-- Empathy Section Header -->
+<div class="mb-8">
+<span class="font-label-xs text-label-xs text-primary uppercase font-bold tracking-wider block mb-2">
+            Cirugía con Sentido Humano
+          </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">
+            ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Es la inquietud más legítima de quien busca un cambio estético. Nuestra filosofía se fundamenta en el <strong>micro-diseño anatómico</strong> y el respeto irrestricto por la proporción áurea. Cada intervención busca resaltar tu elegancia original, logrando una evolución sofisticada que nadie descifre como artificial.
+          </p>
+</div>
+<!-- 3-Step Clear Medical Journey (Bento-style stacked cards) -->
+<div class="space-y-4 mb-8">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 clinical-card relative overflow-hidden">
+<div class="flex items-start gap-3">
+<span class="font-headline-md text-headline-md text-primary font-bold">01</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">
+                  Valoración y Mapeo Anatómico 3D
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                  Diagnóstico milimétrico presencial en Medellín/Bogotá o teleconsulta médica de alta resolución para pacientes internacionales.
+                </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-xs text-label-xs bg-surface-container px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-xs fill" data-icon="verified">verified</span>
+                  Beneficio: Certeza clínica y expectativas 100% claras antes de decidir.
+                </div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 clinical-card relative overflow-hidden">
+<div class="flex items-start gap-3">
+<span class="font-headline-md text-headline-md text-primary font-bold">02</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">
+                  Plan Quirúrgico y Presupuesto Cerrado
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                  Cotización integral por escrito con clínica acreditada Nivel IV, anestesiólogo miembro SCCP y paquete de medicamentos postoperatorios.
+                </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-xs text-label-xs bg-surface-container px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-xs fill" data-icon="verified">verified</span>
+                  Beneficio: Cero costos ocultos ni imprevistos financieros.
+                </div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 clinical-card relative overflow-hidden">
+<div class="flex items-start gap-3">
+<span class="font-headline-md text-headline-md text-primary font-bold">03</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">
+                  Cirugía de Precisión y Recuperación Guiada
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">
+                  Técnicas microquirúrgicas con ultrasonido y acompañamiento de enfermería especializada 24/7 durante todo tu posoperatorio.
+                </p>
+<div class="inline-flex items-center gap-1.5 text-primary font-label-xs text-label-xs bg-surface-container px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-xs fill" data-icon="verified">verified</span>
+                  Beneficio: Menor inflamación, mínimo dolor y rápido retorno a tu rutina.
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Direct Personal Assistance Link -->
+<div class="text-center">
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:underline underline-offset-4" href="https://wa.me/573006526128" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso particular? Chatea con la enfermera coordinadora</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. ETAPA AIDA: DESEO (MÉTRICAS, BENEFICIOS TANGIBLES Y RESULTADOS) -->
+<section class="px-5 py-12 max-w-md mx-auto md:max-w-4xl lg:max-w-6xl">
+<!-- Metrics Grid -->
+<div class="grid grid-cols-2 gap-3 mb-10">
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card text-center">
+<p class="font-headline-lg-mobile md:font-headline-lg text-primary font-bold">+16</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-1">Años de Trayectoria Quirúrgica</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card text-center">
+<p class="font-headline-lg-mobile md:font-headline-lg text-primary font-bold">+4.500</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-1">Procedimientos Exitosos</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card text-center">
+<p class="font-headline-lg-mobile md:font-headline-lg text-primary font-bold">99.4%</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-1">Satisfacción Verificada</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card text-center">
+<p class="font-headline-lg-mobile md:font-headline-lg text-primary font-bold">100%</p>
+<p class="font-label-xs text-label-xs text-on-surface-variant mt-1">Acreditación MinSalud &amp; SCCP</p>
+</div>
+</div>
+<!-- 4 Tangible Lifestyle Benefits -->
+<div class="mb-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">
+          La Excelencia Médica que Transforma tu Seguridad
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          Diseñado para pacientes que valoran la discreción, la anatomía estética refinada y los más altos estándares hospitalarios de Colombia.
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Benefit 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined fill" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Armonía y sutileza absoluta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Rasgos suaves y proporcionados sin rigidez ni estigma de cirugía evidente. Buscamos que tu círculo note tu vitalidad, no la intervención.
+            </p>
+</div>
+<!-- Benefit 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Preservación tisular ultrasónica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tecnología de última generación piezoeléctrica y vaser que respeta vasos sanguíneos y nervios, disminuyendo dramáticamente los hematomas.
+            </p>
+</div>
+<!-- Benefit 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined fill" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Quirófanos certificados de alta complejidad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Intervenciones realizadas exclusivamente en clínicas acreditadas Nivel IV de Colombia con Unidad de Cuidados Intensivos y soporte permanente.
+            </p>
+</div>
+<!-- Benefit 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Acompañamiento VIP integral</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Enfermería personalizada, prendas postquirúrgicas a medida y concierge bilingüe para pacientes de Miami, Madrid, Ciudad de Panamá y el Caribe.
+            </p>
+</div>
+</div>
+</div>
+<!-- Testimonial Cards & Case Studies -->
+<div class="mb-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Experiencias y Casos Reales</h3>
+<span class="font-label-xs text-label-xs text-primary bg-secondary-container/40 px-2.5 py-1 rounded-full font-bold">
+            100% Verificados
+          </span>
+</div>
+<div class="space-y-4">
+<!-- Case 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-3">
+              "Buscaba una rinoplastia que corrigiera mi giba pero sin que me cambiara el rostro. El Dr. Yesid usó tecnología ultrasónica y al décimo día ya estaba trabajando sin moretones oscuros. Un trato humano inigualable."
+            </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-3">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Camila V. · Medellín</p>
+<p class="font-label-xs text-label-xs text-primary">Rinoplastia Ultrasónica Estructural</p>
+</div>
+<span class="material-symbols-outlined text-primary fill text-lg" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 clinical-card">
+<div class="flex items-center gap-1 text-primary mb-2">
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mb-3">
+              "Viajé desde Florida para mi contorno corporal en Medellín. El presupuesto cerrado me dio total tranquilidad: incluía hospitalización, fajas y masajes. El resultado es totalmente atlético y natural."
+            </p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-3">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Elena R. · Miami, FL</p>
+<p class="font-label-xs text-label-xs text-primary">Lipoescultura HD y Contorno Corporal</p>
+</div>
+<span class="material-symbols-outlined text-primary fill text-lg" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ETAPA AIDA: ACCIÓN (LEAD CAPTURE FORMULARIO Y CANAL WHATSAPP) -->
+<section class="px-5 py-12 bg-surface-container-high/60 border-t border-outline-variant/20 scroll-mt-20" id="contacto-valoracion">
+<div class="max-w-md mx-auto md:max-w-xl">
+<!-- Form Header -->
+<div class="text-center mb-6">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-xs text-label-xs font-bold mb-2">
+<span class="material-symbols-outlined text-xs fill" data-icon="calendar_month">calendar_month</span>
+            Cupos Quirúrgicos Limitados por Semana
+          </div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">
+            Inicia hoy tu transformación con seguridad médica
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Diligencia el formulario para recibir una orientación diagnóstica personalizada con el equipo del Dr. Yesid Cárdenas.
+          </p>
+</div>
+<!-- Conversion Form Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 clinical-card">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! La coordinadora clínica del Dr. Yesid Cárdenas se comunicará contigo en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="nombre_paciente">
+                Nombre y Apellido
+              </label>
+<input class="w-full h-12 px-4 rounded-xl bg-background border border-outline-variant/50 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" id="nombre_paciente" placeholder="Ej. Carolina Montoya" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp / Teléfono -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="telefono_paciente">
+                WhatsApp o Celular
+              </label>
+<div class="flex">
+<span class="inline-flex items-center px-3.5 rounded-l-xl border border-r-0 border-outline-variant/50 bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  🇨🇴 +57
+                </span>
+<input class="w-full h-12 px-4 rounded-r-xl bg-background border border-outline-variant/50 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" id="telefono_paciente" placeholder="300 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Procedimiento -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1" for="procedimiento_interes">
+                Procedimiento de interés
+              </label>
+<select class="w-full h-12 px-4 rounded-xl bg-background border border-outline-variant/50 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all" id="procedimiento_interes">
+<option value="rinoplastia">Rinoplastia Estructural / Ultrasónica</option>
+<option value="lipoescultura">Lipoescultura HD / Contorno Corporal</option>
+<option value="facial">Rejuvenecimiento Facial / Blefaroplastia</option>
+<option value="mamoplastia">Mamoplastia / Pexia Mamaria</option>
+<option value="otra">Otra valoración personalizada</option>
+</select>
+</div>
+<!-- CTA Submit -->
+<button class="w-full h-13 py-3.5 bg-primary text-on-primary font-label-md text-label-md rounded-full font-bold cta-shadow active:scale-95 hover:bg-primary-container transition-all flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- WhatsApp Direct Secondary Button -->
+<a class="w-full h-12 py-3 bg-surface-container-lowest text-primary border border-primary font-label-md text-label-md rounded-full font-semibold active:scale-95 hover:bg-surface-container-low transition-all flex items-center justify-center gap-2 text-center" href="https://wa.me/573006526128?text=Hola%20Dr.%20Yesid%20C%C3%A1rdenas,%20deseo%20agendar%20una%20valoraci%C3%B3n%20cl%C3%ADnica" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg fill" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 652 6128)</span>
+</a>
+<!-- Habeas Data Microcopy -->
+<p class="font-label-xs text-label-xs text-on-surface-variant text-center pt-2 leading-relaxed">
+              Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de 2012 de Protección de Datos de Colombia. Cero spam.
+            </p>
+</form>
+</div>
+</div>
+</section>
+<!-- 5. RESOLUCIÓN DE DUDAS (FAQ ACORDEÓN) -->
+<section class="px-5 py-12 max-w-md mx-auto md:max-w-3xl">
+<div class="text-center mb-8">
+<span class="font-label-xs text-label-xs text-primary uppercase font-bold tracking-wider block mb-1">
+          Transparencia Quirúrgica
+        </span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+          Preguntas Frecuentes
+        </h2>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 clinical-card cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cuánto tiempo de incapacidad se requiere?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="auto_awesome">auto_awesome</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3 leading-relaxed">
+            Gracias al uso de instrumental de precisión ultrasónica, los tiempos se reducen notablemente. Para cirugías faciales o rinoplastia, las actividades de oficina pueden reanudarse entre el 5° y 7° día postoperatorio. Para contorno corporal, recomendamos entre 10 y 14 días con soporte de faja compresiva.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 clinical-card cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿El presupuesto entregado es realmente cerrado y definitivo?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="auto_awesome">auto_awesome</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3 leading-relaxed">
+            Sí. Uno de nuestros pilares éticos es la transparencia financiera absoluta. La propuesta médica formal contempla honorarios quirúrgicos, derechos de sala en clínica Nivel IV acreditada, anestesiología, controles y el kit de medicación base postoperatoria.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 clinical-card cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cómo funciona la atención para pacientes internacionales?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="auto_awesome">auto_awesome</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3 leading-relaxed">
+            Iniciamos con una teleconsulta diagnóstica 1 a 1 por videollamada HD con el Dr. Cárdenas. Nuestro equipo bilingüe te asiste con la coordinación de fechas, exámenes prequirúrgicos anticipados, sugerencias de hospedaje cercano a la clínica y transporte sanitario privado.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 clinical-card cursor-pointer">
+<summary class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿En qué clínicas e instituciones se realizan las cirugías?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200" data-icon="auto_awesome">auto_awesome</span>
+</summary>
+<div class="mt-3 font-body-sm text-body-sm text-on-surface-variant border-t border-outline-variant/20 pt-3 leading-relaxed">
+            El Dr. Yesid Cárdenas no opera en consultorios ni clínicas de garaje. Todas las cirugías se llevan a cabo en instituciones hospitalarias de Nivel III y IV con acreditación de alta calidad MinSalud en Medellín y Bogotá, equipadas con UCI, banco de sangre y soporte vital integral.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- BOTTOM NAVBAR (Shared Component Navigation Anchor - Mobile Friendly) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 bg-surface-container-lowest/95 dark:bg-surface-container/95 backdrop-blur-lg shadow-[0_-4px_20px_-2px_rgba(20,33,32,0.06)] md:hidden">
+<!-- Procedimientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary active:scale-90 duration-150" href="#procedimientos">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="text-label-sm font-label-sm">Procedimientos</span>
+</a>
+<!-- Resultados -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary active:scale-90 duration-150" href="#resultados">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm">Resultados</span>
+</a>
+<!-- WhatsApp -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 transition-colors hover:text-primary active:scale-90 duration-150" href="https://wa.me/573006526128" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="text-label-sm font-label-sm">WhatsApp</span>
+</a>
+<!-- Valoración (ACTIVE ANCHOR DESTINATION FOR LANDING) -->
+<a class="flex flex-col items-center justify-center bg-secondary-container/40 text-primary rounded-full px-3 py-1.5 font-bold transition-all active:scale-90 duration-150" href="#contacto-valoracion">
+<span class="material-symbols-outlined text-xl fill" data-icon="calendar_month">calendar_month</span>
+<span class="text-label-sm font-label-sm">Valoración</span>
+</a>
+</nav>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container dark:bg-inverse-surface w-full border-t border-outline-variant/40">
+<div class="flex flex-col items-center justify-center px-4 py-8 pb-24 md:pb-12 text-center max-w-7xl mx-auto space-y-4">
+<!-- Brand Logo / Headline in Footer -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary fill text-xl" data-icon="verified">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Yesid Cárdenas</span>
+</div>
+<!-- Footer Clinical & Regulatory Links -->
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm text-on-surface-variant max-w-2xl">
+<a class="hover:text-primary transition-colors hover:underline duration-150" href="#acreditacion">Acreditación SCCP &amp; FILACP</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors hover:underline duration-150" href="#seguridad">Seguridad Quirúrgica y Protocolos</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors hover:underline duration-150" href="#habeas-data">Política Habeas Data Ley 1581</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors hover:underline duration-150" href="#consentimiento">Consentimiento Informado Médico</a>
+<span>·</span>
+<a class="hover:text-primary transition-colors hover:underline duration-150" href="#minsalud">Directorio Clínico MinSalud</a>
+</div>
+<!-- Mandatory Copyright & Legal Notice -->
+<p class="text-body-sm font-body-sm text-on-surface-variant/80 max-w-xl">
+        © 2024 Dr. Yesid Cárdenas. Miembro SCCP, FILACP &amp; IPRAS. Vigilado SuperSalud Colombia. Ley 1581 de 2012 Habeas Data.
+      </p>
+<p class="font-label-xs text-label-xs text-outline tracking-wider">
+        Medellín: Torre Médica El Tesoro / Bogotá: Edificio El Bosque Chico · Colombia
+      </p>
+</div>
+</footer>
+</body></html>
