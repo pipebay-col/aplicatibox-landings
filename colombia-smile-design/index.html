@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<title>Dr. Giovanny Alvarado | Cirugía Plástica Estética y Reconstructiva</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#dbdad7",
+            "inverse-on-surface": "#f2f1ee",
+            "on-secondary-container": "#007169",
+            "surface-container-high": "#e9e8e5",
+            "primary-fixed": "#9ef2e6",
+            "secondary": "#006a63",
+            "on-tertiary-container": "#4e3d00",
+            "inverse-surface": "#2f312f",
+            "secondary-fixed": "#63f9eb",
+            "surface": "#faf9f6",
+            "on-tertiary-fixed": "#241a00",
+            "on-secondary-fixed": "#00201d",
+            "tertiary-fixed-dim": "#e9c349",
+            "surface-container-low": "#f4f3f1",
+            "primary-container": "#006d64",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#005049",
+            "primary": "#00534c",
+            "on-surface": "#1a1c1a",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#cba72f",
+            "on-primary-container": "#98ebe0",
+            "on-background": "#1a1c1a",
+            "on-primary": "#ffffff",
+            "outline": "#6e7977",
+            "background": "#faf9f6",
+            "surface-container": "#efeeeb",
+            "primary-fixed-dim": "#82d5ca",
+            "secondary-container": "#63f9eb",
+            "tertiary-fixed": "#ffe088",
+            "error": "#ba1a1a",
+            "outline-variant": "#bec9c6",
+            "secondary-fixed-dim": "#3ddccf",
+            "on-surface-variant": "#3e4947",
+            "surface-tint": "#006a62",
+            "on-secondary-fixed-variant": "#00504a",
+            "tertiary": "#735c00",
+            "surface-bright": "#faf9f6",
+            "surface-container-highest": "#e3e2e0",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#00201d",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#82d5ca",
+            "surface-variant": "#e3e2e0"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-3xl": "6rem",
+            "margin-desktop": "4rem",
+            "gutter-desktop": "2.5rem",
+            "margin": "1.25rem",
+            "space-2xl": "4rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+<!-- ================= TOP APP BAR (SHARED COMPONENT) ================= -->
+<header class="bg-surface/90 dark:bg-surface-container/90 backdrop-blur-md docked full-width top-0 fixed z-40 shadow-sm border-b border-outline-variant/20">
+<div class="flex justify-between items-center w-full px-margin h-16 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary dark:text-inverse-primary">Dr. Giovanny Alvarado</span>
+</div>
+<a class="inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 rounded-full bg-primary-container text-on-primary hover:bg-primary transition-colors duration-200 active:scale-95 transition-transform" href="#contacto-formulario">
+        Agendar
+      </a>
+</div>
+</header>
+<main class="pt-20 pb-20 overflow-hidden">
+<!-- ================= 1. ATENCIÓN (ATTENTION) ================= -->
+<section class="px-margin max-w-xl mx-auto pt-4 pb-12 flex flex-col items-center text-center">
+<!-- Micro-Badge SCCP / MinSalud -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full border border-outline-variant/30 mb-5">
+<span class="material-symbols-outlined text-primary text-base" data-icon="verified_user" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Cirujano Plástico Miembro SCCP · Habilitación MinSalud Colombia</span>
+</div>
+<!-- H1 Claro en 3 Segundos -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary tracking-tight mb-4">
+        Tu belleza en su versión más armónica y natural, con rigor médico y seguridad en Colombia
+      </h1>
+<!-- Subtítulo Específico -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-center">
+        Procedimientos milimétricos de contorno corporal de alta definición, rinoplastia estructural y rejuvenecimiento facial diseñados para realzar tu fisonomía sin apariencias artificiales ni incapacidades prolongadas.
+      </p>
+<!-- HERO IMAGE CARD (Dr. Giovanny Alvarado) -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 bg-surface-container-low p-2 mb-6">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img alt="Dr. Giovanny Alvarado Cirujano Plástico SCCP en su consultorio médico" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj7Td2qikFCBSUpyT7gHJKrOXrz6JAjwFtrCYzcAgllLy_wyrzZYJ1hwVOl4tD5MbTCZhjNMgGK4sXjhX1wfMZA0p1G0StreapuAfsyFqHB8juhdk_sZ9DYmYVZoyqFNtS3-I7uNyZDo1gbCO-vWVzz2ABM3Mkz0gkBsH7SB3ppBPwwuBfTjLR9ZTvvD3m2JCExxfEiwguhv5X0lcA6D2HEIqa6DdcqQpA2OayaLl2YDhHYXGDYzUEO7xMnKNpbEklhJWXN8s_eig"/>
+<!-- Floating Badge Overlay -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/95 backdrop-blur-md rounded-xl p-3 border border-outline-variant/30 text-left flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="medical_information">medical_information</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Dr. Giovanny Alvarado</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Especialista Certificado SCCP</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-primary text-on-primary rounded-full">Atención 1 a 1</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<a class="w-full py-4 px-6 bg-primary-container text-on-primary rounded-full font-title-md text-title-md shadow-sm hover:bg-primary active:scale-95 transition-all text-center flex items-center justify-center gap-2" href="#contacto-formulario">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2.5 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="schedule">schedule</span>
+        Respuesta en menos de 24 horas · Plan 100% individualizado y seguro
+      </p>
+<!-- 3 Tranquility Pills -->
+<div class="grid grid-cols-3 gap-2 w-full mt-6">
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="local_hospital">local_hospital</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Quirófanos Nivel IV</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="spa">spa</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Preservación Anatómica</span>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded-xl p-2.5 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="person_check">person_check</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Atención 1 a 1</span>
+</div>
+</div>
+</section>
+<!-- ================= 2. INTERÉS (INTEREST) ================= -->
+<section class="bg-surface-container-low py-12 px-margin border-y border-outline-variant/20">
+<div class="max-w-xl mx-auto">
+<!-- Empathy Card / Fears Demolisher -->
+<div class="bg-surface rounded-2xl p-6 border border-outline-variant/30 mb-8 shadow-sm">
+<div class="inline-flex items-center gap-1.5 text-primary mb-2">
+<span class="material-symbols-outlined text-lg" data-icon="psychology">psychology</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Honestidad y Claridad Médica</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-3">
+            ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+            Comprendemos la inquietud que genera someterse a una intervención estética. Nuestra filosofía clínica rechaza la estandarización artificial. Trabajamos con base en la proporción áurea y el respeto milimétrico por tus rasgos naturales, preservando los tejidos para una recuperación ágil y garantizando un presupuesto cerrado sin costos imprevistos de clínica o anestesia.
+          </p>
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/20 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Cada detalle quirúrgico se explica con transparencia antes de tomar una decisión.</p>
+</div>
+</div>
+<!-- Clinical Process in 3 Steps -->
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Certeza Médica</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Proceso Clínico de Certeza en 3 Pasos</h3>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="bg-surface rounded-2xl p-5 border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-lg text-title-lg font-bold shrink-0">
+              01
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Valoración y Mapeo Anatómico 3D</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Evaluamos tu estado clínico general, simetría y proporciones faciales o corporales. Te mostramos simulaciones previas para acordar metas realistas y darte certeza clínica antes de decidir.
+              </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface rounded-2xl p-5 border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-lg text-title-lg font-bold shrink-0">
+              02
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Plan Quirúrgico y Presupuesto Cerrado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Recibes un desglose formal y por escrito que cubre derechos de sala en clínicas Nivel IV, honorarios del equipo quirúrgico, anestesiología certificada SCCP y todas tus revisiones postquirúrgicas.
+              </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface rounded-2xl p-5 border border-outline-variant/30 flex gap-4 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-title-lg text-title-lg font-bold shrink-0">
+              03
+            </div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Cirugía de Precisión y Recuperación Guiada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Intervención con instrumental de última generación (ultrasonido y microcánulas) que minimiza dolor e inflamación, acompañada de un esquema de enfermería y seguimiento continuo 24/7.
+              </p>
+</div>
+</div>
+</div>
+<!-- Quick Chat Micro-CTA -->
+<div class="mt-6 text-center">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:underline" href="https://wa.me/573213879507" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre tu caso? Consulta directa por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= 3. DESEO (DESIRE) ================= -->
+<section class="py-12 px-margin max-w-xl mx-auto">
+<!-- Grid de Métricas de Confianza -->
+<div class="grid grid-cols-2 gap-3 mb-12">
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-md text-headline-md font-bold text-primary">+15 Años</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">De Trayectoria Quirúrgica</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-md text-headline-md font-bold text-primary">+4.500</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Procedimientos Exitosos</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-md text-headline-md font-bold text-primary">99.4%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Satisfacción Verificada</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/30 text-center">
+<p class="font-headline-md text-headline-md font-bold text-primary">100%</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Acreditación MinSalud &amp; SCCP</p>
+</div>
+</div>
+<!-- 4 Beneficios Clave de Resultado -->
+<div class="mb-12">
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Diferenciales Exclusivos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Resultados naturales para tu estilo de vida</h3>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-4 bg-surface-container-low rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mb-1">Armonía y sutileza absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rasgos proporcionados sin rigidez ni aspecto "operado" o plástico. Resaltamos tu identidad propia con refinamiento.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="healing">healing</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mb-1">Preservación tisular y pronta recuperación</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tecnología ultrasónica y microquirúrgica que respeta vasos sanguíneos, reduciendo notablemente moretones e inflamación.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mb-1">Quirófanos certificados de alta complejidad</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Intervenciones efectuadas únicamente en clínicas de Nivel IV dotadas de Unidad de Cuidados Intensivos y respaldo legal SCARE.</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-2xl border border-outline-variant/30 flex gap-3.5">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mb-1">Acompañamiento VIP integral</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enfermería personalizada, prendas postoperatorias a medida y asesoría concierge para pacientes internacionales o de otras ciudades.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales y Verificados -->
+<div>
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Experiencias Clínicas</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Testimonios de Pacientes Verificados</h3>
+</div>
+<div class="space-y-4">
+<!-- Testimonio 1 -->
+<div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Camila R.</p>
+<p class="font-label-sm text-label-sm text-primary font-medium">Rinoplastia Ultrasónica Estructural</p>
+</div>
+<div class="flex text-tertiary-container text-sm">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Tenía pánico de que mi nariz se viera operada o artificial. El Dr. Giovanny me escuchó con paciencia infinita. El resultado es tan armónico que nadie nota que me operé; solo me dicen que luzco descansada y hermosa. Cero dolor y respiración perfecta."
+            </p>
+<div class="mt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+<span>Paciente verificada · Bogotá, Colombia</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/30 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Mariana S.</p>
+<p class="font-label-sm text-label-sm text-primary font-medium">Lipoescultura HD y Contorno Corporal</p>
+</div>
+<div class="flex text-tertiary-container text-sm">
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Viajé desde el exterior y la atención concierge fue intachable. La marcación corporal es atlética y femenina, sin líneas forzadas. La clínica de cuarto nivel me dio una tranquilidad absoluta. Gracias doctor por su ética intachable."
+            </p>
+<div class="mt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+<span>Paciente internacional · Miami, FL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. ACCIÓN (ACTION / FUNNEL CONVERSION) ================= -->
+<section class="bg-surface-container-low py-12 px-margin border-y border-outline-variant/20 scroll-mt-20" id="contacto-formulario">
+<div class="max-w-xl mx-auto">
+<!-- Cupos Limitados Badge -->
+<div class="flex items-center justify-center gap-2 mb-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-label-sm bg-primary/10 text-primary font-semibold border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse mr-1.5"></span>
+            Cupos quirúrgicos limitados por semana en Colombia
+          </span>
+</div>
+<!-- Headline Formulario -->
+<div class="text-center mb-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Inicia hoy tu transformación con seguridad médica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+            Diligencia el formulario para coordinar tu cita presencial o virtual directamente con el equipo del Dr. Alvarado.
+          </p>
+</div>
+<!-- Conversion Form Card -->
+<div class="bg-surface rounded-2xl p-6 border border-outline-variant/30 shadow-md">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Gracias por su confianza. Un asesor clínico del Dr. Giovanny Alvarado le contactará en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="nombre">Nombre y Apellido *</label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant/50 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="nombre" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Campo 2: Teléfono / WhatsApp -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="telefono">WhatsApp o Teléfono Móvil *</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-on-surface-variant font-body-md text-body-md select-none">+57</span>
+<input class="w-full pl-14 pr-4 py-3 bg-surface-container-lowest border border-outline-variant/50 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline" id="telefono" placeholder="317 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Procedimiento -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="procedimiento">¿Qué procedimiento te interesa evaluar? *</label>
+<select class="w-full px-4 py-3 bg-surface-container-lowest border border-outline-variant/50 rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="procedimiento" required="">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="rinoplastia">Rinoplastia Estructural / Ultrasónica</option>
+<option value="lipoescultura">Lipoescultura HD &amp; Marcación Corporal</option>
+<option value="mamoplastia">Mamoplastia &amp; Pexia Mamaria</option>
+<option value="facial">Rejuvenecimiento Facial / Blefaroplastia</option>
+<option value="integral">Valoración Integral Personalizada</option>
+</select>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 px-6 bg-primary-container text-on-primary rounded-full font-title-md text-title-md shadow-sm hover:bg-primary active:scale-95 transition-all text-center flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+</form>
+<!-- WhatsApp Direct Link -->
+<div class="mt-4 pt-4 border-t border-outline-variant/20 text-center">
+<a class="w-full py-3.5 px-4 bg-surface-container-low text-primary border border-primary/30 rounded-full font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container transition-all active:scale-95" href="https://wa.me/573213879507" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span>Chatear por WhatsApp (+57 317 441 7430)</span>
+</a>
+</div>
+<!-- Aviso de Privacidad / Habeas Data -->
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-4">
+            Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+</div>
+</section>
+<!-- ================= 5. FAQ (ACORDEÓN INTERACTIVO) ================= -->
+<section class="py-12 px-margin max-w-xl mx-auto">
+<div class="text-center mb-6">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Dudas Frecuentes</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Resolución de Preguntas Clínicas</h3>
+</div>
+<div class="space-y-3" id="faq-container">
+<!-- Pregunta 1 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cuánto tiempo de incapacidad se requiere?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-xl" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-sm text-body-sm leading-relaxed border-t border-outline-variant/20 pt-2.5">
+            Depende del procedimiento. En Rinoplastia Ultrasónica o Blefaroplastia, la mayoría de pacientes retoman actividades de oficina entre el 5° y 7° día. Para procedimientos de contorno corporal como Lipo HD, se recomiendan entre 10 y 14 días con apoyo de fajas compresivas y drenajes linfáticos protocolizados.
+          </div>
+</details>
+<!-- Pregunta 2 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿El presupuesto entregado es realmente cerrado y definitivo?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-xl" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-sm text-body-sm leading-relaxed border-t border-outline-variant/20 pt-2.5">
+            Sí. Uno de nuestros pilares es la honestidad médica. La cotización entregada tras tu valoración incluye derechos de sala en clínicas Nivel IV, honorarios del cirujano y anestesiólogo, medicamentos intraoperatorios, póliza de complicaciones y tus revisiones de seguimiento programadas.
+          </div>
+</details>
+<!-- Pregunta 3 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿Cómo funciona para pacientes internacionales o de otras ciudades?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-xl" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-sm text-body-sm leading-relaxed border-t border-outline-variant/20 pt-2.5">
+            Contamos con un protocolo especializado para turismo médico que inicia con una video-consulta previa diagnóstica. Nuestro equipo de concierge coordina traslados, recomendaciones de hospedaje adecuado para postoperatorio y acompañamiento integral antes de tu regreso seguro al país de origen.
+          </div>
+</details>
+<!-- Pregunta 4 -->
+<details class="group bg-surface-container-low rounded-xl border border-outline-variant/30 p-4 transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface">
+<span>¿En qué clínicas e instituciones se realizan las intervenciones?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform text-xl" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-sm text-body-sm leading-relaxed border-t border-outline-variant/20 pt-2.5">
+            El Dr. Giovanny Alvarado opera exclusivamente en instituciones hospitalarias de alta complejidad (Nivel IV) avaladas por la Secretaría de Salud y MinSalud Colombia. Estas clínicas disponen de infraestructura moderna, laboratorios clínicos, monitoreo continuo y unidades de cuidados intensivos para resguardar tu vida en todo momento.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (SHARED COMPONENT) ================= -->
+<footer class="bg-surface-container-low dark:bg-surface-container full-width bottom pb-24 pt-10 border-t border-outline-variant/30">
+<div class="flex flex-col gap-6 px-margin max-w-7xl mx-auto text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary">Dr. Giovanny Alvarado</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Cirugía Plástica, Estética y Reconstructiva con rigor científico y sensibilidad artística.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 text-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150" href="#contacto-formulario">Acreditación SCCP</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150" href="#contacto-formulario">Registro MinSalud</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150" href="#contacto-formulario">Habeas Data Ley 1581</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-inverse-primary underline transition-colors duration-150" href="#contacto-formulario">Consentimiento Informado</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mx-auto">
+        © 2024 Dr. Giovanny Alvarado Cirugía Plástica. Miembro SCCP - Registro Médico MinSalud Colombia. Vigilado Superintendencia Nacional de Salud. Cumplimiento Ley 1581 de 2012 Habeas Data.
+      </p>
+</div>
+</footer>
+<!-- ================= BOTTOM NAVIGATION BAR (SHARED COMPONENT) ================= -->
+<!-- Contextual logic: Mobile primary anchor with exact labels from JSON, highlighting 'Inicio' for landing entry -->
+<nav class="bg-surface dark:bg-surface-container-high docked full-width bottom-0 fixed z-50 shadow-lg border-t border-outline-variant/20 fixed bottom-0 w-full z-50 flex justify-around items-center px-2 py-2 safe-bottom md:hidden">
+<!-- Item 1: Inicio (Active Destination) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary dark:text-on-primary rounded-full px-3 py-1 font-semibold active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Inicio</span>
+</a>
+<!-- Item 2: Procedimientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95 transition-transform duration-150" href="#contacto-formulario">
+<span class="material-symbols-outlined text-xl" data-icon="medical_services">medical_services</span>
+<span class="font-label-sm text-label-sm">Procedimientos</span>
+</a>
+<!-- Item 3: Valoración -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95 transition-transform duration-150" href="#contacto-formulario">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-sm text-label-sm">Valoración</span>
+</a>
+<!-- Item 4: Contacto -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline px-3 py-1 hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95 transition-transform duration-150" href="https://wa.me/573213879507" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm">Contacto</span>
+</a>
+</nav>
+</body></html>
