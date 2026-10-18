@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Alquímico Medicina Estética | Armonización Facial Natural Colombia</title>
+<!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms container-queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatim matching system specification -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#005048",
+            "primary-container": "#008376",
+            "secondary-fixed-dim": "#59dbc7",
+            "on-surface": "#1a1c1a",
+            "surface-tint": "#006b60",
+            "on-tertiary-container": "#4f3e00",
+            "tertiary-fixed": "#ffe088",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#f2f1ee",
+            "primary-fixed-dim": "#74d7c8",
+            "error": "#ba1a1a",
+            "on-background": "#1a1c1a",
+            "on-primary-fixed": "#00201c",
+            "on-tertiary-fixed-variant": "#574500",
+            "tertiary": "#735c00",
+            "outline-variant": "#bdc9c6",
+            "outline": "#6e7a77",
+            "secondary": "#006b5f",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#3e4947",
+            "secondary-container": "#76f4e0",
+            "surface-container-low": "#f4f3f1",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#dbdad7",
+            "inverse-surface": "#2f312f",
+            "primary-fixed": "#91f4e4",
+            "surface-container-highest": "#e3e2e0",
+            "background": "#faf9f6",
+            "surface-container": "#efeeeb",
+            "surface-variant": "#e3e2e0",
+            "on-secondary-fixed": "#00201c",
+            "on-secondary-fixed-variant": "#005047",
+            "surface-bright": "#faf9f6",
+            "on-tertiary-fixed": "#241a00",
+            "surface": "#faf9f6",
+            "secondary-fixed": "#79f7e3",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f2fffb",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#e9c349",
+            "on-secondary-container": "#006f63",
+            "error-container": "#ffdad6",
+            "surface-container-high": "#e9e8e5",
+            "primary": "#00685d",
+            "inverse-primary": "#74d7c8",
+            "tertiary-container": "#cca830"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "gutter-mobile": "0.75rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "space-lg": "1.75rem",
+            "gutter": "1rem",
+            "margin": "2rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+    /* Subtle organic glow background */
+    .clinical-glow {
+      background: radial-gradient(circle at 50% 10%, rgba(118, 244, 224, 0.15) 0%, rgba(250, 249, 246, 0) 70%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(0, 131, 118, 0.12);
+      box-shadow: 0 12px 32px -4px rgba(0, 131, 118, 0.05), 0 4px 12px -2px rgba(22, 40, 37, 0.03);
+    }
+    .cta-shadow {
+      box-shadow: 0 8px 24px -2px rgba(0, 131, 118, 0.32);
+    }
+    /* Mobile-first constraints */
+    body {
+      background-color: #faf9f6;
+      color: #1a1c1a;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Mobile Frame Container max-w-md for smartphone immersion -->
+<div class="relative max-w-md mx-auto min-h-screen bg-background flex flex-col shadow-2xl overflow-hidden pb-24">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface/85 backdrop-blur-md text-primary docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified_user">verified_user</span>
+<span class="text-headline-md font-headline-md font-semibold text-primary tracking-tight">Alquímico</span>
+</div>
+<a class="bg-primary text-on-primary text-label-lg font-label-lg px-3.5 py-1.5 rounded-full hover:bg-surface-container transition-colors duration-150 active:scale-95 text-xs font-medium" href="#agendar">
+          Agendar Cita
+        </a>
+</div>
+</header>
+<!-- MAIN FUNNEL CONTENT (AIDA FRAMEWORK) -->
+<main class="flex-1 w-full clinical-glow">
+<!-- ============================================== -->
+<!-- 1. ATENCIÓN (Hero Section)                     -->
+<!-- ============================================== -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col items-center text-center">
+<!-- Credencial Médica Badge Superior -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container/30 border border-secondary/20 mb-space-md">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold tracking-wide">
+            Registro Seccional MinSalud Colombia
+          </span>
+</div>
+<!-- Titular H1 de Beneficio en 3 Segundos -->
+<h1 class="text-display-lg-mobile font-display-lg-mobile text-on-surface mb-space-sm tracking-tight leading-tight">
+          Tu belleza en su versión más <span class="text-primary italic font-semibold">armónica y natural</span>, sin perder tu esencia.
+        </h1>
+<!-- Subtítulo Específico del Resultado -->
+<p class="text-body-md font-body-md text-on-surface-variant mb-space-lg text-balance">
+          Tratamientos médicos no invasivos de bioestimulación dérmica, rejuvenecimiento cutáneo y armonización facial en Alquímico Colombia. Resultados sutiles y elegantes sin incapacidad laboral ni rostros congelados.
+        </p>
+<!-- Tarjeta Hero Visual con Fotografía Editorial Médica (Asset Solicitado) -->
+<div class="relative w-full rounded-3xl overflow-hidden glass-card p-2 mb-space-lg">
+<div class="relative w-full h-80 rounded-2xl overflow-hidden bg-surface-container">
+<!-- Exact placeholder requested for hero visual -->
+
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/50 via-transparent to-transparent"></div>
+<!-- Badge Flotante de Resultado Clínico -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface/90 backdrop-blur-md py-2 px-3 rounded-xl border border-primary/20 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-sm font-label-sm font-semibold text-primary">Resultado Clínico Alquímico</span>
+</div>
+<span class="text-[11px] font-body-sm font-medium text-on-surface-variant">100% Armonía y Luminosidad</span>
+</div>
+</div>
+</div>
+<!-- CTA Principal de Alto Contraste con Aura Glow -->
+<div class="w-full flex flex-col items-center gap-2 mb-space-lg">
+<a class="w-full py-4 px-6 rounded-full bg-primary hover:bg-primary-container text-on-primary text-label-lg font-label-lg flex items-center justify-center gap-2 cta-shadow transition-transform active:scale-95 duration-150" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<span class="text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1.5 pt-1">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check_circle">check_circle</span>
+            Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+          </span>
+</div>
+<!-- 3 Badges Rápidos de Confianza Clínica -->
+<div class="grid grid-cols-3 gap-2 w-full pt-2 border-t border-outline-variant/30">
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low/60 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="verified">verified</span>
+<span class="text-[10px] font-label-sm text-on-surface font-semibold text-center leading-tight">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low/60 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-[10px] font-label-sm text-on-surface font-semibold text-center leading-tight">Diagnóstico Facial 1 a 1</span>
+</div>
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low/60 border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-lg mb-1" data-icon="spa">spa</span>
+<span class="text-[10px] font-label-sm text-on-surface font-semibold text-center leading-tight">Sede Boutique Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 2. INTERÉS (Problema & Proceso de Solución)    -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low/50 border-y border-outline-variant/20" id="proceso">
+<!-- Dolor / Temor del Paciente -->
+<div class="text-center mb-space-lg">
+<span class="inline-block px-3 py-1 rounded-full bg-error-container/40 text-error text-label-sm font-label-sm mb-2 font-medium">
+            Entendemos tus dudas
+          </span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface">
+            ¿Temes tratamientos exagerados que cambien tus facciones o no se vean naturales?
+          </h2>
+</div>
+<!-- Filosofía Alquímico -->
+<div class="glass-card p-5 rounded-2xl mb-space-lg border-l-4 border-l-primary">
+<h3 class="text-headline-md font-headline-md text-primary mb-2">Filosofía Médica Alquímico</h3>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Creemos en la <em>medicina estética consciente</em>. Aplicamos micro-dosis estratégicas basadas en la proporción áurea y tu anatomía ósea natural. No rellenamos por rellenar: restauramos volumen perdido y estimulamos tu propia matriz de colágeno para devolver descanso y luminosidad a tu rostro.
+          </p>
+</div>
+<!-- Proceso Transparente en 3 Pasos -->
+<div class="space-y-4">
+<!-- Paso 01 -->
+<div class="glass-card p-4 rounded-2xl flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-base flex-shrink-0">
+              01
+            </div>
+<div>
+<h4 class="text-body-lg font-body-lg font-semibold text-on-surface">Valoración y Mapeo Facial 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                Evaluamos vector de tensión, calidad dérmica y asimetrías.
+              </p>
+<div class="mt-2 inline-flex items-center gap-1 text-[11px] font-label-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="check">check</span>
+                Beneficio: Certeza clínica y plan exacto desde el día 1.
+              </div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="glass-card p-4 rounded-2xl flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-base flex-shrink-0">
+              02
+            </div>
+<div>
+<h4 class="text-body-lg font-body-lg font-semibold text-on-surface">Plan Médico Personalizado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                Diseño progresivo en micro-sesiones con trazabilidad de viales certificados.
+              </p>
+<div class="mt-2 inline-flex items-center gap-1 text-[11px] font-label-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="check">check</span>
+                Beneficio: Cero costos ocultos ni improvisaciones de producto.
+              </div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="glass-card p-4 rounded-2xl flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-base flex-shrink-0">
+              03
+            </div>
+<div>
+<h4 class="text-body-lg font-body-lg font-semibold text-on-surface">Aplicación Guiada y Glow Natural</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                Técnicas atraumáticas con cánula suave y confort anestésico premium.
+              </p>
+<div class="mt-2 inline-flex items-center gap-1 text-[11px] font-label-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-xs" data-icon="check">check</span>
+                Beneficio: Reincorporación inmediata a tu rutina social y laboral.
+              </div>
+</div>
+</div>
+</div>
+<!-- Enlace Contextual Chat Médico -->
+<div class="mt-space-md text-center">
+<a class="inline-flex items-center gap-1.5 text-label-lg font-label-lg text-primary underline hover:text-primary-container transition-colors" href="https://wa.me/573002162405" target="_blank">
+<span>¿Tienes dudas sobre tu caso particular? Chatea con nuestro equipo médico</span>
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+</a>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 3. DESEO (Métricas, Beneficios & Prueba Social)-->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-xl" id="casos">
+<!-- Métricas de Confianza Comprobada -->
+<div class="grid grid-cols-2 gap-3 mb-space-xl">
+<div class="glass-card p-4 rounded-2xl text-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-primary font-bold block">+8 Años</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">De Trayectoria Médica</span>
+</div>
+<div class="glass-card p-4 rounded-2xl text-center">
+<span class="text-display-lg-mobile font-display-lg-mobile text-primary font-bold block">+4.500</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Pacientes Satisfechos</span>
+</div>
+<div class="glass-card p-4 rounded-2xl text-center">
+<span class="text-headline-md font-headline-md text-secondary font-bold block">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Insumos INVIMA &amp; FDA</span>
+</div>
+<div class="glass-card p-4 rounded-2xl text-center">
+<div class="flex items-center justify-center gap-1 text-tertiary-container mb-0.5">
+<span class="text-display-lg-mobile font-display-lg-mobile font-bold text-on-surface">4.9</span>
+<span class="material-symbols-outlined fill text-tertiary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">En Google Reviews</span>
+</div>
+</div>
+<!-- 4 Beneficios Orientados a Resultados Cotidianos -->
+<div class="mb-space-xl">
+<div class="text-center mb-space-md">
+<span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">Resultados Visibles</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mt-1">
+              Lo que experimentarás en tu día a día
+            </h2>
+</div>
+<div class="space-y-3">
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="face">face</span>
+</div>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Armonía y sutileza absoluta</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                  Piel fresca, descansada y luminosa, jamás aspecto operado o rígido.
+                </p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="biotechnology">chips</span>
+</div>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Bioestimulación profunda</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                  Reactivación de colágeno propio para tensado y tersura duradera por hasta 18 meses.
+                </p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Cero tiempo de incapacidad</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                  Continúa con tu jornada laboral o compromisos sociales el mismo día sin marcas evidentes.
+                </p>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3.5 shadow-sm">
+<div class="p-2.5 rounded-xl bg-secondary-container/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Acompañamiento médico VIP</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+                  Controles fotográficos de evolución a los 15 y 30 días incluidos en tu tratamiento.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonios de Pacientes Verificadas en Colombia -->
+<div>
+<div class="text-center mb-space-md">
+<span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">Voces Reales</span>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mt-1">
+              Testimonios de Pacientes
+            </h2>
+</div>
+<div class="space-y-4">
+<!-- Testimonio 1 -->
+<div class="glass-card p-4 rounded-2xl relative">
+<div class="flex items-center gap-1 text-tertiary mb-2">
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface italic">
+                “Tenía pánico de que mis labios o pómulos se vieran inflados. En Alquímico la doctora me escuchó con paciencia infinita. Mi rostro se ve descansado, como si hubiera dormido 10 horas, nadie nota un procedimiento pero todos elogian mi piel.”
+              </p>
+<div class="mt-3 flex items-center justify-between border-t border-outline-variant/20 pt-2">
+<div>
+<span class="text-label-lg font-label-lg text-on-surface font-semibold block">Camila Restrepo</span>
+<span class="text-[11px] font-body-sm text-on-surface-variant">Medellín, Colombia · Bioestimulación dérmica</span>
+</div>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified">verified</span>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="glass-card p-4 rounded-2xl relative">
+<div class="flex items-center gap-1 text-tertiary mb-2">
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface italic">
+                “La calidez médica y la higiene de la sede boutique en Bogotá me dieron seguridad desde el minuto uno. Abrieron los productos sellados frente a mí. Resultados 10/10 en naturalidad.”
+              </p>
+<div class="mt-3 flex items-center justify-between border-t border-outline-variant/20 pt-2">
+<div>
+<span class="text-label-lg font-label-lg text-on-surface font-semibold block">Valentina Montoya</span>
+<span class="text-[11px] font-body-sm text-on-surface-variant">Bogotá, Colombia · Armonización sutil</span>
+</div>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- 4. ACCIÓN (Conversión directa sin fricción)     -->
+<!-- ============================================== -->
+<section class="px-margin-mobile py-space-xl bg-surface-container-low/70 border-t border-outline-variant/30" id="agendar">
+<!-- Micro-aviso Urgencia Sensata -->
+<div class="flex items-center justify-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container text-label-sm font-label-sm mx-auto w-fit mb-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Cupos limitados de valoración esta semana en Colombia
+        </div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface text-center mb-space-md">
+          Empieza hoy tu transformación armónica con total confianza
+        </h2>
+<!-- Formulario Minimalista de 3 Campos -->
+<div class="glass-card p-5 rounded-3xl shadow-lg border border-primary/20">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Una asesora médica de Alquímico se comunicará contigo vía WhatsApp en menos de 24 horas.');">
+<!-- Campo 1: Nombre -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mb-1" for="fullName">
+                Nombre Completo
+              </label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-on-surface font-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="fullName" placeholder="Ej. Carolina Gómez" required="" type="text"/>
+</div>
+<!-- Campo 2: WhatsApp Celular -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mb-1" for="phone">
+                WhatsApp o Celular (+57)
+              </label>
+<div class="relative">
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-on-surface font-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="phone" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Campo 3: Selección de Tratamiento -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mb-1" for="treatment">
+                ¿Qué tratamiento te interesa?
+              </label>
+<select class="w-full h-[52px] px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-on-surface font-body-md focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="treatment" required="">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="armonizacion">Armonización Facial Sutil</option>
+<option value="bioestimuladores">Bioestimuladores de Colágeno</option>
+<option value="rejuvenecimiento">Rejuvenecimiento Cutáneo &amp; Glow</option>
+<option value="diagnostico">Valoración Médica General</option>
+</select>
+</div>
+<!-- Botón Principal -->
+<button class="w-full py-4 rounded-full bg-primary hover:bg-primary-container text-on-primary text-label-lg font-label-lg font-semibold cta-shadow transition-transform active:scale-95 duration-150 flex items-center justify-center gap-2 mt-2" type="submit">
+<span>Quiero mi valoración clínica</span>
+<span class="material-symbols-outlined text-lg" data-icon="auto_awesome">auto_awesome</span>
+</button>
+</form>
+<!-- Separador -->
+<div class="relative my-5 text-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/40"></div>
+</div>
+<span class="relative bg-surface-container-lowest px-3 text-label-sm font-label-sm text-on-surface-variant font-medium">
+              O si prefieres atención inmediata
+            </span>
+</div>
+<!-- Botón Secundario WhatsApp -->
+<a class="w-full py-3.5 px-4 rounded-full border-2 border-primary text-primary hover:bg-primary/5 transition-all duration-150 flex items-center justify-center gap-2 text-label-lg font-label-lg font-semibold active:scale-95 text-center" href="https://wa.me/573002162405" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 300 216 2405)</span>
+</a>
+<!-- Aviso de Privacidad Médico -->
+<p class="text-[11px] font-body-sm text-outline text-center mt-4 leading-relaxed">
+            Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia. Cero spam.
+          </p>
+</div>
+<!-- Preguntas Frecuentes Desplegables -->
+<div class="mt-space-lg">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center mb-space-sm">
+            Preguntas Frecuentes
+          </h3>
+<div class="space-y-2.5">
+<details class="group bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-body-md text-on-surface select-none">
+<span>¿Los procedimientos duelen?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-sm" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Priorizamos tu confort. Empleamos anestésicos tópicos hospitalarios y microcánulas de punta roma ultrasuaves que reducen molestias y hematomas prácticamente a cero.
+              </p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-body-md text-on-surface select-none">
+<span>¿Cuánto duran los resultados?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-sm" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Dependiendo del protocolo elegido, entre 9 y 18 meses. Los bioestimuladores continúan mejorando la firmeza de tu piel con el paso de los meses gracias a tu propio colágeno.
+              </p>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/30 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-body-md text-on-surface select-none">
+<span>¿Cómo garantizan que sea natural?</span>
+<span class="material-symbols-outlined text-primary transition-transform group-open:rotate-180 text-sm" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-2 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Mediante nuestra regla de <em>progresión armónica</em>: dosificamos en sesiones escalonadas y jamás sobrecorregimos. Buscamos que tus rasgos sean reconocibles, solo que más luminosos y descansados.
+              </p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/40">
+<div class="flex flex-col items-center text-center w-full px-margin-mobile py-space-lg space-y-space-md max-w-7xl mx-auto">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="text-headline-md font-headline-md text-primary font-semibold">Alquímico</span>
+</div>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-primary underline transition-colors duration-150" href="#agendar">Registro REPS MinSalud</a>
+<a class="hover:text-primary underline transition-colors duration-150" href="#agendar">Habeas Data Ley 1581</a>
+<a class="hover:text-primary underline transition-colors duration-150" href="#agendar">Consentimiento Informado</a>
+<a class="hover:text-primary underline transition-colors duration-150" href="https://wa.me/573002162405">Atención Médica Inmediata</a>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-xs text-balance">
+          © 2025 Alquímico Medicina Estética. MinSalud &amp; REPS Colombia. Tratamiento de Datos Personales Ley 1581 de 2012. Todos los derechos reservados.
+        </p>
+</div>
+</footer>
+<!-- BOTTOM NAVBAR (Shared Component Anchor with Semantic Lock) -->
+<!-- The page is an appointment booking funnel: "Agendar" is the primary matching destination -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-space-xs pb-safe max-w-md mx-auto bg-surface-container-lowest/90 backdrop-blur-lg shadow-lg border-t border-outline-variant/30">
+<!-- 1. Tratamientos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="spa">spa</span>
+<span class="text-label-sm font-label-sm mt-0.5">Tratamientos</span>
+</a>
+<!-- 2. Proceso (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary" href="#proceso">
+<span class="material-symbols-outlined text-xl" data-icon="clinical_notes">clinical_notes</span>
+<span class="text-label-sm font-label-sm mt-0.5">Proceso</span>
+</a>
+<!-- 3. Casos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-95 transition-transform duration-150 hover:text-primary" href="#casos">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- 4. Agendar (Active - Target of this Funnel Landing Page) -->
+<a class="flex flex-col items-center justify-center text-primary font-semibold py-1 active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined text-xl fill" data-icon="calendar_today" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="text-label-sm font-label-sm mt-0.5">Agendar</span>
+</a>
+</nav>
+</div>
+</body></html>

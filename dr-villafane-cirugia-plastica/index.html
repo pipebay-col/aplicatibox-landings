@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Dr. Santiago Villafañe · Cirugía Plástica Estética y Reconstructiva</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with CDN Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#f2fcf8",
+            "surface-variant": "#dbe5e1",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#00685d",
+            "on-tertiary-fixed": "#00201c",
+            "surface-container": "#e6f0ec",
+            "surface": "#f2fcf8",
+            "on-background": "#141d1b",
+            "inverse-on-surface": "#e9f3ef",
+            "tertiary-container": "#487e75",
+            "primary-fixed-dim": "#74d7c8",
+            "outline-variant": "#bdc9c6",
+            "surface-dim": "#d2dcd9",
+            "outline": "#6e7a77",
+            "surface-container-high": "#e0eae7",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#f4fffb",
+            "primary-container": "#008376",
+            "surface-tint": "#006b60",
+            "inverse-primary": "#74d7c8",
+            "surface-container-low": "#ecf6f2",
+            "on-secondary-fixed-variant": "#5e411a",
+            "tertiary-fixed": "#b5eee2",
+            "on-error-container": "#93000a",
+            "tertiary": "#2e655c",
+            "primary-fixed": "#91f4e4",
+            "inverse-surface": "#293230",
+            "secondary-fixed": "#ffddb8",
+            "on-primary-container": "#f2fffb",
+            "background": "#f2fcf8",
+            "on-surface": "#141d1b",
+            "tertiary-fixed-dim": "#99d1c6",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#3e4947",
+            "on-secondary-fixed": "#2a1700",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#144f47",
+            "secondary-fixed-dim": "#eabf8d",
+            "secondary": "#79582f",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#005048",
+            "on-primary-fixed": "#00201c",
+            "on-secondary-container": "#795930",
+            "secondary-container": "#ffd29f",
+            "surface-container-highest": "#dbe5e1"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin-md": "2rem",
+            "gutter-md": "1.5rem",
+            "margin": "1.25rem",
+            "margin-lg": "3.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter-lg": "2rem",
+            "gutter": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-mobile": ["Playfair Display"],
+            "display": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["1.125rem", { lineHeight: "1.75rem", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-sm": ["1.375rem", { lineHeight: "1.875rem", letterSpacing: "0em", fontWeight: "500" }],
+            "title-md": ["1rem", { lineHeight: "1.5rem", letterSpacing: "0em", fontWeight: "600" }],
+            "title-lg": ["1.125rem", { lineHeight: "1.625rem", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "label-md": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "600" }],
+            "headline-lg-mobile": ["1.875rem", { lineHeight: "2.375rem", letterSpacing: "0em", fontWeight: "600" }],
+            "headline-md": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "0em", fontWeight: "500" }],
+            "body-sm": ["0.8125rem", { lineHeight: "1.25rem", letterSpacing: "0.01em", fontWeight: "400" }],
+            "headline-lg": ["2.5rem", { lineHeight: "3rem", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-md": ["0.9375rem", { lineHeight: "1.5rem", letterSpacing: "0em", fontWeight: "400" }],
+            "display-mobile": ["2.5rem", { lineHeight: "3rem", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "display": ["3.5rem", { lineHeight: "4rem", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "label-sm": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.04em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1.25rem);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden min-h-screen flex flex-col justify-between">
+<!-- TOP APP BAR (Shared Component Anchor) -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-5 py-3 max-w-screen-md mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="text-title-lg font-title-lg text-primary dark:text-inverse-primary tracking-tight font-bold">Dr. Villafañe</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant -mt-1 flex items-center gap-1">
+<span>Cirugía Plástica</span>
+<span class="text-primary font-bold">· SCCP</span>
+</span>
+</div>
+</div>
+<a class="bg-primary text-on-primary text-label-md font-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container active:scale-95 transition-all duration-150 flex items-center gap-1" href="#agendar">
+<span>Agendar</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- MAIN CANVAS (AIDA MOBILE FUNNEL) -->
+<main class="w-full max-w-screen-md mx-auto pt-20 pb-28 px-4 flex flex-col space-y-10">
+<!-- [A - ATENCIÓN / HERO SECTION] -->
+<section class="flex flex-col items-center pt-2 text-center space-y-4">
+<!-- Mini Authority Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/30 text-on-surface-variant text-label-sm font-label-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>SCCP &amp; FILACP · Habilitación MinSalud Colombia</span>
+</div>
+<!-- H1 Mobile Benefit Title -->
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface tracking-tight leading-tight px-1">
+        Tu belleza en su versión más armónica y natural, <span class="italic text-primary font-normal">con rigor médico</span> y seguridad en Colombia.
+      </h1>
+<!-- Specific Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant px-2 leading-relaxed">
+        Procedimientos quirúrgicos milimétricos de contorno corporal, rinoplastia estructural y rejuvenecimiento facial con técnica preservadora. Resultados elegantes que respetan tu fisionomía sin apariencias artificiales ni incapacidades prolongadas.
+      </p>
+<!-- Hero Surgeon Card -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-[0_12px_36px_-4px_rgba(19,28,26,0.08)] border border-outline-variant/30 bg-surface-container-lowest mt-2">
+<img alt="Dr. Santiago Villafañe, cirujano plástico y reconstructivo en su consultorio médico de alta gama en Colombia" class="w-full h-80 object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Q2bKTWJEH-F_Gclne2dFOasS01j7XzlCLPGS4Go83Q4dr69xyMrbJBr70dvc9fVl-_YD5V3Bz5PMd9gfqqwqTOYrA5d2PKxiytqF96xM6uhgb_zHmSB2BCFg6LK5pZk7k4PXVEMehNFb9HXNKpEyT7o1lJhs_YizyrMG7HMtXGfGud_06onXRoAVh3VuPNrmBJ00iq0EPoiM5Q8qBKUATHuKMOX62ugqswYjGj-IrdojDVnIkBowhWPzxjU26TJHnIDduHbkk88"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-3 w-full border border-outline-variant/30 text-left flex items-center justify-between shadow-sm">
+<div>
+<p class="text-title-md font-title-md text-primary font-bold">Dr. Santiago Villafañe</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Especialista Certificado SCCP • Reg. Médico 1024-C</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">medical_information</span>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Conversion Primary CTA -->
+<div class="w-full pt-2 flex flex-col space-y-2">
+<a class="w-full py-4 px-6 bg-primary-container text-on-primary-container text-title-md font-title-md rounded-full shadow-[0_8px_20px_-2px_rgba(0,131,118,0.35)] flex items-center justify-center gap-2 active:scale-95 transition-transform duration-150" href="#agendar">
+<span>Agendar ahora mi valoración clínica</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</a>
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Respuesta en menos de 24 horas · Diagnóstico 1 a 1 sin costo sorpresa
+        </p>
+</div>
+<!-- Quick Trust Badges Row -->
+<div class="grid grid-cols-3 gap-2 w-full pt-1">
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">local_hospital</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Quirófanos Nivel IV</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">health_and_safety</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Preservación Anatómica</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-xl mb-1">person_celebrate</span>
+<span class="text-label-sm font-label-sm text-on-surface leading-tight">Atención 1 a 1 Exclusiva</span>
+</div>
+</div>
+</section>
+<!-- [I - INTERÉS / DILEMA DEL PACIENTE & METODOLOGÍA] -->
+<section class="space-y-6">
+<!-- Empathy Dilemma Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-[0_12px_36px_-4px_rgba(19,28,26,0.04)] space-y-3">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/50 text-secondary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-base">psychology_alt</span>
+<span>Compromiso Ético</span>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">
+          ¿Temes resultados exagerados, quedar irreconocible o presupuestos con sorpresas de última hora?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          En nuestra consulta desterramos las cirugías en serie y los cánones artificiales. Cada rostro y cuerpo poseen una armonía preexistente. Nuestra filosofía médica se rige por la <strong class="text-primary font-semibold">proporción áurea</strong>, la sutileza quirúrgica y el respeto integral por tus características naturales para un resultado fresco y distinguido.
+        </p>
+</div>
+<!-- Clinical Protocol (3 Steps) -->
+<div class="space-y-3">
+<div class="px-2">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Metodología Quirúrgica Precisa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Un camino estructurado desde el diagnóstico hasta tu recuperación total</p>
+</div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-4">
+<span class="text-headline-md font-headline-md text-primary-fixed-dim/70 font-bold select-none">01</span>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Valoración y Mapeo Anatómico 3D</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Diagnóstico milimétrico presencial en Colombia o teleconsulta internacional personalizada. Evaluamos la simetría esquelética y calidad de los tejidos sin presiones comerciales.
+              </p>
+<div class="pt-2 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Beneficio: Certeza clínica y expectativas 100% claras antes de decidir.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-4">
+<span class="text-headline-md font-headline-md text-primary-fixed-dim/70 font-bold select-none">02</span>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Plan Quirúrgico y Presupuesto Cerrado</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Cotización integral por escrito con clínica acreditada de nivel superior, equipo de anestesiología certificado SCCP, derechos de sala y kit farmacológico postoperatorio.
+              </p>
+<div class="pt-2 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm">lock_clock</span>
+<span>Beneficio: Transparencia financiera total, cero cobros imprevistos.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-4">
+<span class="text-headline-md font-headline-md text-primary-fixed-dim/70 font-bold select-none">03</span>
+<div class="space-y-1">
+<h4 class="text-title-md font-title-md text-on-surface font-semibold">Cirugía de Precisión y Recuperación Guiada</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                Técnicas microquirúrgicas con tecnología ultrasónica que disminuye hematomas y dolor. Monitoreo postquirúrgico directo 24/7 y terapias de drenaje linfático médico incluidas.
+              </p>
+<div class="pt-2 flex items-center gap-1.5 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-sm">healing</span>
+<span>Beneficio: Retorno cómodo, rápido y seguro a tu vida cotidiana.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary In-Flow WhatsApp Trigger -->
+<a class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high border border-outline-variant/30 text-primary flex items-center justify-between text-label-md font-label-md hover:bg-surface-container active:scale-95 transition-all" href="https://wa.me/573223926973" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">chat</span>
+<span>¿Dudas previas a tu cita? Habla con el equipo médico</span>
+</div>
+<span class="material-symbols-outlined text-sm">arrow_forward_ios</span>
+</a>
+</section>
+<!-- [D - DESEO / AUTORIDAD, CASOS Y RESULTADOS] -->
+<section class="space-y-6">
+<!-- Statistics Bento Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center flex flex-col justify-center shadow-sm">
+<span class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">+16</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Años de Trayectoria Quirúrgica</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center flex flex-col justify-center shadow-sm">
+<span class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">+4.500</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Procedimientos Exitosos</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center flex flex-col justify-center shadow-sm">
+<span class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">99.4%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Satisfacción Verificada</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/20 text-center flex flex-col justify-center shadow-sm">
+<span class="text-headline-lg-mobile font-headline-lg-mobile text-primary font-bold">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">MinSalud &amp; SCCP Acreditado</span>
+</div>
+</div>
+<!-- Pillars of Value -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/30 space-y-4 shadow-sm">
+<h3 class="text-title-lg font-title-lg text-on-surface font-semibold">Beneficios Diseñados para tu Estilo de Vida</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-lg">auto_fix_high</span>
+</div>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">Armonía y sutileza absoluta</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Rasgos proporcionados sin rigidez facial ni estigma quirúrgico evidente.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-lg">biotech</span>
+</div>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">Preservación tisular ultrasónica</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Instrumental microquirúrgico de última generación que minimiza hematomas y dolor.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-lg">domain_add</span>
+</div>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">Instituciones Nivel IV con UCI</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Intervenciones únicamente en clínicas dotadas con la más alta seguridad del país.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/15 flex items-center justify-center shrink-0 text-primary mt-0.5">
+<span class="material-symbols-outlined text-lg">flight_takeoff</span>
+</div>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">Concierge médico para turismo de salud</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Asistencia completa en traslados, hotelería y enfermería VIP para pacientes foráneos.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Cases Gallery (Mobile Bento) -->
+<div class="space-y-3">
+<div class="px-2 flex justify-between items-end">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Resultados Naturales</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Casos clínicos reales y preservación de rasgos</p>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-semibold">Casos Verificados</span>
+</div>
+<!-- Case 1 Card -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-sm">
+<div class="relative h-64 w-full">
+
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm text-primary font-bold border border-outline-variant/20 shadow-xs">
+              Rinoplastia Ultrasónica • 6 Meses Post
+            </div>
+</div>
+<div class="p-4 space-y-1">
+<p class="text-title-md font-title-md text-on-surface">Refinamiento de Dorso y Punta Preservada</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Corrección de giba nasal con técnica cerrada, conservando soporte estructural cartilaginoso y función ventilatoria óptima.</p>
+</div>
+</div>
+<!-- Case 2 Card -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-sm">
+<div class="relative h-64 w-full">
+
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm text-primary font-bold border border-outline-variant/20 shadow-xs">
+              Rejuvenecimiento Facial Armónico
+            </div>
+</div>
+<div class="p-4 space-y-1">
+<p class="text-title-md font-title-md text-on-surface">Lifting de Planos Profundos (Deep Plane)</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Reposición de compartimentos grasos faciales y definición mandibular sin tensión en la piel ni estigmas quirúrgicos.</p>
+</div>
+</div>
+</div>
+<!-- Patient Testimonial Micro-cards -->
+<div class="bg-surface-container-high/40 p-4 rounded-2xl border border-outline-variant/30 space-y-3">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant ml-2 font-medium">Testimonio verificado · Bogotá / Miami</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface italic">
+          "Viajé desde Estados Unidos para mi procedimiento con el Dr. Villafañe. Su sobriedad médica y franqueza me dieron una tranquilidad inmensa. Mi recuperación fue rapidísima y el resultado se ve tan natural que nadie nota que fui operada."
+        </p>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant border-t border-outline-variant/20 pt-2">
+<span class="font-bold text-on-surface">Camila R. • 34 años</span>
+<span class="text-primary font-medium">Lipoescultura HD &amp; Rinoplastia</span>
+</div>
+</div>
+</section>
+<!-- [A - ACCIÓN / CONVERSIÓN Y CIERRE] -->
+<section class="bg-surface-container-lowest p-6 rounded-3xl border border-outline-variant/40 shadow-[0_16px_40px_-6px_rgba(19,28,26,0.09)] space-y-5 scroll-mt-20" id="agendar">
+<!-- Scarcity / Quality Assurance Micro-Notice -->
+<div class="p-3 rounded-xl bg-surface-container-low border border-primary/20 flex items-center gap-2.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">event_available</span>
+<p class="text-label-sm font-label-sm leading-tight text-on-surface-variant">
+<strong class="text-primary font-semibold">Cupos quirúrgicos limitados por semana</strong> en Colombia para garantizar seguimiento postoperatorio exclusivo e individualizado.
+        </p>
+</div>
+<div class="text-center space-y-1">
+<h2 class="text-headline-md font-headline-md text-on-surface">Inicia hoy tu transformación con seguridad médica</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Completa tus datos para recibir un diagnóstico previo y coordinar tu valoración con el Dr. Villafañe.</p>
+</div>
+<!-- 3-Field High-Conversion Minimalist Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Nuestro equipo médico coordinará tu cita prioritaria en menos de 24 horas.');">
+<!-- Field 1: Name -->
+<div class="space-y-1.5 text-left">
+<label class="block text-label-sm font-label-sm text-on-surface-variant" for="full_name">Nombre y Apellido</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low rounded-xl border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="full_name" placeholder="Ej. Carolina Mendoza" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Phone / WhatsApp -->
+<div class="space-y-1.5 text-left">
+<label class="block text-label-sm font-label-sm text-on-surface-variant" for="phone_number">WhatsApp o Celular (con indicativo)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">smartphone</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low rounded-xl border border-outline-variant/40 text-body-md font-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" id="phone_number" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Procedure Dropdown -->
+<div class="space-y-1.5 text-left">
+<label class="block text-label-sm font-label-sm text-on-surface-variant" for="procedure_select">¿Qué procedimiento te interesa evaluar?</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">medical_services</span>
+<select class="w-full pl-10 pr-4 py-3 bg-surface-container-low rounded-xl border border-outline-variant/40 text-body-md font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all appearance-none" id="procedure_select" required="">
+<option disabled="" selected="" value="">Selecciona tu procedimiento de interés</option>
+<option value="rinoplastia">Rinoplastia Ultrasónica / Preservadora</option>
+<option value="lipoescultura">Lipoescultura HD &amp; Marcación Atlética</option>
+<option value="mamoplastia">Mamoplastia de Aumento / Pexia Mamaria</option>
+<option value="facial">Rejuvenecimiento Facial / Blefaroplastia</option>
+<option value="integral">Valoración Quirúrgica Integral</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Conversion Button -->
+<button class="w-full py-4 px-6 bg-primary-container hover:bg-primary text-on-primary-container text-title-md font-title-md rounded-full shadow-[0_8px_20px_-2px_rgba(0,131,118,0.35)] flex items-center justify-center gap-2 active:scale-95 transition-transform duration-150 cursor-pointer" type="submit">
+<span>Quiero mi valoración clínica ✨</span>
+</button>
+<!-- Direct WhatsApp CTA -->
+<a class="w-full py-3.5 px-4 rounded-full border border-primary text-primary bg-transparent hover:bg-primary-container/10 text-label-md font-label-md flex items-center justify-center gap-2 active:scale-95 transition-all text-center" href="https://wa.me/573223926973" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>Chatear directo al WhatsApp (+57 322 392 6973)</span>
+</a>
+<!-- Legal Privacy Guarantee -->
+<p class="text-body-sm font-body-sm text-on-surface-variant text-center pt-2 leading-tight">
+          Tus datos están 100% protegidos bajo secreto médico profesional y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</form>
+</section>
+<!-- PREGUNTAS FRECUENTES (INTERACTIVE ACCORDIONS) -->
+<section class="space-y-4">
+<div class="px-2">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Preguntas Frecuentes</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Respuestas directas con criterio quirúrgico</p>
+</div>
+<div class="space-y-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none select-none text-title-md font-title-md text-on-surface">
+<span>¿Cuánto tiempo de incapacidad laboral se requiere?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+            Depende del procedimiento. En rinoplastias ultrasónicas y blefaroplastias, los pacientes suelen retomar labores de oficina a los 5 a 7 días. En cirugías de contorno corporal como lipoescultura HD, el retorno gradual se estima entre los 8 y 12 días, gracias al uso de tecnología ultrasónica que minimiza el trauma a los tejidos.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none select-none text-title-md font-title-md text-on-surface">
+<span>¿El presupuesto entregado es realmente cerrado y definitivo?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+            Sí. Uno de nuestros pilares de ética profesional es la absoluta transparencia. La cotización emitida tras tu valoración comprende los honorarios quirúrgicos, el equipo anestesiológico, derechos de sala en clínica de alta complejidad, póliza médica obligatoria y citas de revisión postquirúrgica.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none select-none text-title-md font-title-md text-on-surface">
+<span>¿Cómo funciona si viajo desde el exterior o fuera de la ciudad?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+            Disponemos de un protocolo estructurado de turismo médico: realizamos una teleconsulta diagnóstica inicial en video HD, emitimos órdenes de exámenes previos para realizar en tu país o ciudad de origen, y coordinamos estadía sugerida de 12 a 15 días en Colombia con asistencia de enfermería personalizada.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden shadow-xs">
+<summary class="flex justify-between items-center p-4 cursor-pointer list-none select-none text-title-md font-title-md text-on-surface">
+<span>¿En qué clínicas e instituciones se realizan las intervenciones?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-body-sm font-body-sm text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-2">
+            El Dr. Villafañe opera con exclusividad en clínicas acreditadas de nivel IV que cuentan con salas de cirugía de flujo laminar, Unidad de Cuidados Intensivos (UCI), banco de sangre y soporte hospitalario integral permanente vigilado por la Secretaría de Salud y MinSalud.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component Anchor) -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/20">
+<div class="flex flex-col items-center text-center w-full px-5 py-10 pb-28 space-y-4 max-w-screen-md mx-auto">
+<div class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-bold">
+        Dr. Villafañe
+      </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant max-w-md leading-relaxed">
+        © 2024 Dr. Villafañe Cirugía Plástica Estética y Reconstructiva. Miembro de Número SCCP y FILACP. Registro Médico y Habilitación Especial en Salud MinSalud Colombia. Vigilado por Supersalud.
+      </p>
+<div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-label-sm font-label-sm">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150" href="#agendar">Certificación SCCP</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150" href="#agendar">Registro MinSalud</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150" href="#agendar">Política de Habeas Data (Ley 1581)</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150" href="#agendar">Consentimiento Informado y Deberes del Paciente</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary hover:underline transition-colors duration-150" href="#agendar">Términos y Condiciones Médicas</a>
+</div>
+</div>
+</footer>
+<!-- BOTTOM NAV BAR (Shared Component Anchor - Active: Valoración) -->
+<nav class="bg-surface-bright/95 dark:bg-inverse-surface/95 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-3 py-2 pb-safe border-t border-outline-variant/20 dark:border-outline/20 shadow-[0_-4px_20px_rgba(19,28,26,0.06)] dark:shadow-none">
+<!-- Destination 1: Procedimientos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 font-label-sm hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="#procedimientos">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+<span class="text-label-sm font-label-sm mt-0.5">Procedimientos</span>
+</a>
+<!-- Destination 2: Casos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 font-label-sm hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="#casos">
+<span class="material-symbols-outlined text-2xl">auto_awesome</span>
+<span class="text-label-sm font-label-sm mt-0.5">Casos</span>
+</a>
+<!-- Destination 3: Chat Médico -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 font-label-sm hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 active:scale-95" href="https://wa.me/573223926973" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span class="text-label-sm font-label-sm mt-0.5">Chat Médico</span>
+</a>
+<!-- Destination 4: Valoración (ACTIVE TAB) -->
+<a class="flex flex-col items-center justify-center bg-primary-container/15 dark:bg-primary-container/30 text-primary dark:text-inverse-primary rounded-xl px-3 py-1.5 font-label-md active:scale-95 transition-transform duration-150" href="#agendar">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="text-label-md font-label-md mt-0.5 font-bold">Valoración</span>
+</a>
+</nav>
+</body></html>

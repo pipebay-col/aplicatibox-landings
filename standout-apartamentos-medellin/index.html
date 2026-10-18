@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StandOut Apartamentos Medellín · Curaduría Inmobiliaria de Autor</title>
+<!-- Material Symbols Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Typography Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with Forms -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#faf9f7",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#e0c298",
+            "on-tertiary-fixed": "#0d1c2e",
+            "on-secondary-container": "#78603e",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#b6c8e4",
+            "on-background": "#1a1c1b",
+            "on-primary-container": "#7889a4",
+            "inverse-on-surface": "#f1f1ef",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#d5e3fc",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#44474d",
+            "error-container": "#ffdad6",
+            "primary-container": "#0f2137",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#584323",
+            "surface-container-low": "#f4f3f1",
+            "on-surface": "#1a1c1b",
+            "primary": "#000919",
+            "inverse-primary": "#b6c8e4",
+            "primary-fixed": "#d4e3ff",
+            "surface-tint": "#4f5f78",
+            "surface-container-high": "#e9e8e6",
+            "outline": "#74777d",
+            "outline-variant": "#c4c6cd",
+            "secondary": "#725b38",
+            "secondary-container": "#fedeb2",
+            "tertiary": "#000918",
+            "surface-container-highest": "#e3e2e0",
+            "tertiary-container": "#132133",
+            "surface-dim": "#dadad8",
+            "on-tertiary-container": "#7b899f",
+            "inverse-surface": "#2f3130",
+            "background": "#faf9f7",
+            "on-primary-fixed-variant": "#374860",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#281800",
+            "surface-variant": "#e3e2e0",
+            "on-primary-fixed": "#091c32",
+            "surface": "#faf9f7",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#b9c7df",
+            "surface-container": "#efeeec",
+            "secondary-fixed": "#fedeb2",
+            "on-tertiary-fixed-variant": "#3a485b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "margin": "3rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "display-hero-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"]
+          },
+          "fontSize": {
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-fixed selection:text-primary">
+<!-- TopAppBar (Shared Component Standard) -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 bg-surface/95 dark:bg-surface-container-lowest/95 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="apartment">apartment</span>
+<span class="text-headline-sm font-headline-sm font-semibold tracking-tight text-primary">StandOut Medellín</span>
+</div>
+<!-- Action Trailing CTA -->
+<a class="text-label-md font-label-md font-semibold text-primary hover:text-secondary active:opacity-80 transition-opacity duration-200 px-3 py-1.5 rounded-lg border border-primary/20 bg-surface-container-lowest shadow-sm" href="#contacto">
+      Contactar
+    </a>
+</header>
+<!-- Main Content Wrapper / AIDA Funnel Container (Mobile Optimized) -->
+<main class="pt-16 pb-24 max-w-xl mx-auto px-margin-mobile overflow-hidden">
+<!-- ========================================== -->
+<!-- 1. ETAPA A - ATENCIÓN (ATTENTION)           -->
+<!-- ========================================== -->
+<section class="pt-6 pb-10 flex flex-col items-start">
+<!-- Credential Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface-variant font-label-caps text-label-caps mb-4 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Curaduría Inmobiliaria de Autor · El Poblado, Laureles &amp; Envigado</span>
+</div>
+<!-- H1 Headline (Playfair Display) -->
+<h1 class="text-display-hero-mobile font-display-hero-mobile text-primary tracking-tight mb-4">
+        Tu nuevo apartamento en Medellín, seleccionado con rigor y plusvalía asegurada.
+      </h1>
+<!-- Specific Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed mb-6">
+        Apartamentos de diseño contemporáneo, acabados nobles y terrazas panorámicas en los sectores más cotizados de Medellín. Asesoría jurídica y fiduciaria blindada sin desgaste ni pérdidas de tiempo.
+      </p>
+<!-- Hero Visual Card with Verified Tag -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-lg border border-outline-variant/30 bg-surface-container-low mb-6 group">
+<img alt="Penthouse de lujo con terraza panorámica en El Poblado Medellín" class="w-full h-72 object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmSoCPEnuD5iCemF8JvsGccet1xZ8qumd5uNl8v2NWUMXdQmBMl1JXrqsIN2NANw0cMjIsz5zbqJ0EZptUvEXMH9p6HVSLvI-KOiGYgmbFq-y-h1wAhuhj_zi8dwR9WIO8Oekq4BOj678mRK3_JPFwYsviUWg2Bk4by7hHt7NwcajJxzLYB_loj8QSTdqFQHO48akk76R6fmptsw2nnCMEYiK5Dy0Y6AbheNev1O1CnWdQinGTqhFSAxGxYoR0TTeWBPk9y_g1XWY"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Status Floating Chip -->
+<div class="absolute top-3 left-3 bg-primary-container/90 backdrop-blur-md text-surface-bright px-3 py-1 rounded text-label-sm font-label-sm font-medium border border-surface-bright/20 shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Inmueble de Autor Verificado · El Poblado</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-surface-bright flex justify-between items-end">
+<div>
+<span class="text-label-caps font-label-caps text-secondary-fixed block">VISTA CORDILLERA OCCIDENTAL</span>
+<span class="text-label-md font-label-md font-medium text-white/95">Disponibilidad Inmediata &amp; Off-Market</span>
+</div>
+<span class="bg-surface-bright/20 backdrop-blur-sm px-2.5 py-1 rounded text-xs text-white border border-white/20">Ref. STO-942</span>
+</div>
+</div>
+<!-- Hero Single Dominant High-Contrast CTA Button -->
+<a class="w-full h-14 py-4 px-6 rounded-lg bg-primary-container text-surface-bright font-label-md text-label-md font-semibold tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:scale-[0.98] border border-secondary/40 text-center" href="#contacto">
+<span class="material-symbols-outlined text-xl text-secondary-fixed" data-icon="calendar_month">calendar_month</span>
+<span>Agendar ahora mi asesoría privada</span>
+</a>
+<!-- Instant Micro-Credentials -->
+<div class="w-full text-center mt-3 mb-6">
+<p class="text-label-sm font-label-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span>⚡ Respuesta en menos de 24 horas</span>
+<span class="text-outline-variant">·</span>
+<span>Dossier confidencial 1 a 1 sin costo sorpresa</span>
+</p>
+</div>
+<!-- Trust Badges (Horizontal Trio) -->
+<div class="w-full grid grid-cols-3 gap-2 pt-2 border-t border-outline-variant/30">
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1" data-icon="verified_user">verified_user</span>
+<span class="text-label-sm font-label-sm font-semibold text-primary leading-tight">100% Títulos Saneados</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1" data-icon="account_balance">account_balance</span>
+<span class="text-label-sm font-label-sm font-semibold text-primary leading-tight">Fiducia Blindada</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1" data-icon="lock">lock</span>
+<span class="text-label-sm font-label-sm font-semibold text-primary leading-tight">Atención 1 a 1 Discreta</span>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. ETAPA I - INTERÉS (INTEREST)             -->
+<!-- ========================================== -->
+<section class="py-10 border-t border-outline-variant/25">
+<!-- Empathy & Market Pain Point -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 shadow-sm mb-10">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-2 tracking-wider">
+          LA REALIDAD DEL MERCADO INMOBILIARIO
+        </span>
+<h2 class="text-headline-sm font-headline-sm text-primary mb-3 leading-snug">
+          ¿Cansado de portales masivos con fotos engañosas, precios inflados o propiedades que ya no existen?
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          En Medellín, más del 80% del tiempo de búsqueda se pierde en filtraciones erróneas y llamadas con intermediarios sin exclusividad. En StandOut seleccionamos únicamente el 1% de inmuebles verificados con estudio de títulos, avalúo real y potencial de renta o valorización comprobable.
+        </p>
+</div>
+<!-- Methodology: 3-Step Process -->
+<div class="mb-4">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-1">MÉTODO EXCLUSIVO</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-6">
+          Un proceso ágil, transparente y confidencial en 3 pasos
+        </h3>
+<div class="space-y-4">
+<!-- Step 01 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 relative">
+<div class="flex items-center justify-between mb-2">
+<span class="text-headline-sm font-headline-sm font-bold text-secondary">01</span>
+<span class="text-label-caps font-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">15 MINUTOS</span>
+</div>
+<h4 class="text-label-md font-label-md text-primary font-bold mb-2">
+              Valoración &amp; Perfilamiento Confidencial
+            </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+              Entendemos tus criterios de vida o rentabilidad patrimonial en una sesión privada de 15 minutos.
+            </p>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Certeza absoluta y ahorro de semanas de búsqueda infructuosa.</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 relative">
+<div class="flex items-center justify-between mb-2">
+<span class="text-headline-sm font-headline-sm font-bold text-secondary">02</span>
+<span class="text-label-caps font-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">CATÁLOGO VIP</span>
+</div>
+<h4 class="text-label-md font-label-md text-primary font-bold mb-2">
+              Plan Personalizado &amp; Dossier Off-Market
+            </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+              Recibes un catálogo exclusivo de 3 a 5 propiedades que cumplen al 100% tu estándar con planos y viabilidad legal.
+            </p>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Acceso privilegiado a inmuebles antes de salir al mercado masivo.</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 relative">
+<div class="flex items-center justify-between mb-2">
+<span class="text-headline-sm font-headline-sm font-bold text-secondary">03</span>
+<span class="text-label-caps font-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold">CIERRE BLINDADO</span>
+</div>
+<h4 class="text-label-md font-label-md text-primary font-bold mb-2">
+              Recorrido Guiado &amp; Acompañamiento Notarial
+            </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-3">
+              Coordinamos visitas privadas y gestionamos todo el cierre legal hasta la entrega de llaves y escrituración.
+            </p>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/20 text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span>Beneficio: Seguridad jurídica total y transacción blindada de punta a punta.</span>
+</div>
+</div>
+</div>
+<!-- Subtle Concierge Link -->
+<div class="text-center mt-5">
+<a class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface font-semibold underline decoration-secondary underline-offset-4 hover:text-secondary" href="https://wa.me/573242482492" rel="noopener noreferrer" target="_blank">
+<span>¿Tienes dudas sobre una propiedad específica? Consulta con nuestro concierge por WhatsApp</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. ETAPA D - DESEO (DESIRE)                 -->
+<!-- ========================================== -->
+<section class="py-10 border-t border-outline-variant/25">
+<!-- Metrics Grid 2x2 -->
+<div class="text-center mb-6">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-1">MÉTRICAS AUDITADAS</span>
+<h3 class="text-headline-sm font-headline-sm text-primary">Respaldo patrimonial contrastable</h3>
+</div>
+<div class="grid grid-cols-2 gap-3 mb-10">
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center shadow-sm">
+<span class="font-display-hero-mobile text-headline-lg-mobile text-primary font-bold block">+12</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">Años de Trayectoria</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center shadow-sm">
+<span class="font-display-hero-mobile text-headline-lg-mobile text-primary font-bold block">+480</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">Familias e Inversionistas</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center shadow-sm">
+<span class="font-display-hero-mobile text-headline-lg-mobile text-secondary font-bold block">99.2%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">Satisfacción Verificada</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-center shadow-sm">
+<span class="font-display-hero-mobile text-headline-lg-mobile text-primary font-bold block">100%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-medium">Títulos Saneados en Notaría</span>
+</div>
+</div>
+<!-- 4 Tangible Results-Focused Benefits -->
+<div class="mb-10">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-1">DIFERENCIAL STANDOUT</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-6">Diseñado para superar sus expectativas</h3>
+<div class="space-y-4">
+<!-- Benefit 1 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="location_city">location_city</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-primary mb-1">Ubicaciones Prime &amp; Alta Plusvalía</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Propiedades en los sectores más consolidados (El Poblado, Laureles, Envigado) con valorización histórica garantizada.</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-primary mb-1">Arquitectura de Autor &amp; Acabados Nobles</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Residencias con diseño bioclimático, terrazas panorámicas, maderas nobles y mármol importado.</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-primary mb-1">Blindaje Legal &amp; Tributario</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Estudio de títulos de 20 años y asesoría integral para compradores nacionales y extranjeros.</p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/20 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="visibility_off">visibility_off</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-primary mb-1">Discreción &amp; Acceso Off-Market</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Inmuebles que nunca se publican en portales públicos para proteger la privacidad de ambas partes.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials -->
+<div class="mb-6">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-1">TESTIMONIOS REALES</span>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-4">Experiencias de nuestros clientes</h3>
+<div class="space-y-4">
+<!-- Testimonial 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm italic text-on-surface-variant mb-3">
+              "Buscábamos un penthouse en El Poblado desde Miami. StandOut no solo filtró únicamente lo que realmente cumplía nuestras exigencias, sino que el estudio de títulos nos dio absoluta serenidad antes de girar la fiducia. Cero estrés."
+            </p>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-bold text-primary">Felipe &amp; Mariana R.</span>
+<span class="text-secondary font-medium">Compradores en El Poblado</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-sm font-body-sm italic text-on-surface-variant mb-3">
+              "Compré un apartamento patrimonial en Laureles para renta premium. Me ahorraron más de 2 meses de visitas inútiles con corredores informales. La discreción y rigor que manejan es de nivel internacional."
+            </p>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-bold text-primary">Dr. Jorge E. Gómez</span>
+<span class="text-secondary font-medium">Inversionista en Laureles</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. ETAPA A - ACCIÓN (ACTION / CONVERSIÓN)    -->
+<!-- ========================================== -->
+<section class="py-10 border-t border-outline-variant/25 scroll-mt-16" id="contacto">
+<!-- Conversion Card -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest border-2 border-primary/20 shadow-xl relative overflow-hidden">
+<!-- Top Status Pill -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/15 text-secondary font-label-caps text-label-caps mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Agenda abierta para asesorías privadas este mes</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">
+          Empieza hoy la búsqueda de tu propiedad soñada en Medellín
+        </h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6">
+          Diligencia tus datos para coordinar una sesión personalizada con un director inmobiliario de StandOut.
+        </p>
+<!-- 3-Field Conversion Form -->
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Gracias por su interés. Un Director de StandOut se comunicará en menos de 24 horas.');">
+<!-- Field 1: Name -->
+<div>
+<label class="block text-label-sm font-label-sm font-semibold text-primary mb-1" for="nombre">Nombre y Apellido *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface border border-outline-variant focus:border-primary focus:ring-2 focus:ring-secondary/35 text-primary text-body-md placeholder:text-outline" id="nombre" name="nombre" placeholder="Ej. Carlos Mendoza" required="" type="text"/>
+</div>
+<!-- Field 2: Phone with +57 indicator -->
+<div>
+<label class="block text-label-sm font-label-sm font-semibold text-primary mb-1" for="telefono">WhatsApp o Celular *</label>
+<div class="flex rounded-lg overflow-hidden border border-outline-variant focus-within:border-primary focus-within:ring-2 focus-within:ring-secondary/35">
+<span class="inline-flex items-center px-3.5 bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm border-r border-outline-variant">
+                🇨🇴 +57
+              </span>
+<input class="w-full h-12 px-4 bg-surface text-primary text-body-md border-0 focus:ring-0 placeholder:text-outline" id="telefono" name="telefono" placeholder="300 123 4567" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 3: Property Type Interest -->
+<div>
+<label class="block text-label-sm font-label-sm font-semibold text-primary mb-1" for="interes">¿Qué tipo de propiedad te interesa? *</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface border border-outline-variant focus:border-primary focus:ring-2 focus:ring-secondary/35 text-primary text-body-md" id="interes" name="interes" required="">
+<option disabled="" selected="" value="">Selecciona tu preferencia de inmueble</option>
+<option value="poblado">Apartamento en El Poblado</option>
+<option value="penthouse">Penthouse con terraza panorámica</option>
+<option value="laureles">Inversión para renta en Laureles</option>
+<option value="envigado">Propiedad campestre / Envigado</option>
+</select>
+</div>
+<!-- Submit Button -->
+<button class="w-full h-14 py-4 px-6 rounded-lg bg-primary-container text-white font-label-md text-label-md font-semibold tracking-wide flex items-center justify-center gap-2 shadow-lg hover:bg-primary transition-all active:scale-[0.98] mt-2 cursor-pointer border border-secondary/40" type="submit">
+<span>Quiero mi valoración patrimonial ✨</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative my-6 text-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-outline-variant/30"></div></div>
+<span class="relative bg-surface-container-lowest px-3 text-label-caps font-label-caps text-outline">O PREFIERES CONTACTO INMEDIATO</span>
+</div>
+<!-- WhatsApp Direct CTA -->
+<a class="w-full h-12 px-4 rounded-lg bg-[#0e5c3e] text-white font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow hover:bg-[#0b4b32] transition-colors" href="https://wa.me/573242482492?text=Hola,%20deseo%20información%20sobre%20los%20apartamentos%20de%20autor%20en%20Medellín." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Chatear directo al WhatsApp (+57 324 248 2492)</span>
+</a>
+<!-- Privacy & Legal Notice -->
+<p class="text-label-sm font-label-sm text-outline text-center mt-4 leading-normal">
+          🔒 Tus datos están 100% protegidos bajo secreto fiduciario y Ley 1581 de Protección de Datos de Colombia (Habeas Data). Cero spam.
+        </p>
+</div>
+<!-- FAQ Section (Interactive Accordion) -->
+<div class="mt-12">
+<span class="text-label-caps font-label-caps text-secondary font-bold block mb-1">TRANSPARENCIA TOTAL</span>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-4">Preguntas Frecuentes</h3>
+<div class="space-y-3" id="faq-container">
+<details class="group rounded-xl bg-surface-container-low border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md font-semibold text-primary">
+<span>¿Cómo garantizan que los títulos estén 100% saneados?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Nuestro equipo jurídico realiza un estudio de títulos exhaustivo que abarca los últimos 20 años de tradición del inmueble ante la Oficina de Registro de Instrumentos Públicos, verificando gravámenes, afectaciones familiares o embargos antes de cualquier compromiso económico.
+            </p>
+</details>
+<details class="group rounded-xl bg-surface-container-low border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md font-semibold text-primary">
+<span>¿Puedo adquirir un inmueble residiendo en el exterior?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              Sí. Brindamos acompañamiento completo para monetización de divisas mediante canal cambiario legal (Formulario 4 del Banco de la República) y gestionamos poderes notariales apostillados en consulados para escriturar sin necesidad de viajar a Colombia.
+            </p>
+</details>
+<details class="group rounded-xl bg-surface-container-low border border-outline-variant/30 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between cursor-pointer font-label-md text-label-md font-semibold text-primary">
+<span>¿Qué costo tiene la asesoría inicial con StandOut?</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-open:rotate-180 text-secondary" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-3 text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+              La sesión de perfilamiento y presentación del dossier confidencial no genera ningún honorario para el comprador. Nuestros honorarios se rigen bajo los estándares del mercado inmobiliario regulado en Colombia.
+            </p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Shared Component Standard for Mobile Destination Navigation) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-gutter-mobile pb-safe bg-surface-bright/95 dark:bg-surface-container-lowest/95 backdrop-blur-md shadow-lg border-t border-outline-variant/30">
+<!-- Proyectos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary active:scale-95 transition-transform duration-150" href="#proyectos">
+<span class="material-symbols-outlined text-2xl" data-icon="domain">domain</span>
+<span class="text-label-caps font-label-caps mt-0.5">Proyectos</span>
+</a>
+<!-- Proceso -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary active:scale-95 transition-transform duration-150" href="#proceso">
+<span class="material-symbols-outlined text-2xl" data-icon="timeline">timeline</span>
+<span class="text-label-caps font-label-caps mt-0.5">Proceso</span>
+</a>
+<!-- Reseñas -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:text-secondary active:scale-95 transition-transform duration-150" href="#resenas">
+<span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+<span class="text-label-caps font-label-caps mt-0.5">Reseñas</span>
+</a>
+<!-- Agendar (Active Target based on Funnel Conversion Intent) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-secondary-fixed font-semibold active:scale-95 transition-transform duration-150" href="#contacto">
+<span class="material-symbols-outlined text-2xl" data-icon="calendar_month" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="text-label-caps font-label-caps mt-0.5 font-bold">Agendar</span>
+</a>
+</nav>
+<!-- Footer (Shared Component Standard) -->
+<footer class="w-full bg-surface-container-low dark:bg-surface-container-highest border-t border-outline-variant/20 mb-16">
+<div class="w-full px-margin-mobile py-8 flex flex-col space-y-4 max-w-xl mx-auto">
+<!-- Brand in Footer -->
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="apartment">apartment</span>
+<span class="text-headline-sm font-headline-sm font-semibold text-primary">StandOut Medellín</span>
+</div>
+<!-- Legal Links -->
+<ul class="flex flex-col space-y-2 text-label-sm font-label-sm text-on-surface-variant">
+<li>
+<a class="hover:text-secondary transition-colors duration-150 focus:outline-none focus:underline" href="#">
+            Tratamiento de Datos Personales (Ley 1581)
+          </a>
+</li>
+<li>
+<a class="hover:text-secondary transition-colors duration-150 focus:outline-none focus:underline" href="#">
+            Política de Privacidad
+          </a>
+</li>
+<li>
+<a class="hover:text-secondary transition-colors duration-150 focus:outline-none focus:underline" href="#">
+            Términos de Servicio
+          </a>
+</li>
+<li>
+<a class="hover:text-secondary transition-colors duration-150 focus:outline-none focus:underline" href="#">
+            Registro Nacional de Turismo
+          </a>
+</li>
+</ul>
+<!-- Institutional Copyright -->
+<p class="text-body-sm font-body-sm text-outline pt-2 border-t border-outline-variant/20 leading-relaxed">
+        © 2024 StandOut Real Estate S.A.S. Nit: 901.482.319-2. Vigilado Superintendencia de Industria y Comercio. Medellín, Colombia.
+      </p>
+</div>
+</footer>
+</body></html>

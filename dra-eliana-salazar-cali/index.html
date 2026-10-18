@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Eliana Salazar · Odontología Estética Cali</title>
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#00796b',
+              dark: '#004d40',
+              cyan: '#00a896',
+              light: '#e0f2f1',
+              cream: '#fbfcfb',
+              surface: '#f3f8f6',
+              charcoal: '#152924',
+              muted: '#526660',
+              border: '#d7e5e1'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .shadow-soft {
+      box-shadow: 0 4px 20px -2px rgba(0, 121, 107, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+    }
+    .shadow-elevated {
+      box-shadow: 0 12px 32px -4px rgba(0, 77, 64, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-teal selection:text-white">
+
+  <!-- TOP APP BAR / ENCABEZADO FIJO -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border/60 shadow-sm">
+    <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center text-brand-teal">
+          <span class="material-symbols-outlined text-[20px]">dentistry</span>
+        </span>
+        <div>
+          <span class="font-serif font-bold text-base tracking-tight text-brand-charcoal block leading-none">Dra. Eliana Salazar</span>
+          <span class="text-[11px] font-medium text-brand-muted tracking-wide">Odontología Estética · Cali</span>
+        </div>
+      </div>
+      <a href="#agendar" class="bg-brand-teal hover:bg-brand-dark text-white text-xs font-semibold px-3.5 py-2 rounded-full transition-all flex items-center gap-1 active:scale-95 shadow-sm">
+        <span>Agendar</span>
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL MÓVIL-FIRST -->
+  <main class="max-w-md mx-auto px-4 pb-24 pt-4">
+
+    <!-- ============================================== -->
+    <!-- ETAPA A - ATENCIÓN: HERO & BENEFICIO EN 3 SEG -->
+    <!-- ============================================== -->
+    <section class="py-3 flex flex-col gap-4">
+      
+      <!-- Badge de Credencial Real de la Especialista -->
+      <div class="inline-flex items-center gap-2 bg-brand-surface border border-brand-border px-3.5 py-1.5 rounded-full self-start">
+        <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+        <span class="text-[11px] font-semibold text-brand-teal tracking-wide">
+          Especialista en Estética Dental · Registro SSSA Cali #76001
+        </span>
+      </div>
+
+      <!-- H1 Persuasivo Playfair Display -->
+      <div class="space-y-2">
+        <h1 class="font-serif text-[32px] leading-[38px] font-bold text-brand-charcoal tracking-tight text-balance">
+          Tu nueva sonrisa, <span class="italic font-normal text-brand-teal">natural</span> y diseñada a tu medida en Cali
+        </h1>
+        <p class="text-sm leading-relaxed text-brand-muted">
+          Carillas cerámicas biomiméticas de alta gama sin desgastes agresivos ni dientes artificiales. Armonía facial que resalta tu belleza genuina.
+        </p>
+      </div>
+
+      <!-- Fotografía de la Especialista en su Clínica en Cali -->
+      <div class="relative w-full rounded-2xl overflow-hidden shadow-soft border border-brand-border/70 mt-1">
+        
+        <!-- Tarjeta Flotante Especialista -->
+        <div class="absolute bottom-3 inset-x-3 bg-white/95 backdrop-blur-md p-3 rounded-xl border border-brand-border/70 flex items-center justify-between shadow-md">
+          <div class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-full bg-brand-light flex items-center justify-center text-brand-teal">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+            </span>
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal leading-tight">Dra. Eliana Salazar</p>
+              <p class="text-[11px] text-brand-teal font-medium flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-[12px]">location_on</span>
+                Atención 1 a 1 en Cali, Valle
+              </p>
+            </div>
+          </div>
+          <span class="bg-brand-surface text-brand-teal border border-brand-border/60 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md">
+            Cupos Limitados
+          </span>
+        </div>
+      </div>
+
+      <!-- CTA Principal Único de Alto Contraste -->
+      <div class="pt-2 space-y-2.5">
+        <a 
+          href="#agendar" 
+          class="w-full bg-brand-teal hover:bg-brand-dark text-white py-4 px-5 rounded-2xl flex items-center justify-center gap-2 font-bold text-base shadow-elevated transition-all active:scale-[0.98]"
+        >
+          <span>Agendar ahora mi valoración</span>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+        </a>
+
+        <!-- Micro-credencial inmediata -->
+        <div class="flex items-center justify-center gap-2 text-[11px] font-semibold text-brand-muted">
+          <span class="inline-flex items-center gap-1 text-brand-teal">
+            <span class="material-symbols-outlined text-[14px]">bolt</span>
+            Respuesta en menos de 24 horas
+          </span>
+          <span class="text-brand-border">•</span>
+          <span class="inline-flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px] text-brand-teal">check_circle</span>
+            Sin costo inicial
+          </span>
+        </div>
+      </div>
+
+      <!-- Fila de 3 Badges de Valor Clínico -->
+      <div class="grid grid-cols-3 gap-2 pt-2">
+        <div class="bg-white p-3 rounded-xl border border-brand-border/70 text-center flex flex-col items-center justify-center gap-1 shadow-soft">
+          <span class="material-symbols-outlined text-brand-teal text-[20px]">view_in_ar</span>
+          <span class="text-[11px] font-semibold text-brand-charcoal leading-tight">Escaneo Digital 3D</span>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-brand-border/70 text-center flex flex-col items-center justify-center gap-1 shadow-soft">
+          <span class="material-symbols-outlined text-brand-teal text-[20px]">health_and_safety</span>
+          <span class="text-[11px] font-semibold text-brand-charcoal leading-tight">Preservación Biológica</span>
+        </div>
+        <div class="bg-white p-3 rounded-xl border border-brand-border/70 text-center flex flex-col items-center justify-center gap-1 shadow-soft">
+          <span class="material-symbols-outlined text-brand-teal text-[20px]">sentiment_very_satisfied</span>
+          <span class="text-[11px] font-semibold text-brand-charcoal leading-tight">Cero Efecto Tiza</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ETAPA I - INTERÉS: PROBLEMA & PROCESO EN 3 PASOS -->
+    <!-- ============================================== -->
+    <section class="py-8 border-t border-brand-border/60 flex flex-col gap-6">
+      
+      <!-- Nombra el Problema Real del Paciente -->
+      <div class="bg-white rounded-2xl p-5 border border-brand-border shadow-soft space-y-2.5">
+        <div class="inline-flex items-center gap-1.5 text-amber-700 bg-amber-50 border border-amber-200/80 px-2.5 py-0.5 rounded-full text-[11px] font-semibold">
+          <span class="material-symbols-outlined text-[14px]">warning</span>
+          <span>El dilema más común al elegir clínica</span>
+        </div>
+        <h2 class="font-serif text-xl font-bold text-brand-charcoal leading-snug">
+          ¿Temes que tu diseño de sonrisa se vea artificial, 'dientes de tiza' o desgaste tus dientes sanos?
+        </h2>
+        <p class="text-xs leading-relaxed text-brand-muted">
+          Muchos pacientes llegan con miedo tras ver resultados genéricos o limados irreversibles. En nuestro consultorio en Cali aplicamos el protocolo de <strong>Odontología Biomimética</strong>: micro-carillas cerámicas de precisión microscópica que <strong>preservan hasta el 98% del esmalte dental natural</strong>, replicando la textura, brillo y translucidez de los dientes biológicos.
+        </p>
+      </div>
+
+      <!-- Encabezado Proceso -->
+      <div class="space-y-1">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-teal">Metodología Clara y Segura</span>
+        <h3 class="font-serif text-2xl font-bold text-brand-charcoal">
+          Tu camino hacia una sonrisa armónica en 3 pasos
+        </h3>
+      </div>
+
+      <!-- Pasos 01, 02, 03 -->
+      <div class="space-y-3.5">
+        
+        <!-- Paso 01 -->
+        <div class="bg-white rounded-2xl p-4 border border-brand-border/80 shadow-soft flex items-start gap-3.5">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-brand-light text-brand-teal font-serif font-bold text-lg flex items-center justify-center">
+            01
+          </div>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold text-brand-charcoal">Valoración y Escaneo Digital 3D</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Mapeo intraoral 3D milimétrico sin pastas incómodas ni náuseas. Diagnóstico claro y simulación personalizada de tus proporciones áureas desde el primer día.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 02 -->
+        <div class="bg-white rounded-2xl p-4 border border-brand-border/80 shadow-soft flex items-start gap-3.5">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-brand-light text-brand-teal font-serif font-bold text-lg flex items-center justify-center">
+            02
+          </div>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold text-brand-charcoal">Plan Personalizado y Mock-up en Boca</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Ves y pruebas tu nueva sonrisa directamente en tu rostro antes de tocar cualquier estructura dental. Aprobación estética mutua con presupuesto cerrado.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 03 -->
+        <div class="bg-white rounded-2xl p-4 border border-brand-border/80 shadow-soft flex items-start gap-3.5">
+          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-brand-light text-brand-teal font-serif font-bold text-lg flex items-center justify-center">
+            03
+          </div>
+          <div class="space-y-1">
+            <h4 class="text-sm font-bold text-brand-charcoal">Sonrisa Definitiva y Duradera</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Cementación micrométrica de porcelana de alta densidad resistente a manchas de café, té y vino tinto, con garantía de biocompatibilidad y funcionalidad oclusal.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Enlace Directo a WhatsApp -->
+      <div class="text-center">
+        <a 
+          href="https://wa.me/573059427844?text=Hola%20Dra.%20Eliana%2C%20quisiera%20consultar%20mi%20caso%20particular%20para%20dise%C3%B1o%20de%20sonrisa%20en%20Cali"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-teal hover:text-brand-dark transition-colors py-1"
+        >
+          <span class="material-symbols-outlined text-[16px]">chat</span>
+          <span>¿Tienes dudas sobre tu caso particular? Escríbenos directamente</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ETAPA D - DESEO: MÉTRICAS, CASO REAL & BENEFICIOS -->
+    <!-- ============================================== -->
+    <section class="py-8 border-t border-brand-border/60 flex flex-col gap-6">
+      
+      <!-- Cuadrícula de Métricas de Confianza -->
+      <div class="grid grid-cols-2 gap-2.5">
+        <div class="bg-white p-3.5 rounded-2xl border border-brand-border shadow-soft text-center">
+          <p class="font-serif text-2xl font-bold text-brand-teal">+10 Años</p>
+          <p class="text-[11px] font-semibold text-brand-muted mt-0.5">De Trayectoria Clínica</p>
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl border border-brand-border shadow-soft text-center">
+          <p class="font-serif text-2xl font-bold text-brand-teal">+3.500</p>
+          <p class="text-[11px] font-semibold text-brand-muted mt-0.5">Sonrisas Diseñadas</p>
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl border border-brand-border shadow-soft text-center">
+          <p class="font-serif text-2xl font-bold text-brand-teal">99.4%</p>
+          <p class="text-[11px] font-semibold text-brand-muted mt-0.5">Satisfacción Pacientes</p>
+        </div>
+        <div class="bg-white p-3.5 rounded-2xl border border-brand-border shadow-soft text-center">
+          <p class="font-serif text-2xl font-bold text-brand-teal">100%</p>
+          <p class="text-[11px] font-semibold text-brand-muted mt-0.5">Habilitación SSSA Valle</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Caso Clínico Real de Sonrisa Natural -->
+      <div class="space-y-2">
+        <div class="flex items-center justify-between px-1">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-brand-teal">Caso Clínico Real</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+            <span class="material-symbols-outlined text-[13px]">verified</span>
+            100% Porcelana Natural
+          </span>
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden shadow-elevated border border-brand-border/70">
+          
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-4 text-white">
+            <p class="font-serif text-base font-bold text-white">Rehabilitación & Armonía Dental</p>
+            <p class="text-[11px] text-white/90">Lentes cerámicos micro-finos · Textura y translucidez biomimética</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Beneficios Enfocados en RESULTADO -->
+      <div class="space-y-2.5 pt-1">
+        <h3 class="font-serif text-xl font-bold text-brand-charcoal">
+          Lo que experimentarás en tu día a día
+        </h3>
+
+        <div class="space-y-2.5">
+          <!-- Beneficio 1 -->
+          <div class="bg-white p-3.5 rounded-xl border border-brand-border/70 shadow-soft flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-light text-brand-teal flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Armonía y naturalidad absoluta</p>
+              <p class="text-[11px] text-brand-muted leading-relaxed">Tono y translucidez calibrados para que nadie note que llevas carillas, solo una sonrisa deslumbrante y fresca.</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="bg-white p-3.5 rounded-xl border border-brand-border/70 shadow-soft flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-light text-brand-teal flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-[18px]">shield</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Preservación dental guiada</p>
+              <p class="text-[11px] text-brand-muted leading-relaxed">Protocolo conservador de mínima intervención que protege la pulpa y mantiene intacta la vitalidad de tus dientes.</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="bg-white p-3.5 rounded-xl border border-brand-border/70 shadow-soft flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-light text-brand-teal flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-[18px]">local_cafe</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Cerámica vítrea inalterable</p>
+              <p class="text-[11px] text-brand-muted leading-relaxed">Disfruta sin reservas de café, té o vino tinto sin temor a manchas ni pérdida de brillo con el paso de los años.</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="bg-white p-3.5 rounded-xl border border-brand-border/70 shadow-soft flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-light text-brand-teal flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-[18px]">sentiment_satisfied</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Seguridad plena al hablar y sonreír</p>
+              <p class="text-[11px] text-brand-muted leading-relaxed">Olvídate de taparte la boca en reuniones familiares, fotos sociales o videollamadas de trabajo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonios Breves Verificados -->
+      <div class="space-y-3 pt-2">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-teal">Opiniones Reales de Pacientes</span>
+        
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-soft space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-xs">
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+            </div>
+            <span class="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              Caso Verificado
+            </span>
+          </div>
+          <p class="text-xs italic text-brand-charcoal leading-relaxed">
+            "Tenía pánico de que me limaran los dientes y quedara con 'dientes postizos'. La Dra. Eliana cuidó cada milímetro de mi esmalte y el resultado es tan natural que mis colegas solo me dicen que luzco más descansada y radiante."
+          </p>
+          <div class="pt-1 border-t border-brand-border/40 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Carolina Mejía</p>
+              <p class="text-[10px] text-brand-muted">Diseño en Micro-Carillas Cerámicas · Cali</p>
+            </div>
+            <span class="material-symbols-outlined text-brand-teal text-[18px]">verified</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl border border-brand-border shadow-soft space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-xs">
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+              <span class="material-symbols-outlined text-[16px] text-amber-400 fill-current">star</span>
+            </div>
+            <span class="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              Caso Verificado
+            </span>
+          </div>
+          <p class="text-xs italic text-brand-charcoal leading-relaxed">
+            "Excelente profesionalismo. La simulación previa en boca me dio el 100% de la certeza que necesitaba antes de decidirme. Todo el equipo es cálido, puntual y transparente con los costos."
+          </p>
+          <div class="pt-1 border-t border-brand-border/40 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-brand-charcoal">Dr. Camilo Echeverri</p>
+              <p class="text-[10px] text-brand-muted">Paciente Profesional de la Salud · Cali</p>
+            </div>
+            <span class="material-symbols-outlined text-brand-teal text-[18px]">verified</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================== -->
+    <!-- ETAPA A - ACCIÓN: FORMULARIO MINIMALISTA & WHATSAPP -->
+    <!-- ============================================== -->
+    <section id="agendar" class="py-8 border-t border-brand-border/60">
+      
+      <div class="bg-white rounded-3xl p-5 border border-brand-border shadow-elevated space-y-4">
+        
+        <!-- Header del Formulario con Urgencia Ética -->
+        <div class="text-center space-y-1">
+          <span class="inline-flex items-center gap-1.5 text-brand-teal bg-brand-light px-3 py-1 rounded-full text-[11px] font-bold">
+            <span class="material-symbols-outlined text-[14px]">event_available</span>
+            <span>Cupos limitados de valoración esta semana en Cali</span>
+          </span>
+          <h3 class="font-serif text-2xl font-bold text-brand-charcoal pt-1">
+            Empieza hoy tu transformación dental
+          </h3>
+          <p class="text-xs text-brand-muted">
+            Completa estos 3 datos y nuestra coordinadora clínica te asignará el horario prioritario ideal.
+          </p>
+        </div>
+
+        <!-- Formulario Minimalista de 3 Campos -->
+        <form onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! Nos comunicaremos en menos de 24 horas.');" class="space-y-3.5">
+          
+          <!-- Campo 1: Nombre y Apellido -->
+          <div class="space-y-1">
+            <label for="nombre" class="block text-xs font-bold text-brand-charcoal">
+              Nombre y Apellido *
+            </label>
+            <input 
+              type="text" 
+              id="nombre" 
+              name="nombre" 
+              required
+              placeholder="Ej. Mariana Restrepo" 
+              class="w-full px-3.5 py-3 rounded-xl border border-brand-border focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm bg-brand-surface/40 placeholder:text-brand-muted/60 transition-all outline-none"
+            >
+          </div>
+
+          <!-- Campo 2: WhatsApp o Celular -->
+          <div class="space-y-1">
+            <label for="whatsapp" class="block text-xs font-bold text-brand-charcoal">
+              WhatsApp o Celular (+57) *
+            </label>
+            <div class="relative">
+              <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-xs font-semibold text-brand-muted flex items-center gap-1">
+                🇨🇴 +57
+              </span>
+              <input 
+                type="tel" 
+                id="whatsapp" 
+                name="whatsapp" 
+                required
+                placeholder="300 123 4567" 
+                class="w-full pl-16 pr-3.5 py-3 rounded-xl border border-brand-border focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm bg-brand-surface/40 placeholder:text-brand-muted/60 transition-all outline-none"
+              >
+            </div>
+          </div>
+
+          <!-- Campo 3: Tratamiento de Interés -->
+          <div class="space-y-1">
+            <label for="tratamiento" class="block text-xs font-bold text-brand-charcoal">
+              ¿Qué tratamiento te interesa? *
+            </label>
+            <select 
+              id="tratamiento" 
+              name="tratamiento" 
+              required
+              class="w-full px-3.5 py-3 rounded-xl border border-brand-border focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm bg-brand-surface/40 text-brand-charcoal transition-all outline-none appearance-none"
+            >
+              <option value="carillas">Diseño de Sonrisa en Carillas Cerámicas</option>
+              <option value="lentes">Lentes de Contacto Dental (Preservación)</option>
+              <option value="valoracion_integral">Valoración General & Diagnóstico 3D</option>
+              <option value="rehabilitacion">Rehabilitación Oral Funcional</option>
+            </select>
+          </div>
+
+          <!-- Botón de Envío Principal -->
+          <button 
+            type="submit" 
+            class="w-full bg-brand-teal hover:bg-brand-dark text-white py-4 px-5 rounded-xl font-bold text-base shadow-elevated transition-all flex items-center justify-center gap-2 active:scale-[0.98] cursor-pointer"
+          >
+            <span>Quiero mi valoración</span>
+            <span class="material-symbols-outlined text-[20px]">sparkles</span>
+          </button>
+        </form>
+
+        <!-- Divisor Claro -->
+        <div class="relative flex items-center justify-center py-1">
+          <div class="border-t border-brand-border w-full"></div>
+          <span class="bg-white px-3 text-[10px] font-bold text-brand-muted uppercase tracking-wider absolute">
+            O si prefieres atención inmediata
+          </span>
+        </div>
+
+        <!-- Botón Directo WhatsApp Oficial con enlace exacto -->
+        <a 
+          href="https://wa.me/573059427844?text=Hola%20Dra.%20Eliana%2C%20quisiera%20agendar%20mi%20cita%20de%20valoraci%C3%B3n%20para%20dise%C3%B1o%20de%20sonrisa%20en%20Cali." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-4 rounded-xl font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 active:scale-[0.98]"
+        >
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          <span>Chatear directo al WhatsApp (+57 305 942 7844)</span>
+        </a>
+
+        <!-- Aviso de Privacidad y Tratamiento de Datos -->
+        <p class="text-[10px] text-center text-brand-muted leading-tight pt-1">
+          🔒 Tus datos están protegidos bajo secreto profesional médico y la Ley 1581 de Protección de Datos de Colombia. Cero spam.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ============================================== -->
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <!-- ============================================== -->
+    <section class="py-8 border-t border-brand-border/60 space-y-3.5">
+      <div class="text-center space-y-1">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-teal">Claridad Total</span>
+        <h3 class="font-serif text-2xl font-bold text-brand-charcoal">
+          Preguntas Frecuentes
+        </h3>
+      </div>
+
+      <div class="space-y-2 pt-1">
+        <details class="bg-white rounded-xl p-3.5 border border-brand-border shadow-soft group cursor-pointer">
+          <summary class="text-xs font-bold text-brand-charcoal flex justify-between items-center list-none select-none">
+            <span>¿El diseño de sonrisa desgasta mis dientes naturales?</span>
+            <span class="material-symbols-outlined text-brand-teal group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+          </summary>
+          <p class="text-xs text-brand-muted mt-2 pt-2 border-t border-brand-border/40 leading-relaxed">
+            No con nuestro enfoque biomimético. Priorizamos la preservación de hasta el 98% del esmalte dental natural mediante micro-lentes y carillas ultrafinas, evitando desgastes agresivos o muñones dentales.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-3.5 border border-brand-border shadow-soft group cursor-pointer">
+          <summary class="text-xs font-bold text-brand-charcoal flex justify-between items-center list-none select-none">
+            <span>¿Cuánto tiempo toma el tratamiento completo en Cali?</span>
+            <span class="material-symbols-outlined text-brand-teal group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+          </summary>
+          <p class="text-xs text-brand-muted mt-2 pt-2 border-t border-brand-border/40 leading-relaxed">
+            Gracias al flujo de escaneo digital 3D y laboratorio robótico, la mayoría de los casos se completan en tan solo 2 a 3 sesiones clínicas, ideal tanto para residentes de Cali como para pacientes que viajan desde otras ciudades.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-3.5 border border-brand-border shadow-soft group cursor-pointer">
+          <summary class="text-xs font-bold text-brand-charcoal flex justify-between items-center list-none select-none">
+            <span>¿Las carillas cerámicas se manchan con café o alimentos?</span>
+            <span class="material-symbols-outlined text-brand-teal group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+          </summary>
+          <p class="text-xs text-brand-muted mt-2 pt-2 border-t border-brand-border/40 leading-relaxed">
+            La porcelana pura de grado médico posee una superficie vítrea no porosa totalmente impermeable. Puedes tomar café colombiano, té o vino tinto con total tranquilidad: no sufren decoloración ni pierden brillo.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-3.5 border border-brand-border shadow-soft group cursor-pointer">
+          <summary class="text-xs font-bold text-brand-charcoal flex justify-between items-center list-none select-none">
+            <span>¿Tienen opciones de financiación o facilidades de pago?</span>
+            <span class="material-symbols-outlined text-brand-teal group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+          </summary>
+          <p class="text-xs text-brand-muted mt-2 pt-2 border-t border-brand-border/40 leading-relaxed">
+            Sí. Contamos con planes de pago personalizados diferidos durante las etapas de tu tratamiento y convenios directos para que puedas realizar tu transformación con total comodidad.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL LEGAL -->
+    <footer class="pt-8 pb-4 text-center space-y-3 text-xs text-brand-muted border-t border-brand-border/60">
+      <div class="flex items-center justify-center gap-2 text-brand-teal font-serif font-bold text-sm">
+        <span class="material-symbols-outlined text-[18px]">dentistry</span>
+        <span>Dra. Eliana Salazar Odontología Estética</span>
+      </div>
+      <p class="text-[11px] leading-relaxed">
+        Registro Sanitario Secretaría de Salud Pública Municipal de Cali · Valle del Cauca.<br>
+        Consultorio Exclusivo en Cali, Colombia.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-brand-teal font-medium">
+        <a href="#agendar" class="hover:underline">Habeas Data (Ley 1581)</a>
+        <span>•</span>
+        <a href="#agendar" class="hover:underline">Aviso Legal</a>
+        <span>•</span>
+        <a href="#agendar" class="hover:underline">Consentimiento Informado</a>
+      </div>
+      <p class="text-[10px] text-brand-muted/80 pt-1">
+        © 2025 Dra. Eliana Salazar. Todos los derechos reservados. Vigilado Supersalud Colombia.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- BOTTOM NAVBAR FLOTANTE MÓVIL (SHARED COMPONENT) -->
+  <nav class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-lg border-t border-brand-border/80 shadow-[0_-4px_24px_rgba(0,121,107,0.08)]">
+    <div class="max-w-md mx-auto px-4 py-2 flex items-center justify-around">
+      <a href="#" class="flex flex-col items-center justify-center text-brand-teal">
+        <span class="material-symbols-outlined text-[20px]">home</span>
+        <span class="text-[10px] font-bold mt-0.5">Inicio</span>
+      </a>
+      <a href="#agendar" class="flex flex-col items-center justify-center text-brand-muted hover:text-brand-teal transition-colors">
+        <span class="material-symbols-outlined text-[20px]">dentistry</span>
+        <span class="text-[10px] font-semibold mt-0.5">Tratamientos</span>
+      </a>
+      <a href="#agendar" class="flex flex-col items-center justify-center text-brand-muted hover:text-brand-teal transition-colors">
+        <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+        <span class="text-[10px] font-semibold mt-0.5">Casos</span>
+      </a>
+      <a href="#agendar" class="flex items-center gap-1.5 bg-brand-teal text-white px-3.5 py-1.5 rounded-full font-bold text-xs shadow-sm active:scale-95 transition-transform">
+        <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+        <span>Cita</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+</html>
