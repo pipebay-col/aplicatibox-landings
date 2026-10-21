@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NAWA Resortwear | Lujo Artesanal en Lino 100% Puro</title>
+<!-- Google Fonts: Bodoni Moda & Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#ffbaa9",
+            "secondary": "#7a5826",
+            "tertiary-fixed": "#f1dfd7",
+            "on-secondary-container": "#795726",
+            "on-secondary-fixed-variant": "#5f4111",
+            "surface-container-low": "#f6f3ee",
+            "tertiary": "#473c36",
+            "on-background": "#1c1c19",
+            "error-container": "#ffdad6",
+            "surface-container": "#f0ede9",
+            "surface-container-high": "#ebe8e3",
+            "primary-fixed": "#ffdad2",
+            "background": "#fcf9f4",
+            "tertiary-container": "#60534d",
+            "error": "#ba1a1a",
+            "inverse-primary": "#ffb4a2",
+            "surface-dim": "#dcdad5",
+            "primary-container": "#8b3e2b",
+            "secondary-fixed-dim": "#ecbf84",
+            "on-surface": "#1c1c19",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#3c0700",
+            "outline-variant": "#dac1bb",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0eb",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed": "#291800",
+            "on-tertiary-container": "#d9c7bf",
+            "surface-bright": "#fcf9f4",
+            "on-surface-variant": "#55433e",
+            "surface": "#fcf9f4",
+            "secondary-container": "#fecf93",
+            "outline": "#88726d",
+            "surface-variant": "#e5e2dd",
+            "primary-fixed-dim": "#ffb4a2",
+            "surface-tint": "#974733",
+            "on-tertiary-fixed": "#231a15",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#31302d",
+            "primary": "#6d2817",
+            "secondary-fixed": "#ffddb4",
+            "tertiary-fixed-dim": "#d4c3bb",
+            "surface-container-highest": "#e5e2dd",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#78301e",
+            "on-tertiary-fixed-variant": "#50443f"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-lg": "1.75rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "0.75rem",
+            "space-xl": "3rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Manrope"],
+            "headline-lg": ["Bodoni Moda"],
+            "body-sm": ["Manrope"],
+            "headline-lg-mobile": ["Bodoni Moda"],
+            "headline-md": ["Bodoni Moda"],
+            "headline-sm": ["Bodoni Moda"],
+            "body-md": ["Manrope"],
+            "display-mobile": ["Bodoni Moda"],
+            "label-lg": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "display": ["Bodoni Moda"],
+            "label-md": ["Manrope"]
+          },
+          "fontSize": {
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "500" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    input:focus, select:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-container selection:text-primary">
+<!-- TopAppBar Component (from Shared Components JSON) -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40">
+<button aria-label="Abrir menú" class="text-primary hover:text-primary transition-colors duration-300 active:opacity-75 p-2" type="button">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+<a class="font-headline-lg-mobile text-headline-lg-mobile tracking-widest text-primary font-normal" href="#">NAWA</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary transition-colors duration-300 active:opacity-75 py-2 px-3" href="#contacto-reserva">COMPRAR</a>
+</header>
+<main class="pt-16 pb-24 overflow-x-hidden">
+<!-- ==========================================
+         FASE 1: ATENCIÓN (A)
+         ========================================== -->
+<section class="px-margin-mobile pt-6 pb-12 max-w-xl mx-auto flex flex-col">
+<!-- Badge Superior de Credencial Real -->
+<div class="inline-flex items-center gap-1.5 self-start bg-surface-container px-3 py-1.5 mb-5 border border-outline-variant/30">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">✦ Lujo Artesanal Colombiano · 100% Lino y Fibras Naturales</span>
+</div>
+<!-- Titular H1 Serif Editorial -->
+<h1 class="font-display-mobile text-display-mobile text-primary leading-tight mb-4 tracking-tight">
+        La elegancia del trópico, diseñada para tu descanso más memorable.
+      </h1>
+<!-- Subtítulo de Beneficio Claro -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+        Piezas exclusivas de resortwear confeccionadas a mano por maestras artesanas en Colombia. Siluetas fluidas, fibras nobles y ajuste impecable sin comprometer frescura ni sofisticación en tus destinos de playa y descanso.
+      </p>
+<!-- Hero Image con Tag Editorial -->
+<div class="relative w-full aspect-[3/4] mb-6 overflow-hidden bg-surface-container border border-outline-variant/30">
+
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1.5 border border-outline-variant/40">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Colección Barú &amp; Cartagena · Piezas Limitadas</span>
+</div>
+</div>
+<!-- CTA Principal de Alto Contraste -->
+<a class="w-full min-h-[52px] h-14 bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md uppercase tracking-widest text-center px-4 hover:bg-primary-container active:scale-[0.99] transition-all duration-200" href="#contacto-reserva">
+        Agendar ahora mi asesoría de estilo y medidas →
+      </a>
+<!-- Micro-credencial Inmediata -->
+<div class="flex items-center justify-center gap-1.5 text-center mt-3 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="bolt">bolt</span>
+<span>⚡ Respuesta en menos de 24 horas · Asesoría de talle y estilo personalizada sin costo</span>
+</div>
+<!-- 3 Badges de Confianza en Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8 pt-8 border-t border-outline-variant/30">
+<div class="bg-surface-container-lowest p-4 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="palette">palette</span>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-primary mb-1">Maestría Artesanal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hecho a mano puntada a puntada en Colombia.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="air">air</span>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-primary mb-1">Lino 100% Puro</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Termorregulación natural para máxima brisa.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 border border-outline-variant/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5" data-icon="straighten">straighten</span>
+<div>
+<h4 class="font-label-sm text-label-sm uppercase text-primary mb-1">Ajuste a Medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Talle perfecto garantizado por patronistas expertas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         FASE 2: INTERÉS (I)
+         ========================================== -->
+<section class="bg-surface-container-low py-14 px-margin-mobile border-y border-outline-variant/30">
+<div class="max-w-xl mx-auto">
+<!-- Diagnóstico del Dolor -->
+<div class="mb-12">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-2">Reflexión &amp; Cuidado</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">
+            ¿Cansada de comprar ropa de vacaciones genérica, telas acrílicas que dan calor o prendas que pierden su forma?
+          </h2>
+<div class="space-y-3 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+              El fast fashion industrial utiliza fibras sintéticas derivadas del poliéster que atrapan la humedad, se adhieren de forma incómoda a la piel bajo el sol caribeño y se desgastan en el primer lavado.
+            </p>
+<p>
+              En Nawa, devolvemos el sentido al vestir de descanso. Seleccionamos lino puro de hilatura noble que se ablanda orgánicamente con el tiempo, respira con cada ráfaga de brisa y abraza tu figura sin apretar ni deformarse.
+            </p>
+</div>
+</div>
+<!-- Proceso en 3 Pasos Numerados -->
+<div class="mb-10">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-6">Tu experiencia de confección guiada</h3>
+<div class="space-y-4">
+<!-- Paso 01 -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/40 flex gap-4">
+<span class="font-display-mobile text-display-mobile text-outline-variant leading-none font-serif">01</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Valoración y Selección de Silueta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Analizamos tu destino, clima y preferencias de caída.</p>
+<div class="inline-block bg-surface-container px-2.5 py-1 text-primary font-label-sm text-label-sm uppercase">
+                  Beneficio: Certeza absoluta de corte y caída que estiliza tu figura
+                </div>
+</div>
+</div>
+<!-- Paso 02 -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/40 flex gap-4">
+<span class="font-display-mobile text-display-mobile text-outline-variant leading-none font-serif">02</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Confección y Patronaje a Medida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Corte artesanal individualizado sobre lino 100% puro certificado.</p>
+<div class="inline-block bg-surface-container px-2.5 py-1 text-primary font-label-sm text-label-sm uppercase">
+                  Beneficio: Fibras nobles europeas certificadas que respiran con la brisa marina
+                </div>
+</div>
+</div>
+<!-- Paso 03 -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/40 flex gap-4">
+<span class="font-display-mobile text-display-mobile text-outline-variant leading-none font-serif">03</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Entrega Impecable en tu Destino o Casa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Despacho asegurado a tu hotel, villa en las islas o domicilio en ciudades principales.</p>
+<div class="inline-block bg-surface-container px-2.5 py-1 text-primary font-label-sm text-label-sm uppercase">
+                  Beneficio: Empaque de autor listo para empacar o estrenar sin estrés
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Enlace Contextual WhatsApp -->
+<div class="text-center pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase text-secondary hover:text-primary transition-colors duration-200 border-b border-secondary/40 pb-1" href="https://wa.me/573002720023?text=Hola%20Nawa,%20tengo%20dudas%20sobre%20qué%20pieza%20elegir%20para%20mis%20vacaciones" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>¿Tienes dudas sobre qué pieza elegir? Habla con nuestra estilista por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         FASE 3: DESEO (D)
+         ========================================== -->
+<section class="py-14 px-margin-mobile max-w-xl mx-auto">
+<!-- Métricas de Autoridad y Tracción -->
+<div class="grid grid-cols-2 gap-3 mb-14 text-center">
+<div class="bg-surface-container p-4 border border-outline-variant/30">
+<p class="font-display-mobile text-display-mobile text-primary font-serif mb-1">+7 Años</p>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">De Trayectoria</p>
+</div>
+<div class="bg-surface-container p-4 border border-outline-variant/30">
+<p class="font-display-mobile text-display-mobile text-primary font-serif mb-1">+4.200</p>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Prendas de Autor</p>
+</div>
+<div class="bg-surface-container p-4 border border-outline-variant/30">
+<p class="font-display-mobile text-display-mobile text-primary font-serif mb-1">100%</p>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Lino &amp; Fibras Puras</p>
+</div>
+<div class="bg-surface-container p-4 border border-outline-variant/30">
+<p class="font-display-mobile text-display-mobile text-primary font-serif mb-1">4.9 ★</p>
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant">Reseñas Verificadas</p>
+</div>
+</div>
+<!-- 4 Beneficios Orientados a Resultados -->
+<div class="mb-14">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-2">Diferenciación Absoluta</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Diseñado para la calma y la distinción natural</h2>
+<div class="space-y-4">
+<div class="p-4 bg-surface-container-lowest border-l-2 border-primary border-t border-r border-b border-outline-variant/30">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Frescura termorreguladora absoluta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Absorbe humedad y se mantiene fresca de día y de noche, permitiendo que la piel transpire sin sensación térmica agobiante.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest border-l-2 border-primary border-t border-r border-b border-outline-variant/30">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Distinción sin logotipos estridentes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lujo silencioso y sofisticación minimalista. El protagonismo reside en la textura del tejido y la pureza de sus líneas.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest border-l-2 border-primary border-t border-r border-b border-outline-variant/30">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Versatilidad de la playa a la cena</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prendas que funcionan descalza en la arena del club de playa o combinadas con tacones en un restaurante gourmet en el centro histórico.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest border-l-2 border-primary border-t border-r border-b border-outline-variant/30">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Cuidado y durabilidad vitalicia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lino noble que no sufre con los lavados; al contrario, cada postura y lavado suaviza sus fibras manteniendo intacta su estructura de costura.</p>
+</div>
+</div>
+</div>
+<!-- Testimonios Reales Verificados -->
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-2">Voz de Nuestras Huéspedes</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Experiencias inolvidables</h3>
+<div class="space-y-4">
+<!-- Testimonio Bogotá -->
+<div class="bg-surface-container p-5 border border-outline-variant/30 relative">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-4">
+              "Llevé el vestido blanco bordado a mi viaje a las Islas del Rosario. La caída es etérea y nunca sentí calor a pesar del mediodía caribeño. Me asesoraron por WhatsApp con mis medidas y me quedó como un guante."
+            </p>
+<div class="flex justify-between items-end text-on-surface-variant">
+<div>
+<p class="font-label-md text-label-md uppercase text-primary font-semibold">Camila Restrepo G.</p>
+<p class="font-body-sm text-body-sm">Bogotá D.C. · Pedido a Medida</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-2 py-0.5 text-primary">Verificada</span>
+</div>
+</div>
+<!-- Testimonio Medellín -->
+<div class="bg-surface-container p-5 border border-outline-variant/30 relative">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-4">
+              "Buscaba algo sobrio para un matrimonio en la playa de Barú. La calidad del lino de Nawa está a otro nivel comparado con marcas europeas masivas. Muy recomendado el servicio express."
+            </p>
+<div class="flex justify-between items-end text-on-surface-variant">
+<div>
+<p class="font-label-md text-label-md uppercase text-primary font-semibold">Valeria Echeverri</p>
+<p class="font-body-sm text-body-sm">Medellín · Conjunto Dos Piezas</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-2 py-0.5 text-primary">Verificada</span>
+</div>
+</div>
+<!-- Testimonio Cartagena -->
+<div class="bg-surface-container p-5 border border-outline-variant/30 relative">
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-4">
+              "Vivo en Cartagena y es difícil encontrar prendas que resistan la humedad sin verse desarregladas. El lino Nawa tiene presencia, cae hermoso y los detalles de terminación son impecables."
+            </p>
+<div class="flex justify-between items-end text-on-surface-variant">
+<div>
+<p class="font-label-md text-label-md uppercase text-primary font-semibold">Beatriz Morales</p>
+<p class="font-body-sm text-body-sm">Cartagena de Indias · Residente</p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-2 py-0.5 text-primary">Verificada</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         FASE 4: ACCIÓN (A) - FORMULARIO DE RESERVA
+         ========================================== -->
+<section class="py-14 px-margin-mobile bg-surface-container-high border-t border-outline-variant/40" id="contacto-reserva">
+<div class="max-w-xl mx-auto bg-surface-container-lowest p-6 border border-outline-variant/40">
+<!-- Aviso de Escasez / Exclusividad -->
+<div class="flex items-center gap-2 mb-3 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-base" data-icon="schedule">schedule</span>
+<span>Edición Limitada por Temporada · Confección Artesanal Reducida</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">
+          Agenda tu asesoría de estilo y reserva tu pieza
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Completa tus datos para coordinar una sesión personalizada de medidas y asesoría de talle sin compromiso.
+        </p>
+<!-- Formulario Minimalista de 3 Campos -->
+<form class="space-y-6" id="lead-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1" for="nombre">Nombre y Apellido *</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/40 px-0 py-2.5 text-on-surface placeholder:text-outline-variant focus:ring-0 focus:border-primary transition-colors text-body-md" id="nombre" name="nombre" placeholder="Ej. Sofía Gómez" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1" for="whatsapp">WhatsApp o Celular (+57) *</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/40 px-0 py-2.5 text-on-surface placeholder:text-outline-variant focus:ring-0 focus:border-primary transition-colors text-body-md" id="whatsapp" name="whatsapp" placeholder="+57 300 000 0000" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1" for="interes">¿Qué pieza o destino te interesa? *</label>
+<select class="w-full bg-transparent border-0 border-b border-outline/40 px-0 py-2.5 text-on-surface focus:ring-0 focus:border-primary transition-colors text-body-md cursor-pointer" id="interes" name="interes" required="">
+<option disabled="" selected="" value="">Selecciona una opción de interés</option>
+<option value="vestido-largo">Vestidos de Lino Largo / Cóctel Resort</option>
+<option value="conjuntos">Conjuntos de Dos Piezas</option>
+<option value="camisas-pantalones">Camisas &amp; Pantalones Fluidos</option>
+<option value="matrimonio-playa">A Medida para Matrimonio en Playa</option>
+</select>
+</div>
+<!-- Botón Principal -->
+<button class="w-full min-h-[52px] h-14 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest flex items-center justify-center hover:bg-primary-container active:scale-[0.99] transition-all duration-200 mt-4 cursor-pointer" type="submit">
+            Quiero mi asesoría de estilo ✨
+          </button>
+</form>
+<!-- Mensaje de Éxito Oculto -->
+<div class="hidden text-center py-6" id="form-success">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="check_circle">check_circle</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">¡Solicitud recibida!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Una estilista de NAWA se pondrá en contacto contigo en breve vía WhatsApp para coordinar tu asesoría.</p>
+</div>
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-outline-variant/40"></div>
+<span class="flex-shrink mx-4 text-outline-variant text-label-sm uppercase">o también</span>
+<div class="flex-grow border-t border-outline-variant/40"></div>
+</div>
+<!-- Botón Directo WhatsApp -->
+<a class="w-full min-h-[48px] border border-primary text-primary font-label-md text-label-md uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary transition-colors duration-200" href="https://wa.me/573002720023?text=Hola%20Nawa,%20deseo%20agendar%20una%20asesoría%20de%20estilo%20y%20reserva" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+<span>Escribir directo al WhatsApp (+57 300 272 0023)</span>
+</a>
+<!-- Aviso Legal Habeas Data -->
+<p class="font-body-sm text-[0.7rem] text-on-surface-variant/80 mt-5 text-center leading-tight">
+          Tus datos se encuentran protegidos bajo la Ley Estatutaria 1581 de 2012 de Habeas Data de Colombia. Uso exclusivo para contacto y asesoría de confección personalizada.
+        </p>
+</div>
+</section>
+<!-- ==========================================
+         FASE 5: PREGUNTAS FRECUENTES (FAQ INTERACTIVO)
+         ========================================== -->
+<section class="py-14 px-margin-mobile max-w-xl mx-auto">
+<div class="text-center mb-8">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-2">Claridad &amp; Garantías</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Preguntas Frecuentes</h2>
+</div>
+<div class="space-y-3" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="border border-outline-variant/40 bg-surface-container-lowest overflow-hidden">
+<button class="w-full px-5 py-4 text-left flex justify-between items-center transition-colors hover:bg-surface-container" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-sm text-base text-primary">¿Cuánto tiempo tarda la confección y entrega?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 icon-arrow" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/20">
+            Nuestras piezas son de patronaje artesanal. El tiempo promedio de confección individual es de 5 a 7 días hábiles. Realizamos envíos express que tardan entre 24 y 48 horas adicionales a ciudades principales como Bogotá, Medellín, Cali, Barranquilla y Cartagena.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="border border-outline-variant/40 bg-surface-container-lowest overflow-hidden">
+<button class="w-full px-5 py-4 text-left flex justify-between items-center transition-colors hover:bg-surface-container" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-sm text-base text-primary">¿Hacen envíos a hoteles o destinos vacacionales en Colombia?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 icon-arrow" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/20">
+            Sí. Coordinamos la entrega directamente en la recepción de tu hotel, resort o casa vacacional en destinos como Barú, Cartagena de Indias, Santa Marta, Villa de Leyva o el Eje Cafetero para que recibas tu prenda lista antes de tu llegada.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="border border-outline-variant/40 bg-surface-container-lowest overflow-hidden">
+<button class="w-full px-5 py-4 text-left flex justify-between items-center transition-colors hover:bg-surface-container" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-sm text-base text-primary">¿Cómo garantizan que la talla sea la correcta si compro online?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 icon-arrow" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/20">
+            Contamos con un servicio guiado por videollamada o WhatsApp con nuestras patronistas. Te enviamos una guía sencilla para medir contorno de busto, cintura, cadera y estatura deseada. Además, nuestras siluetas incorporan tirantes graduables y caídas holgadas que garantizan un ajuste favorecedor.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="border border-outline-variant/40 bg-surface-container-lowest overflow-hidden">
+<button class="w-full px-5 py-4 text-left flex justify-between items-center transition-colors hover:bg-surface-container" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-sm text-base text-primary">¿Cuáles son las instrucciones de lavado y cuidado del lino?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 icon-arrow" data-icon="expand_more">expand_more</span>
+</button>
+<div class="faq-content hidden px-5 pb-5 pt-1 text-on-surface-variant font-body-sm text-body-sm border-t border-outline-variant/20">
+            El lino 100% puro ama el agua fría y el jabón neutro. Recomendamos lavado a mano o ciclo suave en máquina dentro de malla de protección. Secar a la sombra colgado al natural. Para planchar, sugerimos hacerlo mientras la prenda permanezca ligeramente húmeda para revivir su caída perfecta.
+          </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component (from Shared Components JSON) -->
+<footer class="w-full px-margin-mobile py-10 pb-28 flex flex-col items-center text-center space-y-6 bg-surface-container border-t border-outline-variant/40">
+<div class="font-headline-md text-headline-md text-primary tracking-widest">NAWA</div>
+<div class="flex flex-wrap justify-center gap-4 text-on-surface-variant font-label-sm text-label-sm uppercase">
+<a class="hover:text-primary underline underline-offset-4 transition-colors duration-200" href="#">Origen Artesanal</a>
+<a class="hover:text-primary underline underline-offset-4 transition-colors duration-200" href="#">Cuidado del Lino</a>
+<a class="hover:text-primary underline underline-offset-4 transition-colors duration-200" href="#">Protección de Datos</a>
+<a class="hover:text-primary underline underline-offset-4 transition-colors duration-200" href="#">Términos y Condiciones</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+      © 2024 NAWA Resortwear. Hecho a mano en Colombia en 100% lino puro. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- BottomNavBar Component (from Shared Components JSON - Mobile Navigation Docked) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-2 bg-surface/95 backdrop-blur-md border-t border-outline-variant/40 md:hidden">
+<!-- Destino 1: Catálogo -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 opacity-70 hover:opacity-100 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="storefront">storefront</span>
+<span class="font-label-sm text-label-sm uppercase mt-0.5">Catálogo</span>
+</a>
+<!-- Destino 2: A Medida (Activo según el flujo de asesoría/confección del embudo) -->
+<a class="flex flex-col items-center justify-center text-primary font-semibold py-1 active:scale-95 transition-all" href="#contacto-reserva">
+<span class="material-symbols-outlined text-xl" data-icon="styler" style="font-variation-settings: 'FILL' 1;">styler</span>
+<span class="font-label-sm text-label-sm uppercase mt-0.5">A Medida</span>
+</a>
+<!-- Destino 3: Concierge -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 opacity-70 hover:opacity-100 active:scale-95 transition-all" href="https://wa.me/573002720023" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm uppercase mt-0.5">Concierge</span>
+</a>
+<!-- Destino 4: Reserva -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 opacity-70 hover:opacity-100 active:scale-95 transition-all" href="#contacto-reserva">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm uppercase mt-0.5">Reserva</span>
+</a>
+</nav>
+<!-- Interactive Script for FAQ Accordions -->
+<script>
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const arrow = button.querySelector('.icon-arrow');
+      const isExpanded = !content.classList.contains('hidden');
+
+      // Close all accordions in group
+      document.querySelectorAll('#faq-accordion .faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion .icon-arrow').forEach(el => el.classList.remove('rotate-180'));
+
+      if (!isExpanded) {
+        content.classList.remove('hidden');
+        arrow.classList.add('rotate-180');
+      }
+    }
+  </script>
+</body></html>
